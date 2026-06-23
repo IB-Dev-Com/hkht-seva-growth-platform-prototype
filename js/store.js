@@ -18,23 +18,30 @@ App.store = (function () {
     return { userId: 'U-MUKUND', role: 'leadership', centerId: 'ALL', deptId: 'ALL', authed: false };
   }
 
+  // Restore session + any cached state from this browser session.
+  // Returns true if a cached dataset exists (skip backend fetch), false if we must hydrate from the backend.
   function load() {
+    state = null;
     try {
       var raw = sessionStorage.getItem(KEY);
-      state = raw ? JSON.parse(raw) : App.seed.build();
-    } catch (e) { state = App.seed.build(); }
+      if (raw) state = JSON.parse(raw);
+    } catch (e) { state = null; }
     try {
       var s = sessionStorage.getItem(SKEY);
       session = s ? JSON.parse(s) : defaultSession();
     } catch (e) { session = defaultSession(); }
+    return !!state;
   }
+  // Install a freshly-loaded dataset (from the JSON backend or seed fallback).
+  function hydrate(obj) { state = obj; persist(); }
   function persist() {
     try { sessionStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
     try { sessionStorage.setItem(SKEY, JSON.stringify(session)); } catch (e) {}
   }
+  // Reset re-pulls the canonical dataset from the backend (JSON), not an ad-hoc regen.
   function reset() {
-    state = App.seed.build();
-    persist(); emit();
+    var p = (App.api && App.api.loadState) ? App.api.loadState() : Promise.resolve(App.seed.build());
+    return p.then(function (obj) { state = obj; persist(); emit(); return obj; });
   }
 
   /* ---- pub/sub ---- */
@@ -472,7 +479,7 @@ App.store = (function () {
   function ROLE_LABEL(role) { return (state.roles[role] || {}).label || role; }
 
   return {
-    load: load, get: get, getSession: getSession, setSession: setSession,
+    load: load, hydrate: hydrate, get: get, getSession: getSession, setSession: setSession,
     subscribe: subscribe, emit: emit, commit: commit, reset: reset,
     user: user, currentUser: currentUser, center: center, dept: dept, source: source, org: org,
     campaign: campaign, contact: contact, donorByContact: donorByContact, yatriByContact: yatriByContact,

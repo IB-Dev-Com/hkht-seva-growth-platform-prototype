@@ -1,0 +1,122 @@
+[
+  {
+    "id": "U-MUKUND",
+    "name": "Mukund Prabhu",
+    "role": "leadership",
+    "dept": "DON",
+    "center": "HYD",
+    "email": "mukund@hkmhyderabad.org"
+  },
+  {
+    "id": "U-HEM",
+    "name": "Hemchand Das",
+    "role": "workflow_manager",
+    "dept": "MKT",
+    "center": "HYD",
+    "email": "hemchand@hkmhyderabad.org"
+  },
+  {
+    "id": "U-SACHI",
+    "name": "Sachi Prabhu",
+    "role": "data_custodian",
+    "dept": "CRM",
+    "center": "HYD",
+    "email": "sachi@hkmhyderabad.org"
+  },
+  {
+    "id": "U-VENKAT",
+    "name": "Venkat Rao",
+    "role": "consent_custodian",
+    "dept": "CRM",
+    "center": "HYD",
+    "email": "venkat@hkmhyderabad.org"
+  },
+  {
+    "id": "U-DEEPAK",
+    "name": "Deepak Sharma",
+    "role": "voice_ops",
+    "dept": "VOX",
+    "center": "HYD",
+    "email": "deepak@hkmhyderabad.org"
+  },
+  {
+    "id": "U-LAKSHMI",
+    "name": "Lakshmi Iyer",
+    "role": "supervisor",
+    "dept": "VOX",
+    "center": "HYD",
+    "email": "lakshmi@hkmhyderabad.org"
+  },
+  {
+    "id": "U-ANAND",
+    "name": "Anand Krishna",
+    "role": "telecaller",
+    "dept": "VOX",
+    "center": "HYD",
+    "email": "anand@hkmhyderabad.org"
+  },
+  {
+    "id": "U-PRIYA",
+    "name": "Priya Nair",
+    "role": "telecaller",
+    "dept": "VOX",
+    "center": "SEC",
+    "email": "priya@hkmhyderabad.org"
+  },
+  {
+    "id": "U-ROHIT",
+    "name": "Rohit Verma",
+    "role": "marketer",
+    "dept": "MKT",
+    "center": "HYD",
+    "email": "rohit@hkmhyderabad.org"
+  },
+  {
+    "id": "U-MEERA",
+    "name": "Meera Desai",
+    "role": "content_reviewer",
+    "dept": "MKT",
+    "center": "HYD",
+    "email": "meera@hkmhyderabad.org"
+  },
+  {
+    "id": "U-GOPAL",
+    "name": "Gopal Das",
+    "role": "donor_approver",
+    "dept": "DON",
+    "center": "HYD",
+    "email": "gopal@hkmhyderabad.org"
+  },
+  {
+    "id": "U-NANDA",
+    "name": "Nanda Kishore",
+    "role": "finance_reviewer",
+    "dept": "FIN",
+    "center": "HYD",
+    "email": "nanda@hkmhyderabad.org"
+  },
+  {
+    "id": "U-GAURANGA",
+    "name": "Gauranga Das",
+    "role": "org_admin",
+    "dept": "CRM",
+    "center": "HYD",
+    "email": "admin@hkmhyderabad.org"
+  },
+  {
+    "id": "U-PLATADMIN",
+    "name": "Bhakta Platform Admin",
+    "role": "platform_admin",
+    "dept": "CRM",
+    "center": "HYD",
+    "email": "platform@hkmhyderabad.org"
+  },
+  {
+    "id": "U-VJAADMIN",
+    "name": "Radhika Devi",
+    "role": "center_admin",
+    "dept": "CRM",
+    "center": "VJA",
+    "email": "admin@hkmvijayawada.org"
+  }
+]

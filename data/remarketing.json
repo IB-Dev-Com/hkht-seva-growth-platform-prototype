@@ -1,0 +1,62 @@
+[
+  {
+    "id": "RMK-01",
+    "name": "Lapsed Annadaan donors (>12mo)",
+    "basis": "CRM · lapsed",
+    "size": 412,
+    "estCpl": 64,
+    "estConv": 38,
+    "channel": "WhatsApp + Meta",
+    "status": "approved",
+    "vip": false,
+    "owner": "U-ROHIT"
+  },
+  {
+    "id": "RMK-02",
+    "name": "Stalled Yatra payments",
+    "basis": "Payment · partial",
+    "size": 86,
+    "estCpl": 38,
+    "estConv": 22,
+    "channel": "Call + WhatsApp",
+    "status": "active",
+    "vip": false,
+    "owner": "U-ROHIT"
+  },
+  {
+    "id": "RMK-03",
+    "name": "HNI repeat-gift lookalikes",
+    "basis": "GA4 + CRM lookalike",
+    "size": 1240,
+    "estCpl": 180,
+    "estConv": 31,
+    "channel": "Meta",
+    "status": "needs_approval",
+    "vip": true,
+    "owner": "U-ROHIT"
+  },
+  {
+    "id": "RMK-04",
+    "name": "Festival attendees → monthly giving",
+    "basis": "Event + engagement",
+    "size": 640,
+    "estCpl": 92,
+    "estConv": 44,
+    "channel": "WhatsApp",
+    "status": "active",
+    "vip": false,
+    "owner": "U-ROHIT"
+  },
+  {
+    "id": "RMK-05",
+    "name": "Gita Daan website cart-abandon",
+    "basis": "GA4 · cart",
+    "size": 158,
+    "estCpl": 41,
+    "estConv": 19,
+    "channel": "Meta + SMS",
+    "status": "draft",
+    "vip": false,
+    "owner": "U-ROHIT"
+  }
+]

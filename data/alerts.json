@@ -1,0 +1,57 @@
+[
+  {
+    "id": "ALT-01",
+    "sev": "high",
+    "kind": "budget",
+    "title": "Ad-spend cap 92% used — HKM Hyderabad · Donor Relations",
+    "detail": "June ad-spend budget at 92% with 7 days left. Projected to breach.",
+    "ts": "2026-06-23T02:00:00.000Z",
+    "centerId": "HYD",
+    "read": false,
+    "ref": "BUD-HYD-DON-ads"
+  },
+  {
+    "id": "ALT-02",
+    "sev": "high",
+    "kind": "roas",
+    "title": "ROAS below target on Gita Daan",
+    "detail": "CMP-GIT ROAS dropped to 1.4× (target 2.5×).",
+    "ts": "2026-06-22T22:00:00.000Z",
+    "centerId": "SEC",
+    "read": false,
+    "ref": "CMP-GIT"
+  },
+  {
+    "id": "ALT-03",
+    "sev": "med",
+    "kind": "dq",
+    "title": "Data quality dipped below 85 in Gachibowli",
+    "detail": "New walk-in import lowered DQ to 82.",
+    "ts": "2026-06-22T09:00:00.000Z",
+    "centerId": "GCB",
+    "read": false,
+    "ref": "IMP-2204"
+  },
+  {
+    "id": "ALT-04",
+    "sev": "med",
+    "kind": "sla",
+    "title": "3 high-priority callbacks breached SLA",
+    "detail": "Overdue hot leads in Voice Ops.",
+    "ts": "2026-06-23T03:00:00.000Z",
+    "centerId": "HYD",
+    "read": false,
+    "ref": "tasks"
+  },
+  {
+    "id": "ALT-05",
+    "sev": "low",
+    "kind": "optout",
+    "title": "WhatsApp opt-out rate ticked up",
+    "detail": "Opt-out 1.8% this week vs 1.1% baseline.",
+    "ts": "2026-06-22T05:00:00.000Z",
+    "centerId": "HYD",
+    "read": true,
+    "ref": "whatsapp"
+  }
+]

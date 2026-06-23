@@ -1,0 +1,15 @@
+[
+  {
+    "id": "ORG-HKHT",
+    "name": "Hare Krishna Heritage Trust — Hyderabad",
+    "short": "HKHT",
+    "plan": "Enterprise",
+    "primary": true
+  },
+  {
+    "id": "ORG-VJA",
+    "name": "HKM Vijayawada Society",
+    "short": "HKM-VJA",
+    "plan": "Growth"
+  }
+]

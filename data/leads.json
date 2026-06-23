@@ -1,0 +1,372 @@
+[
+  {
+    "type": "lead",
+    "id": "LEAD-100245",
+    "contactId": "CON-100245",
+    "campaignId": "CMP-J26",
+    "source": "meta_ads",
+    "status": "Contacted",
+    "createdDate": "2026-06-10T05:00:00.000Z",
+    "ownerId": "U-GOPAL"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100301",
+    "contactId": "CON-100301",
+    "campaignId": "CMP-GIT",
+    "source": "google_ads",
+    "status": "Lost",
+    "createdDate": "2026-03-10T05:00:00.000Z",
+    "ownerId": "U-SACHI"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100302",
+    "contactId": "CON-100302",
+    "campaignId": "CMP-CSR",
+    "source": "youtube",
+    "status": "Qualified",
+    "createdDate": "2026-02-28T05:00:00.000Z",
+    "ownerId": "U-SACHI"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100303",
+    "contactId": "CON-100303",
+    "campaignId": "CMP-CSR",
+    "source": "google_ads",
+    "status": "New",
+    "createdDate": "2026-06-13T05:00:00.000Z",
+    "ownerId": "U-HEM"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100304",
+    "contactId": "CON-100304",
+    "campaignId": "CMP-VRJ",
+    "source": "google_ads",
+    "status": "Qualified",
+    "createdDate": "2026-06-17T05:00:00.000Z",
+    "ownerId": "U-PRIYA"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100305",
+    "contactId": "CON-100305",
+    "campaignId": "CMP-ANN",
+    "source": "meta_ads",
+    "status": "New",
+    "createdDate": "2026-05-11T05:00:00.000Z",
+    "ownerId": "U-GOPAL"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100308",
+    "contactId": "CON-100308",
+    "campaignId": "CMP-ANN",
+    "source": "website",
+    "status": "Contacted",
+    "createdDate": "2026-05-21T05:00:00.000Z",
+    "ownerId": "U-GOPAL"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100309",
+    "contactId": "CON-100309",
+    "campaignId": "CMP-CSR",
+    "source": "google_ads",
+    "status": "Contacted",
+    "createdDate": "2026-06-22T05:00:00.000Z",
+    "ownerId": "U-GOPAL"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100312",
+    "contactId": "CON-100312",
+    "campaignId": "CMP-GIT",
+    "source": "youtube",
+    "status": "Contacted",
+    "createdDate": "2026-02-25T05:00:00.000Z",
+    "ownerId": "U-GOPAL"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100313",
+    "contactId": "CON-100313",
+    "campaignId": "CMP-J26",
+    "source": "meta_ads",
+    "status": "Qualified",
+    "createdDate": "2026-04-25T05:00:00.000Z",
+    "ownerId": "U-HEM"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100316",
+    "contactId": "CON-100316",
+    "campaignId": "CMP-ANN",
+    "source": "website",
+    "status": "Qualified",
+    "createdDate": "2026-05-20T05:00:00.000Z",
+    "ownerId": "U-SACHI"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100318",
+    "contactId": "CON-100318",
+    "campaignId": "CMP-CSR",
+    "source": "meta_ads",
+    "status": "Qualified",
+    "createdDate": "2026-04-18T05:00:00.000Z",
+    "ownerId": "U-ANAND"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100319",
+    "contactId": "CON-100319",
+    "campaignId": "CMP-GIT",
+    "source": "google_ads",
+    "status": "Converted",
+    "createdDate": "2026-04-08T05:00:00.000Z",
+    "ownerId": "U-GOPAL"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100320",
+    "contactId": "CON-100320",
+    "campaignId": "CMP-CSR",
+    "source": "google_ads",
+    "status": "New",
+    "createdDate": "2026-03-22T05:00:00.000Z",
+    "ownerId": "U-HEM"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100324",
+    "contactId": "CON-100324",
+    "campaignId": "CMP-CSR",
+    "source": "meta_ads",
+    "status": "Contacted",
+    "createdDate": "2026-02-24T05:00:00.000Z",
+    "ownerId": "U-GOPAL"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100325",
+    "contactId": "CON-100325",
+    "campaignId": "CMP-ANN",
+    "source": "helloleads",
+    "status": "Contacted",
+    "createdDate": "2026-04-25T05:00:00.000Z",
+    "ownerId": "U-HEM"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100327",
+    "contactId": "CON-100327",
+    "campaignId": "CMP-ANN",
+    "source": "meta_ads",
+    "status": "Lost",
+    "createdDate": "2026-04-16T05:00:00.000Z",
+    "ownerId": "U-ANAND"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100328",
+    "contactId": "CON-100328",
+    "campaignId": "CMP-ANN",
+    "source": "meta_ads",
+    "status": "Qualified",
+    "createdDate": "2026-05-05T05:00:00.000Z",
+    "ownerId": "U-ANAND"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100330",
+    "contactId": "CON-100330",
+    "campaignId": "CMP-J26",
+    "source": "google_ads",
+    "status": "Contacted",
+    "createdDate": "2026-03-14T05:00:00.000Z",
+    "ownerId": "U-PRIYA"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100334",
+    "contactId": "CON-100334",
+    "campaignId": "CMP-J26",
+    "source": "google_ads",
+    "status": "New",
+    "createdDate": "2026-04-18T05:00:00.000Z",
+    "ownerId": "U-SACHI"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100335",
+    "contactId": "CON-100335",
+    "campaignId": "CMP-ANN",
+    "source": "meta_ads",
+    "status": "Lost",
+    "createdDate": "2026-05-22T05:00:00.000Z",
+    "ownerId": "U-PRIYA"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100338",
+    "contactId": "CON-100338",
+    "campaignId": "CMP-CSR",
+    "source": "website",
+    "status": "Converted",
+    "createdDate": "2026-03-31T05:00:00.000Z",
+    "ownerId": "U-ANAND"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100339",
+    "contactId": "CON-100339",
+    "campaignId": "CMP-VRJ",
+    "source": "meta_ads",
+    "status": "Contacted",
+    "createdDate": "2026-04-28T05:00:00.000Z",
+    "ownerId": "U-ANAND"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100341",
+    "contactId": "CON-100341",
+    "campaignId": "CMP-VRJ",
+    "source": "youtube",
+    "status": "Contacted",
+    "createdDate": "2026-05-21T05:00:00.000Z",
+    "ownerId": "U-HEM"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100342",
+    "contactId": "CON-100342",
+    "campaignId": "CMP-GIT",
+    "source": "website",
+    "status": "Qualified",
+    "createdDate": "2026-03-21T05:00:00.000Z",
+    "ownerId": "U-ANAND"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100346",
+    "contactId": "CON-100346",
+    "campaignId": "CMP-CSR",
+    "source": "website",
+    "status": "Converted",
+    "createdDate": "2026-04-14T05:00:00.000Z",
+    "ownerId": "U-GOPAL"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100347",
+    "contactId": "CON-100347",
+    "campaignId": "CMP-ANN",
+    "source": "google_ads",
+    "status": "Converted",
+    "createdDate": "2026-05-20T05:00:00.000Z",
+    "ownerId": "U-HEM"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100348",
+    "contactId": "CON-100348",
+    "campaignId": "CMP-GIT",
+    "source": "google_ads",
+    "status": "New",
+    "createdDate": "2026-03-14T05:00:00.000Z",
+    "ownerId": "U-SACHI"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100349",
+    "contactId": "CON-100349",
+    "campaignId": "CMP-ANN",
+    "source": "youtube",
+    "status": "Contacted",
+    "createdDate": "2026-03-30T05:00:00.000Z",
+    "ownerId": "U-ANAND"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100350",
+    "contactId": "CON-100350",
+    "campaignId": "CMP-VRJ",
+    "source": "meta_ads",
+    "status": "Contacted",
+    "createdDate": "2026-05-17T05:00:00.000Z",
+    "ownerId": "U-HEM"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100352",
+    "contactId": "CON-100352",
+    "campaignId": "CMP-J26",
+    "source": "helloleads",
+    "status": "New",
+    "createdDate": "2026-06-12T05:00:00.000Z",
+    "ownerId": "U-ANAND"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100353",
+    "contactId": "CON-100353",
+    "campaignId": "CMP-CSR",
+    "source": "meta_ads",
+    "status": "Qualified",
+    "createdDate": "2026-06-06T05:00:00.000Z",
+    "ownerId": "U-HEM"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100354",
+    "contactId": "CON-100354",
+    "campaignId": "CMP-ANN",
+    "source": "meta_ads",
+    "status": "Qualified",
+    "createdDate": "2026-04-19T05:00:00.000Z",
+    "ownerId": "U-SACHI"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100356",
+    "contactId": "CON-100356",
+    "campaignId": "CMP-VRJ",
+    "source": "youtube",
+    "status": "Contacted",
+    "createdDate": "2026-05-12T05:00:00.000Z",
+    "ownerId": "U-GOPAL"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100357",
+    "contactId": "CON-100357",
+    "campaignId": "CMP-GIT",
+    "source": "website",
+    "status": "Qualified",
+    "createdDate": "2026-03-15T05:00:00.000Z",
+    "ownerId": "U-GOPAL"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100360",
+    "contactId": "CON-100360",
+    "campaignId": "CMP-VRJ",
+    "source": "meta_ads",
+    "status": "Qualified",
+    "createdDate": "2026-06-02T05:00:00.000Z",
+    "ownerId": "U-GOPAL"
+  },
+  {
+    "type": "lead",
+    "id": "LEAD-100362",
+    "contactId": "CON-100362",
+    "campaignId": "CMP-CSR",
+    "source": "google_ads",
+    "status": "Contacted",
+    "createdDate": "2026-06-04T05:00:00.000Z",
+    "ownerId": "U-GOPAL"
+  }
+]

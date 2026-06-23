@@ -1,0 +1,288 @@
+{
+  "generatedAt": "2026-06-23T16:03:35.570Z",
+  "version": "3.0",
+  "tables": [
+    {
+      "key": "agentStatus",
+      "file": "agentStatus.json",
+      "type": "array",
+      "count": 3
+    },
+    {
+      "key": "aiAgents",
+      "file": "aiAgents.json",
+      "type": "array",
+      "count": 12
+    },
+    {
+      "key": "alerts",
+      "file": "alerts.json",
+      "type": "array",
+      "count": 5
+    },
+    {
+      "key": "apiRegistry",
+      "file": "apiRegistry.json",
+      "type": "array",
+      "count": 12
+    },
+    {
+      "key": "approvals",
+      "file": "approvals.json",
+      "type": "array",
+      "count": 8
+    },
+    {
+      "key": "audit",
+      "file": "audit.json",
+      "type": "array",
+      "count": 10
+    },
+    {
+      "key": "budgets",
+      "file": "budgets.json",
+      "type": "array",
+      "count": 55
+    },
+    {
+      "key": "calls",
+      "file": "calls.json",
+      "type": "array",
+      "count": 47
+    },
+    {
+      "key": "campaignDrafts",
+      "file": "campaignDrafts.json",
+      "type": "array",
+      "count": 0
+    },
+    {
+      "key": "campaigns",
+      "file": "campaigns.json",
+      "type": "array",
+      "count": 7
+    },
+    {
+      "key": "centers",
+      "file": "centers.json",
+      "type": "array",
+      "count": 4
+    },
+    {
+      "key": "contacts",
+      "file": "contacts.json",
+      "type": "array",
+      "count": 64
+    },
+    {
+      "key": "content",
+      "file": "content.json",
+      "type": "array",
+      "count": 3
+    },
+    {
+      "key": "continuity",
+      "file": "continuity.json",
+      "type": "object",
+      "count": 2
+    },
+    {
+      "key": "departments",
+      "file": "departments.json",
+      "type": "array",
+      "count": 6
+    },
+    {
+      "key": "donors",
+      "file": "donors.json",
+      "type": "array",
+      "count": 42
+    },
+    {
+      "key": "escalations",
+      "file": "escalations.json",
+      "type": "array",
+      "count": 4
+    },
+    {
+      "key": "imports",
+      "file": "imports.json",
+      "type": "array",
+      "count": 4
+    },
+    {
+      "key": "kcke",
+      "file": "kcke.json",
+      "type": "object",
+      "count": 2
+    },
+    {
+      "key": "landingPages",
+      "file": "landingPages.json",
+      "type": "array",
+      "count": 4
+    },
+    {
+      "key": "leads",
+      "file": "leads.json",
+      "type": "array",
+      "count": 37
+    },
+    {
+      "key": "learnings",
+      "file": "learnings.json",
+      "type": "array",
+      "count": 3
+    },
+    {
+      "key": "ledger",
+      "file": "ledger.json",
+      "type": "array",
+      "count": 171
+    },
+    {
+      "key": "merges",
+      "file": "merges.json",
+      "type": "array",
+      "count": 7
+    },
+    {
+      "key": "meta",
+      "file": "meta.json",
+      "type": "object",
+      "count": 2
+    },
+    {
+      "key": "notifications",
+      "file": "notifications.json",
+      "type": "array",
+      "count": 5
+    },
+    {
+      "key": "orgs",
+      "file": "orgs.json",
+      "type": "array",
+      "count": 2
+    },
+    {
+      "key": "propensity",
+      "file": "propensity.json",
+      "type": "array",
+      "count": 24
+    },
+    {
+      "key": "rateCard",
+      "file": "rateCard.json",
+      "type": "array",
+      "count": 6
+    },
+    {
+      "key": "relationships",
+      "file": "relationships.json",
+      "type": "array",
+      "count": 19
+    },
+    {
+      "key": "remarketing",
+      "file": "remarketing.json",
+      "type": "array",
+      "count": 5
+    },
+    {
+      "key": "reworks",
+      "file": "reworks.json",
+      "type": "array",
+      "count": 0
+    },
+    {
+      "key": "roles",
+      "file": "roles.json",
+      "type": "object",
+      "count": 14
+    },
+    {
+      "key": "savedViews",
+      "file": "savedViews.json",
+      "type": "array",
+      "count": 0
+    },
+    {
+      "key": "scripts",
+      "file": "scripts.json",
+      "type": "array",
+      "count": 5
+    },
+    {
+      "key": "segments",
+      "file": "segments.json",
+      "type": "array",
+      "count": 6
+    },
+    {
+      "key": "sources",
+      "file": "sources.json",
+      "type": "array",
+      "count": 9
+    },
+    {
+      "key": "suppression",
+      "file": "suppression.json",
+      "type": "array",
+      "count": 11
+    },
+    {
+      "key": "syncJobs",
+      "file": "syncJobs.json",
+      "type": "array",
+      "count": 14
+    },
+    {
+      "key": "targets",
+      "file": "targets.json",
+      "type": "array",
+      "count": 4
+    },
+    {
+      "key": "tasks",
+      "file": "tasks.json",
+      "type": "array",
+      "count": 12
+    },
+    {
+      "key": "triggers",
+      "file": "triggers.json",
+      "type": "array",
+      "count": 6
+    },
+    {
+      "key": "usage",
+      "file": "usage.json",
+      "type": "object",
+      "count": 4
+    },
+    {
+      "key": "users",
+      "file": "users.json",
+      "type": "array",
+      "count": 15
+    },
+    {
+      "key": "waTemplates",
+      "file": "waTemplates.json",
+      "type": "array",
+      "count": 5
+    },
+    {
+      "key": "whatsapp",
+      "file": "whatsapp.json",
+      "type": "array",
+      "count": 22
+    },
+    {
+      "key": "yatris",
+      "file": "yatris.json",
+      "type": "array",
+      "count": 28
+    }
+  ]
+}

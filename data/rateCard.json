@@ -1,0 +1,54 @@
+[
+  {
+    "service": "voice",
+    "name": "Twilio Voice",
+    "unit": "min",
+    "rate": 0.45,
+    "effectiveFrom": "2026-02-23T05:00:00.000Z",
+    "orgRates": {
+      "ORG-VJA": 0.52
+    }
+  },
+  {
+    "service": "whatsapp",
+    "name": "WhatsApp BSP",
+    "unit": "conv",
+    "rate": 0.88,
+    "effectiveFrom": "2026-02-23T05:00:00.000Z",
+    "orgRates": {
+      "ORG-VJA": 0.95
+    }
+  },
+  {
+    "service": "ai",
+    "name": "Gemini / Vertex AI",
+    "unit": "gen",
+    "rate": 1.2,
+    "effectiveFrom": "2026-02-23T05:00:00.000Z",
+    "orgRates": {}
+  },
+  {
+    "service": "ads",
+    "name": "Ad Spend (Google+Meta)",
+    "unit": "₹",
+    "rate": 1,
+    "effectiveFrom": "2026-02-23T05:00:00.000Z",
+    "orgRates": {}
+  },
+  {
+    "service": "sms",
+    "name": "SMS / RCS",
+    "unit": "msg",
+    "rate": 0.18,
+    "effectiveFrom": "2026-02-23T05:00:00.000Z",
+    "orgRates": {}
+  },
+  {
+    "service": "cloud",
+    "name": "Cloud Run / BigQuery",
+    "unit": "unit",
+    "rate": 0.02,
+    "effectiveFrom": "2026-02-23T05:00:00.000Z",
+    "orgRates": {}
+  }
+]

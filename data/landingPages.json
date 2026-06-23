@@ -1,0 +1,57 @@
+[
+  {
+    "id": "LP-J26",
+    "campaignId": "CMP-J26",
+    "url": "hkmhyderabad.org/janmashtami-seva",
+    "qaScore": 96,
+    "status": "live",
+    "issues": []
+  },
+  {
+    "id": "LP-VRJ",
+    "campaignId": "CMP-VRJ",
+    "url": "hkmhyderabad.org/vrindavan-yatra",
+    "qaScore": 92,
+    "status": "live",
+    "issues": [
+      {
+        "sev": "low",
+        "text": "Hero image > 400KB — compress for mobile"
+      }
+    ]
+  },
+  {
+    "id": "LP-ANN",
+    "campaignId": "CMP-ANN",
+    "url": "hkmhyderabad.org/annadaan",
+    "qaScore": 89,
+    "status": "live",
+    "issues": [
+      {
+        "sev": "med",
+        "text": "Payment gateway test mode still enabled on one path"
+      }
+    ]
+  },
+  {
+    "id": "LP-GAU",
+    "campaignId": "CMP-GAU",
+    "url": "hkmhyderabad.org/gau-seva",
+    "qaScore": 88,
+    "status": "qa",
+    "issues": [
+      {
+        "sev": "med",
+        "text": "UTM parameters not firing on form submit"
+      },
+      {
+        "sev": "low",
+        "text": "Missing 80G tax-benefit copy"
+      },
+      {
+        "sev": "high",
+        "text": "CRM lead webhook not connected — leads would not sync"
+      }
+    ]
+  }
+]

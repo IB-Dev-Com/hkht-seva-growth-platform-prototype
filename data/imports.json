@@ -1,0 +1,85 @@
+[
+  {
+    "id": "IMP-2206",
+    "fileName": "janmashtami_meta_leads_jun.csv",
+    "source": "meta_ads",
+    "total": 412,
+    "valid": 388,
+    "rejected": 9,
+    "duplicates": 15,
+    "dqScore": 91,
+    "status": "needs_approval",
+    "uploadedBy": "U-ROHIT",
+    "createdAt": "2026-06-23T02:00:00.000Z",
+    "errors": [
+      {
+        "row": 14,
+        "field": "mobile",
+        "issue": "Invalid format"
+      },
+      {
+        "row": 88,
+        "field": "source",
+        "issue": "Missing source tag"
+      },
+      {
+        "row": 203,
+        "field": "consent",
+        "issue": "No consent basis"
+      }
+    ]
+  },
+  {
+    "id": "IMP-2205",
+    "fileName": "helloleads_export_week24.csv",
+    "source": "helloleads",
+    "total": 1240,
+    "valid": 1118,
+    "rejected": 47,
+    "duplicates": 75,
+    "dqScore": 84,
+    "status": "imported",
+    "uploadedBy": "U-SACHI",
+    "createdAt": "2026-06-21T05:00:00.000Z",
+    "errors": []
+  },
+  {
+    "id": "IMP-2204",
+    "fileName": "gau_seva_walkin_cards.csv",
+    "source": "walkin",
+    "total": 96,
+    "valid": 71,
+    "rejected": 18,
+    "duplicates": 7,
+    "dqScore": 67,
+    "status": "needs_approval",
+    "uploadedBy": "U-VENKAT",
+    "createdAt": "2026-06-22T09:00:00.000Z",
+    "errors": [
+      {
+        "row": 5,
+        "field": "mobile",
+        "issue": "Missing"
+      },
+      {
+        "row": 31,
+        "field": "name",
+        "issue": "Incomplete"
+      }
+    ]
+  },
+  {
+    "id": "IMP-2203",
+    "fileName": "csr_corporate_list.csv",
+    "source": "referral",
+    "total": 38,
+    "valid": 38,
+    "rejected": 0,
+    "duplicates": 2,
+    "dqScore": 95,
+    "status": "imported",
+    "uploadedBy": "U-HEM",
+    "createdAt": "2026-06-18T05:00:00.000Z",
+    "errors": []
+  }
+]

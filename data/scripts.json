@@ -1,0 +1,104 @@
+[
+  {
+    "id": "SCR-J26-TE",
+    "name": "Janmashtami Donation — Telugu",
+    "category": "Donation / donor-sensitive",
+    "version": "v3.1",
+    "status": "production",
+    "campaignId": "CMP-J26",
+    "approverId": "U-GOPAL",
+    "approvalDate": "2026-06-11T05:00:00.000Z",
+    "language": "Telugu",
+    "outcomeCodes": [
+      "Interested",
+      "Donated",
+      "Callback",
+      "Not interested",
+      "Wrong number",
+      "Escalate"
+    ],
+    "qa": 94,
+    "opening": "Hare Krishna! I am calling from Hare Krishna Movement Hyderabad regarding the upcoming Sri Krishna Janmashtami Maha Abhishekam seva..."
+  },
+  {
+    "id": "SCR-VRJ-HI",
+    "name": "Vrindavan Yatra Enquiry — Hindi",
+    "category": "Standard info",
+    "version": "v2.0",
+    "status": "production",
+    "campaignId": "CMP-VRJ",
+    "approverId": "U-HEM",
+    "approvalDate": "2026-06-05T05:00:00.000Z",
+    "language": "Hindi",
+    "outcomeCodes": [
+      "Interested",
+      "Registered",
+      "Callback",
+      "Price concern",
+      "Not interested",
+      "Escalate"
+    ],
+    "qa": 91,
+    "opening": "Hare Krishna! Vrindavan Kartik Yatra ke baare mein aapki ruchi ke liye dhanyavaad..."
+  },
+  {
+    "id": "SCR-ANN-TE",
+    "name": "Annadaan Monthly Giving — Telugu",
+    "category": "Donation / donor-sensitive",
+    "version": "v1.4",
+    "status": "production",
+    "campaignId": "CMP-ANN",
+    "approverId": "U-GOPAL",
+    "approvalDate": "2026-06-01T05:00:00.000Z",
+    "language": "Telugu",
+    "outcomeCodes": [
+      "Interested",
+      "Donated",
+      "Callback",
+      "Not interested",
+      "Escalate"
+    ],
+    "qa": 88,
+    "opening": "Hare Krishna! Prasadam distribution seva ke liye..."
+  },
+  {
+    "id": "SCR-GAU-TE",
+    "name": "Gau Seva Appeal — Telugu",
+    "category": "Donation / donor-sensitive",
+    "version": "v0.9",
+    "status": "review",
+    "campaignId": "CMP-GAU",
+    "approverId": "U-GOPAL",
+    "approvalDate": null,
+    "language": "Telugu",
+    "outcomeCodes": [
+      "Interested",
+      "Donated",
+      "Callback",
+      "Not interested",
+      "Escalate"
+    ],
+    "qa": null,
+    "opening": "Hare Krishna! Go-shala gau-mata seva..."
+  },
+  {
+    "id": "SCR-CSR-EN",
+    "name": "CSR Corporate Outreach — English",
+    "category": "Financial / commitment",
+    "version": "v1.0",
+    "status": "draft",
+    "campaignId": "CMP-CSR",
+    "approverId": "U-NANDA",
+    "approvalDate": null,
+    "language": "English",
+    "outcomeCodes": [
+      "Interested",
+      "Meeting set",
+      "Callback",
+      "Not interested",
+      "Escalate"
+    ],
+    "qa": null,
+    "opening": "Good morning, I am reaching out from HKM Hyderabad regarding our CSR food-relief partnership..."
+  }
+]

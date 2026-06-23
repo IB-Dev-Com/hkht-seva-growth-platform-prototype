@@ -1,0 +1,52 @@
+[
+  {
+    "id": "LRN-01",
+    "campaignId": "CMP-J26",
+    "campaign": "Janmashtami 2025 (last year)",
+    "season": "Janmashtami",
+    "whatWorked": [
+      "Abhishekam sponsorship tier at ₹11,000 converted best",
+      "Telugu video creative beat static 2.3×",
+      "WhatsApp pay-link within 1h lifted conversion 40%"
+    ],
+    "whatFailed": [
+      "Generic \"donate now\" copy underperformed",
+      "YouTube spend below 2× ROAS"
+    ],
+    "recommendation": "Lead with Abhishekam tier + Telugu video; send pay-link inside 1h; cap YouTube.",
+    "reuseCount": 4,
+    "approvedBy": "U-HEM"
+  },
+  {
+    "id": "LRN-02",
+    "campaignId": "CMP-VRJ",
+    "campaign": "Vrindavan Yatra 2025",
+    "season": "Kartik",
+    "whatWorked": [
+      "Early-bird pricing urgency",
+      "Past-yatri lookalikes cheapest CPL"
+    ],
+    "whatFailed": [
+      "Late launch compressed the window"
+    ],
+    "recommendation": "Launch 4 weeks earlier; reuse past-yatri lookalikes; keep early-bird countdown.",
+    "reuseCount": 2,
+    "approvedBy": "U-HEM"
+  },
+  {
+    "id": "LRN-03",
+    "campaignId": "CMP-ANN",
+    "campaign": "Annadaan Monthly 2025",
+    "season": "Always-on",
+    "whatWorked": [
+      "Recurring-giving framing",
+      "Meal-cost equivalence (\"₹60 = 1 meal\")"
+    ],
+    "whatFailed": [
+      "SMS channel low reply"
+    ],
+    "recommendation": "Keep meal-equivalence hook; drop SMS; nurture on WhatsApp.",
+    "reuseCount": 3,
+    "approvedBy": "U-HEM"
+  }
+]

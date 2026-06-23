@@ -1,0 +1,2562 @@
+[
+  {
+    "type": "donor",
+    "id": "DNR-100245",
+    "contactId": "CON-100245",
+    "name": "Ravi Teja Gupta",
+    "tier": "HNI",
+    "totalGiven": 1568204,
+    "gifts": [
+      {
+        "id": "DON-100245-0",
+        "amount": 180094,
+        "date": "2026-03-09T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100245-1",
+        "amount": 55868,
+        "date": "2026-04-21T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100245-2",
+        "amount": 100684,
+        "date": "2025-07-03T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100245-3",
+        "amount": 114512,
+        "date": "2025-11-14T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100245-4",
+        "amount": 81118,
+        "date": "2026-05-30T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100245-5",
+        "amount": 183166,
+        "date": "2026-02-02T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100245-6",
+        "amount": 195406,
+        "date": "2025-11-10T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-J26",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100245-7",
+        "amount": 96578,
+        "date": "2025-06-24T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100245-8",
+        "amount": 49076,
+        "date": "2025-06-22T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-J26",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100245-9",
+        "amount": 191583,
+        "date": "2025-11-29T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100245-10",
+        "amount": 65624,
+        "date": "2025-11-05T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100245-11",
+        "amount": 190618,
+        "date": "2025-10-08T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100245-12",
+        "amount": 63877,
+        "date": "2025-05-27T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-GOPAL",
+    "sevaInterests": [
+      "Annadaan",
+      "Deity Seva"
+    ],
+    "lastGift": "2026-03-09T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100301",
+    "contactId": "CON-100301",
+    "name": "Ramesh Agarwal",
+    "tier": "Regular",
+    "totalGiven": 36384,
+    "gifts": [
+      {
+        "id": "DON-100301-0",
+        "amount": 2558,
+        "date": "2026-01-28T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100301-1",
+        "amount": 10089,
+        "date": "2025-12-22T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100301-2",
+        "amount": 2831,
+        "date": "2025-11-23T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100301-3",
+        "amount": 5943,
+        "date": "2025-11-26T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100301-4",
+        "amount": 5438,
+        "date": "2026-02-17T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100301-5",
+        "amount": 9525,
+        "date": "2026-04-20T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-GIT",
+        "status": "Pending receipt"
+      }
+    ],
+    "relationshipOwner": "U-SACHI",
+    "sevaInterests": [
+      "Annadaan",
+      "Deity Seva"
+    ],
+    "lastGift": "2026-01-28T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100304",
+    "contactId": "CON-100304",
+    "name": "Geetha Reddy",
+    "tier": "HNI",
+    "totalGiven": 718600,
+    "gifts": [
+      {
+        "id": "DON-100304-0",
+        "amount": 39012,
+        "date": "2025-09-25T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100304-1",
+        "amount": 28126,
+        "date": "2025-06-08T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100304-2",
+        "amount": 194714,
+        "date": "2025-12-14T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100304-3",
+        "amount": 32314,
+        "date": "2025-12-21T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100304-4",
+        "amount": 134401,
+        "date": "2025-11-26T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-VRJ",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100304-5",
+        "amount": 171090,
+        "date": "2026-01-21T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-VRJ",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100304-6",
+        "amount": 48803,
+        "date": "2025-09-03T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100304-7",
+        "amount": 25174,
+        "date": "2025-08-13T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100304-8",
+        "amount": 44966,
+        "date": "2025-10-05T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-PRIYA",
+    "sevaInterests": [
+      "Gau Seva",
+      "Yatra"
+    ],
+    "lastGift": "2025-09-25T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100305",
+    "contactId": "CON-100305",
+    "name": "Suresh Gupta",
+    "tier": "Regular",
+    "totalGiven": 27962,
+    "gifts": [
+      {
+        "id": "DON-100305-0",
+        "amount": 8263,
+        "date": "2026-03-18T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100305-1",
+        "amount": 7138,
+        "date": "2025-06-15T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100305-2",
+        "amount": 7429,
+        "date": "2026-01-12T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100305-3",
+        "amount": 5132,
+        "date": "2025-07-29T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-GOPAL",
+    "sevaInterests": [
+      "Gita Daan",
+      "Education"
+    ],
+    "lastGift": "2026-03-18T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100306",
+    "contactId": "CON-100306",
+    "name": "Mahesh Reddy",
+    "tier": "New",
+    "totalGiven": 11173,
+    "gifts": [
+      {
+        "id": "DON-100306-0",
+        "amount": 4395,
+        "date": "2025-10-25T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100306-1",
+        "amount": 571,
+        "date": "2026-05-06T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100306-2",
+        "amount": 2669,
+        "date": "2026-02-07T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100306-3",
+        "amount": 3538,
+        "date": "2026-04-13T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-HEM",
+    "sevaInterests": [
+      "Gau Seva",
+      "Deity Seva"
+    ],
+    "lastGift": "2025-10-25T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100309",
+    "contactId": "CON-100309",
+    "name": "Kavya Prasad",
+    "tier": "Regular",
+    "totalGiven": 21029,
+    "gifts": [
+      {
+        "id": "DON-100309-0",
+        "amount": 903,
+        "date": "2026-06-14T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100309-1",
+        "amount": 7300,
+        "date": "2025-09-06T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100309-2",
+        "amount": 8762,
+        "date": "2026-05-08T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-CSR",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100309-3",
+        "amount": 1034,
+        "date": "2025-09-03T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-CSR",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100309-4",
+        "amount": 3030,
+        "date": "2025-12-16T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-GOPAL",
+    "sevaInterests": [
+      "Festival",
+      "Education"
+    ],
+    "lastGift": "2026-06-14T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100310",
+    "contactId": "CON-100310",
+    "name": "Harish Gupta",
+    "tier": "Regular",
+    "totalGiven": 22647,
+    "gifts": [
+      {
+        "id": "DON-100310-0",
+        "amount": 1423,
+        "date": "2025-09-22T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100310-1",
+        "amount": 3619,
+        "date": "2025-06-07T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100310-2",
+        "amount": 10883,
+        "date": "2025-11-17T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100310-3",
+        "amount": 6722,
+        "date": "2026-05-17T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-HEM",
+    "sevaInterests": [
+      "Temple Construction",
+      "Education"
+    ],
+    "lastGift": "2025-09-22T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100312",
+    "contactId": "CON-100312",
+    "name": "Sravani Chowdary",
+    "tier": "Regular",
+    "totalGiven": 9799,
+    "gifts": [
+      {
+        "id": "DON-100312-0",
+        "amount": 9799,
+        "date": "2025-08-12T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-GOPAL",
+    "sevaInterests": [
+      "Temple Construction",
+      "Yatra"
+    ],
+    "lastGift": "2025-08-12T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100313",
+    "contactId": "CON-100313",
+    "name": "Anjali Kumar",
+    "tier": "New",
+    "totalGiven": 34528,
+    "gifts": [
+      {
+        "id": "DON-100313-0",
+        "amount": 8877,
+        "date": "2026-03-21T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100313-1",
+        "amount": 8169,
+        "date": "2025-10-09T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100313-2",
+        "amount": 7766,
+        "date": "2025-11-24T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100313-3",
+        "amount": 9716,
+        "date": "2026-03-06T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-HEM",
+    "sevaInterests": [
+      "Gita Daan",
+      "Yatra"
+    ],
+    "lastGift": "2026-03-21T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100315",
+    "contactId": "CON-100315",
+    "name": "Keerthi Varma",
+    "tier": "Regular",
+    "totalGiven": 6519,
+    "gifts": [
+      {
+        "id": "DON-100315-0",
+        "amount": 1149,
+        "date": "2026-02-27T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100315-1",
+        "amount": 2375,
+        "date": "2025-10-27T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100315-2",
+        "amount": 2995,
+        "date": "2025-07-09T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-GOPAL",
+    "sevaInterests": [
+      "Gau Seva",
+      "Yatra"
+    ],
+    "lastGift": "2026-02-27T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100316",
+    "contactId": "CON-100316",
+    "name": "Naveen Naidu",
+    "tier": "Regular",
+    "totalGiven": 14377,
+    "gifts": [
+      {
+        "id": "DON-100316-0",
+        "amount": 5558,
+        "date": "2026-01-27T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100316-1",
+        "amount": 4154,
+        "date": "2026-01-23T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100316-2",
+        "amount": 4665,
+        "date": "2026-03-22T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-SACHI",
+    "sevaInterests": [
+      "Gau Seva",
+      "Deity Seva"
+    ],
+    "lastGift": "2026-01-27T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100317",
+    "contactId": "CON-100317",
+    "name": "Rajesh Reddy",
+    "tier": "Life Patron",
+    "totalGiven": 28771,
+    "gifts": [
+      {
+        "id": "DON-100317-0",
+        "amount": 5955,
+        "date": "2025-12-24T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100317-1",
+        "amount": 3636,
+        "date": "2026-04-22T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100317-2",
+        "amount": 9384,
+        "date": "2026-04-24T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100317-3",
+        "amount": 9796,
+        "date": "2026-01-01T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-PRIYA",
+    "sevaInterests": [
+      "Festival",
+      "Deity Seva"
+    ],
+    "lastGift": "2025-12-24T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100319",
+    "contactId": "CON-100319",
+    "name": "Shilpa Shetty",
+    "tier": "Regular",
+    "totalGiven": 4093,
+    "gifts": [
+      {
+        "id": "DON-100319-0",
+        "amount": 3051,
+        "date": "2026-01-14T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100319-1",
+        "amount": 1042,
+        "date": "2025-11-20T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-GOPAL",
+    "sevaInterests": [
+      "Festival",
+      "Education"
+    ],
+    "lastGift": "2026-01-14T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100320",
+    "contactId": "CON-100320",
+    "name": "Shilpa Reddy",
+    "tier": "Life Patron",
+    "totalGiven": 26094,
+    "gifts": [
+      {
+        "id": "DON-100320-0",
+        "amount": 10024,
+        "date": "2026-01-31T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100320-1",
+        "amount": 2957,
+        "date": "2025-07-01T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100320-2",
+        "amount": 3953,
+        "date": "2026-05-28T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100320-3",
+        "amount": 9160,
+        "date": "2025-11-19T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-HEM",
+    "sevaInterests": [
+      "Festival",
+      "Yatra"
+    ],
+    "lastGift": "2026-01-31T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100321",
+    "contactId": "CON-100321",
+    "name": "Suresh Goud",
+    "tier": "HNI",
+    "totalGiven": 943017,
+    "gifts": [
+      {
+        "id": "DON-100321-0",
+        "amount": 161613,
+        "date": "2026-05-23T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100321-1",
+        "amount": 178090,
+        "date": "2026-05-07T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100321-2",
+        "amount": 57577,
+        "date": "2026-06-15T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100321-3",
+        "amount": 145536,
+        "date": "2026-05-05T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100321-4",
+        "amount": 41874,
+        "date": "2026-04-22T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100321-5",
+        "amount": 125943,
+        "date": "2026-01-23T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100321-6",
+        "amount": 157338,
+        "date": "2025-06-24T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100321-7",
+        "amount": 75046,
+        "date": "2025-10-28T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-SACHI",
+    "sevaInterests": [
+      "Temple Construction",
+      "Deity Seva"
+    ],
+    "lastGift": "2026-05-23T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100324",
+    "contactId": "CON-100324",
+    "name": "Naresh Teja",
+    "tier": "Regular",
+    "totalGiven": 3035,
+    "gifts": [
+      {
+        "id": "DON-100324-0",
+        "amount": 3035,
+        "date": "2025-11-07T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-GOPAL",
+    "sevaInterests": [
+      "Gau Seva",
+      "Yatra"
+    ],
+    "lastGift": "2025-11-07T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100325",
+    "contactId": "CON-100325",
+    "name": "Naveen Chowdary",
+    "tier": "Regular",
+    "totalGiven": 47749,
+    "gifts": [
+      {
+        "id": "DON-100325-0",
+        "amount": 8511,
+        "date": "2025-06-26T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100325-1",
+        "amount": 10513,
+        "date": "2025-08-19T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100325-2",
+        "amount": 8754,
+        "date": "2026-02-10T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100325-3",
+        "amount": 5656,
+        "date": "2025-07-01T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100325-4",
+        "amount": 6144,
+        "date": "2025-12-06T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100325-5",
+        "amount": 8171,
+        "date": "2025-05-24T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-HEM",
+    "sevaInterests": [
+      "Gau Seva",
+      "Education"
+    ],
+    "lastGift": "2025-06-26T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100327",
+    "contactId": "CON-100327",
+    "name": "Geetha Reddy",
+    "tier": "New",
+    "totalGiven": 33726,
+    "gifts": [
+      {
+        "id": "DON-100327-0",
+        "amount": 830,
+        "date": "2025-11-24T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100327-1",
+        "amount": 9767,
+        "date": "2025-07-23T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100327-2",
+        "amount": 8669,
+        "date": "2026-06-17T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100327-3",
+        "amount": 7095,
+        "date": "2026-01-15T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100327-4",
+        "amount": 7365,
+        "date": "2025-06-24T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-ANAND",
+    "sevaInterests": [
+      "Gau Seva",
+      "Education"
+    ],
+    "lastGift": "2025-11-24T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100328",
+    "contactId": "CON-100328",
+    "name": "Krishna Teja",
+    "tier": "New",
+    "totalGiven": 17543,
+    "gifts": [
+      {
+        "id": "DON-100328-0",
+        "amount": 8272,
+        "date": "2026-04-01T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100328-1",
+        "amount": 9271,
+        "date": "2026-03-18T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Pending receipt"
+      }
+    ],
+    "relationshipOwner": "U-ANAND",
+    "sevaInterests": [
+      "Festival",
+      "Deity Seva"
+    ],
+    "lastGift": "2026-04-01T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100329",
+    "contactId": "CON-100329",
+    "name": "Bhavana Sharma",
+    "tier": "Life Patron",
+    "totalGiven": 16350,
+    "gifts": [
+      {
+        "id": "DON-100329-0",
+        "amount": 1004,
+        "date": "2026-01-10T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100329-1",
+        "amount": 1204,
+        "date": "2026-02-09T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100329-2",
+        "amount": 6394,
+        "date": "2026-06-15T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100329-3",
+        "amount": 7748,
+        "date": "2025-09-18T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-HEM",
+    "sevaInterests": [
+      "Gita Daan",
+      "Education"
+    ],
+    "lastGift": "2026-01-10T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100331",
+    "contactId": "CON-100331",
+    "name": "Praveen Pillai",
+    "tier": "New",
+    "totalGiven": 30317,
+    "gifts": [
+      {
+        "id": "DON-100331-0",
+        "amount": 10830,
+        "date": "2026-04-28T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100331-1",
+        "amount": 2327,
+        "date": "2026-02-22T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100331-2",
+        "amount": 7631,
+        "date": "2026-06-06T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100331-3",
+        "amount": 9529,
+        "date": "2026-01-21T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-PRIYA",
+    "sevaInterests": [
+      "Gau Seva",
+      "Education"
+    ],
+    "lastGift": "2026-04-28T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100333",
+    "contactId": "CON-100333",
+    "name": "Krishna Gupta",
+    "tier": "CSR",
+    "totalGiven": 445243,
+    "gifts": [
+      {
+        "id": "DON-100333-0",
+        "amount": 277618,
+        "date": "2026-03-04T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100333-1",
+        "amount": 167625,
+        "date": "2025-09-04T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-ANAND",
+    "sevaInterests": [
+      "Temple Construction",
+      "Yatra"
+    ],
+    "lastGift": "2026-03-04T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100336",
+    "contactId": "CON-100336",
+    "name": "Divya Nair",
+    "tier": "New",
+    "totalGiven": 24177,
+    "gifts": [
+      {
+        "id": "DON-100336-0",
+        "amount": 3077,
+        "date": "2026-03-11T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100336-1",
+        "amount": 4100,
+        "date": "2025-08-18T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100336-2",
+        "amount": 9429,
+        "date": "2025-08-03T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100336-3",
+        "amount": 5710,
+        "date": "2025-06-19T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100336-4",
+        "amount": 1861,
+        "date": "2025-12-25T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-GOPAL",
+    "sevaInterests": [
+      "Festival",
+      "Yatra"
+    ],
+    "lastGift": "2026-03-11T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100339",
+    "contactId": "CON-100339",
+    "name": "Lakshmi Sharma",
+    "tier": "New",
+    "totalGiven": 16340,
+    "gifts": [
+      {
+        "id": "DON-100339-0",
+        "amount": 8465,
+        "date": "2026-02-13T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100339-1",
+        "amount": 2545,
+        "date": "2025-08-04T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100339-2",
+        "amount": 5330,
+        "date": "2025-07-26T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-ANAND",
+    "sevaInterests": [
+      "Annadaan",
+      "Deity Seva"
+    ],
+    "lastGift": "2026-02-13T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100341",
+    "contactId": "CON-100341",
+    "name": "Naresh Rao",
+    "tier": "New",
+    "totalGiven": 36760,
+    "gifts": [
+      {
+        "id": "DON-100341-0",
+        "amount": 8021,
+        "date": "2026-04-21T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100341-1",
+        "amount": 1899,
+        "date": "2026-05-26T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100341-2",
+        "amount": 10675,
+        "date": "2026-06-11T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100341-3",
+        "amount": 8040,
+        "date": "2026-06-09T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-VRJ",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100341-4",
+        "amount": 2976,
+        "date": "2026-05-07T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-VRJ",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100341-5",
+        "amount": 5149,
+        "date": "2025-11-11T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-HEM",
+    "sevaInterests": [
+      "Annadaan",
+      "Yatra"
+    ],
+    "lastGift": "2026-04-21T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100342",
+    "contactId": "CON-100342",
+    "name": "Madhuri Menon",
+    "tier": "Life Patron",
+    "totalGiven": 51568,
+    "gifts": [
+      {
+        "id": "DON-100342-0",
+        "amount": 9718,
+        "date": "2025-09-28T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100342-1",
+        "amount": 2323,
+        "date": "2026-01-27T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100342-2",
+        "amount": 7670,
+        "date": "2026-04-14T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100342-3",
+        "amount": 7499,
+        "date": "2025-07-04T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-GIT",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100342-4",
+        "amount": 2278,
+        "date": "2025-11-07T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100342-5",
+        "amount": 8552,
+        "date": "2025-07-06T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100342-6",
+        "amount": 7724,
+        "date": "2025-05-27T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100342-7",
+        "amount": 1549,
+        "date": "2025-05-29T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100342-8",
+        "amount": 1767,
+        "date": "2025-08-20T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100342-9",
+        "amount": 955,
+        "date": "2025-07-02T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100342-10",
+        "amount": 1533,
+        "date": "2025-11-17T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-ANAND",
+    "sevaInterests": [
+      "Annadaan",
+      "Education"
+    ],
+    "lastGift": "2025-09-28T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100344",
+    "contactId": "CON-100344",
+    "name": "Sita Iyer",
+    "tier": "HNI",
+    "totalGiven": 578121,
+    "gifts": [
+      {
+        "id": "DON-100344-0",
+        "amount": 101577,
+        "date": "2025-09-11T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100344-1",
+        "amount": 194831,
+        "date": "2025-08-25T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100344-2",
+        "amount": 189582,
+        "date": "2026-03-07T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100344-3",
+        "amount": 92131,
+        "date": "2026-05-28T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-HEM",
+    "sevaInterests": [
+      "Temple Construction",
+      "Yatra"
+    ],
+    "lastGift": "2025-09-11T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100345",
+    "contactId": "CON-100345",
+    "name": "Sita Reddy",
+    "tier": "New",
+    "totalGiven": 32056,
+    "gifts": [
+      {
+        "id": "DON-100345-0",
+        "amount": 1219,
+        "date": "2025-08-04T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100345-1",
+        "amount": 6073,
+        "date": "2026-04-08T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100345-2",
+        "amount": 7374,
+        "date": "2025-09-05T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100345-3",
+        "amount": 10555,
+        "date": "2026-05-21T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100345-4",
+        "amount": 522,
+        "date": "2025-12-21T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100345-5",
+        "amount": 6313,
+        "date": "2026-05-13T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-PRIYA",
+    "sevaInterests": [
+      "Gita Daan",
+      "Deity Seva"
+    ],
+    "lastGift": "2025-08-04T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100346",
+    "contactId": "CON-100346",
+    "name": "Sita Gupta",
+    "tier": "Regular",
+    "totalGiven": 14624,
+    "gifts": [
+      {
+        "id": "DON-100346-0",
+        "amount": 6537,
+        "date": "2025-08-01T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100346-1",
+        "amount": 3960,
+        "date": "2025-11-28T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100346-2",
+        "amount": 4127,
+        "date": "2025-08-16T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-GOPAL",
+    "sevaInterests": [
+      "Gita Daan",
+      "Yatra"
+    ],
+    "lastGift": "2025-08-01T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100347",
+    "contactId": "CON-100347",
+    "name": "Sandeep Iyer",
+    "tier": "HNI",
+    "totalGiven": 1414332,
+    "gifts": [
+      {
+        "id": "DON-100347-0",
+        "amount": 114781,
+        "date": "2025-08-30T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100347-1",
+        "amount": 114044,
+        "date": "2025-10-28T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100347-2",
+        "amount": 144116,
+        "date": "2025-09-29T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100347-3",
+        "amount": 90092,
+        "date": "2025-10-11T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100347-4",
+        "amount": 157202,
+        "date": "2026-04-09T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100347-5",
+        "amount": 179348,
+        "date": "2026-04-03T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100347-6",
+        "amount": 113945,
+        "date": "2025-07-03T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100347-7",
+        "amount": 193022,
+        "date": "2026-03-18T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100347-8",
+        "amount": 146254,
+        "date": "2026-01-23T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100347-9",
+        "amount": 161528,
+        "date": "2025-10-27T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-HEM",
+    "sevaInterests": [
+      "Festival",
+      "Yatra"
+    ],
+    "lastGift": "2025-08-30T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100348",
+    "contactId": "CON-100348",
+    "name": "Rajesh Das",
+    "tier": "CSR",
+    "totalGiven": 243748,
+    "gifts": [
+      {
+        "id": "DON-100348-0",
+        "amount": 243748,
+        "date": "2025-12-30T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-GIT",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-SACHI",
+    "sevaInterests": [
+      "Annadaan",
+      "Education"
+    ],
+    "lastGift": "2025-12-30T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100349",
+    "contactId": "CON-100349",
+    "name": "Suresh Gupta",
+    "tier": "Life Patron",
+    "totalGiven": 22677,
+    "gifts": [
+      {
+        "id": "DON-100349-0",
+        "amount": 4378,
+        "date": "2026-02-09T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100349-1",
+        "amount": 9199,
+        "date": "2025-05-21T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100349-2",
+        "amount": 4965,
+        "date": "2026-01-27T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100349-3",
+        "amount": 4135,
+        "date": "2026-03-19T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-ANAND",
+    "sevaInterests": [
+      "Gau Seva",
+      "Deity Seva"
+    ],
+    "lastGift": "2026-02-09T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100351",
+    "contactId": "CON-100351",
+    "name": "Geetha Varma",
+    "tier": "New",
+    "totalGiven": 32916,
+    "gifts": [
+      {
+        "id": "DON-100351-0",
+        "amount": 3595,
+        "date": "2026-06-15T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100351-1",
+        "amount": 953,
+        "date": "2025-12-14T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100351-2",
+        "amount": 9789,
+        "date": "2026-03-19T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100351-3",
+        "amount": 7743,
+        "date": "2025-10-07T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100351-4",
+        "amount": 3512,
+        "date": "2025-12-09T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100351-5",
+        "amount": 7324,
+        "date": "2026-01-31T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-HEM",
+    "sevaInterests": [
+      "Gau Seva",
+      "Yatra"
+    ],
+    "lastGift": "2026-06-15T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100352",
+    "contactId": "CON-100352",
+    "name": "Deepthi Shetty",
+    "tier": "HNI",
+    "totalGiven": 1718434,
+    "gifts": [
+      {
+        "id": "DON-100352-0",
+        "amount": 181300,
+        "date": "2025-06-30T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-1",
+        "amount": 197582,
+        "date": "2025-09-27T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-2",
+        "amount": 43358,
+        "date": "2025-12-14T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-3",
+        "amount": 36838,
+        "date": "2026-01-05T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-4",
+        "amount": 118598,
+        "date": "2025-11-14T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-5",
+        "amount": 143508,
+        "date": "2025-09-29T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-6",
+        "amount": 106965,
+        "date": "2025-11-28T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-7",
+        "amount": 63044,
+        "date": "2026-03-29T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-8",
+        "amount": 168132,
+        "date": "2025-10-16T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-9",
+        "amount": 95737,
+        "date": "2026-01-18T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-10",
+        "amount": 171349,
+        "date": "2025-12-28T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-11",
+        "amount": 164411,
+        "date": "2025-08-14T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-12",
+        "amount": 105929,
+        "date": "2026-03-14T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100352-13",
+        "amount": 121683,
+        "date": "2025-11-19T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-J26",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-ANAND",
+    "sevaInterests": [
+      "Temple Construction",
+      "Deity Seva"
+    ],
+    "lastGift": "2025-06-30T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100353",
+    "contactId": "CON-100353",
+    "name": "Shilpa Chowdary",
+    "tier": "HNI",
+    "totalGiven": 1280506,
+    "gifts": [
+      {
+        "id": "DON-100353-0",
+        "amount": 104898,
+        "date": "2025-06-25T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-CSR",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100353-1",
+        "amount": 191892,
+        "date": "2025-09-04T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100353-2",
+        "amount": 103930,
+        "date": "2025-09-23T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100353-3",
+        "amount": 56355,
+        "date": "2026-05-25T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100353-4",
+        "amount": 115648,
+        "date": "2025-11-25T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100353-5",
+        "amount": 186913,
+        "date": "2026-01-02T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100353-6",
+        "amount": 67519,
+        "date": "2025-11-19T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100353-7",
+        "amount": 71748,
+        "date": "2025-12-28T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100353-8",
+        "amount": 29919,
+        "date": "2026-02-12T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-CSR",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100353-9",
+        "amount": 125863,
+        "date": "2025-12-14T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100353-10",
+        "amount": 38245,
+        "date": "2026-05-02T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100353-11",
+        "amount": 154647,
+        "date": "2026-01-03T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100353-12",
+        "amount": 32929,
+        "date": "2025-07-06T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-HEM",
+    "sevaInterests": [
+      "Temple Construction",
+      "Yatra"
+    ],
+    "lastGift": "2025-06-25T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100354",
+    "contactId": "CON-100354",
+    "name": "Shilpa Shetty",
+    "tier": "Life Patron",
+    "totalGiven": 70126,
+    "gifts": [
+      {
+        "id": "DON-100354-0",
+        "amount": 1175,
+        "date": "2026-06-09T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100354-1",
+        "amount": 1835,
+        "date": "2025-06-20T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100354-2",
+        "amount": 3939,
+        "date": "2025-06-16T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100354-3",
+        "amount": 4202,
+        "date": "2026-03-07T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100354-4",
+        "amount": 5080,
+        "date": "2026-01-24T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100354-5",
+        "amount": 4375,
+        "date": "2025-12-01T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-ANN",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100354-6",
+        "amount": 4504,
+        "date": "2025-12-23T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100354-7",
+        "amount": 7720,
+        "date": "2026-05-21T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100354-8",
+        "amount": 9330,
+        "date": "2025-09-02T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100354-9",
+        "amount": 6977,
+        "date": "2025-05-31T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100354-10",
+        "amount": 3741,
+        "date": "2025-07-25T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100354-11",
+        "amount": 8051,
+        "date": "2025-08-25T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100354-12",
+        "amount": 9197,
+        "date": "2026-01-01T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-ANN",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-SACHI",
+    "sevaInterests": [
+      "Festival",
+      "Yatra"
+    ],
+    "lastGift": "2026-06-09T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100355",
+    "contactId": "CON-100355",
+    "name": "Pooja Shetty",
+    "tier": "Regular",
+    "totalGiven": 11645,
+    "gifts": [
+      {
+        "id": "DON-100355-0",
+        "amount": 7861,
+        "date": "2026-02-11T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100355-1",
+        "amount": 3784,
+        "date": "2025-12-30T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-ANAND",
+    "sevaInterests": [
+      "Temple Construction",
+      "Education"
+    ],
+    "lastGift": "2026-02-11T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100356",
+    "contactId": "CON-100356",
+    "name": "Bhavana Goud",
+    "tier": "Regular",
+    "totalGiven": 29272,
+    "gifts": [
+      {
+        "id": "DON-100356-0",
+        "amount": 8449,
+        "date": "2026-04-20T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100356-1",
+        "amount": 9193,
+        "date": "2025-09-28T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-VRJ",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100356-2",
+        "amount": 6147,
+        "date": "2025-06-14T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100356-3",
+        "amount": 5483,
+        "date": "2025-07-15T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-GOPAL",
+    "sevaInterests": [
+      "Annadaan",
+      "Deity Seva"
+    ],
+    "lastGift": "2026-04-20T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100359",
+    "contactId": "CON-100359",
+    "name": "Vijay Gupta",
+    "tier": "HNI",
+    "totalGiven": 810893,
+    "gifts": [
+      {
+        "id": "DON-100359-0",
+        "amount": 130014,
+        "date": "2025-06-18T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100359-1",
+        "amount": 94673,
+        "date": "2025-09-13T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100359-2",
+        "amount": 179517,
+        "date": "2025-12-13T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100359-3",
+        "amount": 47636,
+        "date": "2026-04-27T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100359-4",
+        "amount": 72022,
+        "date": "2025-08-30T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100359-5",
+        "amount": 145897,
+        "date": "2026-05-08T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100359-6",
+        "amount": 141134,
+        "date": "2025-07-21T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-SACHI",
+    "sevaInterests": [
+      "Annadaan",
+      "Education"
+    ],
+    "lastGift": "2025-06-18T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100360",
+    "contactId": "CON-100360",
+    "name": "Padma Teja",
+    "tier": "New",
+    "totalGiven": 33672,
+    "gifts": [
+      {
+        "id": "DON-100360-0",
+        "amount": 7577,
+        "date": "2026-02-03T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100360-1",
+        "amount": 9575,
+        "date": "2026-06-04T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100360-2",
+        "amount": 5271,
+        "date": "2025-12-27T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100360-3",
+        "amount": 2420,
+        "date": "2025-12-18T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100360-4",
+        "amount": 4891,
+        "date": "2025-08-03T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100360-5",
+        "amount": 3938,
+        "date": "2026-05-27T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-VRJ",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-GOPAL",
+    "sevaInterests": [
+      "Gau Seva",
+      "Education"
+    ],
+    "lastGift": "2026-02-03T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100361",
+    "contactId": "CON-100361",
+    "name": "Praveen Iyer",
+    "tier": "HNI",
+    "totalGiven": 712237,
+    "gifts": [
+      {
+        "id": "DON-100361-0",
+        "amount": 193434,
+        "date": "2026-01-30T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100361-1",
+        "amount": 134890,
+        "date": "2025-09-14T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100361-2",
+        "amount": 82087,
+        "date": "2026-03-20T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100361-3",
+        "amount": 158221,
+        "date": "2025-10-20T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100361-4",
+        "amount": 51399,
+        "date": "2026-02-18T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100361-5",
+        "amount": 92206,
+        "date": "2025-06-06T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": null,
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-HEM",
+    "sevaInterests": [
+      "Annadaan",
+      "Education"
+    ],
+    "lastGift": "2026-01-30T05:00:00.000Z"
+  },
+  {
+    "type": "donor",
+    "id": "DNR-100362",
+    "contactId": "CON-100362",
+    "name": "Anjali Bhat",
+    "tier": "HNI",
+    "totalGiven": 1770581,
+    "gifts": [
+      {
+        "id": "DON-100362-0",
+        "amount": 112664,
+        "date": "2025-10-02T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-CSR",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100362-1",
+        "amount": 95040,
+        "date": "2025-10-30T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100362-2",
+        "amount": 56246,
+        "date": "2025-06-07T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100362-3",
+        "amount": 105912,
+        "date": "2025-12-09T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100362-4",
+        "amount": 195942,
+        "date": "2026-04-29T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100362-5",
+        "amount": 57517,
+        "date": "2026-01-08T05:00:00.000Z",
+        "seva": "Yatra Sponsorship",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100362-6",
+        "amount": 186081,
+        "date": "2026-03-31T05:00:00.000Z",
+        "seva": "Gita Daan",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100362-7",
+        "amount": 170871,
+        "date": "2025-08-31T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100362-8",
+        "amount": 91119,
+        "date": "2026-02-21T05:00:00.000Z",
+        "seva": "Festival Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100362-9",
+        "amount": 70436,
+        "date": "2025-10-09T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-CSR",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100362-10",
+        "amount": 112698,
+        "date": "2026-04-05T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100362-11",
+        "amount": 176263,
+        "date": "2026-03-12T05:00:00.000Z",
+        "seva": "Deity Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      },
+      {
+        "id": "DON-100362-12",
+        "amount": 154510,
+        "date": "2025-07-05T05:00:00.000Z",
+        "seva": "Annadaan",
+        "campaignId": "CMP-CSR",
+        "status": "Pending receipt"
+      },
+      {
+        "id": "DON-100362-13",
+        "amount": 185282,
+        "date": "2026-04-12T05:00:00.000Z",
+        "seva": "Gau Seva",
+        "campaignId": "CMP-CSR",
+        "status": "Receipted"
+      }
+    ],
+    "relationshipOwner": "U-GOPAL",
+    "sevaInterests": [
+      "Gau Seva",
+      "Education"
+    ],
+    "lastGift": "2025-10-02T05:00:00.000Z"
+  }
+]

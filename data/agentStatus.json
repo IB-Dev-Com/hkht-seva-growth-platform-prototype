@@ -1,0 +1,26 @@
+[
+  {
+    "userId": "U-ANAND",
+    "status": "on-call",
+    "contactName": "Kavya Reddy",
+    "sinceSec": 31,
+    "callsToday": 50,
+    "talkMin": 63
+  },
+  {
+    "userId": "U-PRIYA",
+    "status": "idle",
+    "contactName": null,
+    "sinceSec": 364,
+    "callsToday": 49,
+    "talkMin": 176
+  },
+  {
+    "userId": "U-LAKSHMI",
+    "status": "on-call",
+    "contactName": "Keerthi Pillai",
+    "sinceSec": 279,
+    "callsToday": 10,
+    "talkMin": 140
+  }
+]

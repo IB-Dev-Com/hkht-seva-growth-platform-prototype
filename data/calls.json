@@ -1,0 +1,2015 @@
+[
+  {
+    "type": "call",
+    "id": "CALL-50231",
+    "contactId": "CON-100245",
+    "contactName": "Ravi Teja Gupta",
+    "campaignId": "CMP-J26",
+    "scriptId": "SCR-J26-TE",
+    "ownerId": "U-ANAND",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 69,
+    "language": "Telugu",
+    "recordingRef": "rec_call-50231.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! I am calling from Hare Krishna Movement Hyderabad about the Janmashtami Maha Abhishekam seva. Is this a good time to talk?"
+      },
+      {
+        "who": "contact",
+        "text": "Hare Krishna. Yes, please tell me."
+      },
+      {
+        "who": "agent",
+        "text": "This Janmashtami we are offering Abhishekam seva sponsorship. Many devotees are participating. Would you like to offer seva this year?"
+      },
+      {
+        "who": "contact",
+        "text": "Last year I gave for Annadaan. What is the amount for Abhishekam?"
+      },
+      {
+        "who": "agent",
+        "text": "Seva starts from ₹2,100 and there is a special Abhishekam sponsorship at ₹11,000 with prasadam and a certificate."
+      },
+      {
+        "who": "contact",
+        "text": "Okay, I would like to do the ₹11,000 Abhishekam seva. Please send me the payment link on WhatsApp."
+      },
+      {
+        "who": "agent",
+        "text": "Wonderful! Hare Krishna. I will send the secure link right away and our team will share your receipt."
+      }
+    ],
+    "intent": "Donation intent",
+    "outcome": "Donated",
+    "objection": null,
+    "leadScore": 92,
+    "confidence": 0.96,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": true,
+    "reviewed": false,
+    "createdAt": "2026-06-22T03:00:00.000Z",
+    "hero": true,
+    "outcomeKind": "donated",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50300",
+    "contactId": "CON-100325",
+    "contactName": "Naveen Chowdary",
+    "campaignId": "CMP-ANN",
+    "scriptId": "SCR-ANN-TE",
+    "ownerId": "U-ANAND",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 165,
+    "language": "Telugu",
+    "recordingRef": "rec_call-50300.mp3",
+    "transcript": [],
+    "intent": "Positive interest",
+    "outcome": "Interested",
+    "objection": "Will decide later",
+    "leadScore": 74,
+    "confidence": 0.88,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": false,
+    "createdAt": "2026-06-17T08:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "interested",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50301",
+    "contactId": "CON-100353",
+    "contactName": "Shilpa Chowdary",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-ANAND",
+    "attempt": 2,
+    "status": "No answer",
+    "duration": 0,
+    "language": "Hindi",
+    "recordingRef": null,
+    "transcript": [],
+    "intent": null,
+    "outcome": "No answer",
+    "objection": null,
+    "leadScore": null,
+    "confidence": null,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-18T09:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "noanswer",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50302",
+    "contactId": "CON-100302",
+    "contactName": "Srinivas Prasad",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-ANAND",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 50,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50302.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad regarding Vrindavan Kartik Yatra. Is this a good time?"
+      },
+      {
+        "who": "contact",
+        "text": "I am in a meeting right now, can you call me in the evening?"
+      },
+      {
+        "who": "agent",
+        "text": "Of course. What time works best?"
+      },
+      {
+        "who": "contact",
+        "text": "After 7 PM please."
+      },
+      {
+        "who": "agent",
+        "text": "Noted, I will arrange a callback after 7 PM. Hare Krishna!"
+      }
+    ],
+    "intent": "Callback requested",
+    "outcome": "Callback",
+    "objection": "Busy now",
+    "leadScore": 61,
+    "confidence": 0.93,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-14T20:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "callback",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50303",
+    "contactId": "CON-100350",
+    "contactName": "Ravi Bhat",
+    "campaignId": "CMP-VRJ",
+    "scriptId": "SCR-VRJ-HI",
+    "ownerId": "U-ANAND",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 291,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50303.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad regarding Vrindavan Kartik Yatra. Is this a good time?"
+      },
+      {
+        "who": "contact",
+        "text": "I am in a meeting right now, can you call me in the evening?"
+      },
+      {
+        "who": "agent",
+        "text": "Of course. What time works best?"
+      },
+      {
+        "who": "contact",
+        "text": "After 7 PM please."
+      },
+      {
+        "who": "agent",
+        "text": "Noted, I will arrange a callback after 7 PM. Hare Krishna!"
+      }
+    ],
+    "intent": "Callback requested",
+    "outcome": "Callback",
+    "objection": "Busy now",
+    "leadScore": 61,
+    "confidence": 0.93,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": false,
+    "createdAt": "2026-06-15T02:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "callback",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50304",
+    "contactId": "CON-100339",
+    "contactName": "Lakshmi Sharma",
+    "campaignId": "CMP-VRJ",
+    "scriptId": "SCR-VRJ-HI",
+    "ownerId": "U-PRIYA",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 71,
+    "language": "Telugu",
+    "recordingRef": "rec_call-50304.mp3",
+    "transcript": [],
+    "intent": "Positive interest",
+    "outcome": "Interested",
+    "objection": "Will decide later",
+    "leadScore": 74,
+    "confidence": 0.88,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": false,
+    "createdAt": "2026-06-18T08:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "interested",
+    "centerId": "GCB",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50305",
+    "contactId": "CON-100362",
+    "contactName": "Anjali Bhat",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 117,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50305.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad regarding Vrindavan Kartik Yatra. Is this a good time?"
+      },
+      {
+        "who": "contact",
+        "text": "I am in a meeting right now, can you call me in the evening?"
+      },
+      {
+        "who": "agent",
+        "text": "Of course. What time works best?"
+      },
+      {
+        "who": "contact",
+        "text": "After 7 PM please."
+      },
+      {
+        "who": "agent",
+        "text": "Noted, I will arrange a callback after 7 PM. Hare Krishna!"
+      }
+    ],
+    "intent": "Callback requested",
+    "outcome": "Callback",
+    "objection": "Busy now",
+    "leadScore": 61,
+    "confidence": 0.93,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-20T05:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "callback",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50306",
+    "contactId": "CON-100304",
+    "contactName": "Geetha Reddy",
+    "campaignId": "CMP-VRJ",
+    "scriptId": "SCR-VRJ-HI",
+    "ownerId": "U-PRIYA",
+    "attempt": 3,
+    "status": "Connected",
+    "duration": 269,
+    "language": "English",
+    "recordingRef": "rec_call-50306.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad about the Janmashtami seva."
+      },
+      {
+        "who": "contact",
+        "text": "Not interested, please remove my number."
+      },
+      {
+        "who": "agent",
+        "text": "I understand. I will update our records and you will not be contacted again. Hare Krishna."
+      }
+    ],
+    "intent": "Not interested",
+    "outcome": "Not interested",
+    "objection": "No interest",
+    "leadScore": 8,
+    "confidence": 0.9,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-14T08:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "notinterested",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50307",
+    "contactId": "CON-100349",
+    "contactName": "Suresh Gupta",
+    "campaignId": "CMP-ANN",
+    "scriptId": "SCR-ANN-TE",
+    "ownerId": "U-PRIYA",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 303,
+    "language": "Tamil",
+    "recordingRef": "rec_call-50307.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad regarding your recent donation enquiry."
+      },
+      {
+        "who": "contact",
+        "text": "Yes — actually I made a payment of ₹50,000 last week but I have not received my 80G receipt yet. This is the second time I am following up."
+      },
+      {
+        "who": "agent",
+        "text": "I am very sorry for the delay. This is important — let me escalate this to our donor relations team immediately so they can resolve your receipt today."
+      },
+      {
+        "who": "contact",
+        "text": "Please do. I am a regular donor and this is disappointing."
+      },
+      {
+        "who": "agent",
+        "text": "I completely understand. Our senior team will call you back within the hour with a resolution. Hare Krishna."
+      }
+    ],
+    "intent": "Service issue (receipt)",
+    "outcome": "Escalate",
+    "objection": "Receipt not received",
+    "leadScore": 80,
+    "confidence": 0.71,
+    "lowConfidence": true,
+    "escalated": true,
+    "approvalNeeded": true,
+    "reviewed": false,
+    "createdAt": "2026-06-19T07:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "escalate",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50308",
+    "contactId": "CON-100342",
+    "contactName": "Madhuri Menon",
+    "campaignId": "CMP-GIT",
+    "scriptId": "SCR-J26-TE",
+    "ownerId": "U-PRIYA",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 310,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50308.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad about the Janmashtami seva."
+      },
+      {
+        "who": "contact",
+        "text": "Not interested, please remove my number."
+      },
+      {
+        "who": "agent",
+        "text": "I understand. I will update our records and you will not be contacted again. Hare Krishna."
+      }
+    ],
+    "intent": "Not interested",
+    "outcome": "Not interested",
+    "objection": "No interest",
+    "leadScore": 8,
+    "confidence": 0.9,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": false,
+    "createdAt": "2026-06-20T08:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "notinterested",
+    "centerId": "GCB",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50309",
+    "contactId": "CON-100350",
+    "contactName": "Ravi Bhat",
+    "campaignId": "CMP-VRJ",
+    "scriptId": "SCR-VRJ-HI",
+    "ownerId": "U-PRIYA",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 143,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50309.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad about the Janmashtami seva."
+      },
+      {
+        "who": "contact",
+        "text": "Not interested, please remove my number."
+      },
+      {
+        "who": "agent",
+        "text": "I understand. I will update our records and you will not be contacted again. Hare Krishna."
+      }
+    ],
+    "intent": "Not interested",
+    "outcome": "Not interested",
+    "objection": "No interest",
+    "leadScore": 8,
+    "confidence": 0.9,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-22T04:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "notinterested",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50310",
+    "contactId": "CON-100319",
+    "contactName": "Shilpa Shetty",
+    "campaignId": "CMP-GIT",
+    "scriptId": "SCR-J26-TE",
+    "ownerId": "U-ANAND",
+    "attempt": 1,
+    "status": "Switched off",
+    "duration": 0,
+    "language": "Telugu",
+    "recordingRef": null,
+    "transcript": [],
+    "intent": null,
+    "outcome": "No answer",
+    "objection": null,
+    "leadScore": null,
+    "confidence": null,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-14T19:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "noanswer",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50311",
+    "contactId": "CON-100318",
+    "contactName": "Harish Bhat",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-PRIYA",
+    "attempt": 3,
+    "status": "Busy",
+    "duration": 0,
+    "language": "Hindi",
+    "recordingRef": null,
+    "transcript": [],
+    "intent": null,
+    "outcome": "No answer",
+    "objection": null,
+    "leadScore": null,
+    "confidence": null,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-14T00:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "noanswer",
+    "centerId": "GCB",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50312",
+    "contactId": "CON-100302",
+    "contactName": "Srinivas Prasad",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-PRIYA",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 198,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50312.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! I am calling from Hare Krishna Movement Hyderabad about the Janmashtami Maha Abhishekam seva. Is this a good time to talk?"
+      },
+      {
+        "who": "contact",
+        "text": "Hare Krishna. Yes, please tell me."
+      },
+      {
+        "who": "agent",
+        "text": "This Janmashtami we are offering Abhishekam seva sponsorship. Many devotees are participating. Would you like to offer seva this year?"
+      },
+      {
+        "who": "contact",
+        "text": "Last year I gave for Annadaan. What is the amount for Abhishekam?"
+      },
+      {
+        "who": "agent",
+        "text": "Seva starts from ₹2,100 and there is a special Abhishekam sponsorship at ₹11,000 with prasadam and a certificate."
+      },
+      {
+        "who": "contact",
+        "text": "Okay, I would like to do the ₹11,000 Abhishekam seva. Please send me the payment link on WhatsApp."
+      },
+      {
+        "who": "agent",
+        "text": "Wonderful! Hare Krishna. I will send the secure link right away and our team will share your receipt."
+      }
+    ],
+    "intent": "Donation intent",
+    "outcome": "Donated",
+    "objection": null,
+    "leadScore": 92,
+    "confidence": 0.96,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": null,
+    "reviewed": true,
+    "createdAt": "2026-06-17T08:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "donated",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50313",
+    "contactId": "CON-100350",
+    "contactName": "Ravi Bhat",
+    "campaignId": "CMP-VRJ",
+    "scriptId": "SCR-VRJ-HI",
+    "ownerId": "U-PRIYA",
+    "attempt": 3,
+    "status": "Connected",
+    "duration": 254,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50313.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad regarding Vrindavan Kartik Yatra. Is this a good time?"
+      },
+      {
+        "who": "contact",
+        "text": "I am in a meeting right now, can you call me in the evening?"
+      },
+      {
+        "who": "agent",
+        "text": "Of course. What time works best?"
+      },
+      {
+        "who": "contact",
+        "text": "After 7 PM please."
+      },
+      {
+        "who": "agent",
+        "text": "Noted, I will arrange a callback after 7 PM. Hare Krishna!"
+      }
+    ],
+    "intent": "Callback requested",
+    "outcome": "Callback",
+    "objection": "Busy now",
+    "leadScore": 61,
+    "confidence": 0.93,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-14T05:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "callback",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50314",
+    "contactId": "CON-100320",
+    "contactName": "Shilpa Reddy",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 238,
+    "language": "Telugu",
+    "recordingRef": "rec_call-50314.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! I am calling from Hare Krishna Movement Hyderabad about the Janmashtami Maha Abhishekam seva. Is this a good time to talk?"
+      },
+      {
+        "who": "contact",
+        "text": "Hare Krishna. Yes, please tell me."
+      },
+      {
+        "who": "agent",
+        "text": "This Janmashtami we are offering Abhishekam seva sponsorship. Many devotees are participating. Would you like to offer seva this year?"
+      },
+      {
+        "who": "contact",
+        "text": "Last year I gave for Annadaan. What is the amount for Abhishekam?"
+      },
+      {
+        "who": "agent",
+        "text": "Seva starts from ₹2,100 and there is a special Abhishekam sponsorship at ₹11,000 with prasadam and a certificate."
+      },
+      {
+        "who": "contact",
+        "text": "Okay, I would like to do the ₹11,000 Abhishekam seva. Please send me the payment link on WhatsApp."
+      },
+      {
+        "who": "agent",
+        "text": "Wonderful! Hare Krishna. I will send the secure link right away and our team will share your receipt."
+      }
+    ],
+    "intent": "Donation intent",
+    "outcome": "Donated",
+    "objection": null,
+    "leadScore": 92,
+    "confidence": 0.96,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-21T00:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "donated",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50315",
+    "contactId": "CON-100302",
+    "contactName": "Srinivas Prasad",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 3,
+    "status": "Connected",
+    "duration": 293,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50315.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad about the Janmashtami seva."
+      },
+      {
+        "who": "contact",
+        "text": "Not interested, please remove my number."
+      },
+      {
+        "who": "agent",
+        "text": "I understand. I will update our records and you will not be contacted again. Hare Krishna."
+      }
+    ],
+    "intent": "Not interested",
+    "outcome": "Not interested",
+    "objection": "No interest",
+    "leadScore": 8,
+    "confidence": 0.9,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-13T14:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "notinterested",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50316",
+    "contactId": "CON-100316",
+    "contactName": "Naveen Naidu",
+    "campaignId": "CMP-ANN",
+    "scriptId": "SCR-ANN-TE",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 255,
+    "language": "Telugu",
+    "recordingRef": "rec_call-50316.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad regarding your recent donation enquiry."
+      },
+      {
+        "who": "contact",
+        "text": "Yes — actually I made a payment of ₹50,000 last week but I have not received my 80G receipt yet. This is the second time I am following up."
+      },
+      {
+        "who": "agent",
+        "text": "I am very sorry for the delay. This is important — let me escalate this to our donor relations team immediately so they can resolve your receipt today."
+      },
+      {
+        "who": "contact",
+        "text": "Please do. I am a regular donor and this is disappointing."
+      },
+      {
+        "who": "agent",
+        "text": "I completely understand. Our senior team will call you back within the hour with a resolution. Hare Krishna."
+      }
+    ],
+    "intent": "Service issue (receipt)",
+    "outcome": "Escalate",
+    "objection": "Receipt not received",
+    "leadScore": 80,
+    "confidence": 0.71,
+    "lowConfidence": true,
+    "escalated": true,
+    "approvalNeeded": true,
+    "reviewed": false,
+    "createdAt": "2026-06-16T05:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "escalate",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50317",
+    "contactId": "CON-100362",
+    "contactName": "Anjali Bhat",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-PRIYA",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 259,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50317.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad regarding your recent donation enquiry."
+      },
+      {
+        "who": "contact",
+        "text": "Yes — actually I made a payment of ₹50,000 last week but I have not received my 80G receipt yet. This is the second time I am following up."
+      },
+      {
+        "who": "agent",
+        "text": "I am very sorry for the delay. This is important — let me escalate this to our donor relations team immediately so they can resolve your receipt today."
+      },
+      {
+        "who": "contact",
+        "text": "Please do. I am a regular donor and this is disappointing."
+      },
+      {
+        "who": "agent",
+        "text": "I completely understand. Our senior team will call you back within the hour with a resolution. Hare Krishna."
+      }
+    ],
+    "intent": "Service issue (receipt)",
+    "outcome": "Escalate",
+    "objection": "Receipt not received",
+    "leadScore": 80,
+    "confidence": 0.71,
+    "lowConfidence": true,
+    "escalated": true,
+    "approvalNeeded": true,
+    "reviewed": false,
+    "createdAt": "2026-06-19T07:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "escalate",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50318",
+    "contactId": "CON-100362",
+    "contactName": "Anjali Bhat",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 3,
+    "status": "Connected",
+    "duration": 293,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50318.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad about the Janmashtami seva."
+      },
+      {
+        "who": "contact",
+        "text": "Not interested, please remove my number."
+      },
+      {
+        "who": "agent",
+        "text": "I understand. I will update our records and you will not be contacted again. Hare Krishna."
+      }
+    ],
+    "intent": "Not interested",
+    "outcome": "Not interested",
+    "objection": "No interest",
+    "leadScore": 8,
+    "confidence": 0.9,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-22T13:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "notinterested",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50319",
+    "contactId": "CON-100346",
+    "contactName": "Sita Gupta",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 2,
+    "status": "Switched off",
+    "duration": 0,
+    "language": "Tamil",
+    "recordingRef": null,
+    "transcript": [],
+    "intent": null,
+    "outcome": "No answer",
+    "objection": null,
+    "leadScore": null,
+    "confidence": null,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-17T01:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "noanswer",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50320",
+    "contactId": "CON-100348",
+    "contactName": "Rajesh Das",
+    "campaignId": "CMP-GIT",
+    "scriptId": "SCR-J26-TE",
+    "ownerId": "U-ANAND",
+    "attempt": 4,
+    "status": "Switched off",
+    "duration": 0,
+    "language": "Telugu",
+    "recordingRef": null,
+    "transcript": [],
+    "intent": null,
+    "outcome": "No answer",
+    "objection": null,
+    "leadScore": null,
+    "confidence": null,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-22T03:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "noanswer",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50321",
+    "contactId": "CON-100312",
+    "contactName": "Sravani Chowdary",
+    "campaignId": "CMP-GIT",
+    "scriptId": "SCR-J26-TE",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 125,
+    "language": "Kannada",
+    "recordingRef": "rec_call-50321.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! I am calling from Hare Krishna Movement Hyderabad about the Janmashtami Maha Abhishekam seva. Is this a good time to talk?"
+      },
+      {
+        "who": "contact",
+        "text": "Hare Krishna. Yes, please tell me."
+      },
+      {
+        "who": "agent",
+        "text": "This Janmashtami we are offering Abhishekam seva sponsorship. Many devotees are participating. Would you like to offer seva this year?"
+      },
+      {
+        "who": "contact",
+        "text": "Last year I gave for Annadaan. What is the amount for Abhishekam?"
+      },
+      {
+        "who": "agent",
+        "text": "Seva starts from ₹2,100 and there is a special Abhishekam sponsorship at ₹11,000 with prasadam and a certificate."
+      },
+      {
+        "who": "contact",
+        "text": "Okay, I would like to do the ₹11,000 Abhishekam seva. Please send me the payment link on WhatsApp."
+      },
+      {
+        "who": "agent",
+        "text": "Wonderful! Hare Krishna. I will send the secure link right away and our team will share your receipt."
+      }
+    ],
+    "intent": "Donation intent",
+    "outcome": "Donated",
+    "objection": null,
+    "leadScore": 92,
+    "confidence": 0.96,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-17T14:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "donated",
+    "centerId": "GCB",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50322",
+    "contactId": "CON-100346",
+    "contactName": "Sita Gupta",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-PRIYA",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 89,
+    "language": "Tamil",
+    "recordingRef": "rec_call-50322.mp3",
+    "transcript": [],
+    "intent": "Positive interest",
+    "outcome": "Interested",
+    "objection": "Will decide later",
+    "leadScore": 74,
+    "confidence": 0.88,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": false,
+    "createdAt": "2026-06-17T19:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "interested",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50323",
+    "contactId": "CON-100346",
+    "contactName": "Sita Gupta",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-ANAND",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 225,
+    "language": "Tamil",
+    "recordingRef": "rec_call-50323.mp3",
+    "transcript": [],
+    "intent": "Positive interest",
+    "outcome": "Interested",
+    "objection": "Will decide later",
+    "leadScore": 74,
+    "confidence": 0.88,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-14T15:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "interested",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50324",
+    "contactId": "CON-100325",
+    "contactName": "Naveen Chowdary",
+    "campaignId": "CMP-ANN",
+    "scriptId": "SCR-ANN-TE",
+    "ownerId": "U-ANAND",
+    "attempt": 3,
+    "status": "Connected",
+    "duration": 300,
+    "language": "Telugu",
+    "recordingRef": "rec_call-50324.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad about the Janmashtami seva."
+      },
+      {
+        "who": "contact",
+        "text": "Not interested, please remove my number."
+      },
+      {
+        "who": "agent",
+        "text": "I understand. I will update our records and you will not be contacted again. Hare Krishna."
+      }
+    ],
+    "intent": "Not interested",
+    "outcome": "Not interested",
+    "objection": "No interest",
+    "leadScore": 8,
+    "confidence": 0.9,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-22T14:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "notinterested",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50325",
+    "contactId": "CON-100313",
+    "contactName": "Anjali Kumar",
+    "campaignId": "CMP-J26",
+    "scriptId": "SCR-J26-TE",
+    "ownerId": "U-ANAND",
+    "attempt": 3,
+    "status": "Connected",
+    "duration": 121,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50325.mp3",
+    "transcript": [],
+    "intent": "Positive interest",
+    "outcome": "Interested",
+    "objection": "Will decide later",
+    "leadScore": 74,
+    "confidence": 0.88,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": false,
+    "createdAt": "2026-06-18T18:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "interested",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50326",
+    "contactId": "CON-100338",
+    "contactName": "Mahesh Shetty",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-ANAND",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 285,
+    "language": "English",
+    "recordingRef": "rec_call-50326.mp3",
+    "transcript": [],
+    "intent": "Positive interest",
+    "outcome": "Interested",
+    "objection": "Will decide later",
+    "leadScore": 74,
+    "confidence": 0.88,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": false,
+    "createdAt": "2026-06-22T01:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "interested",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50327",
+    "contactId": "CON-100346",
+    "contactName": "Sita Gupta",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-ANAND",
+    "attempt": 3,
+    "status": "Connected",
+    "duration": 298,
+    "language": "Tamil",
+    "recordingRef": "rec_call-50327.mp3",
+    "transcript": [],
+    "intent": "Positive interest",
+    "outcome": "Interested",
+    "objection": "Will decide later",
+    "leadScore": 74,
+    "confidence": 0.88,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-20T15:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "interested",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50328",
+    "contactId": "CON-100339",
+    "contactName": "Lakshmi Sharma",
+    "campaignId": "CMP-VRJ",
+    "scriptId": "SCR-VRJ-HI",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 74,
+    "language": "Telugu",
+    "recordingRef": "rec_call-50328.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! I am calling from Hare Krishna Movement Hyderabad about the Janmashtami Maha Abhishekam seva. Is this a good time to talk?"
+      },
+      {
+        "who": "contact",
+        "text": "Hare Krishna. Yes, please tell me."
+      },
+      {
+        "who": "agent",
+        "text": "This Janmashtami we are offering Abhishekam seva sponsorship. Many devotees are participating. Would you like to offer seva this year?"
+      },
+      {
+        "who": "contact",
+        "text": "Last year I gave for Annadaan. What is the amount for Abhishekam?"
+      },
+      {
+        "who": "agent",
+        "text": "Seva starts from ₹2,100 and there is a special Abhishekam sponsorship at ₹11,000 with prasadam and a certificate."
+      },
+      {
+        "who": "contact",
+        "text": "Okay, I would like to do the ₹11,000 Abhishekam seva. Please send me the payment link on WhatsApp."
+      },
+      {
+        "who": "agent",
+        "text": "Wonderful! Hare Krishna. I will send the secure link right away and our team will share your receipt."
+      }
+    ],
+    "intent": "Donation intent",
+    "outcome": "Donated",
+    "objection": null,
+    "leadScore": 92,
+    "confidence": 0.96,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-15T08:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "donated",
+    "centerId": "GCB",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50329",
+    "contactId": "CON-100313",
+    "contactName": "Anjali Kumar",
+    "campaignId": "CMP-J26",
+    "scriptId": "SCR-J26-TE",
+    "ownerId": "U-PRIYA",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 279,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50329.mp3",
+    "transcript": [],
+    "intent": "Positive interest",
+    "outcome": "Interested",
+    "objection": "Will decide later",
+    "leadScore": 74,
+    "confidence": 0.88,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": false,
+    "createdAt": "2026-06-23T01:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "interested",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50330",
+    "contactId": "CON-100350",
+    "contactName": "Ravi Bhat",
+    "campaignId": "CMP-VRJ",
+    "scriptId": "SCR-VRJ-HI",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 125,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50330.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad regarding your recent donation enquiry."
+      },
+      {
+        "who": "contact",
+        "text": "Yes — actually I made a payment of ₹50,000 last week but I have not received my 80G receipt yet. This is the second time I am following up."
+      },
+      {
+        "who": "agent",
+        "text": "I am very sorry for the delay. This is important — let me escalate this to our donor relations team immediately so they can resolve your receipt today."
+      },
+      {
+        "who": "contact",
+        "text": "Please do. I am a regular donor and this is disappointing."
+      },
+      {
+        "who": "agent",
+        "text": "I completely understand. Our senior team will call you back within the hour with a resolution. Hare Krishna."
+      }
+    ],
+    "intent": "Service issue (receipt)",
+    "outcome": "Escalate",
+    "objection": "Receipt not received",
+    "leadScore": 80,
+    "confidence": 0.71,
+    "lowConfidence": true,
+    "escalated": true,
+    "approvalNeeded": true,
+    "reviewed": false,
+    "createdAt": "2026-06-19T05:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "escalate",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50331",
+    "contactId": "CON-100305",
+    "contactName": "Suresh Gupta",
+    "campaignId": "CMP-ANN",
+    "scriptId": "SCR-ANN-TE",
+    "ownerId": "U-PRIYA",
+    "attempt": 4,
+    "status": "Busy",
+    "duration": 0,
+    "language": "Tamil",
+    "recordingRef": null,
+    "transcript": [],
+    "intent": null,
+    "outcome": "No answer",
+    "objection": null,
+    "leadScore": null,
+    "confidence": null,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-19T01:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "noanswer",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50332",
+    "contactId": "CON-100357",
+    "contactName": "Sneha Bhat",
+    "campaignId": "CMP-GIT",
+    "scriptId": "SCR-J26-TE",
+    "ownerId": "U-ANAND",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 300,
+    "language": "Telugu",
+    "recordingRef": "rec_call-50332.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad about the Janmashtami seva."
+      },
+      {
+        "who": "contact",
+        "text": "Not interested, please remove my number."
+      },
+      {
+        "who": "agent",
+        "text": "I understand. I will update our records and you will not be contacted again. Hare Krishna."
+      }
+    ],
+    "intent": "Not interested",
+    "outcome": "Not interested",
+    "objection": "No interest",
+    "leadScore": 8,
+    "confidence": 0.9,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-19T03:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "notinterested",
+    "centerId": "GCB",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50333",
+    "contactId": "CON-100309",
+    "contactName": "Kavya Prasad",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-ANAND",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 218,
+    "language": "Telugu",
+    "recordingRef": "rec_call-50333.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! I am calling from Hare Krishna Movement Hyderabad about the Janmashtami Maha Abhishekam seva. Is this a good time to talk?"
+      },
+      {
+        "who": "contact",
+        "text": "Hare Krishna. Yes, please tell me."
+      },
+      {
+        "who": "agent",
+        "text": "This Janmashtami we are offering Abhishekam seva sponsorship. Many devotees are participating. Would you like to offer seva this year?"
+      },
+      {
+        "who": "contact",
+        "text": "Last year I gave for Annadaan. What is the amount for Abhishekam?"
+      },
+      {
+        "who": "agent",
+        "text": "Seva starts from ₹2,100 and there is a special Abhishekam sponsorship at ₹11,000 with prasadam and a certificate."
+      },
+      {
+        "who": "contact",
+        "text": "Okay, I would like to do the ₹11,000 Abhishekam seva. Please send me the payment link on WhatsApp."
+      },
+      {
+        "who": "agent",
+        "text": "Wonderful! Hare Krishna. I will send the secure link right away and our team will share your receipt."
+      }
+    ],
+    "intent": "Donation intent",
+    "outcome": "Donated",
+    "objection": null,
+    "leadScore": 92,
+    "confidence": 0.96,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-16T06:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "donated",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50334",
+    "contactId": "CON-100312",
+    "contactName": "Sravani Chowdary",
+    "campaignId": "CMP-GIT",
+    "scriptId": "SCR-J26-TE",
+    "ownerId": "U-PRIYA",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 196,
+    "language": "Kannada",
+    "recordingRef": "rec_call-50334.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! I am calling from Hare Krishna Movement Hyderabad about the Janmashtami Maha Abhishekam seva. Is this a good time to talk?"
+      },
+      {
+        "who": "contact",
+        "text": "Hare Krishna. Yes, please tell me."
+      },
+      {
+        "who": "agent",
+        "text": "This Janmashtami we are offering Abhishekam seva sponsorship. Many devotees are participating. Would you like to offer seva this year?"
+      },
+      {
+        "who": "contact",
+        "text": "Last year I gave for Annadaan. What is the amount for Abhishekam?"
+      },
+      {
+        "who": "agent",
+        "text": "Seva starts from ₹2,100 and there is a special Abhishekam sponsorship at ₹11,000 with prasadam and a certificate."
+      },
+      {
+        "who": "contact",
+        "text": "Okay, I would like to do the ₹11,000 Abhishekam seva. Please send me the payment link on WhatsApp."
+      },
+      {
+        "who": "agent",
+        "text": "Wonderful! Hare Krishna. I will send the secure link right away and our team will share your receipt."
+      }
+    ],
+    "intent": "Donation intent",
+    "outcome": "Donated",
+    "objection": null,
+    "leadScore": 92,
+    "confidence": 0.96,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-14T20:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "donated",
+    "centerId": "GCB",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50335",
+    "contactId": "CON-100324",
+    "contactName": "Naresh Teja",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-PRIYA",
+    "attempt": 3,
+    "status": "Connected",
+    "duration": 53,
+    "language": "English",
+    "recordingRef": "rec_call-50335.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad about the Janmashtami seva."
+      },
+      {
+        "who": "contact",
+        "text": "Not interested, please remove my number."
+      },
+      {
+        "who": "agent",
+        "text": "I understand. I will update our records and you will not be contacted again. Hare Krishna."
+      }
+    ],
+    "intent": "Not interested",
+    "outcome": "Not interested",
+    "objection": "No interest",
+    "leadScore": 8,
+    "confidence": 0.9,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": false,
+    "createdAt": "2026-06-21T20:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "notinterested",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50336",
+    "contactId": "CON-100316",
+    "contactName": "Naveen Naidu",
+    "campaignId": "CMP-ANN",
+    "scriptId": "SCR-ANN-TE",
+    "ownerId": "U-PRIYA",
+    "attempt": 1,
+    "status": "Busy",
+    "duration": 0,
+    "language": "Telugu",
+    "recordingRef": null,
+    "transcript": [],
+    "intent": null,
+    "outcome": "No answer",
+    "objection": null,
+    "leadScore": null,
+    "confidence": null,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-22T09:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "noanswer",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50337",
+    "contactId": "CON-100357",
+    "contactName": "Sneha Bhat",
+    "campaignId": "CMP-GIT",
+    "scriptId": "SCR-J26-TE",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 1,
+    "status": "No answer",
+    "duration": 0,
+    "language": "Telugu",
+    "recordingRef": null,
+    "transcript": [],
+    "intent": null,
+    "outcome": "No answer",
+    "objection": null,
+    "leadScore": null,
+    "confidence": null,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-16T20:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "noanswer",
+    "centerId": "GCB",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50338",
+    "contactId": "CON-100313",
+    "contactName": "Anjali Kumar",
+    "campaignId": "CMP-J26",
+    "scriptId": "SCR-J26-TE",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 3,
+    "status": "Connected",
+    "duration": 257,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50338.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad regarding Vrindavan Kartik Yatra. Is this a good time?"
+      },
+      {
+        "who": "contact",
+        "text": "I am in a meeting right now, can you call me in the evening?"
+      },
+      {
+        "who": "agent",
+        "text": "Of course. What time works best?"
+      },
+      {
+        "who": "contact",
+        "text": "After 7 PM please."
+      },
+      {
+        "who": "agent",
+        "text": "Noted, I will arrange a callback after 7 PM. Hare Krishna!"
+      }
+    ],
+    "intent": "Callback requested",
+    "outcome": "Callback",
+    "objection": "Busy now",
+    "leadScore": 61,
+    "confidence": 0.93,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-16T07:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "callback",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50339",
+    "contactId": "CON-100350",
+    "contactName": "Ravi Bhat",
+    "campaignId": "CMP-VRJ",
+    "scriptId": "SCR-VRJ-HI",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 201,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50339.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad about the Janmashtami seva."
+      },
+      {
+        "who": "contact",
+        "text": "Not interested, please remove my number."
+      },
+      {
+        "who": "agent",
+        "text": "I understand. I will update our records and you will not be contacted again. Hare Krishna."
+      }
+    ],
+    "intent": "Not interested",
+    "outcome": "Not interested",
+    "objection": "No interest",
+    "leadScore": 8,
+    "confidence": 0.9,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": false,
+    "createdAt": "2026-06-22T13:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "notinterested",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50340",
+    "contactId": "CON-100324",
+    "contactName": "Naresh Teja",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-ANAND",
+    "attempt": 3,
+    "status": "Connected",
+    "duration": 53,
+    "language": "English",
+    "recordingRef": "rec_call-50340.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad about the Janmashtami seva."
+      },
+      {
+        "who": "contact",
+        "text": "Not interested, please remove my number."
+      },
+      {
+        "who": "agent",
+        "text": "I understand. I will update our records and you will not be contacted again. Hare Krishna."
+      }
+    ],
+    "intent": "Not interested",
+    "outcome": "Not interested",
+    "objection": "No interest",
+    "leadScore": 8,
+    "confidence": 0.9,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": false,
+    "createdAt": "2026-06-20T10:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "notinterested",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50341",
+    "contactId": "CON-100327",
+    "contactName": "Geetha Reddy",
+    "campaignId": "CMP-ANN",
+    "scriptId": "SCR-ANN-TE",
+    "ownerId": "U-ANAND",
+    "attempt": 3,
+    "status": "Connected",
+    "duration": 222,
+    "language": "Tamil",
+    "recordingRef": "rec_call-50341.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad regarding Vrindavan Kartik Yatra. Is this a good time?"
+      },
+      {
+        "who": "contact",
+        "text": "I am in a meeting right now, can you call me in the evening?"
+      },
+      {
+        "who": "agent",
+        "text": "Of course. What time works best?"
+      },
+      {
+        "who": "contact",
+        "text": "After 7 PM please."
+      },
+      {
+        "who": "agent",
+        "text": "Noted, I will arrange a callback after 7 PM. Hare Krishna!"
+      }
+    ],
+    "intent": "Callback requested",
+    "outcome": "Callback",
+    "objection": "Busy now",
+    "leadScore": 61,
+    "confidence": 0.93,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-14T07:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "callback",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50342",
+    "contactId": "CON-100327",
+    "contactName": "Geetha Reddy",
+    "campaignId": "CMP-ANN",
+    "scriptId": "SCR-ANN-TE",
+    "ownerId": "U-PRIYA",
+    "attempt": 4,
+    "status": "No answer",
+    "duration": 0,
+    "language": "Tamil",
+    "recordingRef": null,
+    "transcript": [],
+    "intent": null,
+    "outcome": "No answer",
+    "objection": null,
+    "leadScore": null,
+    "confidence": null,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-14T12:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "noanswer",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50343",
+    "contactId": "CON-100349",
+    "contactName": "Suresh Gupta",
+    "campaignId": "CMP-ANN",
+    "scriptId": "SCR-ANN-TE",
+    "ownerId": "U-LAKSHMI",
+    "attempt": 1,
+    "status": "Connected",
+    "duration": 206,
+    "language": "Tamil",
+    "recordingRef": "rec_call-50343.mp3",
+    "transcript": [],
+    "intent": "Positive interest",
+    "outcome": "Interested",
+    "objection": "Will decide later",
+    "leadScore": 74,
+    "confidence": 0.88,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-22T22:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "interested",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50344",
+    "contactId": "CON-100346",
+    "contactName": "Sita Gupta",
+    "campaignId": "CMP-CSR",
+    "scriptId": "SCR-CSR-EN",
+    "ownerId": "U-PRIYA",
+    "attempt": 4,
+    "status": "Switched off",
+    "duration": 0,
+    "language": "Tamil",
+    "recordingRef": null,
+    "transcript": [],
+    "intent": null,
+    "outcome": "No answer",
+    "objection": null,
+    "leadScore": null,
+    "confidence": null,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-23T02:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "noanswer",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "call",
+    "id": "CALL-50345",
+    "contactId": "CON-100313",
+    "contactName": "Anjali Kumar",
+    "campaignId": "CMP-J26",
+    "scriptId": "SCR-J26-TE",
+    "ownerId": "U-ANAND",
+    "attempt": 2,
+    "status": "Connected",
+    "duration": 147,
+    "language": "Hindi",
+    "recordingRef": "rec_call-50345.mp3",
+    "transcript": [
+      {
+        "who": "agent",
+        "text": "Hare Krishna! Calling from HKM Hyderabad about the Janmashtami seva."
+      },
+      {
+        "who": "contact",
+        "text": "Not interested, please remove my number."
+      },
+      {
+        "who": "agent",
+        "text": "I understand. I will update our records and you will not be contacted again. Hare Krishna."
+      }
+    ],
+    "intent": "Not interested",
+    "outcome": "Not interested",
+    "objection": "No interest",
+    "leadScore": 8,
+    "confidence": 0.9,
+    "lowConfidence": false,
+    "escalated": false,
+    "approvalNeeded": false,
+    "reviewed": true,
+    "createdAt": "2026-06-19T13:00:00.000Z",
+    "hero": false,
+    "outcomeKind": "notinterested",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "contactId": "CON-100303",
+    "name": "Sandeep Kumar",
+    "mobile": "+91 9926977211",
+    "type": "Not interested",
+    "channel": "WhatsApp",
+    "reason": "Complaint logged",
+    "date": "2026-06-14T05:00:00.000Z",
+    "addedBy": "U-VENKAT"
+  },
+  {
+    "contactId": "CON-100314",
+    "name": "Praveen Bhat",
+    "mobile": "+91 9965589228",
+    "type": "DND",
+    "channel": "Voice",
+    "reason": "Registered on national DND",
+    "date": "2026-06-03T05:00:00.000Z",
+    "addedBy": "U-VENKAT"
+  },
+  {
+    "contactId": "CON-100318",
+    "name": "Harish Bhat",
+    "mobile": "+91 7067221513",
+    "type": "Unsubscribed",
+    "channel": "WhatsApp",
+    "reason": "Replied STOP",
+    "date": "2026-04-20T05:00:00.000Z",
+    "addedBy": "U-VENKAT"
+  },
+  {
+    "contactId": "CON-100325",
+    "name": "Naveen Chowdary",
+    "mobile": "+91 9846957123",
+    "type": "Opt-out",
+    "channel": "WhatsApp",
+    "reason": "Complaint logged",
+    "date": "2026-06-13T05:00:00.000Z",
+    "addedBy": "U-VENKAT"
+  },
+  {
+    "contactId": "CON-100332",
+    "name": "Sandeep Prasad",
+    "mobile": "+91 6318349948",
+    "type": "Opt-out",
+    "channel": "WhatsApp",
+    "reason": "Replied STOP",
+    "date": "2026-05-16T05:00:00.000Z",
+    "addedBy": "U-VENKAT"
+  },
+  {
+    "contactId": "CON-100335",
+    "name": "Vandana Reddy",
+    "mobile": "+91 9883580137",
+    "type": "DND",
+    "channel": "Voice",
+    "reason": "Registered on national DND",
+    "date": "2026-06-18T05:00:00.000Z",
+    "addedBy": "U-VENKAT"
+  },
+  {
+    "contactId": "CON-100336",
+    "name": "Divya Nair",
+    "mobile": "+91 7029179631",
+    "type": "Not interested",
+    "channel": "WhatsApp",
+    "reason": "Registered on national DND",
+    "date": "2026-03-25T05:00:00.000Z",
+    "addedBy": "U-VENKAT"
+  },
+  {
+    "contactId": "CON-100345",
+    "name": "Sita Reddy",
+    "mobile": "+91 9969745204",
+    "type": "DND",
+    "channel": "Voice",
+    "reason": "Requested no contact",
+    "date": "2026-04-29T05:00:00.000Z",
+    "addedBy": "U-VENKAT"
+  },
+  {
+    "contactId": "CON-100350",
+    "name": "Ravi Bhat",
+    "mobile": "+91 9942496841",
+    "type": "Not interested",
+    "channel": "WhatsApp",
+    "reason": "Replied STOP",
+    "date": "2026-04-04T05:00:00.000Z",
+    "addedBy": "U-VENKAT"
+  },
+  {
+    "contactId": "CON-100352",
+    "name": "Deepthi Shetty",
+    "mobile": "+91 7042398761",
+    "type": "DND",
+    "channel": "Voice",
+    "reason": "Registered on national DND",
+    "date": "2026-04-18T05:00:00.000Z",
+    "addedBy": "U-VENKAT"
+  },
+  {
+    "contactId": "CON-100354",
+    "name": "Shilpa Shetty",
+    "mobile": "+91 7067125576",
+    "type": "DND",
+    "channel": "Voice",
+    "reason": "Registered on national DND",
+    "date": "2026-05-13T05:00:00.000Z",
+    "addedBy": "U-VENKAT"
+  }
+]

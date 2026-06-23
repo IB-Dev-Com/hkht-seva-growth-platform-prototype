@@ -1,0 +1,78 @@
+{
+  "citations": [
+    {
+      "id": "KCKE-01",
+      "topic": "Janmashtami significance",
+      "source": "Śrīmad-Bhāgavatam 10.3",
+      "text": "The appearance of Lord Krishna at midnight…",
+      "status": "approved",
+      "usedIn": [
+        "CMP-J26"
+      ]
+    },
+    {
+      "id": "KCKE-02",
+      "topic": "Importance of Annadaan",
+      "source": "Bhagavad-gītā 3.14",
+      "text": "All living beings subsist on food grains…",
+      "status": "approved",
+      "usedIn": [
+        "CMP-ANN"
+      ]
+    },
+    {
+      "id": "KCKE-03",
+      "topic": "Gau-mata / cow protection",
+      "source": "SB 8.8.11 + Prabhupada purport",
+      "text": "The cow is considered one of the mothers…",
+      "status": "review",
+      "usedIn": [
+        "CMP-GAU"
+      ]
+    },
+    {
+      "id": "KCKE-04",
+      "topic": "Kartik / Damodar month",
+      "source": "Padma Purāṇa",
+      "text": "The vow of Kartik is most dear to Krishna…",
+      "status": "approved",
+      "usedIn": [
+        "CMP-VRJ"
+      ]
+    }
+  ],
+  "media": [
+    {
+      "id": "MED-01",
+      "type": "Reel",
+      "title": "Janmashtami Abhishekam storyboard",
+      "status": "approved",
+      "campaignId": "CMP-J26",
+      "note": "Deity representation reviewed"
+    },
+    {
+      "id": "MED-02",
+      "type": "Poster",
+      "title": "Gau Seva appeal creative",
+      "status": "needs_approval",
+      "campaignId": "CMP-GAU",
+      "note": "Deity/media + brand approval pending"
+    },
+    {
+      "id": "MED-03",
+      "type": "Video",
+      "title": "Vrindavan Yatra invitation",
+      "status": "approved",
+      "campaignId": "CMP-VRJ",
+      "note": "Footage source-cleared"
+    },
+    {
+      "id": "MED-04",
+      "type": "Storyboard",
+      "title": "Annadaan donor story",
+      "status": "draft",
+      "campaignId": "CMP-ANN",
+      "note": "Donor consent for story pending"
+    }
+  ]
+}

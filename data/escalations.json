@@ -1,0 +1,98 @@
+[
+  {
+    "type": "esc",
+    "id": "ESC-3100",
+    "contactId": "CON-100349",
+    "contactName": "Suresh Gupta",
+    "callId": "CALL-50307",
+    "reason": "Donor receipt delay — sensitive",
+    "priority": "High",
+    "assigneeId": "U-GOPAL",
+    "status": "Open",
+    "slaDue": "2026-06-23T06:00:00.000Z",
+    "createdAt": "2026-06-19T07:00:00.000Z",
+    "context": "Regular donor reports ₹50,000 payment last week with no 80G receipt; second follow-up. Frustrated tone.",
+    "talkingPoints": [
+      "Acknowledge delay & thank for past giving",
+      "Confirm payment in DCC",
+      "Issue receipt today",
+      "Offer prasadam as goodwill"
+    ],
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "esc",
+    "id": "ESC-3101",
+    "contactId": "CON-100316",
+    "contactName": "Naveen Naidu",
+    "callId": "CALL-50316",
+    "reason": "Donor receipt delay — sensitive",
+    "priority": "High",
+    "assigneeId": "U-GOPAL",
+    "status": "Resolved",
+    "slaDue": "2026-06-23T06:00:00.000Z",
+    "createdAt": "2026-06-16T05:00:00.000Z",
+    "context": "Regular donor reports ₹50,000 payment last week with no 80G receipt; second follow-up. Frustrated tone.",
+    "talkingPoints": [
+      "Acknowledge delay & thank for past giving",
+      "Confirm payment in DCC",
+      "Issue receipt today",
+      "Offer prasadam as goodwill"
+    ],
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "esc",
+    "id": "ESC-3102",
+    "contactId": "CON-100362",
+    "contactName": "Anjali Bhat",
+    "callId": "CALL-50317",
+    "reason": "Donor receipt delay — sensitive",
+    "priority": "High",
+    "assigneeId": "U-GOPAL",
+    "status": "Resolved",
+    "slaDue": "2026-06-23T06:00:00.000Z",
+    "createdAt": "2026-06-19T07:00:00.000Z",
+    "context": "Regular donor reports ₹50,000 payment last week with no 80G receipt; second follow-up. Frustrated tone.",
+    "talkingPoints": [
+      "Acknowledge delay & thank for past giving",
+      "Confirm payment in DCC",
+      "Issue receipt today",
+      "Offer prasadam as goodwill"
+    ],
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "type": "esc",
+    "id": "ESC-3103",
+    "contactId": "CON-100350",
+    "contactName": "Ravi Bhat",
+    "callId": "CALL-50330",
+    "reason": "Donor receipt delay — sensitive",
+    "priority": "High",
+    "assigneeId": "U-GOPAL",
+    "status": "Open",
+    "slaDue": "2026-06-23T06:00:00.000Z",
+    "createdAt": "2026-06-19T05:00:00.000Z",
+    "context": "Regular donor reports ₹50,000 payment last week with no 80G receipt; second follow-up. Frustrated tone.",
+    "talkingPoints": [
+      "Acknowledge delay & thank for past giving",
+      "Confirm payment in DCC",
+      "Issue receipt today",
+      "Offer prasadam as goodwill"
+    ],
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  }
+]

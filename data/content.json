@@ -1,0 +1,94 @@
+[
+  {
+    "id": "CNT-J26-1",
+    "campaignId": "CMP-J26",
+    "channel": "Meta Ad",
+    "status": "pending_approval",
+    "reviewerId": "U-MEERA",
+    "variants": [
+      {
+        "headline": "Offer Abhishekam Seva this Janmashtami 🙏",
+        "body": "Sponsor the sacred Maha Abhishekam of Sri Krishna. Your seva from ₹2,100. 80G benefits.",
+        "cta": "Offer Seva",
+        "metrics": {
+          "impressions": 87126,
+          "ctr": 2.49,
+          "clicks": 2169,
+          "conversions": 132,
+          "cvr": 6.1,
+          "status": "winner"
+        }
+      },
+      {
+        "headline": "Be part of Sri Krishna Janmashtami",
+        "body": "Join thousands of devotees. Sponsor festival seva and receive prasadam at your home.",
+        "cta": "Donate Now",
+        "metrics": {
+          "impressions": 22693,
+          "ctr": 2.27,
+          "clicks": 515,
+          "conversions": 36,
+          "cvr": 6.9,
+          "status": "active"
+        }
+      },
+      {
+        "headline": "Krishna is appearing — will you welcome Him?",
+        "body": "Special Abhishekam sponsorship ₹11,000 with certificate & prasadam.",
+        "cta": "Sponsor Now",
+        "metrics": {
+          "impressions": 77376,
+          "ctr": 2.79,
+          "clicks": 2159,
+          "conversions": 212,
+          "cvr": 9.8,
+          "status": "active"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CNT-VRJ-1",
+    "campaignId": "CMP-VRJ",
+    "channel": "WhatsApp",
+    "status": "approved",
+    "reviewerId": "U-MEERA",
+    "variants": [
+      {
+        "headline": "Vrindavan Kartik Yatra 2026",
+        "body": "Walk the sacred land of Krishna this Kartik. Early-bird ₹18,000 all-inclusive. Limited seats.",
+        "cta": "Register",
+        "metrics": {
+          "impressions": 26262,
+          "ctr": 2.45,
+          "clicks": 643,
+          "conversions": 15,
+          "cvr": 2.3,
+          "status": "winner"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CNT-GAU-1",
+    "campaignId": "CMP-GAU",
+    "channel": "Meta Ad",
+    "status": "draft",
+    "reviewerId": "U-MEERA",
+    "variants": [
+      {
+        "headline": "Protect the sacred cows 🐄",
+        "body": "Your Gau Seva feeds and shelters Krishna's beloved cows. Sponsor a cow from ₹5,100/month.",
+        "cta": "Sponsor Gau Seva",
+        "metrics": {
+          "impressions": 21766,
+          "ctr": 2.07,
+          "clicks": 451,
+          "conversions": 15,
+          "cvr": 3.4,
+          "status": "winner"
+        }
+      }
+    ]
+  }
+]

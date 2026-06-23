@@ -1,0 +1,219 @@
+[
+  {
+    "id": "MRG-4100",
+    "confidence": 94,
+    "records": [
+      {
+        "contactId": "CON-100337",
+        "name": "Srinivas Menon",
+        "mobile": "+91 7045843831",
+        "source": "event",
+        "created": "2026-05-30T05:00:00.000Z",
+        "dq": 98
+      },
+      {
+        "contactId": "CON-DUP0",
+        "name": "Srinivas Menon",
+        "mobile": "+91 7045843836",
+        "source": "website",
+        "created": "2025-12-21T05:00:00.000Z",
+        "dq": 69
+      }
+    ],
+    "signals": [
+      "Phone exact",
+      "Name exact",
+      "Email match"
+    ],
+    "highValue": false,
+    "status": "pending",
+    "reviewerId": "U-SACHI",
+    "note": null
+  },
+  {
+    "id": "MRG-4101",
+    "confidence": 85,
+    "records": [
+      {
+        "contactId": "CON-100314",
+        "name": "Praveen Bhat",
+        "mobile": "+91 9965589228",
+        "source": "event",
+        "created": "2026-06-08T05:00:00.000Z",
+        "dq": 90
+      },
+      {
+        "contactId": "CON-DUP1",
+        "name": "Praveen Bhat ",
+        "mobile": "+91 9965589225",
+        "source": "event",
+        "created": "2026-03-17T05:00:00.000Z",
+        "dq": 78
+      }
+    ],
+    "signals": [
+      "Phone exact",
+      "Name fuzzy (0.8)",
+      "Email match"
+    ],
+    "highValue": false,
+    "status": "pending",
+    "reviewerId": "U-SACHI",
+    "note": null
+  },
+  {
+    "id": "MRG-4102",
+    "confidence": 73,
+    "records": [
+      {
+        "contactId": "CON-100329",
+        "name": "Bhavana Sharma",
+        "mobile": "+91 9934343973",
+        "source": "whatsapp",
+        "created": "2026-05-06T05:00:00.000Z",
+        "dq": 99
+      },
+      {
+        "contactId": "CON-DUP2",
+        "name": "Bhavana Sharma",
+        "mobile": "+91 9934343979",
+        "source": "website",
+        "created": "2026-02-24T05:00:00.000Z",
+        "dq": 66
+      }
+    ],
+    "signals": [
+      "Phone exact",
+      "Name fuzzy (0.8)",
+      "City match"
+    ],
+    "highValue": false,
+    "status": "pending",
+    "reviewerId": "U-SACHI",
+    "note": null
+  },
+  {
+    "id": "MRG-4103",
+    "confidence": 91,
+    "records": [
+      {
+        "contactId": "CON-100338",
+        "name": "Mahesh Shetty",
+        "mobile": "+91 8151510586",
+        "source": "website",
+        "created": "2026-03-31T05:00:00.000Z",
+        "dq": 97
+      },
+      {
+        "contactId": "CON-DUP3",
+        "name": "Mahesh Shetty ",
+        "mobile": "+91 8151510589",
+        "source": "website",
+        "created": "2026-01-11T05:00:00.000Z",
+        "dq": 78
+      }
+    ],
+    "signals": [
+      "Phone exact",
+      "Name exact",
+      "Email match"
+    ],
+    "highValue": false,
+    "status": "pending",
+    "reviewerId": "U-SACHI",
+    "note": null
+  },
+  {
+    "id": "MRG-4104",
+    "confidence": 97,
+    "records": [
+      {
+        "contactId": "CON-100358",
+        "name": "Rajesh Varma",
+        "mobile": "+91 9841646900",
+        "source": "whatsapp",
+        "created": "2026-05-15T05:00:00.000Z",
+        "dq": 89
+      },
+      {
+        "contactId": "CON-DUP4",
+        "name": "Rajesh Varma",
+        "mobile": "+91 9841646908",
+        "source": "website",
+        "created": "2026-01-17T05:00:00.000Z",
+        "dq": 52
+      }
+    ],
+    "signals": [
+      "Phone exact",
+      "Name exact",
+      "City match"
+    ],
+    "highValue": false,
+    "status": "pending",
+    "reviewerId": "U-SACHI",
+    "note": null
+  },
+  {
+    "id": "MRG-4105",
+    "confidence": 82,
+    "records": [
+      {
+        "contactId": "CON-100323",
+        "name": "Vandana Shetty",
+        "mobile": "+91 7013504398",
+        "source": "walkin",
+        "created": "2026-05-17T05:00:00.000Z",
+        "dq": 88
+      },
+      {
+        "contactId": "CON-DUP5",
+        "name": "Vandana Shetty",
+        "mobile": "+91 7013504396",
+        "source": "helloleads",
+        "created": "2025-12-20T05:00:00.000Z",
+        "dq": 61
+      }
+    ],
+    "signals": [
+      "Phone exact",
+      "Name fuzzy (0.8)",
+      "City match"
+    ],
+    "highValue": false,
+    "status": "pending",
+    "reviewerId": "U-SACHI",
+    "note": null
+  },
+  {
+    "id": "MRG-4106",
+    "confidence": 84,
+    "records": [
+      {
+        "contactId": "CON-100307",
+        "name": "Teja Shetty",
+        "mobile": "+91 9939746121",
+        "source": "event",
+        "created": "2026-05-07T05:00:00.000Z",
+        "dq": 79
+      },
+      {
+        "contactId": "CON-DUP6",
+        "name": "Teja Shetty",
+        "mobile": "+91 9939746129",
+        "source": "event",
+        "created": "2026-03-28T05:00:00.000Z",
+        "dq": 56
+      }
+    ],
+    "signals": [
+      "Phone exact",
+      "Name fuzzy (0.8)",
+      "Email match"
+    ],
+    "highValue": false,
+    "status": "pending",
+    "reviewerId": "U-SACHI",
+    "note": null
+  }
+]

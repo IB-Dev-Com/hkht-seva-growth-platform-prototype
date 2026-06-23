@@ -1,0 +1,72 @@
+{
+  "leadership": {
+    "label": "Leadership",
+    "scope": "all",
+    "icon": "👑"
+  },
+  "workflow_manager": {
+    "label": "Workflow Manager",
+    "scope": "manage",
+    "icon": "🧭"
+  },
+  "data_custodian": {
+    "label": "Data Custodian",
+    "scope": "wf006",
+    "icon": "🗂️"
+  },
+  "consent_custodian": {
+    "label": "Consent / Privacy Custodian",
+    "scope": "wf006",
+    "icon": "🛡️"
+  },
+  "voice_ops": {
+    "label": "AI Voice Ops Admin",
+    "scope": "wf002",
+    "icon": "🎙️"
+  },
+  "supervisor": {
+    "label": "Calling Supervisor",
+    "scope": "wf002",
+    "icon": "📋"
+  },
+  "telecaller": {
+    "label": "Telecaller / Closer",
+    "scope": "wf002",
+    "icon": "🎧"
+  },
+  "marketer": {
+    "label": "Digital Marketer",
+    "scope": "wf003",
+    "icon": "📣"
+  },
+  "content_reviewer": {
+    "label": "Content / Creative Reviewer",
+    "scope": "wf003",
+    "icon": "✍️"
+  },
+  "donor_approver": {
+    "label": "Donor Relations Approver",
+    "scope": "approve",
+    "icon": "🤝"
+  },
+  "finance_reviewer": {
+    "label": "Finance / DCC Reviewer",
+    "scope": "wf003",
+    "icon": "🧾"
+  },
+  "org_admin": {
+    "label": "Org / Center Admin",
+    "scope": "admin",
+    "icon": "⚙️"
+  },
+  "center_admin": {
+    "label": "Center Admin",
+    "scope": "admin",
+    "icon": "🏛️"
+  },
+  "platform_admin": {
+    "label": "Platform Admin",
+    "scope": "platform_admin",
+    "icon": "🛠️"
+  }
+}

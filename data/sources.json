@@ -1,0 +1,56 @@
+[
+  {
+    "id": "google_ads",
+    "label": "Google Ads",
+    "cat": "paid",
+    "icon": "🔍"
+  },
+  {
+    "id": "meta_ads",
+    "label": "Meta Ads",
+    "cat": "paid",
+    "icon": "📘"
+  },
+  {
+    "id": "youtube",
+    "label": "YouTube",
+    "cat": "paid",
+    "icon": "▶️"
+  },
+  {
+    "id": "whatsapp",
+    "label": "WhatsApp Broadcast",
+    "cat": "owned",
+    "icon": "💬"
+  },
+  {
+    "id": "website",
+    "label": "Website Form",
+    "cat": "owned",
+    "icon": "🌐"
+  },
+  {
+    "id": "event",
+    "label": "Festival / Event",
+    "cat": "offline",
+    "icon": "🎪"
+  },
+  {
+    "id": "referral",
+    "label": "Devotee Referral",
+    "cat": "organic",
+    "icon": "🤝"
+  },
+  {
+    "id": "walkin",
+    "label": "Temple Walk-in",
+    "cat": "offline",
+    "icon": "🚶"
+  },
+  {
+    "id": "helloleads",
+    "label": "Hello Leads Import",
+    "cat": "import",
+    "icon": "📥"
+  }
+]

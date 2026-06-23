@@ -4,7 +4,8 @@
       "Bash(python -c ' *)",
       "mcp__Claude_Preview__preview_start",
       "Bash(mkdir -p Design/_extracted)",
-      "Bash(python -)"
+      "Bash(python -)",
+      "Bash(node tools/gen-data.js)"
     ]
   }
 }

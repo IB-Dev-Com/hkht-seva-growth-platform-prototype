@@ -1,0 +1,30 @@
+[
+  {
+    "centerId": "HYD",
+    "period": "2026-06",
+    "revenue": 2800000,
+    "leads": 3000,
+    "conversions": 320
+  },
+  {
+    "centerId": "SEC",
+    "period": "2026-06",
+    "revenue": 700000,
+    "leads": 800,
+    "conversions": 90
+  },
+  {
+    "centerId": "GCB",
+    "period": "2026-06",
+    "revenue": 500000,
+    "leads": 600,
+    "conversions": 60
+  },
+  {
+    "centerId": "VJA",
+    "period": "2026-06",
+    "revenue": 400000,
+    "leads": 500,
+    "conversions": 45
+  }
+]

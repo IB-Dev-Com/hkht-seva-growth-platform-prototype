@@ -1,0 +1,53 @@
+[
+  {
+    "id": "HYD",
+    "name": "HKM Hyderabad",
+    "short": "Hyderabad",
+    "city": "Hyderabad",
+    "primary": true,
+    "orgId": "ORG-HKHT",
+    "entitlements": [
+      "platform",
+      "wf006",
+      "wf002",
+      "wf003"
+    ]
+  },
+  {
+    "id": "SEC",
+    "name": "HKM Secunderabad",
+    "short": "Secunderabad",
+    "city": "Secunderabad",
+    "orgId": "ORG-HKHT",
+    "entitlements": [
+      "platform",
+      "wf006",
+      "wf002",
+      "wf003"
+    ]
+  },
+  {
+    "id": "GCB",
+    "name": "HKM Gachibowli",
+    "short": "Gachibowli",
+    "city": "Gachibowli",
+    "orgId": "ORG-HKHT",
+    "entitlements": [
+      "platform",
+      "wf006",
+      "wf002"
+    ]
+  },
+  {
+    "id": "VJA",
+    "name": "HKM Vijayawada",
+    "short": "Vijayawada",
+    "city": "Vijayawada",
+    "orgId": "ORG-VJA",
+    "entitlements": [
+      "platform",
+      "wf006",
+      "wf003"
+    ]
+  }
+]

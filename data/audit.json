@@ -1,0 +1,92 @@
+[
+  {
+    "id": "AUD-8100",
+    "actorId": "U-SACHI",
+    "action": "Merged contacts",
+    "type": "merge",
+    "entityId": "MRG-4099",
+    "detail": "Approved low-risk merge (96% match)",
+    "timestamp": "2026-06-20T12:00:00.000Z"
+  },
+  {
+    "id": "AUD-8101",
+    "actorId": "U-VENKAT",
+    "action": "Added DND suppression",
+    "type": "consent",
+    "entityId": "CON-100312",
+    "detail": "National DND registration",
+    "timestamp": "2026-06-22T17:00:00.000Z"
+  },
+  {
+    "id": "AUD-8102",
+    "actorId": "U-ROHIT",
+    "action": "Exported leads CSV",
+    "type": "export",
+    "entityId": "CMP-J26",
+    "detail": "388 records — flagged for audit",
+    "timestamp": "2026-06-21T05:00:00.000Z"
+  },
+  {
+    "id": "AUD-8103",
+    "actorId": "U-GOPAL",
+    "action": "Approved script",
+    "type": "approval",
+    "entityId": "SCR-J26-TE",
+    "detail": "v3.1 to production",
+    "timestamp": "2026-06-22T08:00:00.000Z"
+  },
+  {
+    "id": "AUD-8104",
+    "actorId": "U-MUKUND",
+    "action": "Approved campaign budget",
+    "type": "approval",
+    "entityId": "CMP-J26",
+    "detail": "₹8,50,000",
+    "timestamp": "2026-06-21T21:00:00.000Z"
+  },
+  {
+    "id": "AUD-8105",
+    "actorId": "U-ANAND",
+    "action": "Logged call outcome",
+    "type": "data",
+    "entityId": "CALL-50231",
+    "detail": "Donation intent captured",
+    "timestamp": "2026-06-21T04:00:00.000Z"
+  },
+  {
+    "id": "AUD-8106",
+    "actorId": "U-SACHI",
+    "action": "Bulk import",
+    "type": "import",
+    "entityId": "IMP-2205",
+    "detail": "1,118 records imported",
+    "timestamp": "2026-06-20T01:00:00.000Z"
+  },
+  {
+    "id": "AUD-8107",
+    "actorId": "U-DEEPAK",
+    "action": "Updated script",
+    "type": "data",
+    "entityId": "SCR-VRJ-HI",
+    "detail": "v2.0 localization",
+    "timestamp": "2026-06-20T09:00:00.000Z"
+  },
+  {
+    "id": "AUD-8108",
+    "actorId": "U-VENKAT",
+    "action": "Viewed donor PII",
+    "type": "access",
+    "entityId": "DNR-00245",
+    "detail": "HNI donor profile",
+    "timestamp": "2026-06-19T21:00:00.000Z"
+  },
+  {
+    "id": "AUD-8109",
+    "actorId": "U-HEM",
+    "action": "Changed role access",
+    "type": "access",
+    "entityId": "U-PRIYA",
+    "detail": "Granted SEC center access",
+    "timestamp": "2026-06-21T16:00:00.000Z"
+  }
+]

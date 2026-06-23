@@ -1,0 +1,80 @@
+[
+  {
+    "id": "TRG-7700",
+    "type": "Stalled payment",
+    "contactId": "CON-100355",
+    "contactName": "Pooja Shetty",
+    "signal": "Yatra payment partial for 6 days",
+    "recommendedAction": "Gentle reminder + assistance offer",
+    "channel": "WhatsApp",
+    "sensitive": false,
+    "count": 68,
+    "status": "armed",
+    "approverRole": null
+  },
+  {
+    "id": "TRG-7701",
+    "type": "Website revisit",
+    "contactId": "CON-100316",
+    "contactName": "Naveen Naidu",
+    "signal": "Visited Gau Seva page 3× this week",
+    "recommendedAction": "Send Gau Seva brochure + ask",
+    "channel": "WhatsApp",
+    "sensitive": false,
+    "count": 74,
+    "status": "armed",
+    "approverRole": null
+  },
+  {
+    "id": "TRG-7702",
+    "type": "Repeat Yatra interest",
+    "contactId": "CON-100352",
+    "contactName": "Deepthi Shetty",
+    "signal": "Opened Yatra content 4×, no register",
+    "recommendedAction": "Personal call from Yatra desk",
+    "channel": "Call",
+    "sensitive": false,
+    "count": 27,
+    "status": "paused",
+    "approverRole": null
+  },
+  {
+    "id": "TRG-7703",
+    "type": "Annual donation pattern",
+    "contactId": "CON-100345",
+    "contactName": "Sita Reddy",
+    "signal": "Gave at Janmashtami last 3 years",
+    "recommendedAction": "Pre-festival invitation",
+    "channel": "WhatsApp",
+    "sensitive": false,
+    "count": 20,
+    "status": "armed",
+    "approverRole": null
+  },
+  {
+    "id": "TRG-7704",
+    "type": "Event follow-up",
+    "contactId": "CON-100304",
+    "contactName": "Geetha Reddy",
+    "signal": "Attended festival, no follow-up in 5 days",
+    "recommendedAction": "Thank-you + monthly-giving ask",
+    "channel": "WhatsApp",
+    "sensitive": false,
+    "count": 73,
+    "status": "armed",
+    "approverRole": null
+  },
+  {
+    "id": "TRG-7705",
+    "type": "HNI re-engagement",
+    "contactId": "CON-100304",
+    "contactName": "Geetha Reddy",
+    "signal": "HNI donor inactive 90 days",
+    "recommendedAction": "Relationship-owner outreach",
+    "channel": "Call",
+    "sensitive": true,
+    "count": 77,
+    "status": "needs_approval",
+    "approverRole": "donor_approver"
+  }
+]

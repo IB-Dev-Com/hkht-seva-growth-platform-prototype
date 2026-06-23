@@ -1,0 +1,929 @@
+[
+  {
+    "id": "CMP-J26",
+    "name": "Janmashtami Maha Abhishekam 2026",
+    "type": "Festival",
+    "objective": "Donations + Festival registrations for Sri Krishna Janmashtami",
+    "channels": [
+      "google_ads",
+      "meta_ads",
+      "whatsapp"
+    ],
+    "budget": 850000,
+    "spend": 612400,
+    "status": "active",
+    "approvalStatus": "approved",
+    "ownerId": "U-ROHIT",
+    "approverId": "U-MUKUND",
+    "deptId": "MKT",
+    "centerId": "HYD",
+    "startDate": "2026-05-26T05:00:00.000Z",
+    "leads": 1237,
+    "calls": 922,
+    "conversions": 117,
+    "revenue": 345618,
+    "cpl": 495,
+    "cpa": 5234,
+    "roas": 0.56,
+    "utm": "hkht_j26",
+    "landingPageId": "LP-J26",
+    "daily": [
+      {
+        "date": "2026-06-10T05:00:00.000Z",
+        "spend": 34011,
+        "leads": 69,
+        "conversions": 7,
+        "revenue": 21594
+      },
+      {
+        "date": "2026-06-11T05:00:00.000Z",
+        "spend": 46632,
+        "leads": 94,
+        "conversions": 10,
+        "revenue": 29607
+      },
+      {
+        "date": "2026-06-12T05:00:00.000Z",
+        "spend": 24415,
+        "leads": 49,
+        "conversions": 5,
+        "revenue": 15501
+      },
+      {
+        "date": "2026-06-13T05:00:00.000Z",
+        "spend": 39706,
+        "leads": 80,
+        "conversions": 9,
+        "revenue": 25210
+      },
+      {
+        "date": "2026-06-14T05:00:00.000Z",
+        "spend": 35961,
+        "leads": 73,
+        "conversions": 8,
+        "revenue": 22832
+      },
+      {
+        "date": "2026-06-15T05:00:00.000Z",
+        "spend": 41348,
+        "leads": 84,
+        "conversions": 9,
+        "revenue": 26252
+      },
+      {
+        "date": "2026-06-16T05:00:00.000Z",
+        "spend": 39122,
+        "leads": 79,
+        "conversions": 8,
+        "revenue": 24839
+      },
+      {
+        "date": "2026-06-17T05:00:00.000Z",
+        "spend": 43071,
+        "leads": 87,
+        "conversions": 9,
+        "revenue": 27347
+      },
+      {
+        "date": "2026-06-18T05:00:00.000Z",
+        "spend": 35678,
+        "leads": 72,
+        "conversions": 8,
+        "revenue": 22652
+      },
+      {
+        "date": "2026-06-19T05:00:00.000Z",
+        "spend": 46812,
+        "leads": 95,
+        "conversions": 10,
+        "revenue": 29722
+      },
+      {
+        "date": "2026-06-20T05:00:00.000Z",
+        "spend": 44838,
+        "leads": 91,
+        "conversions": 10,
+        "revenue": 28468
+      },
+      {
+        "date": "2026-06-21T05:00:00.000Z",
+        "spend": 39464,
+        "leads": 80,
+        "conversions": 8,
+        "revenue": 25056
+      },
+      {
+        "date": "2026-06-22T05:00:00.000Z",
+        "spend": 43612,
+        "leads": 88,
+        "conversions": 9,
+        "revenue": 27690
+      },
+      {
+        "date": "2026-06-23T05:00:00.000Z",
+        "spend": 42117,
+        "leads": 85,
+        "conversions": 9,
+        "revenue": 26740
+      }
+    ],
+    "hero": true,
+    "risk": "green",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "id": "CMP-VRJ",
+    "name": "Vrindavan Kartik Yatra — Early Bird",
+    "type": "Yatra",
+    "objective": "Fill 3 Vrindavan Yatra batches (Nov 2026)",
+    "channels": [
+      "meta_ads",
+      "youtube",
+      "website"
+    ],
+    "budget": 600000,
+    "spend": 318900,
+    "status": "active",
+    "approvalStatus": "approved",
+    "ownerId": "U-ROHIT",
+    "approverId": "U-MUKUND",
+    "deptId": "YAT",
+    "centerId": "HYD",
+    "startDate": "2026-06-02T05:00:00.000Z",
+    "leads": 666,
+    "calls": 462,
+    "conversions": 56,
+    "revenue": 1094072,
+    "cpl": 479,
+    "cpa": 5695,
+    "roas": 3.43,
+    "utm": "hkht_vrj",
+    "landingPageId": "LP-VRJ",
+    "daily": [
+      {
+        "date": "2026-06-10T05:00:00.000Z",
+        "spend": 12753,
+        "leads": 27,
+        "conversions": 3,
+        "revenue": 49222
+      },
+      {
+        "date": "2026-06-11T05:00:00.000Z",
+        "spend": 16418,
+        "leads": 34,
+        "conversions": 3,
+        "revenue": 63369
+      },
+      {
+        "date": "2026-06-12T05:00:00.000Z",
+        "spend": 17921,
+        "leads": 37,
+        "conversions": 4,
+        "revenue": 69169
+      },
+      {
+        "date": "2026-06-13T05:00:00.000Z",
+        "spend": 24035,
+        "leads": 50,
+        "conversions": 5,
+        "revenue": 92764
+      },
+      {
+        "date": "2026-06-14T05:00:00.000Z",
+        "spend": 16506,
+        "leads": 34,
+        "conversions": 3,
+        "revenue": 63706
+      },
+      {
+        "date": "2026-06-15T05:00:00.000Z",
+        "spend": 12286,
+        "leads": 26,
+        "conversions": 2,
+        "revenue": 47418
+      },
+      {
+        "date": "2026-06-16T05:00:00.000Z",
+        "spend": 24351,
+        "leads": 51,
+        "conversions": 5,
+        "revenue": 93984
+      },
+      {
+        "date": "2026-06-17T05:00:00.000Z",
+        "spend": 12296,
+        "leads": 26,
+        "conversions": 2,
+        "revenue": 47458
+      },
+      {
+        "date": "2026-06-18T05:00:00.000Z",
+        "spend": 12779,
+        "leads": 27,
+        "conversions": 3,
+        "revenue": 49322
+      },
+      {
+        "date": "2026-06-19T05:00:00.000Z",
+        "spend": 22076,
+        "leads": 46,
+        "conversions": 4,
+        "revenue": 85205
+      },
+      {
+        "date": "2026-06-20T05:00:00.000Z",
+        "spend": 17119,
+        "leads": 36,
+        "conversions": 3,
+        "revenue": 66073
+      },
+      {
+        "date": "2026-06-21T05:00:00.000Z",
+        "spend": 14210,
+        "leads": 30,
+        "conversions": 3,
+        "revenue": 54847
+      },
+      {
+        "date": "2026-06-22T05:00:00.000Z",
+        "spend": 17696,
+        "leads": 37,
+        "conversions": 3,
+        "revenue": 68298
+      },
+      {
+        "date": "2026-06-23T05:00:00.000Z",
+        "spend": 24064,
+        "leads": 50,
+        "conversions": 5,
+        "revenue": 92877
+      }
+    ],
+    "hero": false,
+    "risk": "green",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "id": "CMP-ANN",
+    "name": "Annadaan Seva — Monthly Giving",
+    "type": "Donation",
+    "objective": "Recurring meal-seva donor acquisition",
+    "channels": [
+      "google_ads",
+      "meta_ads"
+    ],
+    "budget": 420000,
+    "spend": 405100,
+    "status": "active",
+    "approvalStatus": "approved",
+    "ownerId": "U-ROHIT",
+    "approverId": "U-MUKUND",
+    "deptId": "DON",
+    "centerId": "HYD",
+    "startDate": "2026-05-09T05:00:00.000Z",
+    "leads": 1620,
+    "calls": 920,
+    "conversions": 200,
+    "revenue": 1016200,
+    "cpl": 250,
+    "cpa": 2026,
+    "roas": 2.51,
+    "utm": "hkht_ann",
+    "landingPageId": "LP-ANN",
+    "daily": [
+      {
+        "date": "2026-06-10T05:00:00.000Z",
+        "spend": 26570,
+        "leads": 106,
+        "conversions": 15,
+        "revenue": 74982
+      },
+      {
+        "date": "2026-06-11T05:00:00.000Z",
+        "spend": 19934,
+        "leads": 80,
+        "conversions": 11,
+        "revenue": 56254
+      },
+      {
+        "date": "2026-06-12T05:00:00.000Z",
+        "spend": 26560,
+        "leads": 106,
+        "conversions": 15,
+        "revenue": 74953
+      },
+      {
+        "date": "2026-06-13T05:00:00.000Z",
+        "spend": 21588,
+        "leads": 86,
+        "conversions": 12,
+        "revenue": 60923
+      },
+      {
+        "date": "2026-06-14T05:00:00.000Z",
+        "spend": 18835,
+        "leads": 75,
+        "conversions": 10,
+        "revenue": 53155
+      },
+      {
+        "date": "2026-06-15T05:00:00.000Z",
+        "spend": 23707,
+        "leads": 95,
+        "conversions": 13,
+        "revenue": 66903
+      },
+      {
+        "date": "2026-06-16T05:00:00.000Z",
+        "spend": 15793,
+        "leads": 63,
+        "conversions": 9,
+        "revenue": 44568
+      },
+      {
+        "date": "2026-06-17T05:00:00.000Z",
+        "spend": 26736,
+        "leads": 107,
+        "conversions": 15,
+        "revenue": 75451
+      },
+      {
+        "date": "2026-06-18T05:00:00.000Z",
+        "spend": 18343,
+        "leads": 73,
+        "conversions": 10,
+        "revenue": 51765
+      },
+      {
+        "date": "2026-06-19T05:00:00.000Z",
+        "spend": 20263,
+        "leads": 81,
+        "conversions": 11,
+        "revenue": 57183
+      },
+      {
+        "date": "2026-06-20T05:00:00.000Z",
+        "spend": 29141,
+        "leads": 117,
+        "conversions": 16,
+        "revenue": 82239
+      },
+      {
+        "date": "2026-06-21T05:00:00.000Z",
+        "spend": 28662,
+        "leads": 115,
+        "conversions": 16,
+        "revenue": 80887
+      },
+      {
+        "date": "2026-06-22T05:00:00.000Z",
+        "spend": 30127,
+        "leads": 120,
+        "conversions": 17,
+        "revenue": 85021
+      },
+      {
+        "date": "2026-06-23T05:00:00.000Z",
+        "spend": 28832,
+        "leads": 115,
+        "conversions": 16,
+        "revenue": 81368
+      }
+    ],
+    "hero": false,
+    "risk": "green",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "id": "CMP-GAU",
+    "name": "Gau Seva Go-shala Appeal",
+    "type": "Donation",
+    "objective": "Cow protection seva fund",
+    "channels": [
+      "meta_ads",
+      "whatsapp"
+    ],
+    "budget": 250000,
+    "spend": 0,
+    "status": "pending_approval",
+    "approvalStatus": "pending",
+    "ownerId": "U-ROHIT",
+    "approverId": "U-MUKUND",
+    "deptId": "DON",
+    "centerId": "GCB",
+    "startDate": "2026-06-21T05:00:00.000Z",
+    "leads": 0,
+    "calls": 0,
+    "conversions": 0,
+    "revenue": 0,
+    "cpl": 0,
+    "cpa": 0,
+    "roas": 0,
+    "utm": "hkht_gau",
+    "landingPageId": "LP-GAU",
+    "daily": [
+      {
+        "date": "2026-06-10T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-11T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-12T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-13T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-14T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-15T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-16T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-17T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-18T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-19T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-20T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-21T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-22T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-23T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      }
+    ],
+    "hero": false,
+    "risk": "amber",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "id": "CMP-CSR",
+    "name": "CSR Partnership Outreach Q3",
+    "type": "Donation",
+    "objective": "Corporate CSR for food-relief programmes",
+    "channels": [
+      "website",
+      "referral"
+    ],
+    "budget": 180000,
+    "spend": 96200,
+    "status": "active",
+    "approvalStatus": "approved",
+    "ownerId": "U-HEM",
+    "approverId": "U-MUKUND",
+    "deptId": "DON",
+    "centerId": "HYD",
+    "startDate": "2026-05-24T05:00:00.000Z",
+    "leads": 496,
+    "calls": 358,
+    "conversions": 33,
+    "revenue": 138732,
+    "cpl": 194,
+    "cpa": 2915,
+    "roas": 1.44,
+    "utm": "hkht_csr",
+    "landingPageId": "LP-CSR",
+    "daily": [
+      {
+        "date": "2026-06-10T05:00:00.000Z",
+        "spend": 3268,
+        "leads": 17,
+        "conversions": 1,
+        "revenue": 5301
+      },
+      {
+        "date": "2026-06-11T05:00:00.000Z",
+        "spend": 5423,
+        "leads": 28,
+        "conversions": 2,
+        "revenue": 8799
+      },
+      {
+        "date": "2026-06-12T05:00:00.000Z",
+        "spend": 4778,
+        "leads": 25,
+        "conversions": 2,
+        "revenue": 7753
+      },
+      {
+        "date": "2026-06-13T05:00:00.000Z",
+        "spend": 6901,
+        "leads": 36,
+        "conversions": 3,
+        "revenue": 11196
+      },
+      {
+        "date": "2026-06-14T05:00:00.000Z",
+        "spend": 3905,
+        "leads": 20,
+        "conversions": 2,
+        "revenue": 6336
+      },
+      {
+        "date": "2026-06-15T05:00:00.000Z",
+        "spend": 6126,
+        "leads": 32,
+        "conversions": 2,
+        "revenue": 9938
+      },
+      {
+        "date": "2026-06-16T05:00:00.000Z",
+        "spend": 4635,
+        "leads": 24,
+        "conversions": 2,
+        "revenue": 7519
+      },
+      {
+        "date": "2026-06-17T05:00:00.000Z",
+        "spend": 4434,
+        "leads": 23,
+        "conversions": 2,
+        "revenue": 7193
+      },
+      {
+        "date": "2026-06-18T05:00:00.000Z",
+        "spend": 5269,
+        "leads": 27,
+        "conversions": 2,
+        "revenue": 8548
+      },
+      {
+        "date": "2026-06-19T05:00:00.000Z",
+        "spend": 3552,
+        "leads": 18,
+        "conversions": 1,
+        "revenue": 5763
+      },
+      {
+        "date": "2026-06-20T05:00:00.000Z",
+        "spend": 4965,
+        "leads": 26,
+        "conversions": 2,
+        "revenue": 8055
+      },
+      {
+        "date": "2026-06-21T05:00:00.000Z",
+        "spend": 4820,
+        "leads": 25,
+        "conversions": 2,
+        "revenue": 7820
+      },
+      {
+        "date": "2026-06-22T05:00:00.000Z",
+        "spend": 4304,
+        "leads": 22,
+        "conversions": 2,
+        "revenue": 6984
+      },
+      {
+        "date": "2026-06-23T05:00:00.000Z",
+        "spend": 5386,
+        "leads": 28,
+        "conversions": 2,
+        "revenue": 8739
+      }
+    ],
+    "hero": false,
+    "risk": "green",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "id": "CMP-GIT",
+    "name": "Bhagavad Gita Daan — Always On",
+    "type": "Donation",
+    "objective": "Sponsor Gita distribution",
+    "channels": [
+      "google_ads",
+      "youtube"
+    ],
+    "budget": 300000,
+    "spend": 142800,
+    "status": "active",
+    "approvalStatus": "approved",
+    "ownerId": "U-ROHIT",
+    "approverId": "U-MUKUND",
+    "deptId": "MKT",
+    "centerId": "SEC",
+    "startDate": "2026-04-24T05:00:00.000Z",
+    "leads": 462,
+    "calls": 271,
+    "conversions": 58,
+    "revenue": 236408,
+    "cpl": 309,
+    "cpa": 2462,
+    "roas": 1.66,
+    "utm": "hkht_git",
+    "landingPageId": "LP-GIT",
+    "daily": [
+      {
+        "date": "2026-06-10T05:00:00.000Z",
+        "spend": 9922,
+        "leads": 32,
+        "conversions": 5,
+        "revenue": 18479
+      },
+      {
+        "date": "2026-06-11T05:00:00.000Z",
+        "spend": 5343,
+        "leads": 17,
+        "conversions": 2,
+        "revenue": 9952
+      },
+      {
+        "date": "2026-06-12T05:00:00.000Z",
+        "spend": 10810,
+        "leads": 35,
+        "conversions": 5,
+        "revenue": 20133
+      },
+      {
+        "date": "2026-06-13T05:00:00.000Z",
+        "spend": 5514,
+        "leads": 18,
+        "conversions": 3,
+        "revenue": 10269
+      },
+      {
+        "date": "2026-06-14T05:00:00.000Z",
+        "spend": 11086,
+        "leads": 36,
+        "conversions": 5,
+        "revenue": 20647
+      },
+      {
+        "date": "2026-06-15T05:00:00.000Z",
+        "spend": 8365,
+        "leads": 27,
+        "conversions": 4,
+        "revenue": 15579
+      },
+      {
+        "date": "2026-06-16T05:00:00.000Z",
+        "spend": 7965,
+        "leads": 26,
+        "conversions": 4,
+        "revenue": 14835
+      },
+      {
+        "date": "2026-06-17T05:00:00.000Z",
+        "spend": 7707,
+        "leads": 25,
+        "conversions": 4,
+        "revenue": 14355
+      },
+      {
+        "date": "2026-06-18T05:00:00.000Z",
+        "spend": 5221,
+        "leads": 17,
+        "conversions": 2,
+        "revenue": 9723
+      },
+      {
+        "date": "2026-06-19T05:00:00.000Z",
+        "spend": 7284,
+        "leads": 24,
+        "conversions": 3,
+        "revenue": 13567
+      },
+      {
+        "date": "2026-06-20T05:00:00.000Z",
+        "spend": 5523,
+        "leads": 18,
+        "conversions": 3,
+        "revenue": 10286
+      },
+      {
+        "date": "2026-06-21T05:00:00.000Z",
+        "spend": 6242,
+        "leads": 20,
+        "conversions": 3,
+        "revenue": 11626
+      },
+      {
+        "date": "2026-06-22T05:00:00.000Z",
+        "spend": 9875,
+        "leads": 32,
+        "conversions": 5,
+        "revenue": 18391
+      },
+      {
+        "date": "2026-06-23T05:00:00.000Z",
+        "spend": 8006,
+        "leads": 26,
+        "conversions": 4,
+        "revenue": 14910
+      }
+    ],
+    "hero": false,
+    "risk": "green",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  },
+  {
+    "id": "CMP-DRAFT",
+    "name": "Govardhan Puja Festival 2026",
+    "type": "Festival",
+    "objective": "Festival footfall + anna-koota donations",
+    "channels": [
+      "meta_ads",
+      "whatsapp",
+      "youtube"
+    ],
+    "budget": 400000,
+    "spend": 0,
+    "status": "draft",
+    "approvalStatus": "draft",
+    "ownerId": "U-ROHIT",
+    "approverId": "U-MUKUND",
+    "deptId": "MKT",
+    "centerId": "HYD",
+    "startDate": null,
+    "leads": 0,
+    "calls": 0,
+    "conversions": 0,
+    "revenue": 0,
+    "cpl": 0,
+    "cpa": 0,
+    "roas": 0,
+    "utm": "hkht_draft",
+    "landingPageId": "LP-DRAFT",
+    "daily": [
+      {
+        "date": "2026-06-10T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-11T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-12T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-13T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-14T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-15T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-16T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-17T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-18T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-19T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-20T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-21T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-22T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      },
+      {
+        "date": "2026-06-23T05:00:00.000Z",
+        "spend": 0,
+        "leads": 0,
+        "conversions": 0,
+        "revenue": 0
+      }
+    ],
+    "hero": false,
+    "risk": "amber",
+    "orgId": "ORG-HKHT",
+    "comments": []
+  }
+]

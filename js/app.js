@@ -333,14 +333,30 @@
   }
 
   /* ---------- boot ---------- */
-  store.load();
+  var hasCache = store.load();
   store.subscribe(function () { render(); });
-  router.start(function () { render(); });
+
+  function startApp() { router.start(function () { render(); }); }
+
+  if (hasCache) {
+    // resume this session's working dataset instantly
+    startApp();
+  } else {
+    // hydrate from the mock backend (JSON tables under /data), then start
+    App.api.loadState().then(function (state) {
+      store.hydrate(state);
+      startApp();
+    }).catch(function (err) {
+      console.error('Boot hydrate failed', err);
+      store.hydrate(App.seed.build());
+      startApp();
+    });
+  }
+
   // ⌘K / Ctrl-K command palette
   document.addEventListener('keydown', function (e) {
     if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); if (store.getSession().authed) openPalette(); }
   });
   // expose for screens that want to trigger it
   App.openPalette = openPalette;
-  // initial render handled by router.start -> resolve
 })();

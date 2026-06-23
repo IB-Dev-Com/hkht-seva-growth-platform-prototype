@@ -4,6 +4,24 @@ All notable changes to this prototype are recorded here. This is a **demonstrati
 for developer handoff: all AI / voice / WhatsApp / ad / CRM / payment calls are **mocked** with
 realistic data and simulated latency. No live backend.
 
+## [0.5.0] — 2026-06-23 — JSON backend prototype (data externalised to /data)
+
+Turned the in-memory mock into a **data-backed app**: every table the screens load now lives as a JSON
+file under `/data`, fetched at runtime like a REST backend.
+
+- **`/data/*.json` (47 tables + `manifest.json`)** — the prototype's database, generated deterministically
+  from `js/seed.js` via **`node tools/gen-data.js`** (Node VM sandbox). 706 array rows total.
+- **`js/api.js`** — mock data-access layer: `App.api.loadState()` reads the manifest then `GET`s each table
+  with simulated latency + console logging (`[mock-api] GET /data/contacts.json → 200 (64 rows, 12ms)`).
+  Single seam to later swap in a real API.
+- **Async boot:** `js/app.js` now hydrates the store from the JSON backend before starting the router
+  (splash shows meanwhile); `store.load()` resumes a cached session, `store.hydrate()` installs a fresh
+  dataset, and **Reset demo data** re-pulls the canonical tables from `/data`.
+- **Offline fallback:** if `fetch` fails (opening via `file://`), it falls back to the in-memory
+  `seed.build()` generator so the prototype still runs without a server.
+- **`data/README.md`** documents the backend, the regenerate step, and the path to a live API.
+- Cache-busting bumped to `?v=5`; `js/api.js` added to the load order.
+
 ## [0.4.1] — 2026-06-23 — Cross-screen wiring (one continuous loop)
 
 Closed every cross-screen dead-end so the three workflows behave as ONE clickable loop and the Phase-1 golden

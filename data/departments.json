@@ -1,0 +1,32 @@
+[
+  {
+    "id": "DON",
+    "name": "Donor Relations",
+    "icon": "🪔"
+  },
+  {
+    "id": "YAT",
+    "name": "Yatra & Pilgrimage",
+    "icon": "🛕"
+  },
+  {
+    "id": "MKT",
+    "name": "Digital Marketing",
+    "icon": "📣"
+  },
+  {
+    "id": "VOX",
+    "name": "Voice / Telecalling Ops",
+    "icon": "📞"
+  },
+  {
+    "id": "CRM",
+    "name": "CRM & Data Governance",
+    "icon": "🗂️"
+  },
+  {
+    "id": "FIN",
+    "name": "Finance / DCC",
+    "icon": "🧾"
+  }
+]

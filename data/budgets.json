@@ -1,0 +1,882 @@
+[
+  {
+    "id": "BUD-HYD-DON-whatsapp",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "DON",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 2275,
+    "spent": 2553,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-DON-ads",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "DON",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 371591,
+    "spent": 59921,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-YAT-voice",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "YAT",
+    "service": "voice",
+    "period": "2026-06",
+    "cap": 12105,
+    "spent": 3389,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-YAT-ads",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "YAT",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 50059,
+    "spent": 55487,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-MKT-voice",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "MKT",
+    "service": "voice",
+    "period": "2026-06",
+    "cap": 12509,
+    "spent": 877,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-MKT-ai",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "MKT",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 5950,
+    "spent": 1100,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-MKT-ads",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "MKT",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 109432,
+    "spent": 121369,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-VOX-voice",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "service": "voice",
+    "period": "2026-06",
+    "cap": 7063,
+    "spent": 3051,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-VOX-ai",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 5818,
+    "spent": 2629,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-VOX-ads",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 249984,
+    "spent": 137003,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-CRM-voice",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "CRM",
+    "service": "voice",
+    "period": "2026-06",
+    "cap": 13356,
+    "spent": 1915,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-CRM-ai",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "CRM",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 5309,
+    "spent": 2326,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-CRM-ads",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "CRM",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 69472,
+    "spent": 79217,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-HYD-FIN-whatsapp",
+    "orgId": "ORG-HKHT",
+    "centerId": "HYD",
+    "deptId": "FIN",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 4173,
+    "spent": 4624,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-DON-whatsapp",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "DON",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 4354,
+    "spent": 3219,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-DON-ai",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "DON",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 2847,
+    "spent": 1283,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-YAT-ai",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "YAT",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 4263,
+    "spent": 748,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-YAT-ads",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "YAT",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 270776,
+    "spent": 84484,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-MKT-whatsapp",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "MKT",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 5992,
+    "spent": 4653,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-MKT-ads",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "MKT",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 283034,
+    "spent": 139683,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-VOX-whatsapp",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 8974,
+    "spent": 780,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-VOX-ai",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 4295,
+    "spent": 2359,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-CRM-whatsapp",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "CRM",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 5820,
+    "spent": 3726,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-CRM-ai",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "CRM",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 3186,
+    "spent": 3514,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-FIN-whatsapp",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "FIN",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 5410,
+    "spent": 1324,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-FIN-ai",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "FIN",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 5560,
+    "spent": 2965,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-SEC-FIN-ads",
+    "orgId": "ORG-HKHT",
+    "centerId": "SEC",
+    "deptId": "FIN",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 204408,
+    "spent": 233833,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-DON-voice",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "DON",
+    "service": "voice",
+    "period": "2026-06",
+    "cap": 10288,
+    "spent": 2678,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-DON-whatsapp",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "DON",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 6868,
+    "spent": 3760,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-DON-ai",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "DON",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 3411,
+    "spent": 3242,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-YAT-voice",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "YAT",
+    "service": "voice",
+    "period": "2026-06",
+    "cap": 10941,
+    "spent": 3455,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-YAT-whatsapp",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "YAT",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 7206,
+    "spent": 3062,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-YAT-ai",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "YAT",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 3796,
+    "spent": 3172,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-YAT-ads",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "YAT",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 220283,
+    "spent": 173180,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-MKT-whatsapp",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "MKT",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 7715,
+    "spent": 1171,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-VOX-whatsapp",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "VOX",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 5557,
+    "spent": 3000,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-CRM-whatsapp",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "CRM",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 4382,
+    "spent": 3248,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-CRM-ai",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "CRM",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 3878,
+    "spent": 2186,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-CRM-ads",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "CRM",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 237424,
+    "spent": 122333,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-FIN-voice",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "FIN",
+    "service": "voice",
+    "period": "2026-06",
+    "cap": 11232,
+    "spent": 3851,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-FIN-ai",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "FIN",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 5920,
+    "spent": 2328,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-GCB-FIN-ads",
+    "orgId": "ORG-HKHT",
+    "centerId": "GCB",
+    "deptId": "FIN",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 205820,
+    "spent": 37364,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-GAURANGA"
+  },
+  {
+    "id": "BUD-VJA-DON-voice",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "DON",
+    "service": "voice",
+    "period": "2026-06",
+    "cap": 9974,
+    "spent": 3644,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-VJAADMIN"
+  },
+  {
+    "id": "BUD-VJA-DON-whatsapp",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "DON",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 3482,
+    "spent": 3839,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-VJAADMIN"
+  },
+  {
+    "id": "BUD-VJA-DON-ads",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "DON",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 292157,
+    "spent": 156727,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-VJAADMIN"
+  },
+  {
+    "id": "BUD-VJA-YAT-voice",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "YAT",
+    "service": "voice",
+    "period": "2026-06",
+    "cap": 6724,
+    "spent": 2507,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-VJAADMIN"
+  },
+  {
+    "id": "BUD-VJA-YAT-whatsapp",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "YAT",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 1922,
+    "spent": 2068,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-VJAADMIN"
+  },
+  {
+    "id": "BUD-VJA-YAT-ai",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "YAT",
+    "service": "ai",
+    "period": "2026-06",
+    "cap": 5965,
+    "spent": 3245,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-VJAADMIN"
+  },
+  {
+    "id": "BUD-VJA-MKT-voice",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "MKT",
+    "service": "voice",
+    "period": "2026-06",
+    "cap": 6481,
+    "spent": 951,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-VJAADMIN"
+  },
+  {
+    "id": "BUD-VJA-MKT-whatsapp",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "MKT",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 6210,
+    "spent": 1098,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-VJAADMIN"
+  },
+  {
+    "id": "BUD-VJA-MKT-ads",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "MKT",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 269710,
+    "spent": 124241,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-VJAADMIN"
+  },
+  {
+    "id": "BUD-VJA-VOX-ads",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "VOX",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 479571,
+    "spent": 78959,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-VJAADMIN"
+  },
+  {
+    "id": "BUD-VJA-CRM-whatsapp",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "CRM",
+    "service": "whatsapp",
+    "period": "2026-06",
+    "cap": 7916,
+    "spent": 1634,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": false,
+    "owner": "U-VJAADMIN"
+  },
+  {
+    "id": "BUD-VJA-FIN-voice",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "FIN",
+    "service": "voice",
+    "period": "2026-06",
+    "cap": 6865,
+    "spent": 2248,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-VJAADMIN"
+  },
+  {
+    "id": "BUD-VJA-FIN-ads",
+    "orgId": "ORG-VJA",
+    "centerId": "VJA",
+    "deptId": "FIN",
+    "service": "ads",
+    "period": "2026-06",
+    "cap": 193641,
+    "spent": 217432,
+    "alertAt": [
+      80,
+      100
+    ],
+    "hardStop": true,
+    "owner": "U-VJAADMIN"
+  }
+]

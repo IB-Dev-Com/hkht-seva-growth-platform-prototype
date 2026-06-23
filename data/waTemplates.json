@@ -1,0 +1,37 @@
+[
+  {
+    "id": "WA-PAYLINK",
+    "name": "Donation payment link",
+    "category": "Transactional",
+    "status": "approved",
+    "body": "Hare Krishna {{name}} 🙏 Thank you for your Janmashtami seva. Complete your ₹{{amount}} offering securely here: {{link}}"
+  },
+  {
+    "id": "WA-YATRA-BR",
+    "name": "Yatra brochure",
+    "category": "Service",
+    "status": "approved",
+    "body": "Hare Krishna {{name}} 🙏 Here is the Vrindavan Kartik Yatra brochure & itinerary: {{link}}. Reply YES to register."
+  },
+  {
+    "id": "WA-RECEIPT",
+    "name": "80G receipt",
+    "category": "Transactional",
+    "status": "approved",
+    "body": "Hare Krishna {{name}} 🙏 Your 80G donation receipt is ready: {{link}}"
+  },
+  {
+    "id": "WA-FEST-INV",
+    "name": "Festival invitation",
+    "category": "Service",
+    "status": "approved",
+    "body": "Hare Krishna {{name}} 🙏 You are invited to Sri Krishna Janmashtami at HKM Hyderabad. Details: {{link}}"
+  },
+  {
+    "id": "WA-CSR-CUST",
+    "name": "CSR custom proposal",
+    "category": "Nurture",
+    "status": "pending",
+    "body": "Custom donor-sensitive message — pending approval"
+  }
+]

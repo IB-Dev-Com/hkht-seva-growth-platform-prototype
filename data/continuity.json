@@ -1,0 +1,41 @@
+{
+  "incidents": [
+    {
+      "id": "INC-01",
+      "system": "Twilio Voice",
+      "status": "fallback-active",
+      "impact": "Auto-dialer unavailable",
+      "fallback": "Priority manual call sheet issued to telecallers",
+      "startedAt": "2026-06-23T00:00:00.000Z",
+      "reconciliation": "Pending — 0 records bypassing CRM",
+      "owner": "U-DEEPAK"
+    },
+    {
+      "id": "INC-02",
+      "system": "Razorpay / DCC",
+      "status": "monitoring",
+      "impact": "Webhook delay on payment status",
+      "fallback": "Manual status upload twice daily",
+      "startedAt": "2026-06-22T09:00:00.000Z",
+      "reconciliation": "Reconciled at 09:00",
+      "owner": "U-NANDA"
+    },
+    {
+      "id": "INC-03",
+      "system": "Hello Leads CRM API",
+      "status": "resolved",
+      "impact": "Read/write key pending",
+      "fallback": "CSV import + manual review",
+      "startedAt": "2026-06-20T05:00:00.000Z",
+      "reconciliation": "Reconciled · all records back-loaded",
+      "owner": "U-SACHI"
+    }
+  ],
+  "steps": [
+    "Capture",
+    "Contain",
+    "Reconcile",
+    "Correct",
+    "Verify"
+  ]
+}

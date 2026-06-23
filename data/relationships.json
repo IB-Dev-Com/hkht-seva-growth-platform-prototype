@@ -1,0 +1,192 @@
+[
+  {
+    "id": "REL-5099",
+    "from": "CON-100245",
+    "fromName": "Ravi Teja Gupta",
+    "to": "CON-100303",
+    "toName": "Sandeep Kumar",
+    "type": "Referrer",
+    "note": "Referred 3 donors for Annadaan",
+    "strength": 5
+  },
+  {
+    "id": "REL-5100",
+    "from": "CON-100337",
+    "fromName": "Srinivas Menon",
+    "to": "CON-100304",
+    "toName": "Geetha Reddy",
+    "type": "Family",
+    "note": "Referred for Yatra",
+    "strength": 5
+  },
+  {
+    "id": "REL-5101",
+    "from": "CON-100245",
+    "fromName": "Ravi Teja Gupta",
+    "to": "CON-100309",
+    "toName": "Kavya Prasad",
+    "type": "Referrer",
+    "note": "Brought to temple",
+    "strength": 5
+  },
+  {
+    "id": "REL-5102",
+    "from": "CON-100361",
+    "fromName": "Praveen Iyer",
+    "to": "CON-100357",
+    "toName": "Sneha Bhat",
+    "type": "Colleague",
+    "note": "Referred for Yatra",
+    "strength": 4
+  },
+  {
+    "id": "REL-5103",
+    "from": "CON-100363",
+    "fromName": "Anitha Gupta",
+    "to": "CON-100303",
+    "toName": "Sandeep Kumar",
+    "type": "Family",
+    "note": "Introduced at Janmashtami",
+    "strength": 1
+  },
+  {
+    "id": "REL-5104",
+    "from": "CON-100356",
+    "fromName": "Bhavana Goud",
+    "to": "CON-100342",
+    "toName": "Madhuri Menon",
+    "type": "Colleague",
+    "note": "Brought to temple",
+    "strength": 5
+  },
+  {
+    "id": "REL-5105",
+    "from": "CON-100355",
+    "fromName": "Pooja Shetty",
+    "to": "CON-100330",
+    "toName": "Naresh Bhat",
+    "type": "Community",
+    "note": "Referred for Yatra",
+    "strength": 4
+  },
+  {
+    "id": "REL-5106",
+    "from": "CON-100315",
+    "fromName": "Keerthi Varma",
+    "to": "CON-100314",
+    "toName": "Praveen Bhat",
+    "type": "Referrer",
+    "note": "Spouse",
+    "strength": 4
+  },
+  {
+    "id": "REL-5107",
+    "from": "CON-100310",
+    "fromName": "Harish Gupta",
+    "to": "CON-100338",
+    "toName": "Mahesh Shetty",
+    "type": "Family",
+    "note": "Same gated community",
+    "strength": 1
+  },
+  {
+    "id": "REL-5108",
+    "from": "CON-100304",
+    "fromName": "Geetha Reddy",
+    "to": "CON-100353",
+    "toName": "Shilpa Chowdary",
+    "type": "Colleague",
+    "note": "Office colleague",
+    "strength": 1
+  },
+  {
+    "id": "REL-5109",
+    "from": "CON-100309",
+    "fromName": "Kavya Prasad",
+    "to": "CON-100354",
+    "toName": "Shilpa Shetty",
+    "type": "Referrer",
+    "note": "Office colleague",
+    "strength": 2
+  },
+  {
+    "id": "REL-5110",
+    "from": "CON-100331",
+    "fromName": "Praveen Pillai",
+    "to": "CON-100329",
+    "toName": "Bhavana Sharma",
+    "type": "Community",
+    "note": "Spouse",
+    "strength": 4
+  },
+  {
+    "id": "REL-5111",
+    "from": "CON-100339",
+    "fromName": "Lakshmi Sharma",
+    "to": "CON-100353",
+    "toName": "Shilpa Chowdary",
+    "type": "Colleague",
+    "note": "Spouse",
+    "strength": 2
+  },
+  {
+    "id": "REL-5112",
+    "from": "CON-100362",
+    "fromName": "Anjali Bhat",
+    "to": "CON-100318",
+    "toName": "Harish Bhat",
+    "type": "Referrer",
+    "note": "Spouse",
+    "strength": 5
+  },
+  {
+    "id": "REL-5113",
+    "from": "CON-100345",
+    "fromName": "Sita Reddy",
+    "to": "CON-100329",
+    "toName": "Bhavana Sharma",
+    "type": "Colleague",
+    "note": "Brought to temple",
+    "strength": 5
+  },
+  {
+    "id": "REL-5114",
+    "from": "CON-100334",
+    "fromName": "Lakshmi Menon",
+    "to": "CON-100347",
+    "toName": "Sandeep Iyer",
+    "type": "Colleague",
+    "note": "Office colleague",
+    "strength": 2
+  },
+  {
+    "id": "REL-5115",
+    "from": "CON-100342",
+    "fromName": "Madhuri Menon",
+    "to": "CON-100344",
+    "toName": "Sita Iyer",
+    "type": "Colleague",
+    "note": "Office colleague",
+    "strength": 2
+  },
+  {
+    "id": "REL-5116",
+    "from": "CON-100353",
+    "fromName": "Shilpa Chowdary",
+    "to": "CON-100320",
+    "toName": "Shilpa Reddy",
+    "type": "Colleague",
+    "note": "Referred for Yatra",
+    "strength": 2
+  },
+  {
+    "id": "REL-5117",
+    "from": "CON-100335",
+    "fromName": "Vandana Reddy",
+    "to": "CON-100336",
+    "toName": "Divya Nair",
+    "type": "Colleague",
+    "note": "Brought to temple",
+    "strength": 4
+  }
+]

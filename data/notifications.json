@@ -1,0 +1,47 @@
+[
+  {
+    "id": "NTF-01",
+    "userId": "U-MUKUND",
+    "kind": "approval",
+    "title": "Gau Seva budget awaiting your approval",
+    "ref": "APR-001",
+    "ts": "2026-06-23T00:00:00.000Z",
+    "read": false
+  },
+  {
+    "id": "NTF-02",
+    "userId": "U-GOPAL",
+    "kind": "approval",
+    "title": "Gau Seva script needs donor sign-off",
+    "ref": "APR-002",
+    "ts": "2026-06-22T21:00:00.000Z",
+    "read": false
+  },
+  {
+    "id": "NTF-03",
+    "userId": "U-ANAND",
+    "kind": "task",
+    "title": "Callback due in 1h — Ravi Teja Gupta",
+    "ref": "tasks",
+    "ts": "2026-06-23T04:00:00.000Z",
+    "read": false
+  },
+  {
+    "id": "NTF-04",
+    "userId": "U-GOPAL",
+    "kind": "escalation",
+    "title": "Donor receipt escalation assigned to you",
+    "ref": "ESC",
+    "ts": "2026-06-23T03:00:00.000Z",
+    "read": false
+  },
+  {
+    "id": "NTF-05",
+    "userId": "U-SACHI",
+    "kind": "approval",
+    "title": "HNI merge needs your review",
+    "ref": "APR-003",
+    "ts": "2026-06-23T03:00:00.000Z",
+    "read": false
+  }
+]
