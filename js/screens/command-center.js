@@ -123,18 +123,55 @@ App.screens['command-center'] = (function () {
       ]
     });
 
+    /* Productivity rollup */
+    var prod = store.productivity();
+    var prodCard = ui.card({
+      title: 'Productivity & governance',
+      icon: '📈',
+      body: [
+        el('div.grid.cols-2', { style: { gap: '10px' } }, [
+          miniKpi('Task completion', prod.taskCompletion + '%', prod.taskCompletion >= 70 ? 'green' : 'amber'),
+          miniKpi('Approvals pending', prod.pendingApprovals + (prod.approvalsBreached ? ' · ' + prod.approvalsBreached + ' breached' : ''), prod.approvalsBreached ? 'red' : 'indigo'),
+          miniKpi('Avg approval age', prod.avgApprovalAgeH + 'h', prod.avgApprovalAgeH > 24 ? 'amber' : 'green'),
+          miniKpi('AI adoption', prod.aiAdoption + '%', 'violet'),
+          miniKpi('Open rework', prod.reworkOpen, prod.reworkOpen ? 'amber' : 'green'),
+          miniKpi('Human time saved', '~' + prod.humanTimeSaved + '%', 'teal')
+        ])
+      ]
+    });
+
+    /* Per-department central spend */
+    var byDept = {};
+    usage.rows.forEach(function (r) { byDept[r.deptId] = (byDept[r.deptId] || 0) + r.cost; });
+    var deptRows = U.sortBy(Object.keys(byDept).map(function (d) { return { d: d, cost: byDept[d] }; }), function (x) { return x.cost; }, 'desc');
+    var maxDept = Math.max.apply(null, deptRows.map(function (x) { return x.cost; }).concat([1]));
+    var deptUsageCard = ui.card({
+      title: 'Central spend by department',
+      icon: '🗂️',
+      right: [el('a.btn.btn-sm', { href: '#/billing' }, 'Statements')],
+      body: deptRows.map(function (x) {
+        return el('div', { style: { marginBottom: '10px' } }, [
+          el('div.row-between.mb-4', {}, [el('span.t-sm', { text: (store.dept(x.d) || { name: x.d }).name }), el('b.t-sm', { text: U.inr(x.cost, { compact: true }) })]),
+          ui.bar(x.cost / maxDept * 100, 'indigo')
+        ]);
+      })
+    });
+
     return el('div', {}, [
-      ui.pageHead('Leadership Command Center', 'One view across WF-006, WF-002 and WF-003 — revenue, the conversion loop, decisions and risk. <b>' + scopeLabel + '</b>. <span class="t-xs t-mut3">· as of ' + U.fmtTime(U.now()) + ' · sources live except CRM/voice on fallback</span>', [
+      ui.pageHead('Leadership Command Center', 'One view across WF-006, WF-002 and WF-003 — revenue, the conversion loop, decisions, risk, productivity and per-center/department usage & cost. <b>' + scopeLabel + '</b>. <span class="t-xs t-mut3">· as of ' + U.fmtTime(U.now()) + ' · sources live except CRM/voice on fallback</span>', [
         el('a.btn', { href: '#/sla' }, [el('span.ico', { text: '⏱️' }), 'SLA Board']),
         el('a.btn', { href: '#/journey' }, [el('span.ico', { text: '🧭' }), 'Golden Journey']),
         el('a.btn.btn-primary', { href: '#/approvals' }, [el('span.ico', { text: '✅' }), 'Approvals (' + pending.length + ')'])
       ]),
       kpis,
       el('div.grid.mt-16', { style: { gridTemplateColumns: '2fr 1fr', gap: '16px', alignItems: 'start' } }, [
-        el('div.col.gap-16', {}, [funnelCard, decisionsCard]),
-        el('div.col.gap-16', {}, [attentionCard, centerCard, usageCard])
+        el('div.col.gap-16', {}, [funnelCard, decisionsCard, prodCard]),
+        el('div.col.gap-16', {}, [attentionCard, centerCard, deptUsageCard, usageCard])
       ])
     ]);
+  }
+  function miniKpi(label, val, color) {
+    return el('div', { style: { background: 'var(--surface-2)', borderRadius: '9px', padding: '10px 12px' } }, [el('div.t-xs.t-mut', { text: label }), el('div.t-lg.t-bold', { text: val, style: { color: 'var(--' + color + '-600)' } })]);
   }
 
   function miniStat(icon, label, val, color, href) {

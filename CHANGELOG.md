@@ -4,6 +4,30 @@ All notable changes to this prototype are recorded here. This is a **demonstrati
 for developer handoff: all AI / voice / WhatsApp / ad / CRM / payment calls are **mocked** with
 realistic data and simulated latency. No live backend.
 
+## [0.6.0] — 2026-06-23 — Multi-tenant & governance layer
+
+Fleshed out the full distribution/governance layer for multiple stakeholders, departments and centers
+with central API billing.
+
+- **Hierarchy:** added the **Team** tier — Org → Center → Department → **Team** → User. Users carry `teamId`;
+  the Governance console renders the full tree (click any user to view-as). 8 teams seeded.
+- **Permissions:** capability model (`store.CAPS`, ~25 capabilities) + an editable **role × capability matrix**
+  (`rolePermissions`) with `store.can(cap)` gating; ★ = superuser. Bulk export now checks `export.bulk`.
+- **Approval hierarchies & delegation:** `approvalPolicies` per action type (script / copy / budget / merge /
+  import / WhatsApp / **data export** / donor message) → primary approver + **backup** + **SLA** + threshold,
+  all editable; **out-of-office delegation** routes a user's approvals to their backup. Bulk/donor exports now
+  pass through an **export-approval gate** (privacy custodian) before download.
+- **Micro-tracking:** **RACI panel** per record (Contact 360) from the workflow RACI defaults + owner override;
+  per-record **Activity & audit** log with field-level before→after; SLA/aging already live via the SLA engine.
+- **Central billing:** added **per-campaign cost attribution** (Billing tab) joining the usage ledger to each
+  campaign's calls/messages/ad-spend → true API cost-per-campaign + cost ratio.
+- **Command center:** added a **Productivity & governance** tile (task completion, approval age/breaches, AI
+  adoption, rework, time saved) and **central spend by department** rollup.
+- **Governance & Tenants** console (was Roles & Tenants) now has tabs: Hierarchy · Users & roles · Permissions ·
+  Approval policies & delegation · Centers & entitlements (+ teams) · Workload · Audit explorer.
+- Backend regenerated to **51 tables** (`teams`, `rolePermissions`, `approvalPolicies`, `raciDefaults` added);
+  cache bumped to `?v=6`.
+
 ## [0.5.0] — 2026-06-23 — JSON backend prototype (data externalised to /data)
 
 Turned the in-memory mock into a **data-backed app**: every table the screens load now lives as a JSON

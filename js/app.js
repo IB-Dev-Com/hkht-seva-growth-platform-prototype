@@ -20,7 +20,7 @@
       { path: '/billing', screen: 'billing', label: 'Billing & Statements', icon: '🧾', wf: 'platform' },
       { path: '/continuity', screen: 'continuity', label: 'Service Continuity', icon: '🛟', wf: 'platform' },
       { path: '/kcke', screen: 'kcke', label: 'KCKE & Media Boundary', icon: '📖', wf: 'platform' },
-      { path: '/admin', screen: 'admin', label: 'Roles & Tenants', icon: '⚙️', wf: 'admin' }
+      { path: '/admin', screen: 'admin', label: 'Governance & Tenants', icon: '⚙️', wf: 'admin' }
     ]},
     { group: 'WF-006 · CRM & Data Governance', tag: 'WF-006', items: [
       { path: '/wf006/contacts', screen: 'wf006-contacts', label: 'Master Contacts', icon: '👤', wf: 'wf006' },

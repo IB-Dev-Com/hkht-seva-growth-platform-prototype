@@ -1,0 +1,87 @@
+{
+  "leadership": [
+    "*"
+  ],
+  "platform_admin": [
+    "*"
+  ],
+  "org_admin": [
+    "contacts.view",
+    "admin.users",
+    "admin.roles",
+    "admin.entitlements",
+    "admin.billing",
+    "budget.manage",
+    "export.bulk"
+  ],
+  "center_admin": [
+    "contacts.view",
+    "admin.users",
+    "admin.billing",
+    "budget.manage"
+  ],
+  "workflow_manager": [
+    "contacts.view",
+    "contacts.edit",
+    "campaign.create",
+    "campaign.launch",
+    "budget.manage",
+    "tasks.manage",
+    "export.bulk"
+  ],
+  "data_custodian": [
+    "contacts.view",
+    "contacts.edit",
+    "contacts.merge",
+    "merge.approve",
+    "import.approve",
+    "contacts.export",
+    "export.bulk"
+  ],
+  "consent_custodian": [
+    "contacts.view",
+    "consent.manage",
+    "export.approve",
+    "data.export.approve"
+  ],
+  "voice_ops": [
+    "contacts.view",
+    "calls.run",
+    "script.manage"
+  ],
+  "supervisor": [
+    "contacts.view",
+    "calls.run",
+    "calls.qa",
+    "tasks.manage",
+    "escalation.resolve"
+  ],
+  "telecaller": [
+    "contacts.view",
+    "calls.run",
+    "tasks.manage"
+  ],
+  "marketer": [
+    "contacts.view",
+    "campaign.create",
+    "campaign.launch",
+    "content.create"
+  ],
+  "content_reviewer": [
+    "contacts.view",
+    "content.approve"
+  ],
+  "donor_approver": [
+    "contacts.view",
+    "script.approve",
+    "donor.message.approve",
+    "wa.template.approve",
+    "content.approve"
+  ],
+  "finance_reviewer": [
+    "contacts.view",
+    "admin.billing",
+    "budget.increase.approve",
+    "pnl.view"
+  ]
+}

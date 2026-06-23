@@ -1,0 +1,58 @@
+[
+  {
+    "id": "TM-DON",
+    "name": "Donor Cultivation Team",
+    "centerId": "HYD",
+    "deptId": "DON",
+    "lead": "U-GOPAL"
+  },
+  {
+    "id": "TM-YAT",
+    "name": "Yatra Desk",
+    "centerId": "HYD",
+    "deptId": "YAT",
+    "lead": "U-HEM"
+  },
+  {
+    "id": "TM-MKT",
+    "name": "Performance Marketing Team",
+    "centerId": "HYD",
+    "deptId": "MKT",
+    "lead": "U-ROHIT"
+  },
+  {
+    "id": "TM-VOXA",
+    "name": "Calling Floor A",
+    "centerId": "HYD",
+    "deptId": "VOX",
+    "lead": "U-LAKSHMI"
+  },
+  {
+    "id": "TM-CRM",
+    "name": "Data Stewardship Team",
+    "centerId": "HYD",
+    "deptId": "CRM",
+    "lead": "U-SACHI"
+  },
+  {
+    "id": "TM-FIN",
+    "name": "Finance / DCC Team",
+    "centerId": "HYD",
+    "deptId": "FIN",
+    "lead": "U-NANDA"
+  },
+  {
+    "id": "TM-VOXB",
+    "name": "Calling Floor B",
+    "centerId": "SEC",
+    "deptId": "VOX",
+    "lead": "U-PRIYA"
+  },
+  {
+    "id": "TM-VJA",
+    "name": "Vijayawada Ops",
+    "centerId": "VJA",
+    "deptId": "CRM",
+    "lead": "U-VJAADMIN"
+  }
+]

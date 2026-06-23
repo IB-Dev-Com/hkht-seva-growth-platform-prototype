@@ -200,13 +200,24 @@ App.screens['wf006-contact-detail'] = (function () {
         ui.statline('Duplicate risk', ui.badge(c.dupRisk + '%', c.dupRisk > 50 ? 'red' : 'green')),
         ui.statline('Consent / DND', ui.consentBadges(c.consent))
       ] }),
-      ui.card({ title: 'Audit & access log', icon: '🔒', body: audits.length ? audits.map(function (a) {
+      (function () {
+        var raci = store.raciFor('WF-006', c);
+        return ui.card({ title: 'Ownership (RACI)', icon: '🧭', body: [
+          ui.statline('Owner / performer', (store.user(raci.owner) || {}).name || '—'),
+          ui.statline('Approver', (store.user(raci.approver) || {}).name || '—'),
+          ui.statline('Backup approver', (store.user(raci.backup) || {}).name || '—'),
+          ui.statline('Escalation', (store.user(raci.escalation) || {}).name || '—'),
+          ui.statline('Dashboard reviewer', (store.user(raci.reviewer) || {}).name || '—'),
+          ui.note('info', 'RACI defaults from the WF-006 governance config (editable in Governance → Approval policies); the record owner overrides the performer.', '🧭')
+        ] });
+      })(),
+      ui.card({ title: 'Activity & audit log', icon: '🔒', right: [el('button.btn.btn-sm', { onclick: function () { var r = store.actions.requestExport('Contact ' + c.id, 1, !!c.donorId); ui.toast({ kind: r.approved ? 'success' : 'warn', title: r.approved ? 'Exported' : 'Export sent for approval', msg: r.approved ? 'Record exported & logged.' : 'Donor-record export requires privacy approval.' }); } }, '⬇ Export record')], body: audits.length ? audits.map(function (a) {
         return el('div', { style: { padding: '8px 0', borderBottom: '1px solid var(--border)' } }, [
-          el('div.row.gap-8', {}, [ui.badge(a.type, a.type === 'export' ? 'amber' : a.type === 'access' ? 'violet' : 'neutral'), el('span.t-xs.t-mut', { text: U.ago(a.timestamp) })]),
-          el('div.t-sm.mt-4', { text: a.action + ' — ' + a.detail }),
+          el('div.row.gap-8', {}, [ui.badge(a.type, a.type === 'export' ? 'amber' : a.type === 'access' ? 'violet' : 'neutral'), el('span.t-xs.t-mut', { text: U.fmtDateTime(a.timestamp) })]),
+          el('div.t-sm.mt-4', { text: a.action + (a.field ? ' (' + a.field + ': ' + (a.before == null ? '∅' : a.before) + ' → ' + (a.after == null ? '∅' : a.after) + ')' : ' — ' + a.detail) }),
           el('div.t-xs.t-mut3', { text: 'by ' + (store.user(a.actorId) || {}).name })
         ]);
-      }) : [ui.emptyState({ icon: '🔒', title: 'No access events', sub: 'PII access and exports for this record will appear here.' })] })
+      }) : [ui.emptyState({ icon: '🔒', title: 'No activity yet', sub: 'Edits, access, exports and consent changes for this record appear here.' })] })
     ]);
   }
 

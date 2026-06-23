@@ -41,6 +41,16 @@ App.seed = (function () {
     { id: 'ORG-HKHT', name: 'Hare Krishna Heritage Trust — Hyderabad', short: 'HKHT', plan: 'Enterprise', primary: true },
     { id: 'ORG-VJA', name: 'HKM Vijayawada Society', short: 'HKM-VJA', plan: 'Growth' }
   ];
+  var TEAMS = [
+    { id: 'TM-DON', name: 'Donor Cultivation Team', centerId: 'HYD', deptId: 'DON', lead: 'U-GOPAL' },
+    { id: 'TM-YAT', name: 'Yatra Desk', centerId: 'HYD', deptId: 'YAT', lead: 'U-HEM' },
+    { id: 'TM-MKT', name: 'Performance Marketing Team', centerId: 'HYD', deptId: 'MKT', lead: 'U-ROHIT' },
+    { id: 'TM-VOXA', name: 'Calling Floor A', centerId: 'HYD', deptId: 'VOX', lead: 'U-LAKSHMI' },
+    { id: 'TM-CRM', name: 'Data Stewardship Team', centerId: 'HYD', deptId: 'CRM', lead: 'U-SACHI' },
+    { id: 'TM-FIN', name: 'Finance / DCC Team', centerId: 'HYD', deptId: 'FIN', lead: 'U-NANDA' },
+    { id: 'TM-VOXB', name: 'Calling Floor B', centerId: 'SEC', deptId: 'VOX', lead: 'U-PRIYA' },
+    { id: 'TM-VJA', name: 'Vijayawada Ops', centerId: 'VJA', deptId: 'CRM', lead: 'U-VJAADMIN' }
+  ];
   var DEPTS = [
     { id: 'DON', name: 'Donor Relations', icon: '🪔' },
     { id: 'YAT', name: 'Yatra & Pilgrimage', icon: '🛕' },
@@ -822,6 +832,9 @@ App.seed = (function () {
     camp.forEach(function (c) { c.orgId = orgOf(c.centerId); c.comments = c.comments || []; });
     cd.contacts.forEach(function (c) { c.orgId = orgOf(c.centerId); c.comments = c.comments || []; c.history = c.history || []; });
 
+    // ---- team assignment (Org→Center→Dept→Team→User) ----
+    USERS.forEach(function (u) { var t = TEAMS.find(function (x) { return x.centerId === u.center && x.deptId === u.dept; }); u.teamId = t ? t.id : null; });
+
     // ---- per-variant creative metrics (CM-04) ----
     content.forEach(function (ct) {
       ct.variants.forEach(function (v, i) {
@@ -866,7 +879,53 @@ App.seed = (function () {
       aiAgents: buildAIAgents(),
       alerts: buildAlerts(), notifications: buildNotifications(),
       targets: buildTargets(), agentStatus: buildAgentStatus(),
+      teams: TEAMS,
+      rolePermissions: buildRolePermissions(),
+      approvalPolicies: buildApprovalPolicies(),
+      raciDefaults: buildRaciDefaults(),
       reworks: [], savedViews: [], campaignDrafts: []
+    };
+  }
+
+  /* ---------------- governance config ---------------- */
+  function buildRolePermissions() {
+    // role → granted capabilities (editable in the Governance console)
+    var P = {
+      leadership: ['*'],
+      platform_admin: ['*'],
+      org_admin: ['contacts.view', 'admin.users', 'admin.roles', 'admin.entitlements', 'admin.billing', 'budget.manage', 'export.bulk'],
+      center_admin: ['contacts.view', 'admin.users', 'admin.billing', 'budget.manage'],
+      workflow_manager: ['contacts.view', 'contacts.edit', 'campaign.create', 'campaign.launch', 'budget.manage', 'tasks.manage', 'export.bulk'],
+      data_custodian: ['contacts.view', 'contacts.edit', 'contacts.merge', 'merge.approve', 'import.approve', 'contacts.export', 'export.bulk'],
+      consent_custodian: ['contacts.view', 'consent.manage', 'export.approve', 'data.export.approve'],
+      voice_ops: ['contacts.view', 'calls.run', 'script.manage'],
+      supervisor: ['contacts.view', 'calls.run', 'calls.qa', 'tasks.manage', 'escalation.resolve'],
+      telecaller: ['contacts.view', 'calls.run', 'tasks.manage'],
+      marketer: ['contacts.view', 'campaign.create', 'campaign.launch', 'content.create'],
+      content_reviewer: ['contacts.view', 'content.approve'],
+      donor_approver: ['contacts.view', 'script.approve', 'donor.message.approve', 'wa.template.approve', 'content.approve'],
+      finance_reviewer: ['contacts.view', 'admin.billing', 'budget.increase.approve', 'pnl.view']
+    };
+    return P;
+  }
+  function buildApprovalPolicies() {
+    return {
+      'Voice script':       { approverRole: 'donor_approver', backupRole: 'workflow_manager', slaMins: 1440, category: 'Content/devotional' },
+      'Content / creative': { approverRole: 'content_reviewer', backupRole: 'workflow_manager', slaMins: 1440, category: 'Public copy' },
+      'Campaign budget':    { approverRole: 'leadership', backupRole: 'workflow_manager', slaMins: 1440, thresholdInr: 300000, category: 'Financial' },
+      'Budget increase':    { approverRole: 'leadership', backupRole: 'finance_reviewer', slaMins: 480, category: 'Financial' },
+      'Contact merge':      { approverRole: 'data_custodian', backupRole: 'leadership', slaMins: 1440, category: 'Identity' },
+      'Bulk import':        { approverRole: 'data_custodian', backupRole: 'workflow_manager', slaMins: 1440, category: 'Data' },
+      'WhatsApp template':  { approverRole: 'donor_approver', backupRole: 'content_reviewer', slaMins: 2880, category: 'Public copy' },
+      'Data export':        { approverRole: 'consent_custodian', backupRole: 'data_custodian', slaMins: 480, category: 'Privacy' },
+      'Donor message':      { approverRole: 'donor_approver', backupRole: 'leadership', slaMins: 480, category: 'Donor-sensitive' }
+    };
+  }
+  function buildRaciDefaults() {
+    return {
+      'WF-006': { owner: 'data_custodian', approver: 'data_custodian', backup: 'consent_custodian', escalation: 'workflow_manager', reviewer: 'leadership' },
+      'WF-002': { owner: 'supervisor', approver: 'donor_approver', backup: 'workflow_manager', escalation: 'leadership', reviewer: 'leadership' },
+      'WF-003': { owner: 'marketer', approver: 'content_reviewer', backup: 'workflow_manager', escalation: 'leadership', reviewer: 'finance_reviewer' }
     };
   }
 

@@ -11,12 +11,13 @@ App.screens['billing'] = (function () {
     var isPlatform = ['platform_admin', 'leadership', 'org_admin'].indexOf(store.getSession().role) > -1;
     var tabs = [
       { id: 'statements', label: 'Statements', icon: '🧾' },
+      { id: 'campaigns', label: 'Per-campaign cost', icon: '📣' },
       { id: 'budgets', label: 'Budgets & Caps', icon: '🎚️' },
       { id: 'ledger', label: 'Usage Ledger', icon: '📜' }
     ];
     if (isPlatform) tabs.push({ id: 'rates', label: 'Rate Card', icon: '🏷️' });
     var tabsBar = ui.tabs(tabs, tab, function (t) { tab = t; store.emit(); });
-    var body = tab === 'statements' ? statements(s) : tab === 'budgets' ? budgets(s) : tab === 'ledger' ? ledger(s) : rates(s);
+    var body = tab === 'statements' ? statements(s) : tab === 'campaigns' ? campaignCost(s) : tab === 'budgets' ? budgets(s) : tab === 'ledger' ? ledger(s) : rates(s);
     return el('div', {}, [
       ui.pageHead('Billing & Statements', 'Generation / voice / WhatsApp / ad APIs are billed <b>centrally</b>; this is the chargeback layer — per-center/department statements from the event-level usage ledger, budget caps with enforcement, and the rate card.', null),
       tabsBar, body
@@ -60,6 +61,33 @@ App.screens['billing'] = (function () {
     var ok = U.download('statement_' + (c ? c.id : 'center') + '_2026-06.csv', csv);
     store.actions.audit('Exported statement', 'export', c ? c.id : 'center', '2026-06');
     ui.toast({ kind: ok ? 'success' : 'info', msg: ok ? 'Statement CSV downloaded.' : 'Export logged (download blocked in sandbox).' });
+  }
+
+  /* ---- Per-campaign cost attribution (joins ledger → Call/Message → campaign) ---- */
+  function campaignCost(s) {
+    var callCamp = {}; s.calls.forEach(function (c) { callCamp[c.id] = c.campaignId; });
+    var msgCamp = {}; s.whatsapp.forEach(function (m) { msgCamp[m.id] = m.campaignId; });
+    var byCamp = {};
+    function add(cid, svc, cost) { if (!cid) return; var b = byCamp[cid] = byCamp[cid] || { ads: 0, ai: 0, voice: 0, whatsapp: 0, sms: 0, total: 0 }; b[svc] = (b[svc] || 0) + cost; b.total += cost; }
+    s.ledger.forEach(function (l) {
+      var cid = l.refType === 'Campaign' ? l.refId : l.refType === 'Call' ? callCamp[l.refId] : l.refType === 'Message' ? msgCamp[l.refId] : null;
+      add(cid, l.service, l.cost);
+    });
+    var rows = Object.keys(byCamp).map(function (cid) { var c = store.campaign(cid); return { id: cid, name: c ? c.name : cid, revenue: c ? c.revenue : 0, b: byCamp[cid] }; });
+    rows = U.sortBy(rows, function (r) { return r.b.total; }, 'desc');
+    return el('div', {}, [
+      ui.note('info', 'Central API cost attributed to each campaign by joining the usage ledger to its calls, messages and ad spend — so cost-per-conversion and true campaign P&L include platform API cost, not just media spend.', '📣'),
+      el('div.mt-12', {}, ui.card({ pad: false, body: [ui.table({ sortable: true, onRow: function (r) { if (store.campaign(r.id)) App.router.go('/wf003/campaign/' + r.id); }, columns: [
+        { label: 'Campaign', render: function (r) { return el('b.t-sm', { text: r.name }); } },
+        { label: 'Ad spend', num: true, render: function (r) { return U.inr(r.b.ads, { compact: true }); } },
+        { label: 'Voice', num: true, render: function (r) { return U.inr(r.b.voice); } },
+        { label: 'WhatsApp', num: true, render: function (r) { return U.inr(r.b.whatsapp); } },
+        { label: 'AI', num: true, render: function (r) { return U.inr(r.b.ai); } },
+        { label: 'Total API cost', num: true, sortVal: function (r) { return r.b.total; }, render: function (r) { return el('b', { text: U.inr(r.b.total, { compact: true }) }); } },
+        { label: 'Revenue', num: true, render: function (r) { return U.inr(r.revenue, { compact: true }); } },
+        { label: 'Cost ratio', num: true, render: function (r) { return r.revenue ? el('span', { text: Math.round(r.b.total / r.revenue * 100) + '%', style: { color: (r.b.total / r.revenue) < 0.25 ? 'var(--green-600)' : 'var(--amber-600)', fontWeight: 600 } }) : '—'; } }
+      ], rows: rows })] }))
+    ]);
   }
 
   /* ---- Budgets & caps (MT-03/06/08) ---- */

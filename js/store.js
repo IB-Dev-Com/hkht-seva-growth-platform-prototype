@@ -106,6 +106,76 @@ App.store = (function () {
   function unreadNotifCount() { return notifsFor().filter(function (n) { return !n.read; }).length; }
   function entitlementsFor(centerId) { var c = center(centerId || session.centerId); return c ? c.entitlements : ['platform', 'wf006', 'wf002', 'wf003']; }
 
+  /* ---- capabilities / permission matrix ---- */
+  var CAPS = [
+    { id: 'contacts.view', label: 'View contacts', group: 'WF-006' },
+    { id: 'contacts.edit', label: 'Edit contact fields', group: 'WF-006' },
+    { id: 'contacts.merge', label: 'Propose merges', group: 'WF-006' },
+    { id: 'merge.approve', label: 'Approve merges', group: 'WF-006' },
+    { id: 'consent.manage', label: 'Manage consent / DND', group: 'WF-006' },
+    { id: 'import.approve', label: 'Approve imports', group: 'WF-006' },
+    { id: 'contacts.export', label: 'Export contacts', group: 'WF-006' },
+    { id: 'calls.run', label: 'Run / log calls', group: 'WF-002' },
+    { id: 'calls.qa', label: 'QA-score calls', group: 'WF-002' },
+    { id: 'tasks.manage', label: 'Manage tasks', group: 'WF-002' },
+    { id: 'escalation.resolve', label: 'Resolve escalations', group: 'WF-002' },
+    { id: 'script.approve', label: 'Approve voice scripts', group: 'WF-002' },
+    { id: 'campaign.create', label: 'Create campaigns', group: 'WF-003' },
+    { id: 'campaign.launch', label: 'Launch / pause campaigns', group: 'WF-003' },
+    { id: 'content.approve', label: 'Approve content / creative', group: 'WF-003' },
+    { id: 'budget.manage', label: 'Manage budgets / caps', group: 'Billing' },
+    { id: 'budget.increase.approve', label: 'Approve budget increases', group: 'Billing' },
+    { id: 'donor.message.approve', label: 'Approve donor-sensitive messages', group: 'Governance' },
+    { id: 'wa.template.approve', label: 'Approve WhatsApp templates', group: 'Governance' },
+    { id: 'export.bulk', label: 'Bulk export', group: 'Governance' },
+    { id: 'data.export.approve', label: 'Approve data exports', group: 'Governance' },
+    { id: 'admin.users', label: 'Manage users / teams', group: 'Admin' },
+    { id: 'admin.roles', label: 'Edit role permissions', group: 'Admin' },
+    { id: 'admin.entitlements', label: 'Manage entitlements', group: 'Admin' },
+    { id: 'admin.billing', label: 'Manage billing / rate card', group: 'Admin' }
+  ];
+  function can(cap, role) {
+    role = role || session.role;
+    var rp = (state.rolePermissions || {})[role] || [];
+    return rp.indexOf('*') > -1 || rp.indexOf(cap) > -1;
+  }
+  function teamsFor(centerId, deptId) { return (state.teams || []).filter(function (t) { return (!centerId || t.centerId === centerId) && (!deptId || t.deptId === deptId); }); }
+  function team(id) { return (state.teams || []).find(function (t) { return t.id === id; }); }
+  function approvalPolicy(type) { return (state.approvalPolicies || {})[type]; }
+  // RACI for a record: workflow defaults + the record's own owner override
+  function raciFor(wf, rec) {
+    var d = (state.raciDefaults || {})[wf] || {};
+    return {
+      owner: (rec && rec.ownerId) || roleHolder(d.owner),
+      performer: (rec && rec.ownerId) || roleHolder(d.owner),
+      approver: roleHolder(d.approver), backup: roleHolder(d.backup),
+      escalation: roleHolder(d.escalation), reviewer: roleHolder(d.reviewer)
+    };
+  }
+  function roleHolder(role) { var u = (state.users || []).find(function (x) { return x.role === role; }); return u ? u.id : null; }
+  function auditFor(entityId) { return (state.audit || []).filter(function (a) { return a.entityId === entityId; }); }
+
+  /* ---- productivity metrics (leadership rollup) ---- */
+  function productivity() {
+    var s = state;
+    var pendingAppr = s.approvals.filter(function (a) { return a.status === 'pending'; });
+    var breachedAppr = pendingAppr.filter(function (a) { return slaState('approval', a).state === 'breached'; });
+    var overdue = s.tasks.filter(function (t) { return t.status === 'Overdue'; });
+    var completedTasks = s.tasks.filter(function (t) { return t.status === 'Completed'; });
+    var aiAppr = s.aiAgents ? Math.round(U.sum(s.aiAgents, function (a) { return a.approvalRate; }) / s.aiAgents.length) : 0;
+    return {
+      pendingApprovals: pendingAppr.length,
+      approvalsBreached: breachedAppr.length,
+      avgApprovalAgeH: pendingAppr.length ? Math.round(U.sum(pendingAppr, function (a) { return (now0() - new Date(a.createdAt)) / 3600000; }) / pendingAppr.length) : 0,
+      taskCompletion: s.tasks.length ? Math.round(completedTasks.length / s.tasks.length * 100) : 0,
+      overdue: overdue.length,
+      reworkOpen: (s.reworks || []).filter(function (r) { return r.status === 'open'; }).length,
+      aiAdoption: aiAppr,
+      humanTimeSaved: 62
+    };
+  }
+  function now0() { return U.now(); }
+
   /* ---- derived metrics for command center ---- */
   function metrics() {
     var camps = scoped(state.campaigns);
@@ -473,6 +543,41 @@ App.store = (function () {
     saveView: function (screen, name, filter) { state.savedViews.unshift({ id: U.uid('VW'), screen: screen, name: name, filter: filter, by: session.userId }); commit(); },
     markSeen: function (key) { session.seen = session.seen || {}; session.seen[key] = U.now().toISOString(); persist(); },
 
+    /* ====== GOVERNANCE / MULTI-TENANT ACTIONS ====== */
+    /* permission matrix */
+    toggleRolePermission: function (role, cap, on) {
+      state.rolePermissions = state.rolePermissions || {};
+      var list = state.rolePermissions[role] = (state.rolePermissions[role] || []).slice();
+      if (list.indexOf('*') > -1) return; // superuser
+      var i = list.indexOf(cap);
+      if (on && i === -1) list.push(cap); else if (!on && i > -1) list.splice(i, 1);
+      addAudit('Changed role permission', 'access', role, cap + '=' + on); commit();
+    },
+    /* approval policy config */
+    setApprovalPolicy: function (type, patch) {
+      state.approvalPolicies[type] = Object.assign({}, state.approvalPolicies[type], patch);
+      addAudit('Updated approval policy', 'access', type, JSON.stringify(patch)); commit();
+    },
+    /* delegation / out-of-office: route my approvals to a backup */
+    setOutOfOffice: function (on, toUserId) {
+      var u = currentUser();
+      u.ooo = on; u.delegateTo = on ? toUserId : null;
+      addAudit(on ? 'Enabled out-of-office' : 'Disabled out-of-office', 'access', u.id, on ? '→ ' + (user(toUserId) || {}).name : '');
+      commit();
+    },
+    /* export approval gate (donor / bulk PII) */
+    requestExport: function (scope, rowCount, sensitive) {
+      if (sensitive || rowCount > 100 || !can('export.bulk')) {
+        var pol = approvalPolicy('Data export') || { approverRole: 'consent_custodian', slaMins: 480 };
+        state.approvals.unshift({ id: U.uid('APR'), type: 'Data export', title: scope + ' — ' + rowCount + ' records', entity: 'export', entityId: scope, requestedBy: session.userId, approverRole: pol.approverRole, status: 'pending', priority: sensitive ? 'High' : 'Medium', createdAt: U.now().toISOString(), slaDue: U.hoursFromNow((pol.slaMins || 480) / 60).toISOString(), context: 'Bulk' + (sensitive ? ' / donor-sensitive' : '') + ' export of ' + rowCount + ' records requires privacy approval before download.' });
+        notify(roleHolder(pol.approverRole), 'approval', 'Data export awaiting approval: ' + scope, '#/approvals');
+        addAudit('Requested data export', 'export', scope, rowCount + ' records → approval'); commit();
+        return { approved: false };
+      }
+      addAudit('Exported data', 'export', scope, rowCount + ' records'); commit();
+      return { approved: true };
+    },
+
     reset: reset
   };
 
@@ -486,6 +591,8 @@ App.store = (function () {
     callsForContact: callsForContact, tasksForContact: tasksForContact, waForContact: waForContact,
     inScope: inScope, scoped: scoped, metrics: metrics, actions: actions, roleLabel: ROLE_LABEL,
     slaState: slaState, lifecycles: LIFECYCLES, notifsFor: notifsFor, unreadNotifCount: unreadNotifCount,
-    entitlementsFor: entitlementsFor, findEntity: findEntity
+    entitlementsFor: entitlementsFor, findEntity: findEntity,
+    can: can, CAPS: CAPS, teamsFor: teamsFor, team: team, approvalPolicy: approvalPolicy,
+    raciFor: raciFor, roleHolder: roleHolder, auditFor: auditFor, productivity: productivity
   };
 })();

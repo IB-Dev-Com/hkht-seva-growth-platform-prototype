@@ -1,0 +1,57 @@
+{
+  "Voice script": {
+    "approverRole": "donor_approver",
+    "backupRole": "workflow_manager",
+    "slaMins": 1440,
+    "category": "Content/devotional"
+  },
+  "Content / creative": {
+    "approverRole": "content_reviewer",
+    "backupRole": "workflow_manager",
+    "slaMins": 1440,
+    "category": "Public copy"
+  },
+  "Campaign budget": {
+    "approverRole": "leadership",
+    "backupRole": "workflow_manager",
+    "slaMins": 1440,
+    "thresholdInr": 300000,
+    "category": "Financial"
+  },
+  "Budget increase": {
+    "approverRole": "leadership",
+    "backupRole": "finance_reviewer",
+    "slaMins": 480,
+    "category": "Financial"
+  },
+  "Contact merge": {
+    "approverRole": "data_custodian",
+    "backupRole": "leadership",
+    "slaMins": 1440,
+    "category": "Identity"
+  },
+  "Bulk import": {
+    "approverRole": "data_custodian",
+    "backupRole": "workflow_manager",
+    "slaMins": 1440,
+    "category": "Data"
+  },
+  "WhatsApp template": {
+    "approverRole": "donor_approver",
+    "backupRole": "content_reviewer",
+    "slaMins": 2880,
+    "category": "Public copy"
+  },
+  "Data export": {
+    "approverRole": "consent_custodian",
+    "backupRole": "data_custodian",
+    "slaMins": 480,
+    "category": "Privacy"
+  },
+  "Donor message": {
+    "approverRole": "donor_approver",
+    "backupRole": "leadership",
+    "slaMins": 480,
+    "category": "Donor-sensitive"
+  }
+}

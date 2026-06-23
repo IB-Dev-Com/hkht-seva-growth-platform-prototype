@@ -5,7 +5,8 @@
     "role": "leadership",
     "dept": "DON",
     "center": "HYD",
-    "email": "mukund@hkmhyderabad.org"
+    "email": "mukund@hkmhyderabad.org",
+    "teamId": "TM-DON"
   },
   {
     "id": "U-HEM",
@@ -13,7 +14,8 @@
     "role": "workflow_manager",
     "dept": "MKT",
     "center": "HYD",
-    "email": "hemchand@hkmhyderabad.org"
+    "email": "hemchand@hkmhyderabad.org",
+    "teamId": "TM-MKT"
   },
   {
     "id": "U-SACHI",
@@ -21,7 +23,8 @@
     "role": "data_custodian",
     "dept": "CRM",
     "center": "HYD",
-    "email": "sachi@hkmhyderabad.org"
+    "email": "sachi@hkmhyderabad.org",
+    "teamId": "TM-CRM"
   },
   {
     "id": "U-VENKAT",
@@ -29,7 +32,8 @@
     "role": "consent_custodian",
     "dept": "CRM",
     "center": "HYD",
-    "email": "venkat@hkmhyderabad.org"
+    "email": "venkat@hkmhyderabad.org",
+    "teamId": "TM-CRM"
   },
   {
     "id": "U-DEEPAK",
@@ -37,7 +41,8 @@
     "role": "voice_ops",
     "dept": "VOX",
     "center": "HYD",
-    "email": "deepak@hkmhyderabad.org"
+    "email": "deepak@hkmhyderabad.org",
+    "teamId": "TM-VOXA"
   },
   {
     "id": "U-LAKSHMI",
@@ -45,7 +50,8 @@
     "role": "supervisor",
     "dept": "VOX",
     "center": "HYD",
-    "email": "lakshmi@hkmhyderabad.org"
+    "email": "lakshmi@hkmhyderabad.org",
+    "teamId": "TM-VOXA"
   },
   {
     "id": "U-ANAND",
@@ -53,7 +59,8 @@
     "role": "telecaller",
     "dept": "VOX",
     "center": "HYD",
-    "email": "anand@hkmhyderabad.org"
+    "email": "anand@hkmhyderabad.org",
+    "teamId": "TM-VOXA"
   },
   {
     "id": "U-PRIYA",
@@ -61,7 +68,8 @@
     "role": "telecaller",
     "dept": "VOX",
     "center": "SEC",
-    "email": "priya@hkmhyderabad.org"
+    "email": "priya@hkmhyderabad.org",
+    "teamId": "TM-VOXB"
   },
   {
     "id": "U-ROHIT",
@@ -69,7 +77,8 @@
     "role": "marketer",
     "dept": "MKT",
     "center": "HYD",
-    "email": "rohit@hkmhyderabad.org"
+    "email": "rohit@hkmhyderabad.org",
+    "teamId": "TM-MKT"
   },
   {
     "id": "U-MEERA",
@@ -77,7 +86,8 @@
     "role": "content_reviewer",
     "dept": "MKT",
     "center": "HYD",
-    "email": "meera@hkmhyderabad.org"
+    "email": "meera@hkmhyderabad.org",
+    "teamId": "TM-MKT"
   },
   {
     "id": "U-GOPAL",
@@ -85,7 +95,8 @@
     "role": "donor_approver",
     "dept": "DON",
     "center": "HYD",
-    "email": "gopal@hkmhyderabad.org"
+    "email": "gopal@hkmhyderabad.org",
+    "teamId": "TM-DON"
   },
   {
     "id": "U-NANDA",
@@ -93,7 +104,8 @@
     "role": "finance_reviewer",
     "dept": "FIN",
     "center": "HYD",
-    "email": "nanda@hkmhyderabad.org"
+    "email": "nanda@hkmhyderabad.org",
+    "teamId": "TM-FIN"
   },
   {
     "id": "U-GAURANGA",
@@ -101,7 +113,8 @@
     "role": "org_admin",
     "dept": "CRM",
     "center": "HYD",
-    "email": "admin@hkmhyderabad.org"
+    "email": "admin@hkmhyderabad.org",
+    "teamId": "TM-CRM"
   },
   {
     "id": "U-PLATADMIN",
@@ -109,7 +122,8 @@
     "role": "platform_admin",
     "dept": "CRM",
     "center": "HYD",
-    "email": "platform@hkmhyderabad.org"
+    "email": "platform@hkmhyderabad.org",
+    "teamId": "TM-CRM"
   },
   {
     "id": "U-VJAADMIN",
@@ -117,6 +131,7 @@
     "role": "center_admin",
     "dept": "CRM",
     "center": "VJA",
-    "email": "admin@hkmvijayawada.org"
+    "email": "admin@hkmvijayawada.org",
+    "teamId": "TM-VJA"
   }
 ]

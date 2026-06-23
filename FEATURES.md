@@ -136,3 +136,28 @@ The table below confirms which planned features are already built vs. partial vs
 > inventory is now represented as an interactive mock — including items previously marked 🟡/⬜. The ⬜
 > "later-phase" tags from the inventory are implemented here as demonstrable mock screens (the platform is a
 > prototype, so "later-phase" refers to production rollout sequencing, not prototype coverage).
+
+## Multi-tenant & governance layer (v0.6.0)
+
+| Feature | Screen | Status |
+|---|---|:--:|
+| Hierarchy: Org → Center → Department → **Team** → User | Governance → Hierarchy | ✅ |
+| Role-based **permission matrix** (role × capability, editable) + `store.can()` gating | Governance → Permissions | ✅ |
+| Module **entitlements** per center (license-gate workflows) | Governance → Centers | ✅ |
+| Platform-admin vs center-admin scope; org switcher (platform admin) | topbar / Governance | ✅ |
+| Central API **usage ledger** (event-level, per voice min / WhatsApp / AI gen / ad ₹) | Billing → Ledger | ✅ |
+| Cost attribution per **center / department / campaign** | Billing → Statements / Per-campaign | ✅ |
+| **Budgets & caps** per center+dept+service with enforcement, alerts, forecast | Billing → Budgets | ✅ |
+| Budget-increase / overspend **approval threshold** | Billing / Approvals | ✅ |
+| Editable **rate card** (per-service, per-org override) | Billing → Rate Card | ✅ |
+| Chargeback **statements** (qty×rate, GST, GL, export, mark-billed) | Billing → Statements | ✅ |
+| **Approval policies** per action type (approver + **backup** + **SLA** + threshold) | Governance → Policies | ✅ |
+| **Delegation / out-of-office** routing to backup approver | Governance → Policies | ✅ |
+| **Export-approval gate** (donor / bulk PII → privacy custodian) | Master Contacts / Contact 360 | ✅ |
+| **RACI** per record (owner/approver/backup/escalation/reviewer) | Contact 360 | ✅ |
+| Per-record **Activity & audit** (field-level before→after) | Contact 360 / Audit explorer | ✅ |
+| **SLA engine** (policies, live timers, breach auto-escalation, board) | SLA Board / per-screen | ✅ |
+| Done vs needs-improvement **rework loop** | Rework Queue | ✅ |
+| Unified **My Work** inbox (approvals/tasks/escalations/rework) | My Work | ✅ |
+| Leadership rollup: revenue, conversion, DQ, exceptions, **productivity**, per-center/dept **usage & cost** | Command Center | ✅ |
+| Full **audit explorer** (filter by type/actor/entity, CSV export) | Governance → Audit | ✅ |

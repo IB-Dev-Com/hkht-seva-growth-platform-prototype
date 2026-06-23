@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T16:03:35.570Z",
+  "generatedAt": "2026-06-23T16:30:47.169Z",
   "version": "3.0",
   "tables": [
     {
@@ -25,6 +25,12 @@
       "file": "apiRegistry.json",
       "type": "array",
       "count": 12
+    },
+    {
+      "key": "approvalPolicies",
+      "file": "approvalPolicies.json",
+      "type": "object",
+      "count": 9
     },
     {
       "key": "approvals",
@@ -171,6 +177,12 @@
       "count": 24
     },
     {
+      "key": "raciDefaults",
+      "file": "raciDefaults.json",
+      "type": "object",
+      "count": 3
+    },
+    {
       "key": "rateCard",
       "file": "rateCard.json",
       "type": "array",
@@ -193,6 +205,12 @@
       "file": "reworks.json",
       "type": "array",
       "count": 0
+    },
+    {
+      "key": "rolePermissions",
+      "file": "rolePermissions.json",
+      "type": "object",
+      "count": 14
     },
     {
       "key": "roles",
@@ -247,6 +265,12 @@
       "file": "tasks.json",
       "type": "array",
       "count": 12
+    },
+    {
+      "key": "teams",
+      "file": "teams.json",
+      "type": "array",
+      "count": 8
     },
     {
       "key": "triggers",

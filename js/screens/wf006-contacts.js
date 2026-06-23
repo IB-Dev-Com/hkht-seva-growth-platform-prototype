@@ -110,9 +110,15 @@ App.screens['wf006-contacts'] = (function () {
       actions: [{ label: 'Cancel' }, { label: 'Apply', variant: 'primary', onClick: function () { store.actions.bulkUpdateContacts(ids, { segment: seg }); sel = {}; ui.toast({ kind: 'success', msg: 'Segment applied to ' + ids.length + '.' }); } }] });
   }
   function exportContacts(rows) {
+    var hasDonor = rows.some(function (c) { return c.donorId; });
+    // governance gate: donor-sensitive or large bulk export needs privacy approval
+    var gate = store.actions.requestExport('Contacts export', rows.length, hasDonor);
+    if (!gate.approved) {
+      ui.toast({ kind: 'warn', title: 'Export sent for approval', msg: rows.length + ' records' + (hasDonor ? ' (donor-sensitive)' : '') + ' — privacy custodian must approve before download.' });
+      return;
+    }
     var csv = U.toCSV(rows.map(function (c) { return { Contact_ID: c.id, name: c.name, mobile: c.mobile, email: c.email, city: c.city, segment: c.segment, source: c.source || '', dnd: c.consent.dnd, dqScore: c.dqScore }; }));
     var ok = U.download('contacts_export.csv', csv);
-    store.actions.audit('Exported contacts CSV', 'export', 'bulk', rows.length + ' records');
     ui.toast({ kind: ok ? 'success' : 'info', title: ok ? 'Exported' : 'Export logged', msg: rows.length + ' records · logged in audit trail.' });
   }
 

@@ -1,0 +1,23 @@
+{
+  "WF-006": {
+    "owner": "data_custodian",
+    "approver": "data_custodian",
+    "backup": "consent_custodian",
+    "escalation": "workflow_manager",
+    "reviewer": "leadership"
+  },
+  "WF-002": {
+    "owner": "supervisor",
+    "approver": "donor_approver",
+    "backup": "workflow_manager",
+    "escalation": "leadership",
+    "reviewer": "leadership"
+  },
+  "WF-003": {
+    "owner": "marketer",
+    "approver": "content_reviewer",
+    "backup": "workflow_manager",
+    "escalation": "leadership",
+    "reviewer": "finance_reviewer"
+  }
+}
