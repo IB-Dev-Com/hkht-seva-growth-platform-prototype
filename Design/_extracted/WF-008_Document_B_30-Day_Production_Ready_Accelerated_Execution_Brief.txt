@@ -1,0 +1,338 @@
+External Partner Implementation Brief | 30-Day Production-Ready Accelerated Execution Brief | Not a TRD
+DOCUMENT B — Google / Implementation Partner Brief
+WF-008 Meeting Intelligence + Task Governance
+Prepared: 26 May 2026 | Revised: 26 May 2026 | Workflow: WF-008 | Status: 30-Day Production-Ready Accelerated Execution Brief for Partner Action
+Purpose: This document is a workflow-specific implementation briefing. It is not a TRD and not a request for a generic AI demo. The partner should use it to produce the TRD, solution architecture, Google-stack mapping, API/integration architecture, deployment architecture, rollout plan, feasibility analysis, timelines, risks, costing, and phased proposal.
+
+Evidence and Source Basis
+Source | How Used
+Generated WF-008 workflow blueprint in this chat | Main WF-008 current/future-state design source; sections 1–20.
+Mukund_Prabhu_Operations_Master_Context_Pack.docx v0.5 / v0.2 | WF-008 is P1 Execution Backbone; ClickUp replaces Wrike; partner briefs must separate 7-day, 14-day, 30X–100X, and long-term horizons.
+Role_Ownership_Correction_Note_May_2026.txt | SDSD/Wrike ownership references are historical/interim; owner, performer, approver, backup, escalation path must be validated.
+TRD_AI_Project_Intelligence_Agent_Google_Enterprise.docx | Project intelligence capability model: transcript ingestion, decision/task extraction, change detection, HITL approval, dashboard, audit logs, Google Cloud architecture.
+Temple Knowledge Network Gemini Enterprise TRD.docx | Gemini Enterprise strengths/limits: Drive/Docs/Gmail/Meet retrieval strong; autonomous background workflows and trigger automation need middleware/custom build.
+KCKE_Media_CRM_Dependency_Map.docx | Meeting Intelligence captures decisions/actions/owners/deadlines/escalations across workflows; KCKE and Media AI boundaries; human approval rules.
+Folder_Structure_Readme.txt | Where generated partner briefs, TRDs, POC results, registers, and final outputs should be stored.
+Relevant registers/dependency maps | AI Automation Master Register, Use Case Master Register, Source Register, Automation Interdependency Map, Workflow-to-Data Dependency Map; direct spreadsheet evidence requires re-validation if files are expired.
+
+Evidence limitation: workflow-specific meeting transcripts were not available in the current accessible evidence set. Any current-state details dependent on live meeting transcripts are marked Assumption / Needs Validation.
+Source basis: Generated WF-008 blueprint Section 1; file_search results showing transcript evidence incomplete; Master Context Pack v0.5.
+30-Day Production-Ready Accelerated Execution Re-Alignment
+This revised Document B realigns WF-008 Meeting Intelligence + Task Governance as a 30-Day Production-Ready Accelerated Execution Brief for the Hyderabad AI Revenue & Seva Growth Platform. The original structure, workflow-specific depth, agent expectations, data expectations, dashboard expectations, governance rules, and partner deliverables are preserved; the brief should now be read as a production sprint document rather than only as a demo/MVP note.
+WF-008 remains the Meeting Intelligence + ClickUp governance module. It must convert meetings, transcripts, MoMs, partner discussions, project updates, and decision conversations into source-linked decisions, approved ClickUp tasks, owner accountability, daily briefs, dashboards, escalation pathways, institutional memory, and ERP-ready records.
+Production readiness does not mean bypassing dependency checks. It means starting small in execution, starting big in architecture, starting immediately in data discipline, starting revenue-first in priority, starting human-governed in approvals, and starting platform-compatible in every workflow.
+Compressed execution path: Day 1–7 Production Foundation Sprint; Day 8–14 Integrated Working MVP; Day 15–30 Production Readiness and Productivity Multiplication Sprint; followed by 60-Day Stabilization and 75-Day Enterprise Scale Readiness. The long-term architecture remains the same, but the delivery posture is upgraded from proof-of-concept to production-aligned module deployment.
+Relevant recommendations from HKHT_AI_Transformation_Analysis(1).html are incorporated into this realignment, including AI-first redesign, four-horizon discipline, revenue-first prioritization, HITL governance, system separation across CRM/ERP/KCKE/Media AI/Gemini/ClickUp, interdependency mapping, ERP-ready IDs from Day 1, role ownership validation, dashboard-first control, consolidated API dependency tracking, service continuity planning, golden journey QA, and platform-level architecture. DPDP-specific recommendations are intentionally excluded.
+Source basis: Existing Document B; generated WF-008 blueprint Sections 1–20; HKHT_AI_Transformation_Analysis(1).html; Master Context Pack; Role_Ownership_Correction_Note_May_2026.txt; KCKE_Media_CRM_Dependency_Map.docx; Workflow-to-Data Dependency Map; Automation Interdependency Map.
+Production Readiness Definition
+For WF-008, production readiness means a selected operational group can use the system for real meeting-to-execution governance with controlled live data, validated approvals, visible dashboards, and reliable fallback paths. It is not limited to a presentation demo.
+Minimum production-readiness criteria: live operational usage by selected users; validated transcript-to-extraction-to-approval-to-ClickUp data flow; dashboard visibility for leadership and operations; approval routing for decisions and task writes; exception handling for unclear owners/dates/conflicts; validated owner, performer, approver, backup, escalation person, dashboard reviewer, and data steward; data-quality checks for source, owner, due date, approval, workflow ID, and task ID; AI-assisted execution with source grounding; cross-workflow compatibility through shared IDs; fallback process if API/automation fails; measurable productivity improvement; golden journey testing from meeting to task closure; and platform-level integration readiness.
+For this workflow, a golden journey test should cover: meeting scheduled → transcript captured → action/decision/risk extraction → human review → approved ClickUp task created/updated → dashboard updated → daily brief generated → overdue/blocked item escalated → decision log preserved → source record retrievable.
+Source basis: Generated WF-008 blueprint Sections 6–13 and 15–17; HKHT_AI_Transformation_Analysis(1).html recommendations on golden journey testing, service continuity, owner validation, dashboard control, and production-aligned architecture.
+Accelerated Delivery Governance
+WF-008 should be executed with daily accelerated delivery governance. The partner should maintain a daily checkpoint rhythm covering progress, blockers, data access, API readiness, unresolved assumptions, security/access issues, dashboard gaps, human approval flow status, ClickUp integration status, and production-readiness risks.
+Governance responsibilities: the partner owns solution design, build execution, API feasibility validation, prototype/MVP delivery, integration classification, dashboard implementation, technical risk visibility, and deployment documentation. HKHT owns timely data provision, owner/approver validation, ClickUp access, user availability, business-rule decisions, acceptance testing, and sign-off.
+Dependency watch: ClickUp API access, Google Workspace/Gemini licensing, Google Cloud services, CRM/DBMS field readiness, source IDs, user identity mapping, dashboard schema, WhatsApp/voice/payment/CRM dependencies where relevant, ERP migration implications, and consolidated API registry entries.
+Acceptance and sign-off process: each delivery stage should include a partner evidence pack, HKHT validation, defect list, risk list, production-readiness score, unresolved assumptions, and signed go/no-go decision for the next stage. Day 30 should include live operational handover, stabilization backlog, next 60-day roadmap, and 75-day enterprise-scale readiness roadmap.
+Failure and fallback protocol: if transcript ingestion fails, raw meeting source must still be stored; if extraction fails, manual review queue must remain available; if ClickUp API fails, approved task CSV/import fallback must be used; if dashboard refresh fails, Sheet/ClickUp fallback report must be available; if owner/date confidence is low, the system must route to human clarification instead of inventing values.
+Source basis: HKHT_AI_Transformation_Analysis(1).html; TRD_AI_Project_Intelligence_Agent reliability expectations; generated WF-008 blueprint Sections 8–10, 15–17.
+1000x Productivity Alignment
+WF-008 contributes to the 1000x ambition by becoming the execution-memory and task-governance fabric that prevents every other workflow from becoming a disconnected automation. Its direct productivity contribution is not only faster MoM creation; it is the conversion of institutional discussion into source-linked, owner-assigned, dashboard-visible, human-approved execution records.
+Automation contribution: deterministic intake, approved task creation, reminders, dashboard refresh, and decision-log writes remove repetitive coordination effort. AI assistance contribution: transcript intelligence, action extraction, decision detection, blocker identification, meeting agenda generation, and daily management briefs reduce manual interpretation effort. Agentic contribution: change detection, commitment comparison, escalation proposals, next-meeting agenda preparation, and cross-workflow risk detection multiply managerial control.
+Revenue/seva contribution: revenue-critical tasks from Yatra, donor cultivation, digital marketing, voice follow-up, community outreach, finance, and partner meetings can be tagged, tracked, escalated, and reviewed without relying on memory. This supports donation growth, Yatra growth, donor relationship continuity, Krishna consciousness outreach, and timely execution of campaign commitments.
+Platform contribution: WF-008 produces reusable Task ID, Meeting ID, Decision ID, Owner ID, Approval Status, Workflow ID, Contact/Donor/Yatri/Campaign/Event linkage where applicable, source tracking, follow-up status, and dashboard outputs. These become building blocks for leadership visibility, CRM intelligence, ERP migration, and multi-center learning.
+Relevant 100x/1000x ideas applied to WF-008: institutional memory encoding of Mukund Prabhu’s judgment; Follow-the-Devotee cross-workflow journey timeline through task and decision links; Voice of the Devotee intelligence through meeting and feedback signals; AI Fundraiser Copilot support when donor meeting commitments become CRM-linked tasks; Yatra demand prediction inputs from repeated meeting risks and registration blockers; live P&L linkage per Yatra/campaign through task-to-revenue fields where finance data is available; and federated mission intelligence for multi-center learning once the platform matures.
+Source basis: HKHT_AI_Transformation_Analysis(1).html 100× leap recommendations; generated WF-008 blueprint Sections 2, 10, 12, 13, 18; KCKE_Media_CRM_Dependency_Map.docx.
+Cross-Workflow Integration and Platform Safeguards
+WF-008 must produce and consume platform-compatible records. Where applicable, it should link meeting tasks and decisions to Common Contact ID, Donor ID, Yatri ID, Community ID, Family ID, Campaign ID, Event ID, Yatra ID, Donation ID, Payment Status, Receipt Status, Owner ID, Task ID, Source, Created Date, Last Follow-up Date, Next Action, and Approval Status.
+CRM remains the relationship source of truth for contacts, donors, yatris, community members, family units, campaign responses, calls, follow-ups, and relationship history. ClickUp remains the current task execution layer. ERP remains the future structured operational/financial system of record. KCKE remains the source-grounded Krishna conscious knowledge layer and must not store operational task/payment/contact status. Media AI remains separate for approved creative/media outputs.
+Safeguards: older role ownership references must not drive routing without validation; AI must not invent owners/dates/decisions; every important task should retain source traceability; sensitive donor/finance/public/devotional/media/HR/legal actions require human approval; API dependencies must be tracked in a consolidated registry; and fallback workflows must be available for transcript, ClickUp, dashboard, CRM, WhatsApp, voice, payment, and ERP integration failures.
+WF-008 should contribute to the leadership command-center visibility layer by feeding owner-wise overdue tasks, pending approvals, blocked revenue tasks, partner commitments, decision-required items, data-quality gaps, and Mukund Prabhu dependency-reduction metrics.
+Source basis: HKHT_AI_Transformation_Analysis(1).html; Project_Glossary; KCKE_Media_CRM_Dependency_Map.docx; generated WF-008 blueprint Sections 11–13 and 18.
+Relevant Analysis Recommendations Incorporated
+The following recommendations from HKHT_AI_Transformation_Analysis(1).html are incorporated into this WF-008 revision: maintain AI-first redesign rather than digitizing current manual follow-up; preserve four-horizon planning while upgrading it to a 30-day production path; keep revenue-first prioritization; enforce mandatory HITL gates; maintain separation between CRM, ERP, KCKE, Media AI Pipeline, Gemini Enterprise/productivity agents, and ClickUp; strengthen cross-workflow interdependency mapping; require ERP-ready IDs and schema from Day 1; keep evidence-based assumptions marked clearly; validate role ownership before routing; add consolidated API registry expectations; avoid overpromising live integrations without confirmed access; add fallback/service-continuity protocol; measure Mukund Prabhu dependency reduction; include golden journey QA; and preserve multi-center readiness without forcing multi-center rollout in the first 30 days.
+Not incorporated: DPDP-specific legal/compliance recommendations and DPDP-specific child-data framing are intentionally excluded from this revised partner brief.
+1. Workflow Name and Platform Role
+Workflow: WF-008 Meeting Intelligence + Task Governance.
+What this workflow does: converts meetings, transcripts, MoMs, partner discussions, project updates, and decision conversations into approved decisions, ClickUp tasks, owner accountability, deadline tracking, escalation, dashboards, daily briefs, and institutional memory.
+Platform role: execution-backbone module of the future Hyderabad AI Revenue & Seva Growth Platform. It should govern the execution layer for all revenue, seva, donor, Yatra, content, finance, HR, partner, and operations workflows.
+Source basis: Generated WF-008 blueprint Sections 2, 6, 18; Master Context Pack v0.5 architecture clusters; KCKE_Media_CRM_Dependency_Map.docx.
+2. Executive Seva Impact Summary
+Impact | Expected WF-008 Contribution | Source Basis
+Donation impact | Captures donor/CSR/seva promises from meetings into tracked follow-ups and ClickUp tasks; later links tasks to Donor ID, Donation ID, Campaign ID, payment/receipt status. | Generated blueprint Sections 2, 12, 13; platform compatibility requirements.
+Yatra impact | Ensures Yatra marketing, calling, registration, payment, logistics, and post-yatra cultivation tasks receive owners, dates, reminders, and escalations. | Generated blueprint Sections 2, 13, 18; Master Context Pack revenue-first priorities.
+Donor cultivation impact | Preserves relationship decisions and next actions; supports future CRM linkage for donor history and follow-up continuity. | Generated blueprint Sections 2, 12, 18.
+Krishna consciousness outreach impact | Turns outreach/content/community decisions into accountable work and preserves institutional memory for future preaching programs. | Generated blueprint Sections 2, 18; KCKE/Media boundary files.
+Mukund Prabhu burden reduction | Replaces manual memory and task chasing with exception dashboards, daily briefs, and approval queues. | Generated blueprint Sections 2, 10, 14; Role Ownership Correction Note.
+ERP/data centralization impact | Creates structured task/decision/approval/source/audit records from day one for later ERP migration. | Generated blueprint Sections 11, 12; Master Context Pack ERP principle.
+Later multi-center readiness | Creates a replicable meeting-to-task governance pattern that can be copied after Hyderabad stabilizes. | Generated blueprint Sections 11, 18; Master Context Pack scale backbone.
+
+3. Management Brief for Leadership
+WF-008 is the execution backbone: without it, strategy meetings will not reliably convert into actions, owners, deadlines, and measurable results.
+ClickUp should be treated as the task execution layer; the partner should build AI Meeting Intelligence above ClickUp, not replace ClickUp in the first release.
+The first value proof is simple: transcript → decisions/actions → human approval → ClickUp task → dashboard → daily brief.
+This avoids isolated automation by using common IDs, source tracking, owner/approver fields, approval status, and ERP-ready data fields from day one.
+Revenue tasks must be visibly tagged and escalated faster than ordinary admin tasks.
+The system must reduce Mukund Prabhu’s manual follow-up burden by surfacing only exceptions, blockers, and strategic approvals.
+The partner must classify every feature as buildable now, demo/mock only, data-dependent, API-dependent, CRM/ERP-dependent, or long-term.
+No sensitive donor, finance, public, HR, legal, devotional, or external communication action should bypass human approval.
+Source basis: Generated WF-008 blueprint Sections 3, 6, 8–10, 15; Master Context Pack partner sprint model; KCKE_Media_CRM_Dependency_Map human approval rules.
+4. Current Operational Reality
+Area | Current Understanding | Evidence / Validation Status
+Trigger | Strategy, review, kickoff, vendor, partner, donor, internal operations, revenue-workflow, or department meeting. | Generated blueprint Section 4; Assumption / Needs Validation from live transcripts.
+People involved | Mukund Prabhu / Mukunda Charan Dasa, HODs, office/coordinator function, team members, ClickUp admin, implementation partner. SDSD references are historical/interim unless reconfirmed. | Generated blueprint Section 4; Role Ownership Correction Note.
+Tools used | Historically Wrike; currently ClickUp. Also Google Meet/Zoom, Google Calendar, Drive, Docs, Sheets, email, WhatsApp, Gemini notes/Otter/Fathom where available. | Generated blueprint Section 4; user clarification; Master Context Pack v0.5.
+Current steps | Meeting scheduled; meeting held; notes/transcript may be created; MoM/actions extracted manually; tasks entered into ClickUp/Sheets/WhatsApp; follow-up manually chased. | Generated blueprint Section 4; Assumption / Needs Validation.
+Current approvals | Likely informal and human-led; exact owner/performer/approver/backup/escalation route must be validated. | Generated blueprint Section 4; Role Ownership Correction Note.
+Current reports | Expected: MoM, action tracker, overdue list, decision log, resolution archive; current actual reports require evidence. | Generated blueprint Section 4; register evidence via prior blueprint; Needs Validation.
+Current pain points | Manual MoM, manual task entry, lost decisions, WhatsApp dependency, owner ambiguity, Mukund dependency, weak change tracking. | Generated blueprint Sections 4–5; TRD_AI_Project_Intelligence_Agent.
+
+5. Current Bottlenecks and Productivity Loss
+Bottleneck | Productivity Loss | Revenue / Seva Risk | Source Basis
+Manual MoM and task extraction | Slow conversion from meeting to execution. | Campaign/Yatra/donor actions delayed. | Generated blueprint Section 5.
+Follow-up leakage | Owners may not receive or update tasks consistently. | Donor/yatri commitments missed. | Generated blueprint Section 5; TRD_AI_Project_Intelligence_Agent.
+Data fragmentation | Decisions scattered across Docs, WhatsApp, emails, Sheets, and memory. | Institutional memory loss. | Temple Knowledge Network TRD; generated blueprint.
+WhatsApp/spreadsheet dependency | No reliable audit trail or dashboard governance. | Escalations become informal and late. | Generated blueprint Section 5; Assumption / Needs Validation.
+Mukund Prabhu dependency | Senior leader becomes default memory/escalation system. | Managerial load blocks strategy and relationship cultivation. | Generated blueprint Sections 5, 14; Role Ownership Correction Note.
+Revenue leakage | Revenue-critical tasks look same as admin tasks if not tagged. | Donation/Yatra/campaign opportunities delayed. | Generated blueprint Sections 2, 10, 13.
+Missed preaching/donor/Yatra opportunities | Action items from outreach, content, or donor meetings may not become structured follow-ups. | Reduced conversion and weaker outreach continuity. | Generated blueprint Sections 2, 18.
+
+6. Desired AI-First Future-State Vision
+The future-state workflow should be: Meeting → Transcript → AI Extraction → Human Approval → ClickUp Task Creation/Update → Decision Log → Daily Brief → Dashboard → Escalation → Institutional Memory → ERP-ready data.
+Classification | What It Means for WF-008 | Source Basis
+Deterministic automation | Forms/intake, transcript capture, approved ClickUp task creation, reminders, dashboard refresh, decision-log entry after approval. | Generated blueprint Section 6; Project_Glossary.
+AI-assisted | MoM draft, decision extraction, action extraction, risk/blocker detection, daily/weekly summaries, agenda generation. | Generated blueprint Section 6; TRD_AI_Project_Intelligence_Agent.
+Agentic | Compare new commitments with old tasks, detect date/owner/scope changes, propose updates, prepare agendas, escalate repeated delays. | Generated blueprint Sections 6–7; TRD_AI_Project_Intelligence_Agent.
+Human-approved | Final decisions, owner/date changes, donor-sensitive actions, finance/procurement/legal/HR, public/devotional communication, partner commitments. | Generated blueprint Section 6; KCKE_Media_CRM_Dependency_Map; Project_Glossary.
+
+7. Expected Productivity Leap
+Level | Expected Improvement | Concrete Partner Test
+2X control improvement | Every meeting produces clear draft MoM/action/decision records. | Run 3 transcripts through extraction and show editable output.
+10X workflow productivity | Approved tasks enter ClickUp with source links and required fields. | Create/update tasks in ClickUp through API or controlled import.
+30X revenue-operating leverage | Daily brief and revenue-tagged escalation show which Yatra/donor/campaign tasks are blocked. | Dashboard shows revenue/yatra/donor-linked tasks, overdue aging, pending approvals.
+100X Hyderabad platform leverage | Same governance pattern works across all workflows with common IDs and dashboards. | Demonstrate reusable schema and workflow tags.
+1000X long-term contribution | Reach × conversion × donor lifetime value improves when all meetings convert into follow-up discipline and institutional memory. | Partner must model long-term architecture; not promise 1000X in MVP.
+
+Source basis: Generated blueprint Sections 2, 10; Project_Glossary productivity horizon definitions.
+8. Expected AI Agents / Copilots
+Agent | Purpose | Users | Inputs | Outputs | Data Needed | Tools / Connectors | Human Approval | Escalation | Success Metrics
+Meeting Intake Agent | Classify meeting/workflow/sensitivity. | Coordinator | Calendar event, agenda, transcript | Meeting record | meeting_id, workflow_id, attendees | Calendar, Drive, Forms/AppSheet | Low-confidence classification | Ask coordinator/HOD | % correctly classified
+Transcript Intelligence Agent | Extract summary, actions, decisions, risks, blockers. | Coordinator/HOD | Transcript, MoM, agenda | Structured extraction JSON | source_uri, speaker labels | Gemini/Vertex, Drive, Docs | Reviewer approves | Unclear owner/date flagged | Extraction approval rate
+Decision & Resolution Agent | Maintain decision log and resolution register. | Leadership/PMO | Approved decisions | Decision records | decision_id, source quote, approver | Sheets/Firestore/BigQuery | Mandatory approval | Unapproved major decision to approver | % source-linked decisions
+ClickUp Task Router Agent | Create/update approved tasks in ClickUp. | Coordinator/ClickUp admin | Approved actions | ClickUp tasks | owner, due date, priority, source meeting | ClickUp API, Apps Script/Cloud Run | Approve before writes | Missing owner/date to reviewer | Tasks created without manual copy-paste
+Commitment Change Detection Agent | Detect changed dates/owners/scope/status. | PMO/HOD | New extraction + old tasks | Change proposal | old/new values, source quote | ClickUp API, Firestore, BigQuery | Mandatory for material changes | Conflicts to HOD/Mukund | % changes detected
+Reminder & Escalation Agent | Send reminders and escalations. | Team/HODs | ClickUp status, due dates | Reminders/escalations | task status, SLA, backup owner | ClickUp, Gmail, Chat; WhatsApp later | Escalation policy approved | Owner → backup → HOD → Mukund | Overdue reduction
+Daily Management Brief Agent | Prepare exception brief for leadership. | Mukund Prabhu/HODs | Open, overdue, blocked tasks | Daily/weekly briefs | task priority, blockers, approvals | ClickUp, BigQuery/Sheets, Gmail/Chat | Brief reviewed initially | Critical blockers highlighted | Time saved; fewer status calls
+Revenue-Seva Impact Agent | Tag tasks by donation/yatra/donor/preaching impact. | HODs/Leadership | Tasks, workflow tags, CRM links later | Priority scoring | Campaign/Yatra/Donor/Event IDs | ClickUp fields; CRM later | HITL priority override | Revenue task overdue escalates | Critical task SLA
+Query & Memory Agent | Answer status/history/what-changed questions with source grounding. | Leadership/team | Natural language query | Grounded answer | task/decision/transcript corpus | Gemini Enterprise / Vertex Search | No write without approval | Low confidence says unclear | Query usefulness, source coverage
+Governance & Audit Agent | Enforce approvals, access, logs, roles. | Admin/PMO | Proposed actions | Allow/review/escalate | user role, sensitivity, policy | IAM, Cloud Logging, audit DB | Mandatory for writes | Unauthorized attempt to admin | Audit completeness
+
+Source basis: Generated blueprint Section 7; TRD_AI_Project_Intelligence_Agent architecture and behavior requirements.
+9. Human Role Redesign Expectations
+Role / Function | Expected Future Role | Source Basis
+Mukund Prabhu / Mukunda Charan Dasa | Strategic approver and exception reviewer; not default task memory. Current dependency must be mapped. | Generated blueprint Section 14; Role Ownership Correction Note.
+Meeting coordinator | AI-supervised meeting intelligence reviewer and task approval queue operator. | Generated blueprint Section 14.
+ClickUp admin | Maintains workspace, lists, statuses, custom fields, time tracking, API access, permissions. | Generated blueprint Sections 9, 14.
+HODs | Accountable for department task closure, owner validation, and escalation response. | Generated blueprint Section 14.
+Team members | Execute ClickUp tasks, update status/time, clarify ambiguous AI extractions. | Generated blueprint Section 14.
+Data steward | Maintains meeting/task/decision schema, data quality, dashboard fields, ERP-readiness. | Generated blueprint Sections 12, 14.
+AI governance admin | Manages prompts, logs, permissions, approval rules, failed jobs, audit review. | Generated blueprint Sections 7, 14; TRD governance.
+Current repetitive note/task-copy functions | Retrain toward AI-supervised review, QA, data stewardship, donor/yatri/preaching-facing service. | Role Ownership Correction Note redeployment principle.
+
+10. Dashboard and Operational Intelligence Expectations
+Dashboard | Purpose | Minimum Fields / Views
+Management dashboard | Show leadership exceptions and strategic blockers. | Overdue critical tasks, pending approvals, blocked revenue tasks, partner commitments, decision required.
+Operational dashboard | Show day-to-day ClickUp governance. | Open tasks, due today/week, owner load, overdue aging, status distribution, time tracking.
+Revenue/conversion dashboard | Show tasks tied to donation/Yatra/donor/campaign outcomes. | Campaign ID, Yatra ID, Donor ID, donation/payment fields where available, conversion blockers.
+Data quality dashboard | Expose missing owner/date/source/approval/contact IDs. | Missing fields, low-confidence extraction, duplicate task risk, stale tasks, unlinked sources.
+AI-agent performance dashboard | Monitor extraction reliability and sync health. | Approval rate, edit rate, hallucination incidents, failed jobs, ClickUp sync failures, source-link coverage.
+Leadership command-center visibility layer | Create one senior view of WF-008 and cross-workflow execution risk. | Revenue-critical tasks, owner-wise delays, partner commitments, pending approvals, blocked Yatra/donor/campaign items, Mukund Prabhu dependency-reduction metric.
+API/dependency readiness dashboard | Prevent disconnected automations and overpromised integrations. | ClickUp API status, CRM/API status, transcript ingestion status, dashboard feed status, fallback status, owner validation status, unresolved assumptions.
+Golden journey QA dashboard | Validate production readiness from meeting to task closure. | Meeting source captured, extraction approved, ClickUp task created, dashboard updated, daily brief generated, escalation tested, closure verified.
+
+Source basis: Generated blueprint Sections 10, 13; TRD_AI_Project_Intelligence_Agent reports/analytics.
+11. CRM / ERP / Data Expectations
+WF-008 must capture task/decision/approval data in a way that can link to revenue identities where applicable, even if CRM/ERP integration is not ready during the MVP.
+Entity | Required Fields | Source of Truth Now | Future Source of Truth | Dependency / Risk
+Meeting | meeting_id, title, date, workflow_id, participants, transcript_uri, sensitivity | Calendar/Drive/Meet/Sheet | Operational DB + Drive raw source | Missing transcripts and weak workflow tagging.
+Transcript | source_id, file_uri, speaker labels, confidence, checksum | Meet/Otter/Fathom/Docs | Cloud Storage/Drive + source table | Transcript quality and retention policy.
+Decision | decision_id, text, approver, source_quote, impact, approval_status | MoM/Sheet | Decision Log / DB / ERP later | Unapproved decision treated as final.
+Action/Task | task_id, clickup_task_id, owner_id, backup_owner_id, due date, priority, workflow_id, source | ClickUp + Sheet | ClickUp operational layer + DB/BigQuery mirror | Owner/date ambiguity.
+Follow-up | last_follow_up_date, next_action, next_action_owner, priority, status, outcome | ClickUp/CRM later | CRM + ClickUp + ERP later | Follow-up leakage if WhatsApp remains unofficial.
+Revenue link | Donation ID, Payment Status, Receipt Status, Campaign ID, Yatra ID, Event ID, Seva, Trust, Source | CRM/DCC/Sheets later | CRM/ERP/DCC/finance source | Requires CRM/API and finance field validation.
+Approval | approval_id, approver_id, status, comments, timestamp, source | Sheet/AppSheet | Approval DB / ERP later | Approval bypass risk.
+Audit log | user, action, old value, new value, source, timestamp, tool trace | None/limited | Cloud Logging/BigQuery/DB | Audit incompleteness.
+Platform identity links | Common Contact ID, Donor ID, Yatri ID, Community ID, Family ID, Campaign ID, Event ID, Donation ID, Payment Status, Receipt Status where applicable | CRM/DBMS + staged WF-008 records | CRM/ERP integrated model + BigQuery analytics mirror | Requires master-data alignment and field validation before scaled integration.
+
+Source basis: Generated blueprint Section 12; platform compatibility requirements; Project_Glossary CRM/ERP definitions.
+12. KCKE / Media AI Expectations, if applicable
+KCKE is not the operational source for task status, contact status, payment status, approval status, inventory, or ClickUp status.
+Use KCKE only when meeting outputs require source-grounded Krishna conscious content: Srila Prabhupada references, scriptural grounding, philosophical replies, donor narratives, preaching, education, or devotional content.
+Use Media AI only when meeting decisions trigger reels, videos, storyboards, Yatra/festival/donor media, or approved visual storytelling.
+WF-008 may route approved media/content tasks into the Media AI Pipeline, but Media AI remains a separate track with its own approval controls.
+Source basis: KCKE_Media_CRM_Dependency_Map.docx; Project_Glossary; Media_AI_Pipeline_Briefing_Note.docx.
+13. Governance and Human Approval Expectations
+Donor-sensitive actions: human approval before messages, promises, priority overrides, or relationship-sensitive updates.
+Financial approvals: no autonomous payments, receipts, refunds, procurement commitments, or finance records.
+Public communication approvals: human approval before any external message/post/email based on meeting output.
+Philosophical/devotional approvals: KCKE-grounded content plus qualified human review.
+Deity/media approvals: Media AI outputs require visual/source approval before use.
+CSR/HNI approvals: senior approval before commitments, proposals, or sensitive follow-ups.
+HR/legal approvals: no autonomous action; AI may draft/recommend only.
+Operational task writes: AI may create/update ClickUp tasks only after human approval in MVP unless management later approves narrow auto-write rules.
+Source basis: KCKE_Media_CRM_Dependency_Map.docx human approval rules; Project_Glossary HITL; TRD_AI_Project_Intelligence_Agent security/governance.
+14. Integration Expectations
+Integration Area | Expectation | Partner Classification Needed
+Google Workspace | Read Calendar, Drive, Docs, Meet notes/transcripts, Gmail/Chat where permitted. | Gemini Enterprise vs API/custom build.
+Gemini Enterprise | Retrieval, summarization, source-grounded Q&A, leadership intelligence, user-facing chat. | Validate license and connector scope.
+Apps Script / AppSheet / Sheets | 7-day demo approval table, lightweight task staging, ClickUp import/API bridge. | Buildable immediately vs fragile.
+Vertex AI / Agent Builder / ADK | Production agent orchestration, tool use, schema-constrained extraction, multi-agent workflows. | Requires Google Cloud/custom build.
+Cloud Run / Workflows | Backend APIs, async processing, scheduler, ClickUp sync, webhook processing. | Custom build and security design.
+BigQuery / Looker Studio | Analytics, historical event stream, dashboards, AI-agent KPIs. | 30/90-day foundation scope.
+CRM APIs | Link Contact ID/Donor ID/Yatri ID/Community ID/Family ID and follow-up history. | Requires CRM selection/API/data cleanup.
+ERP APIs | Later canonical operational/finance approval migration. | Not in 14-day MVP; design fields now.
+Payment gateway / DCC | Donation/payment/receipt status links where tasks relate to revenue. | Later integration; finance validation needed.
+ClickUp | Current task execution layer: create/update tasks, sync status/time tracking/custom fields. | Immediate API feasibility dependency.
+WhatsApp / voice vendor | Notifications/calls may remain outside MVP; official accountability must remain in ClickUp/CRM. | External vendor and compliance required.
+External tools | Otter/Fathom if Meet transcripts insufficient; Make/Zapier/n8n only if approved. | Validate security, cost, ownership.
+Consolidated API registry | Track every required connector, owner, access status, environment, rate limit, failure mode, and fallback path. | Required from Day 1; partner to classify buildable now vs dependent.
+ClickUp execution governance | Validated ClickUp workspace/list/status/custom-field/API/time-tracking path for task execution and dashboard feeds. | Buildable only after access confirmation; fallback via controlled CSV/import.
+Service continuity and fallback layer | Ensure manual review queue, staged data, and export/import options remain available if automation fails. | Required for production readiness; not optional.
+Leadership command-center feed | Feed WF-008 signals into a unified leadership dashboard for execution, revenue blockers, approvals, and dependency risks. | BigQuery/Looker vs Sheets/AppSheet path to be proposed.
+
+Source basis: Generated blueprint Sections 11, 15; Temple Knowledge Network TRD limitations; TRD_AI_Project_Intelligence_Agent platform capabilities.
+15. Day 1–7 Production Foundation Sprint (Formerly 7-Day Demo Expectations)
+Re-alignment: this stage is not a disposable demo. It is the first production foundation sprint. Mock/sample data may be used only where access is pending, but schemas, IDs, approval gates, dashboard fields, ClickUp field mapping, source tracking, and fallback assumptions must be production-aligned from Day 1.
+Day 1–3 focus: workflow validation, access confirmation, data source confirmation, owner/approver/backup validation, CRM field and ID confirmation, API dependency classification, dashboard schema confirmation, production risk identification, role ownership validation, and relevant analysis-file gap mapping.
+Day 4–7 focus: initial working prototype, CRM/Sheet/API data path, first dashboard, first automation, first approval flow, first AI-assisted output, sample live workflow test, and first leadership command-center visibility layer for WF-008 execution governance.
+Source basis: HKHT_AI_Transformation_Analysis(1).html; generated WF-008 blueprint Section 8; Master Context Pack partner sprint model.
+Component | Show Quickly | Can Be Mocked | Data Needed | Do Not Overclaim
+Transcript extraction | Summary, decisions, action items, owners, dates, blockers. | Speaker labels or sample transcript. | 2–3 transcripts/MoMs. | Do not claim perfect extraction.
+Approval flow | Sheet/AppSheet review queue. | User roles/approver list. | Owner/approver matrix. | Do not bypass HITL.
+ClickUp task creation | API if ready; CSV/mock if not. | ClickUp sync if API blocked. | ClickUp workspace, users, fields, token. | Do not claim bidirectional sync until tested.
+Dashboard | Open/overdue/owner/revenue-linked tasks. | Historical data and ERP fields. | Task export or staged data. | Do not claim production analytics.
+Daily brief | Mukund/HOD exception summary. | Email/Chat delivery. | Sample task data. | Do not claim full autonomous PMO.
+Production-aligned schema | Meeting ID, Task ID, Owner ID, source link, approval status, workflow ID. | CRM/ERP fields not yet live. | Owner matrix, ClickUp fields, workflow tags. | Do not treat sample fields as final without HKHT validation.
+Command-center first view | First leadership visibility layer for overdue, pending approvals, blocked revenue tasks. | Historical trend data. | Task export/staged data. | Do not claim organization-wide production coverage.
+
+Source basis: Generated blueprint Section 8; Master Context Pack partner sprint model.
+16. Day 8–14 Integrated Working MVP (Formerly 14-Day MVP Expectations)
+Re-alignment: Day 8–14 should validate an integrated working MVP, not a detached prototype. The partner should show selected-user execution, CRM/data-path validation, dashboards, AI-assisted meeting-to-task actions, human approval routing, ClickUp/task/follow-up integration where access is confirmed, exception routing, data-quality checks, API registry validation, and relevant WhatsApp/voice/payment/CRM dependency classification.
+The MVP should be usable by selected users with controlled live workflow data. Where integrations are not confirmed, the partner must clearly mark items as demo/mock only, API-dependent, data-dependent, or later-phase.
+Source basis: HKHT_AI_Transformation_Analysis(1).html; generated WF-008 blueprint Section 9; TRD_AI_Project_Intelligence_Agent acceptance and reliability expectations.
+Usable by selected users: one coordinator, delegated approver, 2–3 HODs, one ClickUp admin, one implementation partner user, and one revenue workflow team.
+Real transcript intake, structured AI extraction, human approval, ClickUp task creation/update, basic decision log, dashboard, daily brief.
+Manual/semi-automated remains: owner correction, WhatsApp follow-up, complex change detection, ERP sync, multi-center rollout, sensitive decisions.
+Acceptance criteria: no write without approval; tasks include owner, due date, workflow ID, source meeting, approval status; unclear items are flagged; raw transcript stored if AI fails.
+Source basis: Generated blueprint Section 9; TRD_AI_Project_Intelligence_Agent acceptance and reliability expectations.
+17. Day 15–30 Production Readiness and Productivity Multiplication Sprint (Formerly 30-Day Pilot Expectations)
+Re-alignment: Day 15–30 should move the workflow from working MVP to production readiness. The priority is operational adoption, dashboard discipline, real meeting usage, exception handling, cross-workflow integration, AI-assisted execution, user training, KPI validation, escalation testing, failure/fallback protocol, role ownership refinement, golden journey QA testing, and measurable productivity improvement.
+Day 15–21 focus: production hardening, real operational usage, cross-workflow integration, user training, KPI validation, escalation testing, failure/fallback testing, role ownership refinement, and golden journey QA.
+Day 22–30 focus: production readiness review, command-center visibility, live operational handover, stabilization backlog, productivity measurement, management reporting, partner sign-off checklist, next 60-day stabilization roadmap, and 75-day enterprise-scale readiness roadmap.
+Source basis: HKHT_AI_Transformation_Analysis(1).html; generated WF-008 blueprint Sections 10, 13, 17.
+Area | Pilot Expectation
+Users | 10–25 users across leadership, coordinator, HODs, ClickUp admin, revenue workflow team, partner team.
+Workflow coverage | WF-008 plus selected meetings from WF-001, WF-003, WF-007, WF-002, WF-014, and partner implementation meetings.
+Data requirements | 10–20 meeting transcripts/MoMs, ClickUp exports/API, owner matrix, workflow tags, standard statuses, source fields.
+Integration scope | Validated ClickUp API create/update/status sync; Google Drive/Meet/Docs ingestion; Sheets/AppSheet approval; Looker/Sheets dashboard.
+Success metrics | MoM turnaround time, task creation time, % tasks with owner/date/source, overdue reduction, pending approvals, task status compliance.
+Governance | Approval audit, source quote, confidence score, escalation policy, data retention policy draft.
+
+Source basis: Generated blueprint Sections 8–13; TRD_AI_Project_Intelligence_Agent reports/security.
+18. 30-Day Production Base + 60-Day Stabilization Expectations (Formerly 90-Day Production Foundation)
+Re-alignment: the original 90-day production foundation is preserved but compressed into a 30-day production base followed by 60 days of stabilization, hardening, adoption, data-quality improvement, API maturity, dashboard discipline, support model strengthening, and KPI governance.
+By the end of the 60-day stabilization continuation, WF-008 should have reliable operating rhythms, validated production support, improved AI extraction accuracy, stable ClickUp/data sync, clear fallback paths, operational dashboards used by leadership/HODs, and measurable reduction in manual follow-up dependency.
+Source basis: HKHT_AI_Transformation_Analysis(1).html; TRD_AI_Project_Intelligence_Agent security/governance; generated WF-008 blueprint Sections 11–13, 17.
+Production architecture with separate dev/staging/production environments.
+IAM, service accounts, Secret Manager, audit logs, and data-retention policy.
+Validated ClickUp integration and error handling.
+Operational database for meetings, tasks, decisions, approvals, risks, change logs, users, teams.
+BigQuery/Looker dashboard foundation for operational and AI-agent KPIs.
+Role/RACI and approval policy configured by workflow and sensitivity level.
+Support model: admin owner, escalation path, failed-job handling, documentation, training.
+Data-quality governance: missing owner/date/source/approval fields are visible and assigned.
+Source basis: TRD_AI_Project_Intelligence_Agent security/governance; generated blueprint Sections 11–13, 17.
+19. 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale Vision (6-Month Architecture Preserved)
+Re-alignment: the long-term six-month architecture is preserved, but the partner should now map it to a compressed execution path: first 30 days for production base and operational go-live foundation; next 60 days for stabilization, hardening, adoption, data quality, integration maturity, and KPI discipline; by 75 days for enterprise-scale readiness, multi-workflow maturity, command-center intelligence, advanced platform integration, and scalable 1000x productivity architecture.
+WF-008 should become the reusable execution-governance module that other centers can later adopt without rebuilding the design. The first 30 days should not attempt broad multi-center rollout, but it must use multi-center-ready IDs, fields, dashboards, approval patterns, API registry entries, and training documentation.
+Source basis: HKHT_AI_Transformation_Analysis(1).html; generated WF-008 blueprint Sections 11, 18, 19; Global_Hare_Krishna_Mission_OS_HKM_Hyderabad_Presentation.html.
+By six months, WF-008 should be a production-grade platform service that plugs into the Hyderabad AI Revenue & Seva Growth Platform.
+Integrated revenue engine: tasks and decisions link to Contact ID, Donor ID, Yatri ID, Community ID, Campaign ID, Donation ID, Event ID, and payment/receipt status where applicable.
+Operational intelligence: leadership asks, “What changed this week?”, “Which revenue tasks are blocked?”, “Who owns this decision?”, “Why is this delayed?” and receives source-grounded answers.
+ERP readiness: stable task/decision/approval/audit records are mapped to future ERP fields.
+Cross-workflow governance: all workflow MVPs use the same owner/performer/approver/backup/escalation pattern.
+Future national/multi-center replication: only after Hyderabad data discipline, dashboards, and adoption stabilize; partner should design compatibility, not build national rollout now.
+Source basis: Generated blueprint Sections 11, 12, 18; Master Context Pack v0.5; Project_Glossary long-term enterprise vision.
+20. Expected Google Product Areas
+Likely Product Area | Expected Use | Partner Must Validate
+Gemini Enterprise | Workspace retrieval, summarization, semantic search, leadership Q&A, Meet notes leverage. | License scope, connectors, permissions, agent capabilities.
+Vertex AI / Agent Builder / ADK | Production agents, tool calling, multi-agent orchestration, schema-constrained extraction. | Which components are available and recommended.
+Cloud Run / Workflows / Pub/Sub / Scheduler | APIs, event processing, async jobs, scheduled briefs, retries. | Cost, deployment, support responsibilities.
+Firestore | Operational records: meetings, tasks, decisions, risks, approvals, users, teams. | Schema, cost, permissions.
+BigQuery | Historical analytics, event stream, trend reporting, AI-agent metrics. | Data model and dashboard refresh.
+Looker Studio | Management and operational dashboards. | Data source, access, security.
+Apps Script / AppSheet / Sheets | Fast demo and approval front end. | Scalability and maintainability limits.
+Google Workspace APIs | Drive, Calendar, Docs, Sheets, Gmail, Chat, Meet transcript access where possible. | API availability, scopes, admin consent.
+Secret Manager / IAM / Cloud Logging | Security, audit, API keys, least privilege. | Mandatory for production foundation.
+
+Source basis: TRD_AI_Project_Intelligence_Agent; Temple Knowledge Network TRD; generated blueprint Section 11.
+21. Questions for the Implementation Partner
+Additional accelerated-execution questions for WF-008:
+How will you prove production readiness by Day 30 without bypassing human approvals?
+Which features are buildable immediately, demo/mock only, require HKHT data, require CRM/API integration, require ERP later, require custom Google Cloud build, require Gemini Enterprise, require Vertex AI, require Agent Builder/agentic systems, require Apps Script/AppSheet/Sheets, require BigQuery/Looker Studio, require external vendor tools, require data cleanup, or should not be promised in two weeks?
+What consolidated API registry will you maintain, and how will ClickUp, Google Workspace, CRM/DBMS, dashboard, WhatsApp/voice/payment dependencies be tracked?
+What is your failure/fallback protocol for each data path?
+How will you measure reduction in Mukund Prabhu’s managerial follow-up dependency?
+How will golden journey QA be performed for meeting-to-task-to-dashboard-to-closure?
+How will institutional memory and Mukund Prabhu’s judgment patterns be encoded without turning AI suggestions into unapproved decisions?
+What can be production-base ready by Day 30, stabilized over the next 60 days, and enterprise-scale ready by Day 75?
+What can be delivered in 7 days as a visible demo?
+What can be delivered in 14 days as a working MVP for selected users?
+What can be piloted in 30 days with real ClickUp usage?
+What becomes production-ready in 90 days?
+What is the six-month architecture for this workflow inside the Hyderabad AI Revenue & Seva Growth Platform?
+Which features are demo/mock only?
+Which features require ClickUp API, Google Workspace APIs, CRM APIs, ERP APIs, payment/DCC APIs, or external connectors?
+Which features require our data before you can build or validate?
+Which features require Gemini Enterprise vs Google Cloud custom build vs Vertex AI/Agent Builder?
+Which features require Apps Script/AppSheet/Sheets vs Cloud Run/Workflows/BigQuery/Looker?
+What requires CRM/ERP/data cleanup?
+What requires external vendors such as WhatsApp, voice/calling, transcription, Make/Zapier/n8n?
+What should not be promised in two weeks?
+What data do you need from HKHT immediately?
+What are the license, cost, API quota, security, region, privacy, and support risks?
+How will you prevent hallucinated owners, dates, decisions, or commitments?
+How will you preserve source traceability from transcript to task to decision log?
+How will human approval be enforced before task writes or sensitive updates?
+How will ClickUp time tracking be used in productivity dashboards?
+How will the system continue working if AI processing fails?
+Source basis: Generated blueprint Section 16; TRD_AI_Project_Intelligence_Agent; Temple Knowledge Network TRD limitations.
+22. Expected Deliverables from Google / Implementation Partner
+Deliverable | Required Content
+1. Technical Requirements Document (TRD) | Workflow-specific requirements, assumptions, exclusions, acceptance criteria.
+2. Solution Architecture | End-to-end architecture across Workspace, Gemini, Cloud, ClickUp, approval, dashboard, data stores.
+3. Google Product Mapping | What uses Gemini Enterprise, Vertex AI, Agent Builder/ADK, Cloud Run, Workflows, BigQuery, Looker, Apps Script/AppSheet/Sheets.
+4. Agent Architecture | Agent list, tools, permissions, prompts/schema, HITL points, escalation logic, success metrics.
+5. Integration Architecture | ClickUp, Workspace, CRM, ERP, DCC/payment, WhatsApp/voice vendors, external tools.
+6. CRM/ERP/Data Architecture | Entity model, common IDs, source tracking, field mapping, future migration path.
+7. Security and Access Model | IAM, service accounts, secrets, role-based access, sensitivity levels, region, audit logs.
+8. Human Approval Architecture | Approval queue, approver roles, escalation, audit, override policy.
+9. Dashboard Architecture | Management, operational, revenue/conversion, data quality, AI-agent KPIs.
+10. API/Connector Requirements | All required API scopes, tokens, webhooks, quotas, admin consents, limitations.
+11. Deployment Architecture | Dev/staging/prod, CI/CD or deployment method, monitoring, backup/retry model.
+12. Licensing Requirements | Google, Gemini, Cloud, ClickUp, vendors, user counts, estimated monthly cost.
+13. Cost Estimates | Demo, MVP, 30-day pilot, 90-day foundation, six-month platform cost.
+14. Team Structure | Partner roles and HKHT-side owners required.
+15. Rollout Plan | 7-day, 14-day, 30-day, 90-day, six-month, and later replication plan.
+16. Risks and Limitations | Technical, data, security, adoption, AI quality, API, licensing, cost risks.
+17. HKHT-side Dependencies | Data, owners, approvals, access, sample transcripts, ClickUp admin support.
+18. Data Requirements from HKHT | Transcripts, MoMs, ClickUp export/API, owner matrix, workflow tags, status taxonomy, approval matrix.
+19. Assumptions and Exclusions | Explicit list of what is not included or not promised in two weeks.
+20. 30-Day Production Readiness Plan | Day 1–3, Day 4–7, Day 8–14, Day 15–21, Day 22–30 execution plan with acceptance gates, owners, dependencies, and sign-off criteria.
+21. Consolidated API Registry | API/connectors required, access status, owner, scope, rate limits, environments, fallback process, and whether buildable now or later-phase.
+22. Failure and Fallback Protocol | Fallback path for transcript failure, extraction failure, ClickUp API failure, dashboard failure, CRM/API delay, and human approval backlog.
+23. Golden Journey QA Plan | End-to-end WF-008 tests from meeting transcript to approved ClickUp task, dashboard update, daily brief, escalation, closure, and source retrieval.
+24. Leadership Command-Center Feed Design | Metrics and data feeds required for a unified leadership visibility layer covering tasks, blockers, approvals, revenue risks, partner commitments, data quality, and Mukund Prabhu dependency reduction.
+25. 60-Day Stabilization and 75-Day Enterprise Scale Roadmap | Post-Day-30 hardening, adoption, integration maturity, data-quality discipline, multi-workflow maturity, and multi-center readiness plan.
+
+Source basis: User packaging requirement; generated blueprint Section 15; Master Context Pack partner sprint model.

@@ -1,0 +1,888 @@
+DOCUMENT B - Google / Implementation Partner Brief
+WF-010 Bahumana / Prasadam / Inventory
+Audience: Google partner team, solution architects, implementation partner leadership, delivery team
+Purpose: External implementation briefing for TRD, architecture, feasibility, costing, and phased proposal
+Document status: Partner briefing, not TRD
+Updated positioning: 30-Day Production-Ready Accelerated Execution Brief for WF-010 Bahumana / Prasadam / Inventory as a platform-compatible module of the Hyderabad AI Revenue & Seva Growth Platform.
+0. 30-Day Production-Ready Accelerated Execution Re-Alignment
+This revised Document B preserves the original workflow-specific structure, agent design, data expectations, integration requirements, dashboards, governance rules, assumptions, and partner-facing implementation depth while realigning the execution model to a 30-day production-ready accelerated sprint.
+The brief should now be read as a production sprint document, not only as a demo or MVP note. The original 7-day, 14-day, 30-day, 90-day, and 6-month architecture concepts remain valid, but they are now compressed into a practical path: 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale.
+WF-010 must plug into the larger Hyderabad AI Revenue & Seva Growth Platform as a CRM-aligned, ERP-ready, dashboard-visible, human-governed, cross-workflow-compatible module. It must not become a disconnected inventory tool.
+Relevant recommendations from HKHT_AI_Transformation_Analysis(1).html are incorporated in this revision where workflow-relevant: AI-first redesign, four-horizon discipline, revenue-first donor cultivation, human-in-the-loop governance, CRM/ERP/KCKE/Media AI system separation, master data discipline, API registry discipline, leadership command-center visibility, cross-workflow golden journey QA, fallback/service-continuity planning, role validation, and institutional memory encoding.
+Accelerated 30-Day Execution Path
+Timeline | Production alignment | WF-010 outputs expected
+Day 1-3 | Validation and readiness lock | Validate workflow, access, data sources, owner/performer/approver/backup, CRM fields/IDs, API dependencies, dashboard schema, operational risks, and analysis-file gap mapping.
+Day 4-7 | Production foundation sprint | Initial working prototype, CRM/Sheet/API data path, first dashboard, first automation, first approval flow, first AI-assisted output, sample live workflow test, and first leadership command-center visibility layer.
+Day 8-14 | Integrated working MVP | Selected-user operational testing, workflow-specific AI assistance, ClickUp/task/follow-up integration where relevant, exception routing, dashboard refinement, data quality checks, human approval testing, API registry validation, WhatsApp/SMS/courier/CRM dependency validation.
+Day 15-21 | Production hardening | Real operational usage, cross-workflow integration, user training, KPI validation, escalation testing, fallback protocol, role ownership refinement, and golden journey QA testing.
+Day 22-30 | Production readiness review and handover | Command-center visibility, live operational handover, stabilization, productivity measurement, management reporting, partner sign-off checklist, next 60-day stabilization roadmap, and 75-day enterprise-scale readiness roadmap.
+
+Production Readiness Definition
+For WF-010, production readiness means selected users can run live Bahumana/prasadam/inventory/dispatch operations through the system with validated intake, stock visibility, expiry alerts, procurement status, packing queue, dispatch tracking, exception handling, and role-based approval routing.
+Minimum production-readiness criteria: live operational usage, validated data flow, dashboard visibility, approval routing, exception handling, role ownership, data quality checks, AI-assisted execution, cross-workflow compatibility, fallback process, measurable productivity improvement, and golden journey testing from donor/Yatra requirement to dispatch, delivery confirmation, and follow-up task.
+Production readiness does not require every long-term API or ERP integration to be complete by Day 30. It does require every dependency to be classified, every interim data path to be controlled, every owner to be validated, and every future integration field to be ERP-ready from Day 1.
+Accelerated Delivery Governance
+The partner delivery model must include a daily checkpoint rhythm covering build progress, data blockers, user testing, open assumptions, approval routing, API status, dashboard readiness, and production risks.
+HKHT must validate owner, performer, approver, backup, escalation person, dashboard reviewer, and data custodian before workflow routing is finalized. Transcript-derived names must remain Assumption / Needs Validation until confirmed.
+Partner responsibility: maintain feature classification, API dependency register, open-risk register, acceptance checklist, release notes, and demo/MVP/production distinction.
+HKHT responsibility: provide sample data, access permissions, role validation, approval criteria, operational users for testing, and timely acceptance review.
+Acceptance review must include daily exception summary, dashboard visibility, approval audit trail, stock/expiry/procurement/dispatch test case, fallback process, and golden journey QA.
+The delivery model must continue into a 60-day stabilization phase and a 75-day enterprise-scale readiness review. WhatsApp/SMS/courier/CRM/ERP dependencies must remain on a shared dependency watch until confirmed production-ready.
+A failure and fallback protocol must be defined for stock-entry errors, app downtime, courier import failure, WhatsApp/SMS delay, CRM sync failure, and approval bottlenecks.
+Relevant Analysis Recommendations Incorporated
+- Preserved AI-first redesign: do not digitize broken manual inventory and dispatch habits; use them as evidence for a better operating model.
+- Strengthened four-horizon discipline by converting demo/MVP/pilot/architecture framing into Day 1-7, Day 8-14, Day 15-30, 60-day stabilization, and 75-day enterprise-scale execution.
+- Reinforced revenue-first and donor-cultivation framing: Bahumana dispatch is a donor gratitude and cultivation touchpoint, not only logistics.
+- Added platform safeguards: common IDs, unified master data alignment, CRM as relationship source of truth, ERP-ready fields, API registry, workflow sequencing gates, and leadership command-center contribution.
+- Added role-validation discipline because transcript-derived names may be unreliable.
+- Added service-continuity, fallback, golden journey QA, and production-readiness criteria.
+- Added workflow-relevant 100x/1000x ideas: personalized prasadam gifting, donor propensity-informed gifting/follow-up, Relationship Intelligence Graph linkages, Follow-the-Devotee journey timeline, Voice of the Devotee feedback intelligence, institutional memory encoding of Mukund Prabhu's gift-selection judgment, and multi-center learning readiness.
+- Preserved the separation of CRM, ERP, KCKE, Media AI Pipeline, Gemini Enterprise, and ClickUp/task governance.
+1. Workflow Name and Platform Role
+Workflow: WF-010 Bahumana / Prasadam / Inventory / Dispatch
+This workflow manages Bahumana/prasadam/gift requirements for online donors, fundraising teams, internal DMT/fundraising teams, Yatra teams, festivals, packing, courier dispatch, tracking ID/SMS updates, inventory, shelf life, pest control, procurement, vendor coordination, finance vouchers, and budget control. This operational scope is explicitly described in the WF-010 transcript.
+Platform role: WF-010 should become the Bahumana Gratitude + Inventory + Dispatch Intelligence Module of the Hyderabad AI Revenue & Seva Growth Platform.
+It must connect:
+Requirement -> Kit selection -> Inventory -> Procurement -> Packing -> Dispatch -> Delivery confirmation -> Donor/Yatri follow-up -> Donation/Yatra/preaching journey -> Finance/ERP dashboard.
+Source basis: Prasadam Inventory Management_otter_ai.docx; WF-010 blueprint Sections 2, 6, 7, 11, 12; Mukund_Prabhu_Operations_Master_Context_Pack_v0.2_Revenue_Priority.docx.
+2. Executive Seva Impact Summary
+Donation impact: Timely, personalized Bahumana strengthens donor gratitude and repeat donation potential. This is an implementation inference based on the transcript’s donor gift dispatch, thank-you letter, tracking SMS, and all-India courier workflow.
+Yatra impact: Unique Yatra gifts and timely kit readiness improve Yatra experience and post-Yatra retention. Mukunda Dasa states that his role includes selecting unique products for unique festivals/Yatras, sources, and pricing.
+Donor cultivation impact: Delivery confirmation can become a CRM follow-up trigger: thank-you, feedback, next seva, Yatra invite, or donor relationship handoff. This requires CRM/DCC integration and is currently Assumption / Needs Validation.
+Krishna consciousness outreach impact: Mantra cards, Hare Krishna mantra stickers, prasadam, festival inserts, and thank-you letters can carry source-grounded Krishna conscious content. Mega Numbers confirms scale for mantra stickers/cards, while KCKE rules require source-grounded content and human approval.
+Mukund Prabhu burden reduction: The system should preserve Mukund Prabhu’s high-value role in unique selection while removing daily dependency on stock chasing, procurement follow-up, and dispatch visibility. This is based on the transcript and WF-010 blueprint role redesign.
+ERP/data centralization impact: WF-010 must create ERP-ready item, kit, vendor, procurement, stock, expiry, dispatch, return, cost, and approval records from the MVP stage. The dependency map states ERP migration should be phased and should not block POCs.
+Multi-center readiness: The eventual module should standardize SKU, kit, vendor, dispatch, and quality-control practices so the model can be replicated by other centers. This is aligned with the Master Context Pack’s global replication principle.
+Source basis: Prasadam Inventory Management_otter_ai.docx; _MEGA NUMBERS - MEGA IMPACT_.docx; KCKE_Media_CRM_Dependency_Map.docx; Mukund_Prabhu_Operations_Master_Context_Pack_v0.2_Revenue_Priority.docx.
+3. Management Brief for Leadership
+WF-010 is not “inventory only”; it is a donor gratitude, Yatra support, and preaching enablement workflow. Source: WF-010 transcript and blueprint Sections 2-3.
+At least 11,200 prasadam couriers per year show the workflow has meaningful scale. Source: _MEGA NUMBERS - MEGA IMPACT_.docx.
+Current risks include stock shortage, procurement delay, spoilage, pest contamination, broken shipments, and shelf-life uncertainty. Source: Prasadam Inventory Management_otter_ai.docx.
+The initiative should be funded because it protects donor trust and converts dispatch into donor cultivation. Source: transcript evidence + platform design inference; CRM follow-up impact needs validation.
+The 7-day demo can show visible control without waiting for ERP. Source: Project_Glossary.txt and Master Context Pack.
+The 14-day MVP should be selected-user usable but should not overclaim full ERP/API readiness. Source: Master Context Pack partner sprint rule.
+The 6-month architecture should connect CRM, DCC, courier, ERP, BigQuery, Looker, Gemini, Vertex AI, KCKE, and Media AI where appropriate. Source: KCKE_Media_CRM_Dependency_Map.docx.
+Human approvals must remain for procurement, finance, donor-sensitive communication, devotional content, and unique gift selection. Source: Project_Glossary.txt and WF-010 transcript.
+4. Current Operational Reality
+Trigger
+Current triggers include:
+Online donor donations.
+Fundraising devotee team requirements.
+Internal DMT/fundraising team requirements.
+Yatra team requirements.
+Festival requirements.
+Prasadam/gift dispatch needs.
+Stock replenishment and procurement needs.
+Source basis: Prasadam Inventory Management_otter_ai.docx.
+People involved
+Mukunda Dasa / Mukund Prabhu: unique product selection for festivals/Yatras, source suggestions, pricing judgment.
+“Maha Muja / Maha Bucha” as end-to-end responsible person - exact spelling Assumption / Needs Validation.
+Shashi Khan, Sahu, Naveen, Deepak, Sudhi Nama Prabhu, Shravan - transcript names need validation.
+Kitchen/cooking team.
+Finance team.
+Vendors.
+Courier company.
+Donor/Yatra/fundraising teams.
+Source basis: Prasadam Inventory Management_otter_ai.docx.
+Tools used
+Air Table.
+“C table” - exact tool name Assumption / Needs Validation.
+Google Sheets.
+Asset Tiger.
+Vendor Excel sheet.
+Courier records.
+SMS.
+WhatsApp dependency is implied by current operational pattern and earlier blueprint; specific group structure needs validation.
+Source basis: Prasadam Inventory Management_otter_ai.docx.
+Current steps
+Requirement arrives from donor/fundraising/Yatra/internal source.
+Gift/prasadam kit is selected.
+Budget and finance are considered.
+Kitchen or vendor procurement is initiated.
+Three vendor quotations may be collected.
+One vendor is selected.
+Items are procured/manufactured/branded.
+Stock is checked.
+Packing is done with boxes, bags, bubble wrap, labels, address labels.
+Courier lot is coordinated.
+Tracking ID is generated.
+SMS is sent to donor and internally retained.
+Inventory, shelf life, pest control, and finance vouchers are maintained.
+Source basis: Prasadam Inventory Management_otter_ai.docx.
+Current approvals
+Vendor selection.
+Budget/finance.
+Purchase/procurement.
+Unique gift selection.
+Dispatch exception or replacement decisions - Assumption / Needs Validation.
+Source basis: Prasadam Inventory Management_otter_ai.docx.
+Current reports
+The confirmed report is the regular consolidated inventory stock register: how much is required, how much is available, and how much more should be procured.
+Source basis: Prasadam Inventory Management_otter_ai.docx.
+Current pain points
+Procurement delay.
+Stock shortage.
+Emergency replenishment.
+Spoiled prasadam.
+Pest contamination.
+Broken items in shipping.
+Shelf-life uncertainty.
+Limited reporting beyond stock register.
+Source basis: Prasadam Inventory Management_otter_ai.docx.
+5. Current Bottlenecks and Productivity Loss
+Manual work
+Stock, expiry, vendor follow-up, packing, courier tracking, and report compilation are not yet shown as fully integrated. The transcript confirms only an inventory stock register as regular data output.
+Follow-up leakage
+Delivery confirmation, donor feedback, replacement, and next-seva/Yatra follow-up are not evidenced as a structured CRM loop. This is Assumption / Needs Validation.
+Data fragmentation
+Current tools include Airtable, C table, Google Sheets, Asset Tiger, vendor Excel, and courier/SMS records. This indicates fragmented operational data.
+WhatsApp/spreadsheet dependency
+Spreadsheet dependency is evidenced. WhatsApp dependency is plausible but the exact WhatsApp groups/forms/reports were not fully captured; mark as Assumption / Needs Validation.
+Mukund Prabhu dependency
+Mukund Prabhu’s high-value role is unique festival/Yatra product selection, source suggestions, and pricing. The system should assist but not replace this approval.
+Revenue leakage
+Revenue leakage is an inferred risk: donor dissatisfaction from spoiled/broken/delayed gifts can weaken donor trust and repeat giving. This needs CRM/DCC validation through donation response data.
+Missed preaching/donor/Yatra opportunities
+Mega Numbers confirms large physical and messaging scale, but the current evidence does not confirm systematic conversion tracking from Bahumana delivery to donation/Yatra/preaching follow-up. This is Assumption / Needs Validation.
+Source basis: Prasadam Inventory Management_otter_ai.docx; _MEGA NUMBERS - MEGA IMPACT_.docx; WF-010 blueprint Sections 4-5.
+6. Desired AI-First Future-State Vision
+WF-010 should become an integrated Bahumana Gratitude + Inventory + Dispatch Intelligence Module.
+What should be automated
+Requirement intake.
+Duplicate/missing-field checks.
+SKU and kit validation.
+Reorder alerts.
+Expiry alerts.
+FEFO picking.
+Packing list generation.
+QR/label generation.
+Courier batch export/import.
+Daily operational dashboards.
+Escalation reminders.
+What should be AI-assisted
+Demand forecasting.
+Gift/kit recommendation.
+Vendor quote comparison.
+Procurement delay prediction.
+Donor message drafting.
+Complaint classification.
+Leadership exception summaries.
+What should be agentic
+Requirement consolidation.
+Stock risk detection.
+Procurement task creation.
+Vendor follow-up draft generation.
+Packing queue generation.
+Courier exception monitoring.
+CRM delivery status updates.
+Donor follow-up task creation.
+What must remain human-approved
+Unique gift selection.
+Purchases and vendor selection above threshold.
+Financial approvals.
+Donor-sensitive messages.
+Replacement/write-off.
+Devotional/spiritual content.
+VIP/HNI/CSR donor communication.
+Source basis: Project_Glossary.txt; Prasadam Inventory Management_otter_ai.docx.
+7. Expected Productivity Leap
+2X control improvement
+The 7-day demo should give basic visibility over intake, stock, expiry, procurement, dispatch, and exceptions.
+10X workflow productivity
+The 14-day MVP should remove repeated manual status chasing through AppSheet/Sheets, alerts, packing lists, and Gemini summaries.
+30X revenue-operating leverage
+The 30-day/90-day system should connect dispatch status to donor gratitude follow-up, campaign/Yatra context, cost tracking, complaints, and management dashboards.
+100X Hyderabad platform leverage
+The 6-month architecture should integrate CRM/DCC, courier, ERP, BigQuery/Looker, Gemini, Vertex AI, and workflow agents.
+1000X long-term contribution
+The long-term contribution comes from multiplying reach x conversion x donor lifetime value x Yatra participation x preaching touchpoints x multi-center repeatability. This is a platform design target, not a current measured result.
+Source basis: Mukund_Prabhu_Operations_Master_Context_Pack_v0.2_Revenue_Priority.docx; Project_Glossary.txt; WF-010 blueprint Section 10.
+1000x Productivity Alignment
+WF-010 contributes to the 1000x platform ambition by converting Bahumana from a manually coordinated inventory/dispatch process into a reusable donor gratitude, Yatra support, preaching, procurement, and operational-intelligence module.
+Automation creates the first productivity layer: structured requirement intake, stock ledger, expiry alerts, reorder alerts, packing lists, dispatch records, and daily exception summaries.
+AI assistance creates the second productivity layer: gift/kit recommendations, demand forecast summaries, vendor quote summaries, donor message drafts, complaint classification, and leadership-ready exception narratives.
+Agentic workflows create the third productivity layer: requirement consolidation, procurement task creation, dispatch queue generation, courier exception monitoring, CRM follow-up task creation, and escalation routing.
+Dashboard visibility creates the fourth productivity layer: Mukund Prabhu and leadership receive exception-based visibility instead of manually chasing stock, procurement, packing, dispatch, and donor complaint status.
+CRM intelligence creates the fifth productivity layer: each Bahumana record can be tied to Contact ID, Donor ID, Yatri ID, Campaign ID, Event ID, Donation ID, and Task ID, enabling a Follow-the-Devotee journey timeline from donation/Yatra/outreach to gift delivery and next action.
+WF-010-specific 100x/1000x opportunities include personalized prasadam gifting, donor propensity-informed gifting and follow-up, WhatsApp conversational status updates where approved, Voice of the Devotee feedback intelligence from delivery/complaint data, institutional memory encoding of Mukund Prabhu's gift-selection judgment, and reusable multi-center SKU/kit/vendor/courier templates.
+The measurable 30-day target is not full maturity. It is a production base with live usage, validated data paths, visible dashboards, human approvals, exception handling, fallback process, and a clear 60-day stabilization and 75-day enterprise-scale path.
+8. Expected AI Agents / Copilots
+8.1 Bahumana Requirement Intake Agent
+Field | Expectation
+Purpose | Consolidate donor, Yatra, festival, fundraising, DMT, and internal requirements.
+Users | Bahumana coordinator, donor team, Yatra team, fundraising team, DCC/CRM data steward.
+Inputs | Contact ID, donor/Yatri ID, source, campaign/event/Yatra, quantity, kit type, due date, address, phone, consent.
+Outputs | Validated requirement record, missing-field alert, duplicate warning, priority score.
+Data needed | CRM/DCC/contact data, source tags, kit catalog, owner/approver.
+Tools/connectors | Google Form/AppSheet/Sheets, CRM/DCC CSV/API, Gemini summary, Google Chat/Gmail.
+Human approval | Bulk requirement freeze, VIP donor exceptions.
+Escalation | Missing address, urgent due date, high-value donor, missing consent.
+Success metrics | Intake completeness, duplicate reduction, intake-to-approval time.
+
+8.2 Demand Forecast and Stock Planning Agent
+Field | Expectation
+Purpose | Forecast demand by festival, Yatra, donor category, season, and campaign.
+Inputs | Past dispatches, validated Mega Numbers, festival calendar, Yatra calendar, campaign plan, stock history.
+Outputs | Forecast quantity, safety stock, reorder suggestion, shortage risk.
+Tools/connectors | Sheets/AppSheet initially; BigQuery + Vertex AI later.
+Human approval | Forecast approval before procurement.
+Escalation | Stock coverage below threshold, abnormal demand spike.
+Success metrics | Forecast accuracy, stockout rate, emergency purchase rate.
+
+Source basis: Transcript asks for trend analysis by season/month, stock replenishment, vendor procurement days, and donor-category budget.
+8.3 Gift / Kit Recommendation Agent
+Field | Expectation
+Purpose | Recommend approved gift/prasadam kit options by donor tier, Yatra, festival, budget, and stock.
+Users | Mukund Prabhu, Bahumana owner, donor/Yatra team.
+Inputs | Donor tier, festival/Yatra, budget, approved item catalog, stock, lead time, KCKE content if spiritual insert needed.
+Outputs | 3-5 options with cost, stock status, lead time, spiritual relevance, risk.
+Tools/connectors | Gemini, Sheets/AppSheet, ERP later, KCKE for content only.
+Human approval | Final selection must remain human-approved.
+Escalation | New item, high-cost item, VIP/HNI donor, devotional content.
+Success metrics | Selection cycle time, cost variance, approval rate, donor feedback.
+
+Source basis: Transcript says unique selection and sourcing are Mukund Prabhu’s role and selection should remain human.
+8.4 Inventory, Expiry and Storage Control Agent
+Field | Expectation
+Purpose | Maintain SKU, batch, stock, expiry, FEFO, location, pest/storage checks.
+Inputs | Opening stock, receipts, issues, batch, expiry date, storage location, QC/pest log.
+Outputs | Stock ledger, expiring-soon alert, reorder alert, spoilage/write-off record.
+Tools/connectors | AppSheet/Sheets, Asset Tiger validation, ERP inventory later.
+Human approval | Write-off, adjustment, spoilage, replacement.
+Escalation | Expiring stock, negative stock, pest issue, high-value discrepancy.
+Success metrics | Stock accuracy, expiry loss, spoilage rate, FEFO compliance.
+
+Source basis: Transcript mentions shelf life, pest control, inventory, spoiled prasadam, stock shortage.
+8.5 Procurement and Vendor Intelligence Agent
+Field | Expectation
+Purpose | Track vendor RFQ, quotations, lead time, price, branding, delivery, and procurement delays.
+Inputs | Reorder requirement, vendor master, quote history, lead time, price, budget.
+Outputs | RFQ draft, quote comparison, follow-up task, risk alert.
+Tools/connectors | Gmail, Drive, Sheets/AppSheet, ERP procurement later.
+Human approval | Vendor selection and purchase approval.
+Escalation | No quote, delayed branding, urgent shortage, price variance.
+Success metrics | PO cycle time, vendor lead-time accuracy, price variance, emergency purchase count.
+
+Source basis: Transcript mentions three vendor quotations, vendor Excel list, procurement delay, and branded manufacturing delay.
+8.6 Packing and Dispatch Agent
+Field | Expectation
+Purpose | Generate pick/pack lists, labels, courier batch, tracking ID, dispatch status.
+Inputs | Requirement, kit recipe, stock availability, donor/Yatri address, courier rules.
+Outputs | Pick list, packing checklist, QR/label, courier batch, tracking ID, dispatch status.
+Tools/connectors | AppSheet, Sheets, label printer, courier API/export, SMS/WhatsApp gateway.
+Human approval | Dispatch batch close, VIP donor dispatch.
+Escalation | Address error, missing item, fragile item, delayed pickup.
+Success metrics | Dispatch SLA, packing accuracy, delivery confirmation rate, damaged shipment rate.
+
+Source basis: Transcript describes packing materials, labels, courier pickup, tracking ID, SMS.
+8.7 Donor Gratitude and Follow-up Agent
+Field | Expectation
+Purpose | Convert delivery confirmation into donor gratitude and next-seva/Yatra/preaching follow-up.
+Inputs | Tracking ID, delivery status, CRM donor profile, consent, campaign/Yatra/festival context.
+Outputs | Draft thank-you message, feedback request, next-action task, CRM update.
+Tools/connectors | CRM/DCC, WhatsApp/SMS, Gmail, Gemini, KCKE for spiritual content.
+Human approval | Donor-sensitive or spiritual message approval.
+Escalation | VIP/HNI donor, complaint, failed delivery, opt-out, negative feedback.
+Success metrics | Feedback rate, repeat donation rate, Yatra inquiry rate, complaint SLA.
+
+Source basis: Donor tracking SMS and thank-you letters are evidenced; CRM follow-up loop is Assumption / Needs Validation.
+8.8 Returns, Complaint and Quality Agent
+Field | Expectation
+Purpose | Track spoiled, broken, delayed, returned, or failed shipments.
+Inputs | Complaint, photo, donor ID, shipment ID, item batch, vendor/courier details.
+Outputs | Case record, replacement recommendation, root-cause report.
+Tools/connectors | AppSheet, CRM case module, Drive photo upload, courier status.
+Human approval | Replacement, write-off, compensation.
+Escalation | Spoiled prasadam, pest issue, repeated vendor/courier failure, VIP donor.
+Success metrics | Complaint rate, resolution SLA, replacement SLA, root-cause closure.
+
+Source basis: Transcript mentions spoiled prasadam, pest contamination, broken shipping, donor feedback.
+8.9 Finance and Cost Control Agent
+Field | Expectation
+Purpose | Track kit cost, procurement cost, budget variance, vouchers, vendor bills, cost by donor/Yatra/campaign.
+Inputs | Budget, quote, invoice, voucher, item cost, kit cost, dispatch quantity, donor/campaign/Yatra link.
+Outputs | Budget variance, cost per kit, approval packet, finance exception.
+Tools/connectors | Sheets/AppSheet initially; ERP finance/BigQuery later.
+Human approval | Finance approval for purchase/payment/budget exception.
+Escalation | Budget overrun, missing bill, unapproved procurement.
+Success metrics | Cost variance, approval delay, budget compliance.
+
+Source basis: Transcript mentions finance team, billing, internal vouchers, and budgets.
+8.10 Leadership Control Tower Agent
+Field | Expectation
+Purpose | Give Mukund Prabhu and leadership exception-based control.
+Inputs | All workflow data: intake, stock, procurement, expiry, dispatch, complaints, finance.
+Outputs | Daily/weekly exception summary, festival/Yatra readiness report, escalation list.
+Tools/connectors | Gemini, Looker Studio/AppSheet dashboard, Google Chat/Gmail.
+Human approval | Leadership reviews exceptions, not routine transactions.
+Escalation | Stockout, expiry risk, VIP donor complaint, procurement delay, budget issue.
+Success metrics | Mukund intervention hours reduced, exception closure rate, dashboard adoption.
+
+Source basis: WF-010 transcript shows Mukund Prabhu’s selection role; project mandate requires managerial freedom.
+9. Human Role Redesign Expectations
+Roles that continue
+Mukund Prabhu: final unique selection for high-value/festival/Yatra gifts.
+Bahumana owner: accountable operational owner.
+Packing team: physical packing and QC.
+Procurement person: vendor coordination.
+Finance team: purchase/payment/budget approval.
+Roles that become AI-supervised
+Stock controller.
+Procurement coordinator.
+Dispatch coordinator.
+Returns/complaint handler.
+Dashboard reviewer.
+Roles that move to donor/yatri/preaching-facing work
+Time saved from manual stock chasing and status consolidation should be redeployed into donor gratitude calls, feedback collection, Yatra invitations, and preaching follow-up. This is a future-state design recommendation and needs management validation.
+Roles that become data steward / QA / dashboard reviewer
+Bahumana data steward.
+Inventory/expiry QA.
+Vendor master steward.
+Courier/dispatch data steward.
+CRM/DCC linkage reviewer.
+New roles needed
+WF-010 Data Steward.
+Inventory/Expiry Controller.
+Dispatch Exception Coordinator.
+Donor Gratitude Journey Coordinator.
+Vendor Performance Coordinator.
+Source basis: Role_Ownership_Correction_Note_May_2026.txt; Project_Glossary.txt.
+10. Dashboard and Operational Intelligence Expectations
+Management dashboard
+Festival/Yatra readiness.
+Stockout risk.
+Expiring stock.
+Pending procurement.
+Dispatch backlog.
+Donor complaint risk.
+Budget variance.
+Mukund approval pending.
+VIP donor exception.
+Operational dashboard
+Intake queue.
+Stock availability.
+Packing queue.
+Procurement status.
+Vendor lead time.
+Courier pickup status.
+Tracking status.
+Returns and replacements.
+Revenue/conversion dashboard
+Gifts sent by donor category.
+Delivery confirmation.
+Thank-you follow-up.
+Feedback response.
+Re-donation after dispatch.
+Yatra inquiry after dispatch.
+Campaign/Yatra cost per kit.
+CRM/DCC linkage is required before revenue attribution is reliable. Mark as Assumption / Needs Validation.
+Data quality dashboard
+Missing Contact ID.
+Missing Donation ID.
+Missing Yatra ID.
+Missing source.
+Missing address/phone.
+Missing expiry date.
+Negative stock.
+Duplicate requirement.
+Unapproved dispatch.
+Missing follow-up owner.
+AI-agent performance dashboard
+Forecast accuracy.
+Alert precision.
+AI summary adoption.
+Draft approval rate.
+Escalation accuracy.
+Approval bypass incidents.
+Hallucination incidents in donor/spiritual content.
+Source basis: Project_Glossary.txt; WF-010 blueprint Sections 13 and 17.
+11. CRM / ERP / Data Expectations
+Required entities
+Contact.
+Donor.
+Yatri.
+Family/Community, where applicable.
+Donation.
+Campaign.
+Event.
+Yatra.
+Requirement.
+Kit.
+Item/SKU.
+Batch/expiry.
+Stock ledger.
+Vendor.
+RFQ/quote.
+Purchase order.
+Goods receipt.
+Packing job.
+Dispatch/shipment.
+Courier tracking.
+Return/complaint.
+Approval.
+Follow-up task.
+Communication log.
+Required platform-compatible fields
+Common Contact ID.
+Donor ID.
+Yatri ID.
+Community ID.
+Family ID.
+Campaign source.
+Event source.
+Referral source.
+Call source.
+Website source.
+Yatra source.
+Donor source.
+Owner.
+Performer.
+Approver.
+Backup.
+Escalation person.
+Dashboard reviewer.
+Data steward.
+Last follow-up date.
+Next action.
+Next action owner.
+Priority.
+Status.
+Outcome.
+Donation ID.
+Payment status.
+Receipt status.
+Campaign ID.
+Yatra ID.
+Event ID.
+Seva.
+Trust.
+Task ID.
+Approval status.
+Created date.
+Source of truth now
+Currently: Google Sheets, Airtable, C table, Asset Tiger, vendor Excel, courier records, finance voucher records, DCC/CRM exports if available. Exact source-of-truth hierarchy is Assumption / Needs Validation.
+Future source of truth
+CRM/DBMS: contacts, donors, yatris, family/community identity, source attribution, consent, follow-ups.
+ERP: inventory, procurement, stock ledger, PO, GRN, finance approvals, vendor master.
+Workflow app: intake, packing, dispatch, returns, approvals during MVP.
+BigQuery: analytics and historical intelligence.
+KCKE: source-grounded spiritual content only.
+Media AI: approved visual/storytelling outputs only.
+Source basis: KCKE_Media_CRM_Dependency_Map.docx.
+12. KCKE / Media AI Expectations, if applicable
+KCKE use
+Use KCKE only for:
+Source-grounded Krishna conscious donor thank-you content.
+Festival meaning inserts.
+Mantra card/spiritual explanation content.
+Donor narratives.
+Preaching follow-up content.
+Do not use KCKE for:
+Inventory quantity.
+Contact status.
+Payment status.
+Courier tracking.
+Approval status.
+Task status.
+Finance records.
+Source basis: KCKE_Media_CRM_Dependency_Map.docx.
+Media AI use
+Use Media AI only for:
+Approved Bahumana gift catalog visuals.
+Festival/Yatra gift explainers.
+Donor impact storytelling.
+Reels/videos/storyboards.
+QR landing page media assets.
+Do not use Media AI as the inventory system or source of spiritual truth. Media AI pipeline is separate from KCKE and Gemini Enterprise Agents.
+Source basis: Media_AI_Pipeline_Briefing_Note.docx.
+13. Governance and Human Approval Expectations
+Human approval is required for:
+Donor-sensitive approvals.
+Financial approvals.
+Procurement/vendor selection.
+Unique gift selection.
+Public communication.
+Philosophical/devotional content.
+Deity/media representation.
+CSR/HNI donor communication.
+Write-off/replacement.
+High-risk exception closure.
+AI may draft, summarize, classify, recommend, and prepare, but should not finalize sensitive actions without a validated human approver.
+Source basis: Project_Glossary.txt; KCKE_Media_CRM_Dependency_Map.docx; Prasadam Inventory Management_otter_ai.docx.
+14. Integration Expectations
+Google Workspace
+Gmail for vendor communication.
+Drive for quote/invoice/proof files.
+Sheets for MVP data.
+Forms for intake.
+Chat for alerts and summaries.
+Gemini Enterprise
+Summaries.
+Drafts.
+Exception explanations.
+Vendor quote summaries.
+Donor message drafts.
+Leadership daily brief.
+Apps Script / AppSheet / Sheets
+7-day demo.
+14-day MVP.
+Intake form.
+Stock ledger.
+Expiry alerts.
+Packing queue.
+Dispatch tracker.
+Approval workflow.
+Vertex AI / Agent Builder
+Long-running agent workflows.
+Forecasting.
+Multi-step orchestration.
+Exception reasoning.
+Agentic status updates.
+Cloud Run / Workflows
+API connectors.
+Courier sync.
+CRM/DCC sync.
+ERP sync.
+Scheduled jobs.
+BigQuery / Looker Studio
+Historical analytics.
+Forecasting dataset.
+Leadership dashboard.
+Cost/conversion dashboard.
+Multi-center comparisons.
+CRM APIs
+Contact ID.
+Donor/Yatri ID.
+Consent.
+Address.
+Follow-up status.
+Delivery status.
+Complaint cases.
+ERP APIs
+Item master.
+Vendor master.
+Purchase order.
+Goods receipt.
+Stock ledger.
+Batch/expiry.
+Finance approvals.
+Payment gateway / DCC
+Donation ID.
+Payment status.
+Receipt status.
+Seva/campaign/Yatra linkage.
+ClickUp
+WF-008 is the execution backbone; partner should validate whether WF-010 tasks/escalations should flow into ClickUp or remain in AppSheet/workflow app during MVP. Source context says WF-008 uses ClickUp and Meeting Intelligence should feed task governance.
+WhatsApp / SMS / courier vendor
+Tracking messages.
+Follow-up drafts.
+Consent-based messages.
+Courier tracking import/API/export.
+External tools
+Use external vendor tools only where Google stack is insufficient, such as courier APIs, WhatsApp Business provider, SMS/RCS gateway, barcode/label printing, or existing Asset Tiger integration.
+Cross-Workflow Integration and Platform Safeguards
+WF-010 must use shared platform identifiers wherever applicable: Contact ID, Donor ID, Yatri ID, Campaign ID, Event ID, Donation ID, Task ID, Owner ID, Approval Status, Source, Created Date, Last Follow-up Date, Next Action, and Next Action Owner.
+CRM/DBMS remains the relationship source of truth for donor, yatri, contact, family/community, consent, source, follow-up, and journey status. WF-010 should not create a parallel relationship database.
+ERP remains the future structured operational and financial system of record for item master, stock ledger, batch/expiry, procurement, purchase order, goods receipt, vendor, cost, write-off, and finance approval records. Day-30 MVP data must be ERP-ready even if ERP migration happens later.
+KCKE boundary: use KCKE only for source-grounded Krishna conscious inserts, festival meaning, donor gratitude content, mantra-card explanation, and preaching messages. Do not use KCKE for inventory quantity, courier status, payment status, task status, or approval status.
+Media AI boundary: use Media AI for approved gift catalog visuals, donor inspiration, festival/Yatra storytelling, and video/creative outputs. Do not use Media AI as an operational stock or dispatch system.
+ClickUp/task layer: where WF-008 execution governance is active, WF-010 exceptions, procurement follow-ups, data cleanup tasks, approval delays, and partner action items should either sync to ClickUp or be intentionally retained in AppSheet/workflow app with clear ownership.
+Leadership command-center contribution: WF-010 should feed a consolidated daily view with stockout risk, expiring stock, procurement delay, dispatch backlog, VIP donor exceptions, budget variance, damaged/spoiled items, and Mukund approval pending.
+API dependency tracking: courier, WhatsApp/SMS, CRM/DCC, Asset Tiger, payment/DCC, ERP, and finance integrations must be tracked in a consolidated API registry with status, owner, access method, cost/usage constraints, and blocker status.
+Fallback workflow: if automation or integration fails, the system must preserve a manual controlled path for requirement intake, stock issue, approval, packing, courier upload, donor update, and later reconciliation back into the system.
+Cross-workflow golden journey QA: test at least one end-to-end path such as digital campaign or donor/Yatra trigger -> CRM contact/donor/yatri link -> WF-010 requirement -> kit/stock/procurement -> packing -> dispatch -> delivery confirmation -> donor gratitude/next action.
+15. Day 1-7 Production Foundation Sprint Expectations (Formerly 7-Day Demo)
+Updated framing: Day 1-7 is not a throwaway demo. It is the production foundation sprint for WF-010. Mock/sample data may be used only where dependencies are pending, but the data model, approval flow, dashboard structure, role ownership, and integration classification must be production-aligned.
+Day 1-3 must focus on workflow validation, access confirmation, data source confirmation, owner/approver/backup validation, CRM fields and IDs confirmation, API dependency classification, dashboard schema confirmation, production risk identification, role ownership validation, and relevant analysis-file gap mapping.
+Day 4-7 must deliver the first working prototype, first CRM/Sheet/API data path, first dashboard, first automation, first approval flow, first AI-assisted output, sample live workflow test, and first leadership command-center visibility layer.
+What can be shown quickly
+Requirement intake form.
+Item/SKU master.
+Kit master.
+Stock ledger.
+Batch/expiry fields.
+Reorder alert.
+Expiry alert.
+Packing list.
+Mock QR/label.
+Dispatch tracker.
+Mock courier tracking.
+Gemini exception summary.
+Basic dashboard.
+What can be mocked
+CRM/DCC donor link.
+Courier API.
+ERP inventory.
+Vertex AI forecast.
+Historical demand trend.
+KCKE spiritual insert approval.
+Data needed immediately
+Current inventory sheet.
+SKU/item list.
+Kit list/recipes.
+Vendor list.
+Shelf-life rules.
+Courier export sample.
+Dispatch sample.
+Donor/Yatri sample with anonymized IDs.
+Returns/complaints examples.
+Finance budget categories.
+What should not be overclaimed
+Full ERP.
+Live courier integration.
+Accurate demand forecasting.
+Autonomous procurement.
+Autonomous donor messaging.
+Complete CRM integration.
+Inventory accuracy without physical reconciliation.
+Source basis: Mukund_Prabhu_Operations_Master_Context_Pack_v0.2_Revenue_Priority.docx; WF-010 blueprint Section 8.
+16. Day 8-14 Integrated Working MVP Expectations
+Updated framing: Day 8-14 must produce an integrated working MVP that selected users can test operationally. It must include workflow execution, CRM/data path validation, dashboards, AI-assisted actions, human approval routing, exception routing, data quality checks, and API registry validation.
+This period should also validate WhatsApp/SMS/courier/CRM dependencies where relevant, while clearly marking anything that remains mock, export/import-based, or pending API access.
+What can be used by selected users
+AppSheet/Sheets workflow for actual selected-team use.
+Role-based screens for coordinator, stock, packing, procurement, finance, and leadership.
+Alerts for shortage, expiry, procurement delay, dispatch delay.
+Packing checklist.
+Dispatch tracker.
+Returns/complaints tracker.
+Gemini daily exception summary.
+What remains manual/semi-automated
+Physical stock count.
+Vendor negotiation.
+Finance approval.
+Courier pickup.
+CRM/DCC import if API unavailable.
+Donor-sensitive communication approval.
+Unique gift selection.
+Acceptance criteria
+Requirement entered through structured intake.
+Stock and shortage visible.
+Expiry/shelf-life alert visible.
+Packing list generated.
+Dispatch record created with tracking field.
+Approval status captured.
+Daily exception summary generated.
+Dashboard shows stock, procurement, dispatch, cost, and complaints.
+Human approval required for procurement, donor message, write-off/replacement, and unique selection.
+Exclusions
+Full ERP.
+Full CRM.
+Live courier API unless already available.
+Autonomous sending.
+Production forecasting.
+Full multi-center rollout.
+17. Day 15-30 Production Readiness and Productivity Multiplication Sprint Expectations
+Updated framing: Day 15-30 is the production readiness and productivity multiplication sprint. The priority is operational adoption, exception handling, workflow interoperability, user training, KPI validation, fallback protocol, and measurable productivity improvement.
+Day 15-21 should focus on production hardening, real operational usage, cross-workflow integration, user training, KPI validation, escalation testing, fallback protocol, role ownership refinement, and golden journey QA testing.
+Day 22-30 should focus on production readiness review, command-center visibility, live operational handover, stabilization, productivity measurement, management reporting, partner sign-off checklist, next 60-day stabilization roadmap, and 75-day enterprise-scale readiness roadmap.
+Users
+Bahumana owner.
+Inventory/stock team.
+Packing team.
+Procurement person.
+Finance reviewer.
+CRM/DCC/data representative.
+Mukund Prabhu or delegated approver for exception dashboard.
+Workflow coverage
+Requirement intake.
+Stock and expiry.
+Procurement tracker.
+Packing.
+Dispatch.
+Returns/complaints.
+Finance cost tracking.
+Donor follow-up trigger design.
+Data requirements
+Cleaned item master.
+Cleaned kit master.
+Vendor master.
+Sample 30-90 days of dispatch data, if available.
+Shelf-life rules.
+Budget categories.
+Courier status format.
+Consent/source/contact schema.
+Integration scope
+CSV/import fallback for CRM/DCC/courier.
+API validation where available.
+Basic Google Workspace/AppSheet integration.
+Dashboard refresh process.
+Success metrics
+Stockout reduction.
+Emergency purchase reduction.
+Dispatch SLA improvement.
+Expiry loss reduction.
+Complaint logging completeness.
+Daily dashboard adoption.
+Mukund escalation reduction.
+Data completeness.
+18. 30-Day Production Base + 60-Day Stabilization Foundation Expectations
+Updated framing: The original 90-day production foundation remains important, but the first production base must now be established within 30 days. The following foundation items should therefore be read as Day-30 production-base requirements plus 60-day stabilization and hardening priorities.
+By Day 30, the workflow must have a live or controlled-live operating path, role-based access, dashboard visibility, approval routing, exception handling, data-quality checks, API dependency register, and fallback process. The next 60 days should harden integrations, support, training, governance, and KPI discipline.
+Production architecture
+Hardened workflow app or Google Cloud-backed application.
+Role-based permissions.
+Audit logs.
+Data validation.
+API-ready data schema.
+Dashboard layer.
+Support process.
+Security/access
+Donor address/phone restricted.
+Finance fields restricted.
+Edit/view rights separated.
+Approvals audited.
+Agent actions logged.
+Export controls.
+Dashboards
+Management dashboard.
+Operational dashboard.
+Data quality dashboard.
+Vendor/courier dashboard.
+Finance/cost dashboard.
+Donor follow-up dashboard.
+API validation
+CRM/DCC.
+Courier.
+WhatsApp/SMS.
+ERP inventory/procurement/finance.
+Asset Tiger, if retained.
+Data quality governance
+Required fields.
+Master IDs.
+Owner/steward.
+Duplicate rules.
+Approval status.
+Data correction workflow.
+Support model
+Workflow owner.
+Data steward.
+Technical admin.
+Approval owners.
+Partner support SLA.
+Issue escalation process.
+19. 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale Architecture Vision
+Updated framing: The 6-month enterprise architecture remains the target operating model, but it must now be connected to a compressed path: 30-Day Production Base, 60-Day Stabilization, and 75-Day Enterprise Scale Readiness.
+By 75 days, WF-010 should be ready to participate in enterprise-scale platform maturity: CRM/DCC linkage maturity, API readiness, ERP migration readiness, BigQuery/Looker dashboards, leadership command-center contribution, cross-workflow golden journey testing, reusable templates, and multi-center replication packaging through the future WF-013 path.
+WF-010 should plug into the Hyderabad AI Revenue & Seva Growth Platform as follows:
+CRM/DCC creates or enriches donor/Yatri-linked Bahumana requirements.
+Workflow app manages requirement, stock, procurement, packing, dispatch, returns, and approvals.
+ERP becomes source of truth for inventory/procurement/finance once ready.
+BigQuery becomes analytics layer.
+Looker Studio becomes dashboard layer.
+Gemini Enterprise supports summaries, drafts, reviews.
+Vertex AI / Agent Builder supports forecasting and multi-agent orchestration.
+KCKE supports approved spiritual inserts and donor/preaching content.
+Media AI supports approved visual/storytelling outputs.
+Meeting Intelligence captures partner decisions, workflow decisions, and action items.
+Source basis: KCKE_Media_CRM_Dependency_Map.docx; Folder_Structure_Readme.txt.
+20. Expected Google Product Areas
+Partner should validate, not assume, the following mapping:
+Need | Likely product area | Partner must classify
+7-day demo | Forms, Sheets, AppSheet, Apps Script, Gemini | Buildable immediately / demo only
+14-day MVP | AppSheet, Sheets, Apps Script, Gemini Enterprise | Buildable with our data
+Daily summaries | Gemini Enterprise / Workspace | Requires license and access model
+Alerts/workflow | Apps Script, AppSheet Automation, Google Chat | Buildable / data-dependent
+Forecasting | BigQuery + Vertex AI | Later / requires data
+Agent orchestration | Agent Builder, Vertex AI, Cloud Run, Workflows | Custom build
+Dashboards | Looker Studio, BigQuery, Sheets | MVP vs production
+CRM/DCC sync | CRM/DCC APIs, Cloud Run | API-dependent
+ERP sync | ERP APIs | ERP later
+Media outputs | Media AI Pipeline | Separate track
+Spiritual content | KCKE | Requires KCKE and approval
+API registry | Sheets/AppSheet initially; Cloud Run/Workflows later | Required before promising live integrations
+Leadership command-center contribution | Looker Studio, BigQuery, AppSheet dashboard, Gemini summaries | Day 7 visibility / Day 30 production base
+Golden journey QA | AppSheet test data, CRM/DCC sample data, ClickUp/task linkage, dashboard checks | Required for Day 15-30 readiness
+Fallback/service-continuity protocol | Workflow app + manual reconciliation path + audit fields | Required before production handover
+Personalized prasadam/gifting intelligence | Gemini + CRM signals + approved kit catalog; Vertex AI later | AI-assisted now / advanced later
+Relationship Intelligence Graph linkage | CRM/DBMS and future graph/BigQuery layer | Future platform capability; preserve IDs now
+
+Source basis: Project_Glossary.txt; KCKE_Media_CRM_Dependency_Map.docx.
+21. Questions for the Implementation Partner
+What exactly can be delivered in 7 days?
+What exactly can be delivered in 14 days?
+What can be piloted with real selected users in 30 days?
+What becomes production-ready in 90 days?
+What is your 6-month architecture for WF-010 as a platform module?
+Which parts are demo/mock only?
+Which features require HKHT data before build?
+Which features require CRM/DCC API integration?
+Which features require ERP later?
+Which features require custom Google Cloud build?
+Which features require Gemini Enterprise?
+Which features require Vertex AI?
+Which features require Agent Builder / agentic systems?
+Which features require Apps Script / AppSheet / Sheets?
+Which features require BigQuery / Looker Studio?
+Which features require external vendor tools?
+Which features require data cleanup?
+Which features require human approval design?
+What should not be promised in 2 weeks?
+What data do you need from HKHT immediately?
+What licenses are required?
+What are estimated costs?
+What are security/privacy limitations for donor address/phone data?
+What region will data be stored in?
+What audit logs will exist for AI actions and approvals?
+How will MVP data migrate into ERP later?
+Which Day 1-3 validation items require HKHT access before build begins?
+What is the exact Day 4-7 working prototype scope and what data path will be live versus sample-based?
+What is the Day 8-14 selected-user test plan and which user roles will participate?
+What specific Day 15-30 production-readiness criteria will you commit to?
+What is the fallback process if courier, WhatsApp/SMS, CRM, or ERP integrations are delayed?
+What is your API registry format and how will API blockers be escalated daily?
+How will WF-010 feed the leadership command-center view from Day 7 onward?
+How will golden journey QA be tested across donor/Yatra trigger, CRM link, Bahumana requirement, dispatch, delivery, and follow-up?
+How will Mukund Prabhu dependency reduction be measured for this workflow?
+How will institutional memory about gift selection, vendor judgment, and exception handling be captured without making AI the final approver?
+What will be included in the 60-day stabilization roadmap and the 75-day enterprise-scale readiness roadmap?
+22. Expected Deliverables from Google / Implementation Partner
+The partner should provide:
+Technical Requirements Document.
+Solution Architecture.
+Google Product Mapping.
+Agent Architecture.
+Integration Architecture.
+CRM/ERP/Data Architecture.
+Security and Access Model.
+Human Approval Architecture.
+Dashboard Architecture.
+API/Connector Requirements.
+Deployment Architecture.
+Licensing Requirements.
+Cost Estimates.
+Team Structure.
+Rollout Plan.
+Risks and Limitations.
+HKHT-side Dependencies.
+Data Requirements from HKHT.
+Assumptions and Exclusions.
+Demo/MVP/production classification matrix.
+Mandatory partner classification: Every feature must be tagged as one or more of:
+Buildable immediately.
+Demo/mock only.
+Requires our data.
+Requires CRM/API integration.
+Requires ERP later.
+Requires custom Google Cloud build.
+Requires Gemini Enterprise.
+Requires Vertex AI.
+Requires Agent Builder / agentic systems.
+Requires Apps Script / AppSheet / Sheets.
+Requires BigQuery / Looker Studio.
+Requires external vendor tools.
+Requires data cleanup.
+Requires human approval design.
+Should not be promised in 2 weeks.
+Additional accelerated production-readiness deliverables
+- 30-day production readiness checklist.
+- Day 1-30 accelerated sprint plan with daily checkpoint structure.
+- 60-day stabilization roadmap.
+- 75-day enterprise-scale readiness roadmap.
+- WF-010 golden journey QA test plan.
+- WF-010 fallback/service-continuity protocol.
+- API registry extract for courier, WhatsApp/SMS, CRM/DCC, Asset Tiger, ERP, finance, and payment/DCC dependencies.
+- Leadership command-center contribution specification.
+- Role ownership validation matrix: owner, performer, approver, backup, escalation person, dashboard reviewer, and data custodian.
+- Mukund Prabhu dependency-reduction measurement method.
+- Institutional memory capture plan for gift-selection judgment, vendor/source judgment, exception handling, and donor-sensitive escalation.

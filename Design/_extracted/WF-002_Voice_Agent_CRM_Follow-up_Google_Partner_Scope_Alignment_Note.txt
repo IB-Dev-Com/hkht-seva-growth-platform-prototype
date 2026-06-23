@@ -1,0 +1,209 @@
+WF-002 Voice Agent + CRM Follow-up – Google Partner Scope Alignment and Improvement Note
+Partner-facing note to align technical scope with the intended HKHT AI Revenue & Seva Growth Platform architecture
+Source and evidence used
+This note is grounded in the latest Document B – 30-Day Production-Ready Implementation Brief, workflow transcripts, HKHT GE Technical Scope, GE Technical Scope Gap Analysis, , Important Upgrades, platform architecture/governance recommendations, KCKE/Media boundaries and WF-002 evidence. Privacy-law-specific recommendations are intentionally not included.
+Source | How it informs this note
+Latest Document B – 30-Day Production-Ready Implementation Brief | Main source for production sprint framing, agent list, governance, dashboards, data model, integration expectations and partner deliverables.
+CRM Workflow Overview Meeting transcript | Current-state evidence: lead sources, Tata Tele, Hello Leads, WhatsApp, calling team, reports, manual callbacks and current pain points.
+Bot Integration Planning Meeting transcript | Voice/bot POC evidence: phone/link demo, dialer/number procurement, 500-contact CSV, call statuses, API uncertainty, language/script issues, dashboard limitations.
+HKHT GE - Technical Scope | Partner technical scope evidence: Gemini Enterprise limits, WF-002 as post-call transcript processing, dummy data/MVP boundary, CRM transcript feed, production needs.
+HKHT GE Technical Scope — Gap Analysis | Gap evidence: call should become CRM relationship history, next-action routing, relationship nuance capture, source continuity and follow-up escalation.
+and Important Upgrades | Strategic architecture evidence: relationship graph, Voice AI multiplier, institutional memory, multi-center replication, WhatsApp conversational commerce and AI fundraiser support.
+HKHT_AI_Transformation_Analysis(1).html | Programme-level recommendations used: AI-first redesign, revenue-first sequencing, master data model, API registry, workflow gates, leadership command center and 100x ideas. Privacy-law-specific recommendations excluded as requested.
+KCKE / Media AI briefing files | System boundary evidence: KCKE is for source-grounded Krishna conscious knowledge; Media AI is separate and for approved visual/media workflows.
+
+1. Purpose of This Note
+This note is meant to help the Google Partner / implementation partner align their technical scope with the intended HKHT AI for Seva architecture for WF-002 Voice Agent + CRM Follow-up.
+This is not a rejection of the partner’s current work.
+This is not adding random new scope.
+This is a clarification of the intended architecture so the partner can classify, phase and strengthen the implementation plan correctly.
+The goal is to make early execution small but production-shaped, platform-compatible and ready for 30-day production base, 60-day stabilization and 75-day enterprise-scale readiness.
+Evidence basis: Latest Document B; HKHT GE Technical Scope; GE Gap Analysis; .
+2. Core Understanding Expected from the Partner
+WF-002 is not only a call transcript summarizer and not only a bot demo.
+It is the voice-and-follow-up conversion module of the HKHT AI Revenue & Seva Growth Platform.
+It should convert approved contacts into structured relationship history, next actions, callbacks, WhatsApp follow-up, human escalation and dashboard visibility.
+It must preserve common IDs, source tracking, approvals, CRM/ERP readiness, audit trail and future scale.
+It must be connected to WF-001 Yatra, WF-003 Digital Marketing, WF-006 CRM/DBMS, WF-007 Donor/LLP/CSR, WF-008 task governance, WF-009 finance/DCC references and WF-014 Community Outreach.
+Evidence basis: Latest Document B sections 1, 4, 6, 11 and Cross-Workflow Integration; GE Gap Analysis WF-002 section.
+3. Intended Architecture from the Beginning
+Component | WF-002 intended meaning
+Architecture component | WF-002 intended meaning
+Relationship intelligence | Every call becomes part of a unified relationship journey, not a temporary note.
+Predictive intelligence | The data model should support later lead scoring, donor propensity and Yatra demand prediction.
+Real-time AI assistance | Supervisors, callers and fundraisers should receive summaries, next actions and context cards where relevant.
+Institutional memory | Mukund Prabhu’s judgment on escalation, donor sensitivity, tone and campaign logic should become approved guardrails.
+KCKE source-grounding | Only used when devotional/philosophical or donor narrative content requires authentic source grounding.
+Media AI | Only used for approved Yatra/festival/donor inspiration media; not part of CRM or payment status.
+CRM/DBMS | Operational relationship truth for contacts, sources, call history, follow-ups, tags, opt-outs and relationship status.
+ERP-ready records | Payment/receipt/finance truth comes later through ERP/DCC references; WF-002 should capture IDs and source links.
+Gemini Enterprise | Internal supervisor/copilot productivity: summarize, draft, search scripts/FAQs and assist workflow users.
+Vertex AI / Agent Builder | Production-grade multi-step classification, QA, orchestration and scalability where GE/no-code is insufficient.
+BigQuery / Looker Studio | Analytics/intelligence layer for leadership, operations, conversion, data quality and AI performance dashboards.
+ClickUp / task layer | Where confirmed, tasks, escalations and implementation follow-ups should become executable with owners and due dates.
+Leadership command center | WF-002 should feed one consolidated leadership view, not only a standalone dashboard.
+WF-013 multi-center readiness | WF-002 should be built with reusable scripts, templates, fields, dashboards and approval matrix for future replication.
+
+Evidence basis: , Important Upgrades, HKHT AI Transformation Analysis, latest Document B, KCKE/Media files.
+4. Scope Alignment with Latest Document B
+Timeline | Partner interpretation
+Phase | How latest Document B should be understood
+Day 1–7 Production Foundation Sprint | Not a disposable demo. It validates access, data path, owners, IDs, approval routing, first dashboard, sample call flow and integration classification.
+Day 8–14 Integrated Working MVP | Selected users should test a controlled campaign with voice/transcript processing, CRM/Sheet data path, callback, escalation and dashboard.
+Day 15–30 Production Readiness Sprint | Controlled live or near-live usage, production hardening, exception routing, fallback testing, KPI measurement and handover.
+60-Day Stabilization | Stabilize adoption, APIs, data quality, dashboard refinement, support rhythm, training and SLA discipline.
+75-Day Enterprise-Scale Readiness | Review enterprise architecture, cross-workflow integration, command center contribution, advanced AI readiness and WF-013 packaging readiness.
+
+Production readiness does not mean every future enterprise feature must be finished in 30 days. It means WF-002 must have a stable production base, validated data path, human approval, dashboard visibility, owner routing, fallback procedure and clear integration contract.
+Evidence basis: Latest Document B 30-day realignment and production readiness sections.
+5. Scope Alignment with HKHT GE Technical Scope vs Gap Analysis
+The HKHT GE Technical Scope positions WF-002 as a light custom / P2 workflow where the outsourced dialer provides transcripts and GE can process post-call intent and next steps. That is useful, but the Gap Analysis clarifies that WF-002 must not stop at summarizing transcripts.
+Practical point | WF-002 implication
+What is covered | Post-call transcript ingestion, cleaning, intent matching, next-step extraction and CRM writeback concept.
+What is missing or unclear | Whether every call becomes persistent CRM relationship history; whether next actions trigger WhatsApp/callback/human escalation; whether campaign source stays attached; whether failed/unresolved calls remain visible.
+What needs classification | Live voice/dialer, CRM API, WhatsApp API, dashboard, BigQuery/Looker, ClickUp task integration, Vertex/Agent Builder and external vendor components.
+What may be mock/demo only early | Full CRM API writeback, WhatsApp send, payment/DCC linkage, predictive scoring and multi-center packaging unless dependencies are confirmed.
+What needs HKHT data/access | Contact batch, CRM schema, transcript export, script/FAQ, outcome taxonomy, approved templates, owner list and dashboard KPIs.
+What needs stronger production alignment | Persistent IDs, source tracking, CRM timeline, data quality checks, fallback procedure, golden journey QA and leadership command center contribution.
+
+Evidence basis: HKHT GE Technical Scope; HKHT GE Technical Scope — Gap Analysis.
+6. Workflow-Specific Improvements Required in Partner Understanding
+Area | Possible gap | Correct understanding | Partner action | Phase | Dependency | Evidence
+Area | Current possible misunderstanding / gap | Correct intended understanding | Partner action needed | Phase | Dependency | Evidence from attached files
+Transcript processing | Scope may appear to be only transcript summary. | Each call must become CRM timeline + intent + next action + owner. | Define event schema and CRM update contract. | Day 14 / Day 30 | CRM fields/API or Sheet staging | GE Gap Analysis; Document B
+Voice agent vs outsourced dialer | GE scope says no voice agent build in MVP. | Classify whether partner handles voice, transcript ingestion, or both; do not hide dependency. | Provide clear boundary and vendor integration plan. | Day 7 | Voice/dialer provider | GE Technical Scope; Bot transcript
+Contact identity | Contacts may be stored as campaign rows only. | Contact ID must persist across calls, Yatra, donation, event and community touchpoints. | Use shared ID contract from WF-006. | Day 7 / Day 30 | CRM/DBMS model | HKHT Analysis G02; Document B
+Source tracking | Call may lose campaign origin. | Campaign/source must remain attached through call, follow-up, registration/donation and dashboard. | Map source fields end to end. | Day 14 / Day 30 | Campaign data | GE Gap Analysis; Document B
+Follow-up actions | AI may only recommend next step. | System should create or queue task, reminder, WhatsApp, escalation or review. | Implement action queue with HITL gates. | Day 14 / Day 30 | Task layer/ClickUp or CRM tasks | Document B;
+WhatsApp follow-up | May be treated as manual or out of scope. | Must be classified: approved template queue, manual log, API trigger or future roadmap. | Provide WhatsApp governance and integration status. | Day 14 / 60 days | Provider/templates | HKHT Analysis G04; Document B
+DND/calling readiness | Large calling may be assumed ready. | Scaled voice outreach must be gated by source, DND/opt-out, phone validity and suppression checks. | Add pre-call readiness gate. | Day 7 / Day 30 | Data quality/source audit | HKHT Analysis G03; Document B
+Leadership dashboard | Workflow dashboard may stand alone. | WF-002 must feed leadership command center with exceptions and conversion health. | Design dashboard outputs and command center feed. | Day 30 / 75 days | Looker/BigQuery or equivalent | HKHT Analysis G12; Document B
+Institutional memory | Judgment may stay informal. | Escalation/tone/sensitivity rules should encode approved Mukund Prabhu guidance. | Capture rules and version them. | Day 30 / 60 days | Leadership validation | ; Important Upgrades
+Golden journey testing | Demo may show isolated steps. | Test lead → call → follow-up → registration/donation reference → dashboard. | Provide test script and results. | Day 30 | Sample data + owners | HKHT Analysis G08/G14; Document B
+Fallback | Failure path may be unspecified. | If CRM/voice/WhatsApp fails, manual continuity must preserve queue, next action and dashboard status. | Document service continuity protocol. | Day 30 | Owner/backup validation | HKHT Analysis G15; Document B
+WF-013 readiness | Multi-center may be viewed as unrelated. | Do not build rollout now; prepare reusable templates and data contracts. | Document localization/replication assumptions. | 75 days / future | WF-013 blueprint | HKHT Analysis G01;
+
+7. What the Partner Should Not Miss
+Common IDs: Contact ID, Donor ID, Yatri ID, Family ID, Campaign ID, Event ID, Call ID, Task ID and Owner ID where applicable.
+CRM/DBMS remains the relationship source of truth for calls, follow-ups, source, opt-outs, tags and relationship stage.
+ERP-ready fields must be captured without forcing unstable early ERP integration.
+Human approval gates are mandatory for donor-sensitive, HNI/CSR/LLP, finance/payment/receipt, public and devotional/philosophical content.
+Audit logs should show what AI did, what human approved and what was written back.
+Role ownership must be validated; transcript-derived names should not be treated as final.
+Fallback process must exist for voice, CRM, WhatsApp and dashboard failure.
+API registry must classify Hello Leads, Tata Tele, voice vendor, WhatsApp, payment/DCC, ERP and ClickUp/task APIs.
+Data quality checks must run before calling.
+Golden journey testing must validate the full journey, not only one screen.
+KCKE and Media AI boundaries must remain clear.
+WF-002 must contribute to the leadership command center and future WF-013 packaging.
+8. Required Partner Classification
+Classification | Meaning
+Classification tag | Partner should use this meaning
+Already implemented | Feature exists now and can be shown with evidence.
+Included in current scope | Feature is committed in the current delivery plan.
+Buildable immediately | Can be built with current data/tools without new access.
+Day-7 demo | Can be shown in Day 1–7 foundation sprint, including labeled mock/sample items.
+Day-14 MVP | Can be used by selected users in controlled testing.
+Day-30 production base | Can support controlled live or near-live operations with owners, dashboard and fallback.
+60-day stabilization | Needs more adoption, hardening, API maturity or data quality work.
+75-day enterprise-scale readiness | Ready for platform review, command center integration and reusable templates.
+API-dependent | Requires confirmed API or export/import method.
+Data-dependent | Requires HKHT sample or production data.
+HKHT approval-dependent | Requires script, owner, message, campaign or dashboard approval.
+Google license/product-dependent | Depends on Gemini Enterprise, Vertex AI, Agent Builder, BigQuery/Looker or other licensed products.
+External vendor-dependent | Depends on voice, WhatsApp, CRM, payment/DCC or other external provider.
+Mock/demo only | Not production-ready; must be labeled clearly.
+Future roadmap | Important but not Day-30 commitment.
+Not recommended / not in scope | Should not be built or promised at this stage.
+
+9. Expected Technical Scope Clarifications from Partner
+Overall architecture for WF-002 within the Hyderabad AI Revenue & Seva Growth Platform.
+Google product mapping: Gemini Enterprise vs Vertex AI / Agent Builder vs Apps Script/AppSheet/Sheets vs BigQuery/Looker.
+Exact boundary between outsourced voice/dialer, transcript ingestion, AI processing and CRM update.
+CRM/API integration method and fallback if API is not ready.
+ERP readiness: which fields are captured now and which integrations remain later.
+WhatsApp dependency: provider, templates, queue, send control, delivery/reply logging and failure process.
+Payment/DCC dependency: how payment status is referenced without unstable financial handoff.
+ClickUp/task governance: where callbacks and escalations become tasks.
+KCKE and Media AI interface boundaries for approved spiritual/media content.
+Access/security model for contacts, call recordings, transcripts and dashboards.
+User roles: caller, supervisor, CRM/data steward, Mukund/dashboard reviewer, donor/Yatra escalation owner.
+Audit trail: what AI did, what human approved and what was written back.
+Support model: issue handling, ownership, SLA, change request and handover.
+Cost impact by component, license, API usage and external vendor usage.
+Handover plan and documentation expected at Day 30.
+10. Minimum Day-30 Production Base Expected
+Selected live or controlled operational users.
+Validated data path: lead/contact → call/transcript → outcome → next action → CRM/Sheet/API → dashboard.
+Common IDs and source tracking used in all records.
+Leadership/supervisor dashboard visible.
+Approval queue for scripts, WhatsApp templates and sensitive cases.
+Exception routing to the correct owner and backup.
+Fallback procedure if voice, CRM or WhatsApp integration fails.
+Role ownership confirmed: owner, performer, approver, backup, escalation person, dashboard reviewer and data steward.
+Audit trail for AI actions and human approvals.
+At least one sample golden journey test.
+Productivity measurement: calls processed, human time saved, hot leads surfaced, callbacks completed and overdue follow-ups reduced.
+Next 60-day stabilization roadmap.
+Evidence basis: Latest Document B sections 15–19; HKHT GE Gap Analysis; HKHT AI Transformation Analysis G08/G12/G15.
+11. 60-Day Stabilization Expectations
+Operational adoption by selected team members and supervisors.
+Bug fixes and issue log discipline.
+Data quality improvement: duplicates, source attribution, invalid phones, language, DND/opt-out and missing fields.
+API hardening and sync retry/error queue.
+Dashboard refinement based on live user feedback.
+User training, SOPs and call QA rhythm.
+Human approval discipline and escalation SLA tracking.
+Support rhythm with partner and HKHT owners.
+KPI measurement and weekly conversion/quality review.
+Scope cleanup: what remains MVP, what is production, what becomes future roadmap.
+12. 75-Day Enterprise-Scale Readiness Expectations
+Scalable architecture reviewed against multi-workflow platform needs.
+Integration with CRM, Yatra, Digital Marketing, Donor Cultivation, Meeting/Task Governance, Finance/DCC references and Community Outreach assessed.
+Leadership command center contribution live or ready.
+Advanced AI readiness: relationship context cards, script QA, lead scoring preparation and Voice of the Devotee reporting.
+BigQuery/Looker intelligence path defined.
+Vertex AI / Agent Builder production path defined where needed.
+Reusable workflow template, fields, script framework, approval matrix and dashboard pack prepared for WF-013 future replication.
+Open risks and dependency register updated.
+13. Long-Term Roadmap Items
+Future roadmap item | WF-002 relevance | Immediate expectation
+Future item | How it relates to WF-002 | Immediate expectation
+Devotee Intelligence Graph | Links calls, donors, yatris, events, communities, referrals and sevas into one journey. | Capture graph-ready IDs/events now.
+Donor/yatri propensity | Ranks who to call and when based on relationship signals. | Capture clean signals and outcomes now.
+Predictive campaign intelligence | Uses call outcomes to improve lead source scoring and campaign planning. | Preserve source tracking now.
+Real-time copilot | Helps callers/fundraisers during live conversations. | Build context-card foundation now.
+AI Fundraiser Copilot | Supports high-value donor handoffs and suggested next actions. | Prepare escalation summaries now.
+Voice of the Devotee intelligence | Aggregates call questions/objections into organizational insight. | Start basic top-objection reports now.
+Automated content/media intelligence | Uses approved Media AI/KCKE content for donor inspiration after calls. | Keep boundaries and approval rules now.
+Devotee Super App readiness | Future experience layer; not immediate WF-002 build. | Preserve APIs/IDs now.
+AI Seva Marketplace | Future matching of people to seva opportunities. | Capture interests and tags now.
+Federated mission intelligence | Other centers learn from Hyderabad patterns later. | Design reusable templates now.
+Digital twin / simulation | Future scenario planning for Yatra/campaign/calling throughput. | Collect clean operational data now.
+
+14. Partner Questions for Confirmation
+What is already built for WF-002 today?
+Which parts are mock/demo only?
+What will be production-ready by Day 30?
+Will Day-30 include live calls, controlled calls, or post-call transcript processing only?
+What data is needed from HKHT before Day 1?
+What CRM/Hello Leads/Tata Tele/API access is required?
+Which Google products are being used for each component?
+What is Gemini Enterprise native and what requires custom Vertex AI / Agent Builder / backend build?
+Where will call summaries, transcripts, outcomes and audit logs be stored permanently?
+How are Contact ID, Campaign ID, Call ID and Task ID generated and preserved?
+How do approvals work for scripts, WhatsApp messages and sensitive escalations?
+What is the fallback if voice, CRM, WhatsApp or dashboard fails?
+How will dashboards update and who can access them?
+How will DND/opt-out/source readiness be checked before scaled outreach?
+How will the solution avoid becoming a disconnected tool?
+How are future relationship intelligence and predictive intelligence protected in the data model?
+What cost/license/API assumptions must HKHT approve?
+What is the Day-30 handover package?
+16. Final Partner-Facing Summary
+HKHT appreciates the current progress and the partner’s work on rapid AI enablement.
+The main request is to align WF-002 implementation with the intended platform architecture, not to treat it as a small isolated demo.
+WF-002 should be production-shaped from Day 1, even when early execution uses mock data, CSV, Sheets or limited controlled users.
+Early execution may be small, but the architecture must preserve CRM alignment, shared IDs, source tracking, human approvals, dashboards, fallback and future intelligence readiness.
+The partner should classify gaps, dependencies, phases and handover commitments clearly so HKHT can make informed decisions and avoid disconnected automation.
+The Day-30 production base should prepare WF-002 for 60-day stabilization and 75-day enterprise-scale readiness without promising long-term 1000x capabilities immediately.

@@ -9,7 +9,10 @@
     { group: 'Platform', tag: null, items: [
       { path: '/', screen: 'command-center', label: 'Command Center', icon: '🛰️', wf: 'platform' },
       { path: '/journey', screen: 'golden-journey', label: 'Golden Journey', icon: '🧭', wf: 'platform' },
+      { path: '/attribution', screen: 'attribution', label: 'Source → Revenue', icon: '🔗', wf: 'platform' },
+      { path: '/ai-performance', screen: 'ai-performance', label: 'AI Agent Performance', icon: '🤖', wf: 'platform' },
       { path: '/approvals', screen: 'approvals', label: 'Approvals', icon: '✅', wf: 'platform', badge: 'approvals' },
+      { path: '/golive', screen: 'golive', label: 'Production Readiness', icon: '🚦', wf: 'platform' },
       { path: '/usage', screen: 'usage-cost', label: 'Usage & Cost', icon: '💳', wf: 'platform' },
       { path: '/continuity', screen: 'continuity', label: 'Service Continuity', icon: '🛟', wf: 'platform' },
       { path: '/kcke', screen: 'kcke', label: 'KCKE & Media Boundary', icon: '📖', wf: 'platform' },

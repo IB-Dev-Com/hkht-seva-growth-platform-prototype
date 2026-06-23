@@ -1,0 +1,325 @@
+DOCUMENT B - Google / Implementation Partner Brief
+WF-014 - Community Outreach System | Hyderabad AI Revenue & Seva Growth Platform Module
+Audience: Google partner team, implementation partner leadership, solution architects, delivery team
+Prepared for: AI for HKHT Seva - Enterprise AI Transformation | WF-014
+This document is not a TRD and not a request for a generic AI demo. It is a workflow-specific implementation briefing so the partner can generate TRD, solution architecture, Google-stack mapping, APIs/integrations, deployment architecture, rollout plan, feasibility analysis, costs, risks, and phased implementation proposal. [S1, S9, S14]
+Source basis: S1/S1b Master Context Pack; S2 Automation Master Register WF-014 row; S3/S4 WF-014 transcripts; S5 KL Preaching Models; S6 KCKE-Media-CRM-ERP map; S14 generated WF-014 blueprint; S15 HKHT AI Transformation strategic analysis recommendations, excluding DPDP-specific recommendations.
+30-Day Production-Ready Accelerated Execution Re-Alignment
+This revised Document B keeps the original WF-014 workflow architecture, evidence basis, agent design, dashboards, CRM/ERP expectations, human approval gates, and partner deliverable structure intact. It is now realigned as a 30-day Production-Ready Accelerated Execution Brief for a production-aligned module of the Hyderabad AI Revenue & Seva Growth Platform. [S1/S1b, S6, S14, S15]
+The brief must be read as a production sprint document, not only as a demo/MVP note. The partner should still classify what is buildable immediately, what is demo/mock only, what requires HKHT data, what requires CRM/API integration, what requires ERP later, and what requires Gemini Enterprise, Vertex AI, Agent Builder, BigQuery/Looker Studio, external vendors, or human approval design. [S14, S15]
+WF-014 must remain Community Outreach / Krishna Life / Culture Connect-specific: premium community targeting, permission management, festival/cultural events, contact capture, WhatsApp nurture, home visits, yatra/donor/children-program follow-up, volunteer conversion, and community ambassador growth. [S3, S4, S5, S14]
+The execution path is compressed but not disconnected: Day 1-7 Production Foundation Sprint; Day 8-14 Integrated Working MVP; Day 15-30 Production Readiness and Productivity Multiplication Sprint; then 60-day stabilization and 75-day enterprise-scale readiness. [S1/S1b, S14, S15]
+The module must remain CRM-aligned, ERP-ready, dashboard-visible, human-governed, ClickUp/task-conscious, KCKE/Media AI bounded, and interoperable with WF-001 Yatra, WF-002 Voice Agent, WF-003 Digital Marketing, WF-006 CRM/DBMS, WF-007 Donor Cultivation, WF-008 Meeting Intelligence, WF-009 Finance/DCC, WF-010 Bahumana/Prasadam, and WF-013 multi-center replication. [S6, S11, S12, S15]
+Relevant recommendations from HKHT_AI_Transformation_Analysis(1).html are incorporated where applicable to WF-014, excluding DPDP-specific recommendations and excluding any non-workflow-relevant ideas. [S15]
+Production Readiness Definition
+For WF-014, production readiness by Day 30 means the module is not merely shown; it is used by selected HKHT users for live or controlled operational execution with validated owners, data paths, dashboards, approvals, exception handling, and fallback process. [S14, S15]
+Live operational usage: selected outreach, event, data, and relationship users use the system for real community records, real event planning, real follow-up tasks, or controlled live pilot records. [S14]
+Validated data flow: Community ID, Contact ID, Family ID, Donor ID, Yatri ID where applicable, Event ID, Task ID, source tags, owner, status, approval status, next action, and last follow-up date are captured or mapped. [S6, S12, S14, S15]
+Dashboard visibility: leadership can see community pipeline, permission status, event readiness, follow-up leakage, donation/yatra/children-program leads, revenue attribution readiness, and exceptions from one command-center view. [S14, S15]
+Approval routing: donor-sensitive, financial, public, devotional/philosophical, HNI/CSR, family/children, and deity/media communications remain human-approved before release. [S1, S6, S7, S14]
+Exception handling: blocked permissions, overdue follow-ups, missing contact consent, event readiness gaps, data-quality failures, WhatsApp/API dependency issues, and payment/DCC attribution gaps have named escalation routes. [S3 33:35; S6; S10; S15]
+Role ownership: owner, performer, approver, backup, escalation person, dashboard reviewer, and data custodian are validated before routing automation to names derived from transcripts. [S10, S15]
+Golden journey testing: at least one end-to-end journey is tested from community identification to permission, event, contact capture, follow-up, donor/yatra/children-program next action, task closure, and dashboard reporting. [S15]
+Fallback process: if automation, AppSheet, CRM/API, WhatsApp, payment/DCC, or dashboard sync fails, HKHT has a manual fallback using approved sheets, forms, task lists, and named owners without losing donor/community continuity. [S15]
+Accelerated Delivery Governance
+The partner must operate WF-014 through an Accelerated Delivery Governance model: daily checkpoints, transparent dependency tracking, HKHT validation, issue escalation, acceptance review, sign-off process, and continuation into 60-day stabilization and 75-day enterprise-scale readiness. [S14, S15]
+Day 1-3: validate workflow scope, users, owner/performer/approver/backup, data sources, CRM fields and IDs, API dependencies, dashboard schema, production risks, role ownership, and analysis-file gap mapping. [S10, S14, S15]
+Day 4-7: deliver initial working prototype, CRM/Sheet/API data path, first dashboard, first automation, first approval flow, first AI-assisted event/follow-up output, sample live workflow test, and first command-center visibility layer. [S14, S15]
+Day 8-14: deliver integrated MVP with selected-user testing, workflow-specific AI assistance, ClickUp/task/follow-up linkage where relevant, exception routing, dashboard refinement, data-quality checks, human approval testing, API registry validation, and WhatsApp/voice/payment/CRM dependency validation where relevant. [S11, S14, S15]
+Day 15-21: harden production usage, test cross-workflow integration, train users, validate KPIs, test escalations, test fallback protocol, refine role ownership, and perform golden journey QA. [S14, S15]
+Day 22-30: complete production readiness review, command-center visibility, live operational handover, stabilization backlog, productivity measurement, management reporting, partner sign-off checklist, next 60-day stabilization roadmap, and 75-day enterprise-scale readiness roadmap. [S14, S15]
+Dependency watch: CRM/API, WhatsApp/SMS/voice, payment/DCC, ERP readiness, KCKE/Media AI interfaces, ClickUp/task governance, Google licenses, data cleanup, and role validation must be tracked daily with owner and resolution status. [S6, S10, S11, S12, S15]
+Partner responsibility: provide working assets, architecture choices, risk flags, dependency classification, acceptance evidence, deployment notes, and sign-off documentation. HKHT responsibility: provide data samples, users, approvals, access, validation feedback, and operational acceptance. [S14, S15]
+1000x Productivity Alignment
+WF-014 contributes to the 1000x ambition by converting community outreach from isolated programs into a CRM-centric relationship intelligence and conversion engine that compounds over time across communities, donors, yatris, volunteers, families, campaigns, and future centers. [S3, S5, S14, S15]
+Automation removes repeated manual scheduling, readiness checking, contact capture, task creation, reminder chasing, and report compilation. [S14]
+AI assistance multiplies output through community scoring, event recommendations, message drafts, follow-up summaries, donor/yatra/children-program next-best-action suggestions, and management narratives. [S14, S15]
+Agentic workflow multiplies throughput by orchestrating Community -> Permission -> Event -> Contact -> Nurture -> Home Visit -> Yatra/Donation/Children Program -> Ambassador/Referral Community, with human approval at sensitive points. [S14]
+CRM intelligence enables a Follow-the-Devotee journey timeline: one view of a person from community event attendance to donation, yatra interest, volunteer service, children program, prasadam/bahumana, call history, and future cultivation. [S6, S14, S15]
+Relationship Intelligence Graph readiness: WF-014 should produce clean relationship edges such as resident-of, attended, donated, volunteered, referred, committee-member, family-member, invited-to-yatra, and hosted-home-program. This prepares warm-introduction discovery and HNI/community ambassador cultivation later. [S15]
+Donor propensity and AI Fundraiser Copilot readiness: community and family records should capture giving capacity indicators, event history, interests, response history, and next-best-action signals so fundraisers can prioritize the right families with human-approved asks. [S5, S14, S15]
+WhatsApp conversational engagement readiness: WF-014 should prepare structured templates, opt-out tracking, response categories, and handoff rules for future WhatsApp-based event registration, yatra interest capture, seva interest, and donor follow-up. [S3, S6, S15]
+Voice of the Devotee intelligence readiness: event feedback, WhatsApp replies, home-visit notes, objections, praise, and complaints should be structured so leadership can learn what communities value and where outreach quality must improve. [S15]
+Media and social proof readiness: Media AI can later generate human-approved community recap videos, festival invitations, donor inspiration clips, and personalized major-donor recognition assets using approved source/context and media governance. [S7, S15]
+Institutional memory encoding: Mukund Prabhu’s community access judgment, how to approach committees, when to propose donations, when to invite to yatra, and how to handle HNI sensitivities must be encoded into playbooks, prompts, checklists, approval criteria, and escalation rules. [S10, S14, S15]
+Production base within 30 days, stabilized operating model within the next 60 days, and enterprise-scale readiness by Day 75 must be treated as one continuous platform path rather than separate disconnected automation efforts. [S15]
+Cross-Workflow Integration and Platform Safeguards
+WF-014 must connect to the larger platform without becoming a silo. The partner must design shared IDs, source tracking, task routing, dashboard outputs, API registry entries, and fallback routes from the beginning. [S6, S11, S12, S14, S15]
+Shared IDs: Contact ID, Donor ID, Yatri ID, Family ID, Community ID, Campaign ID, Event ID, Task ID, Donation ID, Owner ID, and Approval Status must be created or mapped according to the common master data model. [S6, S12, S14, S15]
+Source tracking: every lead/contact/action must preserve community source, event source, referral source, campaign source, call source, website source, yatra source, and donor source where applicable. [S6, S12, S14]
+CRM as relationship source of truth: Sheets/AppSheet may be used for speed, but the design must not create a parallel permanent CRM. Data must be exportable and mergeable into the CRM/DBMS master. [S6, S14, S15]
+ERP-ready fields: payment status, receipt status, donation ID, campaign ID, event ID, seva, trust, source, created date, last follow-up date, next action, owner ID, and approval status must be structured for later ERP migration. [S12, S14]
+KCKE boundary: KCKE may support source-grounded Krishna conscious explanations, festival meaning, donor narratives, and preaching content; it must not store operational contact status, payment status, inventory quantity, or task status. [S6, S8]
+Media AI boundary: Media AI may support approved reels, event recap clips, storyboards, donor inspiration content, and community invitation videos; it must not bypass scene-level review, source grounding, or human approval. [S7]
+ClickUp/task layer: where ClickUp is used, WF-014 tasks should carry Event ID, Community ID, Contact/Family ID where applicable, owner, due date, priority, status, escalation, and dashboard visibility. [S11, S15]
+Leadership command center contribution: WF-014 must feed a single leadership view with community funnel, event readiness, follow-up leakage, donation/yatra lead pipeline, conversion outcomes, critical exceptions, and Mukund Prabhu dependency-reduction indicators. [S14, S15]
+API dependency tracking: WhatsApp/SMS/voice, CRM, DCC/payment, calendar, task tool, Ad-and-More import, KCKE, Media AI, and ERP dependencies must be recorded in a consolidated API registry with status, owner, access method, blockers, and fallback. [S15]
+Scaled voice outreach safeguard: WF-014 leads that flow to WF-002 voice/calling should not enter high-volume calling until DND/suppression readiness, approved scripts, owner routing, and escalation rules are validated. [S6, S11, S15]
+Fallback workflow: if a connector fails, users must continue through approved forms/sheets/manual follow-up templates and later reconcile to CRM without losing source, owner, or status history. [S15]
+Relevant Analysis Recommendations Incorporated
+The following relevant recommendations from HKHT_AI_Transformation_Analysis(1).html are incorporated into this WF-014 partner brief, excluding DPDP-specific recommendations. [S15]
+Preserved and strengthened: AI-first redesign mandate; four-horizon planning discipline; revenue-first priority; mandatory human approval; separation between CRM, ERP, KCKE, Media AI Pipeline, and Gemini Enterprise/productivity agents; evidence-based design; role redesign; and multi-center readiness. [S15]
+Added or strengthened for WF-014: WF-013/multi-center replication connection; unified master data model; consolidated WhatsApp API governance; KCKE/Media AI interface clarity; workflow sequencing gates; owner/performer/approver/backup validation; consolidated API registry; leadership command-center view; fallback protocol; Mukund Prabhu dependency measurement; golden journey testing; and institutional memory encoding. [S15]
+Workflow-relevant 100x/1000x ideas incorporated: Relationship Intelligence Graph, donor propensity scoring, WhatsApp conversational engagement readiness, AI Fundraiser Copilot readiness, Voice of the Devotee intelligence, AI social proof/media readiness, Follow-the-Devotee journey timeline, personalized major-donor media readiness, and federated multi-center learning readiness. [S15]
+Explicitly excluded from this partner-facing revision: DPDP-specific legal/compliance recommendations from the analysis file. Existing non-DPDP language about sensitive donor/family/children data, access, and approvals is preserved because it already belongs to WF-014 governance. [S15]
+1. Workflow Name and Platform Role
+Workflow Name: WF-014 - Community Outreach System / Krishna Life / Culture Connect / gated-community outreach.
+What this workflow does: identifies premium communities, uses resident/referral/donor contacts to gain permission, conducts Krishna conscious cultural/festival programs, captures family/contact data, nurtures relationships, and converts qualified families into donors, yatris, volunteers, children-program participants, and ambassadors. [S3, S4, S5, S14]
+Why it matters to revenue/seva: community outreach creates dense access to spiritually receptive, educated, donor-capable families, and converts event goodwill into donations, yatra participation, regular chanting, children programs, and long-term donor cultivation. [S3 00:35, 36:49, 37:36; S4 00:02]
+Platform role: WF-014 must become a platform-compatible MVP module of the Hyderabad AI Revenue & Seva Growth Platform, not a disconnected event-management app. [S1b, S6, S14]
+Start small in execution. Start big in architecture. Start immediately in data discipline. Start revenue-first in priority. Start human-governed in approvals. Start platform-compatible in every workflow. [S1b, S14]
+2. Executive Seva Impact Summary
+Impact | Expected result | Source
+Donation impact | Monthly donors, event sponsorships, cultural committee budgets, Founder/Life Patron upgrades, and HNI relationship cultivation can be systematically surfaced and followed up. | S3 28:11, 36:49, 39:13; S5
+Yatra impact | Families engaged through events, house programs, WhatsApp nurture, and temple visits can be converted into yatra prospects and registrations. | S3 00:35; S14
+Donor cultivation impact | Family capability, prior proposals, donation history, stage of preaching, and next action should be tracked as a managed relationship journey. | S3 30:50, 33:05
+Krishna consciousness outreach | Daily japa/Gita, Ekadashi, naivedya, prasadam, children programs, weekly classes, and home programs become measurable community-cultivation outcomes. | S3 00:35, 36:49, 37:36
+Mukund Prabhu burden reduction | Dashboards, event checklists, next-action lists, and escalations reduce dependence on senior memory and manual coordination. | S3 40:01, 41:15; S10; S14
+ERP/data centralization | Common IDs, source tags, follow-up status, payment linkage, approval status, and data custody prepare this workflow for CRM/ERP migration. | S1, S6, S12, S14
+Multi-center readiness | Once validated in Hyderabad, the module can become a cloneable community outreach playbook for other centers. | S1, S9, S14
+
+3. Management Brief for Leadership
+WF-014 is a revenue and preaching engine, not merely community event scheduling. [S1b, S3, S14]
+One successful community program can generate trust, contacts, volunteers, donor leads, yatra leads, children-program leads, and future community referrals. [S3, S4, S5]
+The biggest ROI is post-event conversion: contact capture, home visits, WhatsApp nurture, donation proposal, yatra invite, and ongoing cultivation. [S3 30:50, 33:35, 36:49]
+The Day 1-7 Production Foundation Sprint must establish production-oriented control and visibility; the Day 8-14 Integrated Working MVP must be used by selected users; Days 15-30 must convert the module into a production-ready operating base without compromising platform architecture. [S1b, S14]
+Every feature must be classified as buildable now, demo/mock only, API-dependent, data-dependent, custom-build, vendor-dependent, or long-term. [S1b, S14]
+This workflow should create common data discipline from Day 1: IDs, source, owner, follow-up, revenue link, dashboard output, and approval status. [S6, S12, S14]
+Human approval is non-negotiable for donor-sensitive, financial, public, devotional, HNI/CSR, children/family, and deity/media communication. [S1, S6, S7, S14]
+4. Current Operational Reality
+Area | Current-state understanding | Source
+Trigger | New/existing premium gated community identified through Ad-and-More, donor/yatri database, referrals, flea markets, online donors, regular donors, local contacts, or previous event history. | S3 00:35; S2
+People involved | Mukunda Dasa / Mukund Prabhu as strategic lead; backup call-takers include Maha Puja, Sukuna Mataji, Prem Ruth Das, and Shravan; teams include kirtaniyas, drivers, design, volunteers, and community residents. | S3 29:37, 41:15, 43:00; S10 validation needed
+Tools used | Google Sheets/event calendar, donor/contact database, WhatsApp groups, bulk WhatsApp/SMS/email tools, posters/videos, Ad-and-More data, manual scheduling and permissions. | S2; S3; S4
+Current steps | Target community, find resident contacts, approach committee, book clubhouse, promote event, arrange inventory, conduct festival/program, capture sankalpa/contact data, add to WhatsApp, nurture, home visits, temple/yatra/donation proposals. | S3 00:35; S4 00:02, 02:11
+Current approvals | Community treasurer/secretary/cultural committee/clubhouse permission; internal slot approval; senior handling for sensitive donor/proposal situations. | S3 00:35, 39:13
+Current reports | Management wants programs held, participation, donations raised, chanting, naivedya, and progress; current tracking includes contacts, attendance, family profile, skills, birthdays, anniversaries, festivals, donation, and stage. | S3 30:50, 37:36
+Current pain points | Delays in decoration, event start, promotion, creatives, family meetings after event, donor proposal; fragmented follow-up and reporting. | S3 33:35; S2
+
+5. Current Bottlenecks and Productivity Loss
+Manual work: prospecting, permission follow-up, slot selection, collateral coordination, inventory readiness, and post-event task assignment are not yet controlled through one workflow system. [S2, S3, S4]
+Follow-up leakage: transcript explicitly lists delays in meeting families and proposing donations after the event. [S3 33:35]
+Data fragmentation: contacts, donor history, family details, WhatsApp groups, event records, and donation outcomes are not confirmed as unified under common IDs. [S3 30:50; S6; Assumption / Needs Validation]
+WhatsApp/spreadsheet dependency: WhatsApp groups and Sheets are important current tools, but API, consent, opt-out, source attribution, and reporting controls require validation. [S2; S3; Assumption / Needs Validation]
+Mukund Prabhu dependency: strategy, standards, how to talk, family engagement, and what to propose are concentrated in senior guidance and need to become playbooks, prompts, dashboards, and escalation rules. [S3 41:15; S10]
+Revenue leakage: event goodwill can be lost if follow-up, home visits, proposals, monthly donor asks, yatra invites, or sponsor conversations are delayed. [S3 33:35, 36:49, 39:13]
+Missed preaching/Yatra opportunities: without next-best-action, interested families may not move into japa, Gita, Ekadashi, yatra, children programs, or temple visits. [S3 36:49, 37:36; S14]
+6. Desired AI-First Future-State Vision
+Target future state: a Community Mission Growth Engine that manages Community -> Permission -> Event -> Contact Capture -> Nurture -> Home Visit -> Yatra/Children/Donation -> Ambassador/Referral Community. [S14]
+Layer | Expected design | Source
+Automated | Community/event intake, calendar slot logic, readiness checklist, reminders, status updates, duplicate checks, dashboard refresh, task creation. | S2, S14
+AI-assisted | Community scoring, event-type recommendation, invite/follow-up drafts, meeting/event summary, volunteer suggestions, next-best-action. | S3 40:01; S14
+Agentic | Pipeline orchestration across prospecting, permission, event execution, contact capture, follow-up, donor/yatra/children program handoff, and escalation. | S14; S6
+Human-approved | Donation asks, HNI/CSR outreach, public messaging, devotional/philosophical content, deity/media content, financial commitments, children/family-sensitive communication. | S1, S6, S7, S14
+
+7. Expected Productivity Leap
+Productivity level | Meaning | Source
+2X control improvement | Single view of community pipeline, event calendar, readiness, owners, approvals, and overdue tasks. | S14
+10X workflow productivity | AppSheet/Sheets/Gemini MVP for contact capture, follow-up, AI drafts, event templates, and management dashboard. | S14
+30X revenue-operating leverage | Agents multiply prospect scoring, event planning, creative drafting, volunteer matching, follow-up prioritization, and conversion recommendations. | S3 40:01; S14
+100X Hyderabad platform leverage | CRM + Yatra + donor + finance + digital marketing + media + KCKE + dashboards operate as one revenue and seva engine. | S1b, S6, S14
+1000X long-term contribution | Reach x conversion x donor lifetime value improves through scalable community playbooks and future multi-center replication; exact impact is an assumption until baseline metrics are collected. | S1b, S14; Assumption / Needs Validation
+1000X platform compatibility | WF-014 becomes a reusable, CRM-centric community growth module contributing to relationship intelligence, donor propensity, yatra demand signals, social proof, institutional memory, and federated multi-center learning. | S15
+
+8. Expected AI Agents / Copilots
+Agent | Purpose | Users | Inputs | Outputs | Approval/Escalation | Success Metrics | Source
+Community Prospecting & Scoring Agent | Rank communities by donation/yatra/preaching potential. | Outreach lead, Mukund Prabhu | Community data, Ad-and-More, donor/yatri/referral lists, maps/manual entries. | Priority list with score and reasons. | Human approves outreach; escalate HNI communities. | Permission conversion, qualified contacts found. | S3 00:35, 40:01; S14
+Permission & Committee Relationship Agent | Track committee approach and permission pipeline. | Outreach coordinator | Resident contacts, committee contacts, previous collateral, meeting notes. | Meeting script, permission status, reminders. | Human sends sensitive messages; escalate blocked communities. | Permission cycle time, stalled requests. | S3 00:35, 39:13; S14
+Event Design & Slot Optimization Agent | Recommend event type, date, slot, and readiness plan. | Event manager | Festival calendar, community tier, inventory, team availability. | Event plan, slot, checklist. | Human confirms event and slot. | On-time setup, no slot conflicts. | S3 30:50; S4 02:11; S14
+Creative & Promotion Drafting Agent | Draft invite copy, poster brief, WhatsApp/SMS/email text, sponsor recognition copy. | Content/design team | Event type, community audience, approved templates, KCKE if devotional. | Drafts for approval. | Public/devotional content approval mandatory. | Creative turnaround, approval cycle. | S3 33:35; S6/S7; S14
+Event Logistics Readiness Agent | Track deities, sound, stage, flowers, prasadam, volunteers, transport, sankalpa table. | Operations lead | Checklist, inventory, event schedule, volunteer roster. | Readiness score and missing-item alerts. | Human confirms final readiness; escalate T-48/T-24/T-4 gaps. | Delay reduction, readiness score. | S4 02:11; S3 33:35; S14
+Sankalpa & Contact Capture Agent | Cleanly capture family/contact/event participation data. | Data custodian | Sankalpa cards, QR forms, AppSheet entries, consent flags. | Contact/family profile, duplicate alerts. | Privacy/consent review; child/family data controls. | Capture rate, duplicate reduction. | S3 00:35, 30:50; S6; S14
+Post-Event Follow-up Agent | Create 1/3/7/30-day follow-up tasks. | Relationship managers | Attendance, interest tags, photos, notes, donations. | Home visit tasks, message drafts, next action. | Human approves donor/yatra proposals. | Follow-up SLA, conversion rate. | S3 33:35, 36:49; S14
+Donor/Yatra/Children Program Cultivation Agent | Recommend next-best-action by family. | Donor/yatra/children teams | Family profile, giving capacity, prior donation, spiritual interest. | Suggested yatra invite, monthly donation, children class, house program. | Senior approval for major donor/proposal. | Donation, yatra, enrollment conversion. | S3 30:50, 33:05; S14
+Volunteer Matching Agent | Convert residents into seva/service teams. | Volunteer coordinator | Skills, availability, event needs, service interest. | Role roster: decoration, MC, prasadam, fundraising, queue, teaching. | Human validates sensitive roles. | Volunteer role fill rate. | S3 00:35, 27:24; S14
+Management Intelligence Agent | Produce weekly dashboard narrative and exception summary. | Leadership, Mukund Prabhu | Event/follow-up/donation/yatra/task data. | Risk summary, top communities, overdue actions, pipeline. | Human reviews before leadership circulation. | Dashboard adoption, decision speed. | S3 37:36; S14
+Governance & Compliance Agent | Prevent approval bypass, overmessaging, privacy risk. | Data/governance lead | Consent, opt-out, approvals, sensitive data tags. | Risk alerts, audit log, approval checklist. | Mandatory human approval for sensitive categories. | Zero approval bypass, opt-out compliance. | S6, S7, S14
+Relationship Intelligence Graph / Follow-the-Devotee Agent | Prepare WF-014 relationships for a cross-workflow journey timeline and future graph intelligence. | Outreach lead, donor/yatra teams, leadership | Community attendance, family/contact records, donor/yatri/volunteer links, referrals, home visits. | Relationship edges, journey timeline inputs, warm-introduction signals, duplicate-risk flags. | Human validates sensitive relationship notes; escalate HNI/community ambassador leads. | Cross-workflow identity match rate, relationship completeness, warm-referral opportunities surfaced. | S6, S14, S15
+Community Donor Propensity & Fundraiser Copilot | Prioritize which resident families should receive donation, monthly donor, yatra, or home-program follow-up. | Fundraisers, relationship managers, Mukund Prabhu reviewers | Event history, giving signals, family interests, response history, yatra/children-program interest. | Ranked next-best-action list, suggested human-approved ask, KCKE-grounded story prompts where needed. | All asks remain human-approved; escalate high-value/HNI prospects. | Proposal conversion, monthly donors, yatra leads, follow-up SLA, fundraiser productivity. | S5, S14, S15
+Voice of the Devotee & Community Feedback Intelligence Agent | Convert event feedback, WhatsApp replies, home-visit notes, and objections into operational intelligence. | Outreach lead, event quality lead, leadership dashboard reviewer | Feedback forms, WhatsApp replies, call notes, home visit notes, complaints/praise. | Quality themes, objections, service-improvement alerts, community-specific preference insights. | Human reviews sensitive feedback and response plans. | Feedback captured, issues resolved, event quality improvement, repeat attendance. | S14, S15
+Community Media and Social Proof Readiness Agent | Prepare approved community recap, festival invitation, donor inspiration, and social proof assets for Media AI pipeline. | Media lead, outreach lead, donor communications team | Approved photos/videos, attendance highlights, donor/community quotes, KCKE-approved spiritual framing. | Storyboard brief, recap asset checklist, approval queue, future personalized major-donor media inputs. | Scene-level human approval; deity/media and devotional claims require review. | Approved media turnaround, engagement, referral/community permission support. | S7, S14, S15
+
+9. Human Role Redesign Expectations
+Role expectation | Design requirement | Source
+Current roles continue | Mukunda Dasa/senior team continue strategy, sensitive relationships, preaching standards, final donor-sensitive approvals. | S3 41:15; S10
+AI-supervised roles | Event coordinators, outreach coordinators, content/design team, data entry team, volunteer coordinator, dashboard reviewer operate with AI-assisted drafts and task control. | S14
+Move to donor/yatri/preaching-facing work | Manual schedulers/data-entry capacity should be redeployed to home visits, yatra invitations, donor follow-up, family cultivation, and community ambassadors. | S1, S14
+Data custodian / QA / dashboard reviewer | New/assigned role must own common IDs, deduplication, source tags, consent, follow-up completeness, and dashboard quality. | S6, S12, S14
+New roles needed | Community CRM/Data Custodian, Community Journey Manager, Event Readiness Controller, Volunteer/Children Program Coordinator, Donor/Yatra Conversion Manager, AI Workflow Supervisor, Governance/Privacy Reviewer. | S14
+
+10. Dashboard and Operational Intelligence Expectations
+Dashboard | Expected outputs | Source
+Management dashboard | Programs held, participation, donations, chanting/japa, naivedya, progress, active communities, high-value leads, revenue pipeline. | S3 37:36; S14
+Operational dashboard | Community pipeline, permission status, event readiness, slot conflicts, logistics gaps, volunteer fill rate, T-48/T-24/T-4 alerts. | S3 33:35; S4; S14
+Revenue/conversion dashboard | Donation amount, monthly donors, sponsorships, proposal pending, yatra leads, yatra registrations, children program leads, home visits. | S3 30:50, 33:05; S14
+Data quality dashboard | Missing IDs, duplicate contacts, missing consent, missing source, stale follow-ups, unmapped donations, incomplete event records. | S6, S12, S14
+AI-agent performance dashboard | AI draft acceptance, next-action accuracy, escalation quality, hallucination/rejection incidents, approval compliance, productivity hours saved. | S14
+
+11. CRM / ERP / Data Expectations
+Common platform-compatible fields required from Day 1: Contact ID, Donor ID, Yatri ID, Community ID, Family ID, Event ID, Task ID, Campaign ID, Donation ID, Owner ID, Payment Status, Source, Created Date, Last Follow-up Date, Next Action, Approval Status. [S6, S12, S14]
+Entity | Required fields | Source now | Future source of truth | Data risk | Source
+Community | Community ID, name, location, tier, flats/villas, HNI score, known contacts, permission status, event history. | Ad-and-More, referrals, Sheets | CRM/Community DB; ERP later | Duplicates, stale contact data | S2, S3, S14
+Family/Household | Family ID, flat, members, children, birthdays, anniversaries, interests, consent. | Sankalpa cards/forms | CRM | Sensitive child/family data | S3 00:35, 30:50; S6
+Individual Contact | Contact ID, name, mobile, email, roles: donor/yatri/volunteer/parent/attendee, source, consent. | Donor/yatri DB, WhatsApp, forms | CRM master contact | Duplicates/opt-outs | S3, S6
+Event | Event ID, type, date, slot, community, owner, readiness, attendance, outcomes. | Google Sheet/calendar | Workflow app/CRM/ERP later | Missing outcomes | S3 30:50; S14
+Follow-up Task | Task ID, contact/family, owner, due date, next action, status, priority, escalation. | Manual/WhatsApp | CRM/task layer | Overdue leakage | S3 33:35; S14
+Donation/Payment | Donation ID, amount, payment status, receipt status, campaign/event/Yatra/community source, seva, trust. | DCC/finance/payment system | Finance/DCC/ERP | Unattributed revenue | S6, S12, S14
+Campaign/Message | Campaign ID, template, audience, channel, approval, send status, response, source. | WhatsApp/SMS/email/manual | CRM/marketing system | Consent/DND issues | S3, S6, S14
+Media Asset | Asset ID, event/community, people/deity approval, source/context, usage rights. | Drive/phones/media team | Media repository | Privacy/deity approval risk | S7, S14
+Relationship Edge / Journey Event | Relationship ID, Contact ID, Family ID, Community ID, Event ID, edge type, source, created date, owner, confidence, approval status | WF-014 app/CRM, event logs, forms, follow-up notes | CRM/Relationship Intelligence layer; graph/analytics later | Duplicate identity, unvalidated relationship assumptions, sensitive notes visibility | S6, S14, S15
+API Registry Entry | API/provider, workflow dependency, status, access owner, auth method, cost/usage note, blocker, fallback process, next review date | Partner discovery, HKHT tech/data team | Central API Registry | Unknown connector status causing overcommitment | S15
+Golden Journey Test Case | Test case ID, source community, event, contact/family record, follow-up task, donation/yatra/children-program path, dashboard validation, pass/fail, owner | WF-014 pilot records | QA register / partner acceptance pack | End-to-end breakage hidden by single-workflow tests | S15
+
+12. KCKE / Media AI Expectations, if applicable
+Use KCKE only for source-grounded Krishna conscious content, donor narratives, philosophical replies, preaching, education, festival meaning, scriptural references, and approved devotional content. [S6, S8]
+Do not use KCKE for operational records: contact status, payment status, inventory, tasks, approvals, attendance, or finance records. [S6]
+Use Media AI only for approved reels, videos, storyboards, event recaps, Yatra/festival/donor media, and visual storytelling with scene-level control. [S7]
+Media AI outputs require exact source grounding where spiritual claims are made, scene-wise review, image/audio/control layers, and human approval before publishing. [S7]
+13. Governance and Human Approval Expectations
+Approval area | Requirement | Source
+Donor-sensitive approvals | Human approval before asks, proposals, monthly-donor appeals, HNI/CSR follow-up, or major donor escalation. | S1, S3 39:13, S14
+Financial approvals | Donation promises, receipts, payment status, sponsorship recognition, and expense/P&L views require finance/DCC controls. | S6, S12
+Public communication approvals | WhatsApp/SMS/email/poster/video copy must be approved before public release. | S1, S7, S14
+Philosophical/devotional approvals | KCKE grounding + senior review for spiritual claims, scriptural references, and preaching replies. | S6, S8
+Deity/media approvals | Scene-level review and approval required for deity/person/children/event visuals. | S7
+CSR/HNI approvals | Sensitive community politics and HNI/CSR proposal language must be senior-human-led. | S3 39:13; S14
+HR/legal approvals if relevant | Child/family data, consent, privacy, and DND policies require internal approval. | S6; Assumption / Needs Validation
+
+14. Integration Expectations
+Area | Expectation | Source
+Google Workspace | Docs/Sheets/Drive/Gmail/Calendar for MVP workflows, templates, event calendar, internal docs. | S1, S9, S14
+Gemini Enterprise | Draft/summarize messages, event notes, reports, follow-up copy; Workspace productivity layer. | S1, S14
+Apps Script/AppSheet/Sheets | Day 1-7 Production Foundation Sprint and Day 8-14 Integrated Working MVP app: forms, tasks, reminders, dashboards, validation. | S2, S14
+Vertex AI / Agent Builder | Longer-term orchestration, multi-agent routing, next-best-action, predictive scoring; partner to validate. | S1, S14
+Cloud Run / Workflows | Custom APIs/webhooks/event orchestration when AppSheet/Gemini are insufficient. | S14
+BigQuery / Looker Studio | Central analytics and leadership dashboards; event-to-revenue/yatra/follow-up funnel. | S1, S6, S14
+CRM APIs | Contact/family/donor/yatri/volunteer IDs, source attribution, consent, tasks, relationship history. | S6, S14
+ERP APIs | Future payments, receipts, inventory, approvals, finance, procurement, structured master data. | S6, S12
+Payment gateway/DCC | Donation ID, payment status, receipt status, source/event/community attribution. | S6, S12, S14
+ClickUp / Meeting Intelligence | Tasks, owners, deadlines, decision log, follow-ups, escalation after meetings. | S1b, S6, S14
+WhatsApp/voice vendor | Approved WhatsApp/SMS/calling workflows; API, consent, opt-out, DND, cost to be validated. | S3, S6; Needs Validation
+External tools | Ad-and-More import, bulk messaging, voice/calling, media tools where Google is insufficient. | S3, S14; Needs Validation
+Consolidated API Registry | Partner must classify each connector as confirmed, needs access, demo/mock only, CRM/API-dependent, ERP later, custom build, external vendor, or blocked; include fallback process. | S15
+Leadership Command Center | WF-014 must feed a single leadership view with community funnel, event readiness, donation/yatra leads, follow-up leakage, escalations, and Mukund Prabhu dependency-reduction indicators. | S14, S15
+Golden Journey QA | End-to-end test from community identification through permission, event, contact capture, follow-up, donor/yatra/children-program action, task closure, and dashboard reporting. | S15
+WhatsApp Governance Layer | Provider, templates, approvals, opt-out/suppression, response categories, message-volume rules, failure handling, and manual fallback must be validated before scaled use. | S3, S6, S15; Needs Validation
+
+15. Day 1-7 Production Foundation Sprint Expectations
+Reframed meaning: Day 1-7 is not a disposable demo. It is the production foundation sprint that validates workflow scope, data model, IDs, owners, dashboard schema, approval routing, first automation, first AI-assisted output, and first command-center visibility. Mock/sample data may be used only where dependencies are pending and must be clearly labelled. [S14, S15]
+Show Community Master prototype with sample/imported communities and scoring columns. [S14]
+Show AppSheet/Forms intake for community, event request, contact capture, and volunteer signup. [S14]
+Show event calendar + slot allocation + readiness checklist. [S14]
+Show Gemini-generated event plan and follow-up message drafts with approval status. [S14]
+Show mock dashboard: community pipeline, event readiness, contacts, donations, yatra leads, children program leads, overdue follow-ups. [S14]
+Show source tracking and ERP-ready ID fields even if values are mock. [S14]
+Assumption / Needs Validation: Demo may use mock data for CRM, WhatsApp, finance/DCC, and KCKE/Media AI if APIs/content layers are not ready. Partner must mark all mock/demo elements clearly.
+16. Day 8-14 Integrated Working MVP Expectations
+Reframed meaning: Day 8-14 must move from prototype to integrated working MVP used by selected users. It must validate data paths, follow-up tasks, human approval, dashboard refresh, exception routing, API registry status, and cross-workflow handoffs that are feasible without overclaiming unconfirmed integrations. [S14, S15]
+Area | 14-day expectation | Source
+Usable by selected users | 3-5 communities, 1-2 real/past events, 2-3 relationship managers/coordinators, one data custodian, one supervisor. | S14
+Workflow coverage | Community pipeline, permission tracker, event checklist, contact capture, volunteer roster, follow-up tasks, AI drafts, dashboard. | S14
+Manual/semi-automated | Sensitive relationship handling, major donor asks, public/devotional approval, physical event execution, finance reconciliation, WhatsApp sending if API not validated. | S1, S6, S7, S14
+Acceptance criteria | At least 3 communities complete, 1 event planned, checklist generated, AI plan reviewed, follow-up tasks created, dashboard live, human approval enforced, data exportable. | S14
+Exclusions | Full ERP, full CRM migration, autonomous fundraising, fully automated WhatsApp, production donor scoring, finance attribution without DCC/payment integration. | S14
+Integrated working MVP realignment | Day 8-14 must validate selected-user execution, CRM/data path, dashboard updates, approval routing, exception handling, ClickUp/task handoff where relevant, and API registry status. | S14, S15
+Not to overclaim by Day 14 | Do not promise live WhatsApp, voice, payment/DCC, ERP, or KCKE/Media AI integrations unless access, templates, credentials, content governance, and approvals are confirmed. | S6, S7, S15
+
+17. Day 15-30 Production Readiness and Productivity Multiplication Sprint Expectations
+Reframed meaning: Day 15-30 is the production readiness sprint for operational adoption, hardening, golden journey QA, dashboard discipline, fallback testing, role refinement, measurable productivity gains, and live handover to HKHT users. [S14, S15]
+Pilot area | Expectation | Source
+Users | Selected outreach team, event operations, data custodian, relationship managers, dashboard reviewer, supervisor. | S14
+Coverage | 10-15 communities, multiple event types, live permission tracking, live contact capture, post-event follow-up SLAs. | S14; Needs Validation on available data/events
+Data requirements | Community master, owner map, event calendar, contact/family fields, consent status, donation samples, yatra/children program tags. | S2, S6, S14
+Integration scope | CRM CSV/API fallback, Calendar, AppSheet, Gemini Workspace; WhatsApp/DCC APIs only if validated. | S6, S14
+Success metrics | Permission conversion, event readiness, contact capture rate, follow-up SLA, donation/yatra/children leads, dashboard adoption. | S3 37:36; S14
+Day 15-21 production hardening | Real operational usage, cross-workflow integration, user training, KPI validation, escalation testing, fallback protocol, role-ownership refinement, and golden journey QA. | S14, S15
+Day 22-30 production readiness review | Command-center visibility, live operational handover, stabilization backlog, productivity measurement, management reporting, partner sign-off checklist, and 60-day/75-day roadmap. | S14, S15
+Success definition | Selected users execute the community pipeline with validated data flow, owner routing, human approval, dashboard visibility, exceptions, fallback, and measurable productivity improvement. | S14, S15
+
+18. 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale Expectations
+Reframed meaning: the earlier 90-day foundation is compressed into a 30-day production base, followed by 60-day stabilization for hardening/adoption/data quality/integration maturity, and a 75-day enterprise-scale readiness review for multi-workflow command-center intelligence and 1000x platform compatibility. [S15]
+Production architecture: define app/workflow boundaries, CRM data model, task system, messaging approach, dashboards, API architecture, logging, security, and operational support model. [S6, S14]
+Security/access: role-based access for donor data, children/family data, spiritual-cultivation notes, finance data, and media assets. [S6, S7, S14]
+Dashboards: management, operational, revenue/conversion, data quality, AI-agent performance. [S14]
+API validation: CRM, DCC/payment, WhatsApp/SMS/email, Calendar, ClickUp/Meeting Intelligence, Media/KCKE references where applicable. [S6, S14]
+Data quality governance: deduplication, source tracking, consent, owner/custodian, export to ERP-ready schema. [S6, S12, S14]
+Support model: owner, performer, approver, backup, escalation person, dashboard reviewer, data custodian, partner support handoff. [S10, S14]
+19. 6-Month Enterprise Architecture Vision / 30-Day Base + 60-Day Stabilization + 75-Day Scale Continuity
+Architecture continuity: the 6-month vision remains intact, but the partner must show how the Day 30 production base becomes stable over the next 60 days and enterprise-scale ready by Day 75 without creating disconnected tools. [S14, S15]
+WF-014 plugs into the Hyderabad AI Revenue & Seva Growth Platform as the community-origin lead and relationship engine. [S1b, S14]
+It feeds CRM with community/family/contact/volunteer/yatra/donor data, then links downstream to Voice Agent, Digital Marketing, Yatra Lifecycle, Donor Cultivation, Finance/DCC, and dashboards. [S6, S11, S14]
+It supports an integrated revenue engine by attributing donations, yatra registrations, monthly donors, and sponsorships back to community/event/campaign/referral sources. [S6, S12, S14]
+It prepares for future national/multi-center replication through standardized schema, templates, dashboards, approval gates, and community playbooks, without building multi-center rollout now. [S1, S9, S14]
+20. Expected Google Product Areas
+Product area | Likely use | Source
+Gemini Enterprise / Workspace | Drafts, summaries, event reports, message copy, Drive/Docs/Sheets/Gmail assistance. Partner must validate license and connector limits. | S1, S14
+AppSheet / Apps Script / Sheets | Immediate demo and MVP app, forms, workflows, reminders, validation, lightweight dashboards. | S2, S14
+Vertex AI / Agent Builder | Agentic orchestration, next-best-action, scoring, complex routing. Partner must classify feasibility and timeline. | S1, S14
+Cloud Run / Workflows | API/webhook workflows, custom logic, integration bridge. | S14
+BigQuery / Looker Studio | Analytics/data warehouse/dashboard layer. | S1, S6, S14
+External vendor/SaaS | WhatsApp Business API, SMS, calling/voice, Ad-and-More data, payment/DCC if not accessible via Google-native integration. | S3, S6; Needs Validation
+
+21. Questions for the Implementation Partner
+What can be delivered in Day 1-7 as the Production Foundation Sprint rather than a throwaway demo? [S1/S1b partner sprint model; S14]
+What can be delivered in Day 8-14 as an Integrated Working MVP with selected-user workflow execution? [S1/S1b partner sprint model; S14]
+What can become production-ready by Day 30 through the Production Readiness and Productivity Multiplication Sprint? [S1/S1b partner sprint model; S14]
+What must stabilize over the next 60 days after the 30-day production base, and what becomes enterprise-scale ready by Day 75? [S1/S1b partner sprint model; S14]
+What is the 6-month enterprise architecture for this workflow as part of the Hyderabad AI Revenue & Seva Growth Platform, connected to the 30-day production base, 60-day stabilization path, and 75-day enterprise-scale readiness path? [S1/S1b partner sprint model; S14]
+Which parts are demo/mock only? [S1/S1b partner sprint model; S14]
+Which proposed features are buildable immediately? [S1/S1b partner sprint model; S14]
+Which require our data, CRM/API integration, ERP later, custom Google Cloud build, Gemini Enterprise, Vertex AI, Agent Builder, Apps Script/AppSheet/Sheets, BigQuery/Looker Studio, or external vendor tools? [S1/S1b partner sprint model; S14]
+Which features require data cleanup before they can work reliably? [S1/S1b partner sprint model; S14]
+Which features require a human approval design before rollout? [S1/S1b partner sprint model; S14]
+What should not be promised by Day 14 unless data, APIs, approvals, and user acceptance are confirmed? [S1/S1b partner sprint model; S14]
+What data do you need from HKHT immediately? [S1/S1b partner sprint model; S14]
+What are the cost, license, API, security, access, messaging, and operational support risks? [S1/S1b partner sprint model; S14]
+What is owned by HKHT versus the partner? [S1/S1b partner sprint model; S14]
+How will all data be exportable for ERP/CRM migration later? [S1/S1b partner sprint model; S14]
+22. Expected Deliverables from Google / Implementation Partner
+Technical Requirements Document (TRD). [S1, S9, S14]
+Solution Architecture. [S1, S9, S14]
+Google Product Mapping. [S1, S9, S14]
+Agent Architecture. [S1, S9, S14]
+Integration Architecture. [S1, S9, S14]
+CRM/ERP/Data Architecture. [S1, S9, S14]
+Security and Access Model. [S1, S9, S14]
+Human Approval Architecture. [S1, S9, S14]
+Dashboard Architecture. [S1, S9, S14]
+API/Connector Requirements. [S1, S9, S14]
+Deployment Architecture. [S1, S9, S14]
+Licensing Requirements. [S1, S9, S14]
+Cost Estimates. [S1, S9, S14]
+Team Structure. [S1, S9, S14]
+Rollout Plan. [S1, S9, S14]
+Risks and Limitations. [S1, S9, S14]
+HKHT-side dependencies. [S1, S9, S14]
+Data requirements from HKHT. [S1, S9, S14]
+Assumptions and exclusions. [S1, S9, S14]
+30-Day Production Readiness Plan. [S14, S15]
+Day 1-30 Accelerated Delivery Governance Plan. [S15]
+60-Day Stabilization Roadmap and 75-Day Enterprise-Scale Readiness Roadmap. [S15]
+Consolidated API Registry for WF-014 dependencies and cross-workflow connectors. [S15]
+Golden Journey QA Test Pack and acceptance evidence. [S15]
+Failure/Fallback Process and Service Continuity Notes. [S15]
+Leadership Command Center dashboard contribution design. [S14, S15]
+Mukund Prabhu dependency-reduction measurement approach. [S15]
+Institutional Memory Encoding plan for WF-014 community access and cultivation judgment. [S10, S14, S15]
+Source Key Used in This Document
+Key | Source file / register / blueprint
+S1 | Mukund_Prabhu_Operations_Master_Context_Pack_v0.2_Revenue_Priority.docx
+S1b | Mukund_Prabhu_Operations_Master_Context_Pack.docx v0.5 snippets
+S2 | AI_HKHT_Seva_Automation_Master_Register.xlsx / WF-014 row
+S3 | Community Engagement Strategy Meeting_otter_ai_transcript.docx
+S4 | Gated Community Outreach Strategy_otter_ai_transcript.docx
+S5 | KL PREACHING MODELS.docx
+S6 | KCKE_Media_CRM_Dependency_Map.docx
+S7 | Media_AI_Pipeline_Briefing_Note.docx
+S8 | KCKE_Knowledge_Graph_Briefing.html
+S9 | Folder_Structure_Readme.txt
+S10 | Role_Ownership_Correction_Note_May_2026.txt
+S11 | Automation_Interdependency_Map.xlsx / dependency-map snippets
+S12 | Workflow_to_Data_Dependency_Map_Updated.xlsx / ERP migration rules
+S13 | Source_Register.xlsx / Use_Case_Master_Register.xlsx / register-control rules
+S14 | Generated WF-014 workflow blueprint already created in this chat
+S15 | HKHT_AI_Transformation_Analysis (1).html — strategic recommendations incorporated where WF-014-relevant, excluding DPDP-specific recommendations.
+

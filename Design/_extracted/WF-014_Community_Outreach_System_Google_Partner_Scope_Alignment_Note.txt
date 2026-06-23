@@ -1,0 +1,216 @@
+WF-014 Community Outreach System – Google Partner Scope Alignment and Improvement Note
+Partner-facing note to align WF-014 scope with the intended Hyderabad AI Revenue & Seva Growth Platform architecture
+AI for HKHT Seva | Hyderabad AI Revenue & Seva Growth Platform
+Prepared for workflow preparation, partner scope review, and production-readiness discussions.
+Evidence and Source Basis
+This partner-facing note is based on the latest WF-014 Document B – 30-Day Production-Ready Accelerated Execution Brief, workflow transcripts, KL Preaching Models, HKHT GE Technical Scope, GE Technical Scope Gap Analysis, , Important Upgrades, HKHT AI Transformation Analysis, KCKE/Media/CRM/ERP boundary guidance, and the WF-014 blueprint already created in this chat.
+Ref | Source file / evidence | How it is used in this scope-alignment note
+S1 | Latest WF-014 Document B – 30-Day Production-Ready Accelerated Execution Brief | Production timeline, agent list, dashboard/data/governance requirements, partner deliverables.
+S2 | Community Engagement Strategy Meeting transcript | Current state: premium gated communities, Ad-and-More data, sankalpa cards, WhatsApp nurture, home visits, donations, Yatra, children programs, delays.
+S3 | Gated Community Outreach Strategy transcript | Krishna Life / Culture Connect: 75 premium communities, donor DB sorting by apartment, clubhouse events, inventory, posters/videos.
+S4 | KL PREACHING MODELS.docx | Children programs, Sunday school, 64 skills, brand sponsorship, community donations, cultural committee budgets, HNI/CXO/Founder/Life Patron rapport model.
+S5 | HKHT GE - Technical Scope.docx | Partner technical scope: Gemini Enterprise MVP, dummy data/placeholder integrations, WF-014 segmentation/content over mock community list, production multi-channel send.
+S6 | HKHT GE Technical Scope — Gap Analysis.docx | Gap: WF-014 should be relationship journey, not only event/message; needs community profile, family links, follow-up triggers, conversion journeys, dashboard.
+S7 | .docx | Platform vision: revenue and relationship growth, operational sovereignty, institutional scalability, Gemini/Vertex/BigQuery/KCKE/WhatsApp/Voice/multi-center leverage.
+S8 | Important Upgrades - Claude.docx | Devotee Intelligence Graph, predictive intelligence, real-time AI assistance, KCKE expansion, devotee journey, institutional memory, federated learning.
+S9 | HKHT_AI_Transformation_Analysis(1).html | Strategic strengths/gaps: AI-first redesign, four horizons, revenue-first, HITL, system separation, shared IDs, command-center dashboards, golden journeys.
+S10 | KCKE Knowledge Graph Briefing / KCKE-Media-CRM-ERP dependency guidance | KCKE boundary: source-grounded Krishna conscious knowledge only; CRM/ERP remain operational/financial truth.
+S11 | Media AI Pipeline Briefing Note | Media AI boundary: scene-level storyboard, source references, image/audio options, deity/media approval.
+S12 | Role Ownership Correction Note and Folder/Register Governance | Validate owner/performer/approver/backup/escalation; store outputs in correct workflow and partner folders; update registers.
+S13 | Generated WF-014 blueprint in this chat | Current-state/future-state workflow, agent design, data model, KPIs, risks, interdependencies, missing information.
+
+1. Purpose of This Note
+This note is meant to help the Google Partner / implementation partner align the technical scope for WF-014 – Community Outreach System with the intended HKHT AI for Seva architecture.
+This is not a rejection of current work. It is not adding random new scope. It is a clarification of the intended architecture so the partner can classify, phase and strengthen the implementation plan correctly.
+The main request is simple: WF-014 should not be reduced to outreach content generation or segmentation over a mock community list. It should become a production-aligned Community Outreach / Krishna Life / Culture Connect module that fits into the Hyderabad AI Revenue & Seva Growth Platform.
+2. Core Understanding Expected from the Partner
+WF-014 is a community relationship journey, not only a message campaign.
+It starts with community targeting and permission, but it must continue into event management, contact capture, follow-up, donation/Yatra/volunteer/ambassador journeys and dashboards.
+It must use common IDs, source tracking, approval gates, dashboard visibility, CRM alignment, ERP-ready fields and future multi-center readiness.
+It should be production-shaped from Day 1 even if early execution uses Sheets, AppSheet, Gemini Enterprise, mock data or CSV imports.
+The partner should classify what is immediate, mock/demo, data-dependent, API-dependent, CRM/ERP-dependent, Google-license-dependent, external-vendor-dependent and future roadmap.
+The goal is not to build every future capability in 30 days. The goal is to ensure the Day-30 production base does not become a disconnected tool.
+3. Intended Architecture from the Beginning
+Core intended architecture | Scope implication for WF-014
+Architecture component | WF-014 intended meaning
+Relationship intelligence | Every community, family, contact, event, donor, yatri, volunteer, ambassador and referral should be linkable in CRM-ready data.
+Predictive intelligence | Community and family scoring should start simple but preserve fields for future donor/Yatra/volunteer/ambassador propensity models.
+Real-time AI assistance | Outreach staff should receive AI-prepared context, event plans, follow-up suggestions and relationship notes before calls or visits where relevant.
+Institutional memory | Mukund Prabhu’s community outreach judgment, event playbooks, sensitive follow-up rules and successful patterns should be encoded as reusable guidance.
+KCKE source-grounding | Festival meanings, preaching messages, donor narratives and devotional content should use source-grounded content where relevant.
+Media AI | Event invite videos, recaps, donor inspiration and storyboards should use the Media AI pipeline with scene-level approval where relevant.
+CRM/DBMS operational truth | Community, family, contact, follow-up, source and relationship records should be CRM-aligned.
+ERP-ready structured records | Event, inventory, payment, receipt, donation, sponsorship and approval fields should be ERP-ready even if ERP comes later.
+Gemini Enterprise productivity support | Drafting, summarization, search, planning and staff-assist flows can use GE where appropriate.
+Vertex AI / Agent Builder | Scalable agentic workflows, scoring, orchestration, event triggers and production-grade agents may require Google Cloud/custom build.
+BigQuery / Looker Studio | Leadership and operational intelligence should have a path into analytics and command-center reporting.
+ClickUp task governance | Where applicable, tasks, decisions, follow-ups and escalations should connect to ClickUp or a validated fallback task layer.
+Leadership command center | WF-014 should feed community pipeline, event outcomes, follow-up delays, donations, Yatra leads and exception metrics.
+WF-013 multi-center readiness | The Hyderabad design should become reusable community outreach templates, dashboards and playbooks for other centers later.
+
+4. Scope Alignment with Latest Document B
+The latest WF-014 Document B should be read as a 30-Day Production-Ready Implementation Brief. Production readiness does not mean every future enterprise feature must be finished in 30 days. It means the workflow has a stable production base, validated data path, human approval, dashboard visibility, owner routing, fallback process and clear integration contract.
+Timeline layer | Expected interpretation
+Phase | How partner should interpret it for WF-014
+Day 1–7 Production Foundation Sprint | Validate workflow, owners, data sources, IDs, dashboard schema, risk areas, first working prototype, first approval flow and first dashboard. Mock data is acceptable if production-shaped.
+Day 8–14 Integrated Working MVP | Selected users should be able to enter community data, plan events, capture contacts, generate approved drafts, create follow-up tasks and view dashboards.
+Day 15–30 Production Readiness Sprint | Controlled live or near-live operational use with data quality checks, exception routing, fallback, role ownership, golden journey test and productivity measurement.
+60-Day Stabilization | Adoption, bug fixing, data cleanup, dashboard refinement, API hardening, training, approval discipline and support rhythm.
+75-Day Enterprise-Scale Readiness | Cross-workflow integration, command-center contribution, advanced AI readiness, reusable templates, API registry and WF-013 packaging path.
+
+5. Scope Alignment with HKHT GE Technical Scope vs Gap Analysis
+The HKHT GE Technical Scope is useful because it correctly identifies Gemini Enterprise as an internal-facing staff-assist layer and sets a practical MVP boundary using dummy data and placeholder integrations. It also classifies WF-014 as a connector workflow with content + segmentation over a mock community list for MVP and real community data/multi-channel send for production.
+The GE Gap Analysis clarifies that this is not enough unless WF-014 is connected to the full relationship journey. The production-aligned scope should include community profile, family/contact links, event attendance, follow-up triggers, donor/Yatra/volunteer/ambassador conversion journeys and dashboard visibility.
+Area | Covered | Missing / unclear | Partner clarification needed
+Area | Already covered / useful | Missing or unclear | Required clarification
+Gemini Enterprise staff assist | GE can support drafting, segmentation and internal workflows. | GE alone may not create persistent cross-workflow memory. | Define what lives in GE versus CRM/DBMS/BigQuery/custom agent layer.
+WF-014 MVP | Mock community list, content and segmentation can demonstrate concept. | Risk of reducing workflow to message drafting. | Add production-shaped community/event/contact/follow-up schema and dashboard.
+Production scope | Real community data, targeting rules and multi-channel send are mentioned. | No detailed journey from event to donor/Yatra/volunteer/ambassador outcomes. | Define journey triggers and CRM writebacks.
+Platform architecture | Technical scope has common stack layers. | Cross-workflow continuity and shared IDs are not fully explicit. | Provide master data contract and event handoff model.
+Dashboards | Some analytics may be tentative in GE scope. | Leadership command center contribution unclear. | Define workflow dashboard and aggregate KPI feed.
+APIs/connectors | BYO-MCP/connectors are recognized. | Provider/access/readiness not confirmed. | Add API registry and classify demo vs API-ready vs integrated.
+Human approval | HITL is recognized. | Approval SLA/owner/backup and audit model need specificity. | Define approval matrix and audit trail.
+
+6. Workflow-Specific Improvements Required in Partner Understanding
+Area | Possible gap | Correct understanding | Partner action | Phase | Dependency | Evidence
+Area | Current possible misunderstanding / gap | Correct intended understanding | Partner action needed | Phase | Dependency | Evidence
+WF-014 scope | Outreach content + segmentation may be treated as enough. | WF-014 is a community relationship engine. | Model community → permission → event → contact/family → follow-up → donor/Yatra/volunteer/ambassador journeys. | Day 7–30 | Community data, CRM schema | S1, S2, S3, S6
+Community profile | Community list may be only a mailing segment. | Each community needs profile, status, contacts, source, event history, potential and owner. | Create Community Master with Community ID and required fields. | Day 7 | Community list access | S2, S3, S6
+Family/contact linkage | Contacts may be treated as standalone rows. | Families and residents should link to Community ID, Family ID, Contact ID and source. | Add contact/family capture schema and duplicate checks. | Day 14–30 | CRM/data access | S2, S6, S9
+Event attendance | Event may be treated as campaign send only. | Attendance must trigger follow-up and conversion journeys. | Create Event ID, attendance import/form and follow-up task logic. | Day 14–30 | Event records/forms | S2, S6
+Follow-up journey | Follow-up may be manual after demo. | 1-day, 3-day, 7-day and 30-day follow-up should be task-governed. | Build follow-up tracker and approval drafts. | Day 14–30 | Task layer/ClickUp or fallback | S1, S6, S9
+Donor/Yatra/volunteer conversion | Partner may not connect WF-014 to other workflows. | Community contacts should flow to donor, Yatra, children/youth, volunteer and ambassador journeys. | Define cross-workflow trigger map and output fields. | Day 30 / 60 days | WF-001/006/007/008/009 APIs | S6, S7
+Dashboards | Dashboard may be a simple report. | Dashboard must show pipeline, events, follow-ups, donations, Yatra leads, delays, owner exceptions. | Provide operational dashboard and leadership feed. | Day 7–30 | KPI definitions/data | S1, S2, S6
+KCKE | AI may draft spiritual messages from general LLM knowledge. | KCKE should provide approved source-grounded spiritual content where relevant. | Classify KCKE live integration vs approved template fallback. | Day 30 / 60 days / future | KCKE readiness | S10, S11
+Media AI | Media may be treated as normal creative generation. | Media AI requires scene-level storyboards, source references, image/audio/deity controls and approval. | Define interface and approval boundary for invite/recap media. | 60 days / future | Media pipeline readiness | S11
+Role ownership | Transcript names may be treated as final owner data. | Owner, performer, approver, backup, escalation and dashboard reviewer must be validated. | Run role validation and configure routing only after confirmation. | Day 1–3 | HKHT validation | S12
+Fallback | Demo may assume APIs work. | Manual fallback must exist for CRM/API/WhatsApp/task/dashboard failures. | Document fallback process and show at least one failure scenario. | Day 15–30 | API registry | S6, S9
+Golden journey QA | Acceptance may test only one screen. | Test one full community-to-conversion journey. | Define and run sample golden journey. | Day 15–30 / 60 days | Sample records | S6, S9
+
+7. What the Partner Should Not Miss
+Common IDs: Contact ID, Family ID, Community ID, Event ID, Campaign ID, Task ID, Donor ID, Yatri ID, Donation ID where applicable.
+CRM as relationship source of truth, not Gemini chat history.
+ERP-ready fields for donation, payment, receipt, inventory, approvals and event records even if ERP integration comes later.
+Human approval gates for donor-sensitive, public, devotional, media, HNI/CSR and finance-related actions.
+Audit logs for approvals, owner changes, data changes and sensitive actions.
+Dashboard visibility for leadership and operations.
+Validated role ownership: owner, performer, approver, backup, escalation, dashboard reviewer and data owner.
+Fallback process if an API, connector, AI result or dashboard refresh fails.
+API registry and classification of every connector as available, pending, mock, or future.
+Data quality checks: required fields, duplicates, missing source, missing next action, overdue follow-up.
+Golden journey testing across WF-014 → CRM → follow-up → Yatra/donor/volunteer pathway.
+Clear KCKE and Media AI boundaries.
+Future multi-center packaging through WF-013.
+8. Required Partner Classification
+Classification label | Required partner meaning
+Classification | What partner should indicate
+Already implemented | Feature is already working in current environment with evidence.
+Included in current scope | Feature is in committed delivery scope.
+Buildable immediately | Can be built with available tools/data/access now.
+Day-7 demo | Can be demonstrated by Day 7, with mock/sample data if needed.
+Day-14 MVP | Can be used by selected internal users with controlled scope.
+Day-30 production base | Can support controlled live/near-live operations with owner routing, dashboard, approval and fallback.
+60-day stabilization | Needs adoption, data cleanup, integration hardening or support rhythm.
+75-day enterprise-scale readiness | Needed for cross-workflow integration, analytics maturity or reusable template packaging.
+API-dependent | Requires confirmed connector/API access.
+Data-dependent | Requires HKHT source data, sample records or schema.
+HKHT approval-dependent | Requires owner, approval matrix, template or content approval.
+Google license/product-dependent | Requires Gemini Enterprise, Vertex AI, Agent Builder, BigQuery/Looker or another Google capability.
+External vendor-dependent | Requires WhatsApp/SMS/email, payment, CRM, DCC, Ad-and-More, ClickUp or other vendor access.
+Mock/demo only | Can be shown but should not be represented as production-ready.
+Future roadmap | Valuable but not Day-30 commitment.
+Not recommended / not in scope | Should not be built or should be deferred due to mismatch or risk.
+
+9. Expected Technical Scope Clarifications from Partner
+Reference architecture for WF-014 across Gemini Enterprise, Apps Script/AppSheet/Sheets, CRM, Google Cloud, BigQuery/Looker, ClickUp, KCKE and Media AI boundaries.
+Clear Gemini Enterprise versus custom Google Cloud / Vertex AI / Agent Builder boundary.
+Data model: Community, Family, Contact, Event, Attendance, Follow-up, Donation/Yatra/Volunteer tags, Approval and Task entities.
+Which system stores persistent records during Day 30 and how it later migrates to CRM/ERP-ready backbone.
+How IDs are generated and deduplicated.
+How event attendance triggers follow-up and conversion workflows.
+How WhatsApp/email/SMS outputs are drafted, approved, sent and logged; what is live versus manual send.
+How ClickUp/task governance is integrated or handled with a fallback.
+KCKE interface: live source-grounding versus approved-template fallback.
+Media AI interface: storyboard, source, approval and asset storage where relevant.
+Dashboard architecture: operational dashboard, leadership feed, refresh method and data owners.
+Security/access model: who can see donor-sensitive, family, spiritual cultivation, finance/payment and approval data.
+Audit trail: where approvals, messages, changes and exceptions are stored.
+Support and handover model.
+Cost/licensing impact by phase.
+10. Minimum Day-30 Production Base Expected
+Minimum Day-30 element | Expected implementation
+Minimum item | Expected WF-014 Day-30 production base
+Selected users | Community outreach owner, event coordinator, data entry/steward, relationship manager, supervisor/dashboard reviewer.
+Validated data path | Community intake → event planning → contact/family capture → follow-up tasks → dashboard.
+Common IDs | Community ID, Event ID, Contact ID, Family ID, Task ID, Owner ID, Approval ID; Donor/Yatri/Donation IDs when linked.
+Dashboard | Pipeline, permission, events, readiness, contacts, follow-ups, donations/Yatra leads, volunteer leads, delays, escalations.
+Approval queue | Human approval for public/donor/HNI/devotional/media/finance-sensitive actions.
+Exception routing | Delayed permission, event readiness gaps, high-value leads, overdue follow-up, missing data.
+Fallback procedure | Manual Sheet/ClickUp/email/process if automation or connector fails.
+Role ownership | Validated owner, performer, approver, backup, escalation and dashboard reviewer.
+Audit trail | Approval status, owner changes, task history and sensitive outputs logged.
+Golden journey | At least one test: community event family → follow-up → donor/Yatra/volunteer next action.
+Productivity measurement | Baseline and first measurement for follow-up speed, event readiness, manual chasing reduction, dashboard adoption.
+Next roadmap | 60-day stabilization and 75-day enterprise-scale readiness steps agreed.
+
+11. 60-Day Stabilization Expectations
+Adoption across selected outreach users and event coordinators.
+Bug fixing and workflow refinement from real use.
+Data quality improvement: duplicates, missing source, missing next action, owner correction.
+API hardening for CRM, ClickUp/task layer, WhatsApp/email/SMS, donation/DCC/Yatra sources where available.
+Dashboard refinement and agreed review cadence.
+User training and SOP updates.
+Approval discipline and audit review.
+Support rhythm and issue log.
+KPI measurement: follow-up SLA, event readiness, conversion, donation/Yatra leads, Mukund Prabhu dependency reduction.
+Scope cleanup: what is stable, what remains manual, what moves to next phase.
+12. 75-Day Enterprise-Scale Readiness Expectations
+Scalable architecture that can handle more communities, more events, more users and more centers later.
+Multi-workflow integration with CRM, Yatra, voice follow-up, digital marketing, donor cultivation, finance/DCC, content, media, task governance and dispatch where relevant.
+Leadership command center contribution with trusted WF-014 metrics.
+Advanced AI readiness: scoring, next-best-action, relationship graph fields and predictive model path.
+BigQuery/Looker intelligence path for analytics.
+Vertex AI / Agent Builder production path for scalable agentic orchestration.
+Reusable workflow template: data schema, forms, dashboards, SOPs, approval matrix, training guide.
+WF-013 multi-center replication readiness review.
+Open risks and dependency register updated.
+13. Long-Term Roadmap Items
+The following are long-term roadmap items. They should not be treated as immediate Day-30 commitments, but the Day-30 data model should protect the option to build them later.
+Future roadmap item | WF-014 connection
+Long-term item | WF-014 relevance
+Devotee Intelligence Graph | Connect community, family, donor, Yatra, volunteer, event, referral and seva relationships.
+Donor/yatri propensity | Predict which families are likely to donate, join Yatra, volunteer, become ambassadors or join children/youth programs.
+Predictive campaign intelligence | Predict which community outreach formats and promotion channels will convert best.
+Real-time outreach copilot | Prepare live or near-live support for field teams and relationship managers.
+AI Fundraiser Copilot | Prepare donor context, recommended ask, source-grounded story and objection handling before visits.
+Voice of the Devotee intelligence | Analyze community feedback, questions, objections and interests across events and calls.
+Automated content/media intelligence | Create approved invite/recap/donor inspiration media pipelines.
+Devotee Super App readiness | Long-term possibility for one devotee-facing journey across events, Yatras, donations, seva and spiritual content.
+AI Seva Marketplace | Recommend relevant seva opportunities based on family interest, festival timing and donor history.
+Federated mission intelligence | Use learning from Hyderabad to help other centers after governance and replication design mature.
+Digital twin / simulation | Long-term scenario planning for community outreach ROI, event volume, staffing and donor/Yatra impact.
+
+14. Partner Questions for Confirmation
+What exactly is already built for WF-014 and what is only planned?
+Which parts of the WF-014 demo use mock data, CSV/sample data, API-ready design or live integration?
+What will be production-shaped by Day 30?
+What data does HKHT need to provide immediately for community, contact, family, event and follow-up records?
+Where will persistent records be stored during Day 30?
+How will the solution create or preserve Community ID, Family ID, Contact ID, Event ID, Task ID and source fields?
+How will the workflow avoid duplicate contacts and disconnected community/family records?
+Which Google products will be used: Gemini Enterprise, Apps Script, AppSheet, Sheets, Vertex AI, Agent Builder, Cloud Run, Workflows, BigQuery, Looker Studio?
+What is Gemini Enterprise-native and what requires custom build?
+Which external APIs are required for CRM, ClickUp, WhatsApp/email/SMS, DCC/payment, Yatra and Ad-and-More/community data?
+How does the approval queue work and where are approval logs stored?
+How will sensitive donor/HNI/public/devotional/media messages be blocked until human approval?
+How will dashboards update and who owns the data quality?
+What is the fallback process if API/AI/dashboard/WhatsApp integration fails?
+How will WF-014 feed the leadership command center?
+How will future relationship intelligence and predictive intelligence be protected in the data model?
+What is the 60-day stabilization plan and 75-day enterprise-scale readiness plan?
+What should HKHT not expect in 30 days?
+16. Final Partner-Facing Summary
+HKHT appreciates the current progress and the practical Gemini Enterprise technical scoping. The main request is to align implementation with the intended architecture of the Hyderabad AI Revenue & Seva Growth Platform.
+WF-014 should be production-shaped from Day 1. Early execution may be small, but the architecture must remain CRM-aligned, ERP-ready, dashboard-visible, human-governed, source-grounded where devotional content is involved, and future multi-center ready.
+The partner is requested to classify gaps, dependencies, phases, technical boundaries and handover commitments clearly. The Day-30 goal is not to finish every future capability; it is to create a reliable production base that can stabilize over the next 60 days and become enterprise-scale ready by 75 days.
+The desired result is a WF-014 module that turns community outreach into a measurable relationship, revenue, Yatra, volunteer, ambassador and Krishna consciousness cultivation engine—not a disconnected content or message automation.

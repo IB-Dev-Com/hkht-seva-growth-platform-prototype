@@ -1,0 +1,214 @@
+WF-012 Website / Landing / Tech Support – Google Partner Scope Alignment and Improvement Note
+Partner-facing scope alignment note based on latest 30-Day Production-Ready Brief, technical scope/gap analysis, , upgrades, and WF-012 evidence
+Prepared for Google Partner / implementation partner scope review
+Evidence and Reference Set
+This note is based on the latest WF-012 30-Day Production-Ready Implementation Brief and the attached technical/gap/architecture evidence. It is intended to align scope, not to replace the TRD.
+Latest Document B – WF-012 30-Day Production-Ready Accelerated Execution Brief
+WF-012 Website Landing Page Workflow transcript, May 23, 2026
+HKHT GE - Technical Scope.docx
+HKHT GE Technical Scope — Gap Analysis.docx
+.docx
+Important Upgrades - Claude.docx
+HKHT_AI_Transformation_Analysis (1).html
+KCKE_Knowledge_Graph_Briefing.html
+Media_AI_Pipeline_Briefing_Note.docx
+Global_Hare_Krishna_Mission_OS_HKM_Hyderabad_Presentation.html
+Prior generated Document A and Document C for WF-012
+1. Purpose of This Note
+This note helps the Google Partner / implementation partner align the technical scope for WF-012 Website / Landing / Tech Support with the intended HKHT AI for Seva architecture.
+This is not a rejection of current work.
+This is not adding random new scope.
+This is a clarification of the intended architecture so the partner can classify, phase, and strengthen the implementation plan correctly.
+The workflow must be designed as a production-aligned module of the Hyderabad AI Revenue & Seva Growth Platform.
+The partner should convert this note into clear TRD, architecture, phase classification, dependency list, and delivery commitment.
+Evidence basis: Latest Document B; HKHT GE Technical Scope — Gap Analysis core concern;  platform architecture.
+2. Core Understanding Expected from the Partner
+Partner should understand | Clarification
+What WF-012 is | The website, landing-page, and tech support workflow that creates and maintains the online conversion surfaces for donations, Yatra registrations, donor leads, festival seva interest, campaign traffic, and public preaching outreach.
+What it should not become | It should not be reduced to a small isolated support assistant or one-off page demo.
+Platform role | It should be a production-aligned module that feeds CRM, source tracking, payment/DCC linkage, dashboards, approval logs, and future ERP-ready records.
+Day-30 expectation | Not every future feature must be complete, but the production base must have stable data path, role routing, approval gates, dashboard visibility, fallback process, and integration contract.
+Future readiness | It should preserve shared IDs and data events so relationship intelligence, predictive intelligence, institutional memory, and multi-center reuse are possible later.
+
+Evidence basis: GE Scope says WF-012 covers knowledge-grounded support assistant plus lead capture; GE Gap Analysis clarifies broader CRM/campaign/donation/Yatra/follow-up need.
+3. Intended Architecture from the Beginning
+The following capabilities should be treated as part of the intended architecture and agentic development thought process from the beginning. They are not late-stage add-ons.
+Architecture element | WF-012 expectation
+Relationship intelligence | Website visits, form submits, payment clicks, failed payments, Yatra interest, and campaign sources become part of the contact/donor/yatri journey.
+Predictive intelligence | The data model should allow future prediction of conversion, Yatra demand, donor propensity, campaign ROI, and landing-page effectiveness.
+Real-time AI assistance | Agents should help users identify missing fields, broken forms, blocked approvals, wrong source tags, and urgent page/payment issues.
+Institutional memory | Templates, approvals, incidents, wording fixes, Mukund Prabhu decisions, and issue resolutions should become reusable knowledge.
+KCKE source-grounding | Used only for source-grounded Krishna conscious content, festival meanings, Prabhupada references, donor narratives, and devotional safety.
+Media AI | Used for approved visuals, storyboards, banners, Yatra/festival/donor media, and scene-level content creation with human approval.
+CRM/DBMS operational truth | Contacts, donors, yatris, sources, campaigns, touchpoints, and follow-up status belong in CRM/DBMS.
+ERP-ready structured records | Payment, receipt, approval, finance, and operational records must be structured for later ERP migration.
+Gemini Enterprise productivity support | Workspace drafting, summarization, request interpretation, internal search, and productivity assistance.
+Vertex AI / Agent Builder path | Production-grade agentic orchestration, connectors, monitoring, and API-based workflows where Gemini/Workspace alone is insufficient.
+BigQuery / Looker Studio intelligence | Shared analytics layer for source, conversion, SLA, page health, donation/Yatra outcomes, and leadership command center.
+ClickUp task governance | Where used, landing-page requests, approvals, issues, and follow-ups should become trackable tasks.
+Leadership command center | WF-012 dashboards should contribute to one leadership view of revenue, seva, delays, risks, and decisions.
+WF-013 multi-center readiness | Templates, IDs, QA checklists, dashboards, and role patterns should be reusable later by other centers.
+
+Evidence basis: ; Important Upgrades - Claude; HKHT_AI_Transformation_Analysis; KCKE and Media AI briefs; latest Document B Sections 10–19.
+4. Scope Alignment with Latest Document B
+The latest Document B should be read as a 30-Day Production-Ready Implementation Brief, not only as a demo/MVP note.
+Phase | How to understand it
+Day 1–7 Production Foundation Sprint | Validate workflow, access, owners, approvers, backups, CRM fields, IDs, dashboard schema, API dependencies, risk points. Build initial working foundation with request intake, first dashboard, first approval flow, first AI-assisted output, and sample data path.
+Day 8–14 Integrated Working MVP | Selected users should operate the workflow in a controlled way: request intake, AI brief/content assistance, task/approval routing, data-quality checks, exception handling, dashboard refinement, CRM/API path validation, and ClickUp/task path where relevant.
+Day 15–30 Production Readiness Sprint | Production base with controlled live or near-live usage, golden journey QA, fallback protocol, role ownership, management reporting, issue escalation, productivity measurement, and sign-off checklist.
+60-Day Stabilization | Stabilize adoption, data quality, API hardening, dashboards, approval discipline, support rhythm, KPI review, and training.
+75-Day Enterprise-Scale Readiness | Confirm reusable architecture, command center contribution, shared IDs, API registry, workflow template, multi-workflow maturity, and WF-013 readiness.
+Clarification | Production readiness does not mean every long-term enterprise feature is finished in 30 days. It means the base is production-shaped, governed, measurable, and ready to scale.
+
+Evidence basis: Latest Document B: 30-Day Production-Ready Accelerated Execution Re-Alignment, Production Readiness Definition, and sections 15–19.
+5. Scope Alignment with HKHT GE Technical Scope vs Gap Analysis
+Area | Practical interpretation
+Already covered | GE Technical Scope mentions WF-012 as a knowledge-grounded support assistant plus capture of landing-page leads into the data backbone.
+Missing or unclear | The broader page-to-CRM-to-payment-to-follow-up journey is not fully visible in the technical scope.
+Clarification needed | Every landing-page action that matters should be persisted: page visit where available, form submit, source, payment click/failure, CRM update, follow-up task, and dashboard event.
+Production alignment | WF-012 must not stop at FAQ/support. It must become a conversion infrastructure module with operational QA and source tracking.
+Mock/demo boundary | CMS publishing, payment/DCC, CRM API, analytics, and domain/hosting integrations may be mocked initially if access is unavailable, but the integration contract must be documented.
+API-dependent | Live CRM update, payment status, DCC receipt, CMS publishing, uptime monitoring, analytics, and registrar/hosting data all depend on system access/API availability.
+Future phase | Predictive conversion, donor propensity, Yatra demand forecasting, and multi-center learning are future roadmap, protected by Day-1 data model.
+HKHT dependency | HKHT must provide data sources, owners, approvers, access, sample journeys, and sign-off criteria.
+
+Evidence basis: HKHT GE - Technical Scope.docx; HKHT GE Technical Scope — Gap Analysis.docx, WF-012 section and cross-workflow gaps.
+6. Workflow-Specific Improvements Required in Partner Understanding
+Area | Current possible misunderstanding / gap | Correct intended understanding | Partner action needed | Phase | Dependency | Evidence from attached files
+WF-012 scope | May be seen mainly as support assistant and lead capture | It is the website/landing-page conversion, reliability, source-tracking, and tech support module | Expand scope classification and TRD accordingly | Day 7 / Day 14 | Partner architecture clarification | GE Scope; GE Gap Analysis; latest Document B
+CRM journey | Form submits may be treated as simple data capture | Form, source, campaign, payment intent, and follow-up must update CRM journey | Define CRM entities, fields, API or Sheet fallback | Day 14 / Day 30 | CRM schema and access | GE Gap Analysis WF-012
+Shared IDs | Page and campaign IDs may be local to the tool | IDs must align with platform master data model | Define ID contract and data dictionary | Day 7 / Day 30 | CRM/data steward validation | Latest Document B Section 11; Gap shared ID architecture
+Payment/DCC | Payment may be outside MVP | Payment/receipt linkage can be mocked early but must be classified, QA-shaped, and production-planned | Create payment/DCC integration QA spec | Day 14 / Day 30 / 60 days | Finance/DCC access and approval | Transcript; latest Document B payment QA agent
+Dashboard | Page traffic dashboard may be enough | Dashboard must show pipeline, owners, approvals, source, conversion, incidents, and blockers | Build first dashboard and command-center contribution | Day 7 / Day 30 | Data source access | Latest Document B Section 10; Gap dashboard gaps
+Approvals | AI may draft and route outputs freely | Human approval is mandatory for public, devotional, donor-sensitive, finance/payment, and deity/media actions | Design approval queue and audit log | Day 14 / Day 30 | Approver validation | Latest Document B Section 13; KCKE/Media briefs
+KCKE | Could be confused with operational database | KCKE is only for source-grounded Krishna conscious content and not for task/payment/status facts | Define KCKE interface boundary | Day 30 / 60 days | KCKE corpus/readiness | KCKE brief; latest Document B Section 12
+Media AI | Could be assumed as generic image generation | Media AI is controlled asset/storyboard pipeline with deity/scene/source approvals | Define asset approval and metadata fields | Day 30 / 60 days | Asset repository and reviewer roles | Media AI briefing note
+ClickUp/task governance | Tasks may remain outside workflow | Execution tasks and follow-ups should feed ClickUp/task layer where relevant | Classify ClickUp integration or fallback | Day 14 / Day 30 | ClickUp access/config | ; latest Document B safeguards
+Institutional memory | Approvals and fixes may stay in chat/manual memory | Decisions, phrase corrections, template choices, incident fixes, and judgement patterns must be stored | Add decision/approval/fix logs | Day 30 / 60 days | Owner and repository validation | Important Upgrades; latest Document B 1000X section
+Golden journey QA | Testing may be per component | Test full journey from link to form/payment/CRM/task/dashboard/follow-up | Define and execute golden journey test | Day 15–30 | Sample data and access | GE Gap Analysis; latest Document B production readiness
+WF-013 readiness | Multi-center may be treated as later unrelated scope | The Day-30 data model and templates should be reusable later, without building full rollout now | Create reusable package notes | 75 days / future | Standardized templates and roles | Gap Analysis WF-013; latest Document B
+
+7. What the Partner Should Not Miss
+Common IDs: Contact ID, Donor ID, Yatri ID, Campaign ID, Event ID, Yatra ID, Page ID, Task ID, Approval ID, Donation/Payment/Receipt IDs where applicable.
+CRM is the relationship source of truth for leads, contacts, donors, yatris, campaigns, sources, touchpoints, and follow-ups.
+ERP-ready structured records must be preserved for later finance/operation migration.
+Human approval gates are mandatory for sensitive content, payment, media, and public actions.
+Audit logs must show request, owner, change, approval, exception, and go-live decisions.
+Dashboard visibility must include pipeline, delays, approvals, conversion, incidents, source quality, and data quality.
+Role ownership must be validated: owner, performer, approver, backup, escalation person, dashboard reviewer, data steward.
+Fallback process is required when CRM/API/CMS/payment/analytics integration is unavailable or fails.
+API registry must classify every connector, access status, authentication, fields, owner, risk, and fallback.
+Golden journey testing must validate full workflow flow.
+KCKE and Media AI boundaries must be respected.
+WF-013 multi-center readiness must be protected through reusable templates, IDs, QA, and governance.
+8. Required Partner Classification
+For each proposed WF-012 feature, the partner should classify status using the categories below.
+Classification | Meaning
+Already implemented | Available now in partner build or platform.
+Included in current scope | Planned and committed in the current scope.
+Buildable immediately | Can be built without waiting for external API or major data cleanup.
+Day-7 demo | Can be shown in the Production Foundation Sprint.
+Day-14 MVP | Can be used by selected users in integrated controlled testing.
+Day-30 production base | Can be used in controlled live or near-live operations with governance.
+60-day stabilization | Needs adoption, hardening, data cleanup, integration maturity, or support rhythm.
+75-day enterprise-scale readiness | Needed for reusable architecture, command-center contribution, and WF-013 readiness.
+API-dependent | Requires CRM, payment, CMS, DCC, analytics, registrar/hosting, ClickUp, WhatsApp/voice, or other APIs.
+Data-dependent | Requires HKHT to provide reliable data/source files.
+HKHT approval-dependent | Requires decision/approver/security/go-live approval.
+Google license/product-dependent | Requires Gemini Enterprise, AppSheet, Vertex AI, BigQuery, Looker Studio, Cloud Run, Workflows, etc.
+External vendor-dependent | Requires third-party payment, WhatsApp, voice, hosting, analytics, or CMS vendor.
+Mock/demo only | Useful for demonstration but not yet production without data/API/approval.
+Future roadmap | Preserve in architecture but do not promise by Day 30.
+Not recommended / not in scope | Should be excluded or deferred with reason.
+
+9. Expected Technical Scope Clarifications from Partner
+End-to-end architecture and Google product mapping for WF-012.
+Gemini Enterprise native capability versus custom agent/cloud build boundary.
+Vertex AI / Agent Builder role, if production-grade agentic orchestration is proposed.
+BigQuery / Looker Studio data and dashboard architecture.
+CRM/API integration approach and fallback if API is not available.
+ERP readiness and future migration path.
+Payment gateway, DCC, receipt, and finance integration approach.
+WhatsApp/voice follow-up dependency only where website leads trigger outreach.
+ClickUp/task governance approach or alternative task layer.
+KCKE interface for devotional content and source-grounding.
+Media AI interface for approved assets and visual storytelling.
+Access/security roles and least-privilege data access.
+User roles, owner/performer/approver/backup/escalation/data steward mapping.
+Audit trail storage for approvals, changes, exceptions, and go-live.
+Support model, fallback model, handover plan, cost/licensing impact.
+10. Minimum Day-30 Production Base Expected
+Minimum Day-30 item | Expected evidence
+Selected operational users | At least web/tech, content, creative/media, CRM/data, finance/DCC, campaign owner, and approver roles tested.
+Validated data path | Request → page/brief → source/campaign IDs → approval → QA → form/lead/payment status → dashboard.
+Common IDs | Page ID, Request ID, Campaign ID, Source, Owner ID, Approval ID, Contact/Yatri/Donor ID where applicable.
+Dashboard | Pipeline, overdue items, approvals, incidents, payment/CRM QA, data quality, and conversion readiness.
+Approval queue | Public/devotional/payment/media/go-live approvals captured and auditable.
+Exception routing | Broken page/form/payment, missing owner, missing source, overdue request, failed CRM mapping.
+Fallback procedure | Manual/CSV/Sheet/task fallback if API or automation fails.
+Role ownership | Owner, performer, approver, backup, escalation person, dashboard reviewer, data steward validated.
+Audit trail | Who requested, changed, approved, published, escalated, and resolved.
+Golden journey test | At least one end-to-end test from landing page action to CRM/task/dashboard/follow-up decision.
+Productivity measurement | Baseline and post-MVP metrics: missing-field reduction, intake-to-assignment time, launch delay, manual follow-up reduction.
+Next roadmap | Clear 60-day stabilization and 75-day enterprise-scale readiness plan.
+
+11. 60-Day Stabilization Expectations
+Operational adoption by real selected users.
+Bug fixing and workflow refinement based on live feedback.
+Data quality improvement: duplicate cleanup, missing source correction, better field discipline.
+API hardening where access is available; fallback maturity where not available.
+Dashboard refinement for management and operations.
+User training, backup training, and support rhythm.
+Approval discipline and audit review.
+KPI measurement and conversion learning.
+Scope cleanup and technical debt reduction.
+12. 75-Day Enterprise-Scale Readiness Expectations
+Scalable architecture is documented and reviewed.
+Multi-workflow integration is visible: CRM, finance/DCC, digital marketing, yatra, donor, content, tasks, and community outreach where relevant.
+Leadership command center contribution is operational.
+Advanced AI readiness path is clear: Gemini Enterprise, Vertex/Agent Builder, BigQuery/Looker responsibilities.
+Reusable workflow template, page template, QA checklist, data dictionary, and approval pattern are ready for WF-013 packaging.
+Open risks, dependencies, and integration limitations are in a shared register.
+13. Long-Term Roadmap Items
+The items below are future roadmap items. They should not be committed as Day-30 deliverables unless the partner explicitly confirms feasibility, data, access, owners, and validation.
+Long-term item | WF-012 relevance
+Devotee Intelligence Graph | Website and landing-page signals become part of a full relationship graph.
+Donor/yatri propensity | Predict who is likely to donate, register, or need follow-up based on ethical, approved data signals.
+Predictive campaign intelligence | Predict which pages/sources/templates will generate higher engagement or conversion.
+Real-time copilot | Assist web, donor, yatra, and campaign teams while live operations are happening.
+AI Fundraiser Copilot | Prepare donor context and approved next actions from landing-page and CRM history.
+Voice of the Devotee intelligence | Connect website feedback, forms, calls, WhatsApp, and events into insight loops.
+Automated content/media intelligence | Use approved KCKE and Media AI outputs for better page content, donor inspiration, and Yatra recaps.
+Devotee Super App readiness | Preserve data and journey design so future app experiences can use the same IDs and journey history.
+AI Seva Marketplace | Future matching of devotees to seva opportunities, not a Day-30 WF-012 promise.
+Federated mission intelligence | Learn across centers later while preserving local governance.
+Digital twin / simulation | Model page/campaign performance scenarios later when enough quality data exists.
+
+14. Partner Questions for Confirmation
+What WF-012 capabilities are already built?
+Which capabilities are mock/demo only?
+What will be production-ready by Day 30?
+What data does HKHT need to provide immediately?
+What API access is required for CRM, CMS, payment gateway, DCC, analytics, hosting/domain, ClickUp, WhatsApp, or voice?
+Which Google products are being used for each component?
+What is Gemini Enterprise native versus custom Google Cloud/Vertex/Agent Builder build?
+Where is each output stored permanently?
+Where are audit logs stored for request, approval, go-live, exception, and change history?
+How do human approvals work and who can override them?
+What happens if automation/API/payment/CRM/CMS fails?
+How do dashboards update and what data latency should HKHT expect?
+How does this avoid becoming a disconnected website support tool?
+How are source tracking, common IDs, and future relationship intelligence protected in the data model?
+How will golden journey testing be performed?
+What are the licensing, access, support, and cost implications?
+What is the 60-day stabilization plan?
+What is the 75-day enterprise-scale readiness plan?
+16. Final Partner-Facing Summary
+HKHT appreciates the current progress and the partner’s role in accelerating the AI for Seva transformation.
+The main request is to align WF-012 implementation with the intended architecture of the Hyderabad AI Revenue & Seva Growth Platform.
+The workflow should be production-shaped from Day 1, even if early execution is small and phased.
+The partner should classify every feature, dependency, integration, mock, production item, and future roadmap item clearly.
+Day-30 production base should deliver controlled operational usefulness, validated data path, approvals, dashboards, owner routing, fallback, and golden journey testing.
+60-day stabilization should harden adoption, data, integrations, dashboards, support, and KPIs.
+75-day enterprise-scale readiness should prepare reusable architecture, shared IDs, command center contribution, advanced AI readiness, and WF-013 packaging.
+Long-term intelligence capabilities should be protected by the data model now, but not over-promised as immediate Day-30 commitments.

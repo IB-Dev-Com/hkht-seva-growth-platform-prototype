@@ -1,0 +1,455 @@
+DOCUMENT B — Google / Implementation Partner Brief
+WF-011 HR / SOP / KT / Team Management | 30-Day Production-Ready Accelerated Execution Brief for TRD, Architecture, Feasibility, Costing and Phased Proposal
+Source Key Used in This Document
+Tag | Source
+S1 | Master Context Pack v0.5/v0.2 — north star, revenue-first priority, WF-011 capacity backbone, sprint horizons.
+S2 | Project Glossary v0.5 — automation classes, HITL, CRM/DBMS, ERP, KCKE, Media AI, MVP horizons.
+S3 | Folder Structure README v0.5 — storage model, workflow folders, partner brief and register update rules.
+S4 | Role Ownership Correction Note May 2026 — validate current owner, performer, approver, backup; SDSD historical/interim.
+S5 | KCKE–Media–CRM Dependency Map v0.5 — system boundaries, WF-011 optional/indirect CRM, ERP-ready entities, human approval.
+S6 | HR Processes and Systems Review transcript, May 23 2026 — primary WF-011 current-state evidence.
+S7 | AI Implementation Strategy transcript / 5-Workflow Structure PDF, May 21 2026 — office/team/HR/SOP scope evidence.
+S8 | Attendance evidence — 20-May-2026 WhatsApp image and text report sample.
+S9 | Generated WF-011 blueprint in this chat — synthesized design basis, Sections 1–20.
+S10 | Relevant registers/dependency maps — Automation Master Register, Workflow-to-Data Map, Interdependency Map; row-level validation still needed.
+S11 | HKHT_AI_Transformation_Analysis (1).html — strategic enhancement source: AI-first redesign discipline, four-horizon planning, platform-level architecture gaps, WF-013/multi-center replication connection, unified master data model, API registry, role ownership verification, ClickUp task execution layer, single leadership command-center view, service continuity/fallback protocol, cross-workflow golden journey QA, Mukund Prabhu dependency measurement, institutional memory encoding, and relevant 100×/1000× leap ideas. Specific legal/privacy compliance recommendations from that analysis are intentionally not incorporated into this partner brief per HKHT instruction.
+
+30-Day Production-Ready Accelerated Execution Re-Alignment
+This revised Document B realigns WF-011 from a demo/MVP-only brief into a 30-Day Production-Ready Accelerated Execution Brief. The original workflow-specific architecture, tables, agents, assumptions, evidence references, implementation details, and long-term platform direction remain preserved. The partner should read this as a production sprint document for a controlled operational go-live foundation, not as a throwaway prototype. [Sources: S1, S2, S9, S11]
+WF-011 must plug into the Hyderabad AI Revenue & Seva Growth Platform as the HR capacity, SOP, KT, role ownership, and institutional-memory module. It must remain CRM-aligned where staff assignment affects revenue workflows, ERP-ready for structured employee/role/task/approval data, dashboard-visible for leadership, and human-governed for HR/legal/payroll/performance decisions. [Sources: S1, S4, S5, S9, S11]
+Compressed execution path: Day 1–30 creates the production base; the following 60 days stabilize adoption, data quality, integrations, support model, and KPI discipline; by 75 days the workflow should be ready to connect into enterprise-scale multi-workflow intelligence and future multi-center packaging. [Sources: S1, S2, S9, S11]
+The 7-day, 14-day, 30-day, 90-day, and 6-month framing in this document is preserved but upgraded: Day 1–7 becomes a Production Foundation Sprint, Day 8–14 becomes an Integrated Working MVP, Day 15–30 becomes Production Readiness and Productivity Multiplication, and the long-term architecture becomes 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale. [Sources: S1, S2, S9, S11]
+Production Readiness Definition
+For WF-011, production readiness means that selected HR and management users can run the workflow operationally with validated data flow, dashboard visibility, approval routing, exception handling, role ownership, data quality checks, AI-assisted execution, fallback process, and measurable productivity improvement. [Sources: S2, S5, S9, S11]
+Production-readiness criteria include:
+Live operational usage by selected HR users and managers for attendance exceptions, onboarding checklist, SOP/KT retrieval, role-backup review, and performance pulse. [Sources: S6, S8, S9]
+Validated data path from HRMS/biometric/Sheets/Drive/ClickUp or CSV fallback into structured Employee ID, Role ID, Task ID, Owner ID, Approval Status, Source, Created Date, Last Follow-up Date, and Next Action fields. [Sources: S1, S5, S9, S11]
+Dashboard visibility for HR operations, revenue-critical staffing coverage, onboarding readiness, SOP/KT coverage, backup gaps, performance-pulse exceptions, data quality, and Mukund Prabhu exception load. [Sources: S1, S6, S9, S11]
+Human approval routing for hiring, CTC, salary/payroll, variable pay, incentives/deductions, disciplinary action, termination, final performance rating, HR/legal actions, and sensitive employee communication. [Sources: S2, S5, S6, S9]
+Exception handling and escalation for unexplained absence, missing login, unapproved leave/WFH/on-duty, missing onboarding tasks, missing role backup, delayed performance coaching, missing SOP source, or unapproved payroll exception. [Sources: S6, S8, S9]
+Cross-workflow compatibility so WF-011 contributes staff-capacity intelligence to Yatra, telecalling, donor, digital marketing, community outreach, finance/payroll, meeting intelligence, and future multi-center replication without exposing unnecessary HR-sensitive data. [Sources: S1, S5, S9, S11]
+Golden journey testing for at least one end-to-end HR capacity scenario: revenue-critical role vacancy → requisition → JD → candidate shortlist → onboarding tasks → SOP/KT pack → attendance coverage → role-backup dashboard → leadership exception view. [Sources: S6, S9, S11]
+Accelerated Delivery Governance
+The partner must operate WF-011 through accelerated delivery governance: daily checkpoint rhythm, clear issue escalation, dependency tracking, HKHT validation responsibilities, partner delivery responsibilities, acceptance reviews, sign-off gates, and continuation into the 60-day stabilization and 75-day enterprise-scale readiness review. [Sources: S1, S2, S4, S9, S11]
+Day 1–3 governance: validate workflow steps, source files, owner/performer/approver/backup, escalation person, dashboard reviewer, data custodian, CRM/ERP-ready fields, HRMS/biometric/ClickUp access, API dependency status, production risks, and analysis-file gaps relevant to WF-011. [Sources: S4, S6, S9, S11]
+Day 4–7 governance: deliver the first working prototype with CRM/Sheet/API data path where feasible, first dashboard, first automation, first human approval flow, first AI-assisted output, sample live workflow test, and first leadership visibility layer. [Sources: S2, S6, S8, S9, S11]
+Day 8–14 governance: run selected-user operational testing, workflow-specific AI assistance, ClickUp/task integration where feasible, exception routing, dashboard refinement, data quality checks, human approval testing, API registry validation, and CRM/ERP field validation. [Sources: S2, S5, S6, S9, S11]
+Day 15–21 governance: harden production usage, train users, validate KPIs, test escalation and fallback, refine role ownership, and execute golden journey QA across WF-011 and linked revenue workflows. [Sources: S1, S4, S9, S11]
+Day 22–30 governance: complete production-readiness review, leadership visibility layer, live handover, stabilization plan, productivity measurement, management reporting, partner sign-off checklist, next 60-day stabilization roadmap, and 75-day enterprise-scale readiness roadmap. [Sources: S1, S2, S9, S11]
+Dependency watch: HRMS/Keka/GreytHR, biometric system, ClickUp, job portals/ATS, payroll, ERP, CRM, WhatsApp/voice/payment dependencies where linked to revenue workflows, API registry, fallback process, role ownership validation, and data quality gates. Do not promise live integrations in early days unless access and API feasibility are confirmed. [Sources: S5, S6, S9, S11]
+1000x Productivity Alignment
+WF-011 contributes to the 1000x ambition by making human capacity scalable: role requirements become reusable templates, KT becomes searchable institutional memory, attendance and performance become exception-driven, managers stop chasing routine updates, and leadership sees revenue-critical staffing risks before donation/Yatra/conversion leakage occurs. [Sources: S1, S6, S9, S11]
+Workflow-specific 1000x alignment levers:
+Automation: deterministic requisition, onboarding, attendance, leave/WFH/on-duty, reminder, review-cycle, and approval-log routines remove repetitive HR administration. [Sources: S2, S6, S9]
+AI assistance: JD drafts, candidate summaries, interview packs, onboarding plans, SOP drafts, KT packs, coaching drafts, and manager summaries multiply HR output without bypassing human approval. [Sources: S2, S6, S9]
+Agentic workflow: attendance exceptions, role-backup gaps, performance pulse, SOP gaps, onboarding readiness, and payroll-readiness exceptions are monitored continuously with escalation rules. [Sources: S2, S5, S9]
+Dashboard visibility: leadership receives one consolidated HR capacity signal inside the broader command-center view, reducing fragmented dashboard review and manual synthesis. [Sources: S1, S9, S11]
+CRM intelligence: WF-011 should not store donor-sensitive CRM details unnecessarily, but it should publish governed staff assignment and capacity indicators so donor/yatri/contact follow-up ownership is reliable. [Sources: S1, S5, S9, S11]
+Institutional memory encoding: Mukund Prabhu’s role-fit judgement, escalation criteria, training expectations, service culture standards, and performance judgement should be captured through structured interviews, decision-tree documentation, SOP enrichment, and AI guardrails. [Sources: S6, S9, S11]
+Multi-center replication: once Hyderabad stabilizes, role templates, onboarding packs, SOP/KT libraries, approval matrices, dashboards, training paths, and HR data rules become reusable modules for future centers through WF-013-style packaging. [Sources: S1, S3, S9, S11]
+Cross-Workflow Integration and Platform Safeguards
+WF-011 must not become a disconnected HR automation. It must feed and consume the minimum necessary platform signals through shared IDs, governed task execution, dashboards, role ownership, and ERP-ready fields. [Sources: S1, S5, S9, S11]
+Shared identity fields: Employee ID, Role ID, Owner ID, Approver ID, Backup ID, Task ID, SOP ID, Training ID, Approval ID, Department ID, Center ID, Created Date, Source, Status, Last Follow-up Date, Next Action, and Approval Status are mandatory WF-011 platform fields. [Sources: S1, S5, S9, S11]
+Common contact fields: Contact ID, Donor ID, Yatri ID, Community ID, Family ID, Campaign ID, Event ID, Donation ID, Payment Status, Receipt Status, Seva, Trust, and Source remain CRM/finance/revenue-workflow fields. WF-011 should reference them only through governed staff assignment, task ownership, capacity, and aggregate productivity indicators where needed. [Sources: S1, S5, S9, S11]
+CRM boundary: CRM/DBMS remains the relationship source of truth; WF-011 contributes owner coverage and role-capacity signals, not sensitive HR/payroll/performance details. [Sources: S5, S9, S11]
+ERP boundary: ERP/HRMS becomes the future system of record for employee, attendance, leave, payroll exception, performance, training, asset/access, approval, and audit records. POC and sprint tools must use ERP-ready IDs and fields from Day 1. [Sources: S1, S5, S9]
+KCKE boundary: KCKE is used only for source-grounded Krishna conscious induction, culture training, seva mood, preaching education, donor-service values, and spiritual references; it is not used for attendance, salary, payroll, leave, performance status, or approvals. [Sources: S5, S9, S11]
+Media AI boundary: Media AI is optional for approved training videos, onboarding modules, and devotional culture learning assets; it is separate from KCKE and Gemini productivity agents. [Sources: S5, S9, S11]
+ClickUp task layer: where feasible, ClickUp should receive approved tasks for onboarding, SOP updates, role-backup action, HR follow-up, and manager review while AI provides intelligence above the execution layer. [Sources: S7, S9, S11]
+Fallback process: if an API, automation, or agent fails, WF-011 must fall back to approved Sheets/CSV/manual workflow without losing audit trail, approval status, ownership, or dashboard visibility. [Sources: S5, S9, S11]
+Relevant Analysis Recommendations Incorporated
+The following recommendations from HKHT_AI_Transformation_Analysis (1).html are incorporated where relevant to WF-011. Legal/privacy-specific recommendations from the analysis are not included in this revised partner brief per HKHT instruction. [Source: S11]
+Preserved and strengthened: AI-first redesign mandate; do not digitize the current mess; four-horizon planning discipline; revenue-first prioritization; mandatory human-in-the-loop design; separation between CRM, ERP, KCKE, Media AI, Gemini Enterprise and productivity agents. [Sources: S1, S2, S5, S9, S11]
+Added platform safeguards: unified master data model, consolidated API registry, workflow sequencing gates, go/no-go readiness checks, role ownership validation, single leadership command-center view, service continuity/fallback protocol, and cross-workflow golden journey testing. [Sources: S4, S5, S9, S11]
+Added WF-011-specific improvements: institutional memory encoding of Mukund Prabhu’s judgement, measurable Mukund Prabhu dependency reduction, HR capacity signal into revenue workflows, ClickUp task governance where feasible, and WF-013/multi-center replication readiness. [Sources: S1, S4, S7, S9, S11]
+Added relevant 100×/1000× ideas: institutional memory encoding, federated mission intelligence/multi-center learning, relationship intelligence through governed staff assignment, AI-assisted HR copilot functions, Voice of the Devotee insights as training inputs, and reusable SOP/KT platform modules. [Sources: S9, S11]
+1. Workflow Name and Platform Role
+Workflow: WF-011 HR / SOP / KT / Team Management.
+Platform role: this workflow is the HR capacity and institutional memory module of the future Hyderabad AI Revenue & Seva Growth Platform. It does not directly collect donations, but it protects and multiplies the revenue workflows by ensuring people are recruited, onboarded, trained, assigned, monitored, backed up, and reviewed with platform-compatible data discipline. [Sources: S1, S6, S9]
+This is not a request for a generic AI demo or standalone HR automation. The partner is expected to convert this workflow brief into a TRD, solution architecture, Google-stack architecture, API/integration architecture, deployment architecture, rollout plan, feasibility analysis, timelines, risks, costing, and phased implementation proposal. [Sources: S1, S2, S3, S9]
+Platform rule for partner: start small in execution, start big in architecture, start immediately in data discipline, start revenue-first in priority, start human-governed in approvals, and start platform-compatible in every workflow. [Sources: S1, S2, S9]
+Production acceleration note: this workflow must be delivered as a 30-day production base for HR capacity governance, not as an isolated HR experiment. The partner must classify every feature as buildable immediately, demo/mock only, requires HKHT data, requires CRM/API integration, requires ERP later, requires Google Cloud/custom build, requires Gemini Enterprise, requires Vertex AI, requires Agent Builder, requires Apps Script/AppSheet/Sheets, requires BigQuery/Looker Studio, requires external vendor tools, requires data cleanup, requires human approval design, or should not be promised within the first 14 days. [Sources: S2, S5, S9, S11]
+2. Executive Seva Impact Summary
+Donation impact: donor-facing and telecalling teams need stable attendance, backup coverage, role clarity, training, and performance pulse to avoid missed donor follow-ups. [Sources: S1, S6, S9]
+Yatra impact: Yatra sales/support teams need staffing coverage, quick onboarding, and performance visibility during campaign and travel cycles. [Sources: S1, S6, S8, S9]
+Donor cultivation impact: relationship-management roles can be better assigned and monitored if HR capacity and performance data connect, at aggregate/role level, to CRM task ownership. [Sources: S1, S5, S9]
+Krishna consciousness outreach impact: SOP/KT and culture induction preserve service mood and operational discipline for new joiners. Spiritual/source-grounded content should use KCKE only when needed for devotional education; operational HR facts remain in HR/ERP data. [Sources: S5, S6, S9]
+Mukund Prabhu burden reduction: Mukund Prabhu’s repeated role expectations and performance inputs should become role scorecards, dashboards, and exception-only escalation. [Sources: S6, S9]
+ERP/data centralization impact: Employee, role, attendance, leave, task, training, performance, approval, and payroll-exception records must be ERP-ready from Day 1 even while MVP uses Sheets/AppSheet. [Sources: S1, S2, S5, S9]
+Later multi-center readiness: once Hyderabad patterns stabilize, role templates, onboarding packs, SOPs, KT modules, dashboards, and approval rules can become a multi-center HR/SOP/KT playbook. [Sources: S1, S3, S9]
+Accelerated production impact: by Day 30, the visible value should be operational rather than only illustrative: selected users should be using attendance exception handling, onboarding tasks, SOP/KT retrieval, role-backup review, performance-pulse prompts, and leadership exception dashboards with governed human approvals. [Sources: S6, S8, S9, S11]
+Institutional memory impact: WF-011 should begin encoding Mukund Prabhu’s judgement about role-fit, service culture, escalation, and performance expectations so that HR decisions are increasingly guided by documented standards rather than repeated personal explanations. [Sources: S6, S9, S11]
+3. Management Brief for Leadership
+1. WF-011 is a capacity multiplier for revenue: Yatra, donor, digital, telecalling, and outreach teams cannot scale if hiring, onboarding, KT, and performance governance remain manual. [Sources: S1, S6, S9]
+2. Every weak role-fit, delayed induction, missed attendance exception, or late performance formal notice can become hidden donation/Yatra/outreach leakage. [Sources: S6, S9]
+3. The 7-day demo should prove attendance exception visibility, onboarding automation, SOP/KT retrieval, and manager exception briefs without overpromising full HRMS/ERP/payroll replacement. [Sources: S2, S5, S8, S9]
+4. The 14-day MVP should be usable by a small HR/management group through Sheets/AppSheet/Gemini with human approvals and audit-friendly data fields. [Sources: S2, S6, S9]
+5. This workflow must not become another disconnected tool; it must produce Employee ID, Role ID, Task ID, Approval Status, Owner/Approver/Backup, Source, Last Follow-up Date, and Next Action fields that can migrate later. [Sources: S1, S2, S5, S9]
+6. Sensitive HR/legal/payroll/performance decisions must remain human-approved. [Sources: S2, S5, S9]
+7. The partner must classify every feature by 7-day, 14-day, 30-day, 90-day, 6-month, and future multi-center feasibility. [Sources: S1, S2, S9]
+8. Management should approve WF-011 as a production-aligned platform module because every revenue workflow depends on capable, trained, present, accountable and backed-up people. A weak HR/SOP/KT system quietly reduces donation, Yatra, donor, digital, and outreach performance. [Sources: S1, S6, S9, S11]
+9. The first 30 days must create a production base with dashboard visibility, role ownership validation, data quality rules, approval routing, and fallback procedures; the next 60 days should stabilize usage and the 75-day review should confirm enterprise-scale readiness. [Sources: S1, S2, S9, S11]
+4. Current Operational Reality
+Trigger: new role requirements, recruitment, onboarding, attendance review, leave/WFH/on-duty tracking, login/logout discrepancy, SOP/KT needs, performance review, salary/payroll processing, role changes, CTC changes, employee welfare, disciplinary matters, and termination. [Sources: S6, S7]
+People involved: the transcript names Rajendra Prasad Karu as end-to-end responsible person and Naneshwar as HR Executive; Mukund Prabhu gives team requirement, skill-set, role, team structure, and performance-review input; Shruta Dev Prabhu is referenced as backup. Hemchand/Mahapuja/Sutra Dev/Satish/Yatra managers may be connected depending on purpose. Assumption / Needs Validation: current owner, daily performer, approver, backup, and escalation path must be validated before routing. [Sources: S4, S6]
+Tools used: Keka/GreytHR or “Keka GR” HRMS reference, ClickUp, Wrike/current-state historical references, Naukri/LinkedIn/job portals, biometric logging system, attendance reports, pay sheets/salary sheets, appraisal reports, recruitment status reports, Drive/SOP files. Assumption / Needs Validation: exact HRMS product, API access, biometric product, ClickUp/Wrike status, and HRMS export formats must be confirmed. [Sources: S6, S7, S9]
+Current steps include: requirement definition, JD/vacancy/CTC/urgency/experience setting, job posting, candidate shortlisting, interview rounds, HRMS record maintenance, offer/appointment letter, fixed/variable CTC, onboarding, training, attendance/leave review, performance goal-setting, appraisal, incentives, salary processing before monthly cutoff, employee welfare, role changes, SOP creation, and KT. [Sources: S6, S7]
+Current approvals include hiring, CTC, fixed/variable pay, salary changes, role changes, performance formal notices, penalties/deductions, termination, payroll, and sensitive HR/legal actions. Assumption / Needs Validation: approval matrix not fully evidenced. [Sources: S5, S6, S9]
+Current reports include performance appraisal report, daily attendance report, pay sheet/salary sheet, and recruitment status report. [Sources: S6]
+Current pain points include delayed shortlisting, wrong role fit, performance review left until month-end, missing fixed/variable clarity, missing goals for new joiners, delayed induction/KT, attendance discrepancies, and organizational culture depending on human memory. [Sources: S6, S9]
+Production-readiness gap: current evidence does not yet confirm exact HRMS product/API availability, biometric integration method, ClickUp/Wrike status, job-portal export method, payroll handoff, or approval matrix. These must be validated in Day 1–3 before the partner commits to live integration claims. [Sources: S4, S6, S9, S11]
+Role ownership gap: transcript-derived names may be imperfect; Rajendra Prasad, Naneshwar/Ganeshwar, Shruta Dev Prabhu, Hemchand, and other names must be validated before routing dashboards, tasks, approvals, or escalations. [Sources: S4, S6, S9, S11]
+5. Current Bottlenecks and Productivity Loss
+Manual recruitment effort: requirements, JDs, portal posting, resume screening, interview scheduling, score tracking, and offer readiness are not evidenced as integrated. [Sources: S6, S9]
+Follow-up leakage: performance heads-up emails and coaching are delayed when employees miss targets for several days or weeks. [Sources: S6]
+Data fragmentation: HRMS, biometric logs, attendance reports, WhatsApp-style updates, job portals, ClickUp/Wrike, Drive SOPs, appraisal sheets, salary sheets, and manual approvals are not yet platform-integrated. [Sources: S6, S8, S9]
+WhatsApp/spreadsheet dependency: daily attendance evidence exists as a WhatsApp text/image style report rather than validated ERP-grade structured data. [Sources: S8, S9]
+Mukund Prabhu dependency: role expectations, desired skill set, AI-adaptability preference, team structure, and performance review input still rely on Mukund Prabhu’s guidance. [Sources: S6, S9]
+Revenue leakage risk: absence or underperformance in telecalling/Yatra/donor/digital teams can reduce calls, registrations, donations, and follow-up quality before management sees it. [Sources: S1, S6, S9]
+Missed preaching/donor/Yatra opportunities: delayed onboarding, missing KT, weak role-fit, and no backup employee can reduce outreach capacity during campaigns, Yatras, donor meetings, and festivals. [Sources: S1, S6, S7, S9]
+No unified master data model yet: WF-011 must not create isolated Employee, Role, Task, Training, SOP or Approval tables that cannot later connect with CRM/ERP/workflow analytics. A master data contract is required before production go-live. [Sources: S5, S9, S11]
+No consolidated API registry yet: HRMS/Keka/GreytHR, biometric, ClickUp, job portals/ATS, payroll, ERP, CRM, WhatsApp, voice and payment dependencies must be recorded in one API registry with owner, status, access method, cost/unit where applicable, blocker, fallback and go-live readiness. [Sources: S5, S9, S11]
+No service continuity protocol yet: if HRMS export, biometric import, AppSheet, ClickUp, dashboard refresh, or AI output fails, WF-011 needs a documented Sheets/CSV/manual fallback with ownership and audit trail. [Sources: S5, S9, S11]
+Mukund Prabhu dependency has not yet been baselined: the partner should support a measurable KPI for managerial-load reduction such as weekly operational decision hours, number of HR escalations, repeated explanation count, and exception-only decision ratio. [Sources: S6, S9, S11]
+6. Desired AI-First Future-State Vision
+WF-011 should become the HR/SOP/KT Capacity OS module for the Hyderabad AI Revenue & Seva Growth Platform. It should convert role needs, employee capacity, attendance, onboarding, KT, performance, backup coverage, and approvals into structured, dashboard-ready, ERP-ready data. [Sources: S1, S2, S5, S9]
+Automate deterministically: requisition forms, JD approval routing, attendance import, leave/WFH/on-duty workflow, onboarding checklist creation, access/equipment tasks, training reminders, review-cycle reminders, payroll exception checklist, SOP review reminders, and dashboard refresh. [Sources: S2, S6, S9]
+AI-assisted: JD drafts, candidate summaries, interview questions, onboarding plans, performance summaries, coaching drafts, SOP drafts from meetings/transcripts, KT packs, HR policy Q&A with source references. [Sources: S2, S6, S9]
+Agentic: recruitment pipeline monitoring, daily attendance exception detection, role-backup gap detection, onboarding coordination, performance-pulse monitoring, SOP gap discovery, manager escalation preparation, and revenue-team capacity risk alerts. [Sources: S2, S6, S9]
+Human-approved: hiring decisions, CTC, salary/payroll, variable pay, incentives/deductions, disciplinary action, termination, final performance rating, HR/legal decisions, sensitive employee communications, public communications, philosophical/devotional content, and any donor-sensitive action. [Sources: S2, S5, S9]
+Platform-module design: WF-011 should publish governed capacity signals to revenue workflows: which role is vacant, which owner is overloaded, which backup is missing, which team has attendance risk, which employee has incomplete KT, and which sensitive decision awaits approval. This provides revenue workflows with operational reliability without exposing unnecessary HR-sensitive fields. [Sources: S1, S5, S9, S11]
+The future state should include production readiness gates: data source confirmed, role owner validated, dashboard field mapped, approval route tested, fallback documented, golden journey passed, and support owner assigned. [Sources: S4, S5, S9, S11]
+7. Expected Productivity Leap
+Level | Expected outcome | How to measure | Sources
+2X control | Same-day visibility of attendance, leave, WFH/OD, login/logout and daily exceptions. | Exception report timeliness; correction closure %; unexplained absence count. | S6, S8, S9
+10X workflow productivity | AI-assisted JD, onboarding, KT, reminders, SOP search and manager packs reduce repeated manual effort. | HR hours saved; onboarding SLA; SOP answer success; reminder closure. | S2, S6, S9
+30X revenue-operating leverage | Revenue-critical role coverage, backup readiness, and performance-pulse alerts prevent hidden conversion leakage. | Revenue-critical vacancy days; backup coverage; underperformance response time. | S1, S6, S9
+100X Hyderabad platform leverage | Reusable role templates, SOPs, KT packs, dashboards and governance become platform modules. | Templates reused; teams onboarded; workflow coverage; data quality scores. | S1, S3, S9
+1000X long-term contribution | Reach × conversion × donor lifetime value improves when talent capacity scales with revenue workflows and later center replication. | Assumption / Needs Validation: requires CRM/revenue linkage and longitudinal measurement. | S1, S5, S9
+30-Day production base | Selected users operate attendance exception handling, onboarding, SOP/KT retrieval, role-backup review, performance pulse and leadership exception visibility with governed approvals. | Production-readiness checklist completed; selected-user adoption; dashboard refresh reliability; approval routing pass rate; fallback test pass. | S2, S5, S9, S11
+
+8. Expected AI Agents / Copilots
+Workforce Planning & Requisition Agent
+Purpose: Converts role needs into structured requisitions, JD drafts, role scorecards and approval packets.
+Users: Mukund Prabhu, HR Manager, HODs.
+Inputs: Role need, department, urgency, vacancy count, CTC range, skills, experience, revenue-critical flag.
+Outputs: Approved/ready-to-approve requisition, JD, interview matrix, missing-info list.
+Data needed: Employee/role master, department map, prior JD templates, approval matrix.
+Tools/connectors: Google Forms/AppSheet/Sheets, Docs, Gmail, Gemini, later ERP/ATS.
+Human approval points: HR Manager/HOD/Mukund approval for role, CTC and key hires.
+Escalation logic: Escalate if P0/P1 revenue role remains unapproved >48 hours or critical field missing.
+Success metrics: Time to approved JD, requisition completeness, revenue-critical vacancy days.
+Evidence basis: [Sources: S2, S6, S8, S9]
+Recruitment Screening Agent
+Purpose: Screens candidates against role scorecards and summarizes fit/gaps.
+Users: HR Executive, HR Manager, interviewer panel.
+Inputs: CVs, job portal exports, JD, scorecard, role criteria.
+Outputs: Candidate shortlist, fit score, interview questions, risk notes.
+Data needed: Candidate source, resume, experience, skills, current CTC/expected CTC if available.
+Tools/connectors: Drive, Sheets, Gmail, Gemini/Vertex, ATS/job portal exports.
+Human approval points: Human shortlist/interview decision; no autonomous rejection for sensitive cases without HR review.
+Escalation logic: Escalate low-fit pipeline, insufficient candidates, CTC mismatch, or duplicate applicant.
+Success metrics: Time-to-shortlist, shortlist quality, interview conversion.
+Evidence basis: [Sources: S2, S6, S8, S9]
+Interview & Offer Governance Agent
+Purpose: Ensures interview rounds, scorecards, fixed/variable CTC, approvals and offer readiness are complete.
+Users: HR Manager, Finance, SME interviewers.
+Inputs: Interview scores, comments, CTC proposal, approval limits.
+Outputs: Offer readiness packet, missing approval alerts, fixed/variable split validation.
+Data needed: Candidate ID, requisition ID, scorecard, offer template, approver list.
+Tools/connectors: Sheets/AppSheet, Docs, Gmail, HRMS/ERP later.
+Human approval points: Finance/HR/hiring approver approval; CTC deviations require leadership approval.
+Escalation logic: Escalate missing fixed/variable pay, missing score, unapproved CTC, or payroll/legal risk.
+Success metrics: Offer error rate, approval cycle time, rework count.
+Evidence basis: [Sources: S2, S6, S8, S9]
+Onboarding & Access Agent
+Purpose: Creates and tracks day-1 readiness: employee ID, workspace, computer, email, access, training and KT.
+Users: HR Executive, Admin, IT, manager, new employee.
+Inputs: Offer acceptance, role, start date, location, access needs, equipment needs.
+Outputs: Onboarding checklist, task list, access/equipment completion, training plan.
+Data needed: Employee profile, role map, equipment/access list, SOP/KT modules.
+Tools/connectors: AppSheet/Sheets, Gmail, Calendar, Drive, ClickUp, later ERP asset module.
+Human approval points: HR/Admin/IT/manager confirm completion before employee starts.
+Escalation logic: Escalate if access/equipment/training incomplete before joining date.
+Success metrics: Day-1 readiness %, onboarding SLA, access rework.
+Evidence basis: [Sources: S2, S6, S8, S9]
+Attendance & Leave Exception Agent
+Purpose: Detects daily attendance, leave, WFH/on-duty, late login, forgotten login and absence exceptions.
+Users: HR Executive, HR Manager, department managers.
+Inputs: HRMS/biometric export, attendance sheet, leave/WFH/OD requests, revenue-critical role flag.
+Outputs: Daily exception digest, correction queue, escalation list, coverage risk.
+Data needed: Employee ID, date, status, login/logout, remarks, approval status, department, role criticality.
+Tools/connectors: Sheets/AppSheet, Apps Script, HRMS/biometric export/API, Gmail/Chat, Looker.
+Human approval points: HR validates corrections; manager approves exceptions; no automatic salary deduction.
+Escalation logic: Escalate unexplained absence, critical-role absence, repeated late login, missing approval.
+Success metrics: Same-day correction %, false exception rate, attendance report time saved.
+Evidence basis: [Sources: S2, S6, S8, S9]
+Performance Pulse Agent
+Purpose: Tracks daily/weekly goals and flags underperformance early with coaching drafts.
+Users: Managers, HR, Mukund Prabhu for escalations.
+Inputs: Role KPIs, daily reports, task completion, attendance, CRM/revenue metrics where governed.
+Outputs: Weekly review packet, coaching draft, improvement-plan trigger, escalation recommendation.
+Data needed: Employee goals, KPI targets, manager comments, task/CRM aggregates.
+Tools/connectors: Sheets/AppSheet, ClickUp, CRM aggregate export, Gmail, Looker, later ERP performance module.
+Human approval points: Manager approves feedback; HR approves formal formal notice; leadership approves sensitive actions.
+Escalation logic: Escalate 3–5 days below target, repeated non-response, P0 role risk.
+Success metrics: Underperformance response time, review completion, coaching acceptance.
+Evidence basis: [Sources: S2, S6, S8, S9]
+SOP / KT Knowledge Custodian Agent
+Purpose: Makes SOPs, training content and KT packs searchable, versioned and source-grounded.
+Users: HR, Hemchand/workflow coordinator, managers, new employees.
+Inputs: SOP docs, Drive folders, meeting transcripts, role documents, training material.
+Outputs: KT pack, SOP answer with source, missing SOP list, version/review reminders.
+Data needed: SOP ID, owner, version, status, review date, role link, source file.
+Tools/connectors: Drive, Docs, Gemini Enterprise, vector search, later knowledge repository.
+Human approval points: SOP owner approves final SOP; KCKE review only for devotional/source-grounded content.
+Escalation logic: Escalate no source, conflicting SOPs, outdated version, missing owner.
+Success metrics: SOP coverage %, answer accuracy, KT completion.
+Evidence basis: [Sources: S2, S6, S8, S9]
+Role Backup & Capacity Risk Agent
+Purpose: Prevents single-person dependency by tracking backup coverage and revenue-critical capacity.
+Users: HR Manager, HODs, Mukund Prabhu.
+Inputs: Role map, employee map, backup map, attendance, leave, event/yatra calendar.
+Outputs: Backup dashboard, capacity risk alert, cross-training task.
+Data needed: Role ID, employee ID, backup ID, criticality, training status, absence trend.
+Tools/connectors: Sheets/AppSheet, Calendar, ClickUp, CRM/yatra campaign metadata, Looker.
+Human approval points: HOD validates backup plan and redeployment decisions.
+Escalation logic: Escalate no backup for P0/P1 workflow role, upcoming leave during campaign/yatra/festival.
+Success metrics: Backup coverage %, capacity risk closure.
+Evidence basis: [Sources: S2, S6, S8, S9]
+Payroll Readiness & Compliance Agent
+Purpose: Prepares payroll exception pack without making autonomous salary/legal decisions.
+Users: HR, Finance/DCC, leadership approvers.
+Inputs: Attendance, leave, incentives, deductions, approvals, payroll cutoff.
+Outputs: Payroll exception sheet, missing input list, approval log.
+Data needed: Employee ID, pay period, attendance exceptions, incentive/deduction approval, payroll status.
+Tools/connectors: HRMS/payroll export, Sheets, Finance system, later ERP/payroll API.
+Human approval points: Finance/HR approval required; no AI salary changes or deductions.
+Escalation logic: Escalate missing approval before payroll cutoff or conflicting attendance/incentive data.
+Success metrics: Payroll error rate, cutoff readiness, unresolved exceptions.
+Evidence basis: [Sources: S2, S6, S8, S9]
+Mukund Manager Command Agent
+Purpose: Summarizes only high-priority exceptions needing Mukund Prabhu’s attention.
+Users: Mukund Prabhu, senior leadership.
+Inputs: Outputs from HR agents, role criticality, pending approvals, capacity risks.
+Outputs: Daily/weekly leadership digest, decision queue, escalation summary.
+Data needed: Decision logs, task/status data, approval status, owner/approver fields.
+Tools/connectors: Gmail/Chat, Looker dashboard, AppSheet, later Agent Builder.
+Human approval points: Mukund approves only scoped exceptions and strategic role/talent decisions.
+Escalation logic: Escalate critical role vacancy, unresolved performance issue, missing owner, sensitive approval.
+Success metrics: Mukund time saved, decision SLA, unresolved exceptions.
+Evidence basis: [Sources: S2, S6, S8, S9]
+Role Ownership Verification & Routing Agent
+Purpose: Confirms owner, performer, approver, backup, escalation person, dashboard reviewer and data custodian before any workflow automation routes tasks or approvals.
+Users: HR Manager, Mukund Prabhu, HODs, workflow coordinator, implementation partner.
+Inputs: Current role map, transcript-derived names, Role Ownership Correction Note, employee master, workflow RACI, approval matrix.
+Outputs: Validated routing table, unresolved-owner list, approval map, fallback contact list, dashboard reviewer list.
+Data needed: Employee ID, Role ID, department, reporting manager, approver, backup, escalation path, authority limits.
+Tools/connectors: AppSheet/Sheets, Google Forms, ClickUp, Gmail, Dashboard; later ERP role master.
+Human approval points: Mukund Prabhu/HR/HOD validate routing for critical workflows and sensitive HR actions.
+Escalation logic: Escalate if owner is unconfirmed, approver unavailable, backup missing, or transcript-derived name conflicts with current reality.
+Success metrics: 100% validated owner/performer/approver/backup for production scope; reduction in misrouted tasks; approval SLA adherence.
+Evidence basis: [Sources: S4, S6, S9, S11]
+Institutional Intelligence Capture Agent
+Purpose: Captures Mukund Prabhu’s role-fit judgement, service culture expectations, escalation principles, performance standards, training preferences, and exceptions into structured knowledge assets and decision guardrails.
+Users: Mukund Prabhu, HR Manager, SOP/KT Custodian, AI Agent Supervisor.
+Inputs: Structured interviews, workflow decisions, meeting transcripts, SOP gaps, role scorecards, performance review examples, escalation history.
+Outputs: Decision trees, role-fit rules, escalation criteria, training standards, service-culture notes, SOP updates, AI guardrail prompts.
+Data needed: Approved source notes, decision owner, effective date, version, review date, applicable role/function, sensitivity level.
+Tools/connectors: Docs, Drive, Gemini Enterprise, KCKE for devotional/culture references, vector search, workflow dashboard.
+Human approval points: Mukund Prabhu or delegated leadership approves judgement rules before operational use.
+Escalation logic: Escalate if AI cannot find a source, if judgement conflicts with policy, or if a sensitive HR decision needs human review.
+Success metrics: Number of judgement rules captured, reduction in repeated explanations, SOP gap closure, manager self-service success, Mukund exception-only ratio.
+Evidence basis: [Sources: S6, S9, S11]
+9. Human Role Redesign Expectations
+Current HR Manager function continues as HR Capacity Owner: policy, hiring approval coordination, performance governance, payroll-exception governance, role-backup strategy, and dashboard review. [Sources: S6, S9]
+HR Executive becomes AI-supervised HR Operations Controller: validates attendance exceptions, maintains employee/role data, drives onboarding checklists, and closes pending HR tasks. [Sources: S6, S9]
+Mukund Prabhu moves from repeated role guidance to exception-only talent architecture: critical role scorecards, high-impact hiring, performance escalations, and revenue-team capacity risks. [Sources: S6, S9]
+Hemchand/workflow coordinator role should focus on collecting source files, SOPs, formats, and validation evidence rather than passing along scattered files. Assumption / Needs Validation. [Sources: S6, S9]
+Department managers must own weekly goals, role training, coaching feedback, performance data, and backup coverage for their teams. [Sources: S6, S9]
+New roles needed: HR Data Custodian, SOP/KT Custodian, AI Agent Supervisor, Dashboard Reviewer, and Privacy/Access Reviewer. [Sources: S2, S5, S9]
+Some repetitive HR admin work should be automated; capable staff can be redeployed to donor/yatri/preaching-facing support, QA/review, data custodianship, or relationship management. [Sources: S2, S4, S9]
+Production role redesign addendum: HR Operations must shift from manual compiler to AI-supervised exception controller; SOP/KT work must shift from ad hoc explanation to source-backed reusable assets; managers must shift from late-month memory review to weekly goal coaching; Mukund Prabhu must shift from daily routing and repeated explanations to exception-only judgement, role architecture, and high-sensitivity approvals. [Sources: S2, S6, S9, S11]
+The partner should include a Day 1–3 role validation session and maintain a living RACI table for owner, performer, approver, backup, escalation person, dashboard reviewer, and data custodian. [Sources: S4, S9, S11]
+10. Dashboard and Operational Intelligence Expectations
+Management dashboard: Mukund/leadership exception view: critical vacancies, revenue-role absence, backup gaps, performance escalations, pending approvals, payroll-readiness exceptions. [Sources: S1, S6, S9]
+Operational dashboard: HR daily view: present/absent/on-duty/WFH/week-off, late login, forgotten login, leave approvals, onboarding tasks, recruitment pipeline, SOP/KT completion. [Sources: S6, S8, S9]
+Revenue/conversion dashboard: role capacity overlay for Yatra, telecalling, donor, digital marketing, community outreach; aggregate staffing coverage only unless HR privacy approval exists. [Sources: S1, S5, S9]
+Data quality dashboard: missing employee IDs, duplicate names, blank managers, missing backup, missing approver, unapproved leave/WFH/OD, missing source, outdated SOP version. [Sources: S1, S2, S9]
+AI-agent performance dashboard: false positives, accepted recommendations, reminders closed, time saved, escalation precision, source-grounded SOP answer success, human approval SLA. [Sources: S2, S9]
+Leadership command-center contribution: WF-011 must feed a single leadership visibility layer with revenue-critical staffing risks, open approvals, vacant roles, backup gaps, onboarding delays, SOP/KT gaps, performance-pulse exceptions, data quality issues, and Mukund Prabhu decision load. [Sources: S1, S9, S11]
+Mukund dependency KPI: dashboard should measure weekly HR exceptions routed to Mukund Prabhu, repeated clarification requests, delayed approvals requiring his intervention, and percentage of decisions handled through approved delegation. [Sources: S6, S9, S11]
+Cross-workflow QA dashboard: partner should provide a basic golden journey QA view showing whether HR capacity data successfully supports one revenue-critical journey without broken IDs, missing owner, missing approval status, or stale dashboard refresh. [Sources: S1, S5, S9, S11]
+11. CRM / ERP / Data Expectations
+Platform compatibility for WF-011 is primarily through Employee ID, Role ID, Department ID, Owner ID, Task ID, Approval ID, SOP ID, Training ID, Attendance ID, and Performance Review ID. Contact/Donor/Yatri/Community/Family IDs are not primary HR data, but may be referenced at aggregate/assignment level where staff capacity connects to CRM tasks, donor follow-up, Yatra follow-up, or community outreach ownership. [Sources: S1, S5, S9]
+Common IDs: Employee ID, Role ID, Manager ID, Backup ID, Task ID, Approval ID are mandatory for this workflow. Contact ID / Donor ID / Yatri ID / Community ID / Family ID are consumed indirectly only through CRM assignment/capacity views where applicable. [Sources: S1, S5, S9]
+Source tracking: recruitment source, candidate source, attendance source, leave source, task source, SOP source, training source; revenue source/campaign/Yatra/event source only when HR capacity is linked to revenue workflow coverage. [Sources: S1, S5, S9]
+Workflow ownership: owner, performer, approver, backup, escalation person, dashboard reviewer, data custodian must be captured and validated. [Sources: S4, S9]
+Follow-up status: last follow-up date, next action, next action owner, priority, status, outcome for recruitment, onboarding, KT, performance coaching, attendance correction, and approval tasks. [Sources: S2, S9]
+Revenue/payment link: not a primary HR field. However, Campaign ID, Yatra ID, Event ID, donation/payment status, and DCC/receipt IDs may be displayed only as aggregate staffing/capacity context for revenue workflows, not as HR private data. [Sources: S1, S5, S9]
+Dashboard outputs: leads/calls/registrations/donations/conversions are downstream CRM/revenue KPIs; WF-011 contributes capacity coverage, staff availability, role readiness, pending tasks, delays, escalations, and productivity controls. [Sources: S1, S5, S9]
+ERP-ready fields: Employee ID, Role ID, Department ID, Task ID, Owner ID, Approval Status, Source, Created Date, Last Follow-up Date, Next Action, Attendance Status, Leave Status, Training Status, SOP Version, Review Status, Payroll Exception Status. [Sources: S1, S2, S5, S9]
+Entity | Current source | Future source of truth | Data quality risk | Owner/custodian
+Employee Profile | HRMS / Sheets / attendance files | ERP HR / HRMS | duplicate names, PII, missing IDs | HR Data Custodian
+Role / Designation | role docs / Sheets / memory | ERP/workflow app | unclear owner/backup | HR Manager + HOD
+Job Requisition | manual/email/forms | ATS/ERP HR | missing approvals | HR Manager
+Candidate | job portals/email/Drive | ATS/HRMS | privacy, duplicates | HR Executive
+Attendance | biometric/HRMS/WhatsApp/Sheets | HRMS/ERP | forgotten login, manual remarks | HR Executive
+Leave/WFH/On Duty | WhatsApp/Sheets/HRMS | HRMS/ERP | informal approval | HR Manager
+Performance Goal/Review | daily reports/appraisal sheets | ERP performance module | goals missing, month-end memory | Manager + HR
+SOP/KT | Drive/docs/transcripts | knowledge repository with ERP link | outdated versions | SOP/KT Custodian
+Payroll Exception | salary sheets/HRMS | ERP/payroll | unapproved deductions | HR + Finance
+Approval/Audit | email/WhatsApp/manual | workflow/ERP audit log | missing evidence | Process owner
+
+Unified master data requirement: partner must produce an entity relationship note showing how Employee ID, Owner ID, Task ID, Role ID, Department ID, SOP ID, Training ID and Approval ID connect to common platform IDs such as Contact ID, Donor ID, Yatri ID, Campaign ID, Event ID, Donation ID and Payment Status only where WF-011 has legitimate workflow need. [Sources: S1, S5, S9, S11]
+CRM alignment: CRM/DBMS is not the HR record system, but staff assignment, follow-up owner, escalation owner, role capacity and aggregate productivity indicators must be compatible with CRM task/follow-up workflows so donor/yatri/contact journeys do not break when a staff member is absent, reassigned or overloaded. [Sources: S1, S5, S9, S11]
+ERP transition caution: WF-011 should not write payroll, finance, receipt or donor-payment records directly in early sprints. Payroll exception packs and HR-to-finance inputs must remain approval-controlled until ERP/finance integration is stable and explicitly approved. [Sources: S5, S9, S11]
+12. KCKE / Media AI Expectations, if Applicable
+KCKE is not the HR operational database. Do not store or answer attendance, salary, leave, performance status, inventory, payment, or task status from KCKE. [Sources: S5, S9]
+KCKE may be used only for source-grounded Krishna conscious induction, service mood, devotional culture, preaching education, donor narratives, or philosophical replies used in training material. [Sources: S5, S9]
+Media AI Pipeline is not core to WF-011 but may be used later for onboarding videos, SOP training videos, role-play simulations, and approved devotional/culture training content. [Sources: S5, S9]
+All devotional/philosophical/public training content remains human-reviewed and source-grounded. [Sources: S2, S5, S9]
+KCKE build/interface clarity required: if partner proposes KCKE-linked induction or culture-training answers, they must specify source ingestion, approval, citation, retrieval boundary, escalation for missing sources, and how KCKE stays separate from HR operational records. [Sources: S5, S9, S11]
+Media AI interface clarity required: training videos, onboarding content or role-play simulations can be proposed, but must be optional, human-approved, and integrated only after the source content, approval workflow and asset ownership are clear. [Sources: S5, S9, S11]
+13. Governance and Human Approval Expectations
+Donor-sensitive approvals: HR capacity data may support donor follow-up coverage, but donor communications and escalations remain controlled by donor workflow owners. [Sources: S1, S5, S9]
+Financial approvals: payroll, incentives, deductions, salary changes, CTC, and reimbursement-related HR actions must be human-approved by HR/Finance/leadership. [Sources: S5, S6, S9]
+Public communication approvals: HR agents must not send public-facing or employee-sensitive messages without approved templates and reviewer controls. [Sources: S2, S5, S9]
+Philosophical/devotional approvals: KCKE-based content for induction/preaching must be source-grounded and human-reviewed. [Sources: S5, S9]
+Deity/media approvals: only relevant if training/media content is generated; must follow Media AI human approval rules. [Sources: S5]
+CSR/HNI approvals: HR capacity may support donor teams, but HNI/CSR donor decisions remain donor-workflow approved. [Sources: S1, S5, S9]
+HR/legal approvals: hiring, background checks, police verification, payroll, ESI/PF/mediclaim, disciplinary action, termination, and sensitive employee actions require human approval and audit log. [Sources: S5, S6, S7, S9]
+Production approval gates: no AI-generated HR action should execute without human approval where it affects hiring, compensation, payroll, discipline, termination, legal/statutory record, sensitive communication, public content, devotional/philosophical content, or donor/HNI/CSR relationships. [Sources: S2, S5, S6, S9, S11]
+Go/no-go readiness checks: before production use, the partner must validate data source readiness, API or CSV fallback, user access, role routing, dashboard refresh, approval route, exception escalation, training completion, and manual fallback. [Sources: S4, S5, S9, S11]
+14. Integration Expectations
+Integration area | Expected use in WF-011 | Partner must classify
+Google Workspace | Drive SOPs, Gmail drafts, Calendar reminders, Docs, Sheets | buildable / license / access model
+Gemini Enterprise | SOP search, JD drafts, summaries, policy Q&A, manager digests | what works in Gemini vs custom build
+Apps Script / AppSheet / Sheets | 7-day and 14-day employee master, forms, attendance import, checklists, dashboards | buildable immediately / data cleanup
+Vertex AI / Agent Builder | multi-agent orchestration, governed prompts, tool calls, audit, retrieval at scale | requires custom Google Cloud build?
+Cloud Run / Workflows | scheduled imports, workflow orchestration, backend jobs | 90-day/6-month scope
+BigQuery / Looker Studio | capacity analytics, cross-workflow dashboards, data quality dashboards | pilot/production scope
+CRM APIs | staff assignment/capacity overlay for donor/Yatra/telecalling/community workflows | API dependency and privacy boundary
+ERP APIs | future employee/attendance/leave/performance/payroll/approval system of record | ERP later / migration phase
+Payment gateway/DCC | payroll/incentive context or revenue capacity overlay only; no HR exposure of donor details | finance approval and access controls
+ClickUp | task creation for onboarding, SOP updates, training, performance actions | API feasibility and current workspace structure
+WhatsApp/voice vendor | optional reminders/digests; no sensitive HR data without policy | vendor/API/security limits
+External tools | Keka/GreytHR, biometric, Naukri, LinkedIn, ATS/payroll | CSV/API/vendor/licensing limits
+
+Integration governance addendum: partner must maintain an API and connector register for WF-011 and linked dependencies: Google Workspace, Gemini Enterprise, AppSheet/Sheets, ClickUp, HRMS/Keka/GreytHR, biometric system, job portals/ATS, payroll, ERP, CRM, WhatsApp/voice/payment links where relevant to revenue workflows, BigQuery/Looker, Cloud Run/Workflows, Vertex AI/Agent Builder, and any external vendor. Each item must be classified as confirmed, unknown, needs HKHT access, needs contract, mock-only, fallback available, or not in the first 30-day production base. [Sources: S5, S9, S11]
+15. Day 1–7 Production Foundation Sprint Expectations (formerly 7-Day Demo Expectations)
+Show a sample HR command dashboard using uploaded 20-May attendance evidence and mock employee master. [Sources: S8, S9]
+Show daily exception digest: absent, late login, leave, WFH/on-duty, forgotten login, revenue-critical absence. [Sources: S6, S8, S9]
+Show JD and role scorecard generator for 3–5 roles. [Sources: S6, S9]
+Show onboarding checklist generator for a sample new joiner. [Sources: S6, S7, S9]
+Show SOP/KT search over sample files with source references and “no source found” behavior. [Sources: S5, S6, S9]
+Show Mukund/leadership exception digest with pending decisions only. [Sources: S6, S9]
+Can be mocked: live HRMS API, biometric API, job portal API, payroll integration, ERP sync, historical performance data, legal/statutory automation. [Sources: S5, S9]
+Data needed immediately: employee master sample, one week attendance export, role/designation map, manager map, backup map, leave/WFH/on-duty policy, 3–5 JDs, onboarding checklist, SOP samples, performance KPI format, approval matrix. [Sources: S6, S8, S9]
+Do not overclaim: no full HRMS replacement, no automatic payroll, no automatic disciplinary action, no live job portal automation unless API confirmed, no legal/statutory compliance automation, no employee monitoring rollout without policy/consent. [Sources: S5, S6, S9]
+Day 1–3 must include workflow validation, access confirmation, data source confirmation, owner/approver/backup validation, CRM/ERP-ready fields confirmation, API dependency classification, dashboard schema confirmation, production risk identification, role ownership validation, and analysis-file gap mapping relevant to WF-011. [Sources: S4, S6, S9, S11]
+Day 4–7 must produce the initial working prototype, CRM/Sheet/API data path where feasible, first HR capacity dashboard, first automation, first approval flow, first AI-assisted output, sample live workflow test, and first leadership visibility layer. Mock/sample data may be used only where access or API dependencies are pending, and must be clearly labeled. [Sources: S2, S6, S8, S9, S11]
+Production foundation acceptance by Day 7: validated sample data structure, dashboard schema agreed, routing table draft complete, at least one human approval path tested, fallback approach defined, and partner has classified every integration as live/API/CSV/mock/later. [Sources: S5, S9, S11]
+16. Day 8–14 Integrated Working MVP Expectations (formerly 14-Day MVP Expectations)
+Selected users: Rajendra Prasad / HR Manager, Naneshwar or current HR Executive, Mukund Prabhu, Hemchand/coordinator, and two managers from revenue-critical teams. Assumption / Needs Validation. [Sources: S4, S6, S9]
+Usable MVP: AppSheet/Sheets employee master, attendance import template, leave/WFH/on-duty tracker, onboarding checklist, role-backup matrix, JD/interview pack generator, SOP/KT retrieval, weekly performance summary, basic dashboard. [Sources: S2, S6, S9]
+Manual/semi-automated: job portal posting, live HRMS import, biometric export, candidate selection, salary/CTC approval, payroll approval, disciplinary communication, final performance decisions. [Sources: S5, S6, S9]
+Acceptance criteria: 90%+ sample attendance rows structured correctly; daily exception digest generated; sample new-joiner onboarding tasks created; 3+ JDs generated; 10+ SOP/KT questions answered with sources; dashboard shows attendance/onboarding/performance/backup; sensitive actions require human approval. [Sources: S8, S9]
+Exclusions: full HRMS, full ERP, payroll automation, legal compliance automation, autonomous firing/discipline, uncontrolled HR data exposure. [Sources: S5, S9]
+Day 8–14 must validate integrated workflow execution: selected-user testing, workflow-specific AI assistance, ClickUp/task/follow-up integration where feasible, exception routing, dashboard refinement, data quality checks, human approval testing, API registry validation, and CRM/ERP field validation. [Sources: S2, S5, S6, S9, S11]
+Integrated MVP should be operationally usable for selected users, not only presentable. It should support attendance exception review, onboarding task creation, SOP/KT retrieval, role-backup matrix, JD/interview pack generation, performance-pulse summary, and leadership exception digest with source and approval status. [Sources: S6, S8, S9, S11]
+Do not promise within Day 8–14: live HRMS write-back, automatic payroll, direct ERP posting, job portal automation without API confirmation, full compliance automation, autonomous HR actions, or unrestricted AI access to sensitive HR data. [Sources: S5, S6, S9, S11]
+17. Day 15–30 Production Readiness and Productivity Multiplication Sprint Expectations (formerly 30-Day Pilot Expectations)
+Users: HR Manager, HR Executive, 3–5 department managers, Mukund Prabhu/leadership reviewer, Finance/DCC payroll reviewer for exception pack only. [Sources: S6, S9]
+Workflow coverage: recruitment requisition-to-shortlist, attendance exception handling, onboarding checklist, SOP/KT retrieval, role-backup matrix, performance pulse for selected teams, payroll-readiness exception pack. [Sources: S6, S9]
+Data requirements: 30–60 days attendance history, employee master, active roles, manager/backup mapping, performance KPIs, leave/WFH/OD records, sample payroll exception rules, SOP metadata. [Sources: S6, S8, S9]
+Integration scope: CSV/manual import from HRMS/biometric/job portals initially; ClickUp task creation if API feasible; Google Workspace native integrations; no direct payroll writes. [Sources: S6, S9]
+Success metrics: 50%+ reduction in manual attendance report effort, 80%+ onboarding checklist completion before day 1, critical role backup coverage visible, underperformance alerts within 3–5 days, 100% sensitive actions human-approved. [Sources: S5, S9]
+Day 15–21 must focus on production hardening, real operational usage, cross-workflow integration checks, user training, KPI validation, escalation testing, fallback protocol testing, role ownership refinement, and golden journey QA testing. [Sources: S4, S5, S9, S11]
+Day 22–30 must complete production readiness review, command-center visibility, live operational handover, stabilization plan, productivity measurement, management reporting, partner sign-off checklist, next 60-day stabilization roadmap, and 75-day enterprise-scale readiness roadmap. [Sources: S1, S2, S9, S11]
+30-day success must be measured by operational adoption, not slides: HR users must be able to run the selected workflow scope, management must see exception dashboards, approvals must be auditable, fallback must be documented, and productivity impact must be measured against baseline effort. [Sources: S6, S9, S11]
+18. 90-Day Production Foundation Expectations — 30-Day Production Base + 60-Day Stabilization
+Production architecture: governed Google Cloud/Workspace environment with user roles, service accounts where needed, audit logs, and API/CSV fallback. [Sources: S2, S5, S9]
+Security/access: role-based access by HR, Finance, manager, leadership, SOP owner, data custodian; no broad HR data exposure through Drive/Gemini. [Sources: S2, S5, S9]
+Dashboards: HR command, attendance exception, onboarding readiness, recruitment pipeline, performance pulse, backup coverage, data quality, AI-agent performance, Mukund exception dashboard. [Sources: S6, S8, S9]
+API validation: Keka/GreytHR, biometric, ClickUp, job portals/ATS, payroll/ERP feasibility documented by partner. [Sources: S6, S9]
+Data quality governance: employee IDs, role IDs, owner/approver/backup, source fields, timestamps, approval logs, SOP versions, data custodian responsibilities. [Sources: S1, S2, S4, S9]
+Support model: admin owner, data custodian, agent supervisor, dashboard reviewer, escalation owner, issue log, release cycle, change approval. [Sources: S2, S9]
+60-day stabilization continuation: after the 30-day production base, partner and HKHT must harden access control, improve data completeness, refine dashboard KPIs, close false-positive exceptions, finalize API feasibility, stabilize ClickUp/task routines, document support model, and train users until the workflow is reliably run without daily intervention from Mukund Prabhu. [Sources: S2, S4, S6, S9, S11]
+75-day enterprise-scale readiness review: by Day 75, partner should demonstrate that WF-011 can connect to multi-workflow dashboards, common ID architecture, API registry, data quality scorecards, role ownership matrix, golden journey QA, institutional memory capture, and future multi-center packaging without redesign. [Sources: S1, S3, S5, S9, S11]
+19. 6-Month Enterprise Architecture Vision — 75-Day Enterprise-Scale Readiness and Beyond
+By six months, WF-011 should plug into the Hyderabad AI Revenue & Seva Growth Platform as a governed HR capacity module. It should integrate with HRMS/ERP for employee/attendance/leave/performance/payroll-exception records, with ClickUp/Workflow tools for tasks, with BigQuery/Looker for analytics, and with CRM only through governed staff assignment/capacity views. [Sources: S1, S5, S9]
+Integrated revenue engine support: revenue workflows should know whether telecalling, Yatra, donor, digital, and community teams have coverage, backups, onboarding completion, performance risks, and open vacancies. HR privacy data should not be exposed unnecessarily. [Sources: S1, S5, S9]
+Multi-center replication later: stable role templates, employee onboarding packs, SOP/KT libraries, approval matrices, training pathways, dashboards, and data-quality rules can become a national/multi-center playbook. Do not build multi-center rollout now; design so it can scale later. [Sources: S1, S3, S9]
+30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale: the six-month vision should be decomposed into an immediate production base, a stabilization period, and an enterprise-scale readiness checkpoint rather than delayed into an abstract long-term plan. The six-month architecture should then extend into deeper HRMS/ERP integration, BigQuery/Looker analytics, Vertex/Agent Builder orchestration, KCKE-linked training content, Media AI training assets, and WF-013-style packaging for other centers. [Sources: S1, S3, S5, S9, S11]
+Future national/multi-center replication: do not build multi-center rollout now, but design the Hyderabad module as a reusable package with center_id, configurable role templates, local approver mapping, SOP localization, training pathway versioning, dashboard views, and support/fallback playbook. [Sources: S1, S3, S9, S11]
+20. Expected Google Product Areas
+Recommended likely Google product areas, subject to partner validation:
+Gemini Enterprise / Workspace: Drive SOP search, Gmail drafts, Docs summaries, Calendar reminders, Sheets analysis, policy Q&A, manager digests. [Sources: S2, S9]
+Apps Script / AppSheet / Sheets: 7-day demo and 14-day MVP forms, import templates, checklists, status tracking, reminders, approval logs. [Sources: S2, S9]
+Google Cloud / Vertex AI / Agent Builder: multi-agent orchestration, governed prompts, tool use, retrieval, model controls, audit-friendly agent workflows. [Sources: S2, S9]
+Cloud Run / Workflows: scheduled HRMS/biometric imports, backend jobs, workflow orchestration, API mediation. [Sources: S2, S9]
+BigQuery / Looker Studio: production dashboards, trends, capacity analytics, data-quality monitoring, cross-workflow reporting. [Sources: S2, S9]
+Partner must validate what is possible in Gemini Enterprise alone versus what requires Google Cloud/custom build. [Sources: S2, S9]
+Partner must explicitly validate what is possible in Gemini Enterprise versus what requires Google Cloud, Vertex AI, Agent Builder, Cloud Run/Workflows, BigQuery/Looker Studio, AppSheet/Apps Script/Sheets, ClickUp, HRMS/ERP APIs, external vendor tools, or data cleanup before production use. [Sources: S2, S5, S9, S11]
+Expected product mapping must separate productivity-agent work from operational database work, ERP/HRMS integration, CRM linkage, KCKE retrieval, Media AI assets, analytics, and task execution. [Sources: S2, S5, S9, S11]
+21. Questions for the Implementation Partner
+1. What can be delivered and demonstrated in 7 days with current/mock data?
+2. What can be delivered as a usable 14-day MVP for selected HR and leadership users?
+3. What can be piloted in 30 days with real HR data and limited users?
+4. What becomes production-ready in 90 days?
+5. What is the recommended 6-month architecture?
+6. Which features are demo/mock only?
+7. Which features require APIs/connectors for HRMS/Keka/GreytHR, biometric system, ClickUp, job portals, ATS, payroll, ERP, CRM, WhatsApp, or voice vendor?
+8. Which features require CRM/ERP/data cleanup before implementation?
+9. Which features require external vendors or additional SaaS licenses?
+10. Which features require Gemini Enterprise?
+11. Which features require Google Cloud, Vertex AI, Agent Builder, Cloud Run, Workflows, BigQuery, or Looker Studio?
+12. Which features should not be promised in two weeks?
+13. What data do you need from HKHT immediately for demo and MVP?
+14. What licenses, regions, data residency options, security controls, service accounts, and access models are required?
+15. How will HR-sensitive data be protected from broad Gemini/Drive access?
+16. How will human approvals be enforced and audited?
+17. What are the expected costs for demo, MVP, pilot, production foundation, and 6-month architecture?
+18. What assumptions and exclusions are you making?
+20. What is the Day 1–3 validation plan for workflow evidence, owner/performer/approver/backup, source data, access, APIs, dashboard schema, production risks, and role-routing accuracy? [Sources: S4, S6, S9, S11]
+21. What is the Day 4–7 production foundation deliverable, and which parts are real data, CSV/import, live API, and mock/sample only? [Sources: S8, S9, S11]
+22. What is the Day 8–14 integrated working MVP, and which selected users will operate it? [Sources: S6, S9, S11]
+23. What is the Day 15–30 production-readiness plan, including hardening, training, KPI validation, fallback testing, golden journey QA, and handover? [Sources: S9, S11]
+24. What is the 60-day stabilization plan and Day-75 enterprise-scale readiness checklist? [Sources: S1, S3, S9, S11]
+25. What is the unified master data model and API registry for this workflow and its dependencies? [Sources: S5, S9, S11]
+26. How will WF-011 reduce Mukund Prabhu dependency measurably, and what baseline do you need from HKHT? [Sources: S6, S9, S11]
+27. How will institutional memory encoding be captured, approved, versioned and used safely by AI agents? [Sources: S6, S9, S11]
+28. What should not be promised in 2 weeks, and what must be treated as production-later even if shown with sample data? [Sources: S5, S9, S11]
+22. Expected Deliverables from Google / Implementation Partner
+1. Technical Requirements Document (TRD).
+2. Solution Architecture.
+3. Google Product Mapping.
+4. Agent Architecture.
+5. Integration Architecture.
+6. CRM/ERP/Data Architecture.
+7. Security and Access Model.
+8. Human Approval Architecture.
+9. Dashboard Architecture.
+10. API/Connector Requirements.
+11. Deployment Architecture.
+12. Licensing Requirements.
+13. Cost Estimates.
+14. Team Structure.
+15. Rollout Plan.
+16. Risks and Limitations.
+17. HKHT-side Dependencies.
+18. Data Requirements from HKHT.
+19. Assumptions and Exclusions.
+20. Feature classification table: buildable immediately, demo/mock only, requires our data, requires CRM/API integration, requires ERP later, requires custom Google Cloud build, requires Gemini Enterprise, requires Vertex AI, requires Agent Builder/agentic systems, requires Apps Script/AppSheet/Sheets, requires BigQuery/Looker Studio, requires external vendor tools, requires data cleanup, requires human approval design, should not be promised in two weeks.
+Additional accelerated execution deliverables required:
+30-Day Production Sprint Plan with Day 1–3, Day 4–7, Day 8–14, Day 15–21 and Day 22–30 checkpoints. [Sources: S1, S2, S9, S11]
+Production Readiness Checklist covering live usage, data path, dashboard visibility, approval routing, exception handling, role ownership, data quality, fallback and measurable productivity improvement. [Sources: S5, S9, S11]
+Unified Master Data and ID Contract for WF-011 and its cross-workflow links. [Sources: S5, S9, S11]
+API / Connector Registry with confirmed/unknown/mock/later classification and owner for each dependency. [Sources: S5, S9, S11]
+Role Ownership and Routing Matrix validated by HKHT before production routing. [Sources: S4, S6, S9, S11]
+ClickUp / task execution mapping where feasible and fallback workflow where not feasible. [Sources: S7, S9, S11]
+Leadership Command-Center Contribution showing how WF-011 feeds the single daily management view. [Sources: S1, S9, S11]
+Golden Journey QA Test Pack for HR capacity-to-revenue workflow support. [Sources: S1, S9, S11]
+Service Continuity / Fallback Protocol for automation/API/dashboard failure. [Sources: S5, S9, S11]
+60-Day Stabilization and 75-Day Enterprise-Scale Readiness Roadmap. [Sources: S1, S3, S9, S11]

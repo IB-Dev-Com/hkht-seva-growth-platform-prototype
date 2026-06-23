@@ -11,7 +11,8 @@ App.screens['wf006-relationships'] = (function () {
     var byType = U.group(edges, 'type');
 
     return el('div', {}, [
-      ui.pageHead('Relationship Intelligence', 'The "Follow-the-Devotee" graph — referrer, family and community links that turn isolated contacts into a network. Feeds next-best-action and cross-journey conversion.', [
+      ui.pageHead('Relationship Intelligence', 'The "Follow-the-Devotee" graph — referrer, family and community links that turn isolated contacts into a network. Feeds next-best-action and cross-journey conversion. Capture high-value context via a short post-meeting voice note (never secret recording).', [
+        el('button.btn', { onclick: voiceNote }, [el('span.ico', { text: '🎙️' }), 'Capture via voice note']),
         el('button.btn.btn-primary', { onclick: captureEdge }, [el('span.ico', { text: '＋' }), 'Capture relationship'])
       ]),
       el('div.grid.cols-4.mb-16', {}, [
@@ -99,6 +100,36 @@ App.screens['wf006-relationships'] = (function () {
   }
   function field(label, input) { return el('div.field', {}, [el('label', { text: label }), input]); }
   function sel(contacts, cb, val) { return el('select.select', { onchange: function (e) { cb(e.target.value); } }, contacts.slice(0, 30).map(function (c) { var o = el('option', { value: c.id, text: c.name }); if (c.id === val) o.selected = true; return o; })); }
+
+  // Preacher Relationship Capture Agent — voice note → structured update → approval
+  function voiceNote() {
+    var s = store.get();
+    var cid = (s.donors[0] || s.contacts[0]).contactId || s.contacts[0].id;
+    var m = ui.modal({
+      title: 'Capture relationship — voice note', subtitle: 'Post-meeting note (1–2 min) · human-approved before saving',
+      body: el('div', {}, [
+        field('Contact', sel(s.contacts, function (v) { cid = v; }, cid)),
+        el('div', { style: { textAlign: 'center', padding: '18px', background: 'var(--surface-2)', borderRadius: '12px' } }, [
+          el('button.btn.btn-icon.btn-lg', { style: { width: '54px', height: '54px', borderRadius: '99px' }, onclick: function (e) { e.currentTarget.classList.add('pulse'); ui.toast({ kind: 'info', msg: '🎙️ Recording… (simulated)' }); } }, '🎙️'),
+          el('div.t-xs.t-mut.mt-8', { text: 'Tap to record a short post-meeting note. No secret recording of the conversation itself.' })
+        ]),
+        el('div#vn-result.mt-12')
+      ]),
+      actions: [{ label: 'Cancel' }, { label: 'Transcribe & extract', variant: 'accent', onClick: function () {
+        var box = U.$('#vn-result'); if (!box) return false;
+        U.clear(box);
+        box.appendChild(ui.aiBlock('Gemini extracted (review before save)', [
+          ui.statline('Profession', 'Business owner (textiles)'),
+          ui.statline('Family', 'Spouse + 2 children'),
+          ui.statline('Seva inclination', 'Annadaan, Gau Seva'),
+          ui.statline('Next action', 'Invite to Janmashtami; propose ₹25,000 seva'),
+          ui.statline('Sensitivity', ui.badge('Donor-sensitive · approval required', 'amber'))
+        ]));
+        box.appendChild(el('button.btn.btn-success.btn-block.mt-12', { onclick: function () { store.actions.audit('Saved relationship note (voice)', 'data', cid, 'Approved post-meeting note'); ui.toast({ kind: 'success', msg: 'Relationship note saved after approval & logged.' }); m.close(); } }, '✓ Approve & save to relationship record'));
+        return false; // keep modal open
+      } }]
+    });
+  }
 
   return { render: render, title: 'Relationship Intelligence' };
 })();

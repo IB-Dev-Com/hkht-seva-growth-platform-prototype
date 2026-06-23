@@ -136,7 +136,19 @@ App.screens['wf006-contact-detail'] = (function () {
   function dataTab(c, src, camp) {
     var s = store.get();
     var audits = s.audit.filter(function (a) { return a.entityId === c.id || a.entityId === c.donorId; });
+    var edges = (s.relationships || []).filter(function (e) { return e.from === c.id || e.to === c.id; });
     return el('div.grid', { style: { gridTemplateColumns: '1fr 1fr', gap: '16px', alignItems: 'start' } }, [
+      ui.card({ title: 'Community & family', icon: '👪', body: [
+        ui.statline('Community_ID', c.centerId ? ui.idChip('COM-' + c.city.slice(0, 3).toUpperCase()) : '—'),
+        ui.statline('Family_ID', c.donorId ? ui.idChip('FAM-' + c.id.slice(4)) : '—'),
+        ui.statline('Gated community', c.city),
+        ui.statline('Relationship links', edges.length),
+        edges.length ? el('div.mt-8', {}, edges.slice(0, 4).map(function (e) {
+          var other = e.from === c.id ? e.toName : e.fromName, oid = e.from === c.id ? e.to : e.from;
+          return el('div.row.gap-6.t-xs', { style: { padding: '4px 0' } }, [ui.badge(e.type, 'teal'), el('a', { href: '#/wf006/contact/' + oid }, other)]);
+        })) : ui.note('info', 'No relationship links captured yet.', '🕸️'),
+        el('a.btn.btn-sm.btn-block.mt-8', { href: '#/wf006/relationships' }, 'Open Relationship Graph →')
+      ] }),
       ui.card({ title: 'Record fields (ERP-ready)', icon: '🗂️', body: [
         ui.statline('Contact_ID', ui.idChip(c.id)),
         ui.statline('Source / Source date', (src.label) + ' · ' + U.fmtDate(c.createdDate)),

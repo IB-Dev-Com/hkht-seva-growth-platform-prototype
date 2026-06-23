@@ -1,0 +1,208 @@
+WF-009 Finance / DCC / Payment / P&L – Google Partner Scope Alignment and Improvement Note
+Partner-facing scope clarification | Aligning WF-009 with the 30-Day Production Base, 60-Day Stabilization and 75-Day Enterprise-Scale Readiness path
+1. Purpose of This Note
+This note helps the Google Partner / implementation partner align their technical scope with HKHT’s intended AI for Seva architecture for WF-009 Finance / DCC / Payment / P&L.
+This is not a rejection of current work. It is not a request to add random new scope. It clarifies the intended architecture so the partner can classify, phase and strengthen the implementation plan correctly.
+Source basis: Latest Document B; HKHT GE Technical Scope; HKHT GE Technical Scope — Gap Analysis.
+2. Core Understanding Expected from the Partner
+WF-009 should not be reduced to a small isolated finance dashboard demo.
+WF-009 should become a production-aligned financial-control and donor-trust module of the Hyderabad AI Revenue & Seva Growth Platform.
+It must preserve common IDs, source tracking, approval routing, audit trail, dashboard visibility, CRM/ERP readiness and future scale.
+It must connect payment, receipt, donation, donor, Yatra, campaign, trust, approval and P&L records where applicable.
+It must protect human approval for financial, donor-sensitive and tax/receipt-related actions.
+It must help leadership see finance risk before donor complaints or month-end surprises.
+Source basis: Finance transcript; ERP transition evidence; GE Gap Analysis WF-009 section; latest Document B.
+3. Intended Architecture from the Beginning
+Core intended architecture | How partner should interpret it
+Architecture element | Expected understanding for WF-009
+Relationship intelligence | Finance events must become part of a donor/yatri/contact relationship timeline, not only a finance report.
+Predictive intelligence | Data model should support future campaign ROI prediction, donor propensity, Yatra margin/demand forecasting and anomaly detection.
+Real-time AI assistance | Selected finance/DCC staff should get AI help classifying issues, explaining variance and preparing next action; AI does not finalize sensitive actions.
+Institutional memory | Repeated finance decisions, correction rules, approval criteria and donor issue handling should become reusable guidance.
+KCKE source-grounding | Use only for donor narratives or source-grounded devotional messaging. Do not use for payment/receipt/task/approval truth.
+Media AI | Only relevant for future donor impact media or Yatra/campaign storytelling. It is not the finance system.
+CRM/DBMS | Operational relationship truth: Contact/Donor/Yatri history, source tracking, follow-up, relationship events.
+ERP | Future structured operational/financial truth: receipts, payments, approvals, vendor/PO, accounting, finance records.
+Gemini Enterprise | Workspace productivity: summaries, drafting, Q&A over approved docs/sheets, staff-assist workflows.
+Vertex AI / Agent Builder / ADK | Production-grade agents for reconciliation, matching, anomaly detection and stateful orchestration where GE is not enough.
+BigQuery / Looker Studio | Analytics and intelligence layer for finance dashboards, P&L, ROI, exceptions and leadership command center.
+ClickUp/task governance | Where applicable, unresolved finance actions and partner dependencies should become owned tasks.
+Leadership command center | WF-009 must contribute finance risk, revenue/P&L, approval and exception indicators.
+WF-013 readiness | Finance template, schema and dashboard should be reusable after Hyderabad stabilizes.
+
+Source basis: ; Important Upgrades - Claude; KCKE/Media/CRM/ERP Dependency Map; GE Gap Analysis; latest Document B.
+4. Scope Alignment with Latest Document B
+The latest WF-009 Document B should be read as a 30-Day Production-Ready Implementation Brief. Production readiness does not mean every long-term enterprise feature must be completed in 30 days. It means the workflow has a stable production base, validated data path, approval routing, dashboard visibility, owner routing, fallback process and integration contract.
+Timeline | Partner interpretation | Classification required
+Phase | Meaning for WF-009 | Expected partner classification
+Day 1–7 Production Foundation Sprint | Validate workflow, access, data, owners, fields, risks; build first working prototype and dashboard. | What is sample/mock vs real export/API-ready.
+Day 8–14 Integrated Working MVP | Selected users test issue intake, receipt validation, reconciliation queue, approval flow and dashboard. | What users can actually use and what remains manual.
+Day 15–30 Production Readiness Sprint | Controlled live or near-live usage with exception routing, audit trail, fallback and productivity measurement. | What is Day-30 production base.
+60-Day Stabilization | Harden data, APIs, dashboards, adoption, training and support model. | What stabilizes after initial go-live.
+75-Day Enterprise-Scale Readiness | Prepare platform integration, leadership command center contribution, reusable templates and WF-013 readiness. | What becomes enterprise-scale ready vs future roadmap.
+
+Source basis: Latest Document B 30-day realignment sections.
+5. Scope Alignment with HKHT GE Technical Scope vs Gap Analysis
+Alignment area | Covered | Improvement needed
+Area | What is already covered | What needs stronger alignment
+GE Technical Scope | Recognizes WF-009 as Custom/P8 and production requirement for payment reconciliation + audit/controls as deterministic ADK services, with BigQuery/DB path. | MVP should not remain only a dashboard/analyst agent over mock finance data; production base requires validated data path, approval flow, dashboard and integration contract.
+GE constraints | GE is internal-facing and staff-assist; no public/yatri-facing surface; HITL is supported; live integrations are out of MVP unless confirmed. | Partner must clearly classify GE-native vs custom ADK/Vertex/BigQuery/API requirements.
+Gap Analysis | Identifies need for finance to connect with Yatra, donor, campaign and payment workflows. | Payment status should update the right Yatra/donor record; receipt issues should be visible immediately; Yatra/campaign P&L must be connected.
+Cross-workflow continuity | Recognized as biggest gap across workflows. | WF-009 must use shared IDs and feed the full relationship journey.
+Dashboard layer | Technical scope mentions analytics; gap analysis asks for leadership view. | WF-009 should feed leadership command center, not remain isolated.
+ERP transition | Workflow evidence shows current transition issues. | Avoid unstable handoffs; use exception handling and fallback until APIs are validated.
+
+Source basis: HKHT GE - Technical Scope.docx; HKHT GE Technical Scope — Gap Analysis.docx; ERP transition evidence.
+6. Workflow-Specific Improvements Required in Partner Understanding
+Area | Possible gap | Correct understanding | Partner action | Phase | Dependency | Evidence
+Area | Current possible misunderstanding / gap | Correct intended understanding | Partner action needed | Phase | Dependency | Evidence from attached files
+Finance dashboard | Only analyst dashboard over mock data. | Dashboard is one part of a production financial-control module. | Show data path, owners, approvals, exception routing and audit log. | Day 7–30 | Sample data, dashboard schema | GE Technical Scope; Document B.
+Payment/receipt linkage | Payment data may be treated as isolated finance data. | Payment must connect to donor, Yatra, campaign, receipt and CRM relationship timeline. | Define IDs and write-back/read-back model. | Day 14–30 | CRM/DCC/ERP/payment data | GE Gap Analysis WF-009.
+ERP transition handling | Assume ERP data is stable. | ERP transition issues are active and donor-sensitive. | Build exception register, fallback and issue SLA tracking. | Day 7–30 | ERP issue categories and owner map | ERP transition file.
+Reconciliation | Deferred as future production only. | Day-30 base should have controlled reconciliation queue, even if CSV/export-based. | Classify CSV vs API reconciliation and acceptance metrics. | Day 14–30 | Gateway/bank/DCC exports | Document B; GE Technical Scope.
+P&L intelligence | Month-end narrative only. | Yatra/campaign/trust-wise P&L should move toward live or near-live visibility. | Define dashboard grain and refresh path. | Day 30–60 | P&L format, source mapping | Finance transcript; GE Gap Analysis.
+Human approvals | AI could be seen as action engine. | AI drafts/recommends; humans approve financial and donor-sensitive actions. | Implement approval gates and audit trail. | Day 7–30 | Role/RACI validation | Project governance; Document B.
+Role ownership | Route based on transcript names. | Current owner/performer/approver/backup must be validated. | Run owner validation and include fields in workflow. | Day 1–3 | Mukund Prabhu/HKHT confirmation | Role Ownership Correction Note.
+Leadership view | Workflow-only dashboard. | WF-009 must contribute to leadership command center. | Define summary KPIs and drill-down. | Day 30–75 | BigQuery/Looker path | GE Gap Analysis; .
+Future intelligence | Predictive/relationship intelligence seen as new scope. | It is part of intended architecture; Day 30 only preserves data for it. | Use future-ready IDs, event model and source tracking. | Day 1–30 | Master data model | Important Upgrades; .
+Fallback process | Assume automation always works. | Production base needs service continuity and manual fallback. | Document fallback for missing API, stale data and wrong AI output. | Day 15–30 | HKHT operations input | GE Gap Analysis.
+
+7. What the Partner Should Not Miss
+Common Contact ID / Donor ID / Yatri ID / Campaign ID / Yatra ID / Donation ID / Payment ID / Receipt ID / Task ID.
+CRM as relationship source of truth; ERP as validated finance/operations system of record.
+ERP-ready fields from Day 1 even if full ERP integration comes later.
+Human approval gates for finance, receipt, refund, tax, donor communication and exceptions.
+Audit logs for AI suggestions, human approvals and corrections.
+Dashboard visibility for finance users and leadership command center.
+Role ownership validation before routing.
+Fallback procedure if API/data sync fails.
+API registry for DCC, ERP, payment gateway, bank, CRM and ClickUp/task layer where relevant.
+Data quality checks and duplicate/mismatch handling.
+Golden journey testing across digital lead, CRM, Yatra/donor payment, receipt and follow-up.
+KCKE/Media AI boundaries: do not use them for operational finance truth.
+Future multi-center packaging through WF-013.
+Source basis: GE Gap Analysis cross-workflow areas; latest Document B; platform governance rules.
+8. Required Partner Classification
+For every WF-009 proposed feature, partner should classify it using the following categories:
+Required classification | Partner explanation needed
+Classification category | Meaning
+Already implemented | Exists in current build or demo.
+Included in current scope | Committed without additional dependency.
+Buildable immediately | Can be built with existing Google Workspace/GE/Sheet/AppSheet access.
+Day-7 demo | Shown in Production Foundation Sprint; may use sample/mock if marked.
+Day-14 MVP | Selected users can test the function.
+Day-30 production base | Controlled live or near-live usage with dashboard, owner, approval and fallback.
+60-day stabilization | Hardening, adoption, bugs, API maturity, data quality and training.
+75-day enterprise-scale readiness | Reusable architecture, command center contribution, advanced integration readiness.
+API-dependent | Needs DCC/ERP/payment/bank/CRM/ClickUp or other connector.
+Data-dependent | Needs HKHT sample/live data or master lists.
+HKHT approval-dependent | Needs owner, approver, security or process approval.
+Google license/product-dependent | Depends on GE, Vertex AI, Agent Builder, BigQuery/Looker, Data Insights availability.
+External vendor-dependent | Depends on payment gateway, bank, WhatsApp, voice or other non-Google vendor.
+Mock/demo only | Not production-use yet.
+Future roadmap | Important architecture path but not Day-30 commitment.
+Not recommended / not in scope | Should not be built now or is outside WF-009 scope.
+
+9. Expected Technical Scope Clarifications from Partner
+Technical scope area | Required clarification
+Clarification area | Partner should explain
+Architecture | How WF-009 fits into the full platform architecture and not as a separate tool.
+Google product mapping | What uses Gemini Enterprise, Apps Script/AppSheet/Sheets, Vertex AI/Agent Builder/ADK, BigQuery/Looker.
+GE vs custom boundary | What GE can do natively and what requires custom services.
+Data store | Where finance data, intermediate records, audit logs and dashboard data are stored.
+CRM/API integration | How donor/contact/campaign/Yatra IDs are read/written.
+ERP readiness | How payment, receipt, trust, PO, approval and P&L records are ERP-ready.
+Payment/DCC dependencies | Which payment gateway, DCC, bank and ERP APIs/exports are required.
+ClickUp/task governance | How unresolved issues and dependencies become owned tasks where relevant.
+KCKE/Media AI interface | Confirm boundary: only donor narratives/media stories, not finance truth.
+Access/security | Role-based access by finance, DCC, management, audit and dashboard reviewer.
+Audit trail | Where approvals, AI suggestions, corrections and user actions are logged.
+Support model | Who supports users, bugs, data issues and fallback process.
+Cost impact | Licenses, Google Cloud services, connectors and external dependencies.
+Handover plan | What HKHT receives by Day 30, 60 days and 75 days.
+
+10. Minimum Day-30 Production Base Expected
+Selected finance/DCC users using the workflow in controlled live or near-live operations.
+Validated data path for receipt/payment/finance exception records.
+Common IDs captured: Contact/Donor/Yatri/Campaign/Yatra/Donation/Payment/Receipt/Task as applicable.
+Dashboard showing receipt issues, suspense donations, reconciliation status, P&L summary and open exceptions.
+Approval queue for sensitive finance and donor-facing actions.
+Exception routing with owner, approver, backup and escalation person.
+Fallback procedure for missing API, stale data, wrong AI output or ERP transition issue.
+Audit trail for AI recommendations and human decisions.
+Sample golden journey test.
+Productivity baseline and first measurement.
+Next 60-day stabilization roadmap.
+Source basis: Latest Document B; GE Gap Analysis production readiness requirements.
+11. 60-Day Stabilization Expectations
+Adoption by finance/DCC users with training support.
+Bug fixing and feedback-driven refinements.
+Data quality improvement for receipt, source, trust, tax flag, payment and campaign fields.
+API hardening where access is confirmed.
+Dashboard refinement for operations and leadership.
+Approval discipline measured and improved.
+Fallback process tested and documented.
+Support rhythm established.
+KPI measurement: suspense reduction, issue closure time, manual correction reduction, escalation reduction.
+Scope cleanup and integration backlog updated.
+12. 75-Day Enterprise-Scale Readiness Expectations
+Scalable architecture path for WF-009 using CRM/ERP/BigQuery/Looker and production agents where needed.
+Multi-workflow integration with Yatra, Digital Marketing, Donor/CSR, Website/Payment links, DCC and Meeting Intelligence.
+Leadership command center contribution defined and operating.
+Advanced AI readiness for anomaly detection, predictive finance and recommendation logic.
+Vertex AI / Agent Builder / ADK production path classified.
+Reusable workflow template, schema, dashboard and governance pack for WF-013 multi-center replication.
+Open risks and dependencies tracked in API, data, decision and implementation registers.
+Source basis:  multi-center replication; GE Gap Analysis; latest Document B.
+13. Long-Term Roadmap Items
+Future roadmap item | How it relates | Phase note
+Long-term item | WF-009 relevance | Important note
+Devotee Intelligence Graph | Finance events become edges in the relationship graph. | Future roadmap; Day 30 preserves data compatibility.
+Donor/yatri propensity | Giving/payment/Yatra history helps rank future cultivation opportunities. | Future analytics after data quality improves.
+Predictive campaign intelligence | Predict donation/Yatra outcomes before spend. | Needs historical data and campaign linkage.
+Real-time copilot | Finance/fundraiser staff receive live context in calls/meetings. | Future custom build.
+AI Fundraiser Copilot | Uses finance and donor history to prepare donor meetings. | Tied to WF-007 and CRM maturity.
+Voice of the Devotee intelligence | Payment/receipt complaints become structured signals. | Requires communication integration.
+Automated content/media intelligence | Finance impact stories feed approved media/donor inspiration. | KCKE/Media AI boundary applies.
+Devotee Super App readiness | Payment/receipt/donation history could be surfaced to devotees later. | Future public-facing system, not GE MVP.
+AI Seva Marketplace | Personalized seva recommendations based on donor history. | Future relationship intelligence.
+Federated mission intelligence | Other centers learn from Hyderabad finance patterns. | WF-013 later.
+Digital twin / simulation | Scenario planning for campaign/Yatra revenue and P&L. | Future after data maturity.
+
+Source basis: Important Upgrades - Claude; .
+14. Partner Questions for Confirmation
+What is already built for WF-009 today?
+Which part is mock/demo only and which part can use controlled real data?
+What will be production-ready by Day 30?
+What data does HKHT need to provide immediately?
+Which APIs are required for DCC, ERP, payment gateway, bank, CRM and ClickUp/task layer?
+Which Google products are used: Gemini Enterprise, AppSheet, Apps Script, Vertex AI, Agent Builder/ADK, BigQuery, Looker Studio?
+What is Gemini Enterprise native versus custom build?
+Where will records be stored permanently?
+Where will audit logs be stored and who can view them?
+How do approval gates work for receipt, payment, refund, tax and donor communication?
+What is the fallback process if API sync fails or data is missing?
+How often will dashboards refresh and which KPIs will be shown?
+How will the solution avoid becoming a disconnected finance dashboard?
+How will future relationship intelligence and predictive intelligence be protected in the data model?
+How will role ownership, backup and escalation be validated before routing?
+What is the handover plan after Day 30 and the support plan for 60-day stabilization?
+What should not be promised in the first 30 days?
+Which costs, licenses and external vendor dependencies are still uncertain?
+16. Final Partner-Facing Summary
+HKHT appreciates the current progress and recognizes the value of the partner’s Gemini Enterprise and Google-stack approach. The main request is to align WF-009 with the intended architecture of the Hyderabad AI Revenue & Seva Growth Platform.
+Early execution may be small, but the architecture must remain platform-compatible from Day 1. WF-009 should be production-shaped with shared IDs, CRM/ERP readiness, human approval gates, audit trail, fallback process, dashboard visibility, and clear classification of mock versus production components.
+The partner is requested to classify gaps, dependencies, phases and handover commitments clearly so HKHT can approve the Day-30 production base, 60-day stabilization plan and 75-day enterprise-scale readiness path with confidence.
+Source basis: Latest Document B; GE Technical Scope; GE Gap Analysis; .
+Appendix: Evidence and Source Files Used
+Latest WF-009 Document B – 30-Day Production-Ready Accelerated Execution Brief
+Finance Workflow Overview_otter_ai.docx
+_Transition to New ERP Platform_ Key Issues_.docx
+HKHT GE - Technical Scope.docx
+HKHT GE Technical Scope — Gap Analysis.docx
+.docx
+Important Upgrades - Claude.docx
+HKHT_AI_Transformation_Analysis (1).html
+Project source files: Master Context Pack, Project Glossary, Role Ownership Correction Note, Folder Structure README
+Dependency/register evidence: KCKE/Media/CRM/ERP Dependency Map, Automation Interdependency Map, Workflow-to-Data Dependency Map, AI Automation Master Register, Use Case Master Register, Source Register
+Note: No DPDP-specific legal recommendations are added. Communication readiness fields such as DND/consent are mentioned only as operational communication governance where relevant.

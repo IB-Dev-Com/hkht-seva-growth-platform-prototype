@@ -48,6 +48,9 @@ The table below confirms which planned features are already built vs. partial vs
 | Decisions-required & attention/risk panels | Command Center | ✅ |
 | Per-center performance comparison | Command Center | ✅ |
 | Unified human-in-the-loop approvals queue + audit | Approvals | ✅ |
+| AI-agent performance dashboard (suggestions, approval/rejection, accuracy, hallucination flags, overrides, human-review queue, SLA) | AI Agent Performance | ✅ |
+| Source → revenue attribution (spend→lead→call→donation→payment/receipt→repeat; join keys) | Source → Revenue | ✅ |
+| Production readiness & golden-journey QA (sequencing gates, checklist, QA test cases, 30/60/75 roadmap) | Production Readiness | ✅ |
 
 ## WF-006 — CRM / DBMS / Data Governance
 
@@ -65,7 +68,8 @@ The table below confirms which planned features are already built vs. partial vs
 | API Registry & dependency watch (status/owner/blocker/fallback) | API Registry | ✅ |
 | Touchpoint intelligence (chronological timeline) | Contact detail | ✅ |
 | Segment & campaign-fit studio (source/lifecycle/tier/geo/lang, exclusions, retargeting seed) | Segment Studio | ✅ |
-| Preacher relationship capture (referrer/family/community edges) | Relationship Graph | ✅ |
+| Preacher relationship capture (referrer/family/community edges + post-meeting voice-note → structured update → approval) | Relationship Graph | ✅ |
+| Community / Family profile (Community_ID, Family_ID, gated community, links) | Contact 360 (governance tab) | ✅ |
 | Relationship Intelligence graph ("Follow-the-Devotee") + NBA | Relationship Graph | ✅ |
 | CRM sync & API orchestration (sync/retry/error queue/conflict) | CRM Sync | ✅ |
 
@@ -81,6 +85,7 @@ The table below confirms which planned features are already built vs. partial vs
 | Low-confidence routing to human review; human override | Call detail | ✅ |
 | Callback & follow-up scheduler (SLA, overdue, reassign) | Follow-up Tasks | ✅ |
 | WhatsApp follow-up (approved templates + delivery/reply log) | WhatsApp Follow-up | ✅ |
+| WhatsApp governance register (provider, DLT, category, opt-out, fallback, delivery monitoring) | WhatsApp Follow-up (governance tab) | ✅ |
 | Human escalation & relationship handoff (context pack) | Escalations | ✅ |
 | Voice script approval lifecycle (category-based approvers) | Voice Scripts | ✅ |
 | Voice dashboard + Voice of the Devotee objection aggregation | Voice Dashboard | ✅ |

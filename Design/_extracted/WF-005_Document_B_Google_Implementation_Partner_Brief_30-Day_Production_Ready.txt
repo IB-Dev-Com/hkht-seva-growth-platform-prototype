@@ -1,0 +1,419 @@
+DOCUMENT B — Google / Implementation Partner Brief
+WF-005 Online Communications / Digital Reception Desk — 30-Day Production-Ready Accelerated Execution Brief
+Audience: Google partner team, implementation partner leadership, solution architects, delivery team
+Important: This is not a TRD and not a request for a generic AI demo. It is a workflow-specific implementation briefing so the partner can produce the TRD, solution architecture, Google-stack mapping, API/integration architecture, deployment architecture, rollout plan, feasibility analysis, timeline, risks, costing, and phased proposal.
+
+1. Workflow Name and Platform Role
+Workflow: WF-005 Online Communications / Digital Reception Desk.
+Current role: receives and responds to online/social/call/WhatsApp/email/Google Business enquiries and reviews.
+Platform role: first-touch lead capture, reputation control, follow-up routing, and CRM-ready front door for the Hyderabad AI Revenue & Seva Growth Platform.
+Strategic rule: Start small in execution, start big in architecture, start immediately in data discipline, start revenue-first in priority, start human-governed in approvals, and start platform-compatible from day one.
+Source basis: Online Communication Workflow Review_otter_ai.docx, especially 00:31, 03:58-04:15, 05:27-06:37, 06:44-07:35, 08:16-09:27, 10:14-11:18. Mukund_Prabhu_Operations_Master_Context_Pack v0.5 / v0.2 Revenue Priority: North Star, WF-005 portfolio status, partner sprint model, ERP/data centralization, revenue-first principles. Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20.
+1A. 30-Day Production-Ready Accelerated Execution Re-Alignment
+This revision realigns WF-005 from a demo/MVP-only brief into a partner-facing 30-Day Production-Ready Accelerated Execution Brief for the Hyderabad AI Revenue & Seva Growth Platform.
+The original workflow structure, agent expectations, integration depth, human approval rules, CRM/ERP readiness, dashboards, and long-term platform ambition remain preserved. The brief should now be read as a production sprint document, not only as a demo note.
+WF-005 must not become an isolated reply tool. It must operate as the Digital Reception Desk module of a larger AI-first, CRM-centric, ERP-ready, dashboard-visible, human-governed, multi-workflow platform.
+Execution principle: start small in execution; start big in architecture; start immediately in data discipline; start revenue-first in priority; start human-governed in approvals; start platform-compatible in every workflow.
+The partner must align every build choice to a compressed path: 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale. Day 1–7 may still use mock/sample data where access is pending, but all data fields, IDs, approvals, dashboards, and handoffs must be production-shaped from the beginning.
+Source basis: Generated WF-005 Online Communications Blueprint sections 1-20; Mukund_Prabhu_Operations_Master_Context_Pack_v0.2_Revenue_Priority.docx; Project_Glossary.txt; KCKE_Media_CRM_Dependency_Map.docx; Workflow_to_Data_Dependency_Map_Updated.xlsx; Automation_Interdependency_Map.xlsx; Use_Case_Master_Register.xlsx; AI_HKHT_Seva_Automation_Master_Register.xlsx; HKHT_AI_Transformation_Analysis (1).html recommendations on AI-first redesign, platform architecture, unified master data, role validation, API registry, WhatsApp governance, leadership command-center visibility, fallback protocol, and 100x/1000x productivity levers. Recommendations from that analysis that are outside this workflow’s implementation scope are intentionally excluded.
+Sprint window | Production-ready expectation for WF-005
+Day 1–3 | Validate workflow scope, channel access, data sources, owner/performer/approver/backup/escalation person, dashboard reviewer, CRM fields/IDs, source taxonomy, FAQ/template status, API dependency status, approval rules, and production risks. Confirm Interakt/WhatsApp, Exotel/IVR, Google Business Profile, social, Gmail, CRM, ClickUp/task, and dashboard dependencies as buildable, mock-only, or blocked.
+Day 4–7 | Build the first working production-shaped queue using Sheets/AppSheet/Gemini/Apps Script or equivalent. Demonstrate CRM/Sheet/API data path, first dashboard, first automation, first approval flow, first AI-assisted draft/classification, sample live workflow test, and first leadership command-center visibility layer.
+Day 8–14 | Operate an integrated working MVP with selected users. Validate workflow execution, CRM/data path, dashboards, AI-assisted classification/drafting, human approval routing, exception handling, follow-up tasks, ClickUp/task integration where relevant, API registry updates, WhatsApp/voice/CRM dependency validation, and data quality checks.
+Day 15–21 | Harden for production usage: run real operational traffic where access is confirmed, test cross-workflow integration, train users, validate KPIs, test escalation/fallback flows, refine role ownership, and execute golden journey QA across WF-005 to WF-001/WF-002/WF-003/WF-006/WF-007/WF-009/WF-012/WF-014 handoffs.
+Day 22–30 | Complete production readiness review, command-center visibility, live operational handover, stabilization actions, productivity measurement, management reporting, partner sign-off checklist, next 60-day stabilization plan, and 75-day enterprise-scale readiness plan.
+Next 60 days | Stabilize adoption, data quality, API reliability, dashboard discipline, template governance, AI evaluation, role accountability, and support routines. Increase integration maturity without waiting for ERP completion.
+By 75 days | Reach enterprise-scale readiness for advanced platform integration: CRM relationship intelligence, operational analytics, cross-workflow command-center insights, KCKE/Media AI interfaces where relevant, and repeatable WF-005 template packaging for later multi-center adoption.
+
+1B. Production Readiness Definition
+For WF-005, production readiness does not mean full enterprise completion or full ERP integration. It means a live, controlled, human-governed Digital Reception Desk module that selected users can operate with real or validated data paths, visible dashboards, accountable ownership, and fallback procedures.
+Source basis: Generated WF-005 Blueprint sections 7-18; Project_Glossary.txt; KCKE_Media_CRM_Dependency_Map.docx; Workflow_to_Data_Dependency_Map_Updated.xlsx; HKHT_AI_Transformation_Analysis (1).html recommendations on production readiness, unified master data, role validation, command-center visibility, and failure/fallback protocol.
+Readiness criterion | WF-005 production-ready meaning
+Live operational usage | Selected users process real or approved sample enquiries through one controlled queue; no external auto-send unless governance approves category-level automation.
+Validated data flow | Each interaction produces Interaction ID, Contact ID/provisional contact, source, category, owner, status, next action, approval status, and audit trail.
+Dashboard visibility | Leadership, operational, revenue/conversion, data quality, and AI performance dashboards show backlog, delays, lead creation, exceptions, and Mukund-level decisions.
+Approval routing | Donor-sensitive, financial, public review, complaint, booking, devotional/philosophical, and high-risk replies require human approval.
+Exception handling | Unclassified, high-risk, overdue, API-failed, or unclear-owner cases route to named escalation paths with backup persons.
+Role ownership | Owner, performer, approver, backup, escalation person, dashboard reviewer, and data custodian are validated before production routing.
+Data quality checks | Duplicate contact check, missing source, missing owner, missing next action, outdated FAQ/template, and unresolved approval status are tracked.
+AI-assisted execution | AI classifies, drafts, summarizes, scores urgency/revenue intent, and recommends routing; humans control final high-risk communication.
+Cross-workflow compatibility | Donation/Yatra/membership/booking/follow-up enquiries hand off to WF-001/WF-002/WF-003/WF-006/WF-007/WF-009/WF-012/WF-014 with common IDs and source tracking.
+Fallback process | Manual intake and manual sending remain available when API, AI, or channel integration fails; outages are logged and shown on the dashboard.
+Golden journey testing | Test at least five end-to-end journeys, including Google review complaint, WhatsApp donation enquiry, Yatra enquiry, spiritual question, and booking/seva request.
+Measurable improvement | Track response time reduction, backlog reduction, lead capture increase, follow-up completion, AI draft acceptance, and Mukund Prabhu dependency reduction.
+
+1C. Accelerated Delivery Governance
+WF-005 requires accelerated delivery governance so the partner can execute rapidly without creating fragile or disconnected automation. Daily progress should focus on dependency removal, production-shaped data design, human approval reliability, and measurable operational adoption.
+Source basis: HKHT_AI_Transformation_Analysis (1).html recommendations on sequencing gates, role verification, API registry, WhatsApp governance, command-center visibility, fallback protocol, and cross-workflow QA; Role_Ownership_Correction_Note_May_2026.txt; Automation_Interdependency_Map.xlsx; Generated WF-005 Blueprint sections 14-20.
+Governance element | WF-005 expectation
+Daily checkpoint rhythm | Daily partner/HKHT review of completed build, blockers, access gaps, data gaps, approval gaps, dashboard gaps, and next-day acceptance targets.
+Issue escalation | Blockers are classified as HKHT access, partner build, API/vendor, CRM/data, template/content, approval, or role ownership issue.
+Dependency tracking | Maintain live dependency list for Interakt/WhatsApp, Exotel/IVR, Google Business Profile, social platforms, Gmail, CRM, ClickUp/task layer, DCC/payment, ERP, KCKE, and Media AI touchpoints.
+Owner validation | No production routing to a named person until owner, performer, approver, backup, and escalation route are confirmed. Transcript-derived names are Assumption / Needs Validation until validated.
+Partner responsibility | Provide build status, architecture notes, API status, security/access assumptions, limits, risks, demo/mock flags, fallback approach, and daily acceptance evidence.
+HKHT responsibility | Provide source data, FAQ/templates, role matrix, approval policy, channel access, CRM fields, dashboard requirements, and user validation feedback.
+Acceptance review | Each sprint window ends with tested output, data evidence, user feedback, unresolved blockers, and explicit go/no-go gate for the next layer.
+Sign-off process | Day 30 sign-off requires live usage evidence, dashboard evidence, approval evidence, fallback evidence, role evidence, and next 60-day stabilization plan.
+60-day stabilization continuation | Continue adoption, training, data quality, API hardening, template governance, AI evaluation, and dashboard discipline.
+75-day enterprise-scale readiness review | Validate whether the module can plug into the wider platform, leadership command-center, CRM intelligence, and future multi-center packaging.
+API/WhatsApp/CRM/ERP watch | No live integration is promised until API access, rate limits, auth, data fields, ownership, and failure behavior are validated.
+Failure and fallback protocol | Define manual data intake, manual reply sending, alternate owner route, queue monitoring, outage flag, and user communication procedure.
+
+1D. 1000x Productivity Alignment
+WF-005 contributes to the 1000x ambition by converting high-volume online communication from a scattered response function into a relationship-intelligence, revenue-routing, preaching-support, and operational intelligence module.
+The 30-day production base must therefore capture clean data, establish approval discipline, build dashboards, and create reusable patterns that later support 100x/1000x capabilities without rebuilding the foundation.
+Source basis: HKHT_AI_Transformation_Analysis (1).html 100x leap recommendations L01-L03, L07, L09-L15 where relevant to WF-005; Generated WF-005 Blueprint sections 2, 7, 10, 11, 13, 18; KCKE_Media_CRM_Dependency_Map.docx.
+1000x lever | WF-005 contribution
+Automation | Every enquiry becomes a ticket with source, owner, SLA, status, next action, and outcome instead of being answered and forgotten.
+AI assistance | AI classifies intent, drafts replies, summarizes calls/chats, flags revenue and risk, and reduces repetitive human effort.
+Agentic workflow | Agents can intake, classify, draft, create lead/task, route, monitor SLA, escalate overdue items, and update dashboards with human gates.
+Dashboard visibility | WF-005 feeds the leadership command-center with live enquiry volume, backlog, donation/Yatra leads, complaints, overdue follow-ups, and Mukund-level exceptions.
+CRM intelligence | Each online interaction enriches the contact journey: first enquiry, donation interest, Yatra intent, book interest, seva booking, complaint, and follow-up history.
+Source tracking | Every lead carries campaign source, call source, website source, Google/social/WhatsApp source, Yatra source, donor source, event source, and referral source where applicable.
+Relationship Intelligence Graph | WF-005 becomes a first-touch signal source for a later graph of contacts, donors, yatris, community relationships, referrals, family links, and influence paths.
+Voice of the Devotee engine | Aggregate WhatsApp, calls, Google reviews, social comments, and email themes to identify recurring visitor pain, website gaps, accessibility needs, festival confusion, and preaching opportunities.
+WhatsApp conversational commerce | Later, approved WhatsApp flows can support donation intent, Yatra enquiry, book interest, membership, and payment-link handoffs once WhatsApp API governance and approvals are validated.
+Behaviour-triggered micro-campaigns | Online signals such as repeat questions, page visits, Google reviews, or Yatra interest can trigger human-approved follow-up campaigns through WF-003/WF-002/WF-007.
+Follow-the-Devotee timeline | A relationship owner should later see a chronological journey from online enquiry to call, Yatra, donation, event, complaint resolution, and future cultivation.
+AI social proof engine | When appropriate and approved, online queries can be supported with matching testimonials, Yatra proof points, donor stories, or community participation evidence.
+Institutional memory encoding | Escalation decisions, approved responses, and Mukund Prabhu’s judgment patterns are encoded as decision trees/templates, reducing managerial chasing while preserving judgment.
+Media AI handoff | When a query pattern reveals need for FAQ reels, Yatra recap, festival explainer, or donor inspiration content, WF-005 routes the insight to WF-004/WF-003/Media AI with human approval.
+Reusable platform module | The same Digital Reception Desk pattern can later be packaged for other centers after Hyderabad stabilizes; WF-013/multi-center replication must define what is standard and what is local.
+
+1E. Cross-Workflow Integration and Platform Safeguards
+WF-005 must be designed as a platform-compatible module, not a standalone online-response tool. Each outbound handoff must preserve common IDs, source, owner, status, approval state, and next action.
+Source basis: Automation_Interdependency_Map.xlsx; Workflow_to_Data_Dependency_Map_Updated.xlsx; KCKE_Media_CRM_Dependency_Map.docx; HKHT_AI_Transformation_Analysis (1).html recommendations on unified master data, API registry, platform-level architecture, cross-workflow QA, and fallback protocol.
+Platform safeguard | WF-005 requirement
+Shared IDs | Use Contact ID, Donor ID, Yatri ID, Community ID, Family ID, Campaign ID, Event ID, Donation ID, Task ID, and Owner ID where applicable; create provisional IDs until CRM confirms master records.
+CRM source of truth | CRM/DBMS remains the relationship data backbone for contacts, donors, yatris, leads, source, follow-up, consent/DND, and conversion history.
+ERP-ready fields | Capture Created Date, Source, Approval Status, Payment Status, Receipt Status, Last Follow-up Date, Next Action, and Outcome in structured fields from Day 1.
+KCKE boundary | Use KCKE only for source-grounded Krishna conscious replies, devotional/philosophical answers, preaching, education, and donor narratives. Do not use KCKE for operational records.
+Media AI boundary | Use Media AI only for approved reels, videos, storyboards, Yatra/festival/donor media, and visual storytelling; it may consume KCKE-grounded narration but remains a separate pipeline.
+ClickUp/task layer | Where ClickUp is used as execution governance, WF-005 escalations and follow-ups should create or update tasks with owner, due date, source, and status.
+Leadership command-center | WF-005 must feed one management view showing enquiry health, lead creation, SLA, escalations, and high-value opportunities across workflows.
+API registry | All APIs/connectors must be registered with provider, access status, auth method, rate limits, cost model, owner, blocker status, fallback path, and expected go-live window.
+WhatsApp and voice readiness | Interakt/WhatsApp and Exotel/IVR use must be confirmed for template status, consent/DND status, export/API access, message/call limits, and failure handling before scaled usage.
+ERP transition caution | WF-005 should not promise payment/receipt confirmation unless the DCC/payment/ERP source has confirmed status and human approval; unstable financial handoffs must remain controlled.
+Golden journey QA | Test end-to-end journeys across online enquiry → CRM lead → callback/task → donation/Yatra/booking/spiritual reply → dashboard/reporting.
+Fallback process | If AI, API, WhatsApp, voice, CRM, or dashboard connection fails, use controlled manual intake, manual approval, and manual status update without losing auditability.
+
+1F. Relevant Analysis Recommendations Incorporated
+AI-first redesign mandate retained: WF-005 is not digitizing current message handling; it redesigns the Digital Reception Desk as a production-aligned platform module.
+Four-horizon planning is preserved but reinterpreted into Day 1–7 Production Foundation, Day 8–14 Integrated Working MVP, Day 15–30 Production Readiness, and 30-Day Base + 60-Day Stabilization + 75-Day Enterprise Scale.
+Revenue-first prioritization strengthened: donation, Yatra, membership, books, seva, booking, and donor-sensitive enquiries become CRM leads/tasks with source tracking.
+Mandatory human-in-the-loop design retained for public, donor-sensitive, financial, devotional/philosophical, booking, complaint, and exception replies.
+System separation retained: CRM/DBMS for relationship and operational records; ERP later for structured finance/operations; KCKE for source-grounded Krishna conscious knowledge; Media AI for approved media; Gemini/Workspace for productivity; Google Cloud/Vertex/Agent Builder for production agents.
+Unified master data model requirement added: common Contact/Donor/Yatri/Community/Family/Task/Event/Campaign/Donation IDs must be production-shaped from Day 1.
+WF-013/multi-center replication connection strengthened: WF-005 should become a reusable Digital Reception Desk module after Hyderabad stabilization.
+Role ownership validation strengthened because transcript-derived names may be unreliable; owner, performer, approver, backup, escalation person, dashboard reviewer, and data custodian must be confirmed before production routing.
+API registry and WhatsApp governance added as explicit delivery dependencies for Interakt/WhatsApp, Exotel/IVR, Google Business Profile, social channels, Gmail, CRM, DCC/payment, ERP, ClickUp/task layer, KCKE, and Media AI touchpoints.
+Leadership command-center contribution added so WF-005 feeds a single management view instead of creating a standalone dashboard silo.
+Failure/fallback and service continuity expectations added so the workflow remains operational when APIs, AI, channels, or dashboards fail.
+Cross-workflow QA and golden journey testing added for donation enquiry, Yatra enquiry, Google review complaint, spiritual question, and booking/seva request journeys.
+100x/1000x ideas incorporated where relevant: Voice of the Devotee engine, Relationship Intelligence Graph, Follow-the-Devotee timeline, WhatsApp conversational commerce, behaviour-triggered micro-campaigns, donor propensity signals, AI social proof, institutional memory encoding, and Media AI handoff for approved inspiration content.
+Recommendations from HKHT_AI_Transformation_Analysis (1).html that are outside this workflow’s implementation scope are deliberately excluded from this revised partner brief.
+2. Executive Seva Impact Summary
+Source basis: Online Communication Workflow Review_otter_ai.docx, especially 00:31, 03:58-04:15, 05:27-06:37, 06:44-07:35, 08:16-09:27, 10:14-11:18. KCKE_Media_CRM_Dependency_Map.docx v0.5: WF-005 requires CRM and KCKE, has optional/no Media AI dependency, and requires ERP-ready entities; human approval rules. Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20.
+Impact | Partner design implication
+Donation impact | Treat donation, life membership, cow/in-kind donation, books, seva, and event-booking enquiries as lead/opportunity records, not just messages.
+Yatra impact | Detect Yatra intent and route to WF-001/WF-002 callback and registration workflows with source tracking.
+Donor cultivation impact | Create/append contact history, preference, source, next action, owner, and follow-up status.
+Krishna consciousness outreach | Support accurate FAQ replies; use KCKE-grounded drafting with human approval for spiritual/philosophical replies.
+Mukund Prabhu burden reduction | Provide dashboard/exception digest; do not route routine queries to him by default.
+ERP/data centralization | Use ERP-ready IDs/fields from day one even in the 7-day/14-day prototypes.
+Multi-center readiness | Build category taxonomy, templates, dashboards, and data model so the module can be cloned later, without building multi-center rollout now.
+
+3. Management Brief for Leadership
+WF-005 is the digital front door of HKHT: every message can become a donation, Yatra, donor, volunteer, visitor, or preaching relationship.
+The current transcript confirms at least 5,000 annual enquiries, repeated questions, and no systematic enquiry database.
+The core opportunity is not reply automation; it is enquiry-to-lead-to-follow-up-to-conversion intelligence.
+The system must prevent wrong information by using approved templates, version control, and human review.
+The MVP must not become another disconnected tool; it must use common IDs, source tracking, workflow ownership, follow-up status, dashboards, and ERP-ready fields.
+Management value by Day 8–14 should be visible: queue, classification, draft reply, approval workflow, lead log, SLA dashboard, daily digest, selected-user operation, and CRM/data path validation.
+Long-term value is a reusable Digital Reception Desk module inside the Hyderabad AI Revenue & Seva Growth Platform.
+Source basis: Online Communication Workflow Review_otter_ai.docx, especially 00:31, 03:58-04:15, 05:27-06:37, 06:44-07:35, 08:16-09:27, 10:14-11:18. Mukund_Prabhu_Operations_Master_Context_Pack v0.5 / v0.2 Revenue Priority: North Star, WF-005 portfolio status, partner sprint model, ERP/data centralization, revenue-first principles. Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20.
+4. Current Operational Reality
+Source basis: Online Communication Workflow Review_otter_ai.docx, especially 00:31, 03:58-04:15, 05:27-06:37, 06:44-07:35, 08:16-09:27, 10:14-11:18. Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20.
+Area | Current-state understanding
+Trigger | Inbound queries through Facebook, Instagram, YouTube, LinkedIn, Google Business Profile, Google Maps, Google reviews, calls, WhatsApp, Telegram, and email.
+People involved | Hemchand/Hemshand, Sudhir/Sudhi/Shravan, Deepak, social media executive, Satish, telecallers/common-number responders. Exact spelling and RACI need validation.
+Tools used | FAQ/templates, WhatsApp, Telegram, email, Google Business Profile/Maps, social platforms, Interakt, IVR/Exotel, Google monthly reporting.
+Current steps | Receive query; employee checks FAQ/template/memory; replies; may coordinate or hand off; delays can occur on WhatsApp/email and get-back cases.
+Approvals | Formal approval workflow not described in transcript; human approval must be designed before external AI sending.
+Reports | Google monthly Business/Profile reports exist; no systematic internal lead/enquiry database confirmed.
+Pain points | Repeated manual answers, no central log, delayed follow-up, wrong information risk, unclear owner, revenue leakage, weak daily reporting.
+Leadership command-center contribution | WF-005 feeds top enquiry health, high-risk escalations, donation/Yatra lead signals, delayed follow-ups, channel performance, and Mukund-level exceptions into one executive view.
+Voice of the Devotee dashboard | Recurring question themes, complaint themes, accessibility issues, festival confusion, website gaps, and preaching content opportunities extracted from inbound communications.
+
+5. Current Bottlenecks and Productivity Loss
+Manual work: repeated FAQ-based replies consume human time.
+Follow-up leakage: WhatsApp/email and “get back to you” cases are delayed.
+Data fragmentation: no confirmed central enquiry/lead database exists.
+WhatsApp/social dependency: conversation history remains scattered across tools.
+Mukund Prabhu dependency: unclear ownership causes escalation ambiguity.
+Revenue leakage: booking/fundraising enquiries may lose attribution when informally routed.
+Missed preaching/donor/Yatra opportunities: intent is not systematically captured, scored, routed, and followed up.
+Source basis: Online Communication Workflow Review_otter_ai.docx, especially 00:31, 03:58-04:15, 05:27-06:37, 06:44-07:35, 08:16-09:27, 10:14-11:18. Role_Ownership_Correction_Note_May_2026.txt: validate current owner, performer, approver, backup, and do not finalize routing from old role files alone.
+6. Desired AI-First Future-State Vision
+Source basis: Project_Glossary.txt v0.5: deterministic automation, AI-assisted workflow, agentic workflow, HITL, CRM/DBMS, ERP, KCKE, partner brief horizons. KCKE_Media_CRM_Dependency_Map.docx v0.5: WF-005 requires CRM and KCKE, has optional/no Media AI dependency, and requires ERP-ready entities; human approval rules. Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20.
+Layer | Required future-state behavior
+Automated | Ticket/interaction ID, channel/source capture, duplicate detection, status, SLA timers, owner assignment, reminders, dashboard refresh, and template retrieval.
+AI-assisted | Intent classification, language detection, urgency/sentiment detection, draft replies, lead score, summary, suggested next action, FAQ gap detection.
+Agentic | Read enquiry, classify, check CRM, draft reply, create lead/task, assign owner, monitor SLA, escalate overdue, update dashboard.
+Human-approved | Donor-sensitive, financial, public review/complaint, booking confirmation, spiritual/philosophical, deity/media, CSR/HNI and any uncertain/high-risk response.
+Relationship Journey Timeline | Chronological interaction history across online enquiry, call, Yatra, donation, booking, complaint, spiritual question, and follow-up; future source: CRM/relationship intelligence layer.
+AI Agent Audit Log | Agent action ID, prompt/model version, source records used, draft, human edit, approver, approval time, sent status, error/fallback status; future source: BigQuery/audit store.
+API Registry Reference | Connector name, provider, owner, access status, auth method, rate limit, cost model, blocker status, fallback path, and go-live window; source: consolidated API registry.
+
+7. Expected Productivity Leap
+Source basis: Project_Glossary.txt v0.5: deterministic automation, AI-assisted workflow, agentic workflow, HITL, CRM/DBMS, ERP, KCKE, partner brief horizons. Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20.
+Level | Definition for WF-005
+2X control improvement | Central log, FAQ cleanup, owner matrix, pending/overdue report.
+10X workflow productivity | AI classification and draft replies with CRM lead staging and SLA reminders.
+30X revenue-operating leverage | Omni-channel queue, AI routing, lead scoring, downstream workflow handoffs, dashboard management.
+100X Hyderabad platform leverage | CRM identity resolution, KCKE grounded replies, predictive follow-up, BigQuery/Looker intelligence, reusable templates.
+1000X long-term contribution | Reach × conversion × donor lifetime value through multi-center digital reception standards and relationship memory.
+
+8. Expected AI Agents / Copilots
+Source basis: Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20. KCKE_Media_CRM_Dependency_Map.docx v0.5: WF-005 requires CRM and KCKE, has optional/no Media AI dependency, and requires ERP-ready entities; human approval rules.
+Agent | Purpose | Implementation expectations
+Unified Intake Agent | Capture all inbound queries into one queue. | Users: reception manager/data custodian. Inputs: channel exports/API/manual form. Outputs: interaction record. Data: timestamp, channel, sender, text/audio, platform ID. Tools: Interakt, Exotel, Gmail, GBP, social APIs/CSV, AppSheet. Approval: no approval for logging. Metrics: capture rate, capture latency.
+Identity & CRM Match Agent | Match sender to Contact/Donor/Yatri/Community/Family ID or create provisional contact. | Users: CRM/data team. Inputs: phone/email/social handle/name. Outputs: match, duplicate flag. Tools: CRM/DBMS, Sheets, BigQuery later. Approval: human review for uncertain merges. Metrics: match accuracy, duplicate reduction.
+Intent & Revenue Routing Agent | Classify enquiry and route revenue/preaching opportunities. | Users: reception manager/team leads. Inputs: message/transcript. Outputs: category, priority, owner, next action. Tools: Gemini/Vertex classifier, AppSheet queue. Approval: review high-risk categories. Metrics: classification accuracy, lead conversion, SLA compliance.
+FAQ Reply Copilot | Draft routine replies from approved templates. | Users: social executive, WhatsApp handler, telecaller. Inputs: enquiry + FAQ. Outputs: draft reply. Tools: Gemini Enterprise/Workspace, Docs/Sheets. Approval: mandatory initially. Metrics: draft acceptance rate, edit rate, response time.
+KCKE-Grounded Preaching Reply Agent | Draft source-grounded spiritual/philosophical replies. | Users: preacher/reviewer/content lead. Inputs: spiritual query. Outputs: source-grounded draft with reviewer note. Tools: KCKE/Vertex RAG later. Approval: mandatory human approval. Metrics: source citation quality, reviewer approval rate.
+Donation/Yatra/Booking Lead Agent | Convert high-value enquiries into downstream leads/tasks. | Users: donor/Yatra/booking teams. Inputs: classified interest. Outputs: CRM lead, follow-up task, handoff. Tools: CRM, AppSheet, Calendar, payment link later. Approval: booking/payment confirmations. Metrics: lead-to-callback, lead-to-donation, lead-to-registration.
+Review & Reputation Agent | Monitor reviews/comments and draft responses. | Users: Satish/social manager/reviewer. Inputs: review text/rating/comment. Outputs: sentiment, draft, escalation. Tools: Google Business Profile, social APIs. Approval: mandatory for public responses. Metrics: response time, rating/sentiment trend.
+Follow-Up & SLA Agent | Prevent “get back to you” leakage. | Users: assigned owners/managers. Inputs: open tickets, due dates. Outputs: reminders, overdue escalations. Tools: AppSheet, Gmail/WhatsApp notifications, Calendar, ClickUp/task system later. Approval: not needed for reminders. Metrics: overdue %, average resolution time.
+Manager Digest & Dashboard Agent | Summarize daily/weekly operational intelligence. | Users: Satish, Mukund Prabhu, HODs. Inputs: queue/CRM/review/call data. Outputs: digest, high-value alerts, risks. Tools: Looker/Sheets/BigQuery/Gemini. Approval: human action on insights. Metrics: exception closure, management time saved.
+API Registry | Partner must maintain a live API/connector register for Interakt/WhatsApp, Exotel/IVR, GBP, social, Gmail, CRM, DCC/payment, ERP, ClickUp/task, KCKE, and Media AI interfaces. | 
+Leadership command-center | WF-005 dashboard outputs must contribute to the unified management view rather than remain a standalone report. | 
+Fallback/service continuity | Each integration must define manual fallback, outage flag, retry policy, alternate owner route, and data reconciliation method. | 
+
+9. Human Role Redesign Expectations
+Source basis: Online Communication Workflow Review_otter_ai.docx, especially 00:31, 03:58-04:15, 05:27-06:37, 06:44-07:35, 08:16-09:27, 10:14-11:18. Role_Ownership_Correction_Note_May_2026.txt: validate current owner, performer, approver, backup, and do not finalize routing from old role files alone. Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20.
+Role/function | Future expectation
+Satish | Assumption / Needs Validation: Digital Reception Desk Manager and approval reviewer for routine/public communication queue.
+Social media executive | AI-supervised response operator for comments, DMs, and public post interactions.
+Deepak | Assumption / Needs Validation: WhatsApp group and postings-related query owner; ensure group enquiries become structured tickets/leads.
+Hemchand/Hemshand | Assumption / Needs Validation: systems/API/data coordination for channel access and export readiness.
+Sudhir/Sudhi/Shravan | Assumption / Needs Validation: booking/seva/event or call workflow performer; validate exact role before routing.
+Telecallers/common-number responders | AI-assisted reception operators; capture structured call outcomes, create callbacks, and escalate.
+Mukund Prabhu | Dashboard/exception reviewer, high-value donor/reputation escalation, not routine queue manager.
+New role: Data Custodian | Own data quality, dedupe, source tracking, template versioning, CRM field standards.
+New role: AI Quality Reviewer | Measure AI draft accuracy, wrong-info incidents, edit rate, approval compliance.
+Production hardening | Day 15–30 usage with selected real traffic, tested approvals, exception routing, dashboard monitoring, and documented fallback procedure.
+Golden journey QA | At least five end-to-end scenarios across enquiry, CRM lead, task/callback, donation/Yatra/booking/spiritual reply, and dashboard reporting.
+Productivity evidence | Before/after metrics for response time, backlog, lead capture, follow-up completion, AI draft acceptance, and Mukund Prabhu escalation reduction.
+
+10. Dashboard and Operational Intelligence Expectations
+Source basis: Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20. Mukund_Prabhu_Operations_Master_Context_Pack v0.5 / v0.2 Revenue Priority: North Star, WF-005 portfolio status, partner sprint model, ERP/data centralization, revenue-first principles.
+Dashboard | Outputs required
+Management dashboard | Total enquiries, open/overdue, high-risk escalations, high-value leads, Mukund-level exceptions.
+Operational dashboard | Queue by owner/channel/category/status/SLA; response time and backlog.
+Revenue/conversion dashboard | Donation/Yatra/membership/booking leads, callbacks, conversions, payment/receipt status where integrated.
+Data quality dashboard | Duplicate contacts, missing source, missing owner, missing next action, unapproved templates, consent/DND gaps.
+AI-agent performance dashboard | Classification accuracy, draft acceptance/edit rate, hallucination/wrong-info incidents, approval bypass attempts, uptime/API failures.
+
+11. CRM / ERP / Data Expectations
+Source basis: KCKE_Media_CRM_Dependency_Map.docx v0.5: WF-005 requires CRM and KCKE, has optional/no Media AI dependency, and requires ERP-ready entities; human approval rules. Project_Glossary.txt v0.5: deterministic automation, AI-assisted workflow, agentic workflow, HITL, CRM/DBMS, ERP, KCKE, partner brief horizons. Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20.
+Entity | Minimum fields and source-of-truth expectation
+Interaction / Ticket | Interaction ID, channel, platform message ID, sender/contact ID, text/transcript, category, priority, owner, SLA due, status, approval status. Source now: AppSheet/Sheets/CRM staging. Future: CRM/workflow DB + BigQuery.
+Contact / Person | Common Contact ID, Donor ID, Yatri ID, Community ID, Family ID where applicable; name, phone, email, social handle, city, language, consent/DND. Future source: CRM/DBMS.
+Source Tracking | Campaign source, event source, referral source, call source, website source, Yatra source, donor source, Google/social/WhatsApp source.
+Lead / Opportunity | Lead ID, contact ID, interest type, revenue flag, source, owner, stage, next action, due date, outcome.
+Donation / Payment Link | Donation ID, payment status, receipt status, campaign ID, Yatra ID, event ID, seva, trust, source. Future: DCC/payment/ERP integration.
+Follow-up / Task | Task ID, owner ID, next action, last follow-up date, priority, status, outcome, escalation person.
+Approval / Audit | Template ID, AI draft, human edit, approval status, approver, timestamp, sent status, prompt/model version.
+
+12. KCKE / Media AI Expectations, if applicable
+Use KCKE only for source-grounded Krishna conscious content, donor narratives, philosophical replies, preaching, education, festival meanings, or devotional content.
+Do not use KCKE for operational records such as contact status, payment status, inventory quantity, task status, follow-up status, approvals, or finance records.
+Media AI is optional/indirect for WF-005. Use it only when online communication triggers reels, videos, storyboards, Yatra/festival/donor media, or approved visual storytelling.
+Do not confuse Gemini Enterprise Workspace agents with Media AI pipeline capabilities.
+Source basis: KCKE_Media_CRM_Dependency_Map.docx v0.5: WF-005 requires CRM and KCKE, has optional/no Media AI dependency, and requires ERP-ready entities; human approval rules. Media_AI_Pipeline_Briefing_Note.docx: Media AI should remain a separate workflow track with human approvals and scene/source control when media content is involved. Project_Glossary.txt v0.5: deterministic automation, AI-assisted workflow, agentic workflow, HITL, CRM/DBMS, ERP, KCKE, partner brief horizons.
+13. Governance and Human Approval Expectations
+Source basis: KCKE_Media_CRM_Dependency_Map.docx v0.5: WF-005 requires CRM and KCKE, has optional/no Media AI dependency, and requires ERP-ready entities; human approval rules. Project_Glossary.txt v0.5: deterministic automation, AI-assisted workflow, agentic workflow, HITL, CRM/DBMS, ERP, KCKE, partner brief horizons. Online Communication Workflow Review_otter_ai.docx, especially 00:31, 03:58-04:15, 05:27-06:37, 06:44-07:35, 08:16-09:27, 10:14-11:18.
+Category | Approval rule
+Donor-sensitive | AI may draft; donor/relationship owner approves.
+Financial/payment | No AI confirmation of payment/receipt without DCC/payment/finance source and human approval.
+Public communication | Google review/social complaint responses require human approval initially.
+Philosophical/devotional | KCKE-grounded draft plus human reviewer approval.
+Deity/media | Route to media/content approval if image/video/public devotional asset is involved.
+CSR/HNI | Human relationship owner approval and escalation.
+HR/legal | Not expected in WF-005; escalate if such queries arrive.
+
+14. Integration Expectations
+Source basis: Mukund_Prabhu_Operations_Master_Context_Pack v0.5 / v0.2 Revenue Priority: North Star, WF-005 portfolio status, partner sprint model, ERP/data centralization, revenue-first principles. Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20.
+Integration area | Partner must classify
+Google Workspace | Gmail, Drive, Docs/Sheets templates, Calendar, shared inbox workflows.
+Gemini Enterprise | Workspace-side drafting, summarization, retrieval, manager digest; validate license requirements.
+Apps Script/AppSheet/Sheets | 7-day/14-day queue, approval, lead log, reminders, dashboards.
+Vertex AI / Agent Builder | Production classifiers, RAG, tool-using agents, evaluation, agent orchestration.
+Cloud Run / Workflows | API ingestion, event-driven routing, scheduled jobs, reliable retries.
+BigQuery / Looker Studio | Operational analytics store, dashboards, KPI layer, audit analytics.
+CRM APIs | Contact ID, donor/yatri matching, lead creation, dedupe, source tracking, consent/DND.
+ERP APIs | Later migration for validated payments, receipts, events, bookings, tasks, approvals.
+Payment gateway/DCC | Donation ID, payment status, receipt status, trust, campaign, seva linkage.
+ClickUp/task system | Escalations, owner tasks, deadlines, decision-linked follow-ups where relevant.
+WhatsApp/voice vendor | Interakt, Exotel/IVR access, API/export formats, recording/transcript rules.
+External tools | Use only where Google stack is insufficient; state cost, security, and ownership impact.
+
+15. Day 1–7 Production Foundation Sprint (formerly 7-Day Demo Expectations)
+Production-readiness alignment: Day 1–7 is not a disposable demo. It is the production foundation sprint for validated data shape, owner matrix, approval gates, source tracking, dashboard schema, and controlled sample/live workflow testing. Mock data may be used only where channel/API access is pending and must be clearly labelled.
+Source basis: Generated WF-005 Blueprint section 8; HKHT_AI_Transformation_Analysis (1).html recommendations on separating mock/demo from live readiness, API registry, role verification, and command-center visibility.
+Day 1–7 deliverable | WF-005 production foundation expectation
+Day 1–3 validation | Confirm channels, sample exports, FAQ/template library, owner matrix, approval categories, CRM fields/IDs, source taxonomy, dashboard schema, and API dependency status.
+Day 4–7 build | Working queue, CRM/Sheet staging table, first AI classification/draft output, approval workflow, SLA field, dashboard, and one sample live or controlled workflow test.
+Dependency labelling | Classify every channel/integration as live-ready, CSV/manual import, mock-only, blocked, or vendor/API pending.
+No overclaim rule | Do not claim full omni-channel integration, auto-send, CRM dedupe accuracy, KCKE production grounding, ERP/payment reconciliation, or multi-center rollout until validated.
+
+Build a production-shaped foundation using mock/current data in Sheets/AppSheet/Gemini/Apps Script, clearly labelling mock-only dependencies.
+Classify sample enquiries and show category, priority, sentiment, revenue flag, owner, next action.
+Draft replies from approved/mock FAQ.
+Show human approval queue and SLA dashboard.
+Show CRM lead staging with common Contact/Donor/Yatri/Community/Family ID placeholders and ERP-ready fields.
+Mock channel ingestion where APIs are not available.
+Do not overclaim full production integration, auto-send, CRM dedupe accuracy, KCKE production grounding, ERP, or multi-center rollout.
+Source basis: Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20. Project_Glossary.txt v0.5: deterministic automation, AI-assisted workflow, agentic workflow, HITL, CRM/DBMS, ERP, KCKE, partner brief horizons.
+16. Day 8–14 Integrated Working MVP (formerly 14-Day MVP Expectations)
+Production-readiness alignment: Day 8–14 must produce a selected-user working MVP, not a slide demonstration. Users should run real or controlled enquiries through intake, classification, draft, approval, lead/task creation, dashboard, and exception routing.
+Source basis: Generated WF-005 Blueprint section 9; AI_HKHT_Seva_Automation_Master_Register.xlsx WF-005 row; Workflow_to_Data_Dependency_Map_Updated.xlsx WF-005 data entities; HKHT_AI_Transformation_Analysis (1).html recommendations on platform architecture, API registry, WhatsApp governance, and go/no-go gates.
+Day 8–14 MVP deliverable | Expectation
+Operational testing | Selected users test channel imports/manual intake, AI classification, reply drafting, approval, sent-status update, lead/task handoff, and SLA follow-up.
+CRM/data path validation | Every revenue or preaching-relevant enquiry produces a provisional/confirmed contact record, source, owner, next action, and follow-up status.
+ClickUp/task integration | Where ClickUp is active, selected follow-ups and escalations should create/update tasks; otherwise create an export-ready task table with Task ID and owner.
+Human approval testing | Test approval routing for routine FAQ, public review, complaint, donation, Yatra, booking, and spiritual/philosophical categories.
+API registry validation | Update status for Interakt/WhatsApp, Exotel/IVR, GBP, social, Gmail, CRM, DCC/payment, ERP, ClickUp/task, KCKE, and Media AI touchpoints.
+Acceptance gate | Proceed to Day 15–30 only after selected users confirm usability, dashboard visibility, data quality fields, and fallback procedure.
+
+Selected users can operate an integrated AppSheet/Sheets/Gemini MVP with CRM/data path validation and human approval routing.
+Manual/CSV imports acceptable if APIs are not yet validated.
+AI classifies and drafts; humans approve/edit/reject before sending.
+Donation/Yatra/membership/booking enquiries create CRM lead staging and next-action tasks.
+Dashboards show queue, SLA, revenue leads, overdue cases, AI quality, data quality, and leadership command-center contribution.
+Exclusions: full omni-channel live integration, payment reconciliation, ERP integration, production auto-send, full KCKE, multi-center rollout.
+Source basis: Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20. KCKE_Media_CRM_Dependency_Map.docx v0.5: WF-005 requires CRM and KCKE, has optional/no Media AI dependency, and requires ERP-ready entities; human approval rules.
+17. Day 15–30 Production Readiness and Productivity Multiplication Sprint (formerly 30-Day Pilot Expectations)
+Day 15–30 converts the MVP into a production-readiness base. The focus is operational adoption, real usage where access is confirmed, cross-workflow handoffs, productivity measurement, user training, escalation testing, fallback protocol, and command-center visibility.
+Source basis: Generated WF-005 Blueprint section 10; Automation_Interdependency_Map.xlsx; HKHT_AI_Transformation_Analysis (1).html recommendations on cross-workflow QA, failure/fallback protocol, leadership command center, role verification, and Mukund Prabhu dependency measurement.
+Day 15–30 focus | WF-005 production-readiness requirement
+Operational adoption | Validated team members process selected real traffic with human approvals and dashboard monitoring.
+Productivity multiplication | Measure response time, backlog, AI draft acceptance, follow-up completion, lead capture, and Mukund Prabhu escalation reduction.
+Cross-workflow handoffs | Test WF-005 to WF-001/Yatra, WF-002/callback, WF-003/campaign, WF-006/CRM, WF-007/donor, WF-009/payment/DCC, WF-012/website, and WF-014/community flows.
+Golden journey testing | Run at least five end-to-end scenarios and log field continuity, owner continuity, approval continuity, and dashboard continuity.
+Fallback protocol | Test manual intake, manual reply approval, manual CRM/task update, and outage flag when API/AI/channel/dashboard connection fails.
+Handover | Partner provides production readiness report, unresolved blockers, operating SOP, training notes, support model, and next 60-day stabilization plan.
+
+Source basis: Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20. Mukund_Prabhu_Operations_Master_Context_Pack v0.5 / v0.2 Revenue Priority: North Star, WF-005 portfolio status, partner sprint model, ERP/data centralization, revenue-first principles.
+Pilot area | Expectation
+Users | Satish/validated manager, social executive, WhatsApp handler, one telecaller, donor/Yatra/booking handoff owners, data custodian.
+Workflow coverage | At least 3–5 channels via API/CSV/manual; core categories; lead creation; SLA; dashboard.
+Data requirements | FAQ templates, 1–3 months sample enquiries, owner matrix, CRM fields, consent/DND rules, channel export formats.
+Integration scope | At least one real channel export/import path, CRM staging, dashboard refresh, and notification flow.
+Success metrics | Capture rate, classification accuracy, draft acceptance, SLA compliance, lead callback, overdue reduction, wrong-info incidents.
+
+18. 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale: Production Foundation Expectations
+This section now represents the production base and continuation path: first 30 days create controlled go-live readiness; the next 60 days stabilize adoption, data quality, integrations, dashboards, and support; by 75 days the workflow should be ready to plug into the enterprise-scale platform layer.
+Source basis: Mukund_Prabhu_Operations_Master_Context_Pack_v0.2_Revenue_Priority.docx; KCKE_Media_CRM_Dependency_Map.docx; Folder_Structure_Readme.txt; HKHT_AI_Transformation_Analysis (1).html recommendations on production readiness, platform-level architecture, and 75-day enterprise-scale readiness.
+Validated architecture, access model, audit logging, API feasibility, and operational support model.
+Production-grade source tracking and common ID design.
+CRM integration path confirmed and implemented for staging/selected categories.
+BigQuery/Looker dashboard foundation or equivalent operational analytics store path.
+Human approval architecture and role-based access implemented.
+Data quality governance: dedupe, missing fields, consent/DND, source taxonomy, owner matrix, template versioning.
+Support model for API failures, manual fallback, prompt/template updates, and dashboard monitoring.
+Source basis: Mukund_Prabhu_Operations_Master_Context_Pack v0.5 / v0.2 Revenue Priority: North Star, WF-005 portfolio status, partner sprint model, ERP/data centralization, revenue-first principles. KCKE_Media_CRM_Dependency_Map.docx v0.5: WF-005 requires CRM and KCKE, has optional/no Media AI dependency, and requires ERP-ready entities; human approval rules. Folder_Structure_Readme.txt v0.5: project folder/storage model, register update protocol, partner material storage rules.
+19. 6-Month Enterprise Architecture Vision within the 30-Day Base + 60-Day Stabilization + 75-Day Scale Path
+The 6-month vision remains valid, but it should now be connected to the compressed production path: WF-005 establishes the 30-day base, stabilizes over the next 60 days, reaches enterprise-scale readiness by 75 days, and then matures into advanced CRM intelligence, KCKE-grounded reply capability, Media AI handoff, and multi-center-ready packaging.
+Source basis: Generated WF-005 Blueprint sections 11 and 18; Global_Hare_Krishna_Mission_OS_HKM_Hyderabad_Presentation.html; HKHT_AI_Transformation_Analysis (1).html recommendations on WF-013/multi-center replication, federated mission intelligence, relationship graph, and Follow-the-Devotee journey intelligence.
+WF-005 plugs into the Hyderabad AI Revenue & Seva Growth Platform as the first-touch intelligence and conversion-routing module.
+It should connect to the integrated revenue engine: WF-001 Yatra, WF-002 Voice Agent, WF-003 Digital Marketing, WF-006 CRM/DBMS, WF-007 Donor Cultivation, WF-009 Finance/DCC, WF-012 Website/Landing Pages, and WF-014 Community Outreach.
+It should support CRM identity resolution, KCKE-grounded devotional replies, BigQuery/Looker operational intelligence, Vertex/Agent Builder production agents, and ERP-ready migration.
+It should later become a reusable Digital Reception Desk template for national/multi-center replication, but the first build should focus on Hyderabad production readiness.
+Source basis: Mukund_Prabhu_Operations_Master_Context_Pack v0.5 / v0.2 Revenue Priority: North Star, WF-005 portfolio status, partner sprint model, ERP/data centralization, revenue-first principles. KCKE_Media_CRM_Dependency_Map.docx v0.5: WF-005 requires CRM and KCKE, has optional/no Media AI dependency, and requires ERP-ready entities; human approval rules. Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20.
+20. Expected Google Product Areas
+Likely Google Workspace/Gemini Enterprise: Gmail/Drive/Docs/Sheets drafting, retrieval, summarization, manager digest.
+Likely Apps Script/AppSheet/Sheets: immediate prototype/MVP queue, approval flow, reminders, dashboards, manual imports.
+Likely Vertex AI/Agent Builder: production classification, RAG, agent orchestration, evaluation, tool use.
+Likely Cloud Run/Workflows: connectors, event processing, retries, scheduled jobs.
+Likely BigQuery/Looker Studio: operational analytics store and dashboards.
+Partner must validate what is possible in Gemini Enterprise versus what requires Google Cloud/custom build.
+Source basis: Mukund_Prabhu_Operations_Master_Context_Pack v0.5 / v0.2 Revenue Priority: North Star, WF-005 portfolio status, partner sprint model, ERP/data centralization, revenue-first principles. Project_Glossary.txt v0.5: deterministic automation, AI-assisted workflow, agentic workflow, HITL, CRM/DBMS, ERP, KCKE, partner brief horizons.
+21. Questions for the Implementation Partner
+Source basis: Generated WF-005 Online Communications Blueprint in this chat, especially sections 1-20. Mukund_Prabhu_Operations_Master_Context_Pack v0.5 / v0.2 Revenue Priority: North Star, WF-005 portfolio status, partner sprint model, ERP/data centralization, revenue-first principles.
+What can be delivered in 7 days?
+What can be delivered in 14 days?
+What can be piloted in 30 days?
+What becomes production-ready in 90 days?
+What is the 6-month architecture?
+What is demo/mock only?
+What requires APIs/connectors?
+What requires CRM/ERP/data cleanup?
+What requires external vendors?
+What should not be promised in 2 weeks?
+What data do you need from HKHT immediately?
+What are cost, licensing, security, privacy, rate-limit, and support risks?
+What requires Gemini Enterprise, Google Cloud, Vertex AI, Agent Builder, Apps Script/AppSheet/Sheets, BigQuery/Looker, CRM/API, ERP later, or external vendor tools?
+How will human approval be enforced technically?
+How will AI draft, human edit, approval, and sent status be audit-logged?
+What is the 60-day stabilization plan and 75-day enterprise-scale readiness review for this workflow?
+How will the system measure reduction in Mukund Prabhu’s operational chasing and escalation load?
+What golden journey tests will prove cross-workflow compatibility with WF-001, WF-002, WF-003, WF-006, WF-007, WF-009, WF-012, and WF-014?
+What failure/fallback protocol will apply if WhatsApp, Exotel, CRM, AI, or dashboard access fails?
+How will the API registry and WhatsApp governance register be maintained during delivery?
+How will WF-005 feed the leadership command-center rather than create a separate silo dashboard?
+What will be production-hardened during Day 15–30, and what evidence will prove production readiness?
+What is the Day 8–14 selected-user operating plan, including support, feedback capture, and acceptance gate?
+Which Day 4–7 components will be live, which will be controlled sample data, and which will remain mock-only?
+What exact Day 1–3 access/data/owner/API confirmations are required from HKHT?
+How will you convert the 7-day demo into a Day 1–7 Production Foundation Sprint with production-shaped IDs, approvals, dashboards, and fallback paths?
+22. Expected Deliverables from Google / Implementation Partner
+Source basis: Mukund_Prabhu_Operations_Master_Context_Pack v0.5 / v0.2 Revenue Priority: North Star, WF-005 portfolio status, partner sprint model, ERP/data centralization, revenue-first principles. Folder_Structure_Readme.txt v0.5: project folder/storage model, register update protocol, partner material storage rules.
+Technical Requirements Document (TRD).
+Solution Architecture.
+Google Product Mapping.
+Agent Architecture.
+Integration Architecture.
+CRM/ERP/Data Architecture.
+Security and Access Model.
+Human Approval Architecture.
+Dashboard Architecture.
+API/Connector Requirements.
+Deployment Architecture.
+Licensing Requirements.
+Cost Estimates.
+Team Structure.
+Rollout Plan.
+Risks and Limitations.
+HKHT-side Dependencies.
+Data Requirements from HKHT.
+Assumptions and Exclusions.
+30-Day Production Readiness Plan and sign-off checklist.
+Day 1–3 validation checklist, Day 4–7 foundation evidence, Day 8–14 MVP acceptance evidence, and Day 15–30 production readiness evidence.
+API Registry and connector status sheet.
+WhatsApp/Interakt and Exotel/IVR governance/readiness note.
+Leadership command-center dashboard contribution design.
+Golden journey QA test plan and results.
+Failure/fallback and service continuity procedure.
+Mukund Prabhu dependency reduction KPI design.
+60-day stabilization roadmap.
+75-day enterprise-scale readiness roadmap.
+WF-013/multi-center packaging considerations for later replication.
+Appendix — Partner Feature Classification Required
+For every proposed feature, classify it as: buildable immediately; demo/mock only; requires HKHT data; requires CRM/API integration; requires ERP later; requires custom Google Cloud build; requires Gemini Enterprise; requires Vertex AI; requires Agent Builder/agentic systems; requires Apps Script/AppSheet/Sheets; requires BigQuery/Looker Studio; requires external vendor tools; requires data cleanup; requires human approval design; or should not be promised in 2 weeks.
+The classification must also identify whether each feature belongs to Day 1–7 Production Foundation, Day 8–14 Integrated Working MVP, Day 15–30 Production Readiness, 60-day stabilization, 75-day enterprise-scale readiness, or 6-month enterprise architecture.
+For every feature, the partner must state whether it is live-ready, selected-user-ready, mock-only, blocked by HKHT data, blocked by API/vendor access, blocked by role/approval validation, or blocked by CRM/ERP dependency.
+No proposed feature should be treated as production-ready unless it has validated data flow, human approval path, owner/back-up, dashboard visibility, auditability, and fallback procedure.
+Source basis: Mukund_Prabhu_Operations_Master_Context_Pack v0.5 / v0.2 Revenue Priority: North Star, WF-005 portfolio status, partner sprint model, ERP/data centralization, revenue-first principles. Project_Glossary.txt v0.5: deterministic automation, AI-assisted workflow, agentic workflow, HITL, CRM/DBMS, ERP, KCKE, partner brief horizons.
+Appendix — 30-Day Production Readiness Gate Checklist
+The partner must use the following gate checklist in addition to the original feature classification. The purpose is to prevent disconnected tools and ensure WF-005 is production-aligned from Day 1.
+Source basis: HKHT_AI_Transformation_Analysis (1).html recommendations on sequencing gates, API registry, WhatsApp governance, production fallback, cross-workflow testing, and platform-level architecture; Generated WF-005 Blueprint sections 15-20.
+Gate | Required evidence
+Day 1–3 validation gate | Channel/data/API/owner/approver/backup/CRM fields/dashboard schema/risk register confirmed or flagged Assumption / Needs Validation.
+Day 4–7 foundation gate | Working queue, AI classification/draft, approval flow, CRM/Sheet staging, first dashboard, and sample workflow test demonstrated.
+Day 8–14 MVP gate | Selected users operate the workflow; CRM/data path, human approval, exception routing, ClickUp/task handoff where relevant, and dashboard are tested.
+Day 15–21 hardening gate | Real usage, user training, KPI validation, escalation test, fallback test, and cross-workflow golden journey testing completed.
+Day 22–30 readiness gate | Production readiness review, leadership command-center visibility, handover, unresolved blockers, productivity evidence, and next 60/75-day roadmap delivered.
+Go/no-go rule | A feature cannot be called production-ready unless live data path, owner, approval, fallback, dashboard, audit, and support model are validated.
+

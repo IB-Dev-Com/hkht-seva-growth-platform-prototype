@@ -1,0 +1,549 @@
+DOCUMENT B — Google / Implementation Partner Brief
+WF-007 Donor / LLP / CSR Cultivation — 30-Day Production-Ready Accelerated Execution Brief
+Audience: Google solution architects, implementation partner leadership, delivery team, HKHT partner-review team Status: External Partner Briefing Draft Prepared: 26 May 2026 Workflow: WF-007 Donor / LLP / CSR Cultivation Strategic frame: Platform-compatible MVP module of the future Hyderabad AI Revenue & Seva Growth Platform.
+
+This document is not a TRD and is not a request for a generic AI demo. It is a workflow-specific, production-aligned implementation briefing for the partner to produce a TRD, solution architecture, Google-stack mapping, API/integration architecture, deployment architecture, feasibility analysis, costing, risk register and phased rollout proposal for a 30-Day Production Base, followed by 60-Day Stabilization and 75-Day Enterprise Scale readiness.
+Source basis: User instruction; MCP partner brief mandate; Folder README partner brief/TRD separation; generated WF-007 blueprint Sections 15–16; HKHT_AI_Transformation_Analysis (1).html strengths, gaps and 100x leap recommendations, excluding privacy-law-specific recommendations.
+30-Day Production-Ready Accelerated Execution Re-Alignment
+This WF-007 brief is now aligned to a 30-day production-readiness objective. The original workflow structure, partner-facing details, technical expectations, agent concepts, evidence basis, source rules, assumptions, dependencies and long-term architecture remain preserved; the brief should now be read as a Production-Ready Execution Model rather than only a demo/MVP note.
+WF-007 must operate as a production-aligned module of the Hyderabad AI Revenue & Seva Growth Platform. It must remain CRM-centric, ERP-ready, dashboard-visible, human-governed and cross-workflow interoperable from Day 1, even when early execution uses Sheets, AppSheet, Apps Script, Gemini Enterprise or mocked data paths while API access is being validated.
+The delivery path is: Day 1–7 Production Foundation Sprint, Day 8–14 Integrated Working MVP, Day 15–30 Production Readiness and Productivity Multiplication Sprint, followed by 60-Day Stabilization and 75-Day Enterprise Scale readiness. The partner must design the solution so early outputs do not become disconnected tools or throwaway prototypes.
+Relevant recommendations from HKHT_AI_Transformation_Analysis (1).html are incorporated into this brief, including AI-first redesign, revenue-first sequencing, cross-workflow data discipline, unified master data, API registry, WhatsApp governance, role ownership validation, leadership command center visibility, failure/fallback protocol, golden journey testing, institutional memory encoding and donor-cultivation productivity leaps. privacy-law-specific recommendations are intentionally excluded.
+Execution window | WF-007 production-readiness expectation | Partner classification requirement
+Day 1–3 | Validate donor workflow, data sources, owner/approver/backup, CRM fields and IDs, DCC/payment/campaign source paths, hospitality/dispatch dependencies, dashboard schema, API readiness, WhatsApp/voice/payment constraints and production risks. | Mark each feature as buildable immediately, data-dependent, API-dependent, CRM-dependent, ERP-later, external-vendor-dependent or demo/mock only.
+Day 4–7 | Create initial working prototype with CRM/Sheet/API data path, first donor dashboard, first recurring reminder, first approval flow, first AI-assisted donor summary, sample live workflow test and first leadership visibility layer. | Do not overclaim live API integration unless access is confirmed; provide fallback using migration-ready Sheets/AppSheet.
+Day 8–14 | Deliver integrated working MVP for selected users with Donor 360, voice/text-to-CRM, follow-up tasks, approval routing, dashboard refinement, data quality checks, ClickUp/task integration where relevant and API registry validation. | Classify remaining manual steps and define which are semi-automated pending API/CRM/vendor readiness.
+Day 15–21 | Production hardening: real operational usage, user training, KPI validation, escalation testing, role refinement, cross-workflow integration and golden journey QA across donor/campaign/payment/follow-up/dispatch touchpoints. | Confirm production-readiness blockers and fallback process for each integration.
+Day 22–30 | Production readiness review, command center visibility, operational handover, stabilization checklist, productivity measurement, management reporting, partner sign-off, 60-day stabilization roadmap and 75-day enterprise-scale readiness roadmap. | Submit production-readiness evidence, acceptance report and unresolved dependency register.
+Next 60 days | Stabilize data quality, adoption, API maturity, dashboard discipline, user feedback, approval SLAs, CRM cleanup and agent accuracy. | Provide support model, issue rhythm, data-quality governance and enhancement backlog.
+By 75 days | Enterprise-scale readiness: mature platform architecture, cross-workflow integration, leadership command center, reusable workflow module design and multi-center readiness without launching multi-center rollout prematurely. | Show how WF-007 plugs into platform-level architecture and WF-013 replication later.
+
+Production Readiness Definition
+For WF-007, production readiness means selected donor/LLP/CSR users can safely execute live operational work with validated data paths, visible dashboards, human approval gates and reliable fallback processes. It does not require every future enterprise integration to be complete, but it does require every live process to have a clear source of truth, owner, approval route, escalation path and audit trail.
+Source basis: User instruction; generated WF-007 blueprint Sections 6–13; KCKE–Media–CRM–ERP Dependency Map; HKHT_AI_Transformation_Analysis (1).html gaps G02, G08, G10, G12, G15, G18 and G20.
+Production-readiness criterion | WF-007 definition
+Live operational usage | At least one selected donor team can use the system for real donor follow-up, donor summaries, reminder review, approval routing and dashboard review.
+Validated data flow | Donor profile, donation history, owner, source, next action, payment/receipt status and follow-up data move through CRM/DBMS or a migration-ready Sheet/AppSheet path.
+Dashboard visibility | Leadership and workflow users can see donor pipeline, new vs repeat donors, recurring reminders, overdue actions, no-touch HNI/CSR prospects, campaign handoff and dispatch/thank-you status.
+Approval routing | Donor-sensitive messages, proposed ask amounts, CSR/HNI communication, finance/tax claims and devotional/philosophical content remain human-approved before external use.
+Exception handling | Missed appointments, failed payments, high-value donor inactivity, duplicate records, address issues, stalled commitments and API failures trigger clear owner-based escalation.
+Role ownership | Owner, performer, approver, backup, escalation person, dashboard reviewer and data custodian are validated before live routing.
+Data quality checks | Common IDs, duplicate checks, mandatory source tags, mandatory next action, approval status, owner field and payment status are checked before production handover.
+AI-assisted execution | AI can summarize, classify, recommend, draft and route; it cannot independently finalize donor-sensitive actions.
+Cross-workflow compatibility | WF-007 records can connect with WF-003 campaigns, WF-002 calling, WF-001 Yatra, WF-009 finance/DCC, WF-010 dispatch and WF-014 community outreach.
+Fallback process | Manual or semi-automated fallback is defined for CRM, WhatsApp, payment/DCC, courier, dashboard and AI-agent unavailability.
+Measurable productivity improvement | Baseline and Day-30 metrics show reduction in manual CRM entry, missed follow-up, management chasing and unassigned donor actions.
+Golden journey testing | At least one end-to-end donor journey is tested from campaign/community/Yatra source to CRM owner assignment, donation/payment status, follow-up, approval and prasadam/bahumana task.
+
+Relevant Analysis Recommendations Incorporated
+The following recommendations from HKHT_AI_Transformation_Analysis (1).html are incorporated because they directly strengthen WF-007 as a production-ready donor cultivation module. privacy-law-specific recommendations are excluded from this revised brief.
+Recommendation incorporated | How it is applied to WF-007
+AI-first redesign mandate | WF-007 remains a donor cultivation OS, not a digitized version of scattered WhatsApp/CRM/manual follow-up.
+Revenue-first prioritization | WF-007 remains in the P0 revenue cluster with Yatra, Digital Marketing, Voice Agent and Community Outreach.
+Human-in-the-loop design | AI drafts and recommends; human approval remains mandatory for donor-sensitive, CSR/HNI, financial and devotional communication.
+CRM/ERP/KCKE/Media AI separation | CRM/DBMS stores donor operations; ERP becomes future structured backbone; KCKE and Media AI support source-grounded content only.
+Unified master data model | Common Contact ID, Donor ID, Yatri ID, Community ID, Family ID, Campaign ID, Event ID, Donation ID and Task ID are required.
+API registry and dependency gates | Partner must classify CRM, DCC/payment, WhatsApp, voice, courier, ClickUp and ERP integrations before promising live functionality.
+WhatsApp governance | WF-007 requires consolidated WhatsApp Business API/template/volume/failure governance before scaled donor messaging.
+Role ownership validation | Transcript-derived names are not enough; owner, performer, approver, backup and escalation must be verified before production routing.
+Leadership command center view | WF-007 dashboards must feed one leadership visibility layer for revenue, donor pipeline, exceptions and Mukund Prabhu dependency reduction.
+Failure/fallback protocol | Every automation/API path must have an assigned fallback process for service continuity.
+Golden journey testing | The partner must test donor journeys across campaign/call/CRM/payment/follow-up/dispatch, not only isolated screens.
+Institutional memory encoding | Mukund Prabhu’s donor judgment, escalation logic, proposal principles and relationship knowledge must be progressively captured as approved guidance.
+100x donor-cultivation leaps | Relationship Intelligence Graph, donor propensity scoring, AI Fundraiser Copilot, behavior-triggered micro-campaigns, personalized donor content and Follow-the-Devotee timeline are included where relevant.
+
+1. Workflow Name and Platform Role
+Production sprint role: WF-007 must be delivered as a production-aligned donor cultivation module within the 30-Day Production Base. The partner must avoid building a disconnected donor automation and must instead align every screen, agent, dashboard, API path and fallback process with the Hyderabad AI Revenue & Seva Growth Platform.
+Workflow: WF-007 Donor / LLP / CSR Cultivation.
+Platform role: WF-007 is a donor relationship and revenue-cultivation module of the future Hyderabad AI Revenue & Seva Growth Platform. It must not become an isolated donor automation, spreadsheet workflow or disconnected chatbot.
+It manages donor/LLP/CSR cultivation, online donor handoff, donor hospitality, recurring donations, prasadam/bahumana follow-up and HNI/CSR pipeline control.
+It sits in the revenue cluster with WF-001 Yatra, WF-003 Digital Marketing, WF-002 Voice Agent and WF-014 Community Outreach.
+It consumes CRM/DBMS, DCC/payment, campaign, hospitality and follow-up data; it produces revenue dashboards, donor tasks, recurring giving intelligence and ERP-ready relationship data.
+Source basis: Master Context Pack v0.2/v0.5; AMR/Workflow Data Map as summarized in generated WF-007 blueprint Sections 1, 12, 18; KCKE–Media–CRM–ERP Dependency Map.
+2. Executive Seva Impact Summary
+Impact dimension | Expected effect
+Donation impact | Increase repeat giving, recurring donations, HNI/CSR cultivation, online-to-offline donor nurturing and donation anniversary conversion.
+Yatra impact | Link donors and yatris through mutual cultivation: donors invited to Yatra, Yatra participants invited into seva, families cultivated over time.
+Donor cultivation impact | Move from memory-based relationship management to structured donor journeys with owner, next action, approval status and escalation.
+Krishna consciousness outreach | Use KCKE-grounded narratives to present sevas with scriptural/source accuracy and devotional sensitivity.
+Mukund Prabhu burden reduction | Shift recurring follow-up, task visibility and routine donor summaries to dashboards/agents, preserving leadership time for strategy and high-touch exceptions.
+ERP/data centralization impact | Create ERP-ready Contact/Donor/Donation/Task/Source/Approval records from the MVP stage.
+Multi-center readiness | Standardize data model, agent patterns, approval rules and dashboards so the mature Hyderabad module can later be replicated.
+
+Source basis: DRM transcript; ODS transcript; DHP transcript; KCKE–Media–CRM–ERP Dependency Map; MCP; generated WF-007 blueprint Sections 2, 6, 10, 11.
+3. Management Brief for Leadership
+WF-007 is a P0 revenue engine because it converts contacts, online donors, hospitality visits, Yatras, festivals and CSR/HNI prospects into long-term donor relationships.
+The target is not a chatbot; the target is a donor cultivation operating system with CRM, reminders, dashboards, agents, approval gates and ERP-ready data.
+Every donation should create the next relationship action automatically: thank-you, receipt, prasadam/bahumana, follow-up, anniversary reminder, next-best seva and Yatra/community invitation.
+Management should see donor pipeline health, not only monthly collection: new vs repeat donors, no-touch HNIs, overdue commitments, campaign ROI, failed payment recovery and fundraiser productivity.
+AI should draft, summarize, recommend, classify and route; humans must approve donor-sensitive messages, seva amount proposals, finance/tax claims and devotional content.
+The first 7 days should create the production foundation, Days 8–14 should create an integrated working MVP, and Days 15–30 should harden the system for production readiness, user adoption, dashboard discipline and measurable productivity improvement.
+This avoids isolated automation by enforcing common IDs, source tracking, task ownership, approval status, revenue/payment links and ERP-ready fields from Day 1.
+Source basis: MCP revenue-first mandate; Project Glossary; KCKE–Media–CRM–ERP Dependency Map; generated WF-007 blueprint Sections 3, 6, 8, 9, 11, 12.
+4. Current Operational Reality
+Area | Current-state understanding
+Trigger | Need to maintain temple, expand preaching programs, promote sevas/festivals, cultivate donors, manage online donation campaigns, host donors/Yatras and develop CSR/HNI prospects.
+People involved | Fundraising devotees, donor-facing preachers, back-end/DCC/finance team, hospitality team, online/digital team, dispatch/prasadam team, supervisors/managers, Mukund Prabhu and leadership.
+Tools used | CRM/Hello Leads or current CRM, WhatsApp, DCC/Tanan/Tanaja ERP, courier/prasadam trackers, Google Sheets, payment gateways, landing pages, Meta/Google/YouTube Ads, SMS/RCS/WhatsApp tools.
+Current offline steps | Prospect sourcing; classification; assignment; calls/appointments; personal visits; seva proposal; donation; receipt; prasadam/bahumana; follow-up; recurrence attempt.
+Current online steps | Seva calendar; approval; creative/landing page/payment setup; ads/SMS/RCS/WhatsApp; payment; failed payment follow-up; receipt/prasadam; campaign ROI review.
+Current approvals | Sevas/promotions, donor-sensitive communication, proposed seva amount, finance/tax/payment issues, devotional/public content and HNI/CSR proposals require human approval.
+Current reports | DCC/finance monthly/daily collection reports; campaign dashboards; Google Analytics/payment gateway/source-based ROI tracking; management primarily sees monthly collection/net outcome.
+Current pain points | CRM update gaps, relationship memory in people, follow-up leakage, recurrence gaps, WhatsApp dependency, limited donor journey dashboard, CSR underdeveloped, Mukund dependency.
+
+Source basis: DRM transcript; DHP transcript; ODS transcript; AI Implementation Strategy transcript snippets; generated WF-007 blueprint Section 4.
+5. Current Bottlenecks and Productivity Loss
+Bottleneck | Observed loss | Partner design implication
+Manual work | Fundraisers manually capture contacts, call, visit, remember donor details and update/skip CRM entries. | Voice-to-CRM and structured update needed.
+Follow-up leakage | Donation anniversaries, birthdays, wedding anniversaries and last-touch reminders are not fully systematized. | Recurring Giving Agent required.
+Data fragmentation | Donor profile, donation history, DCC receipt, WhatsApp, courier/prasadam, hospitality and campaign data are fragmented. | Common data model and source-of-truth required.
+WhatsApp/spreadsheet dependency | Scale and reliability risks exist with non-official/fragile WhatsApp automation and manual Sheets. | Approved WhatsApp/vendor and governance required.
+Mukund Prabhu dependency | Leadership may be pulled into operational memory, escalations and review that dashboards/agents should surface. | Dashboard + exception management required.
+Revenue leakage | Existing donors may not become recurring; no-touch HNI/CSR prospects may lapse; failed payments need structured recovery. | Revenue Intelligence Agent required.
+Missed preaching/donor/Yatra opportunities | Online donors, donors visiting temple and Yatra participants are not always merged into one cultivation journey. | Platform-compatible workflow linkages required.
+
+Source basis: DRM transcript CRM/recurrence/voice-to-CRM/human approval passages; ODS transcript payment/campaign ROI/failure passages; DHP transcript hospitality/CSR passages; generated WF-007 blueprint Section 5.
+6. Desired AI-First Future-State Vision
+WF-007 should become a Donor Relationship Intelligence and Cultivation OS: a platform module that governs donor identity, source attribution, relationship history, next-best action, human approvals, revenue intelligence and future ERP migration.
+Classification | Partner expectation
+Deterministic automation | Reminders, task creation, status updates, birthday/anniversary/donation-anniversary triggers, approval routing, dashboard refreshes, source tagging.
+AI-assisted workflow | Donor summaries, voice note extraction, next-best-seva drafts, donor message drafting, campaign analysis, risk flags.
+Agentic workflow | Multi-step donor journey orchestration: read context, create tasks, draft messages, route approvals, update CRM, escalate no-touch/HNI/failed-payment cases.
+Human-in-the-loop | Donor-sensitive communication, proposed seva amount, HNI/CSR proposals, financial/tax claims, devotional/philosophical content, public/media outputs.
+Operational database/CRM | Source of truth for contacts, donors, follow-ups, ownership, source attribution, consent, conversion and donor profile.
+Analytics/dashboard | Revenue, recurrence, source conversion, follow-up health, HNI/CSR pipeline, productivity and AI-agent performance.
+KCKE/Media AI | KCKE for spiritual/source-grounded narratives; Media AI for approved donor/festival/Yatra media only; neither replaces CRM.
+
+Source basis: Project Glossary; KCKE–Media–CRM–ERP Dependency Map; generated WF-007 blueprint Sections 6, 11, 12.
+7. Expected Productivity Leap
+Level | Expected result | Example capabilities
+2X control improvement | Management sees what is happening and what is leaking. | Follow-up leakage dashboard, donor anniversary list, new vs repeat donors, overdue next actions.
+10X workflow productivity | Fundraisers spend less time on admin and more time in donor/preaching conversations. | Voice-to-CRM, donor 360 summary, auto-task creation, approved message drafts.
+30X revenue-operating leverage | Donor journeys run through agents and dashboards across data sources. | Recurring engine, HNI no-touch alerts, campaign-to-donor handoff, failed-payment recovery.
+100X Hyderabad platform leverage | Revenue operations become systematic and predictive. | Donor LTV, predictive recurrence, source-performance intelligence, cross-workflow revenue OS.
+1000X long-term contribution | Reach × conversion × recurrence × donor lifetime value × multi-center playbook. | Not to be promised in 2 weeks; design architecture now so future replication is possible.
+
+Source basis: MCP productivity mandate; Project Glossary; generated WF-007 blueprint Sections 2 and 10.
+1000x Productivity Alignment
+WF-007 contributes to the 1000x platform ambition by converting donor cultivation from person-memory and manual follow-up into a data-rich relationship intelligence engine. The 30-day production base must not attempt every advanced capability, but it must capture the IDs, source tags, events, approvals, tasks and outcomes needed for future 100x/1000x intelligence.
+Capability | WF-007 contribution to 1000x architecture | 30-day production-base requirement
+Relationship Intelligence Graph | Connects donors, yatris, families, community residents, referrers, campaign sources, sevas, visits, donations and follow-ups into one relationship view. | Capture common IDs, relationship edges, source tags and journey events; graph layer may be later.
+Donor propensity scoring | Ranks who should be contacted today based on history, anniversaries, campaign engagement, Yatra interest, seva interest and inactivity. | Capture donation dates, last touch, next action, campaign engagement and owner assignments cleanly.
+AI Fundraiser Copilot | Makes every fundraiser more prepared with donor summary, likely interest, suggested talking points, objection notes and next-best seva. | Deliver donor summary and next-action recommendation with human confirmation.
+WhatsApp conversational commerce | Allows donors to receive recommendations, payment links, receipts, dispatch status and event/Yatra invitations through approved conversational flows. | Validate WhatsApp API governance, templates, consent/DND, fallback and approval gates before scaling.
+Behavior-triggered micro-campaigns | Triggers timely messages based on anniversaries, prior seva, festival relevance, Yatra interest, failed payment or no-touch status. | Implement reminder and task triggers first; message sending remains approval-gated.
+Personalized prasadam / donor gifting | Connects donor gratitude, bahumana, prasadam and dispatch to retention and repeat giving. | Pass donor tier, promise, item, address, dispatch task and delivery status to WF-010 or fallback tracker.
+Voice of the Devotee intelligence | Converts donor feedback, objections and sentiments into insight for content, campaign and relationship strategy. | Capture structured post-call/visit notes and sentiment tags.
+Institutional memory encoding | Captures Mukund Prabhu’s donor judgment, escalation criteria, proposal logic and relationship principles as approved guidance. | Create fields/notes for exceptional cases, decision rationale and approved escalation patterns.
+AI social proof engine | Surfaces approved impact stories, donor testimonials, seva outcomes and credibility signals during cultivation. | Store approved content references and route donor narratives via KCKE/Media AI approval paths.
+Personalized video messages for major donors | Supports major donor retention through approved personalized festival, gratitude or Yatra-invitation media. | Capture HNI/CSR tier, key dates, approved message templates and Media AI handoff requirements.
+Follow-the-Devotee timeline | Creates a single journey from community touchpoint or campaign source to call, Yatra, donation, follow-up, hospitality and recurring giving. | Capture journey events with shared Contact/Donor/Yatri/Community IDs.
+
+Source basis: HKHT_AI_Transformation_Analysis (1).html 100x leap recommendations L01, L02, L03, L05, L07, L08, L09, L10, L12, L14 and L15; generated WF-007 blueprint Sections 7, 10, 12, 13 and 18.
+8. Expected AI Agents / Copilots
+Partner should propose feasible architecture and classify each agent capability by Day 1–7 Production Foundation Sprint, Day 8–14 Integrated Working MVP, Day 15–30 Production Readiness and Productivity Multiplication Sprint, 60-Day Stabilization, 75-Day Enterprise Scale readiness and 6-month enterprise architecture. Each agent must also be tagged as buildable immediately, demo/mock only, requires our data, requires CRM/API integration, requires ERP later, requires Google Cloud/custom build, requires Gemini Enterprise, requires Vertex AI, requires Agent Builder, requires Apps Script/AppSheet/Sheets, requires BigQuery/Looker Studio, requires external vendor tools, requires data cleanup, requires human approval design or should not be promised in 2 weeks.
+Donor 360 Agent
+Field | Expectation
+Purpose | Generate a relationship brief before donor contact or leadership review.
+Users | Fundraisers, donor manager, Mukund Prabhu, leadership reviewer.
+Inputs | Donor profile, donation history, last touch, seva interest, family notes, hospitality history, campaign source.
+Outputs | Donor summary, last/next action, risk notes, suggested relationship path.
+Data needed | Common Contact/Donor ID, donation records, task history, ownership, consent/DND, source tags.
+Tools/connectors | CRM/DBMS, Sheets/AppSheet fallback, Gemini Enterprise for summary, BigQuery/Looker later.
+Human approval points | Human review for HNI/CSR-sensitive use; no direct external send.
+Escalation logic | Missing owner, HNI no-touch, duplicate record, overdue action.
+Success metrics | Meetings with prepared brief; no-touch donors reduced; preparation time saved.
+
+Voice-to-CRM Agent
+Field | Expectation
+Purpose | Convert fundraiser voice/text notes into structured CRM updates.
+Users | Fundraisers, donor relationship managers.
+Inputs | Voice note, donor name/phone/ID, visit notes, proposed action, commitment, sentiment.
+Outputs | Structured note, follow-up task, next date, sentiment, escalation flag.
+Data needed | Donor ID, owner ID, contact history, task schema, allowed outcome codes.
+Tools/connectors | Mobile AppSheet/form, Gemini/Vertex transcription and extraction, CRM API or Sheets fallback.
+Human approval points | Fundraiser confirms extracted fields before save.
+Escalation logic | Unclear donor identity, sensitive promise, payment dispute, HNI/CSR flag.
+Success metrics | CRM update rate; extraction accuracy; minutes saved per visit.
+
+Recurring Giving Agent
+Field | Expectation
+Purpose | Turn one-time donors into recurring/renewed donors.
+Users | Donor care team, fundraising supervisor.
+Inputs | Prior donation dates, amount, seva, birthdays/anniversaries, campaign source, last touch.
+Outputs | Reminder tasks, draft renewal messages, escalation list, recurrence dashboard.
+Data needed | Donation ID, donor ID, date, amount, seva, payment status, consent, channel preference.
+Tools/connectors | CRM/workflow app, Apps Script for reminders, WhatsApp/email vendor after approval.
+Human approval points | Human-approved message before sending; amount proposal human-approved.
+Escalation logic | High-value renewal due, no response after threshold, failed payment.
+Success metrics | Repeat donor rate; renewal conversion; recurring donation count.
+
+Next-Best-Seva Agent
+Field | Expectation
+Purpose | Recommend donor-appropriate seva options and relationship path.
+Users | Fundraisers, donor manager, content/narrative steward.
+Inputs | Donor tier, past sevas, interest, upcoming festivals, seva catalogue, family events.
+Outputs | Suggested seva options, message/script draft, ask range, risk cautions.
+Data needed | Seva master, donation history, donor segment, approved benefits, approval status.
+Tools/connectors | CRM, seva catalogue, KCKE for spiritual grounding, Gemini/Vertex reasoning.
+Human approval points | Final seva amount and donor-facing proposal human-approved.
+Escalation logic | HNI/CSR ask, outdated seva package, finance/tax claim.
+Success metrics | Proposal acceptance; upgrade rate; approval pass rate.
+
+Hospitality Orchestration Agent
+Field | Expectation
+Purpose | Plan donor visits, tours and post-visit cultivation.
+Users | Hospitality coordinator, fundraiser, donor manager.
+Inputs | Visit request, donor tier, family size, date/time, itinerary preference.
+Outputs | Itinerary, host assignment, checklist, calendar event, post-visit follow-up.
+Data needed | Donor ID, visit date, host, assets/locations, hospitality status, post-visit outcome.
+Tools/connectors | Calendar, AppSheet, CRM, Drive templates.
+Human approval points | VIP/HNI itinerary and special arrangements approved by owner.
+Escalation logic | Slot conflict, HNI arrival, special prasadam/gift request.
+Success metrics | On-time reception; post-visit follow-up; visit-to-donation conversion.
+
+Campaign-to-Donor Handoff Agent
+Field | Expectation
+Purpose | Convert online donation/campaign data into donor cultivation actions.
+Users | Digital marketing team, donor care, DCC/finance.
+Inputs | Campaign ID, UTM/source, donation/payment data, failed payment list, landing page source.
+Outputs | Assigned donor follow-up, failed-payment recovery task, source-attributed donor segment.
+Data needed | Campaign ID, payment status, donor ID, source, consent, channel, receipt status.
+Tools/connectors | Payment gateway export/API, CRM, Sheets, BigQuery/Looker later.
+Human approval points | Human approval for high-value donor messages or financial claims.
+Escalation logic | Failed payment, duplicate donor, high value online donation.
+Success metrics | Online donors assigned; repeat donations; failed payment recovery.
+
+Donor Content & Narrative Agent
+Field | Expectation
+Purpose | Draft source-grounded donor messages, scripts and campaign narratives.
+Users | Content team, donor manager, digital marketing, fundraiser.
+Inputs | Seva catalogue, audience segment, language, campaign purpose, spiritual source request.
+Outputs | WhatsApp/email/SMS/RCS copy, donor script, poster/video brief, approval draft.
+Data needed | Approved seva facts, KCKE source snippets, audience tags, language requirements.
+Tools/connectors | KCKE, Gemini Enterprise/Vertex, Media AI for approved media pipeline.
+Human approval points | Mandatory devotional/philosophical/content approval before use.
+Escalation logic | Missing source, sensitive philosophical claim, deity/media issue.
+Success metrics | Draft-to-approval speed; source citation completeness; campaign conversion lift.
+
+Revenue Intelligence Agent
+Field | Expectation
+Purpose | Monitor revenue leakage, pipeline health and management alerts.
+Users | Leadership, Mukund Prabhu, donor HOD, finance/DCC.
+Inputs | Donation history, targets, commitments, follow-up tasks, campaign spends, source tags.
+Outputs | Dashboard alerts, forecast, gap analysis, recommended review agenda.
+Data needed | Revenue, pledge/commitment, source, owner, next action, payment/receipt status.
+Tools/connectors | BigQuery, Looker Studio, CRM, finance/DCC reports, Sheets MVP.
+Human approval points | Human decision for strategy, target changes, sensitive escalations.
+Escalation logic | Target gap, HNI no-touch, no owner, overdue commitment, campaign loss.
+Success metrics | Forecast accuracy; overdue reduction; revenue uplift; management review time saved.
+
+Source basis: Generated WF-007 blueprint Section 7 and Section 10; DRM transcript voice-to-CRM and recurring donation discussion; ODS transcript campaign handoff/payment recovery; DHP transcript hospitality flow.
+9. Human Role Redesign Expectations
+Role/function | Expected redesign
+Fundraisers / LLP preachers | Continue donor-facing cultivation; become AI-supervised relationship managers using donor 360, voice-to-CRM and next-best-action prompts.
+Back-end / DCC / finance | Continue receipt/payment/reconciliation authority; become data validation and finance integrity gate for dashboards and payment links.
+Hospitality team | Continue donor reception; use structured itineraries, checklists, post-visit follow-up tasks and conversion tracking.
+Digital marketing team | Continue campaign execution; become campaign-to-donor handoff and source-performance intelligence owner.
+Mukund Prabhu / leadership | Move from routine chase and memory dependency to strategy, HNI/CSR exception review, spiritual inspiration and dashboard-based governance.
+New role: Donor Data Steward | Own donor IDs, duplicate cleanup, consent, source tagging, mandatory fields and data quality dashboard.
+New role: AI Workflow Supervisor | Review agent outputs, monitor approval queues, test failures, coordinate partner issues and maintain SOPs.
+
+Source basis: Role Ownership Correction Note; Project Glossary role redeployment; generated WF-007 blueprint Section 14; DRM/DHP/ODS transcripts.
+10. Dashboard and Operational Intelligence Expectations
+Dashboard | Required visibility
+Management dashboard | Total donations, new vs repeat donors, recurring donors, HNI/CSR pipeline, expected vs actual, campaign ROI, no-touch HNIs, overdue commitments.
+Operational dashboard | Next actions by owner, overdue follow-ups, missed appointments, hospitality visits, prasadam/bahumana dispatch, failed-payment recovery.
+Revenue/conversion dashboard | Lead/source → call/meeting → donation → receipt → repeat donation → Yatra/community invitation → donor LTV.
+Data quality dashboard | Missing IDs, duplicate contacts, missing source, missing consent, no owner, no next action, stale records.
+AI-agent performance dashboard | Drafts generated/approved/rejected, extraction accuracy, reminders created, escalations triggered, unauthorized sends = zero.
+
+Source basis: Generated WF-007 blueprint Section 13; ODS transcript ROI/reporting discussion; DRM transcript monthly report/current management visibility discussion.
+11. CRM / ERP / Data Expectations
+The partner must design WF-007 as a platform-compatible data module. Even if the demo uses Sheets/AppSheet, the data model must be CRM/ERP-ready.
+Platform requirement | Required fields / outputs | Source of truth direction | Implementation note
+Identity spine | Common Contact ID, Donor ID, Yatri ID, Community ID, Family ID | CRM/DBMS now; ERP later | All agents and dashboards must use IDs, not name/phone-only matching.
+Source tracking | Campaign source, event source, referral source, call source, website source, Yatra source, donor source | CRM + campaign analytics + payment gateway | Required for conversion attribution and replication.
+Workflow ownership | Owner, performer, approver, backup, escalation person, dashboard reviewer, data steward | Workflow app / CRM task layer | Validate before production routing.
+Follow-up status | Last follow-up date, next action, owner, priority, status, outcome | CRM/task system | Core operating field for relationship continuity.
+Revenue/payment link | Donation ID, payment status, receipt status, campaign ID, Yatra ID, event ID, seva, trust, source | DCC/payment/ERP bridge | Finance/DCC validation required.
+Dashboard outputs | Leads, calls, registrations, donations, conversions, pending tasks, delays, escalations, revenue/P&L | Looker Studio / Sheets MVP / BigQuery later | Management control layer.
+ERP-ready fields | Contact ID, Campaign ID, Yatra ID, Donation ID, Event ID, Task ID, Owner ID, Payment Status, Source, Created Date, Last Follow-up Date, Next Action, Approval Status | CRM/ERP migration schema | Every MVP field should be migration-ready.
+Relationship Intelligence / journey timeline | Contact-to-donor-to-yatri-to-community-to-family journey events, referral edges, follow-up outcomes, content touchpoints | CRM/DBMS and analytics layer now; graph intelligence later | Use common IDs now so graph/propensity capability can be added without rework.
+Leadership command center contribution | Revenue exceptions, no-touch HNIs, overdue approvals, recurring reminder pipeline, donation/payment status, Mukund dependency indicators | Looker/Sheets dashboard now; BigQuery/Looker later | WF-007 must feed the single leadership visibility layer, not only local dashboards.
+Production fallback state | Fallback owner, fallback process, fallback tracker, last sync time, unresolved failure status | Workflow app/ClickUp/Sheet now; task layer later | Required for service continuity during API or automation failure.
+
+Required entities
+Entity | Representative fields | Current source | Future source of truth | Validation need
+Donor profile | Donor ID, contact info, family ID, tier, owner, source, consent/DND | CRM/WhatsApp/DCC/memory | CRM/DBMS → ERP later | Dedup, consent, owner validation
+Donation history | Donation ID, amount, date, seva, trust, receipt, payment status | DCC/payment/ERP | Finance/DCC → ERP | Payment/donor mapping
+Follow-up task | Task ID, donor ID, owner, next action, due date, status, outcome | CRM/Sheets/WhatsApp | CRM/task layer | Mandatory next action
+Seva catalogue | Seva ID, name, amount, benefits, source narrative, approval status | Docs/Drive/seva notes | Seva master | Approved amount/benefits
+Hospitality visit | Visit ID, donor ID, itinerary, host, date, status, follow-up | Calendar/WhatsApp | CRM/workflow app | Host/slot validation
+Campaign source | Campaign ID, platform, UTM, spend, donation IDs, ROI | Ads/payment gateway/Sheets | BigQuery/CRM analytics | Attribution validation
+Approval record | Approval ID, draft/proposal, approver, status, timestamp | Manual/WhatsApp | Workflow app/CRM audit | Approval bypass prevention
+CSR/HNI prospect | Company/person, CSR theme, source, stage, owner, notes | Manual research/referrals | CRM prospect module | Compliance and current owner
+Relationship / journey event | Event ID, Contact ID, Donor ID, Yatri ID, Community ID, event type, source, timestamp, owner, outcome | CRM/campaign/Yatra/community/task systems | CRM/analytics layer → graph layer later | Common ID mapping and duplicate control
+Approval record | Approval ID, donor/message/proposal ID, approver, status, timestamp, approval reason, exception flag | Manual/WhatsApp/email/workflow app | Workflow app/CRM → ERP/audit layer later | Approval bypass risk
+Fallback / exception record | Exception ID, workflow step, owner, severity, fallback action, resolution status, closure time | Manual escalation/Sheets/ClickUp | Workflow/task system → analytics layer later | Unclosed issues and unclear ownership
+
+Source basis: Workflow Data Map as summarized in generated WF-007 blueprint Section 12; KCKE–Media–CRM–ERP Dependency Map; Project Glossary CRM/ERP definitions; ODS/DRM transcripts.
+12. KCKE / Media AI Expectations, if applicable
+Use KCKE only for source-grounded Krishna conscious content, donor narratives, philosophical replies, preaching, education, festival meanings and devotional content.
+Do not use KCKE for operational records such as contact status, payment status, inventory quantity, task status, approval status, attendance, campaign spend or finance records.
+Use Media AI only for approved reels, videos, storyboards, Yatra/festival/donor media, CSR impact stories and visual storytelling.
+Media AI outputs must have scene-level control, exact source grounding, image/audio review and human approval before public/donor use.
+KCKE and Media AI may support donor communication, but CRM/DBMS remains the operational source of truth.
+Source basis: KCKE–Media–CRM–ERP Dependency Map; KCKE Knowledge Graph Briefing; Media AI Pipeline Briefing Note; Seva Opportunities note; generated WF-007 blueprint Sections 11 and 12.
+13. Governance and Human Approval Expectations
+Approval category | Partner must enforce
+Donor-sensitive approvals | AI may draft; human approves before external send, especially HNI/CSR/high-value donors.
+Financial approvals | Payment status, receipt, refund, tax exemption, reconciliation and DCC claims need finance-approved data.
+Public communication approvals | Campaign messaging, donor-facing landing copy and mass communication require approved templates/workflow.
+Philosophical/devotional approvals | KCKE-grounded content still requires authorized review before use.
+Deity/media approvals | Any visuals involving deities, temple spaces, spiritual identities or sensitive media require Media AI/deity review process.
+CSR/HNI approvals | Corporate proposals, ask amounts, benefits, meetings and commitments require owner/leadership approval.
+HR/legal approvals | If personal data, role changes, policy or legal claims are involved, relevant approval gates apply.
+Seva amount approval | AI may suggest options; final proposed seva amount is human-approved.
+
+Source basis: Project Glossary HITL; DRM transcript human approval discussion; KCKE–Media–CRM–ERP Dependency Map human approval rules; generated WF-007 blueprint Sections 6, 17.
+14. Integration Expectations
+Area | Expected use / question for partner
+Google Workspace | Drive/Gmail/Docs/Sheets/Calendar search and productivity where access permits; do not make Workspace the donor database.
+Gemini Enterprise | Donor summaries, meeting prep, draft messages, Drive/SOP search; partner to validate license/connectors/limitations.
+Apps Script / AppSheet / Sheets | 7-day demo and 14-day fallback MVP: donor master, reminders, forms, approval queue, dashboards.
+Vertex AI / Agent Builder | Production-grade agentic orchestration, extraction, routing, next-best-action and governance.
+Cloud Run / Workflows | Scheduled jobs, API middleware, event-based orchestration and connector logic.
+BigQuery / Looker Studio | Revenue, campaign, donor journey, recurrence, data quality and agent performance analytics.
+CRM APIs | Read/write donor profiles, tasks, contact history, source attribution, ownership, consent/DND.
+ERP APIs | Later migration/sync for finance, payments, receipts, approvals and master data.
+Payment gateway / DCC | Donation ID, payment status, receipt status, source/campaign mapping, failed payment recovery.
+ClickUp | Optional task governance integration if WF-008 is adopted for execution control.
+WhatsApp / voice vendor | Only approved WhatsApp Business API/vendor or compliant voice solution; no fragile unofficial automation.
+External tools | Use only where Google stack is insufficient; partner must specify security, cost, ownership and limitations.
+Consolidated API registry | Partner must provide status, access method, cost, blocker, owner and fallback for CRM, DCC/payment, WhatsApp, voice, courier, ClickUp, campaign and ERP APIs.
+Leadership command center | WF-007 dashboards must feed a single leadership visibility layer for donor pipeline, revenue leakage, exceptions and Mukund Prabhu dependency reduction.
+Golden journey QA | Test campaign/community/Yatra source → CRM donor record → owner assignment → follow-up → donation/payment → approval → dispatch/thank-you path.
+
+Source basis: Project Glossary; KCKE–Media–CRM–ERP Dependency Map; ODS transcript tools/payment tracking; DRM transcript WhatsApp/CRM/DCC; generated WF-007 blueprint Section 11.
+Cross-Workflow Integration and Platform Safeguards
+WF-007 must not operate as a standalone donor automation. It must consume and produce platform-compatible data so the donor journey remains visible across campaigns, voice calls, Yatras, community outreach, finance/DCC, prasadam/bahumana dispatch and future ERP migration.
+Source basis: KCKE–Media–CRM–ERP Dependency Map; Folder README platform/register model; HKHT_AI_Transformation_Analysis (1).html gaps G02, G04, G08, G10, G12, G14, G15 and G18; generated WF-007 blueprint Sections 11, 12 and 18.
+Safeguard | WF-007 implementation requirement
+Shared IDs | Use or generate Contact ID, Donor ID, Yatri ID, Community ID, Family ID, Campaign ID, Event ID, Donation ID and Task ID where applicable.
+CRM source of truth | CRM/DBMS remains the operational relationship system for donor identity, owner, follow-up, source, status and relationship history.
+ERP-ready fields | Every MVP field must map forward to ERP-ready structures: Contact ID, Campaign ID, Yatra ID, Donation ID, Event ID, Task ID, Owner ID, Payment Status, Source, Created Date, Last Follow-up Date, Next Action and Approval Status.
+KCKE boundary | Use KCKE for source-grounded Krishna conscious donor narratives, seva explanations and philosophical content; do not store payment/task/contact status in KCKE.
+Media AI boundary | Use Media AI for approved donor videos, festival/Yatra content, CSR impact stories and personalized messages with review controls; do not bypass content approval.
+ClickUp/task layer | Where WF-008 execution governance is adopted, donor follow-ups, unresolved issues, partner tasks and approvals may sync to ClickUp or a task layer.
+Leadership visibility | WF-007 must feed a leadership command center view for donor pipeline, revenue exceptions, high-value follow-ups, overdue approvals and Mukund Prabhu dependency reduction.
+API dependency tracking | CRM, DCC/payment, WhatsApp, voice, courier, ClickUp, ERP and campaign APIs must be listed in a consolidated API registry with status, owner, cost, blocker and fallback.
+Fallback workflow | If any automation or integration fails, defined manual/semi-automated fallback must preserve donor follow-up, payment visibility, approval gates and management reporting.
+
+Accelerated Delivery Governance
+The partner must run WF-007 as a daily accelerated production sprint with visible progress, dependency tracking and acceptance evidence. The goal is not only to show screens; it is to establish a reliable production base with data discipline, approval controls and operational adoption.
+HKHT will validate workflow reality, data availability, owner/approver roles, sample donor data, dashboard schema and acceptance decisions. The partner will validate technical feasibility, product mapping, integrations, security/access, deployment approach, fallback process and cost/licensing requirements.
+Governance element | Expectation
+Daily checkpoint rhythm | Daily progress checkpoint covering build status, data readiness, blockers, decisions needed, risks, user feedback and next-day commitments.
+Issue escalation | Escalate access/API/data/approval blockers within 24 hours to assigned HKHT owner and partner lead.
+Dependency tracking | Maintain a visible dependency register for CRM, DCC/payment, WhatsApp, voice, courier, ClickUp, ERP, KCKE and Media AI interfaces.
+Owner validation | No production routing until owner, performer, approver, backup, escalation person, dashboard reviewer and data custodian are confirmed.
+Partner responsibility | Provide TRD, architecture, product mapping, feature classification, risk register, delivery evidence, testing results and sign-off checklist.
+HKHT validation responsibility | Provide sample data, access decisions, approver names, workflow validation, source files, user testing feedback and acceptance sign-off.
+Acceptance review | Review at Day 7, Day 14, Day 21 and Day 30 using agreed acceptance criteria and production-readiness checklist.
+Sign-off process | Day 30 sign-off must include production readiness status, known gaps, operational owner, fallback process and 60-day stabilization plan.
+60-day stabilization continuation | Continue adoption, hardening, API maturity, dashboard discipline, data quality cleanup and agent tuning.
+75-day enterprise-scale readiness review | Assess whether WF-007 is ready to become a stable platform module for further workflows and future WF-013/multi-center packaging.
+API / WhatsApp / CRM / ERP watch | Track confirmed access vs assumptions; avoid promising live integration where access is not confirmed.
+Failure and fallback protocol | Define how donor follow-up, payment visibility, approval, dashboards and dispatch handoff continue if automation/integration fails.
+
+15. Day 1–7 Production Foundation Sprint (formerly 7-Day Demo Expectations)
+This section preserves the original 7-day demo scope but upgrades it into a production-foundation sprint. Mock/sample data may still be used where dependencies are pending, but all outputs must use production-intended fields, IDs, owner logic, approval rules and dashboard schema.
+Day 1–3 must focus on validation: workflow, data sources, access, owners, approvers, backups, CRM fields, API dependencies, dashboard schema, risks, role ownership and relevant analysis-file gap mapping. Day 4–7 must produce the first working donor data path, dashboard, automation, approval flow, AI-assisted output and sample live workflow test.
+Category | Expectation
+Show quickly | Donor 360 mock dashboard, voice-to-CRM extraction, recurring reminder engine, approval queue, follow-up leakage dashboard, hospitality checklist.
+Can be mocked | CRM data, DCC/payment data, WhatsApp/email drafts, courier status, CSR prospect samples, KCKE narrative sample.
+Data needed immediately | 100–500 anonymized donors, 12–24 months donation sample, seva catalogue, owner list, follow-up sample, DCC/campaign sample, consent/DND fields if available.
+Do not overclaim | No autonomous donor outreach, no full ERP, no full CRM integration without APIs, no predictive scoring from unclean data, no live WhatsApp blast without vendor/legal compliance.
+Day 1–3 production foundation | Validate workflow, access, data sources, owner/approver/backup, CRM fields/IDs, API status, dashboard schema, risks and role ownership before building live routing.
+Day 4–7 production foundation | Deliver first working donor data path, first dashboard, first automation, first approval flow, first AI-assisted output, sample live workflow test and first leadership visibility layer.
+
+Source basis: Generated WF-007 blueprint Section 8; Project Glossary 7-Day Demo; MCP ERP/POC rule.
+16. Day 8–14 Integrated Working MVP (formerly 14-Day MVP Expectations)
+This section preserves the original 14-day MVP scope but makes it an integrated working MVP for selected users. The MVP must validate workflow execution, CRM/data path, dashboards, AI-assisted actions, approval routing, exception handling and selected-user testing.
+Partner must clearly separate what is genuinely usable by selected users from what remains semi-automated, mocked or dependent on CRM/API/payment/WhatsApp/courier access.
+Category | Expectation
+Usable by selected users | 3–5 fundraisers, donor manager, DCC/finance representative, hospitality coordinator, leadership reviewer.
+Core MVP | CRM-lite donor master, Donor 360, Voice/Text-to-CRM, Recurring Reminder, Follow-up Task, Approval Queue, Revenue Dashboard, Online Handoff, Hospitality planning.
+Manual/semi-automated remains | Personal outreach, final ask amount, DCC reconciliation if no API, courier dispatch if no API, duplicate resolution, CSR validation.
+Acceptance criteria | High extraction accuracy in test notes, reminders generated, no external send without approval, dashboard available, selected users can operate the flow.
+Exclusions | Full ERP, full KCKE/media pipeline, autonomous fundraising, predictive LTV from poor data, live WhatsApp blast without compliance.
+Day 8–14 integrated MVP upgrade | Validate donor workflow execution with selected users, CRM/data path, dashboards, AI-assisted actions, human approval routing, exception handling, data quality checks and API registry status.
+14-day production caution | Do not present live WhatsApp, payment, CRM, courier or ERP integration as production-ready unless access, API behavior, security and fallback have been validated.
+
+Source basis: Generated WF-007 blueprint Section 9; Project Glossary 14-Day MVP Agent Sprint.
+17. Day 15–30 Production Readiness and Productivity Multiplication Sprint
+The Day 15–30 sprint must move WF-007 from working MVP to production readiness. The focus is operational adoption, dashboard discipline, exception handling, workflow interoperability, user training, KPI validation, failure/fallback process, role refinement, golden journey testing and measurable productivity improvement.
+Day 15–21 should harden production usage and cross-workflow integration. Day 22–30 should complete production-readiness review, leadership visibility, live handover, stabilization, productivity measurement, management reporting, partner sign-off and the next 60-day stabilization roadmap.
+Pilot dimension | Expectation
+Users | Expand from MVP group to all active fundraisers in one donor team plus DCC/hospitality/leadership reviewers.
+Workflow coverage | New donor entry, donor 360, voice-to-CRM, follow-up tasks, recurring reminders, campaign handoff, hospitality planning, dispatch SLA visibility.
+Data requirements | Clean donor IDs for pilot set, donation history, source tags, owner mapping, consent/DND, task statuses, basic payment/receipt status.
+Integration scope | At minimum import/export with CRM/DCC/payment; direct API if available; Sheets fallback must be migration-ready.
+Success metrics | CRM update rate, repeat-donor reminders acted on, overdue follow-ups reduced, donor meetings with briefs, failed-payment recovery, dashboard usage.
+Day 15–21 hardening | Use real operational cases, train users, validate KPIs, test escalations, refine role ownership, run cross-workflow QA and confirm fallback protocol.
+Day 22–30 production readiness | Complete operational handover, command center visibility, productivity measurement, partner sign-off checklist, 60-day stabilization roadmap and 75-day enterprise-scale readiness roadmap.
+
+Source basis: Generated WF-007 blueprint Sections 10, 12, 13; KCKE–Media–CRM–ERP Dependency Map immediate sequencing.
+18. 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale — Production Foundation Expectations
+This section preserves the original 90-day production foundation but compresses the first production base into 30 days, then continues stabilization for 60 days and enterprise-scale readiness by 75 days. The partner should state what is production-ready by Day 30, what is stabilized over the next 60 days, and what becomes enterprise-scale ready by Day 75.
+Production architecture with secure role-based access, audit logs and approved data flows.
+CRM/API path validated or documented fallback with migration plan.
+Payment/DCC/campaign source mapping stabilized.
+Data quality governance: deduplication, common IDs, owner assignment, mandatory next action, consent/DND, source tagging.
+Dashboard suite: management, operations, revenue/conversion, data quality and AI-agent performance.
+Human approval architecture implemented for donor, finance, CSR/HNI, public and devotional content.
+Support model defined: admin owner, data steward, workflow supervisor, partner support, issue escalation.
+Source basis: Project Glossary long-term enterprise vision; MCP; KCKE–Media–CRM–ERP Dependency Map; generated WF-007 blueprint Sections 11–17.
+19. 6-Month Enterprise Architecture Vision aligned to 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale
+The long-term enterprise architecture remains required, but it must now be anchored to a 30-Day Production Base, 60-Day Stabilization path and 75-Day Enterprise Scale readiness milestone. Six-month planning should deepen CRM/ERP/API/KCKE/Media AI/BigQuery/Looker/Vertex maturity rather than reopen basic workflow design.
+WF-007 plugs into the Hyderabad AI Revenue & Seva Growth Platform through CRM/DBMS, source tracking, revenue/payment links, dashboards and agentic workflow orchestration.
+Integrated revenue engine connects Digital Marketing, Voice Agent, Yatra Lifecycle, Community Outreach, Donor Cultivation, Finance/DCC and Website/Landing Page systems.
+BigQuery/Looker becomes the analytics layer; Vertex AI/Agent Builder/Cloud Run/Workflows orchestrate production-grade agents.
+KCKE and Media AI support donor narratives and campaign content with approval safeguards, but operational truth stays in CRM/ERP.
+ERP migration is phased after data stabilization; every MVP field already has a future ERP mapping.
+National/multi-center replication is supported by standardized data schema, agent templates, dashboards, approval rules and playbooks; do not build multi-center rollout now.
+Source basis: MCP; Folder README; KCKE–Media–CRM–ERP Dependency Map; Mission OS Presentation; generated WF-007 blueprint Sections 11, 18.
+20. Expected Google Product Areas
+The following is HKHT’s working hypothesis. Partner must validate what is feasible, licensed, secure, costed and appropriate.
+Product area | Likely use | Partner validation required
+Gemini Enterprise / Workspace | Summaries, drafts, Drive/SOP search, user-facing copilots. | License, connector access, data boundary, Workspace permissions.
+Apps Script / AppSheet / Sheets | Fast demo/MVP, forms, reminders, approval queue, lightweight CRM-lite. | Limits, migration path, security and user experience.
+Vertex AI | Custom extraction, scoring, RAG, AI services, controlled prompts, model governance. | Model choice, region, cost, data handling.
+Agent Builder | Multi-step agents with tools/connectors. | Production readiness, integration limits, approval gates.
+Cloud Run / Workflows | Middleware, scheduled jobs, event orchestration. | Deployment, maintenance, monitoring.
+BigQuery / Looker Studio | Revenue and operational dashboards. | Data model, refresh frequency, cost, access.
+Apigee / API Gateway if needed | Secure integration with CRM/ERP/payment vendors. | Only if necessary; scope/cost validation.
+External vendors | WhatsApp Business API, SMS/RCS, voice, payment/courier connectors. | Vendor list, compliance, pricing, liability.
+
+Source basis: Project Glossary; KCKE–Media–CRM–ERP Dependency Map; ODS transcript tools; generated WF-007 blueprint Section 11.
+21. Questions for the Implementation Partner
+What can be delivered in Day 1–7 as a Production Foundation Sprint using confirmed data/access and migration-ready fallback where APIs are pending?
+What can be delivered in Day 8–14 as an Integrated Working MVP and used by selected fundraisers, donor manager, DCC/finance, hospitality and leadership reviewers?
+What can be made production-ready by Day 30 with live operational usage, dashboard visibility, approval routing, exception handling, fallback and handover?
+What stabilizes over the next 60 days after the 30-day production base, including data quality, integrations, adoption, KPI discipline and support model?
+What reaches enterprise-scale readiness by Day 75 and what remains part of the 6-month enterprise architecture?
+Which parts are demo/mock only?
+Which parts require APIs/connectors?
+Which parts require CRM/ERP/data cleanup?
+Which parts require external vendors?
+Which parts require Gemini Enterprise?
+Which parts require Google Cloud/custom build?
+Which parts require Vertex AI?
+Which parts require Agent Builder / agentic systems?
+Which parts require Apps Script / AppSheet / Sheets?
+Which parts require BigQuery / Looker Studio?
+Which parts require human approval design?
+What should not be promised in 2 weeks?
+What donor/donation/campaign data do you need from HKHT immediately?
+What licenses are required?
+What APIs/connectors are available immediately?
+What are the costs for demo, MVP, pilot, production and 6-month foundation?
+What are the security/privacy limitations?
+How will donor-sensitive communication be approval-gated?
+Can the MVP work on Sheets now and migrate to CRM/ERP later?
+Can the system enforce common IDs, source tags and next-action fields from Day 1?
+Source basis: Generated WF-007 blueprint Section 16; MCP partner rule; Project Glossary.
+How will you validate the common Contact/Donor/Yatri/Community/Family identity model before building donor-specific automations?
+What is the Day-30 production-readiness checklist for WF-007?
+How will the WF-007 dashboard feed the leadership command center view?
+What is the fallback process if CRM, WhatsApp, payment/DCC, courier or AI-agent components fail?
+How will Mukund Prabhu dependency reduction be measured in this workflow?
+What golden journey tests will you run across campaign/source → CRM → follow-up → donation/payment → approval → dispatch/thank-you?
+How will Mukund Prabhu’s donor judgment and escalation logic be captured as institutional memory without bypassing human approval?
+Feature Classification Matrix Required from Partner
+Each proposed feature must be tagged as one or more of: | Required classification
+Buildable immediately | Can be implemented with current tools/data and used safely.
+Demo/mock only | Can be shown but not production-usable.
+Requires our data | Requires HKHT data sample/export/validation.
+Requires CRM/API integration | Needs CRM read/write or connector.
+Requires ERP later | Should be migration-ready but not blocking MVP.
+Requires custom Google Cloud build | Needs Cloud Run/Workflows/Vertex/custom services.
+Requires Gemini Enterprise | Needs Workspace Gemini licenses/connectors.
+Requires Vertex AI | Needs model endpoint, extraction, scoring, RAG or governance.
+Requires Agent Builder / agentic systems | Needs tool-using workflow agents.
+Requires Apps Script / AppSheet / Sheets | Fast workflow app or prototype.
+Requires BigQuery / Looker Studio | Analytics/data warehouse/dashboard requirement.
+Requires external vendor tools | WhatsApp/SMS/RCS/voice/payment/courier vendor.
+Requires data cleanup | Dedup, IDs, source tags, consent, mandatory fields.
+Requires human approval design | Sensitive action or communication approval gate.
+Should not be promised in 2 weeks | Too dependent, risky, unvalidated or production-heavy.
+Requires API registry validation | Cannot be promised as live until API access, authentication, limits, costs, owner and fallback are validated.
+Requires workflow sequencing gate | Depends on another workflow reaching minimum readiness before safe WF-007 production use.
+Requires WhatsApp governance validation | Needs approved provider, templates, volume rules, opt-out/DND handling and failure fallback before scaled messaging.
+Requires golden journey QA | Must be tested across CRM/campaign/payment/follow-up/dispatch handoffs before production sign-off.
+Production-ready within 30 days | Can be used operationally by selected users with validated data flow, dashboard, approval routing, fallback and support model.
+Should not be promised in first 14 days | Requires unconfirmed APIs, unstable data, production WhatsApp/payment access, predictive scoring, full ERP or autonomous external communication.
+
+22. Expected Deliverables from Google / Implementation Partner
+Technical Requirements Document (TRD).
+Solution Architecture.
+Google Product Mapping.
+Agent Architecture.
+Integration Architecture.
+CRM/ERP/Data Architecture.
+Security and Access Model.
+Human Approval Architecture.
+Dashboard Architecture.
+API/Connector Requirements.
+Deployment Architecture.
+Licensing Requirements.
+Cost Estimates.
+Team Structure.
+Rollout Plan.
+Risks and Limitations.
+HKHT-side Dependencies.
+Data Requirements from HKHT.
+Assumptions and Exclusions.
+30-Day Production Readiness Plan.
+Day 7 / Day 14 / Day 21 / Day 30 Acceptance Evidence.
+Consolidated API Registry and Integration Dependency Matrix.
+WhatsApp / Voice / Payment / CRM / ERP Dependency Watchlist.
+Production Fallback and Service Continuity Protocol.
+Golden Journey QA Test Plan and Results.
+Leadership Command Center Contribution Design.
+Mukund Prabhu Dependency Reduction Measurement Plan.
+60-Day Stabilization Roadmap.
+75-Day Enterprise Scale Readiness Roadmap.
+Source basis: User instruction; MCP partner brief mandate; Folder README TRD/partner brief storage rules; generated WF-007 blueprint Sections 15–16.
+Appendix A — Evidence Used
+Source | How used
+Master Context Pack v0.2 / v0.5 | Revenue-first mandate; AI-first not merely digitization; ERP/data centralization; 7-day/14-day/long-term framing.
+Project Glossary | Definitions of deterministic automation, AI-assisted workflow, agentic workflow, HITL, CRM/DBMS, ERP, KCKE, Media AI, management brief, Google partner brief.
+Folder Structure README | Operating model: Google Drive archive, Project Source brain, registers control system, workflow folder storage, partner brief/TRD placement.
+Role Ownership Correction Note | SDSD references historical/interim; validate current owner, performer, approver, backup, Mukund dependency.
+KCKE–Media–CRM–ERP Dependency Map | CRM for operational relationship data; KCKE for spiritual/source-grounded content; Media AI for creative pipeline; ERP later; human approval rules.
+Donor Relationship Management Meeting transcript | Current donor/LLP workflow, CRM/DCC/ERP/WhatsApp/courier/prasadam tracker, recurring donation gap, voice-to-CRM, donor approval requirements.
+Donor Hospitality Planning transcript | Donor hospitality, temple/Goshala/Akshaya Patra/Heritage Tower visit flow, CSR underdeveloped, hospitality team practices.
+Online Donation Strategy Meeting transcript | Seva campaign calendar, landing pages, paid ads, SMS/RCS/WhatsApp, payment gateway segmentation, ROI tracking, failed payment follow-up.
+LLP Note transcript | Door-to-door access becoming harder; sector/gated-community prospecting; recurring donation and relationship follow-up themes.
+SSRD Fundraising transcript | Fundraising as preaching seva; need for trained donor-facing fundraisers; house programs and donor cultivation as spiritual service.
+Seva Opportunities note | AI-assisted seva packaging, multilingual WhatsApp/email/SMS/RCS content, videos/posters, booklets and prasadam inserts.
+Workflow blueprint generated in this chat | Sections 1–20: evidence, future state, agent design, horizons, dashboards, data model, role redesign, partner brief, risks, interdependencies, register checklist.
+Relevant registers / dependency maps | AMR, Use Case Register, Source Register, Workflow-to-Data Map, Interdependency Map: WF-007 high priority, data entities, dependencies, use cases, update checklist.
+HKHT_AI_Transformation_Analysis (1).html | Used to strengthen the accelerated 30-day production-readiness framing, platform safeguards, master data discipline, API registry, WhatsApp governance, leadership command center, golden journey QA, institutional memory encoding, and WF-007-relevant 100x productivity leap recommendations. privacy-law-specific recommendations were excluded.
+
+Appendix B — Assumptions / Needs Validation
+Assumption / Needs Validation: Exact live donor database size, active donor count, recurring donor count, HNI count, CSR prospect list and donor segmentation are not yet validated.
+Assumption / Needs Validation: API availability for CRM/Hello Leads, DCC/Tanan/Tanaja ERP, payment gateways, WhatsApp vendor, courier tracker and ClickUp must be confirmed.
+Assumption / Needs Validation: CSR appears underdeveloped based on transcript evidence, but current 2026 owner/status must be reconfirmed.
+Assumption / Needs Validation: Current RACI/role ownership must be validated before production routing, especially owner, performer, approver, backup and Mukund dependency.
+Assumption / Needs Validation: Predictive donor scoring, donor LTV and lookalike prospecting require clean historical data, consent/compliance validation and production-grade governance.
+Assumption / Needs Validation: Register workbook cell-level content should be validated against the latest Master Registers before TRD finalization.
+Assumption / Needs Validation: 30-day production readiness requires HKHT to provide sample/live donor data, owner validations, data access decisions and approval names early in Day 1–3.
+Assumption / Needs Validation: Consolidated API registry for CRM, DCC/payment, WhatsApp, voice, courier, campaign systems, ClickUp and ERP must be created before the partner commits to live integration claims.
+Assumption / Needs Validation: WhatsApp Business API provider, template status, volume rules, opt-out/DND handling and failure fallback require workflow-level and platform-level validation before scaled donor messaging.
+Assumption / Needs Validation: Leadership command center design must be finalized so WF-007 dashboard outputs feed one management visibility layer rather than becoming another isolated dashboard.
+Assumption / Needs Validation: Golden journey QA scenarios must be agreed for donor cultivation across WF-003/WF-002/WF-007/WF-009/WF-010/WF-001/WF-014 handoffs.
+Assumption / Needs Validation: Mukund Prabhu dependency reduction needs a measurable baseline and Day-30 measurement method for donor-sensitive approvals, escalations and managerial chasing.
+Assumption / Needs Validation: Institutional memory encoding of donor judgment, proposal principles and escalation logic requires explicit approval and source capture before being used by AI copilots.

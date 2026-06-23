@@ -1,0 +1,375 @@
+DOCUMENT B - Google / Implementation Partner Brief
+WF-003 Digital Marketing Campaigns | 30-Day Production-Ready Accelerated Execution Brief for the Hyderabad AI Revenue & Seva Growth Platform
+Audience: Google partner solution architects, implementation partner leadership, delivery team and HKHT technology stakeholders
+Important framing for partner This is not a TRD and not a request for a generic AI demo. It is a workflow-specific implementation briefing so the partner can produce TRD, solution architecture, Google-stack architecture, API/integration architecture, deployment architecture, rollout plan, feasibility analysis, timelines, risks, costing and phased implementation proposal.
+
+30-Day Production-Ready Accelerated Execution Re-Alignment
+This revised Document B keeps the original workflow-specific partner brief intact and realigns WF-003 Digital Marketing Campaigns as a production-aligned module of the Hyderabad AI Revenue & Seva Growth Platform. The brief must be read as a 30-Day Production Sprint document, not only as a demo/MVP note.
+The original AI-first architecture, agent expectations, CRM/ERP data logic, dashboards, human approval rules, and long-term platform design remain preserved. The execution path is now compressed into: Day 1-7 Production Foundation Sprint, Day 8-14 Integrated Working MVP, Day 15-30 Production Readiness and Productivity Multiplication Sprint, followed by a 60-day stabilization path and 75-day enterprise-scale readiness review.
+WF-003 must not become an isolated ad automation. It must connect campaign source, audience, creative, landing page, lead, CRM follow-up, donation, Yatra registration, payment/DCC attribution, finance visibility, donor cultivation, and institutional learning using common IDs and dashboard-first control.
+Partner interpretation rule: start small in execution, start big in architecture, start immediately in data discipline, start revenue-first in priority, start human-governed in approvals, and start platform-compatible in every workflow build.
+Source basis: Existing WF-003 Document B; generated WF-003 workflow blueprint Sections 1-20; Mukund_Prabhu_Operations_Master_Context_Pack_v0.2_Revenue_Priority.docx; KCKE-Media-CRM Dependency Map; Workflow-to-Data Dependency Map; Automation Interdependency Map; HKHT_AI_Transformation_Analysis (1).html strategic recommendations, excluding DPDP-specific recommendations.
+Production Readiness Definition
+For WF-003, production readiness does not mean fully autonomous ad optimization. It means the workflow can be used in live operations by selected HKHT users with validated data flow, visible dashboards, human approvals, fallback path, and measurable productivity improvement.
+Minimum production-readiness criteria for this workflow:
+Live operational usage for at least one active or recent fundraising/Yatra/donation campaign.
+Validated campaign data path: campaign intake -> Campaign ID/source tag -> landing page/form/payment path -> CRM/HelloLeads record -> follow-up owner -> dashboard output.
+Dashboard visibility for spend, leads, CPL, donations, Yatra registrations, revenue, ROI, pending approvals, failed handoffs and exceptions.
+Human approval routing for budget changes, public copy, donor-sensitive communication, devotional/philosophical content, media/deity assets and high-risk exceptions.
+Role ownership validated: owner, performer, approver, backup, escalation person, dashboard reviewer and data custodian.
+Data quality checks for mandatory IDs, source tags, duplicate leads, suppression/DND flags, missing payment attribution, stale follow-ups and failed lead sync.
+AI-assisted execution for campaign brief, content variants, audience suggestions, dashboard interpretation and campaign learning summaries.
+Cross-workflow compatibility with WF-001 Yatra Lifecycle, WF-002 Voice Agent + CRM Follow-up, WF-006 CRM/DBMS, WF-007 Donor Cultivation, WF-009 Finance/DCC/P&L, WF-012 Landing Pages and WF-014 Community Outreach.
+Fallback process if API, WhatsApp/RCS/SMS, CRM, payment, dashboard or agentic automation fails during a live campaign.
+Golden journey test: a sample contact enters through a WF-003 campaign and can be traced through CRM follow-up, donation or Yatra registration, payment/receipt status and next action.
+Accelerated Delivery Governance
+The partner should operate WF-003 through a daily checkpoint rhythm during the first 30 days. Each day should track progress against validated workflow scope, data access, integration blockers, approvals, dashboard readiness, user testing, exceptions and unresolved HKHT-side dependencies.
+Day 1-3: validate workflow, access, data sources, owners, approvers, backups, CRM fields, IDs, API dependency class, dashboard schema, production risks, role ownership and analysis-file gaps.
+Day 4-7: build the first working production foundation using CRM/Sheet/API data path, first dashboard, first automation, first approval flow, first AI-assisted output, first sample live workflow test and first leadership command center visibility layer.
+Day 8-14: build the integrated working MVP with selected-user operational testing, workflow-specific AI assistance, ClickUp/task/follow-up integration where applicable, exception routing, dashboard refinement, data quality checks, human approval testing, API registry validation and WhatsApp/voice/payment/CRM dependency validation.
+Day 15-21: harden for production using real operational usage, cross-workflow integration, user training, KPI validation, escalation testing, fallback protocol, role ownership refinement and golden journey QA testing.
+Day 22-30: complete production readiness review, leadership command center visibility, operational handover, stabilization plan, productivity measurement, management reporting, partner sign-off checklist, 60-day stabilization roadmap and 75-day enterprise-scale readiness roadmap.
+Partner responsibility: provide build status, blockers, risk log, data needs, feature classification, architecture notes, testing evidence and sign-off artifacts.
+HKHT responsibility: provide validated owners, data samples, access decisions, approval reviewers, test users, campaign examples, CRM/DCC/payment exports and timely decisions.
+Dependency watch: maintain explicit tracking for APIs, CRM/HelloLeads, ERP, payment/DCC, WhatsApp/RCS/SMS, ClickUp/task layer, KCKE, Media AI and dashboard sources.
+1000x Productivity Alignment
+WF-003 contributes to the larger 1000x ambition by multiplying reach, conversion, donor lifetime value, Yatra participation, preaching touchpoints and managerial control. The first 30 days should create a production base; the next 60 days should stabilize adoption and data quality; by 75 days the workflow should be fit for deeper enterprise-scale platform integration.
+Automation: campaign intake, source tagging, approval routing, reminders, lead handoff, dashboards and closeout summaries reduce manual coordination.
+AI assistance: strategy briefs, content variants, audience options, creative briefs, landing page suggestions and campaign learning summaries multiply output without bypassing human review.
+Agentic workflow: daily ROI alerts, anomaly detection, pause/scale recommendations, CRM follow-up tasks and exception escalation create operational leverage.
+CRM intelligence: Campaign ID, Contact ID, Donor ID, Yatri ID, source, last follow-up, next action and outcome make campaign activity part of a relationship intelligence layer.
+Relevant 100x leap ideas from the analysis file: relationship intelligence graph, donor propensity scoring, behavior-triggered micro-campaigns, WhatsApp conversational commerce, live P&L per campaign/Yatra, AI social proof engine, automated Yatra recap/donor inspiration content, Follow-the-Devotee journey timeline and personalized video messages for major donors where approval is available.
+Institutional memory: Campaign Learning Agent should encode Mukund Prabhu’s campaign judgment, audience logic, content standards, escalation criteria and next-season recommendations as reusable decision-support knowledge.
+Managerial-load reduction: measure the reduction in manual chasing, report compilation, repeated explanation and exception resolution required from Mukund Prabhu.
+Cross-Workflow Integration and Platform Safeguards
+WF-003 must be built as a platform-compatible campaign module, not a disconnected automation. It must share identity, source tracking, task, approval and dashboard structures with the other revenue workflows.
+Shared IDs: Contact ID, Donor ID, Yatri ID, Campaign ID, Event ID, Task ID, Owner ID, Donation ID and Payment Status should be used wherever applicable.
+CRM/DBMS remains the relationship source of truth for contact, lead, follow-up, source, owner, status, suppression and cultivation data.
+ERP-ready fields must be captured from Day 1 even if ERP migration occurs later: ID fields, source, created date, approval status, payment status, last follow-up date, next action and owner.
+KCKE boundary: use KCKE only for source-grounded Krishna conscious content, donor narratives, festival explanations, preaching, education and devotional copy validation.
+Media AI boundary: use Media AI only for reels, videos, storyboards, Yatra/festival/donor media and approved visual storytelling with review controls.
+ClickUp/task layer: where selected, use ClickUp for task execution, approvals, escalations, partner follow-up and operational accountability; AI generates intelligence above the task layer.
+Leadership Command Center: WF-003 must feed headline campaign health, revenue, lead flow, Yatra conversion, donation conversion, exceptions and delayed approvals into the single leadership view.
+API dependency tracking: avoid promising live integrations until access, provider, authentication, limits, costs and refresh cadence are confirmed in the API Registry.
+Fallback path: if automation fails, the workflow must continue through controlled Sheets/export/import/manual approval with clear owner and escalation logic.
+Relevant Analysis Recommendations Incorporated
+The following recommendations from HKHT_AI_Transformation_Analysis (1).html have been incorporated into this WF-003 brief where workflow-relevant. DPDP-specific recommendations are deliberately excluded.
+Preserve AI-first redesign: do not digitize the current process as-is; redesign the campaign workflow as an intelligent revenue and outreach module.
+Preserve four-horizon discipline while compressing execution into Day 1-7 foundation, Day 8-14 MVP and Day 15-30 production readiness.
+Strengthen revenue-first priority, human-in-the-loop approvals, system separation between CRM/ERP/KCKE/Media AI/Gemini, and evidence-based assumptions.
+Add explicit WF-013/multi-center replication connection through templates, common fields, dashboards, governance patterns and future center onboarding.
+Require unified master data model, common IDs, API registry, WhatsApp API governance, DND/suppression readiness for outreach and clear CRM/DBMS alignment.
+Add workflow sequencing gates, go/no-go readiness checks, role ownership verification, failure/fallback protocol and cross-workflow golden journey testing.
+Add leadership command center contribution, Mukund Prabhu dependency measurement and institutional memory encoding of his campaign judgment.
+Incorporate WF-003-relevant 100x levers: donor propensity scoring, behavior-triggered micro-campaigns, WhatsApp conversational commerce, live campaign/Yatra P&L, social proof, automated Yatra recap/donor inspiration content and relationship journey intelligence.
+1. Workflow Name and Platform Role
+Workflow: WF-003 Digital Marketing Campaigns.
+Platform role: digital acquisition, campaign intelligence and conversion-attribution module of the Hyderabad AI Revenue & Seva Growth Platform.
+What it does: plans, launches, monitors and learns from fundraising, Yatra, festival, seva and outreach campaigns across Google, Meta, YouTube, WhatsApp, SMS, RCS, landing pages, CRM, DCC/payment and finance reporting.
+Why it matters: it creates the lead, donor and yatri pipeline and must connect spend to leads, calls, donations, registrations and donor cultivation.
+Source basis: Digital Marketing Strategy Meeting transcript: campaign types are fundraising and Yatra registrations; campaigns start from strategy/calendar and end in donation, Yatra registration, or lead; current tools include Google Ads, Meta Ads, Google Analytics, CRM, landing pages, SMS/WhatsApp/RCS, payment gateways, DCC and sheets. Master Context Pack states revenue workflows must be prioritized and ERP-ready; KCKE-Media-CRM Dependency Map states operational intake should flow through CRM/DBMS to dashboards and ERP later; Folder Structure Readme states POCs should not block ERP but must update registers and dependency maps.
+2. Executive Seva Impact Summary
+Impact area | Expected platform impact | Source basis
+Donation growth | Improved audience selection, remarketing, source attribution and ROI controls should reduce wasted spend and increase donation conversion. | Digital Marketing transcript; Less Investment-More ROI Campaigns file; generated blueprint Sections 2-6.
+Yatra growth | Campaign leads and registrations should flow to CRM/telesales/voice follow-up with Yatra source tags and SLA tracking. | Digital Marketing transcript; Sources of Leads file; generated blueprint Sections 4, 12-13.
+Donor cultivation | New donors, repeat donors and HNI leads should flow to LLP/donor cultivation instead of remaining isolated campaign outcomes. | Digital Marketing transcript; Master Context Pack revenue cluster; generated blueprint Section 18.
+Krishna consciousness outreach | Approved festival, seva, Yatra and donor narratives can scale outreach while preserving source-grounded devotional quality. | Master Context Pack; KCKE-Media-CRM Dependency Map; Media AI Pipeline Briefing Note.
+Mukund Prabhu burden reduction | Strategy, reporting and review can be pre-structured by agents and dashboards; final approvals remain human-governed. | Digital Marketing transcript; Role Ownership Correction Note; generated blueprint Sections 6-7, 14.
+ERP/data centralization | Mandatory IDs, source tags, payment linkage and follow-up status make campaign data ERP-ready from Day 1. | User platform rules; KCKE-Media-CRM Dependency Map; generated blueprint Section 12.
+Multi-center readiness | Reusable Hyderabad campaign OS can later be replicated as templates, dashboards and governance patterns without building multi-center rollout now. | Master Context Pack; Digital Marketing transcript discussion on scale/centralization; generated blueprint Sections 10-11.
+
+Assumption / Needs Validation: Quantified uplift needs validation from actual Google/Meta reports, CRM conversions, DCC/payment data and campaign P&L exports.
+3. Management Brief for Leadership
+WF-003 must be funded because it is a P0 revenue workflow, not a back-office automation.
+The implementation must avoid isolated automation by using common IDs, mandatory source tracking, CRM handoff, dashboard outputs and ERP-ready fields.
+Every rupee spent should become traceable from campaign source to lead, call, donation, Yatra registration and follow-up outcome.
+The first 14 days must prove control and workflow productivity, not claim full autonomous ad optimization.
+Human approval must remain mandatory for budgets, donor-sensitive messaging, public communication and devotional/media content.
+The 30-day base, 60-day stabilization and 75-day enterprise-scale direction should be a Google-stack compatible Campaign-to-Conversion Intelligence System.
+The partner should classify each feature as immediate build, mock/demo, needs data, needs CRM/API, needs ERP later, needs Google Cloud, needs Gemini Enterprise, needs data cleanup or should not be promised in 2 weeks.
+Source basis: Generated WF-003 workflow blueprint Sections 2, 3, 6, 8-11, 15-17; Master Context Pack partner brief mandate.
+4. Current Operational Reality
+Trigger
+A campaign starts from strategy/ideation and a digital marketing calendar tied to festivals, fundraising sevas, donation sevas, construction, goseva or Yatra.
+People involved
+Mukund Prabhu / Mukunda Dasa: strategy, target audience, final output approval and budget-sensitive oversight.
+Hemchand/Hem: day-to-day workflow manager according to transcript, except SMS marketing. Name/spelling and exact responsibility need validation.
+PPC expert/Venkatesh: ad setup/back-up role referenced in transcript.
+Creative/content team: ad copies, posters, videos, WhatsApp materials, brochures and print assets.
+SMS/WhatsApp/RCS team and vendors: bulk channel execution.
+Telesales/telecalling team: follows up CRM leads for Yatra conversion.
+Finance/Finance reviewer: monthly revenue/expenditure/net revenue and channel effectiveness view.
+DCC/payment/CRM/data teams: donation receipts, certificates, CRM lead flow and payment/revenue attribution.
+Tools used
+Google Ads, Google Ads Library, Meta Ads, YouTube Ads, Google Analytics, SEO tools such as SEMrush, Google Business Profile, ChatGPT/Gemini/Grok for AEO context, website/CMS/plugins, payment gateways such as PayU Money/Razorpay/Cashfree, DCC/ERP, CRM, Excel/Sheets, WhatsApp/SMS/RCS tools, Adobe Premiere/Photoshop and creative tools.
+Current steps
+Ideate and strategize the campaign.
+Prepare campaign/calendar around festival, fundraising, seva or Yatra.
+Finalize product/seva/Yatra offer.
+Create ad copy, posters, videos, WhatsApp material, brochures and print assets.
+Iterate, correct, review, finalize and approve content.
+PPC expert sets up Google/Meta ads, target audience, geotagging and budget.
+Landing page is developed/tested and integrated with payment gateway and DCC/CRM.
+Campaign goes live after platform approval.
+Review performance constantly: donations, Yatra registrations, Yatra leads, ROI and budget.
+Donation receipt/certificate and Prasadam/courier flows occur where integrated.
+Yatra leads go to CRM; telesales follows up.
+Donors/customers are remarketed unless marked not interested.
+Campaign learnings are reviewed for next season/year.
+Current approvals and reports
+Approvals: content review, platform launch readiness, budget/spend changes, double/triple review when monetary risk exists.
+Reports: platform spend, revenue, new donors, donor-base growth, contacts passed to LLP, funds generated by LLP, gross revenue, expenditure, net revenue, MoM/YoY/YTD, target vs achieved.
+Source basis: Digital Marketing Strategy Meeting transcript; generated WF-003 workflow blueprint Section 4.
+Assumption / Needs Validation: The exact current system owners, sheet names, WhatsApp groups, CRM configuration and DCC/payment fields need validation.
+5. Current Bottlenecks and Productivity Loss
+Bottleneck | Productivity/revenue loss | Source basis
+Manual strategy memory | Campaign learnings and audience decisions depend heavily on Mukund Prabhu/team memory. | Digital Marketing transcript; generated blueprint Section 5.
+Content iteration | Repeated back-and-forth delays launch and increases rework. | Digital Marketing transcript step-by-step workflow.
+Landing/payment/CRM readiness | Broken or delayed landing page/payment/CRM linkage can leak conversions. | Digital Marketing transcript; generated blueprint Section 5.
+Data fragmentation | Spend, leads, donations, registrations and follow-ups are split across platforms and sheets. | Digital Marketing transcript tools/reports; KCKE-Media-CRM map.
+WhatsApp/spreadsheet dependency | Important execution and lists may remain informal or vendor-specific. | Sources of Leads file; Less Investment-More ROI Campaigns file.
+Mukund Prabhu dependency | Strategy, output approval and budget-sensitive decisions require his oversight. | Transcript; Role Ownership Correction Note.
+Revenue leakage | Wrong audience/budget creates monetary loss; missed remarketing wastes low-cost donor/yatri potential. | Digital Marketing transcript; Less Investment-More ROI Campaigns file.
+Missed preaching/donor/Yatra opportunities | Leads not quickly source-tagged and followed up may not become donors, yatris or cultivated relationships. | Sources of Leads file; generated blueprint Sections 13 and 18.
+
+6. Desired AI-First Future-State Vision
+WF-003 should become a Campaign-to-Conversion Intelligence System, not just an AI ad-copy generator.
+The workflow should start with structured campaign intake and mandatory data fields: Campaign ID, objective, source, audience, channel, owner, approver, budget ceiling, landing page, CRM mapping and follow-up path.
+Deterministic automation should handle form-to-sheet/app entries, task routing, source tags, UTM generation, approval status, reminders, lead sync and dashboard refresh.
+AI-assisted workflows should draft strategy briefs, audience options, copy variants, creative briefs, landing page recommendations and campaign learning summaries.
+Agentic workflows should monitor daily performance, detect anomalies, recommend pause/scale/shift, create follow-up tasks and generate campaign closeout intelligence.
+Human approval must remain mandatory for budget changes, donor-sensitive messaging, public communication, philosophical/devotional content, deity/media and high-risk actions.
+Source basis: Generated WF-003 workflow blueprint Section 6; Digital Marketing transcript on agents/budget approval; Project Glossary definitions; KCKE-Media-CRM Dependency Map.
+7. Expected Productivity Leap
+Level | Definition for WF-003 | Evidence / basis
+2X control improvement | Single structured intake, approval queue, source tags and dashboard replacing scattered coordination. | Generated blueprint Sections 8 and 10.
+10X workflow productivity | AI campaign brief/content variants plus semi-automated source tagging, approval and daily insights. | Generated blueprint Section 9.
+30X revenue-operating leverage | Daily spend-to-lead-to-donation/Yatra visibility, data-quality checks and follow-up SLA controls. | Generated blueprint Sections 10, 13.
+100X Hyderabad platform leverage | Reusable campaign templates, agents, CRM/DCC attribution, dashboards, institutional memory and role redesign. | Master Context Pack; generated blueprint Sections 10-11.
+1000X long-term contribution | Reach x conversion x donor lifetime value multiplied across campaigns, Yatras, donors, outreach and later centers. | Strategic target from user instruction and Master Context Pack productivity mandate.
+30-day production base | Operational use of campaign intake, source tags, approval routing, dashboards, AI-assisted content/insights and selected-user testing with fallback path. | 30-day realignment; HKHT_AI_Transformation_Analysis (1).html recommendations on timeline realism, platform integration and dependency tracking.
+60-day stabilization | Data quality, API maturity, dashboard reliability, user adoption, exception handling, service continuity and KPI discipline. | 30-day realignment; analysis recommendations on failure/fallback protocol, API registry and sequencing gates.
+75-day enterprise-scale readiness | WF-003 becomes a reusable platform module with common IDs, leadership command center contribution, CRM intelligence and multi-center readiness patterns. | Analysis recommendations on WF-013 connection, unified master data model, platform architecture and federated mission intelligence.
+
+8. Expected AI Agents / Copilots
+Agent | Purpose | Users | Core outputs | Approval / escalation | Success metrics
+Campaign Strategy Agent | Convert festival/Yatra/seva objective into campaign strategy. | Mukund Prabhu, marketing manager | Brief, channel plan, timing, success metrics | Final strategy and high-budget approval; Unclear objective or high budget | Brief turnaround, strategy reuse
+Audience Intelligence Agent | Recommend segments and suppress low-value/over-contacted contacts. | Marketing, CRM/data team | Segment plan, exclusion list, retargeting seed | Sensitive audience rules; DND/consent ambiguity | CPL, conversion, reduced waste
+Content Variant Agent | Draft ad copy, WhatsApp/SMS/RCS, landing page copy. | Content writer, creative team | Copy variants, CTA variants, creative brief | Public/donor/devotional approval; Philosophical or sensitive claims | Approval pass rate, CTR/CVR
+Creative / Media Brief Agent | Prepare poster/reel/storyboard inputs. | Creative/media team | Storyboard, asset request, media brief | Media/deity/brand approval; Asset/source uncertainty | Creative cycle time, rework
+Landing Page QA Agent | Check readiness before launch. | Web/tech team | QA score, issues, launch checklist | Launch readiness approval; Payment/CRM/tracking failure | Launch defects, conversion rate
+Campaign Launch Agent | Prepare setup checklist and source tags. | PPC expert | Setup checklist, missing items, UTM list | Final launch/spend approval; Policy rejection, overspend risk | Launch speed, setup error reduction
+Daily ROI Optimization Agent | Monitor spend, leads, donations and registrations. | Marketing, finance, Mukund Prabhu | Alerts, recommendations, pause/scale suggestions | Budget changes; ROI drop, tracking break | ROAS, speed of action
+Lead-to-CRM Handoff Agent | Ensure every lead gets source-tagged and assigned. | CRM, telecalling/voice team | CRM lead, task/callback, source attribution | Sensitive donor escalation; Duplicates/missing consent | Lead sync %, first follow-up SLA
+Remarketing Agent | Identify low-cost high-ROI donor/yatri audiences. | Marketing, donor/Yatra teams | Remarketing lists and message plan | Message and VIP/HNI approval; Over-contacted/VIP concerns | Repeat donation/Yatra conversion
+Campaign Learning Agent | Preserve what worked/failed as institutional memory. | Mukund Prabhu, marketing manager | Next-season playbook, recommendations | Final learning approval; Missing attribution | Reuse rate, reduced dependency
+Behavior-Triggered Micro-Campaign Agent | Trigger timely micro-campaigns from website visits, stalled payments, repeated Yatra interest, annual donation patterns and community event follow-up. | Marketing, CRM/data team, donor/Yatra teams | Trigger list, personalized next-action plan, channel recommendation, escalation task | Human approval for donor-sensitive messages and high-volume sends; escalation for missing consent/DND or VIP/HNI cases | Conversion lift, stalled-payment recovery, follow-up speed
+Donor Propensity and Relationship Intelligence Agent | Prioritize contacts most likely to donate/register based on campaign, CRM, GA4, WhatsApp/email engagement and relationship signals. | Mukund Prabhu, fundraisers, campaign manager | Ranked prospects, recommended ask/seva/Yatra, deliverym-introduction context | Reviewer approval for HNI/CSR/major-donor use; escalate low-confidence or incomplete profiles | Higher conversion, improved fundraiser productivity, donor LTV
+Campaign P&L Intelligence Agent | Connect spend, lead flow, payments, Yatra registrations and finance/DCC exports for live campaign profitability visibility. | Finance/DCC, marketing, leadership | Campaign margin view, ROI alert, budget action suggestion, reconciliation exceptions | Financial review before official reporting or budget changes | Reduced revenue leakage, faster correction, P&L visibility
+AI Social Proof and Donor Inspiration Agent | Recommend approved testimonials, Yatra recaps, donor proof points and localized credibility signals for landing pages and follow-ups. | Content, creative, donor cultivation, campaign manager | Approved social proof set, landing page content block, WhatsApp follow-up asset suggestion | Human approval for public claims, donor identity use, devotional content and media | Landing page CVR, donor trust, content reuse
+
+Source basis: Generated WF-003 workflow blueprint Section 7; Digital Marketing transcript on agent possibilities and budget approval.
+9. Human Role Redesign Expectations
+Current role/function | Future expectation | Evidence / validation
+Mukund Prabhu | Strategy approver, budget-sensitive decision maker, exception reviewer, dashboard consumer; reduce daily operational chasing. | Transcript; generated blueprint Section 14.
+Hemchand / day-to-day manager | AI Campaign Operations Manager supervising intake, queue, agent outputs and exceptions. | Transcript mentions Hem handles day-to-day except SMS; needs validation.
+PPC expert / Venkatesh | Channel Performance Specialist approving setup, audit, platform constraints and AI recommendations. | Transcript backup/ad setup references; needs validation.
+Content writer / creative team | AI-supervised content and creative QA; devotional copy, media and donor sensitivity review. | Transcript content workflow; KCKE/Media rules.
+CRM/data team | Data Custodian for IDs, source tags, dedupe, DND, consent, segmentation and attribution. | Sources of Leads; KCKE-Media-CRM map.
+Finance/DCC | Campaign Profitability Controller for revenue, payment, receipt and P&L truth. | Transcript management reports; generated blueprint Sections 12-13.
+Telecalling/voice team | Follow-up SLA and donor/yatri conversion team; may supervise voice agents later. | Transcript CRM leads to telesales; dependency on WF-002.
+
+Source basis: Role Ownership Correction Note; Digital Marketing transcript; generated blueprint Section 14.
+10. Dashboard and Operational Intelligence Expectations
+Management dashboard: gross revenue, expenditure, net revenue, target vs achieved, MoM/YoY/YTD, campaign/channel/source performance.
+Operational dashboard: campaign pipeline, pending approvals, launch readiness, content status, landing page QA, daily alerts and escalation list.
+Revenue/conversion dashboard: spend, impressions, clicks, leads, calls, donations, Yatra registrations, cost per lead, cost per donation, cost per registration and ROAS.
+Data quality dashboard: missing IDs, missing source tags, duplicate leads, missing consent/DND, failed lead sync, failed payment attribution and stale follow-up.
+AI-agent dashboard: generated drafts, approval rate, rejected outputs, hallucination/error flags, recommendations adopted, human overrides and SLA improvements.
+Source basis: Digital Marketing transcript on reports; generated blueprint Section 13; KCKE-Media-CRM Dependency Map.
+11. CRM / ERP / Data Expectations
+Entity | Required fields | Current source | Future source of truth | Risk
+Contact / Donor / Yatri / Family / Community | Contact ID, Donor ID, Yatri ID, Family ID, Community ID, phone, city, language, consent, DND | CRM, sheets, contact lists | CRM/DBMS, ERP later | Duplicates, consent gaps, identity fragmentation
+Campaign | Campaign ID, name, objective, type, dates, owner, approver, budget, channels, source | Sheets/manager memory | Campaign app/CRM, ERP later | Missing standardized ID
+Source tracking | Campaign source, event source, referral source, call source, website source, Yatra source, donor source | UTM, forms, CRM, sheets | CRM/analytics/BigQuery | Attribution break
+Lead/follow-up | Lead ID, status, last follow-up, next action, owner, priority, outcome, escalation | CRM/telecalling/sheets | CRM/task layer | Follow-up leakage
+Donation/payment | Donation ID, amount, trust, seva, payment status, receipt status, campaign ID, source | DCC/payment gateways | DCC/ERP + analytics | Revenue not tied to campaign
+Yatra registration | Yatra ID, registration ID, payment status, source, campaign, follow-up outcome | Yatra/CRM sheets | CRM/Yatra system, ERP later | Registration attribution gaps
+Dashboard outputs | Leads, calls, registrations, donations, conversions, delays, escalations, P&L | Finance and exports | BigQuery/Looker | Monthly lag/manual reconciliation
+Relationship journey / timeline | Contact ID, source history, campaign touchpoints, calls, donations, Yatras, community events, referrals, next action | CRM, ads, GA4, WF-001/WF-002/WF-007/WF-014 | CRM/relationship intelligence layer, ERP later where structured | Cross-workflow identity mismatch
+Behavior trigger / event stream | Event ID, Contact ID, Campaign ID, page visit, WhatsApp click/open, form abandon, failed payment, follow-up due | Website, GA4, WhatsApp/SMS/RCS vendor, payment gateway, CRM | Analytics/event layer with CRM handoff | API availability and noisy signals
+Campaign P&L event | Campaign ID, spend, revenue, donation/Yatra value, refund, payment status, trust, seva, margin note | Ad platforms, DCC/payment, finance exports | BigQuery/Looker plus finance/DCC source of truth | Unstable financial handoff or delayed reconciliation
+Role and approval routing | Owner ID, performer, approver, backup, escalation person, approval SLA, approval status, exception reason | Transcript-derived roles, Sheets, ClickUp/task layer | Task/approval layer plus CRM/workflow app | Transcript name quality and outdated ownership
+
+Source basis: User platform compatibility rules; Sources of Leads; Workflow-to-Data Dependency Map summarized in blueprint; generated blueprint Section 12.
+Assumption / Needs Validation: Partner must validate current CRM/HelloLeads APIs, DCC/payment exports/APIs, UTM conventions, consent/DND schema and ERP future schema.
+12. KCKE / Media AI Expectations, if applicable
+Use KCKE only when campaign content requires authentic Krishna conscious knowledge, source citations, Srila Prabhupada references, philosophical replies, donor narratives, preaching or devotional education.
+Do not use KCKE for operational records such as contact status, payment status, lead ownership, task status, approval status, campaign spend or finance records.
+Use Media AI only for reels, videos, storyboards, Yatra/festival/donor media and approved visual storytelling.
+Media outputs must have scene-level control, exact source grounding where devotional claims are used, image options, audio layers, asset rights and human approval.
+Campaign operational data should live in CRM/DBMS/analytics/ERP path, not in the spiritual knowledge engine.
+Source basis: KCKE-Media-CRM Dependency Map; Media AI Pipeline Briefing Note; Project Glossary; generated blueprint Section 11.
+13. Governance and Human Approval Expectations
+Donor-sensitive approvals: donor/HNI/LLP/CSR messages, upgrade requests, major-donor retargeting and personalized communications.
+Financial approvals: campaign budget, budget increase/decrease, spend thresholds, refunds, payment exceptions and ROI/P&L reports.
+Public communication approvals: ad copy, website/landing page content, WhatsApp/RCS/SMS templates and public announcements.
+Philosophical/devotional approvals: KCKE-grounded festival/seva explanations, Prabhupada/scriptural references and preaching claims.
+Deity/media approvals: deity, temple, festival, Yatra and devotional visual assets.
+CSR/HNI approvals: any campaign involving institutional donors, matching grants, tax, audit or compliance-sensitive claims.
+HR/legal approvals if any vendor contracts, data-processing terms or consent/DND risks arise.
+Source basis: Digital Marketing transcript budget approval; Digital Fundraising transcript compliance/tax sensitivity; KCKE-Media-CRM Dependency Map human approval rules; Project Glossary HITL definitions.
+14. Integration Expectations
+Area | Expected use | Partner must validate
+Google Workspace | Drive/Docs/Sheets/Gmail/Calendar collaboration, campaign documents, approval routing, summaries. | Access model, license scope, Workspace connectors.
+Gemini Enterprise | Campaign briefs, copy variants, Drive search, summaries, internal copilots. | What is possible natively vs custom.
+Apps Script / AppSheet / Sheets | Day 1-7 Production Foundation Sprint and Day 8-14 Integrated Working MVP: intake, source tags, approvals, dashboards, data imports. | Scalability limits and migration path.
+Vertex AI / Agent Builder | Production-grade agents, retrieval, reasoning, controlled tool use, audience intelligence. | Feasibility, security, cost, region.
+Cloud Run / Workflows | Scheduled ingestion, daily summaries, alerts, controlled API jobs. | Deployment and support model.
+BigQuery / Looker Studio | Analytics layer for spend, leads, donations, Yatra registrations, calls and dashboards. | Data ingestion and refresh cadence.
+CRM APIs | Lead sync, source tagging, follow-up status, assignment, contact identity. | HelloLeads/CRM API availability and field mapping.
+ERP APIs | Later migration of campaign, payment, task, owner and P&L fields. | ERP timeline and schema dependency.
+Payment gateway / DCC | Donation ID, payment status, receipt status, trust, seva, campaign attribution. | API/export availability and reconciliation.
+ClickUp / task layer | Tasks, approvals, escalations and partner follow-up if ClickUp is selected for execution. | Connector availability and governance.
+WhatsApp/voice/SMS/RCS vendors | Bulk sends, inbound messages, calls, delivery/click data and follow-up. | Vendor APIs, DLT/consent, costs, rate limits.
+External tools | SEO, creative, social, ad platforms, attribution if Google is insufficient. | Security, data-sharing and ownership.
+API Registry | Single registry for Google Ads, Meta, GA4, CRM/HelloLeads, DCC/payment, WhatsApp/RCS/SMS, ClickUp and landing-page integrations. | Status, owner, auth method, limits, cost, refresh cadence, blocker and fallback path.
+WhatsApp API Governance | Common governance for provider, approved templates, DLT IDs, opt-out, suppression, delivery/click data, rate limits and template rejection fallback. | Provider, template approval, DND/suppression readiness, fallback communication path and cost.
+Leadership Command Center | Headline WF-003 contribution to daily revenue, lead flow, donation/Yatra conversion, exceptions, delayed approvals and P&L signals. | Dashboard owner, refresh cadence, field mapping and cross-workflow KPI definitions.
+Golden Journey QA | End-to-end testing from campaign touchpoint to CRM follow-up to donation/Yatra registration to payment/receipt status and next action. | Test scenarios, expected outcomes, owner and sign-off evidence.
+
+Source basis: Generated blueprint Sections 11, 15; Digital Marketing transcript tools; Master Context Pack partner rule.
+15. Day 1-7 Production Foundation Sprint Expectations
+Re-alignment note: The Day 1-7 scope remains allowed to use sample/mock data where dependencies are pending, but it is no longer a throwaway demo. It is the production foundation sprint for the WF-003 module.
+Day 1-3 must confirm campaign workflow, validated owners, approvers, backups, CRM fields, Campaign ID/source rules, available ad/CRM/DCC/payment exports, dashboard schema and immediate production risks.
+Day 4-7 must produce a working foundation: intake, campaign data path, initial dashboard, first approval flow, first AI-assisted campaign output, first lead-source mapping and first leadership command center tile.
+No live Google/Meta/WhatsApp/payment/CRM API integration should be overclaimed unless access, credentials and test results are confirmed.
+Show a campaign intake app/sheet with required platform-compatible fields.
+Show AI-generated campaign brief and channel-specific copy variants.
+Show mock or sample dashboard: spend, leads, CPL, donations, Yatra registrations, revenue, ROI.
+Show source-tagging map and lead-to-CRM handoff design.
+Show budget/content approval gate and audit trail.
+Mock data may be used where APIs/data are unavailable.
+Source basis: Generated blueprint Section 8; Sources of Leads; Less Investment-More ROI Campaigns file.
+Assumption / Needs Validation: Do not claim real-time API, production deployment or autonomous optimization in 7 days unless partner demonstrates working access with HKHT data.
+16. Day 8-14 Integrated Working MVP Expectations
+Re-alignment note: Day 8-14 must become an integrated working MVP used by selected HKHT users, not only a concept demonstration.
+The MVP should validate the workflow execution path from campaign intake to source tag, content approval, CRM/lead handoff, dashboard view and daily performance summary.
+Selected users should test role-specific actions: Mukund Prabhu/approver, campaign manager, PPC expert, content reviewer, CRM/data custodian, finance/DCC reviewer and follow-up owner.
+Where APIs are not ready, the partner must provide controlled export/import fallback and clearly label each dependency in the API Registry.
+Selected users can create a campaign, generate content variants, route approval, tag sources and review dashboard outputs.
+MVP should support CSV/export-based import if APIs are not ready.
+Daily performance summary can draft recommendations but cannot change budgets automatically.
+CRM handoff must be testable at minimum through export/import or API sandbox.
+Acceptance criteria: campaign intake works, content drafts have approval status, leads carry source/Campaign ID, dashboard shows core metrics, budget changes are human-approved.
+Exclusions: full ERP migration, predictive ROAS, complete historical attribution, unrestricted WhatsApp/SMS automation, auto-spend changes.
+Source basis: Generated blueprint Section 9; Digital Marketing transcript human approval; Master Context Pack POC guidance.
+17. Day 15-30 Production Readiness and Productivity Multiplication Sprint Expectations
+Re-alignment note: Day 15-30 is the production readiness phase for WF-003. It should focus on adoption, dashboard reliability, exception handling, cross-workflow testing, productivity measurement and controlled go-live readiness.
+Day 15-21 should harden real operational usage, train users, test escalation, validate KPIs, refine role ownership and complete golden journey QA.
+Day 22-30 should complete production readiness review, operational handover, partner sign-off checklist, leadership reporting, productivity measurement and the next 60-day stabilization roadmap.
+The sprint must measure Mukund Prabhu dependency reduction, including reduction in manual status chasing, report compilation and repeated exception follow-up.
+Users: Mukund Prabhu, workflow manager, PPC expert, content/creative reviewer, CRM/data custodian, finance/DCC reviewer, telesales/voice follow-up owner.
+Workflow coverage: campaign intake through launch readiness, source tagging, content approval, lead handoff, daily dashboard, performance summary and campaign closeout learning.
+Data requirements: at least one live or recent campaign with ad spend, leads, donations, Yatra registrations, content, landing page and follow-up outcomes.
+Integration scope: CSV/export fallback acceptable; API validation should begin for ads, GA4, CRM, DCC/payment and WhatsApp/SMS/RCS vendors.
+Success metrics: reduced launch preparation time, higher lead sync rate, faster first follow-up, reliable source tags, dashboard adoption, rework reduction and validated governance gates.
+Source basis: Generated blueprint Sections 8-10, 12-13; relevant registers summarized in blueprint.
+18. 30-Day Production Base + 60-Day Stabilization Expectations
+Re-alignment note: The previous production foundation language is now interpreted as a 30-day production base followed by 60 days of stabilization, hardening, adoption, data quality discipline and integration maturity.
+The 60-day stabilization phase should harden dashboards, data quality rules, API integrations, support process, training, exception management, change requests and cost monitoring.
+ERP financial handoffs must be handled carefully: where ERP/payment/DCC integration is unstable or unavailable, dashboard outputs should use validated exports and reconciliation notes until production APIs are approved.
+The partner must document the service continuity path so campaign operations can continue if a dashboard, API, agent or vendor integration fails.
+Production architecture: move validated MVP fields into a secure data model and analytics layer.
+Security/access: role-based access for marketing, CRM, finance, content, management and vendors.
+Dashboards: production-grade management, operations, revenue, data quality and AI-agent dashboards.
+API validation: Google Ads/Meta/GA4/CRM/DCC/payment/WhatsApp/SMS/RCS integration feasibility and refresh cadence.
+Data quality governance: required IDs, source tags, dedupe, consent/DND, owner/approver/backup and audit history.
+Support model: define partner support, HKHT admin, issue escalation, change requests, cost monitoring and ownership.
+Source basis: KCKE-Media-CRM Dependency Map; Folder Structure Readme; generated blueprint Sections 11-13, 17-20.
+19. 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale Architecture Vision
+Re-alignment note: The long-term architecture remains preserved, but it must now connect to the compressed path: 30-day production base, 60-day stabilization and 75-day enterprise-scale readiness.
+By 75 days, WF-003 should be ready to connect more deeply with the common master data model, API registry, leadership command center, CRM/DBMS, finance/DCC analytics, KCKE content interface and Media AI creative pipeline.
+WF-013/multi-center replication should not be built during the first 30 days, but the WF-003 module must produce reusable campaign templates, fields, dashboards, playbooks and governance patterns for later replication.
+The 75-day readiness review should show whether the workflow is fit to become a reusable Hyderabad campaign intelligence module for future center adoption.
+WF-003 should plug into the Hyderabad AI Revenue & Seva Growth Platform as the digital demand-generation and attribution module.
+It should connect to WF-001 Yatra Lifecycle, WF-002 Voice Agent + CRM Follow-up, WF-007 Donor/LLP/CSR Cultivation, WF-009 Finance/DCC/P&L, WF-012 Landing Pages and WF-014 Community Outreach.
+The architecture should support an integrated revenue engine: campaign -> lead -> call/follow-up -> registration/donation -> receipt/payment -> donor/yatri cultivation -> repeat engagement.
+Use BigQuery/Looker or equivalent as the analytics layer; CRM/DBMS as operational truth; ERP later for centralized records; KCKE/Media AI only where content/media grounding is needed.
+Multi-center/national replication should be prepared through templates, fields, dashboard standards, governance and playbooks, without forcing rollout in the first 75-day enterprise-scale path and subsequent expansion.
+Source basis: Master Context Pack revenue cluster; KCKE-Media-CRM Dependency Map; generated blueprint Section 18.
+20. Expected Google Product Areas
+Likely: Gemini Enterprise / Workspace for productivity, drafting, summaries and Drive-connected campaign copilots.
+Likely: Apps Script, AppSheet and Sheets for Day 1-7 Production Foundation Sprint and Day 8-14 Integrated Working MVP control layer.
+Likely: BigQuery and Looker Studio for campaign analytics and dashboarding once data sources are validated.
+Likely: Vertex AI / Agent Builder for production-grade agents, controlled tool use, retrieval and recommendation workflows.
+Likely: Cloud Run / Workflows for scheduled ingestion, alerts and controlled API jobs.
+Possible: Google Cloud IAM, Secret Manager, Cloud Storage and monitoring depending on deployment design.
+Partner must validate which features are possible inside Gemini Enterprise and which require Google Cloud/custom build.
+Source basis: Generated blueprint Section 11; Master Context Pack partner rule; user platform requirements.
+Assumption / Needs Validation: Specific Google product fit, licenses, region, costs and security constraints must be validated by the partner.
+21. Questions for the Implementation Partner
+What can be delivered in 7 days using current data, sample data or mock data?
+What can be delivered in 14 days for selected users?
+What can be piloted in 30 days with one live or recent campaign?
+What becomes production-ready in 90 days?
+What is the 30-day base, 60-day stabilization and 75-day enterprise-scale architecture for WF-003 inside the Hyderabad AI Revenue & Seva Growth Platform?
+Which features are demo/mock only?
+Which features require APIs/connectors for Google Ads, Meta, GA4, CRM, DCC/payment, WhatsApp/SMS/RCS and landing pages?
+Which features require CRM/ERP/data cleanup before they work reliably?
+Which features require external vendors or non-Google tools?
+Which features should not be promised in 2 weeks?
+What data do you need from HKHT immediately?
+What licenses, cloud costs, API costs and support costs are expected?
+What are the security, privacy, region and data residency risks?
+How will human approval be enforced technically?
+How will AI outputs show data source, confidence, status and reviewer approval?
+How will the design avoid becoming another disconnected tool?
+Source basis: Generated blueprint Section 16; Master Context Pack partner brief mandate.
+For the 30-day production readiness sprint, which items are Day 1-3 validation tasks, Day 4-7 build tasks, Day 8-14 MVP tasks, Day 15-21 hardening tasks and Day 22-30 handover/sign-off tasks?
+Which WF-003 dependencies require the API Registry before they can be called production-ready?
+How will WhatsApp/RCS/SMS provider readiness, template approvals, DND/suppression checks, delivery data and fallback communication be handled?
+How will the partner validate common IDs and the unified master data model across WF-003, WF-001, WF-002, WF-006, WF-007, WF-009, WF-012 and WF-014?
+How will the WF-003 dashboard feed the single leadership command center rather than remain a separate dashboard?
+What golden journey tests will prove campaign-to-CRM-to-donation/Yatra-to-payment/receipt-to-follow-up continuity?
+How will institutional memory from Mukund Prabhu’s campaign judgment be captured without routing all approvals back to him?
+What service continuity protocol will operate if an API, agent, dashboard, WhatsApp provider, CRM handoff or payment feed is unavailable?
+22. Expected Deliverables from Google / Implementation Partner
+Technical Requirements Document (TRD).
+Solution Architecture.
+Google Product Mapping.
+Agent Architecture.
+Integration Architecture.
+CRM/ERP/Data Architecture.
+Security and Access Model.
+Human Approval Architecture.
+Dashboard Architecture.
+API/Connector Requirements.
+Deployment Architecture.
+Licensing Requirements.
+Cost Estimates.
+Team Structure.
+Rollout Plan.
+Risks and Limitations.
+HKHT-side Dependencies.
+Data Requirements from HKHT.
+Assumptions and Exclusions.
+Source basis: User instruction; Master Context Pack partner rule; Folder Structure Readme.
+30-Day Production Sprint Plan with Day 1-3, Day 4-7, Day 8-14, Day 15-21 and Day 22-30 milestones.
+Production Readiness Checklist and sign-off evidence.
+API Registry and dependency status matrix.
+WhatsApp/RCS/SMS governance and fallback design where used.
+Unified master data and common-ID mapping for WF-003 handoffs.
+Leadership Command Center contribution design.
+Golden Journey QA scenarios and test evidence.
+Service continuity and fallback protocol.
+Mukund Prabhu dependency-reduction measurement approach.
+60-Day Stabilization Roadmap and 75-Day Enterprise-Scale Readiness Roadmap.
+Feature Classification Required from Partner
+Additional production-readiness classifications required:
+Day 1-3 validation task; Day 4-7 build task; Day 8-14 integrated MVP task; Day 15-21 hardening task; Day 22-30 handover/sign-off task.
+Needs API Registry confirmation; needs WhatsApp/RCS/SMS governance; needs DND/suppression readiness; needs payment/DCC export or API; needs CRM/HelloLeads field mapping.
+Needs role ownership validation; needs approval-routing design; needs golden journey test; needs fallback process; contributes to leadership command center.
+Candidate for 60-day stabilization; candidate for 75-day enterprise-scale readiness; candidate for later WF-013/multi-center replication.
+For every proposed feature, classify it as one or more of: buildable immediately; demo/mock only; requires our data; requires CRM/API integration; requires ERP later; requires custom Google Cloud build; requires Gemini Enterprise; requires Vertex AI; requires Agent Builder/agentic systems; requires Apps Script/AppSheet/Sheets; requires BigQuery/Looker Studio; requires external vendor tools; requires data cleanup; requires human approval design; should not be promised in 2 weeks.
+Source basis: User instruction and generated blueprint Sections 15-17.

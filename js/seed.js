@@ -659,6 +659,39 @@ App.seed = (function () {
     };
   }
 
+  /* ---------------- AI agent performance (all WF dashboards) ---------------- */
+  function buildAIAgents() {
+    var defs = [
+      ['AGT-MCG', 'Master Contact Governance', 'WF-006', 'Deterministic+AI'],
+      ['AGT-DDP', 'Deduplication & Identity', 'WF-006', 'AI-assisted'],
+      ['AGT-SEG', 'Segment & Campaign-Fit', 'WF-006', 'AI-assisted'],
+      ['AGT-TPI', 'Touchpoint Intelligence', 'WF-006', 'AI-assisted'],
+      ['AGT-RIG', 'Relationship Intelligence Graph', 'WF-006', 'Agentic'],
+      ['AGT-VOICE', 'Voice Calling Agent', 'WF-002', 'Agentic'],
+      ['AGT-INT', 'Intent / Objection Classifier', 'WF-002', 'AI-assisted'],
+      ['AGT-QA', 'Management Dashboard & QA', 'WF-002', 'AI-assisted'],
+      ['AGT-STRAT', 'Campaign Strategy', 'WF-003', 'AI-assisted'],
+      ['AGT-CONT', 'Content Variant', 'WF-003', 'AI-assisted'],
+      ['AGT-ROI', 'Daily ROI Optimization', 'WF-003', 'Agentic'],
+      ['AGT-PROP', 'Donor Propensity', 'WF-003', 'AI-assisted']
+    ];
+    return defs.map(function (d) {
+      var sug = ri(40, 520);
+      var rej = Math.round(sug * (0.04 + R() * 0.12));
+      var appr = sug - rej;
+      var lowConf = Math.round(sug * (0.03 + R() * 0.1));
+      var overrides = Math.round(sug * (0.02 + R() * 0.06));
+      return { id: d[0], name: d[1], workflow: d[2], type: d[3],
+        suggestions: sug, approved: appr, rejected: rej,
+        approvalRate: Math.round(appr / sug * 100),
+        accuracy: 82 + Math.round(R() * 16),
+        lowConf: lowConf, overrides: overrides, humanReviewQueue: Math.round(lowConf * 0.5),
+        incidents: chance(0.3) ? ri(1, 3) : 0,
+        slaImprovement: 20 + Math.round(R() * 60),
+        hallucinationFlags: Math.round(rej * (0.1 + R() * 0.3)) };
+    });
+  }
+
   /* ---------------- assemble ---------------- */
   function build() {
     var camp = buildCampaigns();
@@ -690,7 +723,8 @@ App.seed = (function () {
       triggers: buildTriggers(cd.contacts),
       propensity: buildPropensity(cd.contacts, cd.donors),
       continuity: buildContinuity(),
-      kcke: buildKCKE()
+      kcke: buildKCKE(),
+      aiAgents: buildAIAgents()
     };
   }
 

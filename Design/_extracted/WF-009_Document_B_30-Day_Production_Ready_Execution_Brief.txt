@@ -1,0 +1,457 @@
+DOCUMENT B - Google / Implementation Partner Brief
+WF-009 Finance / DCC / Payment / P&L | 30-Day Production-Ready Accelerated Execution Brief
+Updated: 27 May 2026 | Workflow: WF-009 | Production Base Target: 30 Days
+Platform rule Start small in execution. Start big in architecture. Start immediately in data discipline. Start revenue-first in priority. Start human-governed in approvals. Start platform-compatible in every workflow.
+
+Important framing for partner This is not a TRD and not a request for a generic AI demo. It is a workflow-specific briefing so the implementation partner can produce the TRD, solution architecture, Google-stack architecture, API/integration architecture, deployment architecture, rollout plan, feasibility analysis, timelines, risks, costing and phased implementation proposal.
+
+1. Workflow Name and Platform Role
+Workflow: WF-009 Finance / DCC / Payment / P&L. This workflow covers donation receipts, DCC/payment records, payment gateway and bank reconciliation, trust-wise expense booking, purchase order/payment approval, P&L reporting, monthly target review, campaign/Yatra revenue attribution, and donor-sensitive receipt/payment exceptions.
+Platform role: WF-009 is the financial-control module of the Hyderabad AI Revenue & Seva Growth Platform. It must connect revenue generation to actual receipt, settlement, trust, P&L and donor-follow-up outcomes. The updated execution expectation is a 30-Day Production Base followed by 60-Day Stabilization and 75-Day Enterprise Scale readiness, without losing the original 7-day, 14-day, 30-day, 90-day and 6-month planning discipline.
+Source basis: Finance Workflow Overview_otter_ai.docx; Mukund_Prabhu_Operations_Master_Context_Pack v0.2/v0.5; WF-009 blueprint sections 2-4.; HKHT_AI_Transformation_Analysis (1).html; revised Document B realignment request.
+0. 30-Day Production-Ready Accelerated Execution Re-Alignment
+This revised partner-facing brief realigns WF-009 from a demo/MVP-only brief into a 30-Day Production-Ready Accelerated Execution Brief. The original workflow-specific content, architecture, agent expectations, data model, approval discipline, dashboards, risks, exclusions and long-term platform framing remain preserved. The brief should now be read as an accelerated production sprint document for a production-aligned module of the Hyderabad AI Revenue & Seva Growth Platform, not as a generic AI demonstration request.
+WF-009 must operate as the financial-control and donor-trust intelligence module of the platform, not as an isolated automation.
+The implementation must start small in execution, start big in architecture, start immediately in data discipline, start revenue-first in priority, start human-governed in approvals, and start platform-compatible in every workflow decision.
+Every early build must preserve CRM/DBMS alignment, ERP-ready fields, common IDs, source tracking, dashboard visibility, human approval routing, auditability and cross-workflow interoperability.
+The compressed path is: Day 1-7 Production Foundation Sprint, Day 8-14 Integrated Working MVP, Day 15-30 Production Readiness and Productivity Multiplication Sprint, followed by 60-Day Stabilization and 75-Day Enterprise Scale readiness.
+Relevant recommendations from HKHT_AI_Transformation_Analysis (1).html have been incorporated into this WF-009 brief where finance/DCC/payment/P&L specific and platform-relevant.
+Source basis: WF-009 workflow blueprint already generated in this chat; Finance Workflow Overview_otter_ai.docx; _Transition to New ERP Platform_ Key Issues_.docx; KCKE_Media_CRM_Dependency_Map.docx; Automation Interdependency Map; Workflow-to-Data Dependency Map; HKHT_AI_Transformation_Analysis (1).html.
+0.1 Production Readiness Definition
+For WF-009, production readiness does not mean that every live ERP, bank, payment gateway and CRM API must be fully automated in 30 days. It means that a controlled, live-operational production base is usable by selected finance/DCC users with validated data paths, visible dashboards, human approvals, exception handling, owner routing and documented integration limits.
+Live operational usage by selected finance/DCC users for issue intake, receipt validation, reconciliation review, suspense donation queue and P&L intelligence.
+Validated data flow for at least one production-grade path using real exports or confirmed API-ready fields: DCC/ERP receipt data, payment gateway/bank settlement data, campaign/Yatra identifiers and CRM/donor identifiers.
+Dashboard visibility for management, operations, revenue/P&L, exceptions, data quality and AI-agent performance.
+Human approval routing for donor-sensitive messages, receipt correction, tax classification, payment/refund action, trust correction, write-back and final P&L sign-off.
+Exception handling for payment acknowledgement issues, final receipt issues, payment link failures, donor mismatch, suspense donations, cash receipt submission, dispute cases and ERP transition issues.
+Role ownership validation for owner, performer, approver, backup, escalation person, dashboard reviewer and data custodian before routing automation is treated as production-ready.
+Data quality checks for common IDs, source fields, seva, trust, preacher code, payment status, receipt status, created date, last follow-up date, next action and approval status.
+Golden journey testing for at least one end-to-end finance path: campaign/Yatra/source -> donor/contact -> payment -> receipt -> DCC/ERP record -> reconciliation -> P&L dashboard -> donor follow-up or exception queue.
+Fallback process if automation, upload, API, Gemini response, dashboard refresh or integration is unavailable.
+Measurable productivity improvement, including reduction in manual reconciliation effort, unresolved finance/DCC issues, Mukund Prabhu approval dependency and month-end discovery of avoidable errors.
+Source basis: WF-009 blueprint sections 8-17; HKHT_AI_Transformation_Analysis (1).html recommendations on ERP transition, leadership dashboard, API registry, golden journey QA and dependency measurement.
+0.2 Accelerated Delivery Governance
+The partner should propose a daily accelerated delivery rhythm for WF-009 with explicit HKHT validation points. This is not a request for uncontrolled speed; it is a request for disciplined production alignment, dependency visibility and fast decision closure.
+Period | WF-009 execution focus | Acceptance / validation focus
+Day 1-3 | Validate current workflow, source files, access, data exports, owner/approver/backup, CRM IDs, ERP-ready fields, API dependency classification, dashboard schema and production risks. | HKHT confirms owners, sample data, available exports/APIs, approval routing, issue categories and immediate blockers.
+Day 4-7 | Build initial working prototype, CRM/Sheet/API data path, first dashboard, first automation, first approval flow, first AI-assisted output, sample live workflow test and first leadership visibility layer. | Show issue intake, receipt validation, suspense match, reconciliation view, P&L summary and source-grounded AI explanation using real or clearly marked sample data.
+Day 8-14 | Deliver integrated working MVP with selected-user operational testing, workflow-specific AI assistance, task/follow-up integration where relevant, exception routing, dashboard refinement, data quality checks and API registry validation. | Selected finance/DCC users can use the system for controlled work; AI does not execute financial actions without approval.
+Day 15-21 | Harden production usage, cross-workflow integration, training, KPI validation, escalation testing, fallback protocol, role ownership refinement and golden journey QA testing. | Demonstrate adoption, exception flow, owner accountability, dashboard reliability and service continuity.
+Day 22-30 | Production readiness review, leadership visibility, operational handover, stabilization plan, productivity measurement, management reporting, partner sign-off checklist and next 60-day/75-day roadmap. | HKHT receives production readiness sign-off package, open-risk log and scale path.
+
+Source basis: HKHT_AI_Transformation_Analysis (1).html delivery-gap recommendations; WF-009 blueprint horizons; user-requested accelerated 30-day structure.
+0.3 1000x Productivity Alignment
+WF-009 contributes to the larger 1000x ambition by converting finance from retrospective accounting into near-real-time revenue, donor trust and seva intelligence. Its contribution is not only faster finance work; it is the ability to connect every donation, payment, receipt, campaign, Yatra and donor relationship signal into operational decisions while keeping financial authority human-controlled.
+Automation: structured intake, validation rules, reconciliation queues, approval reminders, case routing and dashboard refreshes remove repetitive checking and manual chasing.
+AI assistance: P&L explanations, variance summaries, suspense-match suggestions, donor-sensitive draft replies and campaign/Yatra ROI summaries multiply finance/DCC productivity.
+Agentic workflows: agents can monitor payment/receipt exceptions, classify cases, prepare approval packets, recommend suspense matches, trigger task follow-ups and escalate unresolved finance risk - while humans approve all final actions.
+Dashboard visibility: live P&L per Yatra/campaign, suspense donation clearance, trust-wise revenue/expense, receipt integrity, issue SLA and AI performance give leadership one financial intelligence view.
+CRM intelligence: payment behavior, receipt status, seva preference, donor history, Yatra participation and campaign source become part of the Relationship Intelligence Graph and the Follow-the-Devotee journey timeline.
+Revenue multiplication: finance signals feed donor propensity scoring, AI Fundraiser Copilot, behavior-triggered micro-campaigns, WhatsApp conversational donation/payment journeys and high-value donor cultivation.
+Managerial leverage: Mukund Prabhu moves from repeated checking and approval chasing to exception governance, margin decisions and strategic resource allocation.
+Platform module design: fields, IDs, dashboards, approval logic, agents and governance can be reused for later multi-center financial intelligence after Hyderabad stabilizes.
+Source basis: HKHT_AI_Transformation_Analysis (1).html 100x leaps including Relationship Intelligence Graph, donor propensity scoring, WhatsApp conversational commerce, live P&L per Yatra/campaign, behavior-triggered micro-campaigns, AI Fundraiser Copilot and institutional memory encoding; WF-009 blueprint productivity plan.
+0.4 Cross-Workflow Integration and Platform Safeguards
+WF-009 must be designed as an interoperable financial intelligence layer. The partner must explicitly prevent the finance MVP from becoming a disconnected tool that cannot later connect to Yatra, digital marketing, donor cultivation, CRM, DCC, ERP, ClickUp/task governance or leadership dashboards.
+Shared IDs: Contact ID, Donor ID, Yatri ID where applicable, Campaign ID, Yatra ID, Event ID, Donation ID, Payment ID, Receipt ID, Task ID and Owner ID must be defined from Day 1.
+CRM as relationship source of truth: DCC/payment/receipt data must enrich the donor/contact lifecycle rather than creating a separate finance-only contact universe.
+ERP-ready fields: every MVP record must include source, trust, seva, payment status, receipt status, created date, last follow-up date, next action, approval status and owner fields where applicable.
+KCKE boundary: use KCKE only for source-grounded Krishna conscious donor narratives, seva explanations or preaching/education content; do not use it for payment status, receipt status, task status, approvals or P&L facts.
+Media AI boundary: Media AI is not a core finance system; it may later consume approved finance/campaign impact data for donor inspiration, Yatra recap or social proof content after human approval.
+ClickUp/task layer: where ClickUp is used for execution governance, finance exceptions, partner dependencies, approvals and follow-ups may sync to the task layer, but ClickUp must not replace finance, CRM or ERP source-of-truth records.
+Leadership visibility: WF-009 should feed the leadership command center with high-value financial exceptions, campaign/Yatra margin, unresolved receipt/payment issues, suspense donation value and Mukund Prabhu decision items.
+API dependency tracking: DCC, ERP, CRM, payment gateway, bank, WhatsApp and external vendor dependencies must be recorded in a consolidated API registry with status, owner, access method, limits and fallback.
+Communication safeguards: WhatsApp, voice or email follow-up for finance issues should use approved communication governance, template readiness, suppression/DND readiness where relevant, human approval and service continuity procedures.
+Fallback workflow: manual CSV import, manual approval log, manual donor response, and manual reconciliation queue must remain available if automation or integration fails.
+Source basis: KCKE_Media_CRM_Dependency_Map.docx; HKHT_AI_Transformation_Analysis (1).html gaps on unified master data model, API registry, WhatsApp governance, platform architecture, service continuity, leadership dashboard and cross-workflow testing; WF-009 blueprint sections 11-18.
+0.5 Relevant Analysis Recommendations Incorporated
+The following recommendations from HKHT_AI_Transformation_Analysis (1).html have been incorporated because they are relevant to WF-009 Finance / DCC / Payment / P&L and the Hyderabad AI Revenue & Seva Growth Platform:
+Preserve the AI-first redesign mandate and avoid digitizing current manual finance/DCC friction.
+Upgrade the four-horizon structure into a 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale path.
+Keep revenue-first prioritization by treating finance intelligence as a donation, Yatra, campaign ROI and donor-trust accelerator.
+Maintain mandatory human approval for financial, donor-sensitive, public and exception decisions.
+Maintain separation between CRM/DBMS, ERP, KCKE, Media AI Pipeline and Gemini Enterprise/productivity agents.
+Strengthen unified master data model requirements and common IDs across finance, CRM, DCC, campaign, Yatra and donor workflows.
+Add API registry, workflow sequencing gates, role ownership validation, fallback/service continuity and golden journey QA requirements.
+Treat ERP transition issues carefully, especially receipt, payment acknowledgement, payment link, donor mismatch, cash receipt and dispute cases.
+Add leadership command center contribution and measure Mukund Prabhu dependency reduction.
+Incorporate live P&L per Yatra/campaign, Relationship Intelligence Graph, donor propensity scoring, AI Fundraiser Copilot signals, behavior-triggered micro-campaign triggers and institutional memory encoding where finance data is the enabling layer.
+Preserve multi-center scalability readiness through reusable field models, dashboard templates, approval patterns, agent logic and governance.
+Source basis: HKHT_AI_Transformation_Analysis (1).html; workflow-relevant recommendations only.
+2. Executive Seva Impact Summary
+Impact | Expected outcome | Source basis
+Donation impact | Protect donor trust through accurate receipts, tax classification, payment-status visibility, donor matching and suspense donation clearance. | Finance transcript; ERP transition file; WF-009 blueprint.
+Yatra impact | Connect Yatra registration, payment, source, expenses and margin so future Yatra marketing becomes measurable and optimizable. | Finance transcript; Master Context Pack; Interdependency Map inspection.
+Donor cultivation impact | Push receipt/payment/tax history and unresolved issues into CRM follow-up so donors are cultivated with context. | KCKE_Media_CRM_Dependency_Map; WF-009 blueprint.
+Krishna consciousness outreach impact | Better ROI visibility allows resources to be reinvested into Yatra, seva, donor cultivation and outreach programs that produce spiritual engagement. | Master Context Pack; WF-009 blueprint.
+Mukund Prabhu burden reduction | Move from routine approvals and monthly correction review to exception dashboards and decision intelligence. | Finance transcript; Role Ownership Correction Note; WF-009 blueprint.
+ERP/data centralization impact | Prototype in Sheets/AppSheet if needed, but enforce ERP-ready IDs, fields, ownership and audit from day one. | Project_Glossary.txt; KCKE_Media_CRM_Dependency_Map.
+Later multi-center readiness | Build reusable finance intelligence templates that can be replicated after Hyderabad stabilization. | Master Context Pack; Folder_Structure_Readme.txt.
+
+3. Management Brief for Leadership
+WF-009 is not a back-office automation; it is the control tower for every rupee generated, spent, reconciled and reinvested into preaching. [Source basis: Finance transcript; Master Context Pack.]
+The present payment process may be fast, but the strategic opportunity is finance intelligence: receipt integrity, suspense clearance, campaign ROI, Yatra profitability and donor-trust protection. [Source basis: Finance transcript; ERP transition file; WF-009 blueprint.]
+Every donation should be traceable from donor to source, preacher code, seva, trust, receipt, tax eligibility, settlement and P&L. [Source basis: Finance transcript.]
+ERP transition risks must be controlled through exception dashboards because receipt/payment issues are donor-sensitive. [Source basis: ERP transition file.]
+This MVP must avoid disconnected automation by using common IDs, ERP-ready fields, source tracking, owner/RACI fields and dashboard outputs from day one. [Source basis: Project_Glossary.txt; Folder_Structure_Readme.txt; WF-009 blueprint.]
+Funding WF-009 gives management a measurable platform module for revenue visibility, audit readiness and future multi-center finance intelligence. [Source basis: Master Context Pack; KCKE_Media_CRM_Dependency_Map.]
+4. Current Operational Reality
+Area | Current reality | Source basis
+Trigger | Donation/payment receipt; receipt issue; vendor invoice/payment due; PO approval; campaign/Yatra close; monthly P&L review. | Finance transcript; register inspection.
+People involved | Finance, DCC, codes department, digital marketing, Yatra coordinators, accounts team, CA, employee requester, manager, Mukund Prabhu. | Finance transcript.
+Tools used | DCC/Dhananjaya/new ERP, SQL/accounts data, payment gateways, bank transfer, credit cards, PO in ERP, reports/sheets, ERP feedback group. | Finance transcript; ERP transition file.
+Current steps | Generate/validate donation receipts, tag preacher/seva/tax/source/trust, book expenses by trust, raise PO, approve, pay, compile reports, correct, present monthly. | Finance transcript.
+Current approvals | Employee raises PO, manager approves, Mukund Prabhu final approval, finance executes payment. | Finance transcript.
+Current reports | Monthly revenue/expenditure/P&L/target review based on SQL and accounts/CA data. | Finance transcript.
+Current pain points | Suspense donations; receipt/payment-link/donor-mismatch issues during ERP transition; monthly corrections; source/ROI visibility gaps. | Finance transcript; ERP transition file.
+
+5. Current Bottlenecks and Productivity Loss
+Bottleneck | Productivity / revenue loss | Source basis
+Manual work | Manual checking of receipts, source tags, trust/category mapping, P&L corrections and exception follow-up. | Finance transcript; WF-009 blueprint.
+Follow-up leakage | ERP transition issues may move through feedback groups without structured owner/SLA/donor impact tracking. | ERP transition file; Assumption / Needs Validation for actual volumes.
+Data fragmentation | DCC, ERP, SQL/accounts, bank/gateway, campaign reports and CRM identity are not yet confirmed as a unified source of truth. | Finance transcript; KCKE_Media_CRM_Dependency_Map; Assumption / Needs Validation.
+WhatsApp/spreadsheet dependency | Evidence suggests feedback groups and reports are used; exact WhatsApp/Sheet dependency needs validation. | ERP transition file; Assumption / Needs Validation.
+Mukund Prabhu dependency | Current PO approval flow includes Mukund Prabhu as final approver; target should be exception-based. | Finance transcript; Role Ownership Correction Note.
+Revenue leakage | If source/payment/receipt/donor links are broken, campaign ROI and donor cultivation become unreliable. | Interdependency Map inspection; WF-009 blueprint.
+Missed preaching/Yatra opportunity | Delayed insight means campaign/Yatra spend cannot be optimized during the active cycle. | Finance transcript monthly review pattern; WF-009 blueprint.
+
+6. Desired AI-First Future-State Vision
+Target vision: a Finance & Donor Trust Command Center that continuously links Donation/Payment -> Donor/Contact -> Preacher Code -> Seva -> Tax Eligibility -> Campaign/Yatra Source -> Trust -> Bank Settlement -> Receipt -> Follow-up -> P&L -> Management Insight.
+Source basis: Derived from Finance transcript and WF-009 blueprint section 6; platform discipline from Project_Glossary.txt and KCKE_Media_CRM_Dependency_Map.
+Mode | WF-009 examples
+Automated | Forms, validation rules, owner/SLA routing, reminders, required fields, duplicate checks, payment/receipt status tracking, export imports.
+AI-assisted | Issue classification, P&L variance explanation, donor-sensitive draft replies, suspense match suggestions, management summaries.
+Agentic | Suspense donation resolution, payment reconciliation, receipt exception handling, finance close coordination, campaign/Yatra ROI analysis.
+Human-approved | Payment execution, receipt reissue, tax exemption changes, donor communication, trust-wise corrections, final P&L, high-risk approvals.
+
+7. Expected Productivity Leap
+Leap | Meaning | Partner classification
+2X control improvement | Structured intake, basic field discipline, owner/SLA dashboard and issue visibility. | Day 1-7 Production Foundation Sprint with sample or real export data, not a throwaway demo.
+10X workflow productivity | Automated receipt validation and reconciliation queues reduce repeated manual checks. | Day 8-14 Integrated Working MVP with selected users, manual uploads where needed, approval routing and dashboard refinement.
+30X revenue-operating leverage | Agents explain P&L variance, campaign/Yatra ROI and exception trends before month-end. | Day 15-30 Production Readiness and Productivity Multiplication Sprint with operational adoption, golden journey testing, fallback and KPI measurement.
+100X Hyderabad platform leverage | CRM/ERP/payment gateway/BigQuery/Looker integration creates near-real-time finance intelligence. | 30-Day Production Base plus 60-Day Stabilization and 75-Day Enterprise Scale readiness.
+1000X long-term contribution | Reach x conversion x donor lifetime value grows when finance, CRM, Yatra, marketing, donor cultivation and community outreach are integrated as one platform, with live P&L and relationship intelligence. | Long-term platform vision; early foundation begins in first 30 days; quantified targets are Assumption / Needs Validation.
+
+8. Expected AI Agents / Copilots
+Finance Intake & Classification Agent
+Field | Partner expectation
+Purpose | Convert finance/DCC/ERP issues into structured cases.
+Users | DCC, finance, ERP support, dashboard reviewer.
+Inputs | Issue text, receipt/payment IDs, donor details, screenshot/file, channel.
+Outputs | Case category, severity, missing fields, owner, SLA, recommended next action.
+Data needed | Issue taxonomy, donor/payment identifiers, ERP/DCC fields.
+Tools/connectors | Gemini Enterprise, Gmail/Drive/Sheets, AppSheet, Google Chat; later CRM/ERP API.
+Human approval points | Human approval before donor reply or finance correction.
+Escalation logic | Escalate high-value, donor-facing, tax/receipt, dispute or repeated failures.
+Success metrics | Classification accuracy, SLA compliance, unresolved backlog reduction.
+
+Donation Receipt & Seva Code Validation Agent
+Field | Partner expectation
+Purpose | Check preacher code, seva, trust, tax eligibility, source and receipt status.
+Users | DCC, finance reviewer, preacher/codes support.
+Inputs | Receipt export, seva master, preacher master, trust master, tax rules.
+Outputs | Validation status, exception queue, correction suggestions.
+Data needed | Seva/preacher/trust masters, receipt records, tax matrix.
+Tools/connectors | Sheets/AppSheet for demo; DCC/ERP export/API later.
+Human approval points | Human approval for corrections and tax eligibility.
+Escalation logic | Escalate wrong trust, tax impact, duplicate receipt, HNI donor.
+Success metrics | Receipt error rate, correction cycle time, donor complaints.
+
+Suspense Donation Resolution Agent
+Field | Partner expectation
+Purpose | Match unidentified payments to donor/contact/campaign/preacher/seva candidates.
+Users | Finance, DCC, data steward.
+Inputs | Bank/gateway exports, DCC receipts, CRM contacts, campaign logs.
+Outputs | Candidate matches with confidence score and validation queue.
+Data needed | Payment ID, UTR, amount, timestamp, donor identifiers, source.
+Tools/connectors | Sheets/BigQuery for MVP; bank/gateway/DCC/CRM APIs later.
+Human approval points | Human approval before final assignment.
+Escalation logic | Escalate high amount, old item, recurring donor, duplicate match.
+Success metrics | Suspense amount reduced, resolution time, approved match rate.
+
+Payment Gateway & Bank Reconciliation Agent
+Field | Partner expectation
+Purpose | Match gateway transactions, settlements, bank entries, DCC receipts, refunds and disputes.
+Users | Finance/accounts.
+Inputs | Gateway exports, bank statements, DCC receipt export, refund/dispute logs.
+Outputs | Matched/unmatched list, variance report, exception queue.
+Data needed | Gateway ID, UTR, amount, settlement date, receipt ID, donor ID.
+Tools/connectors | Apps Script imports, BigQuery, payment gateway/bank APIs later.
+Human approval points | Human approval for write-back/refunds/corrections.
+Escalation logic | Escalate mismatch, duplicate, failed acknowledgement, high-value donor issue.
+Success metrics | Match rate, reconciliation time, unresolved settlement value.
+
+Campaign / Yatra / Donor ROI Intelligence Agent
+Field | Partner expectation
+Purpose | Connect spend and source tags to donations, Yatra registrations, donor conversion and P&L.
+Users | Mukund Prabhu, marketing, Yatra, donor cultivation, finance.
+Inputs | Campaign spend, source tags, leads, calls, registrations, receipts, expenses.
+Outputs | ROI dashboard, cost per donation/registration, margin, recommendations.
+Data needed | Campaign ID, source, lead/donor/payment/Yatra IDs, revenue, expense.
+Tools/connectors | Looker Studio/BigQuery, CRM/DCC/payment APIs, ad platform exports.
+Human approval points | Recommendations only; spend changes require management approval.
+Escalation logic | Escalate negative ROI, high spend/no receipts, Yatra margin risk.
+Success metrics | ROI visibility, spend reallocation speed, margin improvement.
+
+PO / Vendor Payment Readiness Agent
+Field | Partner expectation
+Purpose | Prepare payment approval packet before approver review.
+Users | Employee requester, manager, Mukund Prabhu, finance.
+Inputs | Invoice, PO, trust, budget head, due date, vendor history, approval status.
+Outputs | Ready/not-ready flag, missing documents, risk notes, approval summary.
+Data needed | Vendor master, PO, invoice, approval status, payment history.
+Tools/connectors | ERP export, Drive invoice folder, AppSheet approval queue, Chat reminders.
+Human approval points | Existing approval chain remains.
+Escalation logic | Escalate missing invoice, wrong trust, duplicate bill, high value, overdue vendor.
+Success metrics | Incomplete approval reduction, readiness cycle time.
+
+Monthly P&L Close & Variance Explanation Agent
+Field | Partner expectation
+Purpose | Prepare monthly close checklist, missing-data list, variance explanation and management-ready finance narrative.
+Users | CA, finance team, Mukund Prabhu, management.
+Inputs | P&L, revenue/expense categories, campaign/Yatra data, targets, prior periods.
+Outputs | Draft management explanation, target variance, unresolved corrections, improvement list.
+Data needed | Monthly revenue, expense, target, budget, campaign, trust, category.
+Tools/connectors | Gemini Enterprise over Sheets/Docs; BigQuery/Looker later.
+Human approval points | CA/finance/Mukund approve final reports.
+Escalation logic | Escalate target miss, expense spike, wrong category, unexplained variance.
+Success metrics | Close time, correction count, management question resolution time.
+
+Finance Governance & Audit Agent
+Field | Partner expectation
+Purpose | Maintain audit trail of AI suggestions, approvals, corrections and exceptions.
+Users | Finance lead, auditor, admin, Mukund Prabhu.
+Inputs | Proposed changes, approvals, user actions, source documents, before/after values.
+Outputs | Audit log, change log, approval evidence, unresolved risk list.
+Data needed | User ID, timestamp, source file, approval ID, old/new values.
+Tools/connectors | BigQuery, ERP audit trail, AppSheet logs, Google Cloud audit logs.
+Human approval points | All material updates require approval.
+Escalation logic | Escalate approval bypass, sensitive access, unapproved change.
+Success metrics | Audit completeness, bypass incidents, unauthorized change rate.
+
+Source basis: WF-009 blueprint section 7; Finance transcript; ERP transition file; Project_Glossary.txt HITL rules.
+9. Human Role Redesign Expectations
+Role expectation | Partner should design for
+Current roles continue | Finance, DCC, CA/accounts, codes department, digital marketing, Yatra coordinators and Mukund Prabhu remain accountable for their domains.
+AI-supervised roles | DCC/finance staff supervise validation, classification, reconciliation, exception queues and donor-sensitive drafts.
+Donor/yatri/preaching-facing shift | Time saved from manual checking should move staff toward donor assurance, Yatra follow-up, seva explanation and relationship care.
+Data steward / QA / dashboard reviewer | Create Finance Data Steward, Finance AI Supervisor, dashboard reviewer and reconciliation QA responsibilities.
+New roles needed | Finance Data Steward; Finance AI Supervisor; Integration/API owner; Dashboard owner; Partner delivery coordinator.
+Ownership validation required | Validate owner, performer, approver, backup, escalation person and data steward before production routing.
+
+Source basis: Role Ownership Correction Note; Finance transcript; Project_Glossary.txt; WF-009 blueprint section 14.
+10. Dashboard and Operational Intelligence Expectations
+Dashboard | Required outputs
+Management dashboard | Revenue vs target, trust-wise P&L, campaign/Yatra ROI, open high-risk finance exceptions, approval bottlenecks.
+Operational dashboard | Open DCC/ERP issues by owner/SLA/severity; receipt exceptions; payment mismatches; suspense donations; PO readiness.
+Revenue/conversion dashboard | Campaign spend -> leads/calls/registrations/donations; cost per donation; cost per Yatra registration; net margin.
+Data quality dashboard | Missing Contact/Donor/Yatri IDs, duplicate donors, missing source, missing preacher/seva/trust, unmatched payments, field completeness.
+AI-agent performance dashboard | Classification accuracy, accepted suggestions, human overrides, hallucination incidents, audit completeness, SLA improvement.
+Leadership command center finance tile | Daily view of revenue health, Yatra/campaign margin, receipt/payment exceptions, suspense donation value, high-risk approvals and Mukund Prabhu decision items.
+Live P&L per Yatra/campaign | Near-real-time margin and break-even tracking using registrations, payments, receipts, campaign spend, vendor bills and expense categories as data matures.
+Mukund Prabhu dependency-reduction dashboard | Track approval volume, escalations, unresolved decision items, delegated approvals, cycle time and operational hours reduced.
+Golden journey QA dashboard | End-to-end test health for campaign/Yatra/source -> donor/contact -> payment -> receipt -> reconciliation -> P&L -> follow-up/exception.
+
+Source basis: WF-009 blueprint section 13; Master Context Pack; KCKE_Media_CRM_Dependency_Map.
+11. CRM / ERP / Data Expectations
+The partner must design this MVP so the following platform-compatible data elements are available or planned from day one.
+Requirement | Fields | Source of truth direction
+Common IDs | Contact ID, Donor ID, Yatri ID where applicable, Community ID/Family ID where applicable, Donation ID, Campaign ID, Yatra ID, Event ID, Task ID, Owner ID. | CRM/DBMS now; ERP later.
+Source tracking | Campaign source, event source, referral source, call source, website source, Yatra source, donor source. | CRM/campaign tools now; analytics/ERP later.
+Ownership | Owner, performer, approver, backup, escalation person, dashboard reviewer, data steward. | Workflow register now; ERP/workflow app later.
+Follow-up status | Last follow-up date, next action, next action owner, priority, status, outcome. | CRM/task system now; ERP/workflow app later.
+Revenue/payment link | Donation ID, payment status, receipt status, campaign ID, Yatra ID, event ID, seva, trust, source. | DCC/payment gateway/ERP.
+Dashboard outputs | Leads, calls, registrations, donations, conversions, pending tasks, delays, escalations, revenue/P&L. | CRM/BigQuery/Looker.
+ERP-ready fields | Contact ID, Campaign ID, Yatra ID, Donation ID, Event ID, Task ID, Owner ID, Payment Status, Source, Created Date, Last Follow-up Date, Next Action, Approval Status. | Enforce in MVP even if Sheets/AppSheet.
+Relationship intelligence contribution | Financial events: donated, paid, refunded, receipt issued, receipt failed, attended Yatra, campaign source, seva preference. | CRM/DBMS relationship graph and analytics layer; ERP records later.
+Golden journey compatibility | Campaign/Yatra/source -> donor/contact -> payment -> receipt -> reconciliation -> P&L -> follow-up/task. | Cross-workflow QA and leadership dashboard.
+Service continuity fields | Fallback method, manual owner, exception reason, last manual action, recovery status, integration availability. | Workflow app/task layer now; ERP/support model later.
+
+Source basis: User platform requirements; Project_Glossary.txt; KCKE_Media_CRM_Dependency_Map; Folder_Structure_Readme.txt; WF-009 blueprint section 12.
+Data entities and risks
+Entity | Key fields | Source now | Future source | Risks
+Donor/Contact | donor_id, CRM_id, name, phone, email, PAN/consent where applicable | DCC/CRM/sheets | CRM/DBMS -> ERP sync | Duplicates, mismatch, missing consent/PAN
+Donation Receipt | receipt_id, donor_id, payment_id, seva_id, trust_id, tax flag, preacher code, source | DCC/ERP | ERP/DCC master | Wrong seva/trust/tax/source
+Payment | payment_id, gateway_txn_id, UTR, amount, mode, status, settlement date | Gateway/bank/DCC | ERP/payment analytics repository | Missing UTR, failed acknowledgement, duplicates
+Campaign/Yatra ROI | campaign_id, yatra_id, spend, leads, registrations, donations, margin | Marketing/Yatra/Finance | BigQuery/Looker + ERP | Inconsistent source capture
+Approval | approval_id, owner, requester, approver, status, timestamp | ERP/Sheets | ERP/workflow app | Approval bypass, unclear delegation
+Finance Case | case_id, category, severity, owner, SLA, status, donor impact | ERP feedback/manual | Workflow app/CRM case table | Unstructured WhatsApp/group inputs
+Finance Relationship Event | event_id, donor_id, action type, amount, seva, source, Yatra/campaign link, timestamp | CRM/DCC/payment exports | Relationship intelligence graph + CRM/analytics | Fragmented identity, missed donor cultivation signal
+Live P&L Signal | signal_id, yatra_id/campaign_id, revenue, spend, margin, variance, threshold, recommendation | Finance/Yatra/marketing exports | BigQuery/Looker + ERP later | Delayed or inconsistent source capture
+API Registry Item | api_id, provider, access status, owner, method, limits, fallback, blocker | Partner/HKHT validation | Central API registry | Hidden integration blocker or overpromised live connector
+
+12. KCKE / Media AI Expectations, if applicable
+KCKE should not be used for operational finance records such as payment status, receipt status, inventory, task status or approvals. [Source basis: Project_Glossary.txt; KCKE_Media_CRM_Dependency_Map.]
+KCKE may be used only when donor narratives, seva meaning, philosophical replies, preaching/education content or source-grounded Krishna conscious content is required. [Source basis: Project_Glossary.txt; KCKE_Media_CRM_Dependency_Map.]
+Media AI is not core to WF-009; it may later consume approved finance/campaign impact data for reels, donor impact stories, Yatra recap content or fundraising storytelling. [Source basis: Media AI Pipeline Briefing Note; KCKE_Media_CRM_Dependency_Map; WF-009 blueprint.]
+13. Governance and Human Approval Expectations
+Approval category | Expected design
+Donor-sensitive approvals | Human approval before donor message, receipt issue response, refund/dispute response or apology note.
+Financial approvals | No autonomous payment execution, write-back correction, refund, trust correction or tax change in MVP.
+Public communication approvals | Any public finance/payment explanation must be reviewed by authorized leadership.
+Philosophical/devotional approvals | If KCKE-generated donor narrative/seva meaning is used, it requires approved spiritual/source review.
+Deity/media approvals | Not core to WF-009; if donor impact media is generated, Media AI approval workflow applies.
+CSR/HNI approvals | High-value donor or CSR-sensitive communication must route to designated relationship owner/leadership.
+HR/legal approvals | Any access, privacy, statutory, audit or legal issue must have designated human approver.
+
+Source basis: Project_Glossary.txt HITL; KCKE_Media_CRM_Dependency_Map; WF-009 blueprint risks/governance.
+14. Integration Expectations
+Area | Partner expectation
+Google Workspace | Drive, Sheets, Docs, Gmail, Chat, Calendar for files, issue queues, approvals, reminders and summaries.
+Gemini Enterprise | Workspace Q&A, summaries, classification, draft explanations and copilot layer where feasible.
+Apps Script / AppSheet / Sheets | Day 1-7 and Day 8-14 production foundation forms, issue registers, validation prototypes, manual CSV import and approval routing; not throwaway demo tooling.
+Vertex AI / Agent Builder | Production-grade agentic workflows, confidence scoring, grounding, evaluation and secure tool use.
+Cloud Run / Workflows | API services, scheduled reconciliation, orchestration, event-based processing.
+BigQuery / Looker Studio | Analytics repository and dashboards for live P&L, ROI, exceptions, data quality, leadership visibility and agent performance.
+CRM APIs | Donor/contact identity, follow-up status, source attribution, segmentation and cultivation handoff.
+ERP APIs | Receipts, approvals, trust-wise finance records, vendor payments, P&L and audit write-back later.
+Payment gateway/DCC | Gateway settlements, payment status, DCC receipts, donor matching and suspense clearance.
+ClickUp | If used for project/task governance, sync finance exceptions, partner dependencies, approvals and escalations; do not replace finance, CRM or ERP source of truth.
+WhatsApp/voice vendor | Only for donor communication/follow-up after approved templates, communication governance, suppression/DND readiness where relevant and human approval.
+External tools | Use only where Google stack lacks required bank/gateway/ERP connectors; partner must justify.
+Consolidated API Registry | Partner must maintain status of DCC, ERP, CRM, gateway, bank, WhatsApp, task and external connectors: confirmed, export-only, blocked, needs contract, needs credentials or future phase.
+Fallback and service continuity | Manual CSV import, manual reconciliation queue, manual approval log and manual donor response process must be documented for each critical integration.
+Leadership command center feed | WF-009 must provide dashboard-ready finance tiles and exception metrics into the platform-level leadership view.
+
+Source basis: Project_Glossary.txt; KCKE_Media_CRM_Dependency_Map; TRD_AI_Project_Intelligence_Agent_Google_Enterprise for general architecture patterns; WF-009 blueprint.
+15. Day 1-7 Production Foundation Sprint Expectations (Former 7-Day Demo Expectations)
+Day 1-7 topic | Production foundation expectation
+Show by Day 7 | Working foundation: issue intake + owner/SLA dashboard; receipt validation; suspense matching; campaign/Yatra P&L dashboard; AI explanation over sample or real export data; first approval flow; first leadership visibility layer.
+Can use sample/mock where pending | DCC exports, payment gateway/bank exports, CRM IDs, campaign spend, P&L and ERP approvals may be mocked only if access is pending, but must be clearly labeled and mapped to production data paths.
+Data/access needed immediately | 20-50 receipts, 20 payment rows, seva/preacher/trust sample, campaign source list, 10-20 ERP issue examples, sample P&L, owner/approver/backup list, export/API availability, dashboard schema and risk list.
+Do not overclaim | No live ERP/bank/gateway integration, no payment execution, no final audited P&L, no tax auto-decision and no production write-back unless access, security, approval and rollback are confirmed.
+
+Source basis: WF-009 blueprint section 8; ERP transition file; Finance transcript. Updated to Day 1-7 Production Foundation Sprint based on HKHT_AI_Transformation_Analysis (1).html and revised execution mandate.
+16. Day 8-14 Integrated Working MVP Expectations (Former 14-Day MVP Expectations)
+Day 8-14 MVP topic | Integrated working MVP expectation
+Selected-user usable scope | Finance/DCC exception register, manual-upload validation/reconciliation, source-grounded dashboard, human-approved draft responses, daily/weekly exception report, owner routing, approval testing and task/follow-up integration where relevant.
+Manual/semi-automated remains | Exports, write-backs, final corrections, payment execution, tax decisions, refund/dispute resolution and P&L sign-off remain human-controlled or semi-automated.
+Acceptance criteria | 90% sample issue classification; clear validation exceptions; ranked suspense candidates; source-grounded P&L explanation; CRM/data path validation; approval routing tested; no unauthorized actions.
+Exclusions | Production bank/ERP/gateway write-back, autonomous payments, final statutory reports, complete ERP migration, perfect identity matching without cleanup and any live connector not confirmed in API registry.
+
+Source basis: WF-009 blueprint section 9; Project_Glossary.txt HITL. Updated to Day 8-14 Integrated Working MVP based on revised execution mandate.
+17. Day 15-30 Production Readiness and Productivity Multiplication Sprint Expectations
+Day 15-30 topic | Production readiness and productivity multiplication expectation
+Users | Small finance/DCC group, one dashboard reviewer, one data custodian, one AI supervisor, one Mukund Prabhu/leadership review loop and named partner delivery owner.
+Workflow coverage | Receipt validation, payment reconciliation imports, suspense queue, ERP transition issue case management, approval routing, P&L summary, campaign/Yatra ROI dashboard and leadership command center feed.
+Data requirements | Real but controlled exports with sensitive fields masked where needed; stable master lists for seva, preacher, trust and source; confirmed common IDs; API registry status; fallback data path.
+Integration scope | Manual CSV import acceptable for production base where APIs are pending; API feasibility assessment must be completed for CRM/DCC/ERP/gateway/bank; service continuity and rollback must be documented.
+Success metrics | Backlog reduction, issue SLA improvement, reconciliation match rate, close-cycle improvement, dashboard usage, owner accountability, fewer escalations to Mukund Prabhu and leadership review usefulness.
+Quality gates | Golden journey QA, escalation testing, human approval testing, data-quality checks, fallback simulation and production readiness review by Day 30.
+
+Source basis: WF-009 blueprint sections 8-10; KCKE_Media_CRM_Dependency_Map. Updated to Day 15-30 Production Readiness and Productivity Multiplication Sprint.
+18. 30-Day Production Base + 60-Day Stabilization Expectations (Former 90-Day Production Foundation Expectations)
+Foundation topic | 30-Day Production Base + 60-Day Stabilization expectation
+Production architecture | Production base architecture: Cloud Run/Workflows + BigQuery/Looker + controlled Workspace/Gemini layer + CRM/ERP/API validation path, starting with safe exports where APIs are pending.
+Security/access | Role-based access, sensitive-field masking, audit logs, least privilege, environment separation, approval evidence and fallback access process.
+Dashboards | Management, operational, revenue/conversion, data quality, AI-agent performance, leadership command center and Mukund Prabhu dependency-reduction dashboards.
+API validation | Confirm DCC, ERP, CRM, payment gateway, bank, WhatsApp and task-layer API/export options; document limitations in consolidated API registry.
+Data quality governance | Master data owners, ID mappings, source fields, validation rules, data dictionary, exception process, golden journey QA and stabilization backlog.
+Support model | Named owner, data custodian, AI supervisor, partner support SLA, incident escalation, fallback protocol, change-control process and 60-day stabilization roadmap.
+75-day readiness checkpoint | Review enterprise-scale readiness, cross-workflow maturity, dashboard reliability, integration maturity, adoption and reusable multi-center template potential.
+
+Source basis: KCKE_Media_CRM_Dependency_Map ERP phases; Project_Glossary.txt; WF-009 blueprint section 11. Realigned to 30-Day Production Base plus 60-Day Stabilization.
+19. 6-Month Enterprise Architecture Vision: 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale
+By 6 months, WF-009 should plug into the Hyderabad AI Revenue & Seva Growth Platform as the authoritative financial intelligence layer for donations, DCC/payment records, receipt integrity, trust-wise P&L, campaign/Yatra ROI, suspense clearance and donor-trust exceptions. The path is compressed but disciplined: first 30 days create a production base, the next 60 days stabilize and harden adoption/data/integrations, and by 75 days HKHT should be ready to evaluate enterprise-scale integration maturity and multi-workflow dashboard intelligence.
+Architecture dimension | 30-day / 60-day / 75-day / 6-month expectation
+Integrated revenue engine | Connect WF-001 Yatra, WF-003 Digital Marketing, WF-007 Donor Cultivation, WF-002 Voice, WF-014 Community Outreach and WF-006 CRM to financial outcomes through a 30-day production base and 60-day stabilization path.
+ERP readiness | Move from MVP fields to validated ERP integration for receipts, approvals, payments, P&L and audit; do not build unstable handoffs on unresolved ERP transition issues.
+Predictive intelligence | Forecast campaign ROI, Yatra margin, donor LTV, suspense risk, payment failure patterns and monthly target risk after data quality and integration maturity improve.
+Replication readiness | Package fields, dashboards, approval design, agent prompts, API registry patterns, fallback procedures, golden journey QA and governance as a reusable center template without launching multi-center rollout prematurely.
+Boundary discipline | Use structured CRM/ERP/DBMS for finance records; use KCKE/Media only for approved donor narratives or media outputs where applicable; keep Gemini Enterprise as productivity layer unless validated for production tool use.
+Institutional intelligence | Encode Mukund Prabhu's finance judgment patterns for exception thresholds, donor-sensitive handling, campaign/Yatra margin interpretation, vendor trust and escalation logic as reviewed decision guidance, not autonomous authority.
+Relationship intelligence | Finance events feed the Follow-the-Devotee timeline, donor propensity scoring, AI Fundraiser Copilot signals and behavior-triggered micro-campaigns after CRM alignment.
+
+Source basis: Master Context Pack; KCKE_Media_CRM_Dependency_Map; WF-009 blueprint sections 11-12 and 18. Extended with 75-Day Enterprise Scale readiness and analysis-file platform recommendations.
+20. Expected Google Product Areas
+Product area | Partner validation ask
+Gemini Enterprise / Workspace | Validate what can be done for Drive/Gmail/Sheets Q&A, summarization, classification and draft explanations.
+Apps Script / AppSheet / Sheets | Use for rapid workflow forms, issue registers, validation prototypes and manual imports.
+Google Cloud / Vertex AI / Agent Builder | Use for agentic workflows, secure tool execution, confidence scoring, evaluation and custom orchestration.
+Cloud Run / Workflows / Pub/Sub / Scheduler | Use for integration services, scheduled reconciliation and event-driven pipelines.
+BigQuery / Looker Studio | Use for finance analytics, management dashboards and performance monitoring.
+Google Cloud security | IAM, audit logging, secret management, VPC controls if needed, access review and data protection.
+API Registry / Integration Governance | Partner must validate a consolidated API and export registry across DCC, ERP, CRM, payment gateways, banks, WhatsApp and task tools before promising live automation.
+Leadership Command Center | Validate whether the finance tile is best delivered through Looker Studio, Looker, Sheets-based prototype or Google Cloud dashboarding in the first 30 days.
+Service Continuity | Validate fallback and recovery design for export failures, API failures, approval bottlenecks, dashboard refresh failures and AI-output review failures.
+
+Source basis: Partner should validate product fit; initial mapping based on Project_Glossary.txt and WF-009 blueprint.
+Feature Classification Required From Partner
+Item | Classification guidance
+Issue intake and owner/SLA dashboard | Buildable immediately / requires Sheets-AppSheet / requires our data.
+Receipt validation agent | Buildable from exports / requires DCC/ERP data / requires data cleanup / human approval.
+Suspense matching | Demo/mock initially / requires bank-gateway-DCC exports / custom build / human approval.
+Payment gateway reconciliation | Requires payment gateway exports/API / BigQuery later / do not promise production in 2 weeks without credentials.
+Campaign/Yatra ROI dashboard | Requires source tracking, campaign spend, Yatra IDs, CRM/payment linkage.
+P&L explanation copilot | Requires sample P&L and source data; Gemini Enterprise possible for narrative, BigQuery/Looker for production.
+ERP write-back | Requires ERP later; should not be promised in 2 weeks.
+Predictive intelligence | Requires 90-day/6-month data foundation; not 14-day deliverable.
+30-day production foundation | Requires selected users, real or controlled exports, owner validation, approval routing, dashboard visibility and fallback process.
+Leadership command center finance tile | Buildable initially from Looker/Sheets; requires stable KPI schema and source mapping; production requires data quality.
+API registry validation | Buildable immediately as governance artifact; required before any live integration commitment.
+ERP transition issue queue | Buildable immediately; requires ERP/DCC issue categories and owner mapping; critical donor-trust safeguard.
+Golden journey QA | Requires cross-workflow test data and agreed success criteria; must be included before Day 30 sign-off.
+Live P&L per Yatra/campaign | Can be shown with sample/controlled exports; production accuracy requires campaign/Yatra/payment/source integration and data cleanup.
+Relationship intelligence finance feed | Requires CRM alignment and common IDs; early event schema can be defined immediately; full graph is enterprise-scale path.
+
+21. Questions for the Implementation Partner
+What can be completed in the Day 1-7 Production Foundation Sprint, with clear separation between real, sample-data and mock components?
+What can be completed in the Day 8-14 Integrated Working MVP that selected finance/DCC users can actually use?
+What can become production-ready by Day 30 using controlled real exports, selected users, dashboard visibility, approval routing and fallback processes?
+What becomes stabilized during the 60 days after the production base is created?
+What is the 75-day enterprise-scale readiness path and the 6-month architecture for CRM/ERP/payment-gateway/DCC/BigQuery/Looker integration?
+What is demo/mock only?
+What requires APIs/connectors from DCC, ERP, CRM, payment gateways and banks?
+What requires CRM/ERP/data cleanup before meaningful accuracy?
+What requires external vendors beyond Google stack?
+What should not be promised in 2 weeks?
+What data do you need from HKHT immediately?
+What licenses are required for Gemini Enterprise, AppSheet, Google Cloud, Vertex AI, BigQuery, Looker and agent runtime?
+What are the cost, security, privacy and access risks?
+How will every AI recommendation show source rows or source documents?
+How will human approval, audit logging and rollback be handled?
+How will the system prevent hallucinated P&L explanations or incorrect payment/receipt status?
+How will finance confidentiality be preserved across departments?
+How will integration limitations be documented before TRD sign-off?
+How will the partner maintain a consolidated API registry with status, owner, limitations, credentials needed, fallback method and go/no-go criteria?
+How will ERP transition issues be isolated from unstable financial handoffs while still enabling production-ready issue tracking and dashboards?
+How will the finance module feed the leadership command center from Day 1 without creating a disconnected dashboard?
+How will golden journey testing verify campaign/Yatra/source -> donor/contact -> payment -> receipt -> reconciliation -> P&L -> follow-up?
+How will Mukund Prabhu dependency reduction be measured in approvals, escalations, dashboard reviews and operational follow-up?
+How will institutional finance judgment, exception thresholds and donor-sensitive handling guidance be captured without making the AI the final authority?
+How will WhatsApp, voice or email finance follow-up be governed where donor communications are triggered from finance exceptions?
+What fallback process will run if APIs, uploads, dashboards, AI outputs or approval routing fail during production usage?
+22. Expected Deliverables from Google / Implementation Partner
+Technical Requirements Document (TRD).
+Solution Architecture.
+Google Product Mapping.
+Agent Architecture.
+Integration Architecture.
+CRM/ERP/Data Architecture.
+Security and Access Model.
+Human Approval Architecture.
+Dashboard Architecture.
+API/Connector Requirements.
+Deployment Architecture.
+Licensing Requirements.
+Cost Estimates.
+Team Structure.
+Rollout Plan.
+Risks and Limitations.
+HKHT-side Dependencies.
+Data Requirements from HKHT.
+Assumptions and Exclusions.
+30-Day Production Readiness Sign-off Checklist.
+60-Day Stabilization Roadmap.
+75-Day Enterprise Scale Readiness Roadmap.
+Consolidated API Registry and Integration Dependency Matrix.
+Fallback / Service Continuity Protocol.
+Golden Journey QA Scenarios and Results.
+Leadership Command Center Finance Tile Specification.
+Mukund Prabhu Dependency-Reduction Measurement Plan.
+Role Ownership Validation Matrix for owner, performer, approver, backup, escalation person and dashboard reviewer.
+ERP Transition Issue Stabilization Plan for donor-facing receipt/payment risks.
+Additional source basis for accelerated production realignment: HKHT_AI_Transformation_Analysis (1).html recommendations on production path, API registry, ERP transition risk, leadership dashboard, golden journey testing, service continuity and institutional memory encoding.
+Partner response requirement For every proposed feature, classify it as: buildable immediately; Day 1-7 production foundation; Day 8-14 integrated MVP; Day 15-30 production readiness; demo/mock only; requires HKHT data; requires CRM/API integration; requires ERP later; requires custom Google Cloud build; requires Gemini Enterprise; requires Vertex AI; requires Agent Builder/agentic systems; requires Apps Script/AppSheet/Sheets; requires BigQuery/Looker Studio; requires external vendor tools; requires data cleanup; requires human approval design; requires API registry validation; requires fallback design; or should not be promised in 2 weeks.
+
+Source basis: Finance Workflow Overview_otter_ai.docx transcript; _Transition to New ERP Platform_ Key Issues_.docx; Mukund_Prabhu_Operations_Master_Context_Pack v0.2/v0.5; Project_Glossary.txt; KCKE_Media_CRM_Dependency_Map.docx; Folder_Structure_Readme.txt; relevant register/dependency-map inspection; WF-009 blueprint generated earlier in this chat.

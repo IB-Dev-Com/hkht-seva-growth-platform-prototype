@@ -1,0 +1,221 @@
+WF-011 HR / SOP / KT / Team Management – Google Partner Scope Alignment and Improvement Note
+Partner-facing scope alignment for the 30-Day Production Base, 60-Day Stabilization and 75-Day Enterprise-Scale Readiness path
+AI for HKHT Seva | Hyderabad AI Revenue & Seva Growth Platform
+Prepared for internal workflow preparation and partner-scope alignment | May 2026
+Source Notes Used in This Partner Alignment Note
+This note aligns partner scope understanding with the attached evidence and latest WF-011 Document B. It is not a technical requirements document. It is a scope-alignment note so the partner can classify, phase and strengthen the implementation correctly.
+Tag | Source / File | How it was used
+S1 | Latest Document B – WF-011 30-Day Production-Ready Implementation Partner Brief | Primary partner-facing architecture, agents, sprint path, governance and data model.
+S2 | HR Processes and Systems Review_otter_ai.docx | Primary current-state transcript: hiring, JD, interviews, HRMS, onboarding, attendance, performance, salary, SOP and team management.
+S3 | WhatsApp Attendance Text + 20-May-2026 Attendance Image | Sample evidence of daily attendance reporting: Present/Absent/On Duty/Week-Off, remarks, login time.
+S4 | HKHT GE - Technical Scope.docx | Partner technical framing: Gemini Enterprise as internal tool, dummy data MVP boundary, GE/ADK/custom build separation.
+S5 | HKHT GE Technical Scope — Gap Analysis.docx | Gap analysis: WF-011 should not be limited to SOP search; needs role ownership, backup, training, KT tracking and productivity layer.
+S6 | .docx | Strategic platform framing: revenue growth, operational sovereignty, institutional scalability, Gemini, Vertex, BigQuery/Looker, KCKE.
+S7 | Important Upgrades - Claude.docx | 100x/1000x ideas: Devotee Intelligence Graph, predictive intelligence, real-time copilot, institutional memory, federated intelligence.
+S8 | HKHT_AI_Transformation_Analysis(1).html | Programme strengths and gaps: AI-first redesign, human approval, system separation, ERP-ready IDs, cross-workflow mapping, multi-center readiness. DPDP-specific suggestions intentionally excluded.
+S9 | KCKE_Knowledge_Graph_Briefing.html | KCKE boundary: source-grounded Krishna conscious knowledge, philosophical consistency, education/preaching/institutional memory.
+S10 | Media_AI_Pipeline_Briefing_Note.docx | Media AI boundary: storyboard, source references, visual/audio/deity/character approval; separate from CRM/ERP/KCKE.
+S11 | Generated WF-011 workflow blueprint and earlier documents in this chat | Synthesized current-state/future-state design, role redesign, data model, register updates, and partner brief basis.
+S12 | Project Source / registers referenced in prior Document B | Master context, glossary, role ownership correction, dependency maps and registers. Some originals may need re-upload/export for final validation.
+
+1. Purpose of This Note
+This note is meant to help the Google Partner / implementation partner align their technical scope with the intended HKHT AI for Seva architecture for WF-011 HR / SOP / KT / Team Management.
+This is not a rejection of the current partner work.
+This is not a request to add random new scope.
+This is a clarification of the intended architecture so the partner can classify, phase and strengthen its plan correctly.
+The current workflow is only evidence of today’s reality. The target is an AI-first, agentic, CRM-aligned, ERP-ready, dashboard-visible and human-governed platform module.
+Evidence basis: Based on Latest Document B (S1), Transformation Analysis AI-first redesign principle (S8), GE Gap Analysis (S5).
+2. Core Understanding Expected from the Partner
+WF-011 should become the HR capacity, SOP, KT, role ownership and institutional-memory module of the Hyderabad AI Revenue & Seva Growth Platform.
+It should not be reduced to a small isolated demo.
+It should not become a disconnected automation.
+It should not be treated only as a knowledge assistant over SOPs and HR policies.
+It should be a production-aligned module that manages roles, owners, backups, onboarding, attendance exceptions, KT completion, performance pulse and leadership visibility.
+It must preserve common IDs, source tracking, approvals, dashboards, CRM/ERP readiness and future multi-center scale.
+It must keep private HR operational records within HR/ERP/HRMS boundaries while exposing only necessary capacity/assignment signals to revenue workflows.
+Evidence basis: Based on Latest Document B platform role (S1), GE Technical Scope WF-011 classification (S4), GE Gap Analysis WF-011 concerns (S5).
+3. Intended Architecture from the Beginning
+Architecture component | Correct interpretation for WF-011
+Relationship intelligence | WF-011 contributes staff-owner and capacity context to relationship workflows so donor/yatri/community follow-up has an accountable trained owner and backup.
+Predictive intelligence | Future capacity planning can predict staffing/training gaps before Yatra seasons, campaigns and festivals.
+Real-time AI assistance | HR and managers receive role packs, SOP answers, onboarding checklists, coaching drafts and exception summaries during work.
+Institutional memory | Mukund Prabhu’s repeated judgment, role expectations and escalation logic become approved SOPs, scorecards and decision playbooks.
+KCKE source-grounding | Use KCKE for Krishna conscious induction, culture, preaching education and devotional training only; not for attendance/payroll/task status.
+Media AI | Use Media AI only for approved training/onboarding videos or culture modules with scene/source/visual/audio approval; not for HR records.
+CRM/DBMS operational truth | CRM remains relationship source of truth. WF-011 sends/receives only safe staff assignment/capacity links when relevant.
+ERP-ready structured records | Employee, role, attendance, leave, approval, SOP/KT, training and payroll exception fields must be structured for future ERP/HRMS.
+Gemini Enterprise | Workspace productivity: SOP search, drafts, summaries, manager digests, policy Q&A and internal assistance.
+Vertex AI / Agent Builder | Scalable governed agents, tool calls, retrieval, orchestration, audit and production-grade workflows where GE is insufficient.
+BigQuery / Looker Studio | Leadership command-center dashboards, data quality, performance pulse, capacity intelligence and cross-workflow analytics.
+ClickUp task governance | Execution layer for tasks, reminders and ownership where applicable; classify API vs manual/CSV path.
+Leadership command center | WF-011 feeds capacity, role-backup, training, onboarding, exceptions and Mukund dependency-reduction metrics.
+WF-013 multi-center readiness | Role templates, SOP/KT packs, onboarding checklists and dashboards should become reusable replication assets later.
+
+Evidence basis: Based on  (S6), Important Upgrades (S7), Transformation Analysis (S8), KCKE Briefing (S9), Media AI Briefing (S10), Latest Document B (S1).
+4. Scope Alignment with Latest Document B
+The latest Document B should be read as a 30-Day Production-Ready Implementation Brief. Production readiness does not mean every future enterprise feature is finished in 30 days. It means WF-011 has a stable production base, validated data path, human approval, dashboard visibility, owner routing, fallback process and clear integration contract.
+Phase | Partner interpretation
+Day 1–7 Production Foundation Sprint | Confirm sources, owners, IDs, dashboard schema, approval gates, mock/live data boundaries and first working prototype.
+Day 8–14 Integrated Working MVP | Selected users test attendance exceptions, onboarding checklist, SOP/KT retrieval, role-backup matrix and approval routing.
+Day 15–30 Production Readiness Sprint | Controlled live or near-live operational use, dashboards, exception handling, fallback process, golden journey QA and handover checklist.
+60-Day Stabilization | Adoption, data quality, API hardening, dashboard refinement, training, support rhythm and KPI discipline.
+75-Day Enterprise-Scale Readiness | Cross-workflow integration, leadership command-center contribution, reusable templates, API registry and WF-013 packaging readiness.
+
+Evidence basis: Based on Latest Document B 30-Day realignment and sprint sections (S1).
+5. Scope Alignment with HKHT GE Technical Scope vs Gap Analysis
+The GE Technical Scope correctly recognizes WF-011 as a Gemini Enterprise knowledge assistant over SOPs, KT material and HR policies. However, the Gap Analysis clarifies that this is only part of the required platform role.
+Practical category | Scope alignment
+Already covered | SOP/KT and HR policy retrieval, internal staff assistance, Gemini Enterprise productivity agent framing, no autonomous external sending.
+Missing or underdeveloped | Active role ownership layer, backup owners, onboarding tracking, KT completion, training progress, approval delegation, team capability visibility and productivity tracking.
+Unclear | Where role structures live, how ownership is maintained, how KT completion is tracked, how meeting decisions update SOPs, and how WF-011 feeds leadership command-center intelligence.
+Needs classification | Which features are GE-native, Apps Script/AppSheet/Sheets, ClickUp/API dependent, Vertex/Agent Builder dependent, BigQuery/Looker dependent, ERP later or future roadmap.
+Mock/demo only | Live HRMS/biometric/ClickUp/ERP integrations if access is not confirmed; candidate screening on sensitive data unless sample data and approval exist.
+API-dependent | HRMS/Keka/GreytHR, biometric system, ClickUp/Wrike, ATS/job portals, payroll and ERP integrations.
+Future phase | Predictive capacity planning, advanced institutional memory graph, multi-center benchmarking and sophisticated relationship/capacity intelligence.
+HKHT dependency | Employee master, role map, approval matrix, SOP folder, KT folder, attendance export, manager confirmation and selected-user sign-off.
+
+Evidence basis: Based on HKHT GE Technical Scope (S4), HKHT GE Technical Scope Gap Analysis WF-011 (S5), Latest Document B (S1).
+6. Workflow-Specific Improvements Required in Partner Understanding
+Area | Current possible misunderstanding / gap | Correct intended understanding | Partner action needed | Phase | Dependency | Evidence from attached files
+Role ownership | WF-011 seen as SOP Q&A only | WF-011 must maintain owner, performer, approver, backup, escalation, dashboard reviewer and data steward. | Design role ownership schema and validation workflow. | Day 7–30 | HKHT owner confirmation | S1, S5, S12
+Backup coverage | Backup may not be modeled | Revenue-critical work needs backup coverage to avoid follow-up leakage. | Add role-backup matrix and risk dashboard. | Day 14–30 | Role map and leave/on-duty data | S1, S5
+Onboarding and KT | Knowledge retrieval without completion tracking | New joiners need checklist, KT pack and completion status. | Build onboarding checklist and KT completion records. | Day 7–30 | Onboarding checklist and SOP library | S1, S2, S5
+Attendance exception intelligence | Daily attendance remains a message/report | Attendance should become structured exception management. | Import attendance CSV/sample and create exception dashboard. | Day 7–30 | HRMS/biometric/CSV | S2, S3, S1
+Performance pulse | Appraisal remains month-end/manual | Weekly/daily signals should create manager packs and coaching drafts. | Create selected-role performance pulse templates. | Day 14–60 | Role KPIs and daily reports | S1, S2
+SOP update from meetings | SOPs may remain static documents | Meeting decisions should trigger SOP review/update tasks. | Integrate with Meeting Intelligence/ClickUp workflow. | Day 30–60 | WF-008/ClickUp access | S1, S5, S6
+Institutional memory | Leader judgment not encoded | Approved repeated guidance should become role scorecards and playbooks. | Add Institutional Intelligence Capture Agent path. | Day 30–75 | Mukund Prabhu validation | S1, S6, S7
+CRM/ERP boundary | HR data may be mixed with CRM or left in Sheets | CRM gets safe staff assignment/capacity signals; ERP/HRMS holds structured HR records. | Define data contract and access boundary. | Day 7–75 | CRM/ERP schema decisions | S1, S4, S8
+Dashboard-first delivery | Agent output only in chat | Every key output should create a dashboard/record/task for permanent visibility. | Map each agent output to dashboard/table/task. | Day 7–30 | Dashboard schema and storage | S1, S5, S6
+Fallback process | API availability assumed | CSV/manual fallback must be available until APIs are confirmed. | Define fallback and recovery steps. | Day 7–30 | API registry | S1, S4, S5
+
+Evidence basis: Based on attached GE Technical Scope (S4), GE Gap Analysis (S5), Latest Document B (S1), HR evidence (S2/S3), Claude/Important Upgrades (S6/S7).
+7. What the Partner Should Not Miss
+Common IDs: Employee ID, Role ID, Owner ID, Task ID, Approval ID, SOP ID, Training ID and, where capacity touches relationship work, Contact/Donor/Yatri/Campaign/Event IDs.
+CRM is relationship source of truth; HR private records must remain within HR/ERP/HRMS boundaries.
+ERP-ready fields must be captured from Day 1 even if ERP build happens later.
+Approval gates are mandatory for hiring, salary, payroll, incentives, deductions, discipline, termination, final reviews and sensitive communication.
+Audit logs must show who approved, when and what was approved.
+Role ownership validation is required before routing is finalized.
+Fallback process is mandatory for missing API or unreliable data source.
+API registry should list HRMS, biometric, ClickUp/Wrike, ATS, payroll, CRM and ERP dependencies.
+Golden journey testing must prove vacancy → JD → onboarding → SOP/KT → attendance → backup → dashboard.
+Leadership command center contribution must be explicit.
+KCKE and Media AI boundaries must be respected.
+WF-013 future packaging should be considered in templates and metadata.
+Evidence basis: Based on Latest Document B Cross-Workflow Safeguards/Production Readiness (S1), GE Gap Analysis (S5), Transformation Analysis (S8).
+8. Required Partner Classification
+The partner should classify every proposed WF-011 feature, integration and dashboard item using the categories below. This avoids confusion between demonstration, MVP, production base, stabilization and future roadmap.
+Classification | Required partner explanation
+Already implemented | Partner should mark each feature with this status and explain dependency/assumption.
+Included in current scope | Partner should mark each feature with this status and explain dependency/assumption.
+Buildable immediately | Partner should mark each feature with this status and explain dependency/assumption.
+Day-7 demo | Partner should mark each feature with this status and explain dependency/assumption.
+Day-14 MVP | Partner should mark each feature with this status and explain dependency/assumption.
+Day-30 production base | Partner should mark each feature with this status and explain dependency/assumption.
+60-day stabilization | Partner should mark each feature with this status and explain dependency/assumption.
+75-day enterprise-scale readiness | Partner should mark each feature with this status and explain dependency/assumption.
+API-dependent | Partner should mark each feature with this status and explain dependency/assumption.
+Data-dependent | Partner should mark each feature with this status and explain dependency/assumption.
+HKHT approval-dependent | Partner should mark each feature with this status and explain dependency/assumption.
+Google license/product-dependent | Partner should mark each feature with this status and explain dependency/assumption.
+External vendor-dependent | Partner should mark each feature with this status and explain dependency/assumption.
+Mock/demo only | Partner should mark each feature with this status and explain dependency/assumption.
+Future roadmap | Partner should mark each feature with this status and explain dependency/assumption.
+Not recommended / not in scope | Partner should mark each feature with this status and explain dependency/assumption.
+
+Evidence basis: Based on user scope-separation rule and Latest Document B partner deliverable expectations (S1).
+9. Expected Technical Scope Clarifications from Partner
+Clarification area | What partner should provide
+Architecture | Show WF-011 application architecture, data flow, agent flow, approval flow and fallback flow.
+Google product mapping | Separate Gemini Enterprise, Apps Script/AppSheet/Sheets, Vertex AI/Agent Builder, Cloud Run/Workflows, BigQuery/Looker Studio.
+Gemini vs custom agents | Clarify what is native GE and what requires custom Cloud/Vertex/ADK build.
+CRM/API integration | Clarify staff assignment/capacity overlay and what does not enter CRM.
+ERP readiness | List ERP-ready entities/fields and migration path for HRMS/ERP later.
+ClickUp/task governance | Confirm ClickUp/Wrike API availability or fallback task export/import.
+KCKE/Media AI interface | Clarify if training/induction content uses KCKE or Media AI and where human approvals occur.
+Access/security | Explain role-based access for HR-sensitive data and manager views.
+User roles | Define HR Manager, HR Executive, HOD, Mukund Prabhu, data steward and dashboard reviewer permissions.
+Audit trail | Explain where approvals and AI outputs are logged permanently.
+Support model | Show Day 30 handover, issue support, bug fixes and stabilization cadence.
+Cost impact | Separate license cost, implementation cost, external vendor cost and future-phase cost.
+Handover plan | Provide training, admin guide, data dictionary and go-live checklist.
+
+Evidence basis: Based on Latest Document B Expected Deliverables (S1), GE Technical Scope constraints (S4), GE Gap Analysis (S5).
+10. Minimum Day-30 Production Base Expected
+Selected live or controlled operational users: HR Manager, HR Executive, Mukund Prabhu/leadership reviewer and 2–3 managers.
+Validated data path for employee master, role map, attendance exceptions, SOP/KT and onboarding tasks.
+Common IDs and ERP-ready fields captured in the working data model.
+HR command dashboard and leadership exception dashboard visible.
+Approval queue for HR-sensitive decisions.
+Exception routing for absence, missing login, leave/WFH/OD, onboarding gaps, SOP gaps and backup gaps.
+Fallback procedure for HRMS/API/ClickUp issues.
+Role ownership validated or marked Needs Validation.
+Audit trail for approvals and agent outputs.
+Sample golden journey test completed.
+Productivity measurement started.
+Next 60-day stabilization roadmap agreed.
+Evidence basis: Based on Latest Document B Production Readiness Definition and Day 15–30 section (S1).
+11. 60-Day Stabilization Expectations
+User adoption beyond initial testers.
+Bug fixing and support rhythm.
+Data quality improvement and duplicate/spelling cleanup.
+API hardening where confirmed.
+Dashboard refinement with trusted source/timestamp/status.
+User training and SOP updates.
+Approval discipline and audit review.
+KPI measurement: HR hours saved, onboarding SLA, attendance corrections, backup coverage and Mukund dependency reduction.
+Scope cleanup: what remains future, what becomes production and what should be retired.
+Evidence basis: Based on Latest Document B 90-Day Foundation/60-Day Stabilization path (S1), GE Technical Scope production hardening notes (S4).
+12. 75-Day Enterprise-Scale Readiness Expectations
+Scalable architecture reviewed for multi-workflow use.
+Cross-workflow integration path clear for Yatra, Voice, Digital Marketing, Donor, Outreach, Finance and Meeting Intelligence.
+Leadership command-center contribution defined and demonstrated.
+Advanced AI readiness path defined: Gemini, Vertex/Agent Builder, BigQuery/Looker and integration registry.
+Reusable workflow template prepared for WF-013 future replication.
+Open risks, API gaps and dependencies logged with owners.
+Data model ready for future ERP/HRMS migration.
+Evidence basis: Based on Latest Document B enterprise architecture and 75-day path (S1), GE Gap Analysis WF-013 (S5),  multi-center replication (S6).
+13. Long-Term Roadmap Items
+The following are important future roadmap items. They should influence the data model and architecture now, but they should not be promised as full Day-30 deliverables.
+Future roadmap item | How it relates to WF-011
+Devotee Intelligence Graph | WF-011 contributes staff capacity and ownership context, not personal spiritual/relationship truth. Future graph can use capacity signals to improve follow-up ownership.
+Predictive capacity intelligence | Predict training gaps, staff coverage risk and campaign/Yatra staffing needs.
+Real-time manager copilot | During reviews or planning, AI gives recommended coaching notes, SOP links and risk alerts.
+AI Fundraiser/Voice Copilot support | WF-011 ensures callers/fundraisers are trained, present and backed up. The copilot itself belongs to WF-002/WF-007.
+Voice of the Devotee intelligence | WF-011 can help train teams based on complaint/praise patterns from relationship workflows.
+Automated training/media intelligence | Use KCKE + Media AI to generate approved training content and onboarding modules.
+Devotee Super App readiness | WF-011 supports backend team readiness, not the app itself.
+AI Seva Marketplace | Future idea: staff/volunteer skills, availability and training could help match seva needs.
+Federated mission intelligence | Multi-center learning from staffing patterns, SOPs and training effectiveness.
+Digital twin / simulation | Later simulation of staffing needs for festivals, Yatra season and campaigns.
+
+Evidence basis: Based on Important Upgrades - Claude (S7),  (S6), Transformation Analysis 100x leaps (S8), Latest Document B 1000x alignment (S1).
+14. Partner Questions for Confirmation
+Which WF-011 components are already built or reusable from your current work?
+Which components are only mock/demo at this stage?
+What will be production-ready for controlled users by Day 30?
+What employee, role, attendance, SOP and approval data do you need from HKHT immediately?
+What HRMS/Keka/GreytHR/biometric/ClickUp/Wrike/ATS/payroll/API access is required?
+Which Google products will be used for each component?
+What is Gemini Enterprise native, and what requires Vertex AI / Agent Builder / custom Cloud build?
+Where is data stored permanently?
+Where are approval logs and audit trails stored?
+How will approval routing work for HR, salary, performance and sensitive communication?
+What is the fallback if API data is not available or AI output is wrong?
+How often will dashboards update and what source/timestamp/status will be visible?
+How does the solution avoid becoming a disconnected tool?
+How are role owner/performer/approver/backup/escalation fields validated?
+How will the data model preserve future relationship intelligence and predictive intelligence without exposing private HR data?
+How will Mukund Prabhu dependency reduction be measured?
+What is the Day 30 handover and support plan?
+What assumptions, exclusions, risks and costs should HKHT approve?
+Evidence basis: Based on Latest Document B Questions/Deliverables (S1), GE Technical Scope (S4), Gap Analysis (S5),  (S6).
+16. Final Partner-Facing Summary
+HKHT appreciates the current progress and wants to keep execution fast and practical.
+The main request is to align WF-011 implementation with the intended Hyderabad AI Revenue & Seva Growth Platform architecture.
+WF-011 should be production-shaped from Day 1 even if early execution uses a small controlled dataset.
+The Day-30 target is a production base, not a full national enterprise rollout.
+Early execution may be small, but architecture must remain platform-compatible, ERP-ready, dashboard-visible and human-governed.
+Please classify gaps, dependencies, phases, API requirements, product choices, risks and handover commitments clearly.
+WF-011 must remain HR / SOP / KT / Team Management focused while supporting revenue workflows through trained staff, clear ownership, backup coverage and institutional memory.
+Evidence basis: Based on Latest Document B (S1), GE Technical Scope vs Gap Analysis (S4/S5), Claude/Important Upgrades (S6/S7), Transformation Analysis (S8).

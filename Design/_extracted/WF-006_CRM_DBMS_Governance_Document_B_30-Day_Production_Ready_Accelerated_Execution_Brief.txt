@@ -1,0 +1,589 @@
+DOCUMENT B
+WF-006 CRM / DBMS Governance — Google / Implementation Partner Brief
+30-Day Production-Ready Accelerated Execution Brief for TRD, solution architecture, Google-stack architecture, API/integration architecture, deployment architecture, rollout plan, feasibility analysis, costing and phased implementation proposal
+Prepared for: Google / implementation partner solution architects, delivery leadership and technical teams
+Generated: 26 May 2026
+Workflow: WF-006 CRM / DBMS Governance
+Production alignment: 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale
+Strategic platform: Hyderabad AI Revenue & Seva Growth Platform
+Platform Rule: Start small in execution. Start big in architecture. Start immediately in data discipline. Start revenue-first in priority. Start human-governed in approvals. Start platform-compatible in every workflow.
+
+1. Workflow Name and Platform Role
+Workflow: WF-006 CRM / DBMS Governance.
+Platform role: WF-006 is the structured data backbone of the Hyderabad AI Revenue & Seva Growth Platform. It governs contact identity, consent, source attribution, relationship history, follow-up status, campaign readiness, donor/Yatra linkage, operational dashboards and ERP-ready master data.
+Source: Master Context Pack v0.5 labels WF-006 as P0 Data Backbone; KCKE_Media_CRM_Dependency_Map states CRM/DBMS feeds voice agents, digital marketing, donor cultivation, finance dashboards and ERP migration; WF-006 blueprint Sections 2 and 11.
+This document is not a TRD and not a request for a generic AI demo. It is a workflow-specific implementation briefing so the partner can produce TRD, solution architecture, Google-stack architecture, API/integration architecture, deployment architecture, rollout plan, feasibility analysis, costs, risks and phased proposal. It is now also a 30-day production-ready accelerated execution brief: the first 7 and 14 days remain essential validation and MVP milestones, but they must be treated as production foundation steps rather than disposable prototypes.
+1A. 30-Day Production-Ready Accelerated Execution Re-Alignment
+This WF-006 brief is realigned as a 30-Day Production-Ready Accelerated Execution Brief for the Hyderabad AI Revenue & Seva Growth Platform. The original workflow-specific content, architecture, assumptions, dependencies, agent expectations, approval rules, dashboards, timelines and partner-facing requirements remain preserved; the timelines are upgraded into a compressed production-readiness path.
+Day 1–7 is now the Production Foundation Sprint: validate workflow ownership, data sources, CRM fields, IDs, API dependencies, dashboards, first automation, first approval flow and first sample live workflow test.
+Day 8–14 is now the Integrated Working MVP: selected users test CRM/data paths, AI-assisted actions, dashboard visibility, exception routing, ClickUp/task follow-up where relevant and human approval routes.
+Day 15–30 is now the Production Readiness and Productivity Multiplication Sprint: controlled operational adoption, failure/fallback protocol, golden journey QA testing, data quality discipline, cross-workflow compatibility and measurable productivity gains.
+The 30-day production base must lead into 60-day stabilization and 75-day enterprise-scale readiness, including integration hardening, KPI discipline, API maturity, leadership command-center visibility and reusable multi-center architecture.
+This workflow remains CRM-aligned, ERP-ready, dashboard-visible and human-governed; it must not become a disconnected automation or a one-time demo.
+Source: Generated WF-006 blueprint Sections 1–22; HKHT_AI_Transformation_Analysis(1).html strengths on AI-first redesign, four-horizon discipline, revenue-first sequencing, HITL, system separation, interdependency mapping and ERP-ready IDs; Master Context Pack partner sprint model.
+Assumption / Needs Validation: Production readiness in 30 days depends on timely access to sample or controlled real CRM data, field schemas, user/role validation, API status, dashboard schema and partner confirmation of what is live versus mock.
+1B. Production Readiness Definition
+For WF-006, production readiness means that the CRM/DBMS governance workflow can be used by selected HKHT users for controlled operational work, with validated data flow, visible dashboards, approval routing, exception handling and documented fallback—not merely a visual demonstration.
+Criterion | WF-006 production-ready expectation | Evidence / source
+Live operational usage | Selected CRM/data, campaign, calling, donor/Yatra and dashboard users can process controlled contact batches through validated intake, cleaning, suppression, segmentation and approval queues. | WF-006 blueprint Sections 8–10; CRM transcript; Data Management Process Review transcript
+Validated data flow | Data path is proven from source intake to CRM/Sheet/API staging, quality score, suppression check, approved segment and dashboard update. | Workflow-to-Data Dependency Map; WF-006 blueprint Section 12
+Dashboard visibility | Mukund Prabhu/HOD dashboard shows data quality, duplicates, suppression, source status, campaign-ready contacts, pending approvals, follow-ups and escalations. | WF-006 blueprint Sections 13 and 15
+Approval routing | Human approval is enforced for import, merge, delete, suppression override, high-value donor records, sensitive relationship notes and bulk campaign release. | KCKE_Media_CRM_Dependency_Map; WF-006 blueprint Sections 6 and 17
+Exception handling | API failures, duplicate conflicts, missing consent/source, role gaps and unresolved data quality issues produce review tasks and escalation alerts. | HKHT_AI_Transformation_Analysis(1).html gaps G08, G09 and G10; WF-006 blueprint Section 7
+Cross-workflow compatibility | Contact ID, Donor ID, Yatri ID, Campaign ID, Event ID, Task ID, Source, Created Date, Last Follow-up Date, Next Action and Approval Status are captured for downstream workflows. | User platform compatibility rule; Workflow-to-Data Dependency Map
+Fallback process | If APIs are unavailable, approved manual export/import with logs, reconciliation and owner sign-off is used until integration is confirmed. | HKHT_AI_Transformation_Analysis(1).html G13; WF-006 blueprint Sections 8–9
+Measurable productivity improvement | List-preparation time, duplicate rate, unresolved suppression issues, follow-up leakage and Mukund Prabhu escalation load are measured before and after adoption. | HKHT_AI_Transformation_Analysis(1).html action summary; Master Context Pack productivity mandate
+
+Source: HKHT_AI_Transformation_Analysis(1).html gaps on master entity model, sequencing gates, role ownership, API registry and non-overclaiming early integrations; WF-006 blueprint Sections 7–17.
+1C. Accelerated Delivery Governance
+The partner should run WF-006 through Accelerated Delivery Governance with daily checkpoint discipline, explicit dependency tracking and clear acceptance reviews. HKHT validates workflow truth, data access, ownership and approval rules; the partner validates feasibility, architecture, integrations, security, deployment and costs.
+Sprint window | Required execution focus | Partner responsibility | HKHT validation responsibility
+Day 1–3 | Workflow validation; access confirmation; data source confirmation; owner/performer/approver/backup validation; CRM fields and IDs confirmation; API dependency classification; dashboard schema confirmation; production risk identification; analysis-file gap mapping. | Run discovery checklist, create dependency tracker, classify features, confirm build path. | Provide data samples, schema, access contacts, current approval rules and owner validation.
+Day 4–7 | Initial working prototype; CRM/Sheet/API data path; first dashboard; first automation; first approval flow; first AI-assisted output; sample live workflow test; first command-center visibility layer. | Build working foundation, document live versus mock, create first acceptance checklist. | Test sample records, validate dashboards, approve prototype limitations and fallback.
+Day 8–14 | Integrated MVP; selected-user operational testing; workflow-specific AI assistance; ClickUp/task/follow-up integration where relevant; exception routing; dashboard refinement; data quality checks; human approval testing; API registry validation; WhatsApp/voice/payment/CRM dependency validation where relevant. | Deliver integrated MVP, update API registry, configure review queues, document exceptions. | Nominate selected users, perform UAT, validate approval gates and dashboard usefulness.
+Day 15–21 | Production hardening; controlled real operational usage; cross-workflow integration; user training; KPI validation; escalation testing; failure/fallback protocol; role ownership refinement; golden journey QA testing. | Harden workflow, train users, log failures, complete golden journey tests. | Run business validation, verify data quality, confirm owner and fallback readiness.
+Day 22–30 | Production readiness review; command-center visibility; live operational handover; stabilization; productivity measurement; management reporting; partner sign-off checklist; next 60-day stabilization roadmap; 75-day enterprise-scale readiness roadmap. | Produce sign-off pack, architecture update, support handover, next-phase roadmap. | Approve production base, record decisions, confirm stabilization priorities.
+60-day continuation | Stabilization, hardening, adoption, data quality improvement, integration maturity and KPI discipline. | Operate support cadence and integration maturity plan. | Maintain governance, dashboard review and business adoption.
+75-day enterprise-scale review | Enterprise-scale readiness, advanced platform integration, multi-workflow maturity, leadership command-center intelligence and scalable productivity architecture. | Present platform scale-readiness assessment and architecture gaps. | Decide scale priorities, multi-workflow rollout and multi-center packaging path.
+
+Source: HKHT_AI_Transformation_Analysis(1).html G08, G09, G10, G13 and G14; generated WF-006 blueprint Sections 8–11, 15–18 and 20.
+1D. 1000x Productivity Alignment
+WF-006 contributes to the larger 1000x ambition by turning fragmented contact lists into a reusable CRM intelligence module that supports reach, conversion, donor lifetime value, Yatra participation, preaching outreach, managerial focus and multi-center learning. The first 30 days should create the production base; the next 60 days should stabilize operating discipline; by 75 days the module should be ready to plug into enterprise-scale platform architecture.
+1000x lever | WF-006 contribution | Production-readiness implication
+Relationship Intelligence Graph | Creates a single governed relationship view across donors, Yatris, callers, community contacts, volunteers, families and referral networks. | Start with common IDs and journey events from Day 1; graph capability can mature after the 30-day base.
+Donor propensity scoring | Uses CRM source, touchpoint, donation, Yatra, follow-up and behavior signals to surface who should be cultivated next. | Partner should define data model and future BigQuery/Vertex AI path even if scoring begins as rules-based.
+Behavior-triggered micro-campaigns | Enables contacts to receive relevant Yatra, festival, donation or outreach follow-ups based on behavior and status rather than only calendar blasts. | Requires clean source tracking, consent/suppression gates and human-approved campaign rules.
+WhatsApp conversational commerce readiness | Provides governed CRM identity, source and payment/Yatra linkage needed for future WhatsApp-based registration, donation and follow-up journeys. | Partner must validate WhatsApp API governance and not overpromise live integration without confirmed access.
+Voice of the Devotee intelligence | Converts inbound calls, WhatsApp notes, enquiries and feedback into CRM intelligence about donor/Yatri needs and repeated questions. | Needs touchpoint capture, outcome codes, dashboard reporting and KCKE/media boundary clarity.
+Institutional memory encoding | Captures Mukund Prabhu’s segmentation, donor prioritization, escalation and relationship judgment as structured rules and review criteria. | Needs structured knowledge capture sessions and human approval before AI recommendations influence sensitive outreach.
+Follow-the-Devotee timeline | Shows chronological journey across enquiry, campaign, call, Yatra, donation, community event, seva interest and follow-up. | Requires cross-workflow event model, common IDs and dashboard-accessible timeline.
+Federated mission intelligence | Allows Hyderabad learning on sources, segments and donor/Yatri journeys to become reusable guidance for other centers later without building multi-center rollout now. | Requires clean metadata, source taxonomy and multi-center-ready schema.
+
+Source: HKHT_AI_Transformation_Analysis(1).html 100x leaps L01, L02, L03, L07, L09, L10, L11 and L14; generated WF-006 blueprint Sections 10–12 and 18.
+1E. Cross-Workflow Integration and Platform Safeguards
+WF-006 must be the relationship-data backbone for multiple workflows, not a standalone CRM utility. The partner must build and document cross-workflow safeguards so early MVPs do not become disconnected tools.
+Safeguard | WF-006 requirement
+Shared IDs | Use or produce Contact ID, Donor ID, Yatri ID, Community ID, Family ID, Campaign ID, Event ID, Donation ID, Task ID and Owner ID where applicable.
+CRM source of truth | CRM/DBMS remains the operational relationship data backbone; BigQuery/Looker provide intelligence; ERP becomes future structured operational/financial source for validated records.
+ERP-ready fields | Capture Source, Created Date, Last Follow-up Date, Next Action, Approval Status, Payment Status, Receipt Status, Campaign ID, Yatra ID, Event ID and Task ID from Day 1 where applicable.
+KCKE boundary | KCKE is used only for source-grounded Krishna conscious content, donor narratives, philosophical replies and preaching material; it must not own contact status, payment status, tasks or approvals.
+Media AI boundary | Media AI may consume approved segment insights for Yatra/festival/donor media, but it must not own CRM records or contact identity.
+ClickUp task layer | ClickUp should receive approved follow-up tasks, escalation tasks, owner validation tasks and unresolved data-quality tasks where execution governance is needed.
+Leadership command center | WF-006 dashboards must feed the single leadership visibility layer for data quality, source-to-revenue confidence, campaign readiness, follow-up leakage and dependency reduction.
+API registry | Hello Leads, Tata Tele, Exotel, WhatsApp provider, payment/DCC, internal CRM and future ERP APIs must be listed with access method, status, blocker, cost and owner.
+Fallback workflow | If automation or integration fails, the workflow must use approved manual upload/export with audit log, reconciliation, owner sign-off and exception reporting.
+Sequencing gates | Voice/calling, digital marketing and donor cultivation scale-up should be gated by minimum CRM readiness: deduplication, source tagging, suppression, owner routing and dashboard visibility.
+
+Source: HKHT_AI_Transformation_Analysis(1).html G02, G04, G08, G10, G13 and G14; KCKE_Media_CRM_Dependency_Map; Automation Interdependency Map; generated WF-006 blueprint Sections 11, 12 and 18.
+1F. Relevant Analysis Recommendations Incorporated
+AI-first redesign preserved: the partner must not digitize today’s fragmentation; WF-006 is redesigned as a production-ready CRM intelligence module.
+Four-horizon discipline upgraded: 7-day, 14-day, 30-day and long-term paths remain, now tied to a 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale execution path.
+Revenue-first sequencing reinforced: WF-006 must unblock WF-001, WF-002, WF-003, WF-007 and WF-014 by creating clean, source-tagged, suppression-checked contact intelligence.
+Human-in-the-loop design strengthened for imports, merges, suppressions, donor-sensitive records, bulk outreach and relationship notes.
+System separation preserved between CRM/DBMS, ERP, KCKE, Media AI Pipeline, Gemini Enterprise/productivity agents and BigQuery/Looker intelligence.
+Master entity model and shared ID discipline added explicitly across Contact ID, Donor ID, Yatri ID, Campaign ID, Event ID, Donation ID, Task ID and Owner ID.
+Large cold database, DND, source quality and calling readiness must be audited before scaled voice outreach; live outreach should not scale on unvalidated data.
+WhatsApp API governance and API Registry are required as platform safeguards, not isolated workflow assumptions.
+Workflow sequencing gates, owner validation, fallback process and golden journey QA testing are added to the accelerated execution model.
+Relationship Intelligence Graph, donor propensity scoring, behavior-triggered micro-campaigns, Voice of the Devotee intelligence, institutional memory encoding and Follow-the-Devotee timeline are incorporated as WF-006-specific 100x/1000x levers.
+Source: HKHT_AI_Transformation_Analysis(1).html strengths, gaps G02–G05 and G08–G14, and 100x leaps L01, L02, L03, L07, L09, L10, L11 and L14; user instructions for 30-day production-ready realignment.
+Assumption / Needs Validation: API access, WhatsApp provider status, Hello Leads/Tata Tele/Exotel connectors, internal CRM schema, payment/DCC linkage and ERP transition status must be validated before the partner labels any integration production-ready.
+2. Executive Seva Impact Summary
+Impact | Expected Value
+Donation impact | Cleaner donor identity, better HNI/CSR segmentation, source-to-revenue attribution and timely follow-up can increase donation conversion and repeat cultivation.
+Yatra impact | Yatra leads, registrations, payment status, attendance, referrals and post-Yatra cultivation become traceable and actionable.
+Donor cultivation impact | Preacher/donor relationship memory can be preserved via approved voice-note summaries and next-action discipline.
+Krishna consciousness outreach | Every touchpoint — calls, festivals, book distribution, community events, Yatra, temple visits — can become structured outreach intelligence.
+Mukund Prabhu burden reduction | Dashboards and exception queues replace daily routing, status chasing and personal interpretation of scattered data.
+ERP/data centralization | Common IDs and standard fields prepare later migration to ERP without blocking the immediate MVP.
+Multi-center readiness | Once Hyderabad validates schema, governance, dashboards and approval model, it can become a replication template for other centers.
+
+Source: CRM transcript 07:00–12:16; Data Management Process Review transcript 00:00–03:15; Master Context Pack v0.2/v0.5; WF-006 blueprint Sections 2, 10, 12 and 13.
+3. Management Brief for Leadership
+WF-006 is the platform’s data heart; without clean CRM governance, every downstream revenue agent will scale dirty data.
+The 7-day and 14-day scopes should prove governance, segmentation, dashboards and human approval, not claim full CRM replacement.
+Voice agents and bulk campaigns should not scale before deduplication, source tagging and suppression gates are working.
+This workflow must produce common Contact/Donor/Yatri/Community/Family IDs and ERP-ready fields from Day 1.
+Mukund Prabhu’s managerial load should shift from data diagnosis to dashboard-based exceptions and strategic decisions.
+The architecture must allow CRM/API integration now, BigQuery intelligence next, ERP migration later and multi-center replication after Hyderabad stabilization.
+The partner must classify every feature as buildable immediately, demo/mock only, data-dependent, API-dependent, custom-build, Google product-dependent, external-vendor-dependent or long-term.
+Source: Master Context Pack partner sprint model; Folder Structure Readme; Role Ownership Correction Note; WF-006 blueprint Sections 3, 8, 9, 15 and 16.
+4. Current Operational Reality
+Accelerated production lens: by Day 1–3, this current reality must be validated as an operational checklist—systems, owners, source lists, approvals, dashboards, API status and fallback options. Transcript-derived names must be treated as evidence only until role ownership is confirmed.
+Trigger
+New data source acquired or imported.
+Campaign/calling list required.
+Digital marketing lead arrives.
+Yatra/donor/community data needs to be captured or updated.
+Suppression/DND/duplicate rules need to be applied before outreach.
+Source: CRM transcript 00:03–02:30; Data Management Process Review transcript 00:00–03:15; WF-006 blueprint Section 4.
+People involved
+Mukund Prabhu: strategic owner/dependency point.
+Sachi Kumar Gauranga Das and Mahavija Das: named as people required for database access/handling, reporting to Shrutha Dev Prabhu.
+Shrutha Dev Prabhu: named as access/reporting person.
+Hemchand: referenced in Data Management Process Review as involved in handling; exact role requires validation.
+Digital marketing, telecalling, Yatra, donor/fundraising and finance/DCC teams consume CRM outputs.
+Source: CRM transcript 06:11–06:34; Data Management Process Review transcript 04:34–07:51; Role Ownership Correction Note.
+Assumption / Needs Validation: Final owner, daily performer, approver, backup, escalation person and dashboard reviewer must be validated before production routing.
+Tools used
+Hello Leads CRM.
+Internal in-house CRM/local server.
+Excel/Google Sheets.
+Tata Tele/Data Tele for calling.
+Exotel.
+Python/scripts for cleaning.
+DND/scrubbing tools may exist but are not confirmed as formal governance gates.
+Meta Ads, Google Ads and other digital lead sources.
+Source: CRM transcript 00:03–02:30; Data Management Process Review transcript 00:00–03:15.
+Current steps
+Collect/acquire data from market databases, associations, donors, Yatras, gated communities, Sankalpa cards and digital campaigns.
+Clean invalid/incorrect numbers and remove duplicates using scripts.
+Capture basic fields such as mobile number, name, city, database/source name, email and physical address.
+Categorize data by database type and intended campaign use.
+Place warmer/known contacts into Hello Leads for fundraising, employee follow-up, donors and Yatras.
+Use internal/local CRM for huge cold databases and city/database-type queries.
+Download from Hello Leads and upload into Tata Tele manually for calling, pending API validation.
+Source: CRM transcript 00:03–06:34; Data Management Process Review transcript 00:00–03:15.
+Current approvals, reports and pain points
+Access appears restricted to one to three people; ports and cloud storage access may be controlled for security.
+Production approval gates for import/export/merge/delete/bulk outreach are not documented in the evidence.
+No evidence of one unified CRM governance dashboard.
+Pain points include duplicates, unorganized data, manual movement, unclear API integration, weak backup, fragmented touchpoints and source-to-revenue gaps.
+Source: CRM transcript 02:30–06:34 and 07:00–18:35; Data Management Process Review transcript 01:15–04:56; WF-006 blueprint Sections 4 and 5.
+Assumption / Needs Validation: Actual current reports, dashboard formats, access logs, approval routes and CRM schema were not provided and must be collected.
+5. Current Bottlenecks and Productivity Loss
+Production-readiness implication: these bottlenecks become Day 1–30 go-live risks. The partner must convert them into a visible blocker register with owner, severity, fallback and target closure date.
+Bottleneck | Loss | Evidence
+Manual work | Download/upload between systems; repeated Excel/script handling; manual list preparation. | Data Management Process Review 00:53–01:32
+Follow-up leakage | Call responses, donor interests, Yatra interest and next actions are not fully unified. | CRM transcript 07:00–12:16
+Data fragmentation | Hello Leads, internal CRM, Tata Tele, Exotel, Sheets and local server all hold pieces of truth. | CRM transcript 00:03–06:34
+WhatsApp/spreadsheet dependency | Assumption: scattered follow-up likely happens through informal channels; needs validation with team. | Assumption / Needs Validation
+Mukund dependency | High-level use-case logic and relationship intelligence sit with Mukund Prabhu rather than dashboards. | Master Context Pack; CRM transcript 07:00–11:15
+Revenue leakage | Without source-to-revenue and follow-up discipline, donations/Yatra conversions cannot be optimized. | WF-006 blueprint Sections 5 and 13
+Missed preaching/donor/Yatra opportunities | CRM not yet capturing all temple touchpoints, skills, references, interests, and cultivation pathways. | CRM transcript 07:00–12:16
+
+6. Desired AI-First Future-State Vision
+Production-readiness implication: the future state must start as a working CRM governance module within 30 days, not as a distant architecture diagram. Every data path should be designed for ERP-ready IDs, dashboard contribution and cross-workflow reuse.
+WF-006 should become the Master Relationship Intelligence module of the Hyderabad AI Revenue & Seva Growth Platform. One person should have one governed identity record, with source lineage, consent, touchpoints, follow-up status, donation/Yatra/community history, relationship context, next-best-action and ERP-ready fields.
+Source: Generated WF-006 blueprint Section 6; CRM transcript 07:00–12:16; KCKE_Media_CRM_Dependency_Map.docx.
+Automated
+Field validation
+Mobile/email normalization
+Duplicate detection
+DND/suppression application
+Mandatory source tagging
+Import templates
+API sync jobs where APIs exist
+Access and audit logging
+AI-assisted
+Lead categorization
+HNI/family/youth/donor/Yatri/community segmentation
+Touchpoint summaries
+Voice-note extraction
+Data-steward review queues
+Campaign-fit recommendations
+Agentic
+Agents monitor data quality, classify records, prepare campaign-ready segments, trigger follow-up tasks, sync approved records and alert exceptions.
+Human-approved
+Merge/delete of high-value records
+Donor-sensitive updates
+Financial/payment messaging
+Public/preaching messages
+Bulk campaign launch
+CRM migration field mapping
+Access-control changes
+Source: Project Glossary definitions of deterministic automation, AI-assisted workflow, agentic workflow and HITL; KCKE_Media_CRM_Dependency_Map human approval rules; WF-006 blueprint Sections 6 and 17.
+7. Expected Productivity Leap
+Accelerated productivity lens: the 2X and 10X gains should be measurable in the first 30 days; 30X–100X gains should be designed into the architecture through relationship intelligence, source tracking, follow-up automation and dashboard control.
+Level | Mechanism
+2X control improvement | Standard forms, source tags, suppression checks, duplicate flags and dashboard visibility.
+10X workflow productivity | Automated cleaning, batch segmentation, import/export QA and repeatable approval queues.
+30X revenue-operating leverage | Agents summarize touchpoints, recommend segments, create next actions and reduce follow-up leakage.
+100X Hyderabad platform leverage | Unified relationship graph, predictive donor/Yatra propensity, source-to-revenue intelligence and ERP-ready data.
+1000X long-term contribution | Reach × conversion × donor lifetime value × multi-center replication; Hyderabad becomes the reference operating model.
+
+Source: Master Context Pack unlimited productivity mandate; WF-006 blueprint Sections 2, 10 and 11.
+8. Expected AI Agents / Copilots
+The partner should treat the following as expected agent/copilot patterns and classify which can be built in the Day 1–7 Production Foundation Sprint, Day 8–14 Integrated Working MVP, Day 15–30 Production Readiness Sprint, 60-day stabilization and 75-day enterprise-scale path. Each agent must have explicit human approval points, audit logs, fallback behavior and clear live-versus-mock classification.
+Source: WF-006 blueprint Section 7; Project Glossary; KCKE_Media_CRM_Dependency_Map.
+Master Contact Governance Agent
+Purpose: Validate, standardize and prepare incoming contact data before it enters CRM, campaign, calling or dashboard systems.
+Users: CRM/Data Steward, Campaign Owner, Data Quality Reviewer.
+Inputs: CSV/Sheet/CRM export/form data; source list; consent/suppression list.
+Outputs: Clean import file, error log, missing-field queue, data quality score.
+Data needed: Name, mobile, email, city, source, source date, consent, segment, owner, Created Date.
+Tools/connectors: Google Sheets/AppSheet/Apps Script for demo/MVP; BigQuery/Cloud Run/CRM API later.
+Human approval points: Human approval before production import or bulk update.
+Escalation logic: Missing source, missing consent, high duplicate risk, high-value donor conflict.
+Success metrics: % valid records, time from raw data to campaign-ready data, rejected record rate.
+Deduplication & Identity Resolution Agent
+Purpose: Identify duplicate contacts across Hello Leads, internal CRM, Sheets, Yatra/donor lists and calling systems.
+Users: Data Steward, CRM Manager, Relationship Manager.
+Inputs: Contact exports, phone/email/name/address, donation/Yatra IDs.
+Outputs: Merge candidates, confidence score, duplicate clusters, no-merge exceptions.
+Data needed: Mobile, alternate mobile, email, name, family ID, donor/yatri IDs, city, source history.
+Tools/connectors: Python/Cloud Run for matching; BigQuery for scale; CRM API for updates.
+Human approval points: Mandatory human approval for merges, especially donor/Yatra/payment-linked records.
+Escalation logic: Conflicting donation history, conflicting consent, HNI/CSR donor duplicates.
+Success metrics: Duplicate reduction, merge accuracy, false merge rate.
+DND & Suppression Governance Agent
+Purpose: Prevent wrong, duplicate, non-consented or opt-out outreach before any campaign/calling batch.
+Users: Campaign Owner, Telecalling Lead, Data Steward.
+Inputs: Campaign list, DND list/API, unsubscribe list, not-interested list, consent rules.
+Outputs: Sendable list, blocked list, reason codes, approval report.
+Data needed: Consent status, channel permission, opt-out date, DND status, suppression reason.
+Tools/connectors: Suppression Sheet for demo; DND/SMS/WhatsApp vendor API later.
+Human approval points: Human campaign-owner approval before campaign launch.
+Escalation logic: No consent, donor complaint, repeated suppression override.
+Success metrics: Suppression compliance, complaint reduction, opt-out reduction.
+Source Attribution & ROI Agent
+Purpose: Preserve source lineage from campaign, event, referral, Yatra, donor and website touchpoints.
+Users: Marketing, Yatra, Donor, Finance/DCC, Leadership.
+Inputs: Ad leads, event leads, Sankalpa cards, online forms, donor lists, offline imports.
+Outputs: Source-tagged CRM records, source-to-conversion report, ROI lineage.
+Data needed: Source, campaign ID, event ID, referral source, spend, owner, Created Date, revenue link.
+Tools/connectors: Sheets/Apps Script for demo; Meta/Google/CRM/payment APIs + BigQuery later.
+Human approval points: Source owner approval for imported high-volume lists.
+Escalation logic: Unknown source, missing cost, market database/consent risk.
+Success metrics: % source-tagged, source-to-revenue traceability, campaign ROI confidence.
+Segment & Campaign-Fit Agent
+Purpose: Recommend campaign-ready audience segments for Yatra, donation, festival, donor cultivation and community outreach.
+Users: Campaign Owner, Yatra Team, Donor Team, Digital Marketing.
+Inputs: Clean contacts, campaign objective, city/language/donor/Yatra history, suppression status.
+Outputs: Recommended segment, exclusions, expected-fit rationale, approval queue.
+Data needed: Segment, city, language, interest, donor/Yatra history, follow-up status, consent.
+Tools/connectors: Gemini/Gemini Enterprise for assisted segmentation; BigQuery for scale.
+Human approval points: Campaign owner approval before use.
+Escalation logic: HNI/CSR sensitive segment, low-confidence segment, suppressed records found.
+Success metrics: Conversion lift, response rate, unsubscribe rate, revenue per segment.
+Touchpoint Intelligence Agent
+Purpose: Turn calls, WhatsApp notes, meeting notes and telecaller outcomes into structured CRM updates.
+Users: Telecallers, CRM Team, Donor/Yatra Follow-up Team.
+Inputs: Call metadata/transcripts, telecaller notes, WhatsApp disposition, follow-up comments.
+Outputs: Call summary, outcome code, next action, owner, follow-up due date, CRM update draft.
+Data needed: Contact ID, call source, outcome, next action, next action owner, priority, status.
+Tools/connectors: Tata Tele/Exotel API if available; Gemini for summary; CRM API/Sheets for MVP.
+Human approval points: Human review for donor-sensitive or financial commitments.
+Escalation logic: Donation promise, complaint, escalation request, HNI interest.
+Success metrics: Disposition completeness, follow-up leakage reduction, next-action creation rate.
+Preacher Relationship Capture Agent
+Purpose: Capture high-value relationship context through post-meeting voice notes without secretly recording sensitive conversations.
+Users: Preachers, Donor Cultivators, Relationship Managers.
+Inputs: 1–2 minute post-meeting voice note, approved relationship fields.
+Outputs: Structured relationship profile update, next action, donor interest summary.
+Data needed: Profession, family, interests, seva inclination, referral network, birthdays/anniversaries, sensitivity flag.
+Tools/connectors: Gemini speech/text; CRM/AppSheet update queue; human approval workflow.
+Human approval points: Preacher/relationship manager approval before saving sensitive notes.
+Escalation logic: Private/confidential details, donor sensitivity, finance/CSR opportunity.
+Success metrics: Relationship detail captured, high-value follow-up completion, donor cultivation quality.
+CRM Sync & API Orchestration Agent
+Purpose: Move approved data between Hello Leads, internal CRM, Tata Tele, Exotel, Sheets, BigQuery and future ERP without manual re-upload.
+Users: CRM Tech Ops, Integration Engineer, Data Steward.
+Inputs: Approved clean data, field map, system IDs, API credentials.
+Outputs: Synced records, sync logs, failure report, retry queue.
+Data needed: System IDs, contact ID, field mappings, timestamps, approval status.
+Tools/connectors: Apps Script/Cloud Run/Workflows; CRM, telephony, payment, ERP APIs.
+Human approval points: Human approval for bulk sync and production field mapping.
+Escalation logic: API failure, duplicate key conflict, permission failure, data mismatch.
+Success metrics: Sync success %, manual upload reduction, integration incident count.
+Data Quality & Governance Dashboard Agent
+Purpose: Monitor CRM health and alert leadership to data risks before they damage revenue workflows.
+Users: Mukund Prabhu, HODs, CRM Governance Lead, Data Steward.
+Inputs: CRM exports, import logs, duplicate reports, suppression data, follow-up/task data.
+Outputs: Quality dashboard, exception list, trend report, unresolved issue list.
+Data needed: Completeness, duplicate risk, source quality, consent status, stale records, owners.
+Tools/connectors: Looker Studio/BigQuery; Sheets dashboard for 7-day demo.
+Human approval points: No approval for dashboard; approvals needed for corrective actions.
+Escalation logic: Quality below threshold, unresolved high-risk records, no owner.
+Success metrics: Data quality score, unresolved issues, dashboard adoption, escalation closure.
+Privacy & Access Control Agent
+Purpose: Protect high-value contact/donor data against unauthorized access, exports or misuse.
+Users: Admin, CRM Governance Lead, Security/Data Owner.
+Inputs: Access logs, download/export logs, user roles, permission changes.
+Outputs: Audit report, suspicious access alerts, permission review list.
+Data needed: User ID, role, access time, export action, data scope, approval status.
+Tools/connectors: Google Admin logs, CRM logs, local server logs, SIEM/audit tools if needed.
+Human approval points: Human approval for access changes and bulk exports.
+Escalation logic: Unusual download/export, access by non-approved user, donor-data exposure.
+Success metrics: Unauthorized access incidents, audit completeness, permission review closure.
+Relationship Intelligence Graph & Journey Timeline Agent
+Purpose: Create a single, governed relationship view across donors, Yatris, callers, community contacts, families, volunteers and referral networks so every downstream workflow can see the “Follow-the-Devotee” journey.
+Users: CRM Governance Lead, Donor/Yatra Teams, Campaign Owners, Mukund Prabhu, selected Relationship Managers.
+Inputs: Master Contact ID, Donor ID, Yatri ID, Campaign ID, Event ID, call outcomes, donation/Yatra history, community event attendance, source tags and approved relationship notes.
+Outputs: Chronological journey timeline, relationship graph edges, warm introduction signals, journey gaps, next-best-review recommendations.
+Data needed: Contact ID, Family ID, referral source, touchpoint type, date, owner, outcome, next action, approval status, sensitivity flag.
+Tools/connectors: CRM/DBMS, BigQuery, Looker Studio, Vertex AI/Graph capability later, Apps Script/AppSheet for early operational capture.
+Human approval points: Human review for sensitive donor relationship attributes, high-value donor recommendations and any relationship note that affects cultivation strategy.
+Escalation logic: Conflicting identity, donor sensitivity, missing source, major donor opportunity, unresolved journey gap.
+Success metrics: % contacts with journey timeline, cross-workflow identity match rate, relationship-context completeness, fundraiser/Yatra-team adoption.
+Source: HKHT_AI_Transformation_Analysis(1).html L01 and L14; generated WF-006 blueprint Sections 6, 7 and 10.
+API Registry & Dependency Watch Agent
+Purpose: Maintain a consolidated, workflow-aware registry of API/connectors and dependency status so the partner cannot overclaim integrations and HKHT can track blockers across Hello Leads, internal CRM, Tata Tele, Exotel, WhatsApp provider, payment/DCC and future ERP.
+Users: Implementation Partner, HKHT Project Lead, CRM Tech Ops, Integration Engineer, Dashboard Reviewer.
+Inputs: API documentation, credentials status, vendor status, cost notes, security/access constraints, dependency owner, fallback process.
+Outputs: API registry, blocker list, live-versus-mock classification, fallback plan, daily dependency status and sign-off checklist.
+Data needed: API name, provider, status, access method, cost per unit, rate limits, authentication method, owner, blocker, expected availability date.
+Tools/connectors: Sheets/AppSheet/ClickUp for MVP; BigQuery/Looker and Cloud Workflows for mature tracking.
+Human approval points: HKHT approval before any production credential is used or any integration is labelled production-ready.
+Escalation logic: Unknown API status, missing credential, vendor delay, security blocker, failed sync, mismatch between demo and live capability.
+Success metrics: API status clarity, integration blocker closure, fallback readiness, reduction in unvalidated assumptions.
+Source: HKHT_AI_Transformation_Analysis(1).html G10 and G13; WF-006 blueprint Sections 14–16.
+9. Human Role Redesign Expectations
+Role expectation | Design requirement
+Current roles continue | Current CRM/data handlers continue but with better controls, sample-data preparation and validation responsibilities.
+AI-supervised roles | Manual data cleaners/uploaders become AI-supervised Data Stewards reviewing exception queues and approvals.
+Donor/Yatri/preaching-facing redeployment | Staff freed from repetitive cleaning can move toward donor cultivation, Yatra follow-up and community outreach.
+Data steward / QA / reviewer | Create CRM Governance Lead, Data Quality Reviewer, Privacy/Consent Steward and Dashboard Reviewer roles.
+New technical roles | API/Integration Engineer and Revenue Data Analyst for source-to-revenue and platform integration.
+Backup ownership | Every route needs owner, performer, approver, backup and escalation person before production.
+
+Source: Role Ownership Correction Note; Data Management Process Review transcript 04:34–06:18; WF-006 blueprint Section 14.
+10. Dashboard and Operational Intelligence Expectations
+Production-readiness implication: dashboards are not optional reports. They are the leadership command-center contribution for WF-006 and must show CRM health, source readiness, suppression status, approvals, follow-up leakage, escalations and Mukund Prabhu dependency reduction.
+Dashboard | Expected outputs
+Management dashboard | Data quality score, campaign-ready contacts, revenue-source confidence, escalations, high-value exceptions, owner bottlenecks.
+Operational dashboard | Raw records received, cleaned, rejected, duplicate clusters, suppression blocks, import/export status and failed sync jobs.
+Revenue/conversion dashboard | Source → lead → call → registration/donation/payment/receipt → repeat cultivation path.
+Data quality dashboard | Completeness, duplicates, invalid phones, source coverage, consent status, stale records, owner coverage.
+AI-agent performance dashboard | Agent suggestions, approval/rejection rate, accuracy issues, human review queue, incidents and SLA.
+
+Source: WF-006 blueprint Section 13; Master Context Pack management brief layer.
+11. CRM / ERP / Data Expectations
+Production-readiness implication: partner must produce a unified master data model for WF-006 and its upstream/downstream workflows, including cross-workflow ID usage and migration-readiness notes for ERP.
+The MVP must use or produce platform-compatible fields even if the first version is built in Sheets/AppSheet. The partner should design for common Contact ID, Donor ID, Yatri ID, Community ID and Family ID where applicable.
+Source: User platform compatibility requirement; WF-006 blueprint Section 12; KCKE_Media_CRM_Dependency_Map.
+Entity | Required fields | Source of truth now | Future source of truth | Risks
+Master Contact | Contact ID, name, mobile, email, city, language, address, source, consent, owner | Hello Leads, internal CRM, Sheets, event/Yatra/donor lists | CRM now; ERP/Data Warehouse later | Duplicates, invalid phones, missing consent/source
+Donor Profile | Donor ID, contact ID, donation history, seva, HNI/CSR flag, relationship owner | DCC/payment systems, donor team notes, CRM | CRM + DCC now; ERP later | Identity mismatch, sensitive data exposure
+Yatri Profile | Yatri ID, contact ID, Yatra interest, registration, payment status, attendance, referrals | Yatra sheets/CRM | Yatra workflow app/CRM now; ERP later | Unlinked payments, stale follow-up
+Community / Family Profile | Community ID, Family ID, gated community, profession, children, interests, referrals | Sankalpa cards, events, preacher notes | CRM now; relationship graph later | Privacy/consent, inconsistent capture
+Source Attribution | Campaign source, event source, referral source, call source, website source, created date | Ads, offline lists, forms, event capture | CRM/Data Warehouse | Unknown source, no cost/revenue linkage
+Follow-up Task | Task ID, next action, owner, priority, due date, status, outcome, escalation | Telecalling notes, WhatsApp, CRM tasks, ClickUp later | CRM/ClickUp/workflow app | Task leakage, no accountable owner
+Payment/Revenue Link | Donation ID, payment status, receipt status, campaign ID, event ID, seva, trust | DCC/payment gateway/finance | ERP/DCC + CRM link | Revenue attribution errors
+Consent/Suppression | DND, opt-out, channel permission, not-interested, suppression reason/date | DND tools, Sheets, CRM notes | CRM/ERP governance layer | Compliance and donor annoyance risk
+Data Quality Score | Completeness, duplicate risk, source confidence, consent status, stale age | Generated by workflow | BigQuery/Looker + CRM | False confidence if rules unvalidated
+Access/Audit | User ID, role, export/download, permission, timestamp, approval | CRM/local server/admin logs | Security/audit system | Data leakage, untracked exports
+
+ERP-ready minimum field set: Contact ID, Campaign ID, Yatra ID, Donation ID, Event ID, Task ID, Owner ID, Payment Status, Source, Created Date, Last Follow-up Date, Next Action, Approval Status.
+Source: Workflow-to-Data Dependency Map referenced in Project Source/File Library and WF-006 blueprint Section 12.
+Assumption / Needs Validation: Actual Hello Leads schema, internal CRM schema, DCC/payment export fields and ERP target schema must be supplied before TRD sign-off.
+12. KCKE / Media AI Expectations, if applicable
+Use KCKE only for source-grounded Krishna conscious content, donor narratives, philosophical replies, preaching, education and devotional content.
+Do not use KCKE for operational records such as contact status, payment status, inventory, tasks, approvals, DND, source tags or CRM updates.
+Use Media AI only for reels, videos, storyboards, Yatra/festival/donor media and approved visual storytelling.
+For WF-006 specifically, KCKE and Media AI are no/optional dependencies; CRM/DBMS and ERP-ready data are primary.
+Source: KCKE_Media_CRM_Dependency_Map.docx; Project Glossary; Media_AI_Pipeline_Briefing_Note.docx.
+13. Governance and Human Approval Expectations
+Approval area | Requirement
+Donor-sensitive approvals | Human approval before saving sensitive relationship notes, HNI/CSR outreach or donor escalation.
+Financial approvals | Human approval for donation/payment messaging, receipt issues, donation promises and financial records.
+Public communication approvals | Human approval before bulk WhatsApp/SMS/email/social outreach.
+Philosophical/devotional approvals | KCKE-backed content and human devotional review required for philosophy/preaching content.
+Deity/media approvals | Media AI outputs require deity/character/source and human approval; not central to WF-006 but relevant downstream.
+CSR/HNI approvals | High-value segments and relationship updates require relationship owner or senior approver review.
+HR/legal/privacy approvals | Consent, DND, data access, data export and privacy policies require documented governance.
+
+Source: KCKE_Media_CRM_Dependency_Map human approval rules; CRM transcript 15:33–16:16 privacy/consent concern; Role Ownership Correction Note.
+14. Integration Expectations
+Accelerated execution implication: the partner must maintain a consolidated API registry and explicitly classify every integration as confirmed live, accessible but untested, needs contract/access, mock only, or future-phase.
+Integration area | Expectation
+Google Workspace | Drive, Docs, Sheets, Gmail for evidence, approvals, briefs and controlled MVP workflows.
+Gemini Enterprise | Workspace copilot, summarization, classification, voice-note extraction draft, data-steward assistant; partner to validate limits.
+Apps Script / AppSheet / Sheets | 7-day demo and 14-day MVP forms, approval queues, cleaning routines and dashboards.
+Vertex AI / Agent Builder | Scalable agentic workflows, classification, extraction, confidence scoring and orchestration; partner to validate.
+Cloud Run / Workflows | API orchestration, batch cleaning, sync jobs, retry logic and tool-using agents.
+BigQuery / Looker Studio | Data warehouse/intelligence layer, data quality dashboards, source-to-revenue analytics and predictive models.
+CRM APIs | Hello Leads, internal CRM/local server and any selected CRM; API feasibility must be confirmed.
+ERP APIs | Future ERP migration and master-data sync; not required to block initial MVP.
+Payment gateway / DCC | Donation ID, payment status, receipt status and campaign/Yatra revenue attribution.
+ClickUp | Task/decision dependency via WF-008; not primary CRM database.
+WhatsApp/voice vendor | Tata Tele, Exotel, WhatsApp/SMS/RCS vendors for call/campaign data and suppression compliance.
+External tools | DND validation, phone validation or enrichment if Google stack is insufficient and legally/ethically approved.
+
+Source: Data Management Process Review transcript 00:00–01:32; CRM transcript 19:24–22:48; KCKE_Media_CRM_Dependency_Map; WF-006 blueprint Section 11.
+15. Day 1–7 Production Foundation Sprint (formerly 7-Day Demo Expectations)
+Day 1–3: confirm workflow truth, owners, approvers, backups, data sources, CRM fields, common IDs, source taxonomy, DND/suppression input, dashboard schema, API status and production risks.
+Day 4–7: show the first working CRM/Sheet/API data path, first dashboard, first automation, first approval flow, first AI-assisted classification/summary and a sample live workflow test with documented fallback.
+The visible output must be reusable production foundation—not a throwaway demo—and every mocked component must be labelled clearly.
+Show quickly
+Sample contact upload and field validation.
+Duplicate detection with confidence score.
+Mock DND/suppression list check.
+Campaign-ready segmentation for Yatra/donation/festival/community use cases.
+CRM Data Quality Dashboard.
+Voice-note-to-structured relationship update draft with approval queue.
+Can be mocked
+DND API if no live API.
+Hello Leads/Tata Tele/Exotel sync if credentials unavailable.
+Internal CRM schema if not shared.
+BigQuery tables using sample/anonymized data.
+Donation/Yatra history using anonymized mock records.
+Data needed immediately
+500–2,000 anonymized contact records.
+Hello Leads field list.
+Internal CRM field list/sample export.
+Tata Tele/Exotel sample export.
+Suppression/DND/unsubscribe sample.
+Campaign source examples and 5–10 voice-note examples.
+Do not overclaim
+No full CRM replacement.
+No full 20–25 crore record migration.
+No production DND compliance unless API/policy is live.
+No autonomous donor outreach.
+No ERP migration completion.
+Source: WF-006 blueprint Section 8; CRM transcript 19:24–22:48 on BigQuery/cloud/CRM interface discussion.
+Assumption / Needs Validation: Data volumes of 20 crore/25 crore and 4 lakh Hello Leads contacts are transcript claims and must be validated before capacity/costing.
+16. Day 8–14 Integrated Working MVP (formerly 14-Day MVP Expectations)
+Day 8–14 must validate selected-user operational testing, data quality checks, exception routing, dashboard refinement, human approval testing, API registry validation and ClickUp/task/follow-up integration where relevant.
+The MVP should process a controlled real or anonymized contact batch through intake, validation, deduplication, suppression, segment recommendation, approval and dashboard update.
+Acceptance must include live-versus-mock classification and a blocker list for CRM/API, WhatsApp/voice/payment/DCC and ERP dependencies where relevant.
+Selected-user value
+Controlled data intake and validation through Sheets/AppSheet or a lightweight web form.
+Deduplication and suppression queue.
+Campaign-fit segment generator for at least three campaign types.
+Touchpoint/voice-note update draft workflow.
+Approval queue for import, merge, suppression override and campaign list release.
+Dashboard for Mukund Prabhu/HOD visibility.
+Acceptance criteria
+90%+ of sample records processed with status.
+Duplicate candidates and confidence scores generated.
+Suppression list applied with reason codes.
+At least three campaign segments generated.
+At least five voice notes converted into structured update drafts.
+Human approval queue and dashboard are usable by selected users.
+API gaps are documented clearly.
+Exclusions
+Full CRM migration.
+Production-scale 20+ crore database operation.
+Legal DND compliance without official API/policy.
+ERP migration.
+Unapproved donor communication automation.
+Source: WF-006 blueprint Section 9; Master Context Pack 14-Day MVP Agent Sprint definition.
+17. Day 15–30 Production Readiness and Productivity Multiplication Sprint (formerly 30-Day Pilot Expectations)
+Day 15–21: harden the workflow for controlled real operational usage, cross-workflow integration, training, KPI validation, escalation testing, fallback protocol, role ownership refinement and golden journey QA testing.
+Day 22–30: complete production readiness review, command-center visibility, live operational handover, productivity measurement, management reporting, partner sign-off checklist and next 60-day stabilization roadmap.
+The pilot should prove measurable productivity improvement and reduced managerial chasing, not only technical functionality.
+Users: CRM/data team, one campaign owner, one telecalling lead, one donor/Yatra representative, Mukund Prabhu dashboard reviewer.
+Workflow coverage: data intake, clean/validate, dedup/suppress, approve, segment, export/sync manually or through confirmed API, capture call/voice-note outcome, dashboard review.
+Data requirements: 5,000–25,000 anonymized or controlled real records with clear consent/source boundaries.
+Integration scope: at least one live integration if feasible; otherwise documented manual fallback with sync logs.
+Success metrics: reduction in list-preparation time, duplicate rate, suppression compliance, segment response quality, follow-up task completion and manager escalation reduction.
+Source: WF-006 blueprint Sections 8–10; Data Management Process Review transcript 00:00–03:15.
+18. 30-Day Production Base + 60-Day Stabilization Expectations (formerly 90-Day Production Foundation Expectations)
+The 30-day production base should deliver controlled go-live capability; the next 60 days should stabilize adoption, harden access controls, mature APIs, improve data quality, close outstanding integration blockers and enforce KPI review discipline.
+The 60-day stabilization path should include support cadence, issue queue, training reinforcement, dashboard review rhythm, API error monitoring, suppression-governance maturity and data-steward QA.
+Production architecture for CRM governance layer with access controls, audit logs, approval gates and rollback.
+Validated API path for Hello Leads, Tata Tele/Exotel and internal CRM or documented replacement strategy.
+BigQuery/Looker intelligence layer for data quality and source-to-revenue dashboards.
+Data governance operating model: owner, performer, approver, backup, escalation and steward.
+Data quality standards, suppression policy, source taxonomy and master-ID rules.
+Support model: issue queue, error resolution, role-based training and weekly governance review.
+Source: KCKE_Media_CRM_Dependency_Map; Folder Structure Readme; Role Ownership Correction Note; WF-006 blueprint Sections 11, 12, 13 and 17.
+19. 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale Vision (formerly 6-Month Enterprise Architecture Vision)
+By 75 days, WF-006 should be ready to operate as an enterprise-scale platform module with mature cross-workflow IDs, leadership command-center contribution, API registry discipline, workflow sequencing gates, source-to-revenue intelligence and multi-center replication packaging readiness.
+The 6-month architecture vision remains valid, but the first platform constraints must be enforced within the 30-day production base so future scale does not inherit disconnected automations.
+WF-006 plugs into Hyderabad AI Revenue & Seva Growth Platform as the Master Contact and Relationship Intelligence layer.
+Integrated revenue engine: Digital Marketing → CRM → Calling → Yatra/Donation → Payment/DCC → Follow-up → Donor/Yatri cultivation dashboard.
+BigQuery becomes analytical/intelligence layer; CRM remains operational; ERP becomes long-term centralized structured source for validated finance/operations/master records.
+Vertex AI/Agent Builder and Cloud Run/Workflows support scalable agents with human approval and audit trails.
+KCKE and Media AI remain separate systems and consume approved CRM/segment context only where relevant.
+The architecture creates a Hyderabad reference model that can later become a national/multi-center replication playbook after stabilization.
+Source: Master Context Pack architecture clusters; KCKE_Media_CRM_Dependency_Map; Folder Structure Readme; WF-006 blueprint Sections 11 and 18.
+20. Expected Google Product Areas
+Production-readiness implication: Google product mapping must distinguish Gemini Enterprise productivity use cases from Google Cloud/Vertex AI/Agent Builder/Cloud Run/BigQuery custom-build needs, with licensing, security and cost assumptions stated.
+Partner should validate the following likely Google product areas and explicitly separate what is possible in Gemini Enterprise from what requires Google Cloud/custom build.
+Product area | Likely role
+Gemini Enterprise / Workspace | Summaries, copilot assistance, draft classifications, voice-note extraction draft, workflow guidance.
+Apps Script / AppSheet / Sheets | Demo/MVP intake, validation, approval queue and lightweight dashboards.
+Vertex AI / Agent Builder | Production-grade classification, extraction, agents, tool-use, evaluation and confidence scoring.
+Cloud Run / Workflows | Connectors, batch jobs, sync orchestration, retry logic, API wrappers.
+BigQuery / Looker Studio | Large-scale analytics, CRM data quality, source-to-revenue dashboards, predictive models.
+Google Admin / Security tools | Access/audit monitoring, role-based controls, export monitoring where available.
+External vendor tools | DND validation, WhatsApp/SMS/RCS, telephony, phone validation if not native to Google stack.
+
+Source: Project Glossary; Master Context Pack partner rule; CRM transcript 19:24–22:48.
+Assumption / Needs Validation: Partner must not rely on generic demos; they must confirm license, region, API access, security, cost, ownership and limitations.
+21. Questions for the Implementation Partner
+What can be delivered in Day 1–7 as a Production Foundation Sprint output, and which elements are live versus mock?
+What can be delivered in Day 8–14 as an Integrated Working MVP for selected users?
+What can be production-ready by Day 30 using controlled real or anonymized operational data?
+What stabilizes over the next 60 days after the 30-day production base?
+What is the 75-day enterprise-scale readiness path and the 6-month architecture for this workflow as a platform module?
+Which features are demo/mock only?
+Which features require APIs/connectors?
+Which features require CRM/ERP/data cleanup?
+Which features require external vendors?
+Which features should not be promised in 2 weeks?
+What data do you need from HKHT immediately?
+Which parts require Gemini Enterprise?
+Which parts require Google Cloud/custom build?
+Which parts require Vertex AI / Agent Builder?
+Which parts require Apps Script / AppSheet / Sheets?
+Which parts require BigQuery / Looker Studio?
+What licenses are required?
+What APIs/connectors are available for Hello Leads, Tata Tele, Exotel, internal CRM, DCC/payment and future ERP?
+What are estimated costs for 4 lakh contacts, 1 crore contacts and 20+ crore contacts?
+What are security/privacy limitations?
+How will human approvals be enforced before merge/delete/bulk outreach/donor-sensitive updates?
+How will hallucination and incorrect CRM updates be prevented?
+How will audit logs be maintained?
+What are HKHT-side dependencies and exclusions?
+What master entity model and common ID strategy will you use across WF-006, WF-001, WF-002, WF-003, WF-007, WF-009 and WF-014?
+What sequencing gates must be passed before scaled calling, campaign execution or donor cultivation automation can use CRM data?
+What is your fallback protocol if Hello Leads, Tata Tele, Exotel, WhatsApp, payment/DCC or internal CRM integration is delayed?
+How will ClickUp/task follow-up be used where execution governance and owner escalation are required?
+How will Mukund Prabhu dependency reduction be measured in the dashboard?
+Source: Master Context Pack partner rule; WF-006 blueprint Section 16.
+22. Expected Deliverables from Google / Implementation Partner
+Production-readiness addition: deliverables must include a 30-day production-readiness checklist, 60-day stabilization roadmap, 75-day enterprise-scale readiness roadmap, API registry, fallback/service-continuity protocol, golden journey QA plan and leadership command-center dashboard specification.
+Technical Requirements Document (TRD).
+Solution Architecture.
+Google Product Mapping.
+Agent Architecture.
+Integration Architecture.
+CRM/ERP/Data Architecture.
+Security and Access Model.
+Human Approval Architecture.
+Dashboard Architecture.
+API/Connector Requirements.
+Deployment Architecture.
+Licensing Requirements.
+Cost Estimates.
+Team Structure.
+Rollout Plan.
+Risks and Limitations.
+HKHT-side Dependencies.
+Data Requirements from HKHT.
+Assumptions and Exclusions.
+30-Day Production Readiness Checklist.
+60-Day Stabilization Roadmap.
+75-Day Enterprise-Scale Readiness Roadmap.
+API Registry and Dependency Tracker.
+Failure/Fallback and Service Continuity Protocol.
+Golden Journey QA Test Plan.
+Leadership Command-Center Dashboard Specification.
+Mukund Prabhu Dependency Reduction Measurement Plan.
+Source: User instruction for partner deliverables; Master Context Pack Stage 4 and Stage 5 partner brief/TRD protocol; Folder Structure Readme output storage rules.
+Feature Classification Required from Partner
+The partner must classify every proposed feature with one or more of the following labels: buildable immediately; demo/mock only; requires our data; requires CRM/API integration; requires ERP later; requires custom Google Cloud build; requires Gemini Enterprise; requires Vertex AI; requires Agent Builder/agentic systems; requires Apps Script/AppSheet/Sheets; requires BigQuery/Looker Studio; requires external vendor tools; requires data cleanup; requires human approval design; should not be promised in 2 weeks.
+Feature / Module | Initial HKHT expectation | Partner must validate
+Contact upload validation + quality score | Buildable immediately | Sheets/AppSheet/Apps Script; needs sample data
+Duplicate detection suggestions | Buildable immediately / data cleanup required | Works on sample exports; production merges require human approval
+DND/suppression check | Demo/mock initially; vendor/API required for production | Use uploaded suppression list in 7/14-day sprint
+Segment recommender | Buildable immediately with sample data; improves with BigQuery | Gemini Enterprise/Vertex AI classification to be validated
+Voice-note-to-CRM relationship update | Buildable demo/MVP; production requires governance | Human approval mandatory for sensitive donor notes
+Hello Leads sync | Requires CRM/API integration | Partner must confirm API availability
+Tata Tele/Exotel sync | Requires vendor API/connectors | Manual fallback in MVP
+Source-to-revenue attribution | Partial MVP; requires DCC/payment integration for full value | ERP/DCC data required
+BigQuery master data layer | Requires Google Cloud/custom build | 30/90-day foundation candidate
+Production access/audit controls | Requires security design | Must not be promised without current system audit
+ERP migration | Requires ERP later | Do not block MVP; define ERP-ready fields now
+Multi-center replication | 12–24 month architecture | Design schema now; rollout later
+30-Day Production Base | Partner should plan production foundation, selected-user usage, dashboards, approval routing and fallback by Day 30. | Classify live, mock, data-dependent, API-dependent, custom-build and external-vendor-dependent elements.
+API Registry & Dependency Watch | HKHT requires consolidated visibility of CRM/voice/WhatsApp/payment/DCC/ERP API status. | Provide API registry fields, owner, status, blocker, cost, security/access notes and fallback.
+Leadership Command-Center Contribution | WF-006 must feed unified leadership dashboard for CRM quality, source readiness, approvals, follow-up leakage and escalation status. | Validate Google product mapping for Looker Studio/BigQuery/Gemini/Sheets and delivery timeline.
+Golden Journey QA | Test end-to-end path from raw contact intake to approved segment, follow-up task, dashboard update and downstream workflow readiness. | Define test cases, acceptance criteria, failure handling and sign-off owner.
+Relationship Intelligence Graph / Follow-the-Devotee Timeline | Desired 100x lever for long-term platform value; start with common IDs and event timeline fields within 30-day base. | Validate immediate schema, 75-day readiness and 6-month graph/BigQuery/Vertex path.
+WhatsApp / Voice / Calling Readiness Gate | Do not scale outreach until source, DND/suppression, duplicate and approval gates are working. | Classify WhatsApp/voice status, API dependency, template/provider blockers and fallback.
+
+Source: Master Context Pack partner sprint model; user platform compatibility requirement; WF-006 blueprint Sections 8, 9, 11 and 16.

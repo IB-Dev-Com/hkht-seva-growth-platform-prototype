@@ -4,6 +4,32 @@ All notable changes to this prototype are recorded here. This is a **demonstrati
 for developer handoff: all AI / voice / WhatsApp / ad / CRM / payment calls are **mocked** with
 realistic data and simulated latency. No live backend.
 
+## [0.3.0] — 2026-06-23 — Google Partner Brief alignment (WF-002/003/006)
+
+Read the six Google Partner Briefs (Document-B 30-day production briefs + scope-alignment notes for WF-002,
+WF-003, WF-006) and implemented the items they emphasise that weren't yet dedicated screens. Briefs extracted to
+`Design/_extracted/` for reference. Most brief content already matched the prototype; the net-new build:
+
+### New platform screens (3)
+- **AI Agent Performance** (`/ai-performance`) — the "AI-agent performance dashboard" named in all three briefs:
+  per-agent suggestions, approval/rejection rate, accuracy, hallucination/error flags, human-review queue,
+  overrides adopted, SLA improvement, incidents — across all 12 agents, filterable by workflow.
+- **Source → Revenue Attribution** (`/attribution`) — spend → lead → call → registration/donation →
+  payment/receipt → repeat-cultivation funnel with per-source ROAS and the explicit join-key chain
+  (Source/UTM → Lead_ID → Contact_ID → Call_ID → Donation_ID → Payment_Status).
+- **Production Readiness & Golden-Journey QA** (`/golive`) — go/no-go sequencing gates (WF-006 → WF-002 →
+  WF-003, dynamically evaluated), production-readiness checklist, golden-journey QA test cases, and the
+  30 / 60 / 75-day roadmap with Day 7/14/21/30 acceptance reviews.
+
+### Refinements to existing screens (kept the better version, deepened it)
+- **Relationship Graph** — added the Preacher Relationship Capture voice-note flow (record → Gemini transcribe →
+  structured fields → human approval before save), per the brief's explicit "no secret recording" guidance.
+- **WhatsApp Follow-up** — added a Governance Register tab (provider/BSP, DLT registration, category, opt-out
+  handling, template-rejection fallback, delivery monitoring, report cadence).
+- **Contact 360** — added a Community & Family section (Community_ID, Family_ID, gated community, relationship
+  links) on the governance tab.
+- Seed: added `aiAgents` performance dataset (12 agents). Nav + routes registered; all RBAC/tenant-scoped.
+
 ## [0.2.0] — 2026-06-23 — Full feature build-out (every agent in the inventory)
 
 Implemented **all remaining features** across WF-006, WF-002 and WF-003 — every agent, automation, dashboard,

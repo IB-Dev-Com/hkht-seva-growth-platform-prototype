@@ -1,0 +1,424 @@
+HKHT GE Technical Scope — Gap Analysis
+Purpose
+This document covers:
+Workflow-wise gaps, compression risks, and missing cross-workflow architecture, Areas requiring further production clarification.
+Core Concern
+The current document behaves largely like:
+“a Gemini Enterprise feasibility demonstration scope” instead of: “a production-ready Hyderabad AI Revenue & Seva Growth Platform architecture.”
+The workflows appear compressed into isolated AI use-cases.
+But the actual HKHT vision is:
+AI-first operating model.
+Multi-agent execution layer.
+Unified relationship intelligence.
+Cross-workflow orchestration.
+Workflow-to-workflow intelligence transfer.
+Dashboard-driven operations.
+Productivity multiplication.
+Relationship lifecycle intelligence.
+The current scope does not yet sufficiently demonstrate:
+platform-level orchestration.
+unified workflow continuity.
+shared data contracts.
+end-to-end operational journeys.
+leadership intelligence layer.
+cross-workflow analytics.
+operational memory layer.
+workflow interoperability.
+Biggest Missing Area
+Cross-Workflow Continuity
+The concern is lack of clarity around:
+digital lead → CRM → voice follow-up → Yatra/payment → bahumana → donor follow-up
+The workflows currently appear isolated. But the actual operational expectation is unified lifecycle continuity with shared relationship history.- workflow-to-workflow event transfer with centralized operational memory. Without this the platform risks becoming disconnected automations.
+Workflow-wise Gaps,
+WF-001 — Yatra Lifecycle
+The Technical scope has shown that the system can help staff manage Yatra operations. But the bigger expectation is that the system should remember the full journey of a person.
+For example, suppose one person first sees a digital ad, then fills a Yatra form, then receives a call, then pays, then joins the Yatra, then receives prasadam, and later becomes a donor. The system should not treat these as separate events. It should know that this is the same person moving through one journey.
+Right now, it is not clear whether the system will connect all these steps together.
+What we still need is:
+The system should remember how a lead became a yatri.
+The CRM should show the full Yatra journey of each yatri.
+Payment status should be connected to the yatri record.
+After the Yatra, the system should help convert the yatri into a donor or long-term supporter.
+The system should remember the yatri’s past interest, calls, payments, family details, and future opportunities.
+Staff should get one dashboard that shows Yatra registrations, payments, pending follow-ups, issues, and donor opportunities.
+The system should help predict whether a Yatra will fill or needs more marketing.
+Campaign source should be remembered so we know which marketing effort brought the yatri.
+Follow-up should happen automatically when the yatri reaches an important stage.
+Clarifications Required
+How does CRM continuity persist from lead to yatri?
+What IDs persist across the journey?
+What events are written back to CRM?
+How does Yatra lifecycle generate donor intelligence?
+How are follow-up workflows triggered?
+What dashboards exist for operational visibility?
+WF-002 — Voice Follow-up + CRM Intelligence
+The Technical scope has covered how call transcripts can be read and summarized. That is useful. But the bigger need is that every call should become part of the person’s relationship history.
+For example, if a person says on a call, “I am interested in Kailash Yatra but need time,” the system should remember this, create a follow-up task, send the right WhatsApp message, and show the person as a warm Yatra lead.
+Right now, it is not fully clear whether the system will do this full chain.
+What we still need is:
+Each call should become part of the person’s CRM timeline.
+The system should remember what was discussed in past calls.
+Important signals should be captured, such as donor interest, Yatra interest, payment hesitation, or complaint.
+A hot lead should be prioritized above a casual lead.
+After a call, the system should trigger the next action: WhatsApp, callback, human follow-up, or escalation.
+Supervisors should see which calls need attention.
+Failed calls, missed calls, and unresolved calls should not disappear.
+Campaign source should remain connected to the call, so we know which campaign created the enquiry.
+The system should show whether the relationship is new, warm, interested, pending, converted, or needs senior attention.
+The system should also capture other nuance which may be important later,  if he is a frequent traveler, if he has association with ISKCON Before, if he has beem contributing to any particular cause,  What are his particular interests,  Does he mention or reference somebody during the conversation,  Any information about his business or Activities in Personal Life reveled
+Enhancement: Comprehensive Data & Intelligence Capture Specification
+To transform standard voice transcripts into actionable CRM intelligence, the system must parse every call and map data into distinct entity layers. This structure covers specific use cases across Yatra registrations, donation pipelines, program invites, and general follow-ups.
+1. Relationship Nuance & Contextual Entities
+Affiliation & Legacy Context: Automatically capture historical or active associations with spiritual centers, specific temples, mentors, or programs attended.
+Behavioral Dynamics & Lifestyle Signals: Tag professional background details, business domains, travel frequencies, and personal lifestyle indicators mentioned naturally during conversation.
+Philanthropic History: Map historical focus areas of giving (e.g., Anna-daan, education, construction) to align future outreach with donor passions.
+The Relationship Graph: Extract names, referrals, and mutual connections mentioned during calls to automatically link profiles within the CRM.
+2. Yatra Registration & Logistical Entities
+Accommodation Preferences: Track specific room-sharing requests, family configurations, or physical mobility requirements (e.g., ground floor rooms, minimal stairs).
+Dietary & Health Profiles: Extract strict medical allergies, chronic health conditions (essential for high-altitude Yatras), and calendar-based fasting preferences (e.g., Ekadashi tracking).
+Logistical Timelines: Map arrival/departure windows, flight/train numbers, and required local transit arrangements to sync directly with ground operations.
+3. Donation & Philanthropic Lead Entities
+Transaction Channel Preferences: Note preferred payment modes (e.g., UPI, Net Banking, International Wire for NRI donors) to customize downstream link generation.
+Tax Compliance Signalling: Explicitly flag requirements for specialized tax exemption receipts (e.g., 80G or international equivalents).
+Commitment Windows: Capture ideal giving cycles, pledge fulfillment timelines, or meaningful dates (e.g., birthdays, anniversaries) for future touchpoints.
+Recognition & Anonymity Settings: Track preferences regarding public donor boards, temple plaques, or festival publications.
+4. Program Invites & Engagement Metadata
+Headcount Matrix: Parse explicit attendee breakdowns (Adults vs. Children) to accurately predict venue capacities and catering needs.
+RSVP Confidence Scoring: Assign sentiment-based confirmation values (Confirmed, Tentative - Callback Needed, Interested - Traveling) to drive automated reminder flows.
+5. Operational System Metadata
+Call Disposition Tags: Maintain rigid, automated system markers for instant pipeline routing (e.g., Warm Yatra Lead, Payment Hesitation, Complaint Escalation, DND Request).
+Language & Dialect Mapping: Automatically lock in the contact's preferred conversational language based on call performance to route future human or AI outreach perfectly.
+Clarifications Required
+How will transcripts be normalized?
+How are CRM events written?
+What becomes the persistent conversation memory?
+How are follow-up tasks generated?
+How are unresolved conversations escalated?
+How are donor/yatri tags created?
+WF-003 — Digital Marketing
+The Technical scope has shown that the system can help understand campaigns and prepare insights. But the bigger need is to know whether marketing money is actually bringing registrations, donations, and long-term relationships.
+For example, if we spend money on a Google ad, we should know how many leads came, how many were called, how many registered for Yatra, how many paid, and how many later donated.
+Right now, it is not fully clear whether the system will connect marketing spend to real outcomes.
+What we still need is:
+Every lead should keep its campaign source.
+We should know which ad, message, or landing page brought the person.
+Marketing spend should connect to Yatra registration, donation, and follow-up results.
+The system should show which campaign is profitable and which is wasting money.
+If a person visits a page many times but does not register, the system should trigger follow-up.
+Campaign dashboards should show cost, leads, calls, payments, donations, and conversion.
+Marketing should not stop at “lead generated”; it should continue until revenue and relationship outcome is visible.
+Clarifications Required
+How are campaign events written to CRM?
+What becomes the canonical attribution model?
+How are leads linked across workflows?
+How is source persistence maintained?
+What becomes the single marketing intelligence layer?
+WF-004 — Content Factory
+The Technical scope has covered basic content drafting and approval. But the bigger need is that content should be spiritually correct, source-based, reusable, trackable, and connected to campaigns and donors.
+For example, if the team creates a Yatra video or donor message, the system should know which source was used, who approved it, where it was published, and whether it performed well.
+Right now, it is not fully clear whether the system will connect content to KCKE, Media AI, campaigns, and donor journeys.
+What we still need is:
+Content should be grounded in approved spiritual sources where needed.
+The system should remember the exact source or citation used.
+Media AI outputs should follow a proper storyboard and approval flow.
+Approved content should be reusable across campaigns.
+Donor stories and campaign messages should be stored and reused intelligently.
+Each content item should have status: draft, review, approved, published, archived.
+The system should track which content worked well and which did not.
+Content should be linked to the right audience, campaign, donor segment, or Yatra.
+Clarifications Required
+How does KCKE integrate?
+What is the grounding architecture?
+What metadata persists?
+How are approvals tracked?
+How are publishing workflows triggered?
+WF-005 — Online Communications
+The Technical scope has covered enquiry routing and reply drafting. But the bigger need is that the system should remember every important conversation, no matter where it happened.
+For example, a person may first message on WhatsApp, then call, then fill a website form, then ask a donation question. The system should know this is the same person and show the full communication history.
+Right now, it is not fully clear whether all communication channels will connect into one memory.
+What we still need is:
+WhatsApp, email, website, social media, and call follow-ups should connect to one person record.
+The system should remember what the person asked earlier.
+Important messages should be routed to the right owner.
+Urgent or sensitive messages should be escalated.
+Replies should follow approved templates where needed.
+The system should show which enquiries are pending, delayed, resolved, or need senior attention.
+Staff should not have to search many places to understand one person’s history.
+If someone should not receive messages, the system should respect that status.
+Clarifications Required
+How are communications persisted?
+How are conversations linked to CRM?
+What becomes the unified communication history?
+How are escalations governed?
+WF-006 — CRM / DBMS Governance Backbone
+The Technical scope has recognized that CRM is the backbone. That is good. But the bigger need is to clearly define how every person, donation, Yatra, campaign, event, task, and payment will connect.
+Think of CRM like the main school register. If the same student is written in five different registers with different names, no teacher will know the full story. Similarly, HKHT needs one clear identity system for every person and every relationship.
+Right now, it is not fully clear whether the CRM will become this complete memory system.
+What we still need is:
+One master data model for all workflows.
+One Contact ID for each person.
+Linked Donor ID, Yatri ID, Lead ID, Campaign ID, Event ID, Payment ID, and Task ID.
+A relationship graph showing family, donor, yatri, community, referrer, and volunteer links.
+A full timeline of each person’s journey.
+Workflow events should be stored, not lost.
+If something happens in one workflow, other related workflows should know.
+CRM should support dashboards, follow-ups, approvals, and future ERP migration.
+The system should clearly define what lives in CRM, ERP, GE, BigQuery, Sheets, or other tools.
+Clarifications Required
+What is the exact master entity model?
+What datastore becomes canonical?
+What becomes the source of truth?
+How are workflow events normalized?
+How are IDs governed?
+What is the ERP transition plan?
+WF-007 — Donor / LLP / CSR
+The Technical scope has covered donor journeys and next-best actions at a high level. But the bigger need is a smart donor relationship system.
+For example, if a donor attended a Yatra, gave during a festival, met a fundraiser, and belongs to a particular community, the system should remember all of this and guide the fundraiser on what to do next.
+Right now, it is not fully clear whether donor intelligence will be deep enough.
+What we still need is:
+Donor history should be visible in one place.
+The system should show where each donor is in the relationship journey.
+HNI and CSR prospects should have proper stages and follow-ups.
+Fundraisers should get useful guidance before donor meetings.
+Donors should be grouped by interest, capacity, past giving, Yatra history, and engagement.
+The system should help predict who is likely to donate again.
+Family and community connections should be remembered.
+Donor dashboard should show pending follow-ups, opportunities, proposals, and risks.
+Clarifications Required
+How is donor intelligence persisted?
+How are donor relationships unified across workflows?
+What triggers donor journeys?
+How are HNI interactions tracked?
+WF-008 — Meeting Intelligence + ClickUp
+The Technical scope has covered extracting tasks and decisions from meetings. That is useful. But the bigger need is that meeting knowledge should not be forgotten after tasks are created.
+For example, if the same issue comes up again and again in meetings, the system should notice the pattern and show it to leadership.
+Right now, it is not fully clear whether meeting intelligence will become organizational memory.
+What we still need is:
+Decisions should be stored in a way that can be searched later.
+Repeated problems should be identified.
+Delayed tasks should be escalated automatically.
+Leadership should see which decisions are pending and which owners are stuck.
+Meeting outputs should connect to dashboards, not only to task lists.
+The system should learn patterns from meetings over time.
+Important judgment from Mukund Prabhu and other leaders should become reusable guidance.
+Clarifications Required
+How are decisions stored?
+What becomes the institutional memory layer?
+How are recurring themes analyzed?
+How are escalations surfaced?
+WF-009 — Finance / DCC / P&L
+The Technical scope has shown finance dashboards in a limited way. But the bigger need is live financial clarity connected to real operations.
+For example, if a yatri pays, the system should know the payment status, receipt status, Yatra batch, campaign source, and whether any issue exists.
+Right now, it is not fully clear whether finance will connect deeply with Yatra, donor, campaign, and payment workflows.
+What we still need is:
+Payment status should update the right Yatra or donor record.
+Receipt problems should be visible immediately.
+Yatra profit/loss should be visible by batch.
+Campaign profit/loss should be visible by campaign.
+Finance exceptions should go to the right approver.
+DCC/ERP transition issues should not break donor-facing workflows.
+Leadership should see finance risks before they become donor complaints.
+Financial events should connect to CRM and dashboards.
+Clarifications Required
+What is live vs analytical-only?
+How are finance events integrated?
+What systems become canonical?
+What reconciliation workflows exist?
+WF-010 — Bahumana / Dispatch / Inventory
+The Technical scope has covered reorder alerts and dispatch visibility. But the bigger need is to connect bahumana and prasadam dispatch to donor relationships.
+For example, if a donor gives for a seva, the system should know whether they should receive prasadam, whether it was packed, whether it was sent, whether it reached them, and whether a thank-you follow-up happened.
+Right now, it is not fully clear whether dispatch will become part of the donor relationship journey.
+What we still need is:
+Dispatch should be linked to the donor record.
+The system should know why the gift is being sent.
+Gifts should be personalized where appropriate.
+Courier tracking should update the system.
+Failed or delayed deliveries should be visible.
+Successful delivery should trigger gratitude follow-up.
+Inventory should connect to donor promises and festival needs.
+Dispatch should not be treated only as a stock movement task.
+Clarifications Required
+How are dispatches linked to donor CRM?
+What fulfillment events persist?
+How are gratitude workflows triggered?
+WF-011 — HR / SOP / KT
+The Technical scope has covered SOP and knowledge retrieval. But the bigger need is to understand who owns what work and how people are trained, supported, and made more productive.
+For example, if one person leaves or is unavailable, the system should know who is the backup and what SOP they should follow.
+Right now, it is not fully clear whether HR/SOP/KT will become an active team management system or only a document search assistant.
+What we still need is:
+Clear role ownership for every workflow.
+Backup owners for important tasks.
+Training and onboarding tracking.
+SOP completion tracking.
+Approval delegation rules.
+Team capability visibility.
+Productivity improvement tracking.
+A way to update SOPs when meeting decisions change a process.
+Clarifications Required
+How are role structures maintained?
+What becomes the role ownership layer?
+How is KT completion tracked?
+WF-012 — Website / Landing / Support
+The Technical scope has covered a support assistant and lead capture. But the bigger need is that the website and landing pages should connect to CRM, campaigns, donations, Yatra registrations, and follow-up.
+For example, if a person clicks a campaign link, visits a Yatra page, fills a form, but does not pay, the system should remember this and trigger follow-up.
+Right now, it is not fully clear whether landing-page actions will become part of the full relationship journey.
+What we still need is:
+Every form submission should create or update a CRM record.
+Campaign source should be preserved.
+Page visits, form submits, payment clicks, and failures should be tracked.
+Broken payment links or form issues should be visible quickly.
+Landing pages should show content suited to the audience where possible.
+Website leads should connect to WhatsApp, calling, donor, and Yatra workflows.
+Analytics should show conversion, not only page traffic.
+Clarifications Required
+How are landing-page events persisted?
+How are leads linked to CRM?
+How are campaign journeys unified?
+WF-013 — Multi-Center Replication
+WF-013 is about taking what works in Hyderabad and making it usable by other centers. Right now, this is not clearly visible in the technical scope.
+For example, if Hyderabad successfully builds the Yatra workflow, another center should not start from zero. They should receive a ready template, data model, dashboard, SOP, training guide, and setup checklist.
+Right now, it is not clear how the system will be packaged for other centers.
+What we still need is:
+A clear onboarding plan for new centers.
+Reusable workflow templates.
+Shared dashboards that can compare centers.
+Clear rules on what is common and what can be local.
+Training and support model for new centers.
+Center-level governance.
+A way for learning from Hyderabad to help other centers.
+A rollout process that does not create many different versions of the same workflow.
+WF-014 — Community Outreach
+The Technical scope has covered segmentation and outreach drafting. But the bigger need is to treat community outreach as a relationship journey, not only as an event or message campaign.
+For example, if a family attends a Krishna Life program in a gated community, the system should remember the family, their interest, their children/youth interest if relevant, their donation potential, their Yatra interest, and whether they can become ambassadors.
+Right now, it is not fully clear whether community outreach will connect to donor, yatri, volunteer, and ambassador journeys.
+What we still need is:
+Each community should have a profile.
+Each family/contact should be linked to that community.
+Event attendance should trigger follow-up.
+Interested families should move into donor, Yatra, volunteer, or youth follow-up journeys.
+Supportive families should be identified as ambassadors.
+Community dashboard should show permissions, events, contacts, follow-ups, donations, Yatra leads, and ambassadors.
+Outreach should not stop after the event; the system should help continue the relationship.
+Clarifications Required
+How are community interactions persisted?
+How are family/community relationships represented?
+What workflows trigger conversion journeys?
+Cross-Workflow Areas Not Clearly Covered
+1. Unified Relationship Intelligence
+In simple words, the system should know the full story of each person.
+For example, one person may first come through a Facebook ad, then ask a question on WhatsApp, then get a call from Blue Machines Voice Agent, then register for a Yatra, then make a donation, then receive bahumana, and later attend a community program.
+The system should not treat this person as five different records. It should know: “This is the same person, and this is their full relationship journey with HKHT.”
+Right now, it is not clear whether the GE scope will create this full relationship memory.
+What needs clarity:
+Will the system show the full journey of one person?
+Will it show family links, donor links, yatri links, and community links?
+Will it remember all past calls, messages, donations, events, and Yatras?
+Will one workflow be able to use information from another workflow?
+Without this, every team will know only one small part of the person’s story. Fundraisers, Yatra teams, outreach teams, and communication teams may all work separately without full context.
+2. Shared ID Architecture
+In simple words, every person and every important activity needs a fixed ID.
+One Contact ID for the person.
+One Donor ID if the person donates.
+One Yatri ID if the person joins a Yatra.
+One Campaign ID if the person came through an ad.
+One Payment ID if the person paid.
+One Task ID if follow-up is assigned.
+Right now, it is not clear whether all workflows will use the same ID system.
+What needs clarity:
+Which IDs will be created?
+Which system will create them?
+Which ID is the main ID?
+How will duplicate records be avoided?
+How will one workflow recognize the same person from another workflow?
+Without shared IDs, dashboards will show wrong numbers, donors may be duplicated, yatris may not connect to donation history, and campaign results may not be trusted.
+3. Unified Dashboard Architecture
+In simple words, leadership should not have to open thirteen different dashboards to understand what is happening.
+There should be one main leadership view showing the most important things:
+How many leads came?
+How many became yatris?
+How many paid?
+How many donors need follow-up?
+Which campaign is working?
+Which payment or receipt is stuck?
+Which tasks are delayed?
+Which owner needs attention?
+Operational dashboard tells us whether the organization is getting results.
+Right now, it is not clear about real leadership-level operational dashboard.
+What needs clarity:
+Will there be one combined leadership dashboard?
+What KPIs will it show?
+Can it drills down to workflow, owner, donor, yatri, payment, or task?
+How often will it refresh?
+Which system will feed the dashboard?
+Without one leadership dashboard, the team may still depend on manual follow-ups, WhatsApp updates, and repeated status asking.
+4. Workflow Event Bus / Trigger Layer
+when something happens in one workflow, the right next action should automatically happen in another workflow.
+For example:
+A person fills a Yatra form → CRM record should be created.
+Blue Machines finishes a call → follow-up task should be created.
+Payment is completed → Yatra status should update.
+Yatra is completed → donor cultivation task should start.
+Bahumana is delivered → gratitude follow-up should be triggered.
+Right now, it is not clear whether the Technical scope defines this trigger system.
+What needs clarity:
+Which events will trigger the next workflow?
+Where will these events be stored?
+Who approves automated actions?
+What happens if a trigger fails?
+Will the system show failed triggers on a dashboard?
+Without workflow triggers, staff will still manually push work from one team to another. That means automation will remain incomplete.
+5. Institutional Memory
+In simple words, the organization should not forget important decisions and wisdom.
+Meetings should not only create tasks. They should also preserve important knowledge.
+For example, if Mukund Prabhu explains why a certain donor should be approached carefully, or why a certain Yatra needs special pricing, that knowledge should be stored in a structured way. Later, the system should help others make similar decisions using that guidance with reasoning and refrence.
+Right now, it is not clear whether meeting intelligence will only create tasks or also build long-term institutional memory.
+What needs clarity:
+Where will important decisions be stored?
+Can the system find old decisions later?
+Can repeated issues be detected?
+Can Mukund Prabhu’s operational judgment be converted into reusable guidance?
+Can future teams learn from past meetings and decisions?
+Without institutional memory, the same questions will be asked again and again, and the organization will remain dependent on a few key people.
+6. Productivity Intelligence
+In simple words, we should be able to measure whether the system is actually saving time and improving work.
+We should know:
+How many follow-ups are happening on time?
+How much manual chasing reduced?
+How many approvals are delayed?
+How many tasks are stuck?
+How many leads are leaking?
+How much time Mukund Prabhu is saving?
+Right now, it is not clear whether the Technical scope includes this type of productivity measurement.
+What needs clarity:
+What productivity numbers will be tracked?
+What is the current baseline?
+How will improvement be measured after 30 days?
+How will delayed owners and stuck tasks be shown?
+How will reduction in managerial chasing be measured?
+Without measurement, we cannot prove whether the AI system is creating real benefit or only creating new tools.
+7. KCKE + Media AI Interface
+the Krishna Consious knowledge system and media creation system should connect properly with the workflows.
+For example, if a donor message or Yatra video needs a scriptural reference, the system should take it from an approved source, not just generate something generally. If Media AI creates a video final approval status and reason and learn from it for local operations.
+Right now, it is not clear how KCKE and Media AI will connect with the GE workflows.
+What needs clarity:
+How will approved Krishna Consious sources be used?
+How will citations be stored?
+How will content be reviewed before use?
+How will Media AI receive approved feedback details?
+How will donor narratives, campaign content, and website content use KCKE safely?
+How will approved content be reused later?
+Without this, content may be created quickly but may not be properly source-grounded, reviewed, reusable, or connected to campaigns and donor journeys.
+Consolidated Clarification Request
+Please provide a production architecture addendum covering:
+cross-workflow orchestration.
+master relationship/data model.
+workflow event architecture.
+CRM continuity.
+WhatsApp and Voice agents handoff points.
+dashboard architecture.
+persistent operational memory.
+KCKE and Media AI interface points.
+workflow-wise production scope.
+integration readiness.
+production acceptance criteria.
+golden journey testing.

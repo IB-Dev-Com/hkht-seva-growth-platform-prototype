@@ -1,0 +1,93 @@
+DOCUMENT 0 - Platform-Level Architecture Brief
+Integrated architecture for the Hyderabad AI Revenue & Seva Growth Platform
+HKHT AI for Seva - Hyderabad AI Revenue & Seva Growth Platform
+Field | Value
+Document ID | DOC-00
+Version | v1.0
+Roadmap Alignment | 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale
+Primary Source | Latest attached workflow-wise Google / Implementation Partner Briefs
+Secondary Source | HKHT AI Transformation Analysis, excluding privacy-law-specific recommendations
+Document Type | Central platform governance package
+
+Document Purpose
+Defines the platform architecture that binds all workflow briefs into one integrated operating model.
+Audience
+HKHT leadership, Mukund Prabhu, workflow owners, solution architects and implementation partner leads.
+Scope
+All active workflow modules WF-001 to WF-014, excluding the not-yet-generated WF-013 which is separately defined in this package.
+Executive Summary
+This document converts the latest workflow-wise implementation briefs into one practical governance artifact for the Hyderabad AI Revenue & Seva Growth Platform. It is designed to help HKHT leadership, workflow owners and the implementation partner coordinate accelerated delivery without creating isolated automations.
+The package follows a 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale operating model. The first 30 days focus on production base and initial live use; the 60-day phase stabilizes the system; the 75-day phase establishes enterprise-scale readiness.
+Platform Vision
+The platform must combine revenue generation, seva expansion, preaching reach, operational control, donor/yatri relationship intelligence, and managerial leverage. Each workflow remains a specific module but shares identity, source tracking, approvals, dashboards and integration discipline.
+Workflow Portfolio Map
+ID | Workflow | Cluster | Platform Role | Latest Brief Source
+WF-001 | Yatra Lifecycle / Yatra Marketing | P0 Revenue Engine | Yatra campaigns, lead capture, calling, registration, payments, travel operations, post-yatra cultivation. | WF-001_Document_B_Google_Implementation_Partner_Brief_30-Day_Production_Ready.docx
+WF-002 | Voice Agent + CRM Follow-up | P0 Revenue Engine | AI-assisted calling, lead qualification, callbacks, handoff, and CRM outcome capture. | WF-002_Document_B_Google_Implementation_Partner_Brief_30-Day_Production_Ready.docx
+WF-003 | Digital Marketing Campaigns | P0 Revenue Engine | Google/Meta campaigns, campaign source tracking, creative testing, landing conversion, lead attribution. | WF003_Document_B_30_Day_Production_Ready_Accelerated_Execution_Brief.docx
+WF-004 | Content Factory + Approval | Content & Knowledge | Content requests, script/copy generation, KCKE grounding, approval, publishing readiness. | WF-004_Document_B_30-Day_Production_Ready_Accelerated_Execution_Brief.docx
+WF-005 | Online Communications / Digital Reception Desk | Lead Capture + Reputation | WhatsApp, social, email, website enquiries, digital reception, routing, and FAQ responses. | WF-005_Document_B_Google_Implementation_Partner_Brief_30-Day_Production_Ready.docx
+WF-006 | CRM / DBMS Governance | P0 Data Backbone | Master contact identity, deduplication, source tracking, consent/suppression, relationship history. | WF-006_CRM_DBMS_Governance_Document_B_30-Day_Production_Ready_Accelerated_Execution_Brief.docx
+WF-007 | Donor / LLP / CSR Cultivation | P0 Revenue Engine | Donor cultivation, major-donor relationships, CSR/LLP pipeline, seva proposal support. | WF-007_Donor_LLP_CSR_Cultivation_DOCUMENT_B_30-Day_Production_Ready_Accelerated_Execution_Brief.docx
+WF-008 | Meeting Intelligence + ClickUp Task Governance | P1 Execution Backbone | Transcript-to-decision capture, task routing, ClickUp execution, daily brief, escalation visibility. | WF-008_Document_B_30-Day_Production_Ready_Accelerated_Execution_Brief.docx
+WF-009 | Finance / DCC / Payment / P&L Intelligence | Financial Control | Payment records, receipts, DCC/ERP transition, reconciliations, exception tracking, live financial visibility. | WF-009_Document_B_30-Day_Production_Ready_Execution_Brief.docx
+WF-010 | Bahumana / Prasadam / Inventory / Dispatch | Operations Support | Donor gratitude, prasadam inventory, packing, courier dispatch, returns, and cultivation loop. | WF-010_Bahumana_Prasadam_Inventory_Document_B_30-Day_Production_Ready_Accelerated_Execution_Brief_v0.2.docx
+WF-011 | HR / SOP / KT / Team Management | Capacity Backbone | HR data, SOPs, KT, role clarity, team capacity, training and deployment. | WF-011_Document_B_30-Day_Production_Ready_Implementation_Partner_Brief.docx
+WF-012 | Website / Landing Page / Tech Support | Conversion Infrastructure | Landing pages, website QA, payment links, analytics, conversion tracking, technical support. | WF-012_Document_B_30-Day_Production_Ready_Accelerated_Brief.docx
+WF-014 | Community Outreach / Krishna Life / Culture Connect | P0/P1 Outreach + Revenue | Gated community outreach, contact capture, nurture, donor/yatri/volunteer conversion, ambassadors. | WF-014_Document_B_30-Day_Production_Ready_Accelerated_Execution_Brief.docx
+
+AI-First Operating Model
+Treat current process evidence as the problem record, not the target design.
+Use deterministic automation for validation, reminders, routing, status changes and dashboard updates.
+Use AI assistance for classification, summarization, drafting, recommendation, anomaly detection and next-best-action support.
+Use agentic workflows only after data quality, approval routing and fallback paths are validated.
+Keep sensitive decisions under human approval while using AI to prepare decision-quality context.
+Core Architecture Layers
+Layer | Purpose | Primary Workflows | Boundary Rule
+CRM / DBMS relationship backbone | Single operational relationship layer for contacts, donors, yatris, leads, community residents and touchpoints. | WF-001, WF-002, WF-003, WF-006, WF-007, WF-014, WF-012 | CRM stores operational relationship facts, not scripture or media storyboards.
+ERP-ready operating structure | Future structured financial and operational system of record with ERP-ready IDs and fields from Day 1. | WF-009, WF-010, WF-011 and finance/payment dependencies across revenue workflows | Do not delay useful pilots, but design every entity for later ERP mapping.
+Integration layer | Connects forms, sheets, CRM, payment systems, WhatsApp, voice, websites, ads, ClickUp and dashboards. | All workflows | Every integration must have owner, access status, fallback and test case.
+Analytics layer | Shared KPI, attribution and exception reporting layer. | All workflows | Dashboards must roll up to the leadership command center.
+KCKE boundary | Source-grounded Krishna conscious knowledge and devotional reference layer. | WF-004, WF-005, WF-007, WF-012, WF-014 | Do not store operational CRM/payment/task status in KCKE.
+Media AI Pipeline boundary | Scene-level media creation, storyboard, asset selection, approval and publishing support. | WF-004, WF-010, WF-012, WF-014 and content-related donor/Yatra flows | Do not treat generated media as approved without human review.
+Gemini Enterprise / productivity agents | Workspace productivity, meeting summaries, document search, task support, internal copilots. | WF-008, WF-011 and cross-workflow support | Do not confuse productivity agents with KCKE or Media AI.
+ClickUp execution layer | Task ownership, due dates, follow-up visibility, escalation and meeting execution. | WF-008 and workflows with task handoff | ClickUp remains task execution layer; AI prepares and routes but does not replace accountability.
+
+Shared ID Architecture
+Shared ID | Purpose | Applies To | Governance Note
+Contact_ID | Root person identity across all relationship workflows. | WF-001, WF-002, WF-003, WF-006, WF-007, WF-014, WF-012 | Must be created or resolved before follow-up, donation, Yatra or community lifecycle actions.
+Donor_ID | Donation relationship identity. | WF-007, WF-009, WF-010, WF-012 | Linked to Contact_ID; donation history must not create duplicate persons.
+Yatri_ID | Yatra participant identity. | WF-001, WF-002, WF-009, WF-010 | Linked to Contact_ID and payment/experience records.
+Campaign_ID | Source and attribution identity. | WF-003, WF-012, WF-002, WF-007, WF-014 | Must flow from ad/campaign to CRM to dashboard and revenue reports.
+Event_ID | Festival, community, outreach or programme identity. | WF-014, WF-005, WF-012, WF-007 | Used for source attribution and follow-up sequencing.
+Task_ID | Execution identity. | WF-008 and all workflows requiring follow-up | Links meeting/action to owner, due date, status and dashboard.
+
+Human Approval Governance
+Human approval is mandatory for donor-sensitive messages, finance/payment changes, public communications, devotional/philosophical content, deity/media representation, HR/procurement decisions and exceptional situations.
+Every workflow must validate owner, performer, approver, backup and escalation path before production routing.
+Approvals must be traceable through task IDs, review status and decision log entries where applicable.
+Assumptions / Needs Validation
+Final production access status for several APIs is Assumption / Needs Validation until confirmed by the partner and HKHT owners.
+WF-013 is generated as a blueprint in this package based on current workflows and must be validated by leadership.
+The leadership command center can begin with Looker Studio or equivalent dashboarding before later platform maturity.
+Immediate Next Actions
+Approve the platform architecture brief as the binding constraint for all individual workflow builds.
+Assign a platform integration owner and data model owner.
+Use the Master Entity Model and API Registry before allowing new workflow-specific tables or connectors.
+Require every workflow team to map its dashboard KPIs to the leadership command center.
+30-Day / 60-Day / 75-Day Roadmap
+Phase | Operating Focus
+30-Day Production Base | Integrated MVPs, initial live operational use, dashboards, approval routing, source tracking, exception flow, and production readiness review.
+60-Day Stabilization | Hardening, adoption, data quality improvement, workflow tuning, API maturity, KPI discipline, and issue closure.
+75-Day Enterprise Scale | Enterprise-scale readiness, advanced integration, multi-workflow maturity, leadership command center intelligence, and reusable module packaging.
+
+Source Traceability Table
+Source | Applies To | Usage in This Document
+Latest workflow briefs | All active workflows | Primary source for workflow names, scope, timelines, assumptions, dashboards and implementation direction.
+HKHT AI Transformation Analysis | Strengths / gaps / productivity leaps | Secondary source for platform-level missing documents, except privacy-law-specific recommendations.
+Project context files | Glossary, dependency maps, role correction, master context | Used where available for boundaries, sequencing and governance discipline.
+Analysis recommendation G14 | Platform architecture brief | Used to prevent disconnected workflow builds.
+Analysis strengths | System separation and ERP-ready schema | Used to define boundary rules.
+
+Version Note
+Version v1.0 generated from the latest attached workflow-wise partner briefs and the strategic analysis recommendations, excluding privacy-law-specific recommendations. The document should be updated whenever any workflow brief, register, or dependency map changes.

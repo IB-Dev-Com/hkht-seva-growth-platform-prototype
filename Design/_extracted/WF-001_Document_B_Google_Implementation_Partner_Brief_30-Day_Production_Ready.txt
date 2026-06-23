@@ -1,0 +1,564 @@
+AI for HKHT Seva – Enterprise AI Transformation
+DOCUMENT B — Google / Implementation Partner Brief
+WF-001 Yatra Lifecycle Automation — 30-Day Production-Ready Accelerated Execution Brief
+Field | Details
+Workflow | WF-001 Yatra Lifecycle Automation
+Platform Frame | Hyderabad AI Revenue & Seva Growth Platform
+Audience | Google / implementation partner solution architects, delivery team, partner leadership
+Status | External partner brief. Ready to share, subject to HKHT internal review of sensitive data.
+Important framing | This is an implementation briefing, not a TRD and not a generic AI demo request.
+Revised positioning | 30-Day Production-Ready Accelerated Execution Brief for WF-001 as a production-aligned module of the Hyderabad AI Revenue & Seva Growth Platform.
+Compressed execution path | 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale readiness.
+
+Core rule: Start small in execution. Start big in architecture. Start immediately in data discipline. Start revenue-first. Start human-governed. Start platform-compatible.
+30-Day Production-Ready Accelerated Execution Re-Alignment
+This revised Document B realigns WF-001 Yatra Lifecycle Automation into a 30-Day Production-Ready Accelerated Execution Sprint for the Hyderabad AI Revenue & Seva Growth Platform. The original workflow structure, agent expectations, data model, dashboards, human approval rules, integration expectations, and long-term platform architecture remain preserved and are now upgraded into an accelerated production-readiness path.
+The brief should be read as a production-aligned implementation briefing, not as a generic AI showcase or isolated automation note. WF-001 must become a CRM-aligned, ERP-ready, dashboard-visible, human-governed Yatra revenue and seva module that can interoperate with WF-003 Digital Marketing, WF-002 Voice Agent + CRM Follow-up, WF-007 Donor / LLP / CSR Cultivation, WF-009 Finance / DCC / P&L, WF-006 CRM / DBMS Governance, WF-004 Content Factory, WF-008 Meeting Intelligence + ClickUp, WF-010 Bahumana / Prasadam, WF-012 Website / Landing Page, WF-014 Community Outreach, and later WF-013 Multi-Center Replication.
+Execution framing: the first 30 days establish the production base; the next 60 days stabilize, harden, improve adoption, strengthen data quality, and mature integrations; by 75 days, the workflow should be ready for enterprise-scale platform integration with leadership command center visibility and a clear path to 1000x productivity architecture.
+Analysis enhancement source: HKHT_AI_Transformation_Analysis(1).html has been used to strengthen this partner-facing brief with recommendations on AI-first redesign, revenue-first sequencing, human-in-the-loop controls, CRM/ERP/KCKE/Media AI separation, unified master data, API registry, WhatsApp governance, role ownership validation, fallback protocols, golden journey testing, institutional memory encoding, dashboard-first leadership visibility, and multi-center scalability readiness. Legal recommendations outside this workflow’s execution scope are not introduced.
+Time block | Production-readiness expectation for WF-001
+Day 1–3 | Validate workflow evidence, confirm owners/performers/approvers/backups, confirm source data, confirm Contact/Yatri/Family/Campaign/Yatra/Payment/Task IDs, classify API dependencies, confirm dashboard schema, identify production risks, map analysis-file gaps relevant to WF-001.
+Day 4–7 | Build first working production-foundation prototype: CRM/Sheet/AppSheet/API data path, first Yatra dashboard, first automation, first approval flow, first AI-assisted content/follow-up output, sample live workflow test, first leadership command center visibility layer.
+Day 8–14 | Run integrated working MVP with selected users: registration tracking, payment/document readiness, AI-assisted content and follow-up, ClickUp/task integration where approved, exception routing, dashboard refinement, data quality checks, human approval testing, API registry validation, WhatsApp/voice/payment/CRM dependency validation.
+Day 15–21 | Harden production usage: selected live operations, cross-workflow integration checks, user training, KPI validation, escalation testing, fallback process validation, role ownership refinement, and golden journey QA from campaign lead to Yatra registration to donor handoff.
+Day 22–30 | Complete production readiness review: leadership command center view, operational handover, stabilization actions, productivity measurement, management reporting, partner sign-off checklist, next 60-day stabilization roadmap, and 75-day enterprise-scale readiness roadmap.
+
+Production Readiness Definition
+For WF-001, production readiness does not mean every future ERP, voice, WhatsApp, payment, or media integration is fully live by Day 30. It means the workflow has a stable production base, real operational users, validated data flow, human approval gates, dashboard visibility, documented fallback paths, and a clear integration contract for the larger platform.
+Readiness criterion | WF-001 production-ready definition
+Live operational usage | At least one Yatra or pilot batch is operated through the command center with selected live users and controlled real data where approved.
+Validated data flow | Lead, yatri, registration, payment status, document readiness, task, feedback, and donor handoff records flow through defined tables/fields with stable IDs.
+Dashboard visibility | Leadership and operations dashboards show registrations, seats, payments, missing documents, tasks, escalations, campaign source, and P&L indicators where available.
+Approval routing | Pricing, public content, donor-sensitive messages, finance exceptions, refund/discount/vendor payment decisions, and devotional content have human approval status and owner.
+Exception handling | Operational exceptions are logged, assigned, routed, and resolved with backup owners and escalation paths that reduce Mukund Prabhu’s direct chasing.
+Role ownership | Owner, performer, approver, backup, dashboard reviewer, and data steward are validated; transcript-derived names are not treated as final without confirmation.
+Data quality checks | Required fields, duplicate checks, source tags, payment status, document completeness, and next-action fields are validated before use in dashboards or calling.
+AI-assisted execution | AI drafts content, follow-up, summaries, checklists, scripts, and exception notes, but final decisions remain human-governed.
+Cross-workflow compatibility | WF-001 records can connect to WF-003 leads, WF-002 call status, WF-007 donor cultivation, WF-009 finance, and WF-006 CRM master data.
+Fallback process | Manual fallback exists for Sheets/AppSheet, CRM/API, WhatsApp, voice, payment, dashboard, and on-ground execution if automation or integration fails.
+Golden journey testing | End-to-end test proves one relationship journey: campaign/source → lead/call → registration → payment/document readiness → Yatra execution → feedback → donor handoff.
+Productivity measurement | Baseline and Day 30 measures show reduction in manual follow-up, overdue tasks, manager escalations, content preparation time, and payment/document chasing.
+
+Accelerated Delivery Governance
+The partner must propose an accelerated delivery governance model that matches the 30-day production base without bypassing human approval, data discipline, or platform architecture. Governance should be operationally practical, not merely a project-plan slide.
+Governance area | Expectation
+Daily checkpoint rhythm | Daily 20–30 minute delivery checkpoint covering build progress, blockers, data needs, owner validation, dashboard readiness, and acceptance decisions.
+Issue escalation | Blockers are classified by owner: partner build issue, HKHT data/access issue, API/vendor dependency, approval dependency, data quality issue, or production risk.
+Dependency tracking | Maintain a visible dependency tracker for CRM, Sheets/AppSheet, payment/DCC, WhatsApp, voice vendor, ClickUp, ERP, KCKE, Media AI, BigQuery/Looker, and Google Cloud items.
+Owner validation | Validate accountable owner, daily performer, approver, backup, escalation person, dashboard reviewer, and data steward before automations route actions.
+Partner responsibility | Provide build plan, architecture, configuration, integration assumptions, risk flags, testing evidence, documentation, and handover notes.
+HKHT validation responsibility | Provide sample/live data, owner approvals, access, current sheets/forms/templates, payment status samples, current content, vendor list, and test users.
+Acceptance review | Each sprint block must have acceptance criteria: data path, dashboard view, automation, approval flow, AI-assisted output, exception route, and fallback process.
+Sign-off process | Day 7, Day 14, Day 21, and Day 30 checkpoints should be formally reviewed with scope status, exclusions, risks, and next-step decisions.
+60-day stabilization continuation | After the 30-day production base, continue adoption support, bug fixes, data cleanup, dashboard refinement, integration hardening, and KPI discipline.
+75-day enterprise-scale readiness review | By Day 75, validate platform maturity, multi-workflow integration, leadership command center contribution, advanced analytics path, and multi-center packaging assumptions.
+API / WhatsApp / CRM / ERP dependency watch | Do not overpromise live integrations unless access, APIs, credentials, approvals, commercial terms, and test data are confirmed. Use staged integration with manual fallback where required.
+Failure and fallback protocol | Document what users do if AppSheet, Sheets, CRM, WhatsApp, voice, dashboard, payment export, or internet connectivity is unavailable during a live Yatra process.
+
+1000x Productivity Alignment
+WF-001 contributes to the 1000x ambition by combining revenue growth, Yatra participation growth, donor cultivation, preaching reach, operational intelligence, and reduced managerial chasing into one reusable platform module. The first 30 days must create the production base; the next 60 days stabilize operational discipline; by 75 days, the workflow should be ready to participate in enterprise-scale platform intelligence.
+1000x lever | WF-001 application
+Automation | Form intake, task reminders, document readiness, payment due alerts, registration status, vendor tasks, and post-yatra follow-up are system-driven rather than memory-driven.
+AI assistance | AI prepares Yatra content packs, FAQs, orientation scripts, call support, escalation notes, donation handoff summaries, and devotional storytelling drafts for review.
+Agentic workflows | Governed agents can prepare call queues, identify missing documents/payments, flag logistics risks, schedule follow-ups, and escalate exceptions.
+Dashboard visibility | Leadership and teams see seats, revenue, pending payments, documents, tasks, source conversion, P&L, feedback, donor handoff, and Mukund dependency metrics.
+CRM intelligence | Every yatri becomes part of a unified contact journey with source, campaign, family, participation, feedback, donation potential, next action, and relationship owner.
+Relationship Intelligence Graph | Longer-term platform intelligence should connect yatris, donors, families, referrers, events, community groups, and relationship owners to discover warm introductions and donor pathways.
+Yatra demand prediction | Historical registration curves, source performance, seasonality, pricing, and capacity should later predict whether a Yatra will fill and trigger early corrective action.
+Live P&L per Yatra / campaign | Finance and leadership should see registration revenue, collections, pending amounts, vendor costs, campaign spend, and margin risk much earlier than month-end.
+Behaviour-triggered micro-campaigns | Page visits, WhatsApp responses, prior Yatra attendance, birthdays/anniversaries, festival interest, and payment behavior can later trigger personalized campaigns.
+AI Fundraiser Copilot | Post-yatra donor cultivation can provide relationship owners with history, interests, suggested seva, recommended ask, and KCKE-grounded inspiration points.
+Voice of the Devotee intelligence | Calls, feedback, WhatsApp replies, reviews, complaints, and testimonials can feed an insight layer for service improvement and preaching effectiveness.
+Institutional memory encoding | Mukund Prabhu’s judgment on pricing, vendor trust, exception handling, donor sensitivity, and Yatra experience standards should be encoded into decision guides and reviewable AI assistance.
+Automated Yatra video recap pipeline | Media AI can convert approved photos/videos/testimonials into campaign assets, donor inspiration, and social proof within a controlled approval workflow.
+Follow-the-Devotee journey timeline | A relationship owner should later see the full timeline: community event, website interest, call, Yatra registration, donation, feedback, prasadam, and next seva opportunity.
+Reusable platform module design | The WF-001 operating model should be packaged later for WF-013 multi-center replication after Hyderabad production proof and stabilization.
+1000X long-term contribution | Relationship intelligence, Yatra demand prediction, live P&L, behaviour-triggered campaigns, AI Fundraiser Copilot, automated media recap, institutional memory, and multi-center learning compound reach × conversion × donor lifetime value.
+
+Cross-Workflow Integration and Platform Safeguards
+WF-001 must not become another disconnected Yatra tracker. It must be built as a platform module that shares IDs, data definitions, dashboards, approval logic, and interoperability expectations with the full Hyderabad AI Revenue & Seva Growth Platform.
+Safeguard | WF-001 expectation
+Shared IDs | Use Common Contact ID, Donor ID where applicable, Yatri ID, Family ID, Campaign ID, Yatra ID, Event ID, Payment/Donation ID, Task ID, Owner ID, and Approval ID.
+CRM source of truth | CRM/DBMS becomes the relationship source of truth for contacts, leads, yatris, donors, families, source history, follow-up status, and relationship ownership.
+ERP-ready fields | Every record must carry ERP-ready fields: Created Date, Source, Payment Status, Approval Status, Owner, Last Follow-up Date, Next Action, Next Action Owner, and audit-friendly status.
+KCKE boundary | Use KCKE for source-grounded Krishna conscious content, pastimes, donor narratives, orientation, and preaching; never for payment, task, inventory, or operational status.
+Media AI boundary | Use Media AI for Yatra recap reels, testimonial videos, storyboards, and approved visual storytelling; keep deity/person/rights/source review under human approval.
+ClickUp task layer | Where approved, ClickUp should receive tasks, owners, deadlines, and follow-ups from Meeting Intelligence or workflow automations; it should not replace CRM/ERP records.
+Leadership command center | WF-001 must feed a single leadership view showing revenue, seats, pending payments, source conversion, high-risk tasks, donor handoff, and Mukund dependency reduction.
+API registry | Maintain a consolidated API registry for CRM, payment/DCC, WhatsApp, voice, ClickUp, ERP, campaign tools, BigQuery, Looker, Media AI, and Google Cloud components.
+WhatsApp governance | WhatsApp must remain a communication channel, not the database; templates, opt-out rules, provider, volume limits, failure handling, and status logging must be governed centrally.
+Voice/calling readiness | Scaled calling requires lead source clarity, DND/consent readiness, approved scripts, call status logging, escalation rules, and CRM update discipline before expansion.
+Fallback workflow | Manual operating procedure must exist if an integration fails, including how status updates are captured and reconciled later without losing revenue or yatri trust.
+WF-013 connection | WF-001 should produce standard schema, SOP, dashboards, acceptance tests, and configuration notes that can later feed the multi-center replication workflow.
+
+Relevant Analysis Recommendations Incorporated
+The following recommendations from HKHT_AI_Transformation_Analysis(1).html have been incorporated where directly relevant to WF-001. They strengthen the partner brief without changing WF-001 into a generic platform document.
+Preserve the AI-first redesign mandate: do not digitize current Yatra mess; redesign the lifecycle as a revenue, seva, donor cultivation, and preaching platform module.
+Upgrade the four-horizon plan into a compressed production path: Day 1–7 Production Foundation Sprint, Day 8–14 Integrated Working MVP, Day 15–30 Production Readiness Sprint, followed by 60-day stabilization and 75-day enterprise-scale readiness.
+Keep revenue-first sequencing: WF-001 remains a P0 revenue workflow tied to WF-003, WF-002, WF-007, WF-009, and WF-006.
+Strengthen system separation: CRM/DBMS for relationships, ERP for structured finance/operations, KCKE for source-grounded Krishna conscious knowledge, Media AI for approved creative output, Gemini/Workspace for productivity assistance.
+Require unified master data model and common IDs to prevent isolated Contact/Yatri/Donor tables across workflows.
+Add consolidated API registry, WhatsApp governance, DND/consent and TRAI-related calling readiness, script approval workflow, and live-integration caution.
+Add workflow sequencing gates, go/no-go readiness checks, fallback protocol, and cross-workflow golden journey QA testing.
+Add role ownership validation because transcript-derived names and historical role files may be unreliable.
+Add leadership command center contribution and explicit measurement of Mukund Prabhu dependency reduction.
+Add institutional memory encoding of Mukund Prabhu’s Yatra judgment and relevant 100x leap ideas: Relationship Intelligence Graph, donor propensity, Yatra demand prediction, WhatsApp conversational commerce, live P&L, AI Fundraiser Copilot, Voice of the Devotee intelligence, automated Yatra recap pipeline, and Follow-the-Devotee journey timeline.
+Source basis: Existing Document B Sections 1–22; generated WF-001 blueprint Sections 1–20; HKHT_AI_Transformation_Analysis(1).html strengths 01–15, gaps G01–G05 and G07–G20, and 100× leap ideas L01–L15 applied where relevant; KCKE–Media–CRM–ERP Dependency Map; Master Context Pack; Yatra Management Process Review transcript; Yatra Workflow Automation Meeting transcript.
+1. Workflow Name and Platform Role
+Production alignment: WF-001 is now treated as a production-aligned MVP module of the Hyderabad AI Revenue & Seva Growth Platform. The partner should design for immediate operational use within 30 days while keeping every data structure, approval flow, dashboard, and integration path compatible with the 60-day stabilization and 75-day enterprise-scale readiness path.
+The workflow must not be delivered as an isolated Yatra automation. It must contribute to a common relationship data backbone, a source-to-registration-to-donation journey, and future multi-center Yatra OS replication once Hyderabad operations are stabilized.
+Workflow name: WF-001 Yatra Lifecycle Automation.
+What it does: manages the full Yatra lifecycle from Yatra ideation, campaign planning, lead generation, calling, registration, payment, declaration/KYC, document readiness, hotel/vehicle/flight/puja/vendor logistics, on-ground execution, feedback, and post-yatra donor cultivation.
+Platform role: WF-001 is the first revenue-first MVP module of the future Hyderabad AI Revenue & Seva Growth Platform. It must be built as a platform-compatible module, not as a disconnected automation.
+Note: This document is not a TRD. It is a workflow-specific implementation brief asking the partner to produce the TRD, solution architecture, Google-stack architecture, API/integration architecture, deployment plan, risks, costing, and phased implementation proposal.
+Source basis: Master Context Pack v0.5 identifies WF-001 as P0 Revenue and top Yatra lifecycle; generated WF-001 blueprint Sections 1–3; Yatra Workflow Automation Meeting transcript introduces WF-001 people and data flow.
+2. Executive Seva Impact Summary
+Impact dimension | Expected impact
+Donation impact | Post-yatra CRM handoff can convert yatris into donors, life members, house-program hosts, and festival/seva participants.
+Yatra impact | Faster campaign launch, improved lead follow-up, payment reminders, and readiness dashboards can increase registrations and seat utilization.
+Donor cultivation impact | Every yatri can carry follow-up history, spiritual interest, attendance, feedback, donation potential, and next action owner.
+Krishna consciousness outreach | Yatra is framed as strengthening devotional consciousness; content and follow-up can continue through quotes, festivals, programs, chanting, and temple visits.
+Mukund Prabhu burden reduction | Dashboards, escalation playbooks, and agent-prepared options reduce manual status chasing and exception load.
+ERP/data centralization | Start with ERP-ready IDs and fields; integrate with CRM/ERP/payment systems later without rebuilding the MVP.
+Multi-center readiness | The module should become a repeatable Yatra OS template for future national/multi-center replication after Hyderabad validation.
+
+Source basis: Yatra Management Process Review transcript 26:35–30:34; Yatra Declaration Form 2025; Master Context Pack v0.5 Architecture Clusters; generated WF-001 blueprint Sections 2, 10, 11.
+3. Management Brief for Leadership
+WF-001 is not a travel administration tool; it is a revenue, preaching, donor cultivation, and retention engine.
+The first 60–90 days must not create another disconnected Sheets/WhatsApp stack; it must create the first reusable module of the Hyderabad AI Revenue & Seva Growth Platform.
+The Day 1–7 Production Foundation Sprint should prove visibility; the Day 8–14 Integrated Working MVP should prove selected-user utility; the Day 15–30 Production Readiness and Productivity Multiplication Sprint should prove operational value; the 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale path should prove production governance.
+Every feature must be classified as buildable now, demo/mock, data-dependent, API-dependent, CRM/ERP-dependent, custom Google Cloud build, external vendor-dependent, or not deliverable in two weeks.
+Human approval must be designed into the system from day one for financial, donor-sensitive, public, devotional, philosophical, media, legal, and high-risk exception decisions.
+The partner should not sell a generic AI demo. They should return a TRD, architecture, cost, risk, integration, deployment, and rollout plan for this workflow.
+Source basis: Master Context Pack v0.5; Project Glossary; Role Ownership Correction Note; generated WF-001 blueprint Sections 3, 15–17.
+4. Current Operational Reality
+Production-readiness note: current transcript evidence is operationally valuable but cannot be treated as final system routing. Before build, the partner and HKHT must validate owner, performer, approver, backup, escalation person, dashboard reviewer, and data steward for each step because older role references and transcript-derived names may be incomplete or outdated.
+Analysis-file enhancement: the current reality must also be tested against platform gaps: unified master data model, WhatsApp API governance, voice/calling readiness, consolidated API registry, fallback process, leadership command center outputs, and cross-workflow golden journey QA.
+Area | Current reality
+Trigger | Yatra ideation starts from seasonal, festival, spiritual, destination, capacity, and market considerations; planning can include annual/long-range calendar thinking.
+People involved | Mukund/Mukunda Dasa, Yatra admin/calendar employee, tele-sales/calling team, operations coordinators, finance/TCC/DCC/accounting, graphics/content/digital marketing, vendors and travel/logistics contacts.
+Tools used | Google Sheets, WhatsApp groups, Telegram/WhatsApp communication, Word declaration forms, campaign tools, finance/Tally/ERP direction, and manual/vendor coordination.
+Current steps | Plan Yatra, create calendar, prepare budget/itinerary/content, market, call leads, register yatris, collect declaration/ID/payment, coordinate travel/logistics/vendors, execute, report, and follow up.
+Current approvals | Key approval routes and owner/backup map are not fully validated. Evidence shows Mukunda Dasa is central to approvals and decisions. Assumption / Needs Validation.
+Current reports | Finance reports revenue, expenditure, gross profit, net profit, fixed/variable expenditure; marketing reports campaigns, reach, leads, conversions, and call activity.
+Current pain points | Data fragmentation, WhatsApp dependency, manual payment tracking, content gaps, uneven coordinator execution, exception escalations, and no validated CRM/ERP production integration.
+
+Source basis: Yatra Management Process Review transcript 01:02–02:58 and 22:22–30:34; Yatra Workflow Automation Meeting transcript 01:25–03:24; Yatra Planning and Marketing transcript; generated WF-001 blueprint Section 4.
+5. Current Bottlenecks and Productivity Loss
+Platform integration risk: if WF-001 is built only as a Yatra app without common Contact/Yatri/Donor/Family/Campaign/Payment/Task IDs, it will create a new silo and weaken future donor intelligence.
+Calling readiness risk: scaled voice outreach for Yatra enrollment must validate lead source, DND/consent readiness, approved scripts, call outcome logging, and CRM update discipline before expansion.
+WhatsApp governance risk: WhatsApp templates, provider status, opt-out handling, message volume, and failure handling must be governed centrally because Yatra depends heavily on WhatsApp communication.
+API registry gap: payment/DCC, CRM, WhatsApp, voice, ClickUp, campaign, ERP, BigQuery/Looker, and Media AI dependencies must be tracked in one registry, not separately inside each workflow.
+Fallback gap: on live Yatra operations, the team needs a documented manual process if dashboards, AppSheet, WhatsApp, voice, payment export, or CRM/API sync is unavailable.
+Manual work: One Yatra is tracked through multiple sheets and manual updates for personal data, rooms, payments, flights, hotels, vehicles, budget and execution.
+Follow-up leakage: Pending payments, missing documents, callbacks, vendor readiness, and post-yatra donor cultivation can slip without a shared system of record.
+Data fragmentation: Operational facts are in Sheets, WhatsApp, documents, finance tools, campaign tools, and people’s memory.
+WhatsApp/spreadsheet dependency: WhatsApp is essential as a communication channel but should not remain the operational database.
+Mukund Prabhu dependency: Complex logistics, currency, permit, flight, yatri sentiment and exception decisions still pull leadership attention.
+Revenue leakage: Late campaign packs, slow calling, untracked follow-up, pending payments, and weak source attribution reduce conversion and margin visibility.
+Missed preaching/donor opportunities: Without CRM follow-up, Yatra participants may not be systematically invited to temple, festivals, house programs, chanting, donations, or future Yatras.
+Source basis: Yatra Management Process Review transcript 01:02–02:58 and 26:35–30:34; Kailash Yatra Logistics Meeting transcript 00:02–03:47; Yatra Coordination and Feedback transcript 00:46–02:34; generated WF-001 blueprint Section 5.
+6. Desired AI-First Future-State Vision
+Production-ready interpretation: the Day 30 version should have enough operational reliability to run a selected Yatra or pilot batch through structured data capture, dashboard monitoring, approval routing, exception handling, and donor handoff, even if some integrations remain staged or manually reconciled.
+The future-state module should produce institutional memory, not only task completion. Mukund Prabhu’s decision patterns for Yatra pricing, audience fit, destination risk, vendor trust, spiritual experience design, escalation judgment, and donor sensitivity should be captured into reviewable playbooks and AI-assisted decision guides.
+The future state is a Yatra Command Center that acts as an integrated module of the Hyderabad AI Revenue & Seva Growth Platform.
+Classification | WF-001 use
+Automated | Form intake, ID creation, reminders, status updates, missing-document alerts, payment due alerts, task assignment, calendar reminders, survey collection, CRM-ready export.
+AI-assisted | Yatra research, USP/differentiation, content drafts, WhatsApp/ad copy, FAQs, orientation scripts, packing lists, escalation scripts, donor handoff summaries.
+Agentic | Lead prioritization, call queue preparation, payment/document chasing, vendor readiness checks, task escalation, anomaly detection, post-yatra cultivation sequencing.
+Human-approved | Pricing, refunds, vendor commitments, donor-sensitive messages, public communication, philosophical/devotional content, media/deity content, sensitive incident communication, legal/finance exceptions.
+
+Source basis: Project Glossary for automation classifications; Master Context Pack v0.5 human-governed platform rules; generated WF-001 blueprint Sections 6 and 17.
+7. Expected Productivity Leap
+The productivity leap must be measured through real baseline and Day 30 indicators: campaign launch cycle time, content pack turnaround time, registrations handled per staff member, payment/document chasing effort, pending task count, manager escalations, on-ground exception response, and post-yatra donor handoff completion.
+The 1000x contribution is not a single automation. It is the compounding effect of higher Yatra participation, better conversion, better donor follow-up, reusable content/media assets, reduced managerial chasing, live P&L intelligence, and repeatable platform modules for future centers.
+Leap | Definition for WF-001
+2X control improvement | Replace scattered follow-up with structured form/sheet/app views and dashboard visibility.
+10X workflow productivity | Content packs, reminders, call queues, payment/document alerts, and role-based views reduce repeated manual coordination.
+30X revenue-operating leverage | CRM-ready lead and donor journey, voice-agent-assisted calling, operational dashboards, and P&L intelligence multiply throughput.
+100X Hyderabad platform leverage | Integrated revenue engine across Yatra, digital marketing, voice, donor cultivation, finance, content, and meeting intelligence.
+1000X long-term contribution | Reach × conversion × donor lifetime value × multi-center repeatability; build architecture now, rollout later after proof.
+
+Source basis: Generated WF-001 blueprint Sections 2, 10, and 11; Master Context Pack v0.5 North Star and Partner Sprint Model.
+8. Expected AI Agents / Copilots
+Production-readiness requirement for all agents: every agent must be classified by the partner as buildable immediately, demo/mock only, requires HKHT data, requires CRM/API integration, requires ERP later, requires Google Cloud/Vertex/Agent Builder, requires Gemini Enterprise, requires Apps Script/AppSheet/Sheets, requires BigQuery/Looker Studio, requires external vendor tools, requires data cleanup, requires human approval design, or should not be promised in the Day 1–14 window.
+All agent actions must write back to the correct system of record or staging table, carry owner/approval status, and be visible in dashboards. AI should draft, classify, recommend, prepare, and route; human approval remains mandatory for financial, donor-sensitive, public, devotional, media, exception, and high-value decisions.
+The partner should propose which agents can be built in Gemini Enterprise/Workspace, which require Apps Script/AppSheet/Sheets, and which require Google Cloud/Vertex AI/Agent Builder/custom services.
+Yatra Portfolio Strategy Agent
+Field | Specification
+Purpose | Suggest annual and batch-level Yatra plan using seasonality, holidays, demand, capacity, margin targets and prior history.
+Users | Mukund Prabhu, Yatra strategy/admin team
+Inputs | Yatra calendar, past Yatra performance, destination list, holiday/festival calendar, team capacity, margin assumptions.
+Outputs | Draft calendar, conflict flags, demand/capacity score, approval-ready planning memo.
+Data needed | Yatra ID, Batch ID, dates, capacity, target margin, owner, approval status, historical registration/revenue data.
+Tools/connectors | Sheets/AppSheet MVP, Calendar, Gemini; later BigQuery/Looker and Vertex AI prediction.
+Human approval points | Final calendar and pricing approval by accountable owner/Mukund Prabhu.
+Escalation logic | Escalate date/capacity/margin conflicts or unassigned owner/backup.
+Success metrics | Calendar cycle time, conflict reduction, timely campaign launch.
+
+Yatra Content Pack Copilot
+Field | Specification
+Purpose | Generate human-reviewable content packs for posters, PDF brochure text, WhatsApp messages, ad copy, FAQs, orientation and packing lists.
+Users | Content, digital marketing, Yatra admin
+Inputs | Itinerary, USP, audience, language, assets, spiritual theme, previous content.
+Outputs | Draft content pack and creative brief, with approval checklist.
+Data needed | Yatra ID, campaign ID, audience segment, language, approval status, source references where spiritual content is used.
+Tools/connectors | Gemini Enterprise/Workspace, Drive, Docs; KCKE later for source-grounded spiritual content; Media AI later for reels/videos.
+Human approval points | Public content, devotional/philosophical claims, and visual media require human approval.
+Escalation logic | Escalate missing itinerary, unapproved claims, unsupported scriptural references, or sensitive public messaging.
+Success metrics | Content completion SLA, approval rate, campaign launch speed, ad-copy test performance.
+
+Lead and Campaign Intelligence Agent
+Field | Specification
+Purpose | Track lead source, prioritize follow-up, detect conversion gaps and campaign ROI.
+Users | Digital marketing, telesales supervisor, management
+Inputs | Ads/campaign exports, landing page leads, source tags, call status, registration/payment status.
+Outputs | Lead scores, follow-up queues, source performance, conversion dashboard.
+Data needed | Contact ID, Lead ID, Campaign ID, Source, Call Status, Registration Status, Yatra ID, Payment Status.
+Tools/connectors | Sheets/AppSheet MVP; later Google/Meta Ads connectors, CRM APIs, BigQuery/Looker.
+Human approval points | Budget changes and campaign changes remain human-approved.
+Escalation logic | Escalate high-intent uncalled leads, high spend with low conversion, duplicate leads, DND/opt-out issues.
+Success metrics | Cost per qualified lead, registration conversion, time-to-first-call, ROI visibility.
+
+Voice + CRM Enrollment Agent
+Field | Specification
+Purpose | Assist calling, qualification, callback scheduling, and status logging for Yatra registrations.
+Users | Telecalling team and supervisor
+Inputs | Lead list, approved script, FAQ, objection handling, availability/capacity, payment rules.
+Outputs | Call summary, intent status, callback, next action, WhatsApp follow-up draft, escalation flag.
+Data needed | Contact ID, Yatri ID when converted, call source, last follow-up date, next action, priority, outcome.
+Tools/connectors | Voice vendor/telephony, WhatsApp/SMS vendor, CRM/Sheets; Google Cloud integration if needed.
+Human approval points | Donor-sensitive, angry yatri, HNI, refund, medical/legal and payment exceptions go to human.
+Escalation logic | Escalate hot leads, complaints, refund requests, health/visa concerns, no-contact patterns.
+Success metrics | Call volume, connection rate, qualified leads, registration conversion, overdue callback reduction.
+
+Registration and Compliance Agent
+Field | Specification
+Purpose | Ensure all yatri registration, declaration, ID, health, emergency, weight and consent data is complete.
+Users | Yatra admin, operations team
+Inputs | Digital form/declaration, ID upload, emergency contact, weight, health/insurance declarations, temple program attended.
+Outputs | Readiness status, missing item alerts, risk tags and approval queue.
+Data needed | Contact ID, Yatri ID, Family ID where relevant, Yatra ID, ID proof status, declaration status, emergency contact, health risk, approval status.
+Tools/connectors | AppSheet/Form, Drive, Sheets; later CRM/ERP document metadata and access controls.
+Human approval points | Legal/declaration template, exceptions, health risks, minors/senior citizen cases require human approval.
+Escalation logic | Escalate missing ID/declaration/payment/health details before deadlines.
+Success metrics | Document completion %, registration accuracy, readiness before cut-off.
+
+Payment and P&L Intelligence Agent
+Field | Specification
+Purpose | Track installments, pending payments, receipts, vendor costs, budget variance and margin risk.
+Users | Finance/DCC/accounting, Yatra admin, management
+Inputs | Payment records, bank/gateway export, UPI/cash/NEFT entries, budget, vendor payments, expense entries.
+Outputs | Paid/pending dashboard, receipt/invoice queue, P&L variance, budget exceed alerts.
+Data needed | Payment ID, Donation/Receipt ID, Yatra ID, Contact/Yatri ID, amount, mode, due date, status, receipt status, trust/source/seva.
+Tools/connectors | Sheets MVP with finance validation; later DCC/payment gateway/Tally/ERP APIs, BigQuery/Looker.
+Human approval points | Finance approval required for receipt, refund, discount, vendor payment, expense approval, GST/invoice finalization.
+Escalation logic | Escalate overdue payment, unmatched transaction, budget overrun, refund request, vendor advance risk.
+Success metrics | Reconciliation time, overdue amount, gross/net margin visibility, report timeliness.
+
+Vendor and Logistics Readiness Agent
+Field | Specification
+Purpose | Track hotel, vehicle, flight, puja, ticket, permit, visa, gifts, prasadam and on-ground readiness.
+Users | Operations coordinators, tour managers, Yatra admin
+Inputs | Vendor list, booking status, deposits, dates, rooming, transport, ticket/visa/permit tasks, special needs.
+Outputs | Readiness dashboard, risk flags, task reminders, escalation plan.
+Data needed | Vendor ID, Booking ID, Task ID, Owner ID, deadline, status, approval status, cost, risk rating.
+Tools/connectors | AppSheet/Sheets/Calendar; later ERP vendor master, workflow engine, WhatsApp/API as channel.
+Human approval points | Vendor commitments, advances, major cost changes, sensitive incident changes remain human-approved.
+Escalation logic | Escalate unconfirmed bookings, cost variance, permit/visa delay, missing backup vendor.
+Success metrics | Readiness %, on-time confirmation, incident reduction, budget variance control.
+
+On-Ground Command Copilot
+Field | Specification
+Purpose | Provide daily execution checklist, incident capture and escalation scripts during Yatra.
+Users | Tour manager, coordinators, on-ground volunteers
+Inputs | Day plan, yatri list, rooming, transport, emergency contacts, location-specific SOP, incident types.
+Outputs | Daily plan, checklist status, incident log, escalation message draft, management summary.
+Data needed | Yatra ID, Batch ID, Contact/Yatri ID, Emergency Contact, Task ID, Incident ID, status, escalation owner.
+Tools/connectors | Mobile AppSheet MVP, WhatsApp as channel, Maps/Calendar; later integrated task/incident system.
+Human approval points | Medical, legal, donor-sensitive, sensitive incident, deity/public/media issues require human approval.
+Escalation logic | Escalate critical incidents, repeated delays, missing yatris, health issues, vendor failure.
+Success metrics | Incident response time, completion %, yatri satisfaction, escalations prevented.
+Relationship Journey / Intelligence | Follow-the-Devotee timeline, relationship owner, warm introducer, donor propensity signal, Yatra interest, feedback sentiment, next seva opportunity, and source history for future analytics.
+
+Feedback and Donor Handoff Agent
+Field | Specification
+Purpose | Convert Yatra experience into systematic preaching, relationship, donor and repeat-Yatra follow-up.
+Users | LLP/fundraising, donor care, Yatra team
+Inputs | Attendance, feedback, NPS, interest, chanting/devotee status, donation signals, testimonial consent.
+Outputs | Donor cultivation summary, next action, assigned owner, festival/house program invitation queue.
+Data needed | Contact ID, Donor ID if existing, Yatri ID, Family ID, feedback score, spiritual interest, next action, owner, status.
+Tools/connectors | CRM/Sheets MVP; later DCC/CRM integration and marketing automation.
+Human approval points | Donation asks, HNI/CSR messaging, personal pastoral communication remain human-approved.
+Escalation logic | Escalate high-potential donors, complaints, spiritual interest, service offers, repeat-Yatra interest.
+Success metrics | Donation conversion, temple visit bookings, house programs, repeat Yatra rate, follow-up completion.
+
+Yatra Media Intelligence Copilot
+Field | Specification
+Purpose | Convert approved Yatra photos/videos/testimonials into campaign assets, reels, recaps and donor inspiration.
+Users | Media/content team, digital marketing, Yatra team
+Inputs | Photo/video archive, itinerary, destination, approved testimonials, KCKE references if needed.
+Outputs | Storyboard, captions, reel drafts, recap ideas, asset metadata and approval queue.
+Data needed | Asset ID, Yatra ID, location, rights status, person/deity approval status, campaign ID, source grounding if spiritual claims.
+Tools/connectors | Media AI Pipeline, Drive, Gemini; KCKE where spiritual grounding is needed.
+Human approval points | Deity/media/person/public content approval mandatory.
+Escalation logic | Escalate unapproved faces, deity accuracy issues, unsupported spiritual claims, rights uncertainty.
+Success metrics | Media turnaround time, approved asset volume, campaign reuse, engagement quality.
+Consolidated API Registry | Partner must provide an API/connector registry for CRM, payment/DCC, WhatsApp, voice, ClickUp, campaign tools, ERP, BigQuery/Looker, Media AI and Google Cloud components.
+WhatsApp Governance | Provider, template status, opt-out handling, source logging, failure process, message type, owner and fallback must be centrally governed; WhatsApp must not become the database.
+Voice / Calling Readiness | Scaled calling requires approved scripts, DND/consent readiness, source-tagged leads, call outcome logging, CRM writeback, escalation logic and supervisor review.
+Leadership Command Center Feed | WF-001 must expose structured data for the consolidated leadership dashboard: revenue, seats, source conversion, payments, tasks, escalations, donor handoff and dependency reduction.
+
+Source basis: Generated WF-001 blueprint Section 7; Yatra Management Process Review transcript 27:13–30:34; KCKE–Media–CRM Dependency Map; Project Glossary.
+Advanced Intelligence Extensions for 60-Day Stabilization and 75-Day Enterprise-Scale Readiness
+These extensions are not mandatory for the Day 1–14 build, but the partner should design the WF-001 data model so they become feasible without rework.
+Extension | WF-001 relevance
+Yatra Demand Prediction | Uses historical registration curves, campaign source performance, seasonality, pricing, and capacity to forecast whether each Yatra will fill and trigger early corrective action.
+Relationship Intelligence Graph | Connects yatris, donors, families, referrers, community groups, fundraisers, and events to support warm introductions and donor cultivation after Yatra.
+AI Fundraiser Copilot | Uses Yatra history, feedback, donation signals, and KCKE-grounded inspiration to support post-yatra donor meetings.
+Voice of the Devotee Intelligence | Aggregates feedback, call summaries, WhatsApp replies, complaints, testimonials, and reviews into service-improvement and preaching insights.
+AI Social Proof and Video Recap Pipeline | Turns approved Yatra media/testimonials into campaign assets and donor inspiration content using Media AI with human review.
+
+9. Human Role Redesign Expectations
+Production-readiness addition: before any task routing or dashboard ownership is configured, the partner must receive a validated WF-001 RACI list. Role titles can remain stable even when individuals change; therefore the system should route by role/owner ID and backup role rather than relying only on personal names from transcripts.
+Mukund Prabhu dependency reduction must be measurable. The dashboard should track the number of escalations reaching him, category of escalation, avoidable vs. unavoidable escalation, decision turnaround time, and which decision rules can be delegated or encoded after review.
+Role/function | Expected redesign
+Mukund Prabhu / Mukunda Dasa | Strategic owner, final approver for major decisions and exceptions; dashboard reviewer, not daily follow-up bottleneck.
+Yatra admin | AI-supervised Yatra Data Steward owning IDs, form completeness, sheet/app accuracy, and readiness tracking.
+Tele-sales | AI/voice-assisted conversion team focusing on high-intent, HNI, exception and relationship calls.
+Content/digital marketing | AI content operators and approval reviewers, accountable for campaign readiness and brand/devotional correctness.
+Finance/DCC/accounting | Payment/P&L controller and audit owner; approves financial records, refunds, receipts, invoices and exceptions.
+Operations coordinators | Dashboard-driven readiness managers and on-ground exception owners.
+LLP/donor team | Post-yatra relationship managers with structured profiles and next-action ownership.
+Data/CRM team | Master data governance, deduplication, source tracking, consent/DND and CRM migration owner.
+Agent Builder / Vertex AI | Day 15–30 or later governed agentic workflows, classification, lead scoring, anomaly detection, demand prediction and relationship intelligence where justified.
+Cloud Run / Workflows / API Gateway pattern | Production-grade scheduled jobs, integration orchestration, error handling and fallback paths after MVP validation.
+Google Drive / Docs evidence layer | Documented evidence repository for declarations, itineraries, content approvals, vendor documents, and meeting decisions.
+
+Source basis: Role Ownership Correction Note; generated WF-001 blueprint Section 14; Master Context Pack v0.5 role redevelopment mandate.
+10. Dashboard and Operational Intelligence Expectations
+Leadership command center requirement: WF-001 must feed a single leadership view, not only workflow-specific dashboards. The leadership view should show Yatra revenue, registrations, pending payments, campaign conversion, task risk, donor handoff pipeline, and Mukund Prabhu dependency reduction.
+Golden journey QA requirement: dashboards must prove that at least one end-to-end relationship journey can be traced from source/campaign to lead, call, registration, payment, Yatra attendance, feedback, donor handoff, and next action owner.
+Dashboard | Expected outputs
+Management dashboard | Yatra revenue, collected/pending amount, seats filled, margin, donor conversion, Krishna consciousness outreach outcomes, escalations.
+Operational dashboard | Registration status, missing documents, payment readiness, room/vehicle/hotel/permit/visa/vendor tasks, on-ground checklist.
+Revenue/conversion dashboard | Leads by source, calls, qualified leads, registrations, payments, cost per registration, campaign ROI.
+Data quality dashboard | Missing IDs, duplicate contacts, missing source, missing approval, inconsistent payment status, incomplete declarations.
+AI-agent performance dashboard | Draft acceptance, reminder success, call outcomes, escalation accuracy, user adoption, exception rate, human review backlog.
+30-Day Production Sprint Plan | Day 1–3, Day 4–7, Day 8–14, Day 15–21 and Day 22–30 plan with owners, acceptance criteria, risks, data needs and sign-off gates.
+Production Readiness Checklist | Live usage, validated data flow, dashboards, approvals, exception routing, data quality checks, fallback, training and handover checklist.
+Unified Master Data Model | Contact/Lead/Yatri/Donor/Family/Campaign/Yatra/Payment/Task/Event/Follow-up entity model and ID strategy.
+API and Connector Registry | List of all APIs/connectors, immediate vs staged vs ERP-later, access status, owner, environment, data objects, risk, error handling and fallback.
+WhatsApp and Voice Governance Notes | Provider assumptions, templates, script approval, DND/consent readiness, call logging, CRM writeback, escalation rules and fallback.
+Leadership Command Center Design | Single leadership view covering revenue, registrations, payments, source conversion, tasks, escalations, donor handoff, P&L and Mukund dependency reduction.
+Golden Journey QA Plan | End-to-end cross-workflow test scenarios proving platform data continuity from marketing source to donor cultivation.
+Fallback and Service Continuity Protocol | Manual and semi-automated process for system/API/vendor outages and later reconciliation.
+60-Day Stabilization Roadmap | Adoption, training, bug fixing, data cleanup, dashboard discipline, integration hardening and KPI governance after Day 30.
+75-Day Enterprise-Scale Readiness Roadmap | Advanced platform integration, BigQuery/Looker maturity, agentic roadmap, KCKE/Media AI interface, multi-workflow maturity and future WF-013 packaging assumptions.
+
+Source basis: Yatra Management Process Review transcript 22:22–30:34; generated WF-001 blueprint Section 13; KCKE–Media–CRM Dependency Map for dashboard/ERP flow.
+11. CRM / ERP / Data Expectations
+Unified master data requirement: the partner must propose a 1-page master entity model for Contact → Lead → Yatri → Donor → Family → Community/Referral relationships. WF-001 must not create a separate unlinked contact table. Common Contact ID, Yatri ID, Family ID, Donor ID where applicable, Campaign ID, Yatra ID, Payment/Donation ID, Event ID, Task ID, Owner ID, Source, Created Date, Last Follow-up Date, Next Action, and Approval Status are mandatory from Day 1.
+ERP transition safeguard: payment, invoice, receipt, GST, refund, vendor payment, and final P&L status should remain finance-reviewed until ERP/API stability is confirmed. The MVP may display payment status and P&L indicators, but unstable financial handoffs must not be automated without validation and fallback.
+The MVP may start in Sheets/AppSheet, but the architecture must be CRM/ERP-ready from day one. The partner must provide a data model with IDs, field definitions, source-of-truth plan, migration path and API assumptions.
+Entity | Required fields / platform notes
+Contact/Yatri/Family | Contact ID, Yatri ID, Family ID, name, mobile, email, address, gender, DOB/age, source, consent/DND, relationship owner.
+Yatra/Batch | Yatra ID, batch ID, destination, dates, capacity, price, margin target, owner, approval status.
+Lead/Call | Lead ID, campaign/source, call source, status, last follow-up date, next action, owner, priority, outcome.
+Registration/Declaration | Registration ID, Yatra ID, Contact/Yatri ID, ID proof status, emergency contact, health/insurance/declaration status, temple programs attended, recommender, approver.
+Payment/Donation | Payment ID, Donation/Receipt ID, amount, mode, due date, paid date, payment status, receipt status, campaign ID, Yatra ID, event ID, trust, seva, source.
+Logistics/Vendor | Vendor ID, booking ID, task ID, booking status, amount, advance, owner, deadline, risk status, approval status.
+Feedback/Donor handoff | NPS, issue, testimonial consent, spiritual interest, donor potential, next action, next action owner, status.
+
+Note: Assumption / Needs Validation: live CRM schema, DCC/payment gateway exports, current ERP schema/API, Tally/GST workflow and unique master contact ID are not yet validated.
+Source basis: Yatra Declaration Form 2025; Yatra Management Process Review transcript 01:02–02:58 and 27:13–30:34; Master Context Pack v0.5 CRM/ERP data backbone; generated WF-001 blueprint Section 12.
+12. KCKE / Media AI Expectations
+Interface clarity requirement: the partner should not merge KCKE, Media AI, Gemini Enterprise agents, and operational CRM into one undifferentiated AI layer. For WF-001, KCKE provides source-grounded spiritual content and donor narratives; Media AI produces approved visual/storytelling assets; CRM stores relationship and follow-up status; ERP/finance systems store structured payment and accounting records.
+Build-plan expectation: if KCKE or Media AI is not available within the 30-day production base, the partner should define interim human-approved content repositories and media review workflows that can later connect to those systems without changing the WF-001 data model.
+Use KCKE only for source-grounded Krishna conscious content, donor narratives, philosophical replies, preaching, education, festival meaning, Yatra orientation and devotional content.
+Do not use KCKE for operational records like contact status, payment status, inventory quantity, seat availability, task status, approval status or finance records.
+Use Media AI only for reels, videos, storyboards, Yatra/festival/donor media and approved visual storytelling.
+Media AI outputs require scene-level review, exact source grounding when spiritual claims are made, image/audio approval, deity/person/rights review and human approval.
+Source basis: KCKE–Media–CRM Dependency Map; Media AI Pipeline Briefing Note; Project Glossary; Master Context Pack v0.5 critical corrections.
+13. Governance and Human Approval Expectations
+Approval SLA and delegation requirement: the partner must design approval queues with owner, backup, deadline, status, and escalation rule. Voice scripts, public Yatra broadcasts, pricing changes, donor-sensitive follow-up, and financial exceptions should not default to Mukund Prabhu unless the category truly requires his approval.
+Human approval must be visible in dashboards. Each approval item should show requested by, approver, backup, date/time, current status, decision, comments, and whether the item blocks campaign launch, registration, payment, logistics, or donor handoff.
+Approval area | Mandatory gate
+Donor-sensitive | Human approval for HNI/CSR/donor asks, personal donor messages, complaints, sensitive relationship handoff.
+Financial | Human approval for receipt/invoice finalization, refund, discount, vendor payment, budget overrun, payment mismatch.
+Public communication | Human approval for posters, public WhatsApp broadcast, ads, landing page text, sensitive incident messaging.
+Philosophical/devotional | KCKE-grounding and senior devotee/human approval for spiritual claims and source references.
+Deity/media | Human approval for deity visuals, personal photos, testimonials, rights and public media publication.
+CSR/HNI | Owner-approved messaging and escalation to senior relationship manager.
+HR/legal | Human approval for role changes, disciplinary routing, legal declarations and terms changes.
+
+Source basis: Master Context Pack v0.5 human approval mandate; KCKE–Media–CRM Dependency Map human approval rules; Yatra Declaration Form 2025 legal/medical/payment terms; generated WF-001 blueprint Section 17.
+14. Integration Expectations
+Accelerated integration rule: live APIs should be connected in the 30-day production base only where access, documentation, credentials, data samples, testing environment, commercial terms, and fallback are confirmed. Otherwise the partner should use staged integration with structured imports/exports and manual reconciliation while preserving the final API architecture.
+API registry requirement: the partner must maintain one consolidated WF-001 integration inventory that lists API/vendor, purpose, data objects, data owner, authentication, environment, frequency, error handling, fallback, cost, and whether it is immediate, Day 15–30, 60-day stabilization, 75-day enterprise-scale, or ERP-later.
+Partner must explicitly classify each integration as buildable immediately, demo/mock only, requires our data, requires API, requires CRM/ERP later, requires custom Google Cloud build, requires Gemini Enterprise, requires Vertex AI, requires Agent Builder, requires Apps Script/AppSheet/Sheets, requires BigQuery/Looker Studio, requires external vendor, requires data cleanup, requires human approval design, or should not be promised in two weeks.
+Integration area | Expectation
+Google Workspace | Drive, Docs, Sheets, Gmail/Calendar where available for evidence, content drafts, approvals and operational coordination.
+Gemini Enterprise | Content drafts, internal copilots, workspace search, summaries; partner must validate license and capability boundaries.
+Apps Script/AppSheet/Sheets | Day 1–7 Production Foundation Sprint and Day 8–14 Integrated Working MVP command center, forms, reminders, role-based views and trackers.
+Vertex AI / Agent Builder | Longer-term agentic orchestration, RAG, classification, lead scoring, anomaly detection, governed agents.
+Cloud Run / Workflows | API orchestration, scheduled jobs, integrations, event-driven workflows after MVP.
+BigQuery / Looker Studio | Analytics warehouse and dashboards for revenue, conversion, payments, operations, AI-agent performance.
+CRM APIs | Contact, lead, call, follow-up, source attribution, consent/DND, donor handoff and history.
+ERP APIs | Future migration of payments, approvals, vendors, P&L, accounting and finance; not required to block demo.
+Payment gateway/DCC | Payment status, receipt status, donation/payment ID, reconciliation and audit; finance approval required.
+ClickUp | Task execution layer for workflow tasks if approved; meeting intelligence can route actions to task system.
+WhatsApp/voice vendor | Communication/calling channel; must not become system of record; API, compliance and cost must be validated.
+External tools | Use only where Google stack is insufficient; partner must list vendor, data flow, cost, ownership and limitations.
+
+Source basis: Master Context Pack v0.5 Partner Sprint Model; Folder Structure README v0.5; Project Glossary; KCKE–Media–CRM Dependency Map; generated WF-001 blueprint Sections 11, 15–16.
+15. Day 1–7 Production Foundation Sprint
+The original Day 1–7 visibility goal is preserved, but it is now framed as the production foundation sprint. Mock/sample data may be used only where dependencies are not yet available; the underlying schema, IDs, approval statuses, dashboards, and fallback rules must be production-aligned.
+Day 1–7 deliverable | WF-001 expectation
+Workflow validation | Confirm current-state steps, exceptions, owners, approvers, backups, and required artifacts from Yatra transcripts, declaration form, current sheets, and workflow blueprint.
+Data path | Create or validate CRM/Sheet/AppSheet staging structure for Contact/Yatri/Family/Yatra/Batch/Lead/Payment/Task/Feedback/Donor Handoff.
+Dashboard | First leadership and operations dashboard: registrations, seats, payment status, missing documents, source distribution, overdue tasks, and escalation list.
+Automation | First reminders or status-change automation for missing documents, payment due, task owner, content approval, or vendor readiness.
+Approval flow | First human approval flow for content, pricing/payment exception, donor-sensitive message, or operational exception.
+AI-assisted output | First Gemini/AI output for Yatra content pack, FAQ, orientation script, follow-up note, or exception summary with human review.
+Sample live workflow test | Run one controlled journey with sample/current data from lead to registration/payment/document readiness and dashboard update.
+Command center visibility layer | Initial leadership view showing what requires attention today, what is blocked, and who owns the next action.
+
+Show Yatra Command Center prototype using sample/mock/current data.
+Include Yatra calendar, yatri registration tracker, payment status, document readiness, vendor/logistics tasks, and post-yatra handoff.
+Show Gemini-generated content pack and approval checklist.
+Show dashboard for registrations, seat availability, pending payments, missing documents, overdue tasks, source distribution and escalation list.
+Mock CRM, voice, WhatsApp API, payment reconciliation and ERP if live integrations are not available.
+Data needed immediately: one sample Yatra sheet, declaration form, sample itinerary, payment statuses, vendor list, marketing messages, lead list, and owner/backup map.
+Do not overclaim production CRM, ERP, payment reconciliation, WhatsApp automation, GST automation or full voice-agent production readiness unless access, data, approvals, contracts, API feasibility and fallback are confirmed.
+Source basis: Generated WF-001 blueprint Section 8; Yatra Management Process Review transcript 27:13–30:34.
+16. Day 8–14 Integrated Working MVP
+The Day 8–14 MVP must be usable by selected HKHT users, not merely viewable in a partner demonstration. It should validate workflow execution, CRM/data path, dashboards, AI-assisted actions, human approval routing, exception routing, and selected-user testing.
+MVP area | Day 8–14 acceptance expectation
+Selected-user usage | Yatra admin, tele-sales supervisor, finance/DCC representative, operations coordinator, digital marketing representative, and leadership reviewer can use role-based views.
+CRM/data path validation | Lead/source/contact/yatri/registration/payment/task/feedback/donor handoff data can be created, updated, viewed, exported, and reconciled.
+AI assistance | AI supports content pack, call support, follow-up drafting, missing-data summaries, escalation notes and dashboard insights under human review.
+ClickUp/task integration | Where approved, workflow tasks and meeting decisions route to ClickUp or a task staging table with owner, deadline, priority, status and backup.
+Exception routing | Pending payment, missing document, vendor delay, capacity issue, yatri complaint, refund/discount request, and on-ground exception have owner and escalation logic.
+Data quality checks | Required fields, duplicate checks, source tags, status values, approval status, and next action fields are validated.
+API registry validation | All live, staged, manual-import, and ERP-later integrations are classified with owner, access status, risk and fallback.
+Human approval testing | At least one content approval, finance approval, donor-sensitive approval, and operational approval are tested with audit-friendly status.
+
+Deploy selected-user integrated working MVP for one Yatra or pilot batch with operational users, role-based views, dashboard updates and human approval flow.
+Use AppSheet/Sheets as interim operational database with stable IDs, mandatory fields, source tracking, owner/backup fields and CRM/ERP-ready schema.
+Support registration intake, document tracking, payment tracking, task readiness, content pack, and feedback/donor handoff.
+Semi-automated finance: payment status can be tracked, but finance validates final receipt/invoice/refund/adjustment.
+Acceptance criteria: 100 sample/live yatris or one pilot batch tracked end-to-end; role-based views; at least 10 dashboard KPIs; reminder automation; audit-friendly approval status.
+Exclusions: production ERP, full CRM migration, payment gateway reconciliation, Tally/GST automation, WhatsApp API production and unrestricted voice-agent rollout unless access/contracts are already ready.
+Source basis: Generated WF-001 blueprint Section 9; Master Context Pack v0.5 Partner Sprint Model.
+17. Day 15–30 Production Readiness and Productivity Multiplication Sprint
+Day 15–30 converts the integrated MVP into a production-ready base with real operational adoption, exception handling, cross-workflow interoperability, dashboard discipline, training, and measurable productivity gains. This stage should not wait for full ERP or every live API; it should operate with validated production controls and documented fallbacks.
+Day 15–30 focus | Production readiness expectation
+Production hardening | Fix data quality issues, workflow friction, permission issues, dashboard gaps, approval bottlenecks, and user adoption blockers discovered in Day 8–14 testing.
+Real operational usage | Operate one live Yatra or pilot batch through the system with selected users and controlled scope.
+Cross-workflow integration | Validate WF-003 lead source, WF-002 call/follow-up status, WF-007 donor handoff, WF-009 finance/P&L data, and WF-006 CRM governance path.
+User training | Train Yatra admin, tele-sales, finance, operations, digital marketing, donor handoff, and dashboard reviewer roles.
+KPI validation | Measure registrations, payments, missing docs, tasks, escalations, content cycle time, call follow-up, donor handoff, and manager dependency reduction.
+Escalation testing | Test backup owner, exception routing, approval delay handling, and when Mukund Prabhu needs to be involved.
+Failure/fallback protocol | Test manual status capture and later reconciliation for AppSheet/Sheets, dashboard, WhatsApp, voice, payment export, CRM/API and on-ground use.
+Golden journey QA | Complete end-to-end testing from campaign/source to lead/call, registration, payment/document readiness, Yatra execution, feedback, donor handoff, and next action.
+Production readiness review | Partner and HKHT sign off on production base scope, exclusions, risks, support model, 60-day stabilization roadmap and 75-day enterprise-scale readiness path.
+
+Pilot dimension | Expectation
+Users | Mukund Prabhu/dashboard reviewer, Yatra admin, finance, tele-sales supervisor, digital marketing, operations coordinator, donor/LLP representative.
+Workflow coverage | Campaign lead, calling status, registration, declaration/document readiness, payment status, logistics readiness, feedback and donor handoff.
+Data requirements | Live sample Yatra data, lead sources, payment exports, campaign data, vendor/task lists, approval owners, source/consent rules.
+Integration scope | At minimum CSV/import/export paths; validate CRM/payment/ERP APIs; WhatsApp/voice API only if approved.
+Success metrics | Registration conversion, pending payment reduction, missing document reduction, dashboard adoption, time saved, escalation reduction, post-yatra donor follow-up completion.
+
+Source basis: Generated WF-001 blueprint Sections 10, 13 and 16; KCKE–Media–CRM Dependency Map implementation rule.
+18. 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale Expectations
+This section preserves the original production-foundation ambition but aligns it to the compressed execution path. Day 30 establishes the production base; the next 60 days stabilize and harden operations; by Day 75, WF-001 should be ready to mature into enterprise-scale platform integration.
+Phase | Expected maturity
+First 30 days: production base | Selected live usage, dashboards, IDs, data quality checks, approval routing, fallback, initial AI assistance, cross-workflow data path, and sign-off checklist.
+Next 60 days: stabilization | Adoption support, bug fixes, user training, data cleanup, dashboard discipline, API validation, integration hardening, WhatsApp/voice governance, finance fallback maturity, and KPI review.
+By 75 days: enterprise-scale readiness | Leadership command center contribution, BigQuery/Looker maturity, CRM relationship intelligence, advanced agent readiness, Yatra demand prediction data path, Media AI/KCKE interfaces, and multi-center packaging assumptions.
+Beyond 75 days | Deeper CRM/ERP integrations, predictive analytics, donor propensity, live P&L, Relationship Intelligence Graph, automated recap pipeline, and WF-013 replication playbook after Hyderabad proof.
+
+Define production architecture with security/access, audit logs, role-based views and data ownership.
+Validate CRM source-of-truth approach and contact identity model.
+Validate payment/DCC/ERP integration path and manual fallback.
+Implement dashboards for leadership, operations, revenue/conversion, data quality, and AI-agent performance.
+Define data-quality governance: required fields, deduplication, DND/consent, approval status, owner/backup validation.
+Set support model: admin, bug reporting, change control, training, adoption dashboard, escalation.
+Source basis: Master Context Pack v0.5; Folder Structure README v0.5 ERP/data centralization layer; generated WF-001 blueprint Sections 11–13, 17.
+19. 6-Month Enterprise Architecture Vision — Connected to 30-Day Base, 60-Day Stabilization and 75-Day Enterprise Scale
+The 6-month enterprise architecture remains the strategic direction, but the first architecture decision is made on Day 1: every MVP table, ID, status, source tag, approval field, and dashboard must be compatible with CRM, ERP, BigQuery/Looker, KCKE, Media AI, and later multi-center replication.
+The partner should explicitly show how the Day 30 production base evolves into the 60-day stabilization layer and 75-day enterprise-scale readiness architecture without rebuilding the workflow.
+WF-001 plugs into integrated revenue engine: WF-003 Digital Marketing → WF-002 Voice/CRM → WF-001 Yatra → WF-007 Donor/LLP/CSR → WF-009 Finance/DCC/P&L → WF-006 CRM/DBMS Governance.
+Yatra becomes a repeatable operating module with IDs, source tracking, approvals, dashboards, agent workflows and post-yatra donor cultivation.
+BigQuery/Looker becomes the analytics layer for source-to-registration-to-payment-to-donation intelligence.
+Vertex AI/Agent Builder/Cloud Run/Workflows support governed agentic workflows after MVP validation.
+ERP migration receives clean master data rather than chaotic historical sheets.
+National/multi-center replication is enabled by standard schema, playbooks, dashboards, approval gates and training, but rollout occurs after Hyderabad operating proof.
+Source basis: Master Context Pack v0.5 Architecture Clusters; KCKE–Media–CRM Dependency Map cross-system data flow; generated WF-001 blueprint Section 18.
+20. Expected Google Product Areas
+The partner must validate which Google product areas are appropriate for the 30-day production base versus 60-day stabilization and 75-day enterprise-scale readiness. HKHT expects an explicit Google-stack mapping, including what belongs in Gemini Enterprise / Workspace, Apps Script / AppSheet / Sheets, Google Cloud / Vertex AI / Agent Builder, Cloud Run / Workflows, BigQuery / Looker Studio, and where external vendors are required.
+The partner should not assume one Google product can solve every part of WF-001. CRM/DBMS, ERP, KCKE, Media AI, task execution, voice/WhatsApp, payment/DCC, and analytics must remain appropriately separated with clear integration boundaries.
+The partner should validate the exact product fit and licensing; HKHT is not assuming a specific Google tool can do everything.
+Product area | Likely role for WF-001
+Gemini Enterprise / Workspace | Content drafts, workspace assistant, Drive search, internal copilot, summaries.
+Google Sheets / AppSheet / Apps Script | Fast demo, MVP workflow app, forms, alerts, role-based operational views.
+Looker Studio / BigQuery | Dashboards, KPI warehouse, source-to-conversion analytics and operational intelligence.
+Vertex AI / Agent Builder | Agentic workflows, classification, RAG, lead scoring, anomaly detection and long-term AI orchestration.
+Cloud Run / Cloud Workflows / Pub/Sub | Custom integrations, scheduled jobs, API workflows and event-driven orchestration.
+Google Cloud Storage / IAM / Secret Manager | Document/media storage, secure access, credentials and audit-sensitive data handling.
+
+Source basis: Project Glossary; KCKE Technical Scope for Google Cloud/Vertex/BigQuery/Cloud Run patterns where relevant; Master Context Pack v0.5.
+21. Questions for the Implementation Partner
+How will you run the Day 1–3 validation of workflow, access, owners, data sources, CRM IDs, API dependencies, dashboard schema, and production risks?
+What exactly will be production-foundation-ready by Day 7, and which items will still use mock/sample/manual data?
+What exactly will selected HKHT users operate by Day 14, and how will role-based views, AI assistance, approval flows, and exception routing be tested?
+What exactly will be hardened and handed over by Day 30 as production base?
+How will the 60-day stabilization and 75-day enterprise-scale readiness roadmap be structured?
+What is your proposed unified master entity model for Contact, Lead, Yatri, Donor, Family, Campaign, Yatra, Payment, Task, Event, and Follow-up?
+How will you prevent WF-001 from creating a disconnected contact database separate from WF-002, WF-003, WF-006, WF-007, and WF-014?
+What is the API/connector registry for CRM, payment/DCC, WhatsApp, voice, ClickUp, campaign tools, ERP, BigQuery/Looker, KCKE, Media AI, and Google Cloud components?
+What is the WhatsApp governance plan for templates, provider, status logging, opt-out handling, message failure, and fallback?
+What lead source, DND/consent readiness, TRAI-related calling readiness, voice script approval, call logging, and CRM writeback must be validated before scaled voice outreach?
+How will approval SLAs, delegated approvers, backups, and audit status be designed so Mukund Prabhu is not recreated as the default bottleneck?
+How will you measure Mukund Prabhu dependency reduction from baseline to Day 30 and then through stabilization?
+How will you test the golden journey from campaign source to lead, call, registration, payment, Yatra attendance, feedback, donor handoff, and next action?
+What is the failure/fallback process if AppSheet/Sheets, CRM/API, WhatsApp, voice, payment export, dashboard, or on-ground connectivity fails?
+Which parts of Relationship Intelligence Graph, Yatra demand prediction, live P&L, AI Fundraiser Copilot, automated Yatra recap, and Follow-the-Devotee timeline should be data-model-ready now but implemented later?
+What can be delivered in Day 1–7 as a visible demo?
+What can be delivered in Day 8–14 as a selected-user MVP?
+What can be piloted in 30 days with real users and sample/live data?
+What becomes production-ready through the 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale path?
+What is the 6-month architecture and migration path?
+Which items are demo/mock only?
+Which items require APIs/connectors and which APIs are assumed?
+Which items require CRM/ERP/data cleanup?
+Which items require external vendors such as voice, WhatsApp, payment gateway, or travel systems?
+Which items require Gemini Enterprise licensing?
+Which items require Google Cloud, Vertex AI, Agent Builder, Cloud Run, Workflows, BigQuery or Looker Studio?
+Which items require Apps Script/AppSheet/Sheets?
+What should not be promised in the Day 1–14 window?
+What data does HKHT need to provide immediately?
+What are cost, licensing, security, privacy, region, data ownership and support risks?
+How will human approval, audit trail, rollback and exception escalation be implemented?
+Source basis: User-provided partner question requirements; Master Context Pack v0.5; generated WF-001 blueprint Section 16.
+22. Expected Deliverables from Google / Implementation Partner
+Deliverable | Minimum expectation
+Technical Requirements Document (TRD) | Workflow-specific requirements, data fields, user roles, non-functional requirements, exclusions and assumptions.
+Solution Architecture | High-level architecture for demo, MVP, pilot, production foundation and 6-month state.
+Google Product Mapping | Which parts use Gemini Enterprise, Workspace, AppSheet, Apps Script, Cloud Run, Workflows, Vertex AI, BigQuery, Looker, etc.
+Agent Architecture | Agent list, inputs/outputs, governance, memory/data access, actions, escalation and success metrics.
+Integration Architecture | CRM, ERP, payment/DCC, WhatsApp, voice, ClickUp, finance, campaign, Drive and other APIs/connectors.
+CRM/ERP/Data Architecture | Entities, IDs, source of truth, migration plan, dedupe/consent/source tagging and data quality controls.
+Security and Access Model | Role-based access, sensitive data handling, audit logs, regional data considerations, key/secret management.
+Human Approval Architecture | Approval queues, required gates, authority matrix, exception handling and auditability.
+Dashboard Architecture | Leadership, operations, revenue/conversion, data quality and AI-agent dashboards.
+Deployment Architecture | Environments, user acceptance, admin ownership, training, support, monitoring and rollback.
+Licensing and Cost Estimates | Gemini, AppSheet, Google Cloud, external vendors, messaging/voice usage, support and maintenance.
+Rollout Plan | Day 1–7 Production Foundation Sprint, Day 8–14 Integrated Working MVP, Day 15–30 Production Readiness and Productivity Multiplication Sprint, 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale path, 6-month architecture and future replication considerations.
+Risks and Limitations | What can fail, what is not possible, what needs data/API access, what should not be promised in two weeks.
+HKHT-side dependencies | Data files, owners, approvers, access, API keys, sample records, vendor contracts and decision deadlines.
+Assumptions and exclusions | Explicitly label every assumption and every out-of-scope item.
+
+Source basis: User-provided deliverable list; Master Context Pack v0.5 Partner Sprint Model; generated WF-001 blueprint Sections 15–20.

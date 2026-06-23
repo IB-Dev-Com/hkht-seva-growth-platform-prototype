@@ -1,0 +1,513 @@
+AI for HKHT Seva – Enterprise AI Transformation
+DOCUMENT B — Google / Implementation Partner Brief
+WF-012 Website / Landing / Tech Support — 30-Day Production-Ready Accelerated Execution Brief
+Workflow | WF-012 Website / Landing / Tech Support
+Platform frame | Hyderabad AI Revenue & Seva Growth Platform
+Audience | Google partner team, solution architects, implementation partner leadership, delivery team
+Prepared | 26 May 2026; revised for 30-Day Production-Ready Accelerated Execution
+Document status | Partner-facing implementation briefing realigned for 30-Day Production-Ready Accelerated Execution; not a TRD; not a generic AI demo
+Classification | Confidential – External partner shareable after HKHT review
+
+Core platform rule: Start small in execution. Start big in architecture. Start immediately in data discipline. Start revenue-first in priority. Start human-governed in approvals. Start platform-compatible in every workflow.
+Source basis: Mukund Prabhu Operations Master Context Pack v0.5 / v0.2; Project Glossary v0.5; generated WF-012 workflow blueprint in this chat, Sections 2, 6, 8, 9, 11.
+30-Day Production-Ready Accelerated Execution Re-Alignment
+Source basis: Existing Document B; generated WF-012 workflow blueprint in this chat; HKHT_AI_Transformation_Analysis(1).html strategic analysis recommendations; user instruction for 30-day production-readiness alignment.
+This WF-012 brief is now aligned as a 30-Day Production-Ready Accelerated Execution Brief for the Hyderabad AI Revenue & Seva Growth Platform. The original workflow understanding, partner-facing structure, sections, tables, assumptions, dependencies, implementation details, and long-term architecture are preserved; the execution framing is upgraded from a sequential demo/MVP note into an accelerated production sprint document.
+WF-012 must not be implemented as an isolated website automation. It must become the platform-compatible website, landing page, form, source-tracking, payment-readiness, CRM-capture, QA, incident, and dashboard module of the larger AI-first revenue and seva operating system.
+The partner must start small in execution while starting big in architecture: CRM-aligned, ERP-ready, dashboard-visible, human-governed, API-aware, cross-workflow compatible, and designed for later multi-center replication from Day 1.
+The compressed path for this workflow is: first 30 days = production base and operational go-live foundation; next 60 days = stabilization, hardening, adoption, data-quality discipline, integration maturity, and KPI discipline; by 75 days = enterprise-scale readiness, advanced platform integration, multi-workflow maturity, leadership visibility, and scalable 1000X platform architecture.
+Mandatory accelerated execution rhythm for WF-012:
+Sprint window | Production-ready expectation for WF-012 Website / Landing / Tech Support
+Day 1–3 | Validate current workflow, owners, approvers, backup paths, access, data sources, CRM fields/IDs, dashboard schema, API dependencies, production risks, and analysis-file gap mapping.
+Day 4–7 | Create the first working production foundation: structured intake, CRM/Sheet/API data path, first dashboard, first automation, first approval flow, first AI-assisted output, sample live workflow test, and first leadership visibility layer.
+Day 8–14 | Operate an integrated working MVP with selected users: workflow-specific AI assistance, ClickUp/task handoff where applicable, exception routing, dashboard refinement, data checks, human approval testing, API registry validation, and WhatsApp/payment/CRM dependency validation where relevant.
+Day 15–21 | Harden for production use: real operational usage, cross-workflow integration, user training, KPI validation, escalation testing, fallback protocol, role ownership refinement, and golden journey QA testing.
+Day 22–30 | Conduct production readiness review, leadership visibility review, live operational handover, stabilization plan, productivity measurement, partner sign-off checklist, next 60-day stabilization roadmap, and 75-day enterprise-scale readiness roadmap.
+
+Production Readiness Definition
+Source basis: Existing Document B Sections 6, 10–19; generated WF-012 workflow blueprint Sections 6–13; HKHT_AI_Transformation_Analysis(1).html recommendations on production gates, leadership visibility, fallback protocol, dependency measurement, and cross-workflow QA.
+Live operational usage: selected WF-012 users can submit, process, review, approve, QA, and track actual website/landing page/tech support requests inside the configured workflow, not only view a prototype.
+Validated data flow: request, page, campaign, source, owner, approval, QA, incident, renewal, CRM/contact, payment-readiness, and dashboard fields flow through a controlled Sheet/AppSheet/CRM/API path with unique IDs where applicable.
+Dashboard visibility: management, operational, revenue/conversion, data-quality, incident/renewal, and AI-agent performance dashboards show current status, delays, blockers, approvals, and exceptions.
+Human approval routing: donor-sensitive, financial, payment/bank, public communication, devotional/philosophical, deity/media, HNI/CSR, and final go-live decisions are routed to approved human reviewers with timestamped approval logs.
+Exception handling: broken pages, failed forms, payment/receipt uncertainty, missing owners, unresolved approvals, expired domains, traffic spikes, and integration failures trigger clear escalation and fallback steps.
+Role ownership: owner, performer, approver, backup, escalation person, dashboard reviewer, and data steward are validated before production routing; transcript-derived names remain Assumption / Needs Validation until confirmed.
+Data quality checks: required fields, duplicate campaign/source detection, missing page IDs, unmapped payment sources, incomplete CRM fields, missing approval timestamps, and stale website/domain inventory are flagged.
+AI-assisted execution: Gemini/Workspace or partner-proposed agents assist with briefs, content drafts, SEO, QA summaries, risk flags, status summaries, and management briefs while final approvals remain human-governed.
+Cross-workflow compatibility: WF-012 produces data that can be used by WF-001 Yatra, WF-003 Digital Marketing, WF-006 CRM/DBMS, WF-007 Donor/LLP/CSR, WF-009 Finance/DCC, WF-004 Content/KCKE, WF-008 Meeting Intelligence/ClickUp, WF-014 Community Outreach, and future WF-013 multi-center replication.
+Golden journey testing: at least one complete journey is tested from campaign/page request → content/asset approval → page QA → form/CRM capture → payment-readiness check → dashboard update → follow-up/task creation → management exception view.
+Measurable productivity improvement: partner must define baseline and target measures for request-to-brief time, brief-to-launch time, approval cycle time, rework, first-pass QA, incident response, dashboard usage, and Mukund Prabhu dependency reduction.
+Accelerated Delivery Governance
+Source basis: Existing Document B Sections 15–22; generated WF-012 workflow blueprint Sections 15–20; HKHT_AI_Transformation_Analysis(1).html recommendations on sequencing gates, API registry, leadership visibility, dependency realism, fallback protocol, measurable dependency reduction, and QA framework.
+Daily checkpoint rhythm: partner and HKHT must review progress, blockers, access, data quality, approvals, integration assumptions, dashboard readiness, and production risks every working day during the 30-day sprint.
+Issue escalation: unresolved access, missing data, missing owner, payment/CRM/API blocker, content approval delay, dashboard defect, or page reliability concern must have an escalation owner and deadline.
+Dependency tracking: every CMS, CRM, DCC, payment gateway, registrar, hosting, analytics, WhatsApp/SMS, ClickUp, KCKE, Media AI, and ERP dependency must be classified as available now, data-required, API-required, manual fallback, later integration, or not in scope for the 30-day base.
+Partner responsibility: provide TRD, solution architecture, Google-stack mapping, API/integration architecture, security/access model, approval architecture, dashboard architecture, deployment approach, costing, risks, assumptions, exclusions, and phased rollout.
+HKHT validation responsibility: provide source files, current trackers, page/domain inventory, payment/CRM/DCC field information, owners/approvers/backups, approval criteria, priority pages, sample campaigns, access confirmation, and timely review decisions.
+Acceptance review: each sprint checkpoint must be reviewed against working functionality, data-path validation, dashboard visibility, human approval flow, issue/fallback handling, and evidence that the workflow is not becoming a disconnected tool.
+Sign-off process: Day 30 sign-off requires production-readiness checklist, unresolved dependency list, operational handover notes, support model, user training evidence, and a 60-day stabilization plus 75-day enterprise-scale readiness plan.
+API / WhatsApp / CRM / ERP dependency watch: no live API integration should be promised unless access and feasibility are confirmed; CSV/export or controlled manual fallback is acceptable during early production readiness if clearly marked.
+Failure and fallback protocol: the workflow must define how HKHT continues operations if AI assistance, CMS publishing, CRM sync, payment validation, dashboard refresh, or communications integration fails.
+1000X Productivity Alignment
+Source basis: Existing Document B Sections 2, 6, 7, 8, 10, 11, 19; generated WF-012 workflow blueprint Sections 2, 6, 7, 10–13; HKHT_AI_Transformation_Analysis(1).html strengths and leap ideas L01, L02, L03, L04, L05, L06, L07, L09, L10, L11, L12, L13, L14, L15 where relevant to website/landing conversion intelligence.
+WF-012 contributes to the larger 1000X ambition by turning websites and landing pages into measurable conversion infrastructure rather than static digital assets. The leap comes from reach × trust × conversion × follow-up discipline × donor/yatri lifetime value × reusable platform design.
+The production base within 30 days should create disciplined request intake, CRM/source tagging, approval gates, dashboards, QA, incident management, and AI-assisted execution. The next 60 days should stabilize adoption, data quality, role ownership, and integration maturity. By 75 days, WF-012 should be ready to act as a scalable platform module connected to revenue, yatra, donor, community, finance, content, and leadership intelligence.
+Automation contribution: structured intake, task routing, renewal tracking, QA checklist creation, incident logging, and dashboard refresh reduce repeated manual chasing.
+AI assistance contribution: page briefs, donor/yatri-focused copy drafts, SEO/meta/FAQ suggestions, devotional/public language risk flags, conversion suggestions, and management summaries multiply output without bypassing human judgment.
+Agentic workflow contribution: request-to-launch orchestration connects content, creative, page build, payment-readiness, CRM capture, QA, approvals, incidents, and weekly intelligence.
+Dashboard visibility contribution: WF-012 feeds the leadership command center with live status for high-value pages, stuck approvals, payment/receipt risk, conversion health, incident risk, renewal risk, and productivity gains.
+CRM intelligence contribution: page visits, forms, source tags, campaign IDs, Contact/Donor/Yatri IDs, follow-up actions, and outcomes become part of a Relationship Intelligence Graph and Follow-the-Devotee journey timeline.
+Revenue and donor cultivation contribution: WF-012 creates the signals needed for donor propensity scoring, behavior-triggered micro-campaigns, AI Fundraiser Copilot context, real-time campaign P&L, AI social proof placement, and personalized donor inspiration content.
+Yatra contribution: landing page data should support yatra demand prediction, registration drop-off analysis, source-wise yatra conversion, and automated post-yatra video recap / donor inspiration content pipelines where applicable.
+Institutional memory contribution: Mukund Prabhu’s judgment on page style, denomination strategy, sensitive wording, payment mapping, and escalation decisions should be encoded as approved decision rules, examples, and reviewer guidance over time.
+Reusable platform contribution: templates, data models, approval gates, source-tracking rules, QA criteria, dashboard definitions, and rollout playbooks prepare WF-012 for WF-013/multi-center replication without attempting full multi-center rollout immediately.
+Cross-Workflow Integration and Platform Safeguards
+Source basis: Existing Document B Sections 11–14 and 19; generated WF-012 workflow blueprint Sections 11–18; HKHT_AI_Transformation_Analysis(1).html recommendations on multi-center replication, unified master data, WhatsApp/API governance, KCKE/Media AI interface clarity, API registry, ERP transition caution, leadership visibility, platform integration, fallback protocol, and cross-workflow QA.
+Shared IDs: use Contact ID, Donor ID, Yatri ID, Community ID, Family ID, Campaign ID, Event ID, Yatra ID, Donation ID, Page ID, Task ID, Owner ID, Approval ID, and Source ID wherever applicable to landing pages, forms, donations, yatras, campaigns, and follow-up tasks.
+CRM as relationship source of truth: website and landing page forms must create/update CRM relationship records with campaign source, website source, event/yatra/seva context, follow-up status, owner, next action, and outcome.
+ERP-ready fields: payment status, receipt status, bank/trust/seva, campaign ID, yatra ID, event ID, approval status, created date, last follow-up date, and next action must be captured in ERP-migration-ready structures even while ERP is not yet live.
+KCKE boundary: use KCKE for source-grounded Krishna conscious content, festival meaning, donor narratives, devotional messaging, preaching content, and philosophical safety; do not use KCKE for operational facts such as payment status, task status, inventory, approvals, or finance records.
+Media AI boundary: use Media AI only for approved visual storytelling, landing page visuals, reels, videos, yatra/festival/donor media, and scene-level media assets; keep media governance separate from KCKE and Gemini Enterprise productivity agents.
+ClickUp/task layer: where WF-008 execution governance is active, push approved tasks, blockers, follow-ups, and escalations to ClickUp; otherwise use AppSheet/Sheets as the 30-day base with a later task-system integration path.
+Leadership visibility: WF-012 must contribute to a single leadership command center view, not only a local workflow dashboard, with exceptions that require decisions and operational risks that affect donations, yatras, donor cultivation, and public trust.
+API registry: every CMS, CRM, DCC, payment, analytics, registrar, hosting, WhatsApp/SMS, ClickUp, KCKE, Media AI, and ERP connector must be captured in a consolidated API/dependency registry with owner, access status, limitation, fallback, and production readiness state.
+Fallback workflow: if automation or integration fails, the partner must define the manual/CSV/AppSheet fallback so page launches, payment QA, CRM capture, incident handling, and reporting can continue without losing operational control.
+ERP transition caution: WF-012 should validate payment/receipt handoffs carefully and should not destabilize donor-facing financial flows while ERP transition issues remain Assumption / Needs Validation.
+Relevant Analysis Recommendations Incorporated
+Source basis: HKHT_AI_Transformation_Analysis(1).html; applied selectively to WF-012 Website / Landing / Tech Support; recommendations outside the requested workflow scope intentionally excluded.
+Preserved AI-first redesign mandate: do not digitize the current mess; use transcript evidence as current reality, not the target operating model.
+Upgraded four-horizon discipline into a 30-day production base while retaining Day 1–7, Day 8–14, Day 15–30, 60-day stabilization, and 75-day enterprise-scale framing.
+Maintained revenue-first priority: WF-012 is the conversion infrastructure for donations, yatras, donor cultivation, campaign pages, and preaching pages.
+Strengthened human-in-the-loop governance for financial, donor-sensitive, public, devotional/philosophical, deity/media, HNI/CSR, and go-live decisions.
+Preserved system separation: CRM/DBMS for relationship data, ERP for future structured operations/finance, KCKE for source-grounded Krishna conscious knowledge, Media AI for visual storytelling, and Gemini/Workspace for productivity agents.
+Added unified master data, shared IDs, source tracking, API registry, and leadership command center expectations to prevent disconnected tools.
+Added role ownership validation because transcript-derived names may be unreliable and older ownership references must not be treated as final.
+Added sequencing gates, fallback protocol, production readiness checks, golden journey QA, and dependency watch to reduce overpromising risk.
+Added Mukund Prabhu dependency reduction measurement and institutional memory encoding of his judgment for style, denomination, content, payment, and escalation decisions.
+Connected WF-012 to future WF-013/multi-center replication readiness through reusable templates, data models, approval gates, dashboards, and rollout playbooks.
+1. Workflow Name and Platform Role
+Evidence basis: Mukund Prabhu Operations Master Context Pack v0.5 / v0.2.; Generated WF-012 workflow blueprint in this chat, Sections 2–20. Sections 2–3.
+Workflow: WF-012 Website / Landing / Tech Support.
+Platform role: This workflow is the conversion infrastructure module of the Hyderabad AI Revenue & Seva Growth Platform. It manages the request-to-launch and reliability layer for websites, donation pages, yatra pages, festival seva pages, preacher/ambassador fundraising pages, campaign forms, payment readiness, source tracking, and technical support.
+Implementation framing: this brief is not a TRD and not a request for a generic AI demo. It is a workflow-specific implementation briefing so the partner can produce a Technical Requirements Document, solution architecture, Google-stack mapping, API/integration architecture, deployment architecture, rollout plan, feasibility analysis, timelines, risks, costing, and phased implementation proposal.
+Evidence basis: WF-012 transcript 00:33–07:35; Master Context Pack v0.5 identifies WF-012 as P0 Conversion Infrastructure; generated WF-012 workflow blueprint Sections 2, 3, and 15.
+2. Executive Seva Impact Summary
+Evidence basis: WF-012 Website Landing Page Workflow transcript, 23 May 2026.; Mukund Prabhu Operations Master Context Pack v0.5 / v0.2.; Generated WF-012 workflow blueprint in this chat, Sections 2–20. Sections 2 and 13.
+Donation impact: page speed, page trust, payment correctness, and receipt readiness directly influence donation conversion.
+Yatra impact: yatra pages should capture source, interest, registration, payment, and next follow-up action in a structured loop.
+Donor cultivation impact: every donor-facing form should create or update a Contact/Donor record with source, campaign, status, owner, next action, and outcome.
+Krishna consciousness outreach impact: festival, yatra, and seva pages become scalable preaching surfaces when content is approved, source-grounded, and audience-specific.
+Mukund Prabhu burden reduction: move him from routine status chasing to strategic review of denomination, bank/gateway, public brand, and exception decisions.
+ERP/data centralization impact: every page, campaign, lead, donation, approval, and task should carry IDs and ownership fields that can migrate later.
+Multi-center readiness: reusable page templates, approval rules, source tracking, and dashboards can later become a replication package for other centers.
+3. Management Brief for Leadership
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 3; Mukund Prabhu Operations Master Context Pack v0.5 / v0.2. management-brief mandate.
+WF-012 is not a website support workflow; it is the donation and yatra conversion layer.
+The current volume is already enterprise-scale; the management layer is not yet enterprise-grade.
+A Day 1–7 Production Foundation Sprint can show visible control without waiting for ERP.
+A Day 8–14 Integrated Working MVP can give selected users a usable request-to-launch workflow with approvals and QA.
+The 30X leverage comes from a landing-page factory, not from asking developers to build faster manually.
+The 100X leverage comes from template reuse, source tracking, CRM/payment linkage, and multi-center readiness.
+This initiative avoids isolated automation by enforcing common IDs, source tracking, workflow ownership, and ERP-ready fields from Day 1.
+The partner must build toward the Hyderabad AI Revenue & Seva Growth Platform, not a collection of disconnected bots.
+4. Current Operational Reality
+Evidence basis: WF-012 Website Landing Page Workflow transcript, 23 May 2026.; Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 4.
+Current area | Observed reality
+Trigger | New fundraising seva, yatra, festival, donor care requirement, preacher campaign, ambassador crowdfunding page, department request, public website update, SEO update, payment/tech integration, domain/hosting renewal, or incident.
+People involved | Mukund Prabhu, content writers, SEO, creative/graphics team, web designers/developers, marketing manager, payment/ERP/DCC integration support, department/preacher requesters. Exact ownership names are Assumption / Needs Validation due noisy transcript and role correction requirement.
+Current tools | WordPress, Laravel/custom code, ThemeForest/Envato, Adobe Photoshop/Premiere, plugins, Postman, GoDaddy, Bluehost, payment gateways, ERP/DCC/Dhananjaya, Google Sheets, donor forms, WhatsApp/SMS/Meta approval-related processes.
+Current steps | Request arises → page/content/design/payment direction decided → content created → graphics prepared → page built → gateway/DCC/ERP/receipt integration checked → link circulated → status tracked in Sheet → issues handled manually.
+Current approvals | Mukund Prabhu guides look/feel, donation denominations, bank account, payment gateway; content errors and prohibited wording require rejection/rework; major public/spiritual/payment outputs need human approval.
+Current reports | Transcript indicates limited reporting: how many pages are created and how many are working. Conversion, revenue, SLA, payment failure, source attribution, and CRM follow-up reporting are not evidenced.
+Current pain points | Content updates not regular due to time; design/content/graphics/development delays; sensitive wording errors; urgent work on Sundays/midnight; manual incident alerts; manual domain decisions; thin management reporting.
+
+5. Current Bottlenecks and Productivity Loss
+Evidence basis: WF-012 Website Landing Page Workflow transcript, 23 May 2026.; Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 5.
+Manual work: page request collection, content drafting, asset gathering, status tracking, payment QA, renewal decisions, and weekly reporting remain manual or semi-manual.
+Follow-up leakage: page leads and form submissions can leak unless they are mapped to CRM, source, owner, next action, and outcome.
+Data fragmentation: website inventory, domain renewals, landing page requests, forms, payment mapping, DCC/receipt status, analytics, incidents, and approvals are not yet evidenced as a single data model.
+WhatsApp/spreadsheet dependency: current evidence shows Sheets for request/status tracking and manual stakeholder alerts during failures; exact WhatsApp groups are Assumption / Needs Validation.
+Mukund Prabhu dependency: transcript says he guides page look/feel, denominations, bank account, and gateway; later he says execution does not depend on him. Conclusion: routine execution may be delegated, but strategic conversion/payment decisions still require validated human approval.
+Revenue leakage: delayed or broken landing pages, wrong payment setup, weak tracking, or poor page conversion can reduce donations, yatra registrations, and donor cultivation.
+Missed preaching/donor/Yatra opportunity: public pages not updated regularly and thin reporting reduce learning, trust, and repeat engagement.
+6. Desired AI-First Future-State Vision
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 6; Project Glossary v0.5.; KCKE_Media_CRM_Dependency_Map.docx..
+Future-state target: WF-012 becomes a Landing Page Revenue Factory + Website Reliability Command Center. It should be designed as a platform module with common IDs, source tracking, ownership, human approvals, CRM/payment linkage, dashboard intelligence, and ERP migration readiness.
+Automated: request intake, unique IDs, task creation, SLA reminders, renewal alerts, QA checklist generation, UTM generation, dashboard refresh, incident logging.
+AI-assisted: landing-page brief, devotional/donor-safe copy draft, SEO/meta/FAQ suggestions, translation/localization draft, template recommendation, conversion suggestions, risk flagging.
+Agentic: request-to-launch orchestration across content, creative, web, payment, CRM, QA, approvals, incidents, and weekly reporting.
+Human-approved: donation denomination strategy, bank/payment gateway mapping, major go-live, donor-sensitive communication, devotional/philosophical/public claims, deity/media, CSR/HNI sensitive material.
+Source basis: 30-day re-alignment instruction; HKHT_AI_Transformation_Analysis(1).html recommendations on platform integration, unified master data, production gates, and leadership visibility.
+30-day production re-alignment: the future state must begin as a production-ready module, not a throwaway prototype. The Day 1–30 build must validate data paths, owner routing, approval gates, dashboard visibility, fallbacks, and cross-workflow compatibility even when certain API integrations remain semi-automated.
+Platform safeguard: every landing page and website support flow must create usable signals for CRM, campaign attribution, donor/yatri follow-up, payment-readiness, leadership visibility, and later ERP migration.
+7. Expected Productivity Leap
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 10; Project Glossary v0.5..
+Leap level | Meaning for WF-012
+2X control improvement | Structured intake, status, owner, approval, QA, renewal and management dashboard.
+10X workflow productivity | Reusable templates, AI drafts, standard QA, automated reminders, and AppSheet/Sheets MVP workflow.
+30X revenue-operating leverage | Agentic request-to-launch orchestration integrated with campaign, CRM, payment, DCC, analytics, and follow-up.
+100X Hyderabad platform leverage | Central landing-page factory with templates, governance, attribution, conversion learning, and reusable page modules.
+1000X long-term contribution | Aspirational effect from reach × conversion × follow-up discipline × donor lifetime value × future multi-center replication. This is a vision metric, not a 14-day delivery promise.
+
+Source basis: Existing Document B Section 7; HKHT_AI_Transformation_Analysis(1).html 100X leap recommendations L01–L15 selectively applied to WF-012.
+30-day production base: 2X control and 10X routine productivity must be visible by Day 30 through live workflow usage, not only mock screens.
+60-day stabilization: 30X leverage should come from adoption discipline, fewer rework cycles, cleaner source tracking, stronger payment/CRM QA, and dashboard-led management.
+75-day enterprise-scale readiness: 100X and 1000X potential should be evidenced through reusable templates, source/event/campaign IDs, Relationship Intelligence Graph inputs, donor/yatri journey signals, and multi-center replication readiness.
+8. Expected AI Agents / Copilots
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 7; Project Glossary v0.5..
+Landing Page Intake & Brief Agent
+Purpose: Convert informal requests into complete, structured page briefs.
+Users: Department heads, preachers, donor care, yatra team, marketing team, web coordinator.
+Inputs: Campaign/page request, requester, audience, deadline, page type, seva/yatra/festival, content assets, denomination, payment/gateway, approver.
+Outputs: Request ID, page brief, missing fields, SLA, owner routing, approval path.
+Data: Landing Page Request, Campaign ID, Source, Owner ID, Approver ID, Priority, Due Date.
+Tools: Google Form/AppSheet, Sheets/CRM, Drive, Gmail/Chat, task system.
+Approval: Requester confirms brief; strategic payment/denomination fields require human approval.
+Escalation: Missing payment info, urgent festival deadline, high-value campaign, no owner assigned.
+Metrics: Brief completeness %, intake-to-assignment time, missing-field reduction.
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 7; specific transcript support: request, tool, content, payment, renewal, incident and reporting sections at 04:00–18:45; implementation classification from Project Glossary v0.5..
+Campaign Source & ID Governance Agent
+Purpose: Ensure every page and form carries campaign/source IDs for CRM, donation, yatra, event, and analytics linkage.
+Users: Marketing, CRM/data team, web team, finance/DCC.
+Inputs: Campaign details, source/referral, UTM, page URL, event/yatra/seva mapping.
+Outputs: Campaign ID, page ID, UTM, source tag, CRM mapping checklist.
+Data: Campaign, Event, Yatra, Source, Page, Contact, Donation, Task IDs.
+Tools: Sheets/AppSheet, CRM, analytics, URL builder, later BigQuery.
+Approval: Data steward validates schema; campaign owner validates mapping.
+Escalation: Duplicate campaign, missing source, unapproved field values, unmapped payment source.
+Metrics: % pages with IDs/UTMs, source attribution completeness, duplicate-source reduction.
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 7; specific transcript support: request, tool, content, payment, renewal, incident and reporting sections at 04:00–18:45; implementation classification from Project Glossary v0.5..
+Template & Page Variant Agent
+Purpose: Recommend approved templates and page sections for yatra, festival, seva, donor care, preacher, ambassador, CSR/HNI, or SEO page types.
+Users: Web designer/developer, marketing manager, campaign owner.
+Inputs: Page type, audience, language, campaign goal, existing template library, past performance.
+Outputs: Template recommendation, section plan, CTA placement, variant plan.
+Data: Template metadata, page category, performance history, brand rules.
+Tools: CMS/template library, Figma/Drive assets, AppSheet, analytics.
+Approval: Designer/web lead approves template and final variant.
+Escalation: No approved template, high-value campaign, new center localization.
+Metrics: Template reuse %, build-time reduction, rework reduction.
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 7; specific transcript support: request, tool, content, payment, renewal, incident and reporting sections at 04:00–18:45; implementation classification from Project Glossary v0.5..
+KCKE-Grounded Content & Devotional Safety Copilot
+Purpose: Draft and review page content where Krishna conscious knowledge, festival meaning, Prabhupada references, donor narratives, or philosophical wording is needed.
+Users: Content writer, reviewer, preacher, marketing approver.
+Inputs: Brief, audience, language, approved phrase library, risky/prohibited phrases, KCKE source references.
+Outputs: Draft copy, citation suggestions, devotional safety flags, rewrite suggestions.
+Data: source_id, segment_id, citation, audience tag, authority tier, review status.
+Tools: KCKE, Docs/Drive, approved phrase library.
+Approval: Mandatory human approval before public use.
+Escalation: Unsupported claim, sensitive philosophical point, prohibited wording, donor-sensitive statement.
+Metrics: Content review pass rate, rework reduction, citation coverage, risk-flag resolution.
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 7; specific transcript support: request, tool, content, payment, renewal, incident and reporting sections at 04:00–18:45; implementation classification from Project Glossary v0.5..
+Creative Asset & Media Readiness Agent
+Purpose: Ensure page banners/images/video/assets are approved, correctly formatted, and rights-safe.
+Users: Creative team, media team, web team.
+Inputs: Page template, campaign brief, required asset types, existing asset repository.
+Outputs: Asset checklist, missing assets, approved asset links, version status.
+Data: Asset ID, approval status, deity/person/location/festival tags, rights status.
+Tools: Drive, Media AI Pipeline, Figma/Canva, asset approval sheet.
+Approval: Mandatory for deity, festival, donor-sensitive and public brand assets.
+Escalation: Unapproved image, wrong deity/location, missing rights, deadline risk.
+Metrics: Asset delay reduction, approval compliance, reused approved assets.
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 7; specific transcript support: request, tool, content, payment, renewal, incident and reporting sections at 04:00–18:45; implementation classification from Project Glossary v0.5..
+Payment / DCC / CRM Integration QA Agent
+Purpose: Prevent broken donation flows, wrong bank/gateway mapping, missing CRM capture, or failed receipts.
+Users: Tech support, finance/DCC, CRM/data team, campaign owner.
+Inputs: Page URL, payment gateway, bank/trust/seva, form fields, DCC mapping, CRM mapping, receipt logic.
+Outputs: Integration QA report, go/no-go status, test checklist, error flags.
+Data: Gateway ID, bank/trust/seva, Donation ID, Payment Status, Receipt Status, CRM Lead/Contact ID, Campaign ID.
+Tools: Payment gateway dashboard/API, DCC/ERP export/API, CRM API, Postman, workflow app.
+Approval: Finance/DCC approves payment mapping before go-live.
+Escalation: Payment failure, receipt failure, unmapped CRM field, high sensitivity data exposure.
+Metrics: Payment success rate, receipt success rate, first-pass QA, defects caught before launch.
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 7; specific transcript support: request, tool, content, payment, renewal, incident and reporting sections at 04:00–18:45; implementation classification from Project Glossary v0.5..
+SEO & Conversion Optimization Agent
+Purpose: Improve organic reach and donation/yatra conversion.
+Users: SEO person, digital marketing, content writer, campaign owner.
+Inputs: Page copy, keywords, analytics, Search Console, page performance, donation/yatra outcomes.
+Outputs: SEO title/meta/FAQ/schema suggestions, internal link suggestions, CTA recommendations, A/B test ideas.
+Data: URL, page ID, traffic, source, conversion, bounce, revenue/registration outcome.
+Tools: Analytics/Search Console, CMS, CRM/payment data, BigQuery/Looker later.
+Approval: Content/brand approver for public copy changes.
+Escalation: High traffic but low conversion, traffic drop, poor mobile performance, critical SEO issues.
+Metrics: Organic traffic, conversion rate, revenue/page, registrations/page, CTA click rate.
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 7; specific transcript support: request, tool, content, payment, renewal, incident and reporting sections at 04:00–18:45; implementation classification from Project Glossary v0.5..
+Website Inventory & Renewal Guardian
+Purpose: Maintain domain, hosting, CMS, plugin, SSL, and license renewal visibility.
+Users: Tech support, finance, web admin, management reviewer.
+Inputs: Domain list, hosting list, expiry dates, purpose, owner, renewal cost, business value.
+Outputs: Renewal calendar, risk alerts, approval queue, renewal/drop recommendation.
+Data: Domain ID, registrar, expiry date, owner, purpose, cost, renewal status.
+Tools: Registrar/hosting export/API, Sheets/AppSheet, Gmail alerts, finance approval.
+Approval: Human approval for renew/drop decisions.
+Escalation: Expiry <30 days, payment failure, high-value domain, unclear owner.
+Metrics: Zero accidental expiries, renewal decision SLA, domain inventory accuracy.
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 7; specific transcript support: request, tool, content, payment, renewal, incident and reporting sections at 04:00–18:45; implementation classification from Project Glossary v0.5..
+Uptime, Festival Traffic & Incident Agent
+Purpose: Keep important pages live and coordinate incident response.
+Users: Tech support, campaign owner, web admin, management reviewer.
+Inputs: Uptime checks, traffic thresholds, campaign calendar, hosting metrics, incident reports.
+Outputs: Alerts, incident record, stakeholder stop/resume message drafts, recovery status.
+Data: URL, severity, campaign, owner, incident status, MTTR, estimated revenue risk.
+Tools: Uptime monitor, hosting/CDN, Gmail/Chat/WhatsApp API where approved, dashboard.
+Approval: Public/sensitive incident communication requires human approval.
+Escalation: Payment page down, donation form broken, festival traffic spike, repeated failures.
+Metrics: Uptime %, mean time to detect, mean time to recover, incident recurrence.
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 7; specific transcript support: request, tool, content, payment, renewal, incident and reporting sections at 04:00–18:45; implementation classification from Project Glossary v0.5..
+Management Intelligence & Register Update Agent
+Purpose: Generate weekly command summary, dashboard exceptions, pending decisions, and register update suggestions.
+Users: Mukund Prabhu, WF-012 owner, leadership, project team.
+Inputs: Request tracker, status, QA, approvals, revenue/conversion, incidents, renewal risks, missing info.
+Outputs: Weekly brief, exception list, SLA breaches, register update checklist, partner questions.
+Data: Status, owner, SLA, blocker, revenue, approval, decision needed.
+Tools: Sheets/AppSheet, dashboard, BigQuery/Looker later, CRM/DCC/payment exports.
+Approval: Register owner and leadership approve final updates/decisions.
+Escalation: Overdue high-value pages, payment failures, unresolved owner/RACI, repeated QA defects.
+Metrics: Managerial time saved, overdue reduction, dashboard adoption, register update completeness.
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 7; specific transcript support: request, tool, content, payment, renewal, incident and reporting sections at 04:00–18:45; implementation classification from Project Glossary v0.5..
+Conversion Intelligence & Journey Signal Agent
+Purpose: Convert website/landing page behavior into CRM-ready relationship intelligence and next-action signals.
+Users: Digital marketing, CRM/data team, donor/yatri follow-up teams, fundraisers, campaign owners, management reviewers.
+Inputs: Page URL, UTM/source, form submission, campaign, event/yatra/seva mapping, visit/conversion events where available, donation/payment-readiness status, follow-up status.
+Outputs: Source-tagged contact/update record, journey event, next-action recommendation, campaign conversion signal, dashboard exception, handoff task.
+Data: Contact ID, Donor ID, Yatri ID, Campaign ID, Event ID, Yatra ID, Page ID, Donation ID, Task ID, Source ID, Last Follow-up Date, Next Action, Outcome.
+Tools: CRM/DBMS, analytics, BigQuery/Looker later, AppSheet/Sheets MVP, ClickUp/task system where active, payment/DCC exports, Google Cloud/agent layer where validated.
+Approval: Automated follow-up recommendations may be generated; donor-sensitive messages, payment actions, public claims, and major campaign changes require human approval.
+Escalation: High-value donor signal, high-conversion page underperforming, repeated form/payment failure, unmapped source, missing follow-up owner, or exception requiring Mukund Prabhu/delegated reviewer.
+Metrics: Source attribution completeness, lead-to-follow-up SLA, conversion signal coverage, donor/yatri journey completeness, revenue attribution accuracy, dashboard exception resolution rate.
+Evidence basis: Existing Document B Sections 7, 10, 11, and 19; HKHT_AI_Transformation_Analysis(1).html leap ideas L01, L02, L05, L07, L12, L14; generated WF-012 workflow blueprint Sections 7 and 13.
+9. Human Role Redesign Expectations
+Evidence basis: WF-012 Website Landing Page Workflow transcript, 23 May 2026. 09:11–13:53 and 20:42–21:30; Role_Ownership_Correction_Note_May_2026.txt.; Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 14.
+Current roles continue where human judgment is essential: strategy, devotional/public approval, payment/bank decisions, final publishing, sensitive donor communication, and exception handling.
+Content writers become AI-supervised conversion copy editors and devotional content reviewers.
+Web designers/developers become template-system owners, integration engineers, and quality reviewers rather than one-off builders for every routine page.
+SEO/digital marketing roles move toward campaign-to-conversion optimization and source attribution quality.
+Tech support moves toward renewal, uptime, incident, QA, and integration reliability.
+Finance/DCC/CRM roles become payment, receipt, source, and relationship-data stewards.
+New roles needed: WF-012 Product Owner, Website/Data Steward, Payment Integration QA Owner, Content/Devotional Review Owner, Template Library Owner, Web Reliability Owner, Analytics/Conversion Owner.
+Assumption / Needs Validation: current accountable owner, actual daily performer, final approver, backup, escalation path, and dashboard reviewer must be validated before production routing.
+Source basis: Role_Ownership_Correction_Note_May_2026.txt; HKHT_AI_Transformation_Analysis(1).html recommendations on role ownership validation, dependency measurement, and institutional memory; generated WF-012 workflow blueprint Section 14.
+Production-readiness addition: each role must be validated by Day 1–3 with owner, performer, approver, backup, escalation person, dashboard reviewer, and data steward fields before routing is treated as production-ready.
+Institutional memory addition: Mukund Prabhu’s recurring judgments on page style, denomination strategy, bank/gateway decisions, sensitive vocabulary, and incident escalation should be captured as review criteria and decision examples, not left as informal memory.
+10. Dashboard and Operational Intelligence Expectations
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 13; Mukund Prabhu Operations Master Context Pack v0.5 / v0.2.; KCKE_Media_CRM_Dependency_Map.docx..
+Dashboard | Expected view
+Management dashboard | Pages live/pending/blocked; high-value campaign status; pending approvals; renewal risk; incidents; revenue/conversion summary; decisions required.
+Operational dashboard | Request stage, owner, SLA, blockers by content/graphics/dev/payment/approval, QA pass/fail, launch calendar.
+Revenue/conversion dashboard | Visits, leads, donations, yatra registrations, payment success, receipt success, revenue/page, conversion/page, source attribution.
+Data quality dashboard | Missing IDs, unmapped sources, duplicate campaigns, missing owners, incomplete CRM/payment fields, approvals without timestamp.
+AI-agent performance dashboard | Drafts generated, accepted/rejected, risk flags, QA issues detected, automation failures, human approval turnaround.
+Leadership command center contribution | High-value page status, blocked approvals, payment/receipt risk, incident/renewal risk, conversion signals, and decision-needed flags for the single leadership view.
+Production readiness dashboard | Live vs semi-automated vs mock/API-pending components, Day 30 readiness status, unresolved dependencies, fallback-active flows, and sign-off readiness.
+Mukund Prabhu dependency dashboard | Decision volume requiring Mukund Prabhu, delegated decisions, approval SLA, repeated exceptions, and judgment areas to encode as rules/templates.
+
+Source basis: HKHT_AI_Transformation_Analysis(1).html recommendations on single leadership command dashboard and Mukund Prabhu dependency measurement; existing Document B Section 10; generated WF-012 workflow blueprint Section 13.
+Leadership command center contribution: WF-012 should feed one consolidated leadership view with high-value page status, blocked approvals, conversion/revenue risk, renewal risk, incidents, payment/receipt health, and decision-needed flags.
+Mukund Prabhu dependency metric: dashboard should show decisions requiring Mukund Prabhu, decisions delegated, approval SLA, overdue escalations, and repeated exceptions that should become rules or templates.
+Production readiness dashboard: Day 30 dashboard should distinguish live, semi-automated, mock, API-pending, fallback-active, and production-ready flows.
+11. CRM / ERP / Data Expectations
+Evidence basis: KCKE_Media_CRM_Dependency_Map.docx.; Project Glossary v0.5.; Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 12.
+Platform compatibility requirement: every WF-012 build must use or produce common IDs and source tracking wherever applicable. For pure website/domain inventory, Contact/Donor/Yatri IDs may not apply. For landing pages/forms/donation/yatra pages, they are mandatory once data capture begins.
+Entity | Required fields | Source of truth expectation
+Website / Domain | website_id, domain_id, URL, CMS, owner, purpose, expiry, status | Current: manual/registrar/hosting/Sheets. Future: website registry → ERP/central DB.
+Landing Page Request | request_id, page type, requester, campaign_id, source, due date, owner_id, approver_id, status | Current: Google Sheet/manual. Future: workflow app/CRM-linked task.
+Campaign / Source | campaign_id, source_type, UTM, referral_source, website_source, event_source, donor_source, yatra_source | Current: scattered. Future: CRM/marketing data model + analytics warehouse.
+Contact / Donor / Yatri | Contact ID, Donor ID, Yatri ID, Community ID, Family ID where applicable; consent, status, segment | Current: CRM/Sheets/manual. Future: CRM/DBMS source of truth.
+Payment / Donation | donation_id, payment_status, receipt_status, gateway_id, bank/trust/seva, campaign_id, yatra_id, event_id | Current: gateway/DCC/ERP/manual. Future: finance/DCC/ERP + dashboard.
+Follow-up / Task | task_id, last_follow_up_date, next_action, next_action_owner, priority, status, outcome | Current: manual/WhatsApp/Sheets. Future: CRM/task system.
+Content / Asset / Approval | content_id, source_id, asset_id, rights_status, review_status, approval_status, reviewer, timestamp | Current: Drive/manual. Future: content/media registry + KCKE/Media AI where needed.
+QA / Incident | qa_id, pass/fail, issue_type, severity, incident_id, MTTR, resolution, recurrence | Current: manual. Future: workflow app + reliability dashboard.
+Relationship / Journey Signal | journey_event_id, Contact ID, Donor ID, Yatri ID, source, page_id, campaign_id, event/yatra/seva, last_follow_up_date, next_action, outcome | Current: fragmented web/CRM/analytics/task data. Future: CRM/Relationship Intelligence Graph + analytics warehouse.
+API / Dependency Registry | system_id, connector, owner, access_status, fields, limitation, fallback, production_readiness_status | Current: Assumption / Needs Validation across systems. Future: consolidated platform API/dependency registry.
+Leadership Exception | exception_id, workflow_id, page_id, severity, decision_needed, owner, approver, due_date, resolution | Current: manual escalation. Future: leadership command center + task/approval system.
+
+CRM dependency: page forms must create/update contact records with source, campaign, consent, interest, follow-up status, and owner.
+ERP migration implication: stable entities should migrate later to ERP/central DB; POC can remain in Sheets/AppSheet if IDs and ownership are disciplined from Day 1.
+Data quality risks: missing IDs, duplicate contacts/campaigns, wrong source tags, unmapped payment links, stale page inventory, unrecorded approvals, and poor consent/DND handling.
+Source basis: HKHT_AI_Transformation_Analysis(1).html recommendations on unified master data, API registry, ERP transition caution, and platform integration; existing Document B Sections 11 and 14; Workflow-to-Data Dependency Map referenced in existing brief.
+Unified master data requirement: partner must not create a separate isolated website-contact table. Contact, Donor, Yatri, Community, Family, Campaign, Event, Yatra, Donation, Page, Task, Approval, and Source IDs must align with the platform master data model.
+API registry requirement: every integration required by WF-012 must be listed with system, owner, purpose, access status, authentication method, data fields, limitations, fallback, and production readiness status.
+ERP transition caution: payment/receipt handoffs must be validated through controlled QA and should not disrupt donor-facing finance processes while ERP transition details remain Assumption / Needs Validation.
+12. KCKE / Media AI Expectations, if applicable
+Evidence basis: KCKE_Media_CRM_Dependency_Map.docx.; KCKE_Knowledge_Graph_Briefing.html and KCKE_Media_CRM_Dependency_Map.docx.; Media_AI_Pipeline_Briefing_Note.docx..
+Use KCKE for source-grounded Krishna conscious content, festival meanings, Prabhupada references, donor narratives, philosophical replies, preaching, education, and devotional content.
+Do not use KCKE for operational records such as contact status, payment status, task status, approval status, inventory, or finance facts.
+Use Media AI only for landing page media, reels, videos, storyboards, yatra/festival/donor media, and approved visual storytelling.
+Media AI must remain separate from Gemini Enterprise Workspace agents; it may consume KCKE output but requires scene-level control, source grounding, image options, audio layers, asset approval, and human review.
+Assumption / Needs Validation: whether the partner can integrate an interim KCKE/content index into WF-012 page content generation in the Day 8–14 Integrated Working MVP.
+13. Governance and Human Approval Expectations
+Evidence basis: KCKE_Media_CRM_Dependency_Map.docx.; Project Glossary v0.5.; WF-012 Website Landing Page Workflow transcript, 23 May 2026. 12:20–16:39.
+Donor-sensitive approvals: donor asks, recurring donations, HNI/CSR language, and impact claims require human approval.
+Financial approvals: bank account, gateway, denomination, receipt logic, refund/exception handling, and go-live payment mapping require finance/DCC approval.
+Public communication approvals: final public page content, brand claims, incident messages, and sensitive campaign communication require human approval.
+Philosophical/devotional approvals: KCKE may support draft/source retrieval, but final spiritual language must be approved by a designated human reviewer.
+Deity/media approvals: deity imagery, temple/location identity, festival visuals, and generated assets require approved asset governance.
+CSR/HNI approvals: high-sensitivity donor/CSR pages require senior review and version history.
+HR/legal approvals if relevant: personnel or legal statements should not be AI-published without validation.
+No AI agent should directly publish sensitive pages, change payment routing, or send public incident messages without an approved human gate.
+Source basis: HKHT_AI_Transformation_Analysis(1).html recommendations on approval bottlenecks, dependency reduction, institutional memory, and cross-workflow QA; existing Document B Section 13; generated WF-012 workflow blueprint Sections 7 and 17.
+Approval SLA requirement: partner must propose configurable approval SLA, delegated approval levels, backup approvers, escalation rules, and audit history so the workflow does not recreate managerial bottlenecks.
+Golden journey approval test: before Day 30 sign-off, one complete page journey must prove that approvals are enforced for content, media, payment-readiness, go-live, and incident communication.
+14. Integration Expectations
+Evidence basis: Mukund Prabhu Operations Master Context Pack v0.5 / v0.2.; Project Glossary v0.5.; Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 11; official Google product documentation to be validated by partner.
+Integration area | Expectation
+Google Workspace | Docs/Sheets/Drive/Gmail/Chat for briefs, assets, approvals, source files, and collaboration.
+Gemini Enterprise / Workspace AI | Drafting, summarization, review assistance, Drive-context retrieval, and user-facing copilots where licensing and data controls permit.
+Apps Script / AppSheet / Sheets | Day 1–7 Production Foundation Sprint and Day 8–14 Integrated Working MVP: forms, workflow app, reminders, approval routing, trackers, simple dashboards.
+Vertex AI / Agent Builder / Gemini Enterprise Agent Platform | Production-grade agentic orchestration where partner validates tool fit, APIs, security, and ownership. Product naming must be confirmed because Google product names evolve.
+Cloud Run / Workflows | Custom services, API mediation, background jobs, and multi-step orchestration across CMS/CRM/payment/DCC/analytics.
+BigQuery / Looker Studio | Central analytics, dashboarding, revenue/conversion reporting, data quality and agent performance metrics.
+CRM APIs | Contact/donor/yatri lead capture, source attribution, follow-up status, owner, next action, consent, suppression.
+ERP APIs | Later migration of validated structured records; ERP should not block demo/MVP.
+Payment gateway / DCC | Donation/payment status, receipt status, bank/gateway mapping, test transaction QA, financial audit trail.
+ClickUp | Task execution layer if WF-008 integration is active; otherwise use Sheets/AppSheet MVP with later task-system integration.
+WhatsApp / voice vendor | Only for approved communication and escalation; requires consent, templates, API access, and governance.
+External tools where Google is insufficient | CMS plugins/APIs, uptime monitoring, registrar/hosting, payment providers, SEO tools, CDNs, analytics connectors.
+Consolidated API / Dependency Registry | Required for CMS, CRM, payment/DCC, analytics, registrar/hosting, WhatsApp/SMS, ClickUp, KCKE, Media AI, and ERP dependencies; must include owner, access, limitation, fallback, and readiness state.
+Leadership command center | WF-012 dashboards should contribute to the single leadership view for revenue, yatra, donor, public-page, approval, incident, and productivity exceptions.
+Golden journey QA testing | Cross-workflow test path from page request to content/asset approval, CRM/source capture, payment-readiness, dashboard update, follow-up/task handoff, and exception review.
+
+Source basis: HKHT_AI_Transformation_Analysis(1).html recommendations on WhatsApp governance, KCKE/Media AI build clarity, and API registry; existing Document B Sections 12 and 14; Project Glossary system separation rules.
+Consolidated WhatsApp/API governance: any WhatsApp/SMS escalation, link sharing, template, or incident communication dependency must be governed through a shared provider/template/access/fallback register before scaled operational use.
+ClickUp execution layer: where WF-008 task governance is active, partner should design a ClickUp handoff for approved tasks, blockers, incidents, follow-ups, and escalations; where not active, Sheets/AppSheet can operate as the Day 30 base with a future ClickUp integration path.
+KCKE/Media AI interface clarity: partner should specify whether WF-012 only consumes approved content/assets or also calls interim KCKE/Media AI services; do not blur operational CRM/payment data with KCKE or Media AI layers.
+15. Day 1–7 Production Foundation Sprint Expectations (formerly 7-Day Demo Expectations)
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 8; Project Glossary v0.5..
+Show quickly: request intake, structured brief, owner/status routing, QA checklist, renewal tracker, mock incident flow, and management dashboard.
+Can be mocked: CMS deployment, payment/DCC/ERP sync, CRM record creation, analytics revenue attribution, uptime alert source, and KCKE source retrieval if corpus is not ready.
+Immediate data needed: 20–50 sample landing pages, website/domain list, current landing page Sheet, sample campaign brief, payment gateway/bank mapping sample, page templates, approval owners, analytics access sample.
+Should not be overclaimed: full auto-publishing, full payment/DCC/ERP automation, full CRM sync, mature KCKE integration, or full multi-center rollout.
+Source basis: 30-day re-alignment instruction; HKHT_AI_Transformation_Analysis(1).html recommendation on dependency realism; existing Document B Section 15.
+Day 1–3 must complete workflow validation, access confirmation, data-source confirmation, owner/approver/backup validation, CRM fields and IDs confirmation, API dependency classification, dashboard schema confirmation, production risk identification, and relevant analysis-file gap mapping.
+Day 4–7 must produce the initial working production foundation: request intake, CRM/Sheet/API data path, first dashboard, first automation, first approval flow, first AI-assisted output, sample live workflow test, and first leadership visibility layer.
+Day 1–7 can still use sample/mock data where dependencies are pending, but the prototype must be designed as production foundation and must clearly label mock, semi-automated, fallback, and live components.
+16. Day 8–14 Integrated Working MVP Expectations (formerly 14-Day MVP Expectations)
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 9; Mukund Prabhu Operations Master Context Pack v0.5 / v0.2. Partner Sprint Model.
+Selected users should be able to use: AppSheet/Sheets workflow for intake, ownership, status, approvals, QA, renewal and dashboard tracking.
+AI should assist with: brief generation, content draft, SEO/meta/FAQ, risk flags, status summaries, and weekly management brief.
+Manual/semi-automated remains acceptable for: CMS build, payment setup, DCC/ERP receipt validation, final go-live, and sensitive communication.
+Acceptance criteria: 10+ real/sample requests entered; 100% have owner/status/approval stage; 5 AI briefs reviewed; 3 pages pass QA; renewal tracker loaded; dashboard reviewed by management; incident drill completed.
+Exclusions: production-grade full API integrations, automatic payment routing, automatic public publishing, full enterprise data warehouse, predictive revenue models.
+Source basis: 30-day re-alignment instruction; HKHT_AI_Transformation_Analysis(1).html recommendations on sequencing gates, API registry, and dependency realism; existing Document B Section 16.
+Integrated MVP must validate workflow execution, CRM/data path, dashboards, AI-assisted actions, human approval routing, selected-user testing, exception routing, API registry, and data quality checks.
+ClickUp/task/follow-up integration should be included where WF-008 task governance is available; otherwise a controlled AppSheet/Sheets task layer must be used with clear future integration path.
+MVP must classify every feature as buildable immediately, demo/mock only, data-required, API-required, ERP-later, custom Google Cloud build, Gemini Enterprise, Vertex AI/Agent Builder, BigQuery/Looker, external vendor, data cleanup, human-approval design, or not to be promised in 2 weeks.
+17. Day 15–30 Production Readiness and Productivity Multiplication Sprint Expectations (formerly 30-Day Pilot Expectations)
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Sections 10, 12–13; KCKE_Media_CRM_Dependency_Map.docx..
+Users: web/tech lead, content reviewer, creative coordinator, payment/DCC/CRM representative, campaign/yatra/donor page owner, Mukund Prabhu or delegated approver, data steward.
+Workflow coverage: 10–20 live or near-live page requests from intake through content, design, payment/CRM QA, approval, launch status, incident/renewal tracking, and dashboard reporting.
+Data requirements: current page tracker, domain inventory, sample payment/receipt mapping, CRM field list, page templates, approval RACI, analytics access, and source-tagging rules.
+Integration scope: CSV/export fallback accepted while APIs are validated; at least one CMS/payment/CRM/DCC integration feasibility test should be completed.
+Success metrics: launch SLA reduction, rework reduction, first-pass QA rate, number of defects caught before go-live, CRM/source completeness, dashboard usage, incident response time.
+Source basis: 30-day re-alignment instruction; HKHT_AI_Transformation_Analysis(1).html recommendations on production gates, leadership visibility, fallback protocol, and cross-workflow QA; existing Document B Section 17.
+Day 15–21 must focus on production hardening, real operational usage, cross-workflow integration, user training, KPI validation, escalation testing, fallback protocol, role ownership refinement, and golden journey QA testing.
+Day 22–30 must complete production readiness review, leadership command center visibility, live operational handover, stabilization planning, productivity measurement, management reporting, partner sign-off checklist, next 60-day stabilization roadmap, and 75-day enterprise-scale readiness roadmap.
+The Day 30 outcome should be a production base for selected WF-012 operations, not a full enterprise endpoint. APIs that remain unavailable must be handled through approved fallback and marked as integration backlog.
+18. 30-Day Production Base + 60-Day Stabilization Expectations (formerly 90-Day Production Foundation Expectations)
+Evidence basis: Mukund Prabhu Operations Master Context Pack v0.5 / v0.2.; KCKE_Media_CRM_Dependency_Map.docx.; Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 11.
+Production architecture: role-based app/workflow, API-ready schema, logging, audit trail, approval gates, exception handling, monitoring, and support model.
+Security/access: least privilege, payment/donor data restrictions, audit logs, admin controls, prompt/data governance, separate roles for requester, builder, reviewer, approver, and finance/DCC.
+Dashboards: management, operational, revenue/conversion, data quality, payment/receipt health, renewal risk, incident performance, AI-agent performance.
+API validation: CMS, CRM, payment gateway, DCC/ERP, analytics, registrar/hosting, task tool, and approved communications channels.
+Data quality governance: unique IDs, required fields, deduplication, validation rules, owner/steward responsibilities, approval logs, and migration plan.
+Support model: triage process, incident severity, escalation path, backup owners, training, documentation, and release/change management.
+Source basis: 30-day re-alignment instruction; existing Document B Section 18; HKHT_AI_Transformation_Analysis(1).html recommendations on production gates, API registry, dependency realism, and fallback protocol.
+30-day production base: operational go-live foundation for controlled WF-012 users, validated data path, dashboards, approval gates, QA, incident/fallback handling, role ownership, and selected live usage.
+Next 60 days: stabilize adoption, harden integrations, improve data quality, reduce manual fallbacks, train users, expand dashboard discipline, validate APIs, improve support model, and increase the proportion of live production flows.
+Stabilization must explicitly track unresolved dependencies, integration maturity, data quality defects, exception patterns, and productivity gains rather than treating Day 30 as the final destination.
+19. 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise Scale Architecture Vision (6-Month Platform Direction Preserved)
+Evidence basis: Mukund Prabhu Operations Master Context Pack v0.5 / v0.2.; KCKE_Media_CRM_Dependency_Map.docx.; Generated WF-012 workflow blueprint in this chat, Sections 2–20. Sections 11 and 18.
+WF-012 plugs into the Hyderabad AI Revenue & Seva Growth Platform as the page/form/payment/source-tracking conversion layer.
+It supports the integrated revenue engine by linking Digital Marketing, Yatra, Donor/LLP/CSR, Voice/CRM, Community Outreach, Finance/DCC, Content/KCKE, and Meeting Intelligence.
+It prepares for national/multi-center replication by stabilizing templates, source IDs, approval gates, dashboard definitions, CRM/payment integration rules, and deployment playbooks.
+It should not attempt full multi-center rollout in the first 60–90 days. It should build architecture compatibility so a later replication playbook can reuse the same data model and governance.
+Source basis: 30-day re-alignment instruction; HKHT_AI_Transformation_Analysis(1).html recommendations on WF-013/multi-center replication and platform integration; existing Document B Section 19.
+By 75 days, WF-012 should be enterprise-scale ready: platform-compatible, dashboard-governed, API-aware, CRM-aligned, ERP-ready, KCKE/Media AI boundary-clear, ClickUp/task-compatible, and multi-workflow integrated.
+The 6-month architecture remains the broader evolution path, but the partner must show how the first 30 days, next 60 days, and 75-day enterprise-scale readiness path connect to the 6-month architecture and future 12–24 month national/multi-center replication.
+WF-013/multi-center replication should not be built fully now, but WF-012 must produce reusable templates, schema, approval gates, QA rules, dashboard definitions, and rollout playbooks that a future WF-013 can package.
+20. Expected Google Product Areas
+Evidence basis: Project Glossary v0.5.; Mukund Prabhu Operations Master Context Pack v0.5 / v0.2.; official Google docs to be validated by partner.
+Likely Workspace/Gemini areas: Docs/Sheets/Drive/Gmail/Chat assistance, draft generation, summarization, Drive-grounded retrieval, reviewer copilots, and internal workflow productivity agents.
+Likely Apps Script/AppSheet/Sheets areas: Day 1–7 Production Foundation Sprint and Day 8–14 Integrated Working MVP for intake, routing, reminders, approvals, QA, renewal tracker, and dashboard prototype.
+Likely Google Cloud areas: Cloud Run for custom services, Workflows for orchestration, BigQuery for analytics, Looker/Looker Studio for dashboards, Vertex AI/Agent Builder/Gemini Enterprise Agent Platform for production agentic workflows if validated.
+Partner must validate what is possible in Gemini Enterprise versus what requires Google Cloud/custom build. Do not present Workspace AI as a replacement for API engineering, CRM governance, payment integration, or ERP migration.
+Source basis: HKHT_AI_Transformation_Analysis(1).html recommendations on system separation and dependency realism; existing Document B Section 20.
+Partner must explicitly classify what is achievable through Gemini Enterprise/Workspace, what needs Apps Script/AppSheet/Sheets, what needs Google Cloud/Cloud Run/Workflows, what needs BigQuery/Looker, what needs Vertex AI/Agent Builder, and what needs external CMS/payment/registrar/communications tools.
+Partner must not position a Workspace AI assistant as a substitute for CRM data governance, payment/receipt QA, API engineering, production logging, support model, human approvals, or ERP-ready architecture.
+Partner Feature Classification Requirement
+Evidence basis: Mukund Prabhu Operations Master Context Pack v0.5 / v0.2. Partner Sprint Model; user instruction.
+Classification | WF-012 interpretation
+Buildable immediately | Forms/AppSheet/Sheets intake, QA checklist, renewal tracker, mock dashboard, AI draft examples if licenses available.
+Demo/mock only | CMS auto-build, payment/DCC/CRM sync, uptime alerts, revenue attribution if APIs/data not available.
+Requires HKHT data | Domain inventory, page tracker, templates, bank/gateway mapping, CRM fields, analytics data, approval RACI.
+Requires CRM/API integration | Lead capture, Contact/Donor/Yatri IDs, follow-up tasks, source attribution, conversion reporting.
+Requires ERP later | Central finance/operations records, full payment/receipt migration, cross-workflow master data.
+Requires custom Google Cloud build | API orchestration, production agents, logging, monitoring, custom dashboards, data pipelines.
+Requires Gemini Enterprise | Workspace-grounded copilots and enterprise agent experiences if licensing/security validated.
+Requires Vertex AI / Agent Builder / agentic systems | Multi-step orchestration and production-grade tool-using agents.
+Requires Apps Script / AppSheet / Sheets | Fast POC/MVP workflow app and automations.
+Requires BigQuery / Looker | Revenue, conversion, data-quality, and agent-performance analytics at scale.
+Requires external vendor tools | CMS, hosting/CDN, payment gateways, registrar, uptime monitoring, WhatsApp/SMS providers.
+Requires data cleanup | Domains, page links, campaign IDs, source tags, duplicate contacts, payment mapping, approval logs.
+Requires human approval design | Devotional/public content, donor-sensitive pages, payment/bank mapping, go-live, incidents.
+Should not be promised in 2 weeks | Full auto-publishing, full ERP/CRM/payment sync, mature KCKE/Media AI, predictive revenue intelligence, multi-center rollout.
+Requires production-readiness gates | Day 1–3 validation, Day 4–7 foundation, Day 8–14 integrated MVP, Day 15–30 production hardening, Day 30 sign-off, 60-day stabilization, and 75-day enterprise-scale readiness review.
+Requires golden journey QA | At least one end-to-end WF-012 journey should be tested across intake, approval, page QA, CRM/source capture, payment-readiness, dashboard update, and follow-up/task creation.
+Requires fallback/service continuity protocol | Manual/CSV/AppSheet fallback for CMS, CRM, payment/DCC, analytics, communications, task-layer, KCKE, Media AI, or AI-agent failure.
+Requires institutional memory capture | Mukund Prabhu’s recurring page, content, denomination, payment, and escalation judgments should be captured as approved rules, examples, and reviewer guidance.
+
+21. Questions for the Implementation Partner
+Evidence basis: Generated WF-012 workflow blueprint in this chat, Sections 2–20. Section 16; Mukund Prabhu Operations Master Context Pack v0.5 / v0.2.; Folder_Structure_Readme.txt v0.5..
+What can be delivered in Day 1–7 Production Foundation Sprint using Forms, Sheets, AppSheet, Apps Script, Gemini/Workspace, and sample/mock data where dependencies are pending?
+What can be delivered in Day 8–14 Integrated Working MVP as a usable selected-user workflow with data path, dashboard, AI assistance, approvals, and exception routing?
+What can become production-ready by Day 30 with real WF-012 users, selected live usage, dashboard visibility, fallback, and partial live data?
+What stabilizes over the next 60 days after the Day 30 production base?
+What is the 75-day enterprise-scale readiness path and 6-month architecture for WF-012 inside the Hyderabad AI Revenue & Seva Growth Platform?
+Which features are demo/mock only?
+Which features require APIs/connectors for CMS, CRM, DCC/ERP, payment gateway, analytics, registrar/hosting, WhatsApp/SMS, or task tools?
+Which features require CRM/ERP/data cleanup before reliable automation?
+Which features require external vendors or non-Google tools?
+What should not be promised in 2 weeks?
+What data does HKHT need to provide immediately?
+What are the cost, licensing, security, privacy, and access risks?
+How will donor/payment data be protected from inappropriate AI exposure?
+How will human approvals be enforced and audited?
+How will IDs and source tracking be designed so this does not become another disconnected tool?
+How will the MVP migrate later to ERP/central data architecture without rework?
+Source basis: 30-day re-alignment instruction; HKHT_AI_Transformation_Analysis(1).html recommendations on production gates, API registry, leadership visibility, fallback protocol, dependency measurement, and QA framework; existing Document B Section 21.
+For each proposed WF-012 feature, please state whether it is buildable immediately, demo/mock only, requires HKHT data, requires CRM/API integration, requires ERP later, requires custom Google Cloud build, requires Gemini Enterprise, requires Vertex AI/Agent Builder, requires Apps Script/AppSheet/Sheets, requires BigQuery/Looker, requires external vendor tools, requires data cleanup, requires human approval design, or should not be promised in 2 weeks.
+What is the Day 30 production readiness checklist for WF-012, and which items require HKHT-side access, data, approval, or owner validation?
+What is the fallback process if CRM, CMS, payment gateway, DCC/ERP, WhatsApp/SMS, analytics, registrar/hosting, ClickUp, KCKE, or Media AI integration is unavailable during the first 30 days?
+How will partner measure Mukund Prabhu dependency reduction for WF-012 without removing necessary human review for strategic, financial, public, devotional, or donor-sensitive decisions?
+How will the partner conduct golden journey QA testing across page request, approval, CRM capture, payment-readiness, dashboard update, and follow-up/task creation?
+22. Expected Deliverables from Google / Implementation Partner
+Evidence basis: Mukund Prabhu Operations Master Context Pack v0.5 / v0.2.; Folder_Structure_Readme.txt v0.5.; user instruction.
+Technical Requirements Document (TRD).
+Solution Architecture.
+Google Product Mapping.
+Agent Architecture.
+Integration Architecture.
+CRM/ERP/Data Architecture.
+Security and Access Model.
+Human Approval Architecture.
+Dashboard Architecture.
+API/Connector Requirements.
+Deployment Architecture.
+Licensing Requirements.
+Cost Estimates.
+Team Structure.
+Rollout Plan.
+Risks and Limitations.
+HKHT-side Dependencies.
+Data Requirements from HKHT.
+Assumptions and Exclusions.
+Required closing condition: partner proposal must explicitly separate Day 1–7 Production Foundation Sprint, Day 8–14 Integrated Working MVP, Day 15–30 Production Readiness Sprint, 30-Day Production Base, 60-Day Stabilization, 75-Day Enterprise-Scale Readiness, 6-month platform architecture, and 12–24 month national/multi-center readiness.
+Assumption / Needs Validation: partner capability, API access, Google licensing, data residency, costs, and production support model must be validated directly with the partner before any TRD or SOW is accepted.
+Source basis: 30-day re-alignment instruction; HKHT_AI_Transformation_Analysis(1).html recommendations on API registry, leadership visibility, fallback protocol, dependency measurement, QA framework, and institutional memory; existing Document B Section 22.
+30-Day Production Readiness Plan with Day 1–3, Day 4–7, Day 8–14, Day 15–21, and Day 22–30 checkpoints.
+60-Day Stabilization Roadmap covering adoption, data quality, integration hardening, dashboard discipline, support model, and unresolved dependency closure.
+75-Day Enterprise-Scale Readiness Roadmap showing how WF-012 becomes platform-compatible for multi-workflow integration and later WF-013/multi-center replication readiness.
+Consolidated API / Connector / Dependency Registry for all WF-012 systems with access status, owner, limitations, fallback, and production-readiness state.
+Golden Journey QA Plan and results template for page request to CRM/source/payment-readiness/dashboard/follow-up loop.
+Fallback and Service Continuity Protocol for AI, CMS, CRM, payment/DCC, dashboard, communications, and task-layer failures.
+Mukund Prabhu Dependency Reduction Measurement Plan with decision types, delegated approvals, approval SLA, exception categories, and institutional-memory capture points.

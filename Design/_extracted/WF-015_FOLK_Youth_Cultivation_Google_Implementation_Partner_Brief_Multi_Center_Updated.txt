@@ -1,0 +1,240 @@
+WF-015 FOLK Youth Cultivation
+Google / Implementation Partner Brief
+Multi-Center Updated Version
+Field | Details
+Project | AI for HKHT Seva
+Purpose | Partner-facing implementation brief for Google / implementation partner solution architects, delivery leadership, and engineering teams.
+Audience | Google Partner team, implementation partner leadership, solution architects, delivery team, HKHT review team.
+Tone | Enterprise-grade, implementation-oriented, platform-compatible, production-shaped.
+Updated scope basis | Earlier WF-015 analysis plus additional Mumbai FOLK multi-center transcript evidence.
+Core rule | Current workflow is evidence of today’s reality, not the target design.
+
+Partner positioning This is not a request for a generic AI demo. WF-015 must be treated as a production-shaped multi-center FOLK relationship intelligence module within the Hyderabad AI Revenue & Seva Growth Platform. The first build may be small, but IDs, data contracts, approval gates, dashboards, and integration paths must be designed from Day 1.
+
+Document Sections
+1. Executive Partner Brief
+2. Updated Current Workflow Understanding
+3. Multi-Center Evidence: What Changed After Mumbai Input
+4. Desired Updated AI-First Future State
+5. Platform Compatibility Requirements
+6. Expected Agents and Copilots
+7. Data Model, IDs, and ERP-Ready Fields
+8. Integration and Google Stack Expectations
+9. Dashboard and Operational Intelligence Expectations
+10. Human Approval and Governance Requirements
+11. Phase Plan: 7-Day Demo, 14-Day MVP, 30-Day Base, 2-Month Architecture
+12. Partner Deliverables Required
+13. Feature Classification Request
+14. Risks, Safeguards, and Validation Flags
+15. Immediate HKHT Data Required
+16. Partner Questions and Acceptance Criteria
+1. Executive Partner Brief
+WF-015 FOLK Youth Cultivation should be designed as a multi-center, AI-assisted, CRM-aligned, KCKE-supported, dashboard-visible, human-governed youth cultivation system. The workflow should track each youth from first contact through programs, reading groups, mentor touchpoints, sadhana progression, seva engagement, trips/Yatras, and long-term preacher/devotee/congregation development.
+Source basis: Earlier WF-015 blueprint; revised 30-Day Production Brief; Mumbai FOLK transcript; Google Partner Scope Alignment Note; Gap Analysis and Important Upgrades documents.
+Topic | Updated Brief
+Strategic role | FOLK is a long-term youth-to-devotee/preacher pipeline, not only an event attendance workflow.
+Multi-center requirement | The same platform must support centralized center models and distributed city-node models such as Mumbai’s five-center structure.
+Production mindset | Day-7 and Day-14 work can use sample/mock data, but must preserve production-shaped IDs, data paths, approvals, dashboards, and integration contracts.
+Primary design shift | Move from isolated program follow-up to relationship intelligence: full seeker timeline, mentor memory, sadhana signals, dormant contact reactivation, and center-wise dashboards.
+Partner ask | Provide TRD, solution architecture, Google product mapping, integration architecture, costing, risks, deployment plan, and phased rollout plan.
+
+2. Updated Current Workflow Understanding
+The current FOLK workflow is distributed across human relationships, programs, apps, CRMs, WhatsApp/calls, attendance systems, sadhana tracking, online courses, and mentor memory. It is functional, but not yet a unified relationship intelligence system.
+Current Element | Updated Understanding
+Primary trigger | A youth enters through book/pamphlet distribution, online course/webinar, paid social ad, event registration, referral, reading group, college/hostel outreach, or festival.
+Immediate action | Usually invite or call the youth to a weekend/daily program, online reading group, course, or local center session.
+People involved | FOLK heads, local guides, volunteers, callers, presenters, sadhana/attendance coordinators, data/app coordinators, and leadership reviewers. Exact owner/approver/backup requires validation [Owner: NV].
+Current tools | FOLK CRM, DMT CRM, Prabhupada World / e-learning platform, sadhana trackers, no-code web apps, event registration pages, Google tools, WhatsApp, calls, and reports. Exact APIs/export formats require validation [API: NV].
+Current reports | Attendance, lead source, follow-up, sadhana, ashram level, potential preacher, residency/center strength, events and program performance. Final standard dashboard definition requires validation [Data: NV].
+Current gap | The mentor may know the youth’s real interest, inclination, enthusiasm, family/career concerns and spiritual doubts, but this knowledge may not be captured in the system.
+
+3. Multi-Center Evidence: What Changed After Mumbai Input
+The Mumbai transcript confirms the earlier design but adds important multi-center requirements. These should be treated as platform design requirements, not late scope changes.
+Mumbai Evidence | Required Platform Implication
+Distributed center model | Mumbai does not operate only as one centralized weekend-stay model; it has separate programs in multiple city centers. The system must support Center_Node_ID and local program nodes.
+Online + offline cultivation | Mumbai uses online courses, webinars, community e-learning, and daily online reading groups, but physical touch through trips, festivals, or center visits remains important.
+Multiple CRMs/apps | DMT CRM, Prabhupada World, FOLK CRM, sadhana trackers and no-code apps already exist. The first architecture should support mapping/integration, not forced replacement.
+Individual follow-up frequency | Different youth need different follow-up intensity. Some can attend daily; others feel pressured by weekly follow-up. AI must recommend frequency, not blindly automate reminders.
+Drop-off psychology | Drop-off can happen due to fear of detachment, family/friend pressure, misunderstanding, guilt from not following, or avoidance of guide calls.
+Mentor memory | Mentors know details that are not in the database. The system must capture structured mentor notes without weakening trust.
+Long-term cultivation | A youth may return after years. The platform must support dormant contact reactivation and long-term relationship memory.
+
+4. Desired Updated AI-First Future State
+Layer | Future-State Requirement
+Automated | Contact intake, source tagging, attendance capture, duplicate detection, follow-up task creation, reminder creation, dashboard refresh, basic stage transitions.
+AI-assisted | Follow-up drafting, stage classification, drop-off risk detection, guide meeting preparation, KCKE-grounded presentation outlines, dormant reactivation suggestions, trip/Yatra readiness suggestions.
+Agentic | Seeker Journey Agent, Program Follow-up Agent, Sadhana Progress Agent, Data Quality Agent, Management Intelligence Agent, Field Outreach Prioritization Agent, Dormant Contact Agent.
+Human-approved | Spiritual guidance, personal counseling, public devotional/philosophical content, sensitive mentor notes, donor-sensitive communication, major role routing, and high-risk exceptions.
+Dashboard-visible | Center-wise progress, new contacts, repeat attendance, sadhana gaps, one-on-one gaps, drop-off risk, potential preachers, data quality, pending approvals, partner blockers.
+Platform-compatible | Common IDs, source tracking, CRM continuity, ERP-ready fields, integration contracts, WF-013 replication readiness, BigQuery/Looker intelligence path.
+
+5. Platform Compatibility Requirements
+Requirement | Partner Design Rule
+Identity discipline | Use Common Contact ID as root identity; link FOLK Seeker ID, Donor ID, Yatri ID, Campaign ID, Event ID, Course ID, Guide ID, Task ID where relevant.
+CRM/DBMS boundary | CRM/DBMS stores contacts, source attribution, follow-ups, touchpoints, relationship timeline, stages, mentor notes, and relationship status.
+ERP boundary | ERP stores validated financial/operational records such as payments, receipts, inventory, vouchers, procurement, finance, HR and approvals. WF-015 should only link to ERP IDs when relevant.
+KCKE boundary | KCKE is for source-grounded Krishna conscious content, Prabhupada references, presentation support, philosophical replies and devotional content. It must not store contact status, payment status, attendance or task status.
+Media AI boundary | Media AI may support reels, presentations, storyboards and event/yatra/festival content, but must not become CRM, ERP or source of spiritual truth.
+Gemini Enterprise boundary | Workspace productivity, drafting, summaries, Drive search, meeting support, and internal assistant capabilities.
+Vertex AI / Agent Builder | Scalable agents, classification, recommendation, routing, prediction, graph/RAG integration and future production-grade orchestration.
+BigQuery / Looker Studio | Leadership dashboards, center comparisons, data quality intelligence, progression trends, and future predictive analytics.
+ClickUp / task layer | Task execution and accountability layer where selected by HKHT. Exact integration status [API: NV].
+WF-013 readiness | FOLK configuration templates, center model types, standard fields, dashboard templates and training kit must be designed for future replication.
+
+6. Expected Agents and Copilots
+Agent / Copilot | Purpose and Expected Behavior | Suggested Phase
+Seeker Journey Agent | Track youth from first contact to serious engagement; use contact, attendance, source, follow-up, sadhana and mentor signals; output stage, next action and risk flags. | Day 7 mock; Day 14 selected-user MVP; Day 30 controlled base.
+Program Follow-up Agent | Generate human-approved follow-up drafts and tasks after programs, courses, reading groups, webinars and events. | Day 7/14.
+Sadhana Progress Agent | Track sadhana reports, chanting consistency, ashram level, reading group participation and gentle reminder needs. | Day 14 sample; Day 30 controlled base [Data: NV].
+Guide Support Copilot | Prepare guide before one-on-one interactions using timeline and mentor notes; suggest tone and next action. Begin with manual/voice mentor summaries, not automatic private conversation recording. | Day 30 limited; deeper version in 2-month architecture/future [Scope: NV].
+Content Presentation Copilot | Use KCKE to prepare source-grounded talks, outlines, Q&A and follow-up reading for specific audiences and topics. | Day 7 mock if KCKE sample available; otherwise future [API: NV].
+Yatra / Trip Interest Agent | Identify youth ready for one-day, two-day, longer trips/Yatras or physical association touchpoints; recommend human-approved invite. | Day 14/30 with sample data; integration with WF-001 later.
+Data Quality Agent | Deduplicate, map cross-CRM contacts, identify missing fields, source-tag records and create Contact ID mapping. | Day 7/14 high priority.
+Management Intelligence Agent | Generate weekly center-head and leadership dashboards: progression, potential preachers, drop-off risk, data quality, center-node health. | Day 14/30.
+Field Outreach Prioritization Agent | For college/hostel/room outreach, identify high-response contacts and recommend early follow-up. | 2-month architecture unless sample field data is ready [Data: NV].
+Dormant Contact Re-Activation Agent | Surface older contacts who may be ready for re-engagement through festival, course, trip or mentor follow-up. | 2-month architecture; long-term intelligent version future.
+
+7. Data Model, IDs, and ERP-Ready Fields
+The partner should propose a master data model and integration contract before building production components. The schema should support both direct CRM implementation and interim mapping over existing CRMs/apps.
+Data Area | Fields / IDs to Support
+Identity | Contact_ID, FOLK_Seeker_ID, Center_ID, Center_Node_ID, Primary_Guide_ID, Secondary_Guide_IDs, Owner_ID.
+Source tracking | Primary_Source, Source_Detail, Book_Distribution_Batch_ID, Pamphlet_Batch_ID, Webinar_ID, Course_ID, Campaign_ID, Referral_Contact_ID, Event_ID.
+Journey | Current_Stage, Stage_Last_Updated, First_Contact_Date, First_Attendance_Date, Last_Attendance_Date, Repeat_Attendance_Count, Seva_Engagement_Status.
+Follow-up | Last_Followup_Date, Next_Followup_Date, Next_Action, Next_Action_Owner, Followup_Channel, Outcome, No_Response_Count, Dormant_Status.
+Mentor memory | Mentor_Note_ID, Relationship_Timeline_ID, Interest_Profile, Spiritual_Doubts, Family_Concern_Flag, Career_Concern_Flag, Sensitive_Note_Access_Level.
+Sadhana / progression | Sadhana_Report_Status, Last_Sadhana_Report_Date, Chanting_Consistency, Rounds_Level, Ashram_Level, Reading_Group_ID, Course_Completed, Potential_Preacher_Flag.
+Trip/Yatra linkage | Trip_ID, Yatra_ID, Yatra_Readiness_Level, Past_Trip_Count, Payment_ID if applicable, Payment_Status if applicable.
+Dashboard | Dashboard_Status, Data_Quality_Score, AI_Risk_Flag, Approval_Status, Escalation_Status.
+ERP-ready references | Donation_ID, Payment_ID, Receipt_ID, Approval_ID, Event_ID, Task_ID where applicable; actual financial records remain in ERP/finance systems.
+
+8. Integration and Google Stack Expectations
+Integration Area | Expectation / Boundary
+Existing FOLK CRM / app | Export/API/webhook availability must be classified. CSV fallback acceptable for demo/MVP [API: NV].
+DMT CRM | Needs mapping to Contact ID for leads that enter FOLK journey [API: NV].
+Prabhupada World / LMS | Course enrollment, attendance, completion, user records and online journey events should map into FOLK CRM [API: NV].
+Sadhana tracker | Sadhana report and ashram-level data should be ingested with sensitive access controls [API: NV].
+WhatsApp / calls | Use human-approved drafts initially. Full WhatsApp API or voice integration should not be promised until provider/API access is confirmed [API: NV].
+Google Meet / Zoom | Meeting attendance duration can become enthusiasm signal; integration requires capability/access validation [API: NV].
+KCKE | Use for source-grounded presentation support and devotional/philosophical content. Interface details [API: NV].
+BigQuery / Looker Studio | Recommended for production analytics and leadership dashboards. MVP can use Sheets/Looker depending on data readiness.
+Vertex AI / Agent Builder | Required for production-grade, multi-step agentic routing, predictions and relationship intelligence beyond simple GE drafts.
+Gemini Enterprise | Useful for internal drafting, summarization, data explanation, productivity copilots, Drive/Workspace search and review workflows.
+ClickUp | Optional execution/task governance integration if HKHT confirms use for WF-015 tasks [API: NV].
+
+9. Dashboard and Operational Intelligence Expectations
+Dashboard | Expected Tiles / Decisions Triggered
+Leadership dashboard | Center-wise active contacts, new contacts, repeat attendance, potential preachers, drop-off risk, overdue follow-ups, data quality, partner blockers.
+Center-head dashboard | Center-node health, lead source quality, program attendance, online-to-offline conversion, sadhana gaps, one-on-ones overdue, trip/Yatra readiness.
+Guide dashboard | Assigned youth, current stage, last contact, suggested tone, sensitive flags, next action, recent attendance/sadhana signals.
+Data quality dashboard | Duplicates, missing fields, unmapped records, stale contacts, source gaps, CRM export errors.
+AI performance dashboard | Suggestions generated, suggestions approved, false alerts, draft acceptance, unresolved escalations [Data: NV].
+2-month intelligence view | Trend and progression insights; early prediction readiness for drop-off, serious engagement and Yatra/trip conversion.
+
+10. Human Approval and Governance Requirements
+Governance Area | Requirement
+AI can do | Draft, classify, summarize, score, recommend, route, alert, prepare dashboards and propose next action.
+AI cannot finalize | Sensitive spiritual guidance, counseling, public devotional/philosophical content, donor-sensitive messages, financial/payment/receipt decisions, high-risk exceptions.
+Guide Support Copilot boundary | Use mentor-approved notes and human review first. Automatic recording/real-time coaching requires separate governance and explicit scope approval [Scope: NV].
+Access control | Sensitive mentor notes must have role-based access; not every coordinator should see all youth-sensitive context.
+Routing validation | Accountable owner, performer, approver, backup, escalation person, dashboard reviewer and data steward must be validated before automation routes go live [Owner: NV].
+Audit trail | All AI-generated suggestions, human approvals, follow-up tasks and stage changes should be logged.
+
+11. Phase Plan: 7-Day Demo, 14-Day MVP, 30-Day Base, 2-Month Architecture
+Phase | Expected Outcome | Dependency / Management Checkpoint
+Day 1–7 Demo | Production-shaped demo using mock/sample data: multi-center FOLK CRM view, Contact ID mapping, Seeker Journey Agent, Program Follow-up draft, Data Quality Agent, dashboard mock. | HKHT to provide anonymized sample contacts, attendance, sadhana, course and follow-up data [Data: NV].
+Day 8–14 MVP | Selected-user MVP for 1–2 center nodes: intake/CSV upload, dedupe/mapping, attendance/follow-up, AI draft, sadhana signal, center dashboard, human approval flow. | Existing app/CRM exports; selected users; approval owners [Owner: NV] [API: NV].
+Day 15–30 Production Base | Controlled live or near-live usage for one center node; stable data path; dashboard; manual fallback; guide notes; AI-assist with human review; explicit scope sign-off. | Partner to classify live vs CSV vs mock; HKHT to validate owner and data steward [Scope: NV].
+2-Month Architecture | Production architecture for multi-center WF-015: persistent data store, common IDs, integration architecture, KCKE interface, BI layer, security model, API registry, support model, WF-013 packaging. | TRD, solution architecture, integration decisions, cost estimate, risk register.
+Beyond 2 Months | Devotee Intelligence Graph, predictive progression, real-time guide assistance, social signal intelligence, advanced dormant reactivation, federated multi-center learning. | Future roadmap only; do not convert into Day-30 promise [Scope: NV].
+
+12. Partner Deliverables Required
+Technical Requirements Document (TRD) for WF-015 with validated assumptions and exclusions.
+Solution Architecture showing current apps/CRMs, mapping layer, agent layer, dashboard layer and future ERP-ready path.
+Google Stack Mapping: Gemini Enterprise vs Vertex AI / Agent Builder vs BigQuery / Looker Studio vs Apps Script/AppSheet/Sheets vs Cloud Run/Workflows.
+Agent Architecture with tools, inputs, outputs, human approval gates and escalation logic.
+CRM / Data Architecture including Contact ID strategy, multi-CRM mapping, source tagging, relationship timeline and data quality model.
+Integration Architecture including FOLK CRM, DMT CRM, Prabhupada World, sadhana tracker, WhatsApp/call systems, Google Meet/Zoom, KCKE and dashboard systems.
+Dashboard Architecture with leadership, center-head, guide, data quality and AI performance views.
+Security and Access Model for sensitive mentor notes, devotional content review, dashboards and role-based visibility.
+Deployment Architecture for demo, MVP, production base and 2-month architecture.
+API/Connector Requirements and API Registry.
+Cost Estimate and Licensing Requirements.
+Rollout Plan for Day-7, Day-14, Day-30 and 2-month architecture.
+Risk Register and Mitigation Plan.
+HKHT-Side Dependencies and Data Requirements.
+Acceptance Criteria and Handover Plan.
+13. Feature Classification Request
+Item | Required Classification
+Feature / Capability | Partner must classify as
+Seeker Journey Agent | Day-7 demo / Day-14 MVP / Day-30 base / production custom build
+Data Quality Agent | Buildable immediately / needs sample data / production persistent DB required
+Multi-CRM mapping | CSV-based / API-dependent / custom integration / future phase
+Sadhana Progress Agent | Buildable now / requires tracker export / requires sensitive access design
+Guide Support Copilot | Manual note-based now / recording-based future / not included without approval
+KCKE Presentation Copilot | Mock only / KCKE API-dependent / future roadmap
+WhatsApp follow-up | Draft-only / template API-dependent / human-send / future automation
+Google Meet/Zoom attendance import | Manual upload / API-dependent / future connector
+Dashboard | Sheets/Looker demo / production BigQuery/Looker / custom dashboard
+WF-013 replication | Template design now / implementation future / multi-center package in 2-month architecture
+
+14. Risks, Safeguards, and Validation Flags
+Risk | Why It Matters | Safeguard | Flag
+Disconnected tools | Multiple CRMs/apps remain unlinked. | Common Contact ID + mapping layer first. | [API: NV]
+Demo mistaken for production | Partner may show mock but users expect live integrated system. | Every feature must be classified: mock, CSV, API-ready, live. | [Scope: NV]
+Over-contacting youth | Excess follow-up can create pressure or guilt. | Interaction frequency recommendation + mentor approval. | [Data: NV]
+Sensitive mentor notes exposed | Personal/spiritual issues may be mishandled. | Role-based access and sensitive note level. | [Owner: NV]
+KCKE boundary confusion | Generic AI could create spiritually inaccurate content. | Use KCKE for source-grounded content; human approval. | [API: NV]
+Guide Support Copilot overreach | Recording/real-time guidance can damage trust if mishandled. | Start with mentor summaries; recording features future only. | [Scope: NV]
+Weak adoption | FOLK guides are busy; tools may fail without support. | Simple UI, voice note capture, daily/weekly support rhythm. | [Scope: NV]
+Wrong routing | Transcript-derived names may not be current owners. | Validate accountable owner, performer, approver, backup. | [Owner: NV]
+
+15. Immediate HKHT Data Required
+Data / File Needed | Why Needed | Phase | Status
+FOLK CRM sample export | Contact, source, stage, guide, attendance, follow-up. | Day 7/14 | [Data: NV]
+DMT CRM sample leads | To test lead mapping into FOLK journey. | Day 7/14 | [Data: NV]
+Prabhupada World sample data | Course enrollment, completion, attendance, user ID. | Day 14 | [Data: NV]
+Sadhana tracker fields | To define sadhana signal and access model. | Day 14/30 | [Data: NV]
+Event/attendance sheet | To build attendance and repeat participation dashboard. | Day 7 | [Data: NV]
+Follow-up tracker | To define SLAs and next-action fields. | Day 7/14 | [Data: NV]
+Mentor note samples | Anonymized examples to design Guide Support Copilot. | Day 14/30 | [Data: NV]
+Program/course list | To map standard and local programs. | Day 7 | [Data: NV]
+Dashboard/report examples | To align management view and KPIs. | Day 7 | [Data: NV]
+Owner/approver matrix | To route tasks and approvals. | Day 7/14 | [Owner: NV]
+
+16. Partner Questions and Acceptance Criteria
+# | Question
+1 | What can be demonstrated in 7 days using mock/sample data while preserving production-shaped IDs?
+2 | What can be used by selected FOLK users within 14 days?
+3 | What can be live or controlled-production by Day 30?
+4 | What becomes the 2-month architecture and stabilization plan?
+5 | Which features require Gemini Enterprise vs Vertex AI / Agent Builder?
+6 | Which features require BigQuery / Looker Studio?
+7 | How will existing FOLK/DMT/Prabhupada World data be mapped without disrupting current operations?
+8 | Which APIs/connectors are confirmed, unknown, or unavailable?
+9 | How will mentor-sensitive notes be access controlled?
+10 | What is demo-only, CSV-based, API-ready or fully integrated?
+11 | How will KCKE source-grounding work for presentation support?
+12 | How will WF-015 feed WF-013 multi-center replication?
+
+Minimum Acceptance Criteria
+Milestone | Acceptance Criteria
+Day 7 | Show multi-center FOLK journey with sample data, common IDs, Seeker Journey, follow-up draft, data quality view and dashboard mock.
+Day 14 | Selected users can upload/use sample data, create follow-up tasks/drafts, review dashboard and validate stage/risk suggestions.
+Day 30 | Controlled production base with stable data path, human approval, fallback, dashboard, owner routing and audit trail.
+2 Months | TRD, production architecture, integration plan, persistent data path, security model, cost plan and WF-013 replication package.
+
+Appendix A — Source Basis Used for This Updated Partner Brief
+Source | How It Was Used
+Earlier WF-015 blueprint and workflow analysis | Baseline current/future workflow, agent design, dashboard and data model.
+Earlier FOLK transcript / Ahmedabad evidence | Original FOLK multi-center expansion and youth cultivation evidence.
+Mumbai FOLK transcript | New multi-center evidence: distributed centers, existing apps/CRMs, online/offline cultivation, sadhana, mentor memory, drop-off patterns, agent ideas.
+30-Day Production-Ready Document B | Production-shaped sprint, platform compatibility and partner deliverable framing.
+Internal Preparation Document | Plain-language explanation of workflow, data, approvals and demo checks.
+Google Partner Scope Alignment Note | Partner-facing clarification of intended architecture and phasing.
+HKHT GE Technical Scope | Partner technical scope assumptions: GE MVP vs production hardening, connector/custom/backbone classification.
+HKHT GE Technical Scope — Gap Analysis | Cross-workflow continuity, shared ID, dashboard, operational memory and architecture gaps.
+Claude Analysis / Important Upgrades | Relationship graph, predictive intelligence, institutional memory and multi-center scale recommendations.
+KCKE / Media / CRM / ERP Dependency documents | System boundary rules and source-grounded content governance.
+
+Final partner-facing instruction Please do not reduce WF-015 to a small standalone FOLK app or generic chatbot. The requested outcome is a production-shaped, multi-center FOLK relationship intelligence module that starts small in execution but preserves platform architecture, data discipline, human governance and future scale from Day 1.
+

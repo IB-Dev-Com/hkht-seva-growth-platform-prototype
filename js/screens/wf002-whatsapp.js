@@ -12,9 +12,9 @@ App.screens['wf002-whatsapp'] = (function () {
     var replied = msgs.filter(function (m) { return m.status === 'replied'; }).length;
     var optOut = msgs.filter(function (m) { return m.optOut; }).length;
 
-    var tabsBar = ui.tabs([{ id: 'log', label: 'Delivery log', icon: '📨', count: msgs.length }, { id: 'templates', label: 'Template inventory', icon: '📝', count: s.waTemplates.length }], tab, function (t) { tab = t; store.emit(); });
+    var tabsBar = ui.tabs([{ id: 'log', label: 'Delivery log', icon: '📨', count: msgs.length }, { id: 'templates', label: 'Template inventory', icon: '📝', count: s.waTemplates.length }, { id: 'governance', label: 'Governance register', icon: '🛡️' }], tab, function (t) { tab = t; store.emit(); });
 
-    var body = tab === 'log' ? logView(msgs) : templatesView(s.waTemplates);
+    var body = tab === 'log' ? logView(msgs) : tab === 'templates' ? templatesView(s.waTemplates) : governanceView(s, msgs);
 
     return el('div', {}, [
       ui.pageHead('WhatsApp Follow-up', 'Send approved follow-up content and log delivery/replies back to the relationship record. <b>Only approved templates</b> ship in production; opt-outs update CRM consent instantly.', null),
@@ -47,6 +47,28 @@ App.screens['wf002-whatsapp'] = (function () {
         el('div.row.gap-6.mt-8', {}, [ui.idChip(t.id), t.status === 'pending' ? el('span.t-xs.t-mut', { text: '· awaiting donor approver' }) : null])
       ] });
     }));
+  }
+
+  function governanceView(s, msgs) {
+    var optOuts = msgs.filter(function (m) { return m.optOut; }).length + s.suppression.filter(function (x) { return x.type === 'Opt-out'; }).length;
+    return el('div', {}, [
+      ui.note('info', 'Single template inventory with one governance register — every message mapped to owner, purpose, category and fallback. Opt-out updates CRM consent; suppressed contacts are never messaged; rejected templates require fallback wording.', '🛡️'),
+      el('div.grid.cols-4.mt-12.mb-16', {}, [
+        ui.kpi({ icon: '📋', label: 'Provider', value: 'Interakt', accent: 'green', sub: 'BSP · Cloud API' }),
+        ui.kpi({ icon: '🆔', label: 'DLT registration', value: 'Pending', accent: 'amber', sub: 'entity in progress' }),
+        ui.kpi({ icon: '🚫', label: 'Opt-outs honoured', value: optOuts, accent: 'red' }),
+        ui.kpi({ icon: '📶', label: 'Rate-limit headroom', value: '78%', accent: 'green' })
+      ]),
+      ui.card({ pad: false, body: [ui.table({ columns: [
+        { label: 'Template', render: function (t) { return el('b.t-sm', { text: t.name }); } },
+        { label: 'Category', render: function (t) { return ui.badge(t.category, 'neutral'); } },
+        { label: 'Purpose', render: function (t) { return el('span.t-xs.t-mut', { text: t.body.slice(0, 60) + '…' }); } },
+        { label: 'DLT / approval', render: function (t) { return ui.statusBadge(t.status); } },
+        { label: 'Fallback', render: function (t) { return el('span.t-xs', { text: t.status === 'approved' ? 'SMS fallback wording' : 'Manual owner review' }); } },
+        { label: 'Owner', render: function () { return (store.user('U-DEEPAK') || {}).name; } }
+      ], rows: s.waTemplates })] }),
+      ui.note('amber', 'High-volume sends require delivery monitoring; a rejected template blocks send until fallback wording is owner-approved. Report cadence: messages sent, delivery/read, reply rate, opt-out count, conversion-from-message.', '📊')
+    ]);
   }
 
   return { render: render, title: 'WhatsApp Follow-up' };

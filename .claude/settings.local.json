@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(python -c ' *)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(mkdir -p Design/_extracted)",
+      "Bash(python -)"
     ]
   }
 }

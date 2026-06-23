@@ -1,0 +1,211 @@
+WF-006 CRM / DBMS Governance – Google Partner Scope Alignment and Improvement Note
+Partner-facing scope alignment note for the 30-Day Production Base + 60-Day Stabilization + 75-Day Enterprise-Scale Readiness path
+AI for HKHT Seva | Hyderabad AI Revenue & Seva Growth Platform
+1. Purpose of This Note
+This note helps the Google Partner / implementation partner align the technical scope for WF-006 CRM / DBMS Governance with the intended HKHT AI for Seva architecture.
+This is not a rejection of the partner’s current work.
+This is not adding random new scope.
+This is a clarification of the intended architecture so the partner can classify, phase and strengthen the implementation plan correctly.
+The latest Document B – 30-Day Production-Ready Implementation Brief should be treated as the workflow-specific partner baseline.
+Production readiness does not mean every long-term feature is finished in 30 days. It means the WF-006 module has a stable production base, validated data path, approval routing, dashboard visibility, owner routing, fallback process and integration contract.
+Evidence note: Based on Latest Document B, HKHT GE Technical Scope, HKHT GE Technical Scope — Gap Analysis and user-provided scope alignment instructions.
+2. Core Understanding Expected from the Partner
+WF-006 is the CRM/DBMS governance backbone for the Hyderabad AI Revenue & Seva Growth Platform. It should not be reduced to a small isolated demo or disconnected automation. It must be a production-aligned module that preserves common IDs, source tracking, approvals, dashboards, CRM/ERP readiness and future scale.
+Expected understanding | WF-006 meaning
+Operational role | Create the governed master relationship data foundation for contacts, donors, yatris, families, communities, campaigns and follow-ups.
+Revenue role | Enable clean donor cultivation, source-to-revenue visibility, donation follow-up and HNI/CSR relationship preparation.
+Yatra role | Connect source leads, voice follow-up, registration status, payment status, Yatra history and post-Yatra cultivation.
+Preaching role | Preserve community, family, devotional interest and outreach history without mixing operational CRM records with KCKE spiritual knowledge.
+Management role | Reduce manual chasing by giving leadership dashboard visibility into CRM health, data quality, follow-up delays, approvals and exceptions.
+Platform role | Provide shared IDs, data contracts and integration paths for other workflows and future WF-013 multi-center replication.
+
+Evidence note: Based on Latest Document B sections 1–3, CRM transcript, Gap Analysis WF-006 and Shared ID Architecture.
+3. Intended Architecture from the Beginning
+The following items should be understood as part of the intended architecture and agentic development thought process from the beginning. They are not late additions; they are the platform context that prevents WF-006 from becoming a short-lived standalone tool.
+Architecture component | Expected WF-006 interpretation
+Relationship intelligence | A full person timeline: source, campaign, calls, notes, Yatra interest, donation history, community link, follow-up and owner.
+Predictive intelligence | Future readiness for donor propensity, Yatra demand prediction, campaign response prediction and priority scoring.
+Real-time AI assistance | Context and next-best-action support for callers, donor cultivators and CRM/data stewards, with approval gates.
+Institutional memory | Approved decisions, data rules, relationship insights and Mukund Prabhu’s judgment encoded into searchable systems.
+KCKE source-grounding | Use KCKE only for devotional knowledge, Srila Prabhupada references, scripture, preaching and donor narratives; not operational CRM records.
+Media AI | Use Media AI for approved media, storyboards and donor/Yatra inspiration content; not as CRM, ERP or source of spiritual truth.
+CRM/DBMS operational truth | CRM governs contacts, source tracking, touchpoints, relationships, follow-ups, segments and campaign readiness.
+ERP-ready structured records | Use ERP-ready IDs and fields from Day 1; ERP later owns validated operational/financial records.
+Gemini Enterprise productivity support | Workspace search, summaries, drafting, internal productivity and user-facing copilot patterns where appropriate.
+Vertex AI / Agent Builder | Production-grade agents, orchestration, scalable workflows, confidence scoring and tool use beyond simple Workspace demos.
+BigQuery / Looker Studio | Analytics and intelligence layer for data quality, conversion, source ROI, leadership dashboards and cross-workflow intelligence.
+ClickUp task governance | Execution layer for follow-up tasks, exceptions, meeting decisions and owner accountability where applicable.
+Leadership command center | WF-006 must feed CRM health, data quality, campaign readiness and follow-up intelligence into leadership visibility.
+WF-013 readiness | WF-006 should be packaged as a reusable data governance template for future multi-center replication.
+
+Evidence note: Based on , Important Upgrades - Claude, HKHT_AI_Transformation_Analysis(1).html, Gap Analysis, KCKE Knowledge Graph Briefing, Media AI Pipeline Briefing Note and Latest Document B.
+4. Scope Alignment with Latest Document B
+The latest Document B should be understood as a 30-day production-shaped execution brief, not only as a demo/MVP note.
+Phase | Partner interpretation
+Day 1–7 Production Foundation Sprint | Validate workflow truth, owners, source systems, CRM fields, common IDs, API status, dashboard schema, risks; show first working data path, dashboard, automation, approval flow and AI-assisted output.
+Day 8–14 Integrated Working MVP | Selected users test CRM/data paths, AI-assisted actions, dashboard visibility, exception routing, ClickUp/task follow-up where relevant, human approval routing and API registry validation.
+Day 15–30 Production Readiness Sprint | Controlled operational usage, cross-workflow integration, training, KPI validation, escalation testing, fallback process, role ownership refinement and golden journey QA testing.
+60-Day Stabilization | Adoption, bug fixing, API hardening, dashboard refinement, user training, approval discipline, data quality review and support rhythm.
+75-Day Enterprise-Scale Readiness | Enterprise review of scalable architecture, shared IDs, multi-workflow integration, command-center contribution, BigQuery/Looker path, Vertex/Agent Builder path and WF-013 package readiness.
+
+Partner note: the 30-day production base can start with selected live or controlled operational users. It should not claim full enterprise deployment, full ERP migration or full integration of every vendor API unless access and production readiness are confirmed.
+Evidence note: Based on Latest Document B sections 15–19 and 30-Day Production Readiness Checklist.
+5. Scope Alignment with HKHT GE Technical Scope vs Gap Analysis
+The GE Technical Scope correctly identifies WF-006 as a Backbone/P1 workflow and proposes Gemini Enterprise chat/custom UI, ADK batch, GE no-code, GCS bucket for bulk CSV, DB connector/MCP, source systems, persistent database and future ERP path. The Gap Analysis clarifies that this must move beyond an isolated Gemini Enterprise feasibility demonstration and become a production-aligned CRM/data platform module.
+Area | Practical scope alignment | Evidence
+Already covered | WF-006 is recognized as foundational/backbone. GE/productivity layer, batch processing, bulk CSV/GCS path, DB connector and persistent DB → ERP direction are included. | HKHT GE - Technical Scope.docx
+Missing / unclear | Exact master entity model, canonical datastore, source-of-truth rules, workflow event model, ID governance and ERP transition plan need clarification. | HKHT GE Technical Scope — Gap Analysis.docx
+Needs stronger production alignment | Day-30 production base must include validated data path, owner routing, dashboard, approval queue, exception handling and fallback process. | Latest Document B
+Mock/demo only until access confirmed | Real Hello Leads, internal CRM, Tata Tele, Exotel, WhatsApp and payment/DCC API integration should not be overclaimed without access and API validation. | Transcripts; Latest Document B
+API-dependent | CRM sync, call transcript ingestion, WhatsApp event writeback, payment/DCC linkage and ClickUp tasks depend on connectors/API permissions. | Data Management Process Review transcript; Gap Analysis
+Future phase | Devotee Intelligence Graph, predictive scoring, federated mission intelligence and full multi-center learning are future roadmap, but their data fields and IDs must be protected from Day 1. | Important Upgrades - Claude;
+
+6. Workflow-Specific Improvements Required in Partner Understanding
+Area | Current possible misunderstanding / gap | Correct intended understanding | Partner action needed | Phase | Dependency | Evidence from attached files
+Master data model | WF-006 may be treated as a cleaning/import tool. | WF-006 must define the shared contact/donor/yatri/family/community/campaign/task data contract. | Produce master entity model and ID governance note. | Day 7 → Day 30 | HKHT field validation | Gap Analysis WF-006; Latest Document B section 11
+Source of truth | Different systems may each be treated as independent. | CRM is relationship source of truth now; ERP later owns validated operational/financial records. | Identify current canonical store and future transition path. | Day 7/14 | CRM/ERP decision | Latest Document B; GE Technical Scope
+Common IDs | IDs may be skipped in demo data. | Contact ID, Donor ID, Yatri ID, Campaign ID, Event ID, Task ID and payment/receipt links must be designed from Day 1. | Show ID generation or placeholder scheme. | Day 7/14/30 | Data model | Gap Analysis Shared ID Architecture
+DND / calling readiness | Large database outreach may be viewed as only a dialing problem. | Suppression and calling-readiness gates are required before scaled voice/WhatsApp outreach. | Classify suppression workflow and data/tool dependency. | Day 7/14/30 | DND/suppression data | CRM transcript; Analysis HTML gap
+API registry | Integrations may be described generally. | Each integration must be classified as confirmed live, accessible untested, needs access, manual, mock, future or blocked. | Maintain API registry. | Day 7 onward | API docs/credentials | Latest Document B; Gap Analysis
+Dashboard-first delivery | Dashboards may be treated as optional reports. | Dashboards are the leadership command-center contribution and production-control layer. | Provide Day 7, Day 14 and Day 30 dashboard views. | Day 7/14/30 | Dashboard schema | Gap Analysis Unified Dashboard Architecture
+ClickUp/task governance | Follow-up may stay inside chat outputs. | Follow-up tasks and exceptions should connect to ClickUp/task layer where applicable. | Define task fields and integration approach. | Day 14/30 | ClickUp access/API | Analysis HTML; Gap Analysis WF-008
+Institutional memory | AI may summarize but not preserve decisions. | Approved rules, decisions and relationship judgments must become searchable institutional memory. | Define where decisions/rules are stored and retrieved. | Day 30/60/75 | Ownership and access | Gap Analysis; Important Upgrades
+Golden journey QA | Testing may focus on isolated feature demos. | Test full journey: source → CRM → call/follow-up → approval → dashboard → donation/Yatra linkage. | Prepare golden journey test case. | Day 15–30 | Sample data | Gap Analysis Cross-Workflow Continuity
+WF-013 readiness | Multi-center may be ignored until later. | Do not build multi-center rollout now, but make WF-006 reusable with templates and standard fields. | Create replication-ready design notes. | 75 days/future | Standard templates | Gap Analysis WF-013; Global Mission OS
+KCKE/Media AI boundary | Partner may mix knowledge/media with CRM records. | KCKE and Media AI are separate layers; CRM stores operational relationship records. | Document interface boundaries. | Day 14/30/60 | KCKE/Media specs | KCKE Briefing; Media AI Briefing
+Mukund dependency reduction | Productivity may not be measured. | The system must measure reduction in manual status chasing and escalation dependency. | Add KPI and baseline method. | Day 30/60 | Baseline data | Latest Document B; Gap Analysis Productivity Intelligence
+
+7. What the Partner Should Not Miss
+Common IDs: Contact ID, Donor ID, Yatri ID, Family ID, Community ID, Campaign ID, Event ID, Yatra ID, Donation ID, Payment ID, Receipt ID, Task ID, Owner ID and Approval ID where applicable.
+CRM as relationship source of truth, with ERP-ready fields from Day 1.
+Source tracking for campaign, event, referral, call, website, Yatra and donor sources.
+Approval gates for merges, deletes, sensitive donor updates, HNI/CSR communication, bulk outreach and financial/payment/receipt matters.
+Audit logs for AI suggestions, human approvals, imports, exports and sync failures.
+Dashboard visibility for data quality, duplicate risk, suppression, source readiness, follow-up delays and revenue/Yatra readiness.
+Owner validation: accountable owner, daily performer, approver, backup, escalation person, dashboard reviewer and data steward.
+Fallback process for CSV/manual path when APIs fail or are unavailable.
+Consolidated API registry and dependency tracking.
+Golden journey testing across source → CRM → follow-up → approval → dashboard.
+KCKE and Media AI boundaries.
+WF-013 future multi-center packaging.
+Evidence note: Based on Latest Document B, Gap Analysis cross-workflow sections, HKHT_AI_Transformation_Analysis(1).html and platform boundary files.
+8. Required Partner Classification
+For every proposed WF-006 feature, the partner should classify the status using the following categories.
+Already implemented
+Included in current scope
+Buildable immediately
+Day-7 demo
+Day-14 MVP
+Day-30 production base
+60-day stabilization
+75-day enterprise-scale readiness
+API-dependent
+Data-dependent
+HKHT approval-dependent
+Google license/product-dependent
+External vendor-dependent
+Mock/demo only
+Future roadmap
+Not recommended / not in scope
+9. Expected Technical Scope Clarifications from Partner
+Clarification area | Partner should provide
+Architecture | Overall WF-006 architecture diagram showing GE, Apps Script/AppSheet, Cloud Run, Vertex/Agent Builder, BigQuery/Looker, CRM and future ERP boundaries.
+Google product mapping | Which parts are Gemini Enterprise-native vs custom build vs BigQuery/Looker vs Vertex/Agent Builder.
+Data model | Master contact schema, IDs, source taxonomy, touchpoint model, suppression model and relationship profile fields.
+CRM/API integration | Hello Leads, internal CRM/local server, Tata Tele, Exotel, WhatsApp/SMS/RCS, payment/DCC and ClickUp integration path.
+ERP readiness | Which fields are ERP-ready now and what later becomes ERP source of truth.
+KCKE/Media AI interface | How source-grounded devotional content and media generation are kept separate from operational CRM data.
+Access/security | Roles, permissions, audit logs, export controls and approval gates.
+User roles | Owner, performer, approver, backup, escalation person, dashboard reviewer and data steward.
+Support model | Issue logging, fallback process, service continuity, handover and post-Day-30 support rhythm.
+Cost impact | Licenses, Google Cloud usage, external vendor APIs and ongoing support categories without vague assumptions.
+
+10. Minimum Day-30 Production Base Expected
+Selected live or controlled operational users.
+Validated data path for at least one real or near-real CRM data flow.
+Common ID structure visible in records.
+Working dashboard for CRM quality, duplicates, suppression, source readiness, approvals and exceptions.
+Approval queue for merge/delete/bulk outreach/sensitive CRM updates.
+Exception routing with owner and escalation.
+Fallback procedure when API or automation fails.
+Role ownership matrix: owner, performer, approver, backup, escalation, dashboard reviewer, data steward.
+Audit trail for AI suggestions and human approvals.
+Sample golden journey test from source to CRM to follow-up to dashboard.
+Productivity measurement: manual cleaning time reduced, duplicate reduction, follow-up visibility and Mukund Prabhu dependency reduction.
+Next 60-day stabilization roadmap.
+11. 60-Day Stabilization Expectations
+Adoption across selected data, CRM, marketing, calling, Yatra and donor users.
+Bug fixing and exception pattern review.
+Data quality improvement and duplicate-rate reduction.
+API hardening and replacement of manual fallback where practical.
+Dashboard refinement, refresh discipline and KPI baseline improvement.
+User training and SOP/KT material.
+Approval discipline and audit review.
+Support rhythm and owner escalation review.
+Scope cleanup: confirm what moves to 75 days and what remains future roadmap.
+12. 75-Day Enterprise-Scale Readiness Expectations
+Scalable WF-006 architecture review.
+Multi-workflow integration readiness with WF-001, WF-002, WF-003, WF-005, WF-007, WF-008, WF-009, WF-012 and WF-014.
+Leadership command-center contribution.
+Advanced AI readiness for Vertex AI/Agent Builder production agents.
+BigQuery/Looker intelligence path for source-to-revenue, follow-up, data quality and productivity intelligence.
+Reusable workflow template and master data contract.
+WF-013 multi-center replication readiness notes.
+Open risks, dependency register and handover plan.
+13. Long-Term Roadmap Items
+The following are long-term roadmap items. They should be protected through Day-1 data design but not promised as complete Day-30 deliverables.
+Roadmap item | WF-006 relevance
+Devotee Intelligence Graph | Long-term graph of person, family, community, Yatra, donation, seva, source and touchpoint relationships.
+Donor/yatri propensity | Predict who may donate, repeat donation, attend Yatra or need personal follow-up.
+Predictive campaign intelligence | Use historical source, conversion and response data to recommend campaigns and audiences.
+Real-time copilot | Support callers/fundraisers with approved context and next-best-action suggestions.
+AI Fundraiser Copilot | Prepare meeting briefs, relationship summaries and follow-up drafts for donor cultivation.
+Voice of the Devotee intelligence | Analyze themes, objections, interests and service needs from communications.
+Automated content/media intelligence | Use approved CRM insights with KCKE/Media AI boundaries for donor/Yatra inspiration content.
+Devotee Super App readiness | Future unified devotee/yatri/donor experience with CRM and ERP-backed data.
+AI Seva Marketplace | Future matching of volunteer skills, seva needs and community engagement.
+Federated mission intelligence | Learn across centers while preserving governance and local context.
+Digital twin / simulation | Future scenario planning for Yatra demand, campaign revenue and resource needs.
+
+14. Partner Questions for Confirmation
+What WF-006 capabilities are already built today?
+What is mock/demo only and what is connected to persistent storage?
+What will be production-shaped by Day 30 for selected users?
+What data do you need from HKHT immediately?
+Which API access is required for Hello Leads, internal CRM, Tata Tele, Exotel, WhatsApp/SMS/RCS, ClickUp and DCC/payment systems?
+Which Google products are being used in each component?
+What is Gemini Enterprise-native and what requires custom Google Cloud / Vertex AI / Agent Builder build?
+Where are Master Contact ID and related IDs created and stored?
+What is stored permanently in CRM/database/BigQuery versus only shown in the chat UI?
+Where are audit logs kept?
+How does human approval work for merges, deletes, bulk outreach and sensitive donor/HNI/CSR updates?
+How does fallback work if API sync fails?
+How often do dashboards update and which source feeds them?
+How does the solution avoid becoming a disconnected tool?
+How are future relationship intelligence and predictive intelligence protected in the data model from Day 1?
+How will Mukund Prabhu dependency reduction be measured?
+What are the license, hosting, external vendor and support implications?
+What should not be promised in two weeks or by Day 30?
+16. Final Partner-Facing Summary
+HKHT appreciates the current progress and the partner’s work on the Gemini Enterprise and Google-stack scope. The main request is to align WF-006 implementation with the intended Hyderabad AI Revenue & Seva Growth Platform architecture. WF-006 should be production-shaped from Day 1, even when early execution uses sample data, controlled users or temporary manual paths.
+Start small in execution, but keep the architecture platform-compatible.
+Preserve common IDs, source tracking, approvals, dashboards, CRM/ERP readiness and future scale.
+Classify all features, gaps, dependencies, phases and handover commitments clearly.
+Do not reduce relationship intelligence, predictive readiness, institutional memory, KCKE/Media AI boundaries or multi-center readiness to optional late add-ons; they are part of the intended architecture, with phased delivery.
+For Day 30, focus on a stable production base. For 60 days, stabilize adoption and data quality. For 75 days, prepare enterprise-scale readiness.
+Evidence note: Based on Latest Document B, GE Technical Scope, Gap Analysis, , Important Upgrades and platform governance files.
+Evidence Index Used for This Partner Alignment Note
+Source file / document | How it was used
+Latest Document B – 30-Day Production-Ready Accelerated Execution Brief | Primary partner-facing baseline for WF-006 timeline, agents, dashboards, data expectations, approval gates, and delivery governance.
+CRM Database Management Meeting_otter_ai_transcript.docx | Current-state CRM systems, Hello Leads/internal CRM, data cleaning, DND/suppression, segmentation, donor/Yatra/campaign data needs, and security concerns.
+Data Management Process Review_otter_ai_transcript.docx | Hello Leads volume, Tata Tele/API uncertainty, internal CRM/local server, Python scripts, fundraising/marketing connection, backup concerns.
+HKHT GE - Technical Scope.docx | Gemini Enterprise technical scope, WF-006 as Backbone/P1, GE chat/custom UI, ADK batch, GCS bulk CSV, DB connector, persistent DB to ERP direction; 15-day MVP vs production distinction.
+HKHT GE Technical Scope — Gap Analysis.docx | Gap analysis: unified master data model, shared IDs, workflow continuity, leadership dashboard, event bus/trigger layer, institutional memory, productivity intelligence, WF-013 replication, API/data ownership gaps.
+.docx | Platform strategy: Gemini Enterprise as intelligence membrane, Vertex AI/Agent Builder for orchestration, BigQuery/Looker as live intelligence, WhatsApp/voice CRM intelligence, multi-center replication.
+Important Upgrades - Claude.docx | 100x/1000x upgrades: Living Devotee Intelligence Graph, predictive intelligence, real-time assistance, institutional memory, campaign automation, federated mission intelligence.
+HKHT_AI_Transformation_Analysis (1).html | Strategic analysis: AI-first redesign, four-horizon discipline, revenue-first sequencing, HITL, system separation, ERP-ready IDs, role redesign, cross-workflow interdependencies, multi-center readiness, ClickUp execution layer; privacy-law-specific recommendations intentionally excluded.
+KCKE_Knowledge_Graph_Briefing.html | Boundary rule: KCKE is source-grounded Krishna conscious knowledge infrastructure, not operational CRM/payment/task database.
+Media_AI_Pipeline_Briefing_Note.docx | Boundary rule: Media AI is a separate scene-level devotional media pipeline with human approval; it may consume approved CRM insights but does not own CRM records.
+Global_Hare_Krishna_Mission_OS_HKM_Hyderabad_Presentation.html | Long-term Mission OS direction: unified visitor capture, donor growth, volunteer activation, leadership reporting, and scalable operating model.
+Document A and Document C generated earlier | Leadership brief and internal notes used for management framing, missing information, RACI and register update discipline.
+

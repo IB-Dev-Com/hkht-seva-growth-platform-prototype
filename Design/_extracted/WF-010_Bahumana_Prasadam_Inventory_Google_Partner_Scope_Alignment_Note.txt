@@ -1,0 +1,195 @@
+WF-010 Bahumana / Prasadam / Inventory - Google Partner Scope Alignment and Improvement Note
+Partner-facing scope alignment note for the Hyderabad AI Revenue & Seva Growth Platform
+Internal working version prepared for HKHT AI for Seva workflow preparation.
+Purpose: This note helps the Google Partner / implementation partner align technical scope with the intended HKHT AI for Seva architecture. It is not a rejection of current work and not random new scope. It clarifies the intended architecture so the partner can classify, phase and strengthen the implementation plan correctly.
+
+Files and Evidence Used
+File / Evidence | How it is used in this document
+Prasadam Inventory Management_otter_ai.docx | Primary WF-010 meeting transcript. It describes Bahumana, prasadam gifts, packing, courier, tracking SMS, shelf-life, pest control, procurement, finance, and current tools.
+_MEGA NUMBERS - MEGA IMPACT_.docx | Scale evidence. It mentions minimum 11,200 prasadam couriers per year and large messaging/mantra-card outreach numbers. Definitions of some metrics still need validation.
+WF-010 Document B - 30-Day Production-Ready Accelerated Execution Brief v0.2 | Latest partner-facing architecture and 30-day execution framing for WF-010.
+HKHT GE - Technical Scope.docx | Partner technical scope. It currently frames WF-010 as reorder alerts and dispatch-status Q&A over dummy inventory sheet, with production requiring a real inventory system connector and finance linkage.
+HKHT GE Technical Scope - Gap Analysis.docx | Gap analysis. For WF-010 it says dispatch must link to donor CRM, gift reason, courier tracking, failed/delayed delivery, gratitude follow-up, and donor promises/festival needs.
+.docx | Platform analysis. It stresses one unified relationship journey, Gemini Enterprise productivity, Vertex AI / Agent Builder orchestration, BigQuery / Looker dashboards, KCKE, WhatsApp, voice, WF-013 replication, and institutional memory.
+Important Upgrades - Claude.docx | Long-term multiplier ideas such as Devotee Intelligence Graph, predictive intelligence, real-time assistance, Devotee Super App, personalized seva/gifting, federated intelligence, and institutional memory.
+KCKE_Knowledge_Graph_Briefing.html | KCKE source-grounded spiritual knowledge layer. Used only for devotional/spiritual content, not operational inventory status.
+Media_AI_Pipeline_Briefing_Note.docx | Media AI boundary. It is for controlled scene-wise media and visual storytelling, not CRM, ERP, inventory, or source of spiritual truth.
+Role ownership correction/project governance files | Rule: validate owner, performer, approver, backup, escalation person, dashboard reviewer, data steward, and Mukund Prabhu dependency before routing automation.
+
+1. Purpose of This Note
+This note explains how WF-010 should be understood as a production-aligned module of the Hyderabad AI Revenue & Seva Growth Platform.
+It is not asking for a small isolated demo.
+It is not asking the partner to finish every long-term feature in 30 days.
+It is asking the partner to build a Day-30 production base with the right architecture, data model, approvals, dashboards and integration contracts.
+It asks the partner to classify what is immediate, mock, data-dependent, API-dependent, Google-product-dependent, external-vendor-dependent, future roadmap or out of current scope.
+2. Core Understanding Expected from the Partner
+WF-010 should become the Bahumana Gratitude + Inventory + Dispatch Intelligence module.
+Point | Scope alignment message
+Not enough | Only reorder alerts and dispatch-status Q&A over a dummy sheet.
+Correct direction | Connect donation/Yatra/festival requirement to inventory, procurement, packing, dispatch, delivery, CRM follow-up and dashboard visibility.
+Platform rule | Every dispatch should be capable of linking to Contact ID, Donor ID, Yatri ID, Donation ID, Campaign ID, Event ID, Yatra ID and Task ID where applicable.
+Human rule | AI drafts, recommends, alerts and prepares. Humans approve sensitive donor, finance, procurement, devotional and exception decisions.
+Production rule | Build small in execution but platform-compatible in data, approvals, dashboards and future integration.
+
+3. Intended Architecture from the Beginning
+Architecture element | How partner should understand it for WF-010
+Relationship intelligence | WF-010 dispatches should enrich the person timeline. A gift sent to a donor is relationship data, not only stock movement.
+Predictive intelligence | Forecast festival/Yatra demand and stock risk over time. Day 30 only needs the data fields and structure to support this later.
+Real-time AI assistance | Ground staff may receive live alerts and summaries. Full real-time assistance is future roadmap; the data and task flow should support it.
+Institutional memory | Mukund Prabhu's approved gift-selection judgment, vendor preference and donor sensitivity rules should become structured guidance over time.
+KCKE | Use KCKE for approved spiritual inserts, donor gratitude content and festival meaning. Do not use it for inventory count, courier status or payments.
+Media AI | Use Media AI for approved gift catalog visuals or donor inspiration media if needed. It is not CRM, ERP or source of spiritual truth.
+CRM/DBMS | CRM is the source of relationship truth: person, donor/yatri link, source, consent/DND, follow-up and dispatch timeline.
+ERP-ready records | Inventory, procurement, finance, approvals and costs must be shaped for future ERP migration.
+Gemini Enterprise | Use for Workspace productivity: summaries, drafting, Q&A over documents, exception briefs.
+Vertex AI / Agent Builder | Use for scalable agentic workflows, orchestration and prediction where GE no-code is not enough.
+BigQuery / Looker Studio | Use as analytics and intelligence layer for dashboards, trends, KPIs and leadership visibility.
+ClickUp | Use where task governance and escalations need to connect to WF-008 execution discipline.
+Leadership command center | WF-010 must feed stock risk, dispatch delay, complaint and approval exceptions into leadership visibility.
+WF-013 readiness | Design SKU, kit, vendor, dispatch and approval templates so Hyderabad can later package the model for other centers.
+
+4. Scope Alignment with Latest Document B
+Phase | How to interpret it
+Day 1-7 Production Foundation Sprint | Validate workflow, access, data sources, owner/approver/backup, CRM fields/IDs, API dependency, dashboard schema, production risks. Build first working prototype, first dashboard, first automation, first approval flow, first AI-assisted output and sample live-style test.
+Day 8-14 Integrated Working MVP | Selected users test the workflow with structured data, AI assistance, approval routing, dashboard refinement, data quality checks, API registry validation and task/follow-up routing where applicable.
+Day 15-30 Production Readiness Sprint | Controlled live or near-live usage, cross-workflow integration, user training, KPI validation, escalation testing, fallback protocol, role ownership refinement and golden journey QA.
+60-Day Stabilization | Adoption, bug fixing, data-quality improvement, integration hardening, dashboard refinement, approval discipline, training and support rhythm.
+75-Day Enterprise-Scale Readiness | Leadership command center contribution, advanced AI readiness, shared IDs, API registry, reusable templates, multi-center readiness and open-risk register.
+
+Production readiness does not mean every future enterprise feature must be finished in 30 days. It means WF-010 must have a stable production base, validated data path, human approval, dashboard visibility, owner routing, fallback process and clear integration contract.
+5. Scope Alignment with HKHT GE Technical Scope vs Gap Analysis
+Area | Practical scope note
+Already covered in GE Technical Scope | WF-010 is identified as Inventory / Dispatch. MVP includes reorder alerts and dispatch-status Q&A over a dummy inventory sheet. Production mentions real inventory system connector and finance linkage.
+Main gap from Gap Analysis | Dispatch must be linked to donor CRM, gift reason, courier tracking, failed/delayed delivery, gratitude follow-up and donor promises/festival needs.
+Unclear | Whether persistent dispatch events are written to CRM, whether approvals are auditable, whether dashboard feeds leadership, and whether courier/CRM/finance links are API, CSV or mock.
+Needs classification | Stock data, courier tracking, donor CRM link, finance/DCC link, WhatsApp/SMS notification, ClickUp task routing, KCKE content use and Media AI visuals.
+Mock/demo only | Historical forecasting, live courier API, live ERP, advanced relationship graph, Media AI outputs, KCKE-generated spiritual inserts if source pipeline is not ready.
+API-dependent | CRM/DCC writeback, courier tracking, WhatsApp/SMS, ERP inventory/procurement/finance, ClickUp integration.
+Data-dependent | Inventory sheet, SKU master, kit master, vendor master, shelf-life rules, dispatch history, donor IDs, donation IDs, complaint history.
+HKHT approval-dependent | Gift selection authority, procurement approval, finance approval, donor message approval, spiritual content approval, role ownership routing.
+
+6. Workflow-Specific Improvements Required in Partner Understanding
+Area | Current possible misunderstanding / gap | Correct intended understanding | Partner action needed | Phase | Dependency | Evidence from attached files
+WF-010 identity link | May be seen only as inventory stock visibility. | Dispatch is a donor/yatri relationship event. | Add Contact ID/Donor ID/Yatri ID and CRM event design. | Day 14 / Day 30 | CRM/DCC sample and schema | Gap Analysis WF-010; Document B v0.2
+Gift reason | System may know item moved but not why. | The system must know whether gift is for donation, Yatra, festival, outreach or complaint replacement. | Add Source, Campaign ID, Yatra ID, Donation ID, Event ID, Seva/Reason field. | Day 7 / Day 14 | Source data | WF-010 transcript; Document B
+Inventory/expiry | Reorder alert only. | Production base needs stock, batch, expiry, shelf-life and storage risk. | Add SKU, batch, expiry, FEFO and storage check fields. | Day 14 / Day 30 | Stock and shelf-life data | Transcript mentions shelf life and pest control
+Procurement | May remain a status note. | Vendor, quote, lead time and approval must be tracked. | Add vendor master, quotation record, approval status and budget variance. | Day 14 / Day 30 | Vendor/finance data | Transcript mentions three vendor quotations and finance budgets
+Dispatch visibility | Status Q&A may not store lifecycle events. | Packing, courier, tracking, delivery and failed delivery should persist. | Add dispatch event table and dashboard. | Day 14 / Day 30 | Courier export/API | Gap Analysis WF-010
+Gratitude follow-up | May be outside inventory scope. | Delivery should trigger donor gratitude task with human-approved message. | Add follow-up trigger and approval queue. | Day 30 / 60 days | CRM/WhatsApp/SMS and templates | Gap Analysis;
+Dashboard contribution | May show local sheet only. | WF-010 should feed leadership command center. | Add dashboard metrics and exception summary. | Day 7 / Day 30 | Dashboard schema | ; Document B
+Task governance | May not connect to ClickUp or task layer. | Delayed procurement, courier issues and approvals should create tasks where applicable. | Classify ClickUp integration or interim task tracker. | Day 14 / 60 days | WF-008/ClickUp access | Technical Scope and Gap Analysis
+KCKE boundary | AI may generate general spiritual text. | KCKE is for source-grounded spiritual content only; not stock/status. | Classify spiritual inserts as KCKE-dependent with human approval. | 60 days / future | KCKE readiness | KCKE briefing; Document B
+Media AI boundary | Media may be confused with workflow automation. | Media AI is optional for gift catalog visuals and donor inspiration, not operational inventory. | Classify Media AI as future/supporting capability. | Future | Media AI pipeline readiness | Media AI briefing
+Fallback protocol | May not be included in demo scope. | Operations must continue if API/app/courier import fails. | Define manual fallback for stock, dispatch, approval and CRM update. | Day 30 | Owner validation | Gap Analysis service continuity concern
+Golden journey | May test only a single reorder alert. | Test donor/Yatra -> Bahumana -> stock -> dispatch -> delivery -> gratitude -> CRM follow-up. | Prepare and run golden journey test. | Day 30 / 60 days | Cross-workflow data | Gap Analysis cross-workflow continuity
+
+7. What the Partner Should Not Miss
+Common IDs: Contact ID, Donor ID, Yatri ID, Campaign ID, Event ID, Donation ID, Task ID and workflow-specific IDs.
+CRM is the relationship source of truth.
+ERP-ready fields must exist even before ERP is fully live.
+Approval gates are mandatory for procurement, finance, donor messages, spiritual content, unique gift selection and high-risk exceptions.
+Audit logs must show AI output, human approval, timestamp and owner.
+Dashboard visibility must include management, operations, data quality and AI-agent performance views.
+Role ownership must be validated; transcript-derived names are not enough.
+Fallback process must exist if API, app, courier import or message sending fails.
+API registry must classify live, CSV, mock, blocked and future integrations.
+Data quality checks must catch missing IDs, duplicate contacts, missing source, missing expiry and failed sync.
+Golden journey testing must cover cross-workflow continuity.
+KCKE and Media AI boundaries must remain clear.
+WF-013 multi-center packaging should be protected by reusable templates and data discipline.
+8. Required Partner Classification
+Item | Classification requirement
+Feature / dependency | Partner should classify as one or more of these statuses
+General classification | Already implemented; included in current scope; buildable immediately; Day-7 demo; Day-14 MVP; Day-30 production base; 60-day stabilization; 75-day enterprise-scale readiness; future roadmap; not recommended / not in scope.
+Dependency classification | API-dependent; data-dependent; HKHT approval-dependent; Google license/product-dependent; external vendor-dependent; mock/demo only.
+WF-010 examples | Courier tracking, CRM writeback, ERP inventory, WhatsApp/SMS, ClickUp task routing, KCKE content, Media AI visuals, BigQuery/Looker dashboard, Vertex AI forecasting.
+
+9. Expected Technical Scope Clarifications from Partner
+Architecture: what is GE no-code, what is custom, what is AppSheet/Sheets, what is Cloud Run/Workflows, what is Vertex AI/Agent Builder.
+Google product mapping: Gemini Enterprise vs AppSheet vs BigQuery vs Looker Studio vs Vertex AI.
+Gemini Enterprise boundary: what is native Workspace productivity and what needs custom build.
+BigQuery / Looker role: what dashboards are MVP and what is production analytics.
+CRM/API integration: read-only, CSV import, API writeback or future phase.
+ERP readiness: which fields are ERP-ready and how migration will happen later.
+WhatsApp/SMS/courier dependencies: provider, template, API/CSV/manual fallback.
+ClickUp/task governance: whether escalation tasks go to ClickUp or interim task tracker.
+KCKE/Media AI interface: content use only, not operational status.
+Access/security: user roles, edit/view permissions, data access, audit trail.
+Support model: bug handling, release notes, handover, owner training.
+Cost impact: licenses, API usage, external tools and ongoing support.
+10. Minimum Day-30 Production Base Expected
+Minimum Day-30 item | Expected WF-010 result
+Users | Selected live or controlled operational users for intake, inventory, packing, procurement, dispatch and review.
+Data path | Requirement -> stock/expiry -> procurement if needed -> packing -> dispatch -> courier tracking -> delivery -> follow-up.
+Common IDs | Contact ID and donor/yatri/donation/campaign/Yatra/event/task IDs where applicable.
+Dashboard | Stock risk, expiry risk, pending procurement, dispatch backlog, courier delay, complaint/return, pending approval.
+Approval queue | Gift selection, procurement, finance, write-off/replacement, donor message and spiritual content if any.
+Exception routing | Stockout, expiry, pest/storage issue, courier delay, broken item, failed delivery, VIP/HNI donor issue.
+Fallback | Manual/CSV process if app/API/courier/message integration fails.
+Audit trail | Who created, AI suggested, human approved, status changed and when.
+Golden journey | One sample donor/Yatri/festival requirement tested end-to-end through CRM/dispatch/follow-up path.
+Productivity measurement | Start measuring manual chasing reduction, missing fields, delayed approvals and dashboard use.
+Next roadmap | 60-day stabilization roadmap and 75-day enterprise-scale readiness roadmap.
+
+11. 60-Day Stabilization Expectations
+User adoption: team uses the workflow as the normal way of working.
+Bug fixing and release improvements.
+Data quality improvement: fewer missing IDs, sources, expiry dates and owner fields.
+API hardening where access is confirmed.
+Dashboard refinement and leadership review rhythm.
+Training for stock, packing, procurement, finance and CRM/DCC users.
+Approval discipline: sensitive actions do not bypass humans.
+Support rhythm: clear issue owner, SLA and release notes.
+KPI measurement: stockout, expiry loss, dispatch delay, complaint rate, approval delay and Mukund Prabhu dependency reduction.
+Scope cleanup: mock/demo parts are either removed, converted to production or scheduled for future phase.
+12. 75-Day Enterprise-Scale Readiness Expectations
+Scalable architecture decision: what remains GE no-code, what moves to custom agents and what uses BigQuery/Looker.
+Multi-workflow integration with CRM, finance/DCC, donor cultivation, Yatra, digital marketing, ClickUp and community outreach where relevant.
+Leadership command center contribution is stable.
+Advanced AI readiness is assessed for forecasting, personalized gifting and relationship intelligence.
+BigQuery/Looker intelligence path is defined.
+Vertex AI / Agent Builder production path is defined for agentic orchestration and prediction.
+Reusable workflow templates exist for SKU, kit, vendor, dispatch, approval and dashboards.
+WF-013 multi-center replication readiness is documented but not prematurely rolled out.
+Open risks and dependencies are maintained in a register.
+13. Long-Term Roadmap Items
+Long-term item | WF-010 relevance
+Devotee Intelligence Graph | Future relationship graph linking person, donation, Yatra, event, gift, feedback and family/community/referrer context.
+Donor/yatri propensity | Future scoring to decide who should receive which follow-up, gift, Yatra invite or donor cultivation action.
+Predictive campaign and inventory intelligence | Future models that forecast gift demand and campaign response.
+Real-time copilot | Future assistance for staff during donor/fundraiser/dispatch exceptions.
+AI Fundraiser Copilot | Future donor meeting support using relationship history and source-grounded talking points.
+Voice of the Devotee intelligence | Future feedback engine using complaints, delivery issues and donor responses to improve service.
+Automated content/media intelligence | Future approved storytelling using KCKE and Media AI.
+Devotee Super App readiness | Future ability to show personalized prasadam dispatch status, donations and Yatra journey in one app.
+AI Seva Marketplace | Future personalized seva and gifting recommendations.
+Federated mission intelligence | Future multi-center learning where Hyderabad templates and learnings help other centers.
+Digital twin / simulation | Future scenario planning for festival/Yatra inventory, cost and donor response.
+
+14. Partner Questions for Confirmation
+For WF-010, what has already been built, and what is only planned?
+Is the current scope limited to dummy inventory reorder alerts and dispatch-status Q&A, or does it include CRM-linked dispatch events?
+What will be live, mock, CSV-based, API-ready, or future roadmap by Day 30?
+What exact data does HKHT need to provide for Day 1-7, Day 8-14 and Day 15-30?
+Which Google products will be used for WF-010, and why?
+What is Gemini Enterprise native vs custom agent/Vertex AI/Agent Builder?
+Where will inventory, dispatch, approval and follow-up data be stored permanently?
+How will Contact ID, Donor ID, Donation ID, Campaign ID, Yatra ID and Task ID be used?
+Will delivery status write back to CRM? If not by Day 30, what is the interim path?
+How will courier tracking work: API, CSV upload, manual entry or mock?
+How will approval queues work for purchase, unique gift, write-off/replacement and donor message?
+Where are audit logs kept?
+How does the dashboard refresh and who owns dashboard review?
+What is the fallback process if app, API, courier import or message sending fails?
+How will the solution avoid becoming a disconnected inventory tool?
+How does the data model protect future relationship intelligence and predictive intelligence?
+What is the partner handover plan after Day 30?
+What risks, assumptions and exclusions should HKHT approve before go-live?
+16. Final Partner-Facing Summary
+HKHT appreciates the current progress and the Gemini Enterprise technical scope effort.
+The main request is to align WF-010 implementation with the intended platform architecture.
+WF-010 should be production-shaped from Day 1, even if early execution uses sample data or interim CSV paths.
+Early execution can be small, but the architecture must remain CRM-aligned, ERP-ready, dashboard-visible, human-governed and platform-compatible.
+The partner should classify gaps, dependencies, phases, data needs, API needs, handover commitments and exclusions clearly.
+The Day-30 production base should allow selected users to run controlled WF-010 operations with validated data path, approvals, dashboard, fallback and golden journey testing.
+The 60-day and 75-day paths should stabilize adoption, integrations, data quality and enterprise-scale readiness without turning future 1000x capabilities into Day-30 promises.
