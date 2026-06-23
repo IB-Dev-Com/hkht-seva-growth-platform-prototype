@@ -113,7 +113,7 @@ App.store = (function () {
       var u = user(userId);
       if (!u) return;
       session.userId = u.id; session.role = u.role; session.authed = true;
-      session.centerId = u.role === 'leadership' || u.role === 'workflow_manager' ? 'ALL' : u.center;
+      session.centerId = (['leadership', 'workflow_manager', 'org_admin'].indexOf(u.role) > -1) ? 'ALL' : u.center;
       session.deptId = 'ALL';
       addAudit('Signed in', 'access', u.id, ROLE_LABEL(u.role));
       commit();
@@ -214,6 +214,60 @@ App.store = (function () {
       addAudit('Activated call queue', 'data', campaignId, 'Queue approved for calling');
       commit();
     },
+
+    /* ---- WF-006 6.5 segments ---- */
+    approveSegment: function (id) {
+      var s = state.segments.find(function (x) { return x.id === id; });
+      if (!s) return; s.status = 'ready';
+      addAudit('Approved segment', 'approval', id, s.name);
+      commit();
+    },
+    /* ---- WF-006 6.8 sync ---- */
+    retrySync: function (id) {
+      var j = state.syncJobs.find(function (x) { return x.id === id; });
+      if (!j) return; j.status = 'success'; j.errors = 0; j.retries = (j.retries || 0) + 1; j.detail = 'Resolved on manual retry';
+      addAudit('Retried sync job', 'data', id, j.system);
+      commit();
+    },
+    resolveConflict: function (id) {
+      var j = state.syncJobs.find(function (x) { return x.id === id; });
+      if (!j) return; j.status = 'success'; j.errors = 0; j.detail = 'Identity conflict resolved by data custodian';
+      addAudit('Resolved sync conflict', 'merge', id, j.system);
+      commit();
+    },
+    /* ---- WF-006 6.7 relationships ---- */
+    addRelationship: function (edge) { state.relationships.unshift(edge); addAudit('Captured relationship', 'data', edge.id, edge.fromName + ' → ' + edge.toName); commit(); },
+
+    /* ---- WF-003 3.9 remarketing ---- */
+    activateRemarketing: function (id) {
+      var r = state.remarketing.find(function (x) { return x.id === id; });
+      if (!r) return; r.status = r.status === 'active' ? 'paused' : 'active';
+      addAudit('Updated remarketing audience', 'data', id, r.name + ' → ' + r.status);
+      commit();
+    },
+    /* ---- WF-003 3.11 triggers ---- */
+    toggleTrigger: function (id) {
+      var t = state.triggers.find(function (x) { return x.id === id; });
+      if (!t) return; t.status = t.status === 'armed' ? 'paused' : 'armed';
+      addAudit('Toggled micro-campaign trigger', 'data', id, t.type + ' → ' + t.status);
+      commit();
+    },
+    /* ---- shared: media (KCKE/Media) ---- */
+    decideMedia: function (id, decision) {
+      var m = state.kcke.media.find(function (x) { return x.id === id; });
+      if (!m) return; m.status = decision === 'approved' ? 'approved' : 'draft';
+      addAudit((decision === 'approved' ? 'Approved' : 'Rejected') + ' media asset', 'approval', id, m.title);
+      commit();
+    },
+    /* ---- shared: continuity ---- */
+    resolveIncident: function (id) {
+      var i = state.continuity.incidents.find(function (x) { return x.id === id; });
+      if (!i) return; i.status = 'resolved'; i.reconciliation = 'Reconciled · all records back-loaded';
+      addAudit('Closed continuity incident', 'data', id, i.system);
+      commit();
+    },
+    /* ---- generic audit hook for screens ---- */
+    audit: function (action, type, entityId, detail) { addAudit(action, type, entityId, detail); commit(); },
 
     reset: reset
   };

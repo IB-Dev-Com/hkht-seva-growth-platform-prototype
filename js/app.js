@@ -11,6 +11,8 @@
       { path: '/journey', screen: 'golden-journey', label: 'Golden Journey', icon: '🧭', wf: 'platform' },
       { path: '/approvals', screen: 'approvals', label: 'Approvals', icon: '✅', wf: 'platform', badge: 'approvals' },
       { path: '/usage', screen: 'usage-cost', label: 'Usage & Cost', icon: '💳', wf: 'platform' },
+      { path: '/continuity', screen: 'continuity', label: 'Service Continuity', icon: '🛟', wf: 'platform' },
+      { path: '/kcke', screen: 'kcke', label: 'KCKE & Media Boundary', icon: '📖', wf: 'platform' },
       { path: '/admin', screen: 'admin', label: 'Roles & Tenants', icon: '⚙️', wf: 'admin' }
     ]},
     { group: 'WF-006 · CRM & Data Governance', tag: 'WF-006', items: [
@@ -19,6 +21,9 @@
       { path: '/wf006/quality', screen: 'wf006-quality', label: 'Data Quality', icon: '📊', wf: 'wf006' },
       { path: '/wf006/consent', screen: 'wf006-consent', label: 'Consent & DND', icon: '🛡️', wf: 'wf006' },
       { path: '/wf006/intake', screen: 'wf006-intake', label: 'Intake & Import', icon: '📥', wf: 'wf006' },
+      { path: '/wf006/segments', screen: 'wf006-segments', label: 'Segment Studio', icon: '🎯', wf: 'wf006' },
+      { path: '/wf006/relationships', screen: 'wf006-relationships', label: 'Relationship Graph', icon: '🕸️', wf: 'wf006' },
+      { path: '/wf006/sync', screen: 'wf006-sync', label: 'CRM Sync', icon: '🔄', wf: 'wf006' },
       { path: '/wf006/api', screen: 'wf006-api-registry', label: 'API Registry', icon: '🔌', wf: 'wf006' }
     ]},
     { group: 'WF-002 · Voice Agent & Follow-up', tag: 'WF-002', items: [
@@ -33,7 +38,12 @@
     { group: 'WF-003 · Digital Marketing', tag: 'WF-003', items: [
       { path: '/wf003/campaigns', screen: 'wf003-campaigns', label: 'Campaigns', icon: '📣', wf: 'wf003' },
       { path: '/wf003/builder', screen: 'wf003-builder', label: 'New Campaign', icon: '✨', wf: 'wf003' },
-      { path: '/wf003/content', screen: 'wf003-content', label: 'Content & Creative', icon: '🎨', wf: 'wf003' },
+      { path: '/wf003/content', screen: 'wf003-content', label: 'Content & Copy', icon: '✍️', wf: 'wf003' },
+      { path: '/wf003/creative', screen: 'wf003-creative', label: 'Creative & Media', icon: '🎨', wf: 'wf003' },
+      { path: '/wf003/remarketing', screen: 'wf003-remarketing', label: 'Remarketing', icon: '♻️', wf: 'wf003' },
+      { path: '/wf003/triggers', screen: 'wf003-triggers', label: 'Behavior Triggers', icon: '⚡', wf: 'wf003' },
+      { path: '/wf003/propensity', screen: 'wf003-propensity', label: 'Donor Propensity', icon: '🎯', wf: 'wf003' },
+      { path: '/wf003/learning', screen: 'wf003-learning', label: 'Campaign Learning', icon: '📘', wf: 'wf003' },
       { path: '/wf003/dashboard', screen: 'wf003-dashboard', label: 'Marketing Dashboard', icon: '📈', wf: 'wf003' }
     ]}
   ];
@@ -49,6 +59,7 @@
   var ROLE_WF = {
     leadership: ['platform', 'admin', 'wf006', 'wf002', 'wf003'],
     workflow_manager: ['platform', 'admin', 'wf006', 'wf002', 'wf003'],
+    org_admin: ['platform', 'admin', 'wf006', 'wf002', 'wf003'],
     data_custodian: ['platform', 'wf006'],
     consent_custodian: ['platform', 'wf006'],
     voice_ops: ['platform', 'wf002'],
@@ -123,7 +134,7 @@
     var sess = store.getSession();
     var s = store.get();
     var u = store.currentUser();
-    var canSwitchCenter = ['leadership', 'workflow_manager'].indexOf(sess.role) > -1;
+    var canSwitchCenter = ['leadership', 'workflow_manager', 'org_admin'].indexOf(sess.role) > -1;
 
     // center switcher
     var centerSel = el('select', { onchange: function (e) { store.setSession({ centerId: e.target.value }); } });

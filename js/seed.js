@@ -55,7 +55,8 @@ App.seed = (function () {
     marketer:         { label: 'Digital Marketer', scope: 'wf003', icon: '📣' },
     content_reviewer: { label: 'Content / Creative Reviewer', scope: 'wf003', icon: '✍️' },
     donor_approver:   { label: 'Donor Relations Approver', scope: 'approve', icon: '🤝' },
-    finance_reviewer: { label: 'Finance / DCC Reviewer', scope: 'wf003', icon: '🧾' }
+    finance_reviewer: { label: 'Finance / DCC Reviewer', scope: 'wf003', icon: '🧾' },
+    org_admin:        { label: 'Org / Center Admin', scope: 'admin', icon: '⚙️' }
   };
 
   var USERS = [
@@ -70,7 +71,8 @@ App.seed = (function () {
     { id: 'U-ROHIT',  name: 'Rohit Verma', role: 'marketer', dept: 'MKT', center: 'HYD', email: 'rohit@hkmhyderabad.org' },
     { id: 'U-MEERA',  name: 'Meera Desai', role: 'content_reviewer', dept: 'MKT', center: 'HYD', email: 'meera@hkmhyderabad.org' },
     { id: 'U-GOPAL',  name: 'Gopal Das', role: 'donor_approver', dept: 'DON', center: 'HYD', email: 'gopal@hkmhyderabad.org' },
-    { id: 'U-NANDA',  name: 'Nanda Kishore', role: 'finance_reviewer', dept: 'FIN', center: 'HYD', email: 'nanda@hkmhyderabad.org' }
+    { id: 'U-NANDA',  name: 'Nanda Kishore', role: 'finance_reviewer', dept: 'FIN', center: 'HYD', email: 'nanda@hkmhyderabad.org' },
+    { id: 'U-GAURANGA', name: 'Gauranga Das', role: 'org_admin', dept: 'CRM', center: 'HYD', email: 'admin@hkmhyderabad.org' }
   ];
   var TELECALLERS = ['U-ANAND', 'U-PRIYA', 'U-LAKSHMI'];
 
@@ -516,6 +518,147 @@ App.seed = (function () {
     ];
   }
 
+  /* ---------------- segments (WF-006 6.5 / WF-003 3.2) ---------------- */
+  function buildSegments(contacts) {
+    function count(fn) { return contacts.filter(fn).length; }
+    var defs = [
+      { id: 'SEG-HNI', name: 'HNI & Major Donors', basis: 'donor-tier', rule: 'tier in (HNI, Life Patron) AND consented', channels: ['call', 'whatsapp'], sensitive: true, fit: 96 },
+      { id: 'SEG-CSR', name: 'CSR / Corporate', basis: 'donor-tier', rule: 'segment = CSR / Corporate', channels: ['email', 'call'], sensitive: true, fit: 92 },
+      { id: 'SEG-LAPSED', name: 'Lapsed Donors (reactivation)', basis: 'lifecycle', rule: 'last gift > 12 months AND consented', channels: ['whatsapp', 'call'], sensitive: false, fit: 81 },
+      { id: 'SEG-YATRA', name: 'Yatra Prospects — Telugu', basis: 'interest+lang', rule: 'Yatra interest AND language = Telugu', channels: ['call', 'whatsapp'], sensitive: false, fit: 88 },
+      { id: 'SEG-FEST', name: 'Festival Attendees (Hyderabad)', basis: 'geo+event', rule: 'segment = Festival Attendee AND city in Hyderabad', channels: ['whatsapp', 'sms'], sensitive: false, fit: 79 },
+      { id: 'SEG-NEW', name: 'New Leads (last 30d)', basis: 'lifecycle', rule: 'created < 30 days AND source present', channels: ['call'], sensitive: false, fit: 74 }
+    ];
+    return defs.map(function (d) {
+      var size = d.id === 'SEG-HNI' ? count(function (c) { return /HNI|Patron/.test(c.segment); }) :
+        d.id === 'SEG-CSR' ? count(function (c) { return /CSR/.test(c.segment); }) :
+        d.id === 'SEG-LAPSED' ? count(function (c) { return /Lapsed/.test(c.segment); }) :
+        d.id === 'SEG-YATRA' ? count(function (c) { return /Yatra/.test(c.segment) && c.language === 'Telugu'; }) :
+        d.id === 'SEG-FEST' ? count(function (c) { return /Festival/.test(c.segment); }) :
+        count(function (c) { return (U.now() - new Date(c.createdDate)) / 86400000 < 30; });
+      var suppressed = Math.max(1, Math.round(size * 0.12));
+      var overContact = Math.round(size * 0.05);
+      return { id: d.id, name: d.name, basis: d.basis, rule: d.rule, channels: d.channels, sensitive: d.sensitive,
+        fit: d.fit, size: size, eligible: size - suppressed - overContact, suppressed: suppressed, overContact: overContact,
+        status: d.sensitive ? 'needs_approval' : 'ready', retargetSeed: Math.round(size * 0.6), owner: 'U-SACHI',
+        approverRole: d.sensitive ? 'donor_approver' : null };
+    });
+  }
+
+  /* ---------------- relationships (WF-006 6.7 + 6.11) ---------------- */
+  function buildRelationships(contacts) {
+    var edges = [], types = ['Referrer', 'Family', 'Community', 'Colleague'];
+    // hero referral chain
+    var hero = contacts.find(function (c) { return c.hero; }) || contacts[0];
+    for (var i = 0; i < 18; i++) {
+      var a = contacts[ri(0, contacts.length - 1)], b = contacts[ri(0, contacts.length - 1)];
+      if (a.id === b.id) continue;
+      edges.push({ id: 'REL-' + (5100 + i), from: a.id, fromName: a.name, to: b.id, toName: b.name, type: pick(types),
+        note: pick(['Introduced at Janmashtami', 'Same gated community', 'Spouse', 'Brought to temple', 'Office colleague', 'Referred for Yatra']), strength: ri(1, 5) });
+    }
+    edges.unshift({ id: 'REL-5099', from: hero.id, fromName: hero.name, to: contacts[3].id, toName: contacts[3].name, type: 'Referrer', note: 'Referred 3 donors for Annadaan', strength: 5 });
+    return edges;
+  }
+
+  /* ---------------- CRM sync jobs (WF-006 6.8) ---------------- */
+  function buildSyncJobs() {
+    var systems = ['Hello Leads CRM', 'BigQuery DWH', 'Twilio export', 'Razorpay/DCC', 'WhatsApp BSP', 'Google Sheets (fallback)'];
+    var jobs = [];
+    for (var i = 0; i < 14; i++) {
+      var st = pickW([['success', 6], ['retrying', 2], ['failed', 2], ['conflict', 1]]);
+      jobs.push({ id: 'SYNC-' + (6100 + i), system: pick(systems), direction: pick(['Push', 'Pull', 'Two-way']),
+        status: st, records: ri(20, 1400), errors: st === 'failed' ? ri(1, 40) : st === 'conflict' ? ri(1, 5) : 0,
+        retries: st === 'retrying' ? ri(1, 3) : 0,
+        detail: st === 'conflict' ? 'Identity conflict — same phone, different Contact_ID' : st === 'failed' ? 'API timeout (429) — in error queue' : st === 'retrying' ? 'Backoff retry scheduled' : 'Completed',
+        timestamp: hoursAgo(ri(0, 48)), owner: 'U-SACHI' });
+    }
+    return U.sortBy(jobs, function (j) { return j.timestamp; }, 'desc');
+  }
+
+  /* ---------------- remarketing audiences (WF-003 3.9) ---------------- */
+  function buildRemarketing() {
+    return [
+      { id: 'RMK-01', name: 'Lapsed Annadaan donors (>12mo)', basis: 'CRM · lapsed', size: 412, estCpl: 64, estConv: 38, channel: 'WhatsApp + Meta', status: 'approved', vip: false, owner: 'U-ROHIT' },
+      { id: 'RMK-02', name: 'Stalled Yatra payments', basis: 'Payment · partial', size: 86, estCpl: 38, estConv: 22, channel: 'Call + WhatsApp', status: 'active', vip: false, owner: 'U-ROHIT' },
+      { id: 'RMK-03', name: 'HNI repeat-gift lookalikes', basis: 'GA4 + CRM lookalike', size: 1240, estCpl: 180, estConv: 31, channel: 'Meta', status: 'needs_approval', vip: true, owner: 'U-ROHIT' },
+      { id: 'RMK-04', name: 'Festival attendees → monthly giving', basis: 'Event + engagement', size: 640, estCpl: 92, estConv: 44, channel: 'WhatsApp', status: 'active', vip: false, owner: 'U-ROHIT' },
+      { id: 'RMK-05', name: 'Gita Daan website cart-abandon', basis: 'GA4 · cart', size: 158, estCpl: 41, estConv: 19, channel: 'Meta + SMS', status: 'draft', vip: false, owner: 'U-ROHIT' }
+    ];
+  }
+
+  /* ---------------- campaign learning / institutional memory (WF-003 3.10) ---------------- */
+  function buildLearnings() {
+    return [
+      { id: 'LRN-01', campaignId: 'CMP-J26', campaign: 'Janmashtami 2025 (last year)', season: 'Janmashtami', whatWorked: ['Abhishekam sponsorship tier at ₹11,000 converted best', 'Telugu video creative beat static 2.3×', 'WhatsApp pay-link within 1h lifted conversion 40%'], whatFailed: ['Generic "donate now" copy underperformed', 'YouTube spend below 2× ROAS'], recommendation: 'Lead with Abhishekam tier + Telugu video; send pay-link inside 1h; cap YouTube.', reuseCount: 4, approvedBy: 'U-HEM' },
+      { id: 'LRN-02', campaignId: 'CMP-VRJ', campaign: 'Vrindavan Yatra 2025', season: 'Kartik', whatWorked: ['Early-bird pricing urgency', 'Past-yatri lookalikes cheapest CPL'], whatFailed: ['Late launch compressed the window'], recommendation: 'Launch 4 weeks earlier; reuse past-yatri lookalikes; keep early-bird countdown.', reuseCount: 2, approvedBy: 'U-HEM' },
+      { id: 'LRN-03', campaignId: 'CMP-ANN', campaign: 'Annadaan Monthly 2025', season: 'Always-on', whatWorked: ['Recurring-giving framing', 'Meal-cost equivalence ("₹60 = 1 meal")'], whatFailed: ['SMS channel low reply'], recommendation: 'Keep meal-equivalence hook; drop SMS; nurture on WhatsApp.', reuseCount: 3, approvedBy: 'U-HEM' }
+    ];
+  }
+
+  /* ---------------- behavior-triggered micro-campaigns (WF-003 3.11) ---------------- */
+  function buildTriggers(contacts) {
+    var kinds = [
+      { t: 'Stalled payment', sig: 'Yatra payment partial for 6 days', act: 'Gentle reminder + assistance offer', ch: 'WhatsApp', sens: false },
+      { t: 'Website revisit', sig: 'Visited Gau Seva page 3× this week', act: 'Send Gau Seva brochure + ask', ch: 'WhatsApp', sens: false },
+      { t: 'Repeat Yatra interest', sig: 'Opened Yatra content 4×, no register', act: 'Personal call from Yatra desk', ch: 'Call', sens: false },
+      { t: 'Annual donation pattern', sig: 'Gave at Janmashtami last 3 years', act: 'Pre-festival invitation', ch: 'WhatsApp', sens: false },
+      { t: 'Event follow-up', sig: 'Attended festival, no follow-up in 5 days', act: 'Thank-you + monthly-giving ask', ch: 'WhatsApp', sens: false },
+      { t: 'HNI re-engagement', sig: 'HNI donor inactive 90 days', act: 'Relationship-owner outreach', ch: 'Call', sens: true }
+    ];
+    return kinds.map(function (k, i) {
+      var c = contacts[ri(0, contacts.length - 1)];
+      return { id: 'TRG-' + (7700 + i), type: k.t, contactId: c.id, contactName: c.name, signal: k.sig,
+        recommendedAction: k.act, channel: k.ch, sensitive: k.sens, count: ri(4, 120),
+        status: k.sens ? 'needs_approval' : pickW([['armed', 3], ['paused', 1]]), approverRole: k.sens ? 'donor_approver' : null };
+    });
+  }
+
+  /* ---------------- donor propensity (WF-003 3.12) ---------------- */
+  function buildPropensity(contacts, donors) {
+    var ranked = donors.map(function (d) {
+      var c = contacts.find(function (x) { return x.id === d.contactId; }) || {};
+      var base = d.tier === 'HNI' ? 80 : d.tier === 'Life Patron' ? 76 : d.tier === 'CSR' ? 72 : 50;
+      var score = Math.min(98, base + ri(-8, 16));
+      return { contactId: d.contactId, name: d.name, tier: d.tier, totalGiven: d.totalGiven, score: score,
+        confidence: +(0.7 + R() * 0.28).toFixed(2),
+        recommendedAsk: d.tier === 'HNI' ? U.inr(ri(50000, 200000)) : U.inr(ri(2100, 25000)),
+        seva: pick(['Yatra Sponsorship', 'Annadaan', 'Gau Seva', 'Deity Seva', 'Gita Daan', 'Temple Construction']),
+        context: (c.language || 'Telugu') + ' · ' + (c.city || 'Hyderabad') + ' · last gift ' + U.fmtDate(d.lastGift),
+        sensitive: d.tier === 'HNI' || d.tier === 'CSR' };
+    });
+    return U.sortBy(ranked, function (x) { return x.score; }, 'desc').slice(0, 24);
+  }
+
+  /* ---------------- service continuity & fallback (shared S10) ---------------- */
+  function buildContinuity() {
+    return {
+      incidents: [
+        { id: 'INC-01', system: 'Twilio Voice', status: 'fallback-active', impact: 'Auto-dialer unavailable', fallback: 'Priority manual call sheet issued to telecallers', startedAt: hoursAgo(5), reconciliation: 'Pending — 0 records bypassing CRM', owner: 'U-DEEPAK' },
+        { id: 'INC-02', system: 'Razorpay / DCC', status: 'monitoring', impact: 'Webhook delay on payment status', fallback: 'Manual status upload twice daily', startedAt: hoursAgo(20), reconciliation: 'Reconciled at 09:00', owner: 'U-NANDA' },
+        { id: 'INC-03', system: 'Hello Leads CRM API', status: 'resolved', impact: 'Read/write key pending', fallback: 'CSV import + manual review', startedAt: daysAgo(3), reconciliation: 'Reconciled · all records back-loaded', owner: 'U-SACHI' }
+      ],
+      steps: ['Capture', 'Contain', 'Reconcile', 'Correct', 'Verify']
+    };
+  }
+
+  /* ---------------- KCKE & Media AI boundary (shared S11) ---------------- */
+  function buildKCKE() {
+    return {
+      citations: [
+        { id: 'KCKE-01', topic: 'Janmashtami significance', source: 'Śrīmad-Bhāgavatam 10.3', text: 'The appearance of Lord Krishna at midnight…', status: 'approved', usedIn: ['CMP-J26'] },
+        { id: 'KCKE-02', topic: 'Importance of Annadaan', source: 'Bhagavad-gītā 3.14', text: 'All living beings subsist on food grains…', status: 'approved', usedIn: ['CMP-ANN'] },
+        { id: 'KCKE-03', topic: 'Gau-mata / cow protection', source: 'SB 8.8.11 + Prabhupada purport', text: 'The cow is considered one of the mothers…', status: 'review', usedIn: ['CMP-GAU'] },
+        { id: 'KCKE-04', topic: 'Kartik / Damodar month', source: 'Padma Purāṇa', text: 'The vow of Kartik is most dear to Krishna…', status: 'approved', usedIn: ['CMP-VRJ'] }
+      ],
+      media: [
+        { id: 'MED-01', type: 'Reel', title: 'Janmashtami Abhishekam storyboard', status: 'approved', campaignId: 'CMP-J26', note: 'Deity representation reviewed' },
+        { id: 'MED-02', type: 'Poster', title: 'Gau Seva appeal creative', status: 'needs_approval', campaignId: 'CMP-GAU', note: 'Deity/media + brand approval pending' },
+        { id: 'MED-03', type: 'Video', title: 'Vrindavan Yatra invitation', status: 'approved', campaignId: 'CMP-VRJ', note: 'Footage source-cleared' },
+        { id: 'MED-04', type: 'Storyboard', title: 'Annadaan donor story', status: 'draft', campaignId: 'CMP-ANN', note: 'Donor consent for story pending' }
+      ]
+    };
+  }
+
   /* ---------------- assemble ---------------- */
   function build() {
     var camp = buildCampaigns();
@@ -527,7 +670,7 @@ App.seed = (function () {
     var escalations = buildEscalations(calls);
     var merges = buildMergeCandidates(cd.contacts);
     return {
-      meta: { generatedAt: U.now().toISOString(), version: '1.0' },
+      meta: { generatedAt: U.now().toISOString(), version: '2.0' },
       centers: CENTERS, departments: DEPTS, roles: ROLES, users: USERS, sources: SOURCES,
       campaigns: camp,
       contacts: cd.contacts, donors: cd.donors, yatris: cd.yatris, leads: cd.leads,
@@ -538,7 +681,16 @@ App.seed = (function () {
       imports: buildImports(), apiRegistry: buildApiRegistry(),
       approvals: buildApprovals(), audit: buildAudit(),
       usage: buildUsage(),
-      landingPages: buildLandingPages(), content: buildContent()
+      landingPages: buildLandingPages(), content: buildContent(),
+      segments: buildSegments(cd.contacts),
+      relationships: buildRelationships(cd.contacts),
+      syncJobs: buildSyncJobs(),
+      remarketing: buildRemarketing(),
+      learnings: buildLearnings(),
+      triggers: buildTriggers(cd.contacts),
+      propensity: buildPropensity(cd.contacts, cd.donors),
+      continuity: buildContinuity(),
+      kcke: buildKCKE()
     };
   }
 
