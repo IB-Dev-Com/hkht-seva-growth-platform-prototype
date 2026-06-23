@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HKHT · AI for Seva — Hyderabad Revenue & Seva Growth Platform</title>
+  <meta name="description" content="HKHT AI for Seva — acquisition-to-conversion platform prototype (WF-006 CRM/Data Governance · WF-002 Voice Agent · WF-003 Digital Marketing)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <div id="app-root">
+    <!-- App shell is rendered by js/app.js -->
+    <div class="boot-splash" id="boot-splash">
+      <div class="boot-mark">ॐ</div>
+      <div class="boot-title">AI for Seva</div>
+      <div class="boot-sub">Loading platform…</div>
+    </div>
+  </div>
+
+  <!-- Toast + modal mount points -->
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="false"></div>
+  <div id="modal-region" class="modal-region" aria-hidden="true"></div>
+  <div id="drawer-region" class="drawer-region" aria-hidden="true"></div>
+
+  <!-- Core (order matters: no ES modules, runs from file://) -->
+  <script src="js/util.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/router.js"></script>
+
+  <!-- Screens -->
+  <script src="js/screens/login.js"></script>
+  <script src="js/screens/command-center.js"></script>
+  <script src="js/screens/golden-journey.js"></script>
+  <script src="js/screens/approvals.js"></script>
+  <script src="js/screens/usage-cost.js"></script>
+  <script src="js/screens/admin.js"></script>
+
+  <!-- WF-006 -->
+  <script src="js/screens/wf006-contacts.js"></script>
+  <script src="js/screens/wf006-contact-detail.js"></script>
+  <script src="js/screens/wf006-dedupe.js"></script>
+  <script src="js/screens/wf006-quality.js"></script>
+  <script src="js/screens/wf006-consent.js"></script>
+  <script src="js/screens/wf006-intake.js"></script>
+  <script src="js/screens/wf006-api-registry.js"></script>
+
+  <!-- WF-002 -->
+  <script src="js/screens/wf002-readiness.js"></script>
+  <script src="js/screens/wf002-call-console.js"></script>
+  <script src="js/screens/wf002-call-detail.js"></script>
+  <script src="js/screens/wf002-tasks.js"></script>
+  <script src="js/screens/wf002-whatsapp.js"></script>
+  <script src="js/screens/wf002-escalations.js"></script>
+  <script src="js/screens/wf002-scripts.js"></script>
+  <script src="js/screens/wf002-dashboard.js"></script>
+
+  <!-- WF-003 -->
+  <script src="js/screens/wf003-campaigns.js"></script>
+  <script src="js/screens/wf003-campaign-detail.js"></script>
+  <script src="js/screens/wf003-builder.js"></script>
+  <script src="js/screens/wf003-content.js"></script>
+  <script src="js/screens/wf003-dashboard.js"></script>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
