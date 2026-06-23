@@ -43,12 +43,20 @@ App.screens['wf006-sync'] = (function () {
   function chip(v, label, count) { return el('div.fchip' + (view === v ? '.active' : ''), { onclick: function () { view = v; store.emit(); } }, label + (count != null ? ' · ' + count : '')); }
 
   function resolveConflict(j) {
-    ui.modal({ title: 'Resolve identity conflict', subtitle: j.system + ' · ' + j.id,
+    var diff = [['Name', 'Ravi Teja Gupta', 'Ravi T Gupta', 'A'], ['Mobile', '+91 98480 21455', '+91 98480 21455', '='], ['Email', 'ravi.teja@gmail.com', 'rtgupta@yahoo.in', 'A'], ['City', 'Gachibowli', 'Hyderabad', 'A'], ['Source', 'meta_ads', 'helloleads', 'A']];
+    var pick = {}; diff.forEach(function (d, i) { pick[i] = d[3] === '=' ? 'CRM' : 'CRM'; });
+    ui.modal({ title: 'Resolve identity conflict — field diff', subtitle: j.system + ' · ' + j.id, size: 'lg',
       body: el('div', {}, [
-        ui.note('red', 'Same phone resolves to two Contact_IDs. Platform rule: humans decide identity conflicts.', '⚠'),
-        el('div.mt-8', {}, [ui.statline('Records affected', j.records), ui.statline('System', j.system), ui.statline('Routed to', 'Data custodian')])
+        ui.note('red', 'Same phone resolves to two Contact_IDs. Pick the surviving value per field; platform rule: humans decide identity conflicts (never auto).', '⚠'),
+        ui.table({ compact: true, columns: [
+          { label: 'Field', render: function (d) { return el('b.t-sm', { text: d[0] }); } },
+          { label: 'CRM record', render: function (d, i) { return el('label.row.gap-6', { style: { cursor: d[3] === '=' ? 'default' : 'pointer' } }, [d[3] !== '=' ? el('input', { type: 'radio', name: 'cf' + i, checked: pick[i] === 'CRM' ? true : null, onchange: function () { pick[i] = 'CRM'; } }) : null, el('span.t-sm', { text: d[1] })]); } },
+          { label: 'Incoming', render: function (d, i) { return d[3] === '=' ? el('span.t-xs.t-mut', { text: 'same' }) : el('label.row.gap-6', { style: { cursor: 'pointer' } }, [el('input', { type: 'radio', name: 'cf' + i, onchange: function () { pick[i] = 'IN'; } }), el('span.t-sm', { text: d[2] })]); } },
+          { label: '', render: function (d) { return d[3] === '=' ? ui.badge('match', 'green') : ui.badge('differs', 'amber'); } }
+        ], rows: diff }),
+        el('div.mt-12', {}, [el('div.t-up.mb-4', { text: 'Retry / sync policy' }), el('div.row.gap-16.t-sm.t-mut', {}, [el('span', { text: 'Retries: 3' }), el('span', { text: 'Backoff: exponential' }), el('span', { text: 'Alert-on-fail: data custodian' })])])
       ]),
-      actions: [{ label: 'Cancel' }, { label: 'Send to Dedupe', onClick: function () { App.router.go('/wf006/dedupe'); } }, { label: 'Resolve & merge ID', variant: 'primary', onClick: function () { store.actions.resolveConflict(j.id); ui.toast({ kind: 'success', msg: 'Conflict resolved — identity reconciled & logged.' }); } }]
+      actions: [{ label: 'Cancel' }, { label: 'Send to Dedupe', onClick: function () { App.router.go('/wf006/dedupe'); } }, { label: 'Resolve & merge ID', variant: 'primary', onClick: function () { store.actions.resolveConflict(j.id); ui.toast({ kind: 'success', msg: 'Conflict resolved with field choices — identity reconciled & logged.' }); } }]
     });
   }
 

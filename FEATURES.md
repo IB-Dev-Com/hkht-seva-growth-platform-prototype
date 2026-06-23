@@ -6,6 +6,16 @@ Feature → Screen → Status. Status legend: ✅ Built (interactive mock) · �
 > optimisation, content drafting) is presented as **automated in a mocked backend**, with a **human in
 > full control** — review, approve, correct, override, re-run. No live APIs.
 
+## Gap-analysis remediation (v0.4.0)
+
+All **75 gaps** from `gap-analysis.html` are now implemented (see `CHANGELOG.md` v0.4.0). Highlights: an SLA
+engine with live countdowns + auto-escalation, comments/@mentions, notifications + alerts, a ⌘K command palette,
+sortable/paginated tables + CSV export, field-level audit, inline record editing + history, a field-level merge
+resolver, bulk contact actions, manual call disposition, QA scorecards, approver artifact-preview, a full
+**central-billing subsystem** (Org→Center→Dept, usage ledger, budget caps with enforcement, chargeback
+statements, rate card, entitlements), and a **My Work / Rework / SLA Board / Billing** set of new screens.
+Total screens: **46**.
+
 ## Plan confirmation (read first)
 
 The upfront analysis & planning artifacts live in **`docs/`** and are the source of truth for scope:

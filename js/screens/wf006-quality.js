@@ -33,11 +33,11 @@ App.screens['wf006-quality'] = (function () {
     });
 
     var exceptions = [
-      { icon: '📵', label: 'Missing source tag', count: n - withSource, color: 'amber', filter: 'nosource' },
-      { icon: '☎️', label: 'Invalid / unverified phone', count: invalidPhone, color: 'red', filter: 'all' },
-      { icon: '🔗', label: 'High duplicate risk', count: dupRisk, color: 'red', filter: 'all', href: '#/wf006/dedupe' },
-      { icon: '🕸️', label: 'Stale (>30d no touch)', count: stale, color: 'amber', filter: 'all' },
-      { icon: '✉️', label: 'Missing email', count: noEmail, color: 'neutral', filter: 'all' }
+      { icon: '📵', label: 'Missing source tag', count: n - withSource, color: 'amber', href: '#/wf006/contacts?f=nosource' },
+      { icon: '☎️', label: 'Invalid / unverified phone', count: invalidPhone, color: 'red', href: '#/wf006/contacts' },
+      { icon: '🔗', label: 'High duplicate risk', count: dupRisk, color: 'red', href: '#/wf006/contacts?f=dup' },
+      { icon: '🕸️', label: 'Stale (>30d no touch)', count: stale, color: 'amber', href: '#/wf006/contacts?f=stale' },
+      { icon: '🛡️', label: 'Suppressed (DND/opt-out)', count: cs.filter(function (c) { return c.consent.dnd || c.consent.optOut; }).length, color: 'neutral', href: '#/wf006/contacts?f=suppressed' }
     ];
 
     return el('div', {}, [
@@ -63,10 +63,10 @@ App.screens['wf006-quality'] = (function () {
         ]),
         el('div.col.gap-16', {}, [
           ui.card({ title: 'Exception queues', icon: '⚠️', body: exceptions.map(function (ex) {
-            return el('a', { href: ex.href || '#/wf006/contacts', style: { textDecoration: 'none', display: 'block' } }, el('div.row-between', { style: { padding: '10px 0', borderBottom: '1px solid var(--border)' } }, [
-              el('div.row.gap-8', {}, [el('span', { text: ex.icon }), el('span.t-sm', { text: ex.label })]),
-              ui.badge(ex.count, ex.color)
-            ]));
+            return el('div.row-between', { style: { padding: '10px 0', borderBottom: '1px solid var(--border)' } }, [
+              el('a.row.gap-8', { href: ex.href, style: { textDecoration: 'none', color: 'inherit', flex: 1 } }, [el('span', { text: ex.icon }), el('span.t-sm', { text: ex.label }), ui.badge(ex.count, ex.color)]),
+              el('button.btn.btn-sm.btn-ghost', { onclick: function () { assign(ex); } }, 'Assign')
+            ]);
           }) }),
           ui.card({ title: 'Governance gate', icon: '🚦', body: [
             ui.note('green', '<b>WF-006 gate status: open.</b> Contact_ID rules, duplicate policy, source fields and consent/DND model are approved — WF-002 and WF-003 may scale against this data.', '✓'),
@@ -82,5 +82,16 @@ App.screens['wf006-quality'] = (function () {
     ]);
   }
 
+  function assign(ex) {
+    var owner = 'U-SACHI';
+    ui.modal({ title: 'Assign exception queue', subtitle: ex.label + ' · ' + ex.count + ' records',
+      body: el('div', {}, [
+        ui.note('info', 'Creates an owned data-fix task with progress tracking (worked / total).'),
+        el('div.field.mt-12', {}, [el('label', { text: 'Assign to' }), el('select.select', { onchange: function (e) { owner = e.target.value; } }, store.get().users.filter(function (u) { return ['data_custodian', 'consent_custodian', 'org_admin'].indexOf(u.role) > -1; }).map(function (u) { var o = el('option', { value: u.id, text: u.name }); if (u.id === owner) o.selected = true; return o; }))])
+      ]),
+      actions: [{ label: 'Cancel' }, { label: 'Assign queue', variant: 'primary', onClick: function () { App.store.actions.assignQueue(ex.label, owner, ex.count); App.ui.toast({ kind: 'success', msg: 'Queue assigned to ' + (store.user(owner) || {}).name + ' & notified.' }); } }] });
+  }
+
   return { render: render, title: 'Data Quality' };
 })();
+

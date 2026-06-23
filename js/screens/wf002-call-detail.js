@@ -58,10 +58,47 @@ App.screens['wf002-call-detail'] = (function () {
             ui.statline('Script', script ? script.name + ' ' + script.version : '—'),
             ui.statline('When', U.fmtDateTime(call.createdAt))
           ] }),
+          ui.card({ title: 'QA scorecard', icon: '✅', body: [
+            call.qa ? el('div', {}, [
+              el('div.row-between.mb-8', {}, [el('div.t-2xl.t-bold', { text: call.qa.score + '/100' }), ui.badge(call.qa.score >= 85 ? 'Pass' : 'Coach', call.qa.score >= 85 ? 'green' : 'amber')]),
+              call.qa.notes ? ui.note('info', '<b>Coaching:</b> ' + call.qa.notes, '🎓') : null,
+              el('div.t-xs.t-mut3.mt-4', { text: 'by ' + (store.user(call.qa.by) || {}).name + ' · ' + U.ago(call.qa.ts) })
+            ]) : el('div', {}, [el('div.t-sm.t-mut.mb-8', { text: 'Not yet QA-reviewed.' })]),
+            el('button.btn.btn-sm.btn-block.mt-8', { onclick: function () { qaModal(call); } }, call.qa ? 'Re-score' : 'Run QA scorecard')
+          ] }),
+          ui.card({ title: 'Quality flag', icon: '🔁', body: [
+            el('div.row.gap-8', {}, [
+              el('button.btn.btn-sm.btn-success.grow', { onclick: function () { store.actions.setReview('call', call.id, 'good'); ui.toast({ kind: 'success', msg: 'Marked done.' }); } }, '👍 Done'),
+              el('button.btn.btn-sm.grow', { onclick: function () { flagImprove(call); } }, '🔁 Needs improvement')
+            ])
+          ] }),
           call.escalated ? ui.card({ title: 'Escalation', icon: '🚨', body: [ui.note('red', 'Routed to donor relations with full context pack.', '🚨'), el('a.btn.btn-block.mt-8', { href: '#/wf002/escalations' }, 'Open escalations →')] }) : null
         ])
       ])
     ]);
+  }
+
+  function qaModal(call) {
+    var dims = ['Greeting & identity', 'Script adherence', 'Objection handling', 'Compliance / consent', 'Tone & warmth'];
+    var scores = {}; dims.forEach(function (d) { scores[d] = 4; }); var notes = '';
+    function row(d) {
+      var val = el('b', { text: '4/5', style: { width: '36px' } });
+      var rng = el('input', { type: 'range', min: 1, max: 5, value: 4, style: { flex: 1 }, oninput: function (e) { scores[d] = +e.target.value; val.textContent = e.target.value + '/5'; } });
+      return el('div.row.gap-10', { style: { padding: '6px 0' } }, [el('span.t-sm', { style: { width: '160px' }, text: d }), rng, val]);
+    }
+    ui.modal({ title: 'QA scorecard — ' + call.contactName, size: 'lg',
+      body: el('div', {}, dims.map(row).concat([el('div.field.mt-12', {}, [el('label', { text: 'Coaching note' }), el('textarea.textarea', { placeholder: 'Feedback for the caller…', oninput: function (e) { notes = e.target.value; } })])])),
+      actions: [{ label: 'Cancel' }, { label: 'Save QA + share', variant: 'primary', onClick: function () {
+        var total = Math.round(dims.reduce(function (a, d) { return a + scores[d]; }, 0) / (dims.length * 5) * 100);
+        store.actions.saveQAScore(call.id, total, notes);
+        store.actions.audit('Shared QA coaching', 'data', call.ownerId, 'Call ' + call.id);
+        ui.toast({ kind: 'success', msg: 'QA score ' + total + '/100 saved & shared with caller.' });
+      } }] });
+  }
+  function flagImprove(call) {
+    var note = '';
+    ui.modal({ title: 'Flag for improvement', subtitle: call.contactName, body: el('div.field', {}, [el('label', { text: 'What needs improvement?' }), el('textarea.textarea', { oninput: function (e) { note = e.target.value; } })]),
+      actions: [{ label: 'Cancel' }, { label: 'Flag & create rework', variant: 'primary', onClick: function () { store.actions.setReview('call', call.id, 'needs_improvement', note); ui.toast({ kind: 'warn', msg: 'Flagged → rework queue + caller notified.' }); } }] });
   }
 
   function confirmOutcome(call) { store.actions.reviewCall(call.id, {}); ui.toast({ kind: 'success', msg: 'Outcome confirmed & finalized in CRM.' }); }

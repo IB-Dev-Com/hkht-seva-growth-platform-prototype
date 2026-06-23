@@ -32,9 +32,14 @@ App.seed = (function () {
 
   /* ---------------- reference data ---------------- */
   var CENTERS = [
-    { id: 'HYD', name: 'HKM Hyderabad', short: 'Hyderabad', city: 'Hyderabad', primary: true },
-    { id: 'SEC', name: 'HKM Secunderabad', short: 'Secunderabad', city: 'Secunderabad' },
-    { id: 'GCB', name: 'HKM Gachibowli', short: 'Gachibowli', city: 'Gachibowli' }
+    { id: 'HYD', name: 'HKM Hyderabad', short: 'Hyderabad', city: 'Hyderabad', primary: true, orgId: 'ORG-HKHT', entitlements: ['platform', 'wf006', 'wf002', 'wf003'] },
+    { id: 'SEC', name: 'HKM Secunderabad', short: 'Secunderabad', city: 'Secunderabad', orgId: 'ORG-HKHT', entitlements: ['platform', 'wf006', 'wf002', 'wf003'] },
+    { id: 'GCB', name: 'HKM Gachibowli', short: 'Gachibowli', city: 'Gachibowli', orgId: 'ORG-HKHT', entitlements: ['platform', 'wf006', 'wf002'] },
+    { id: 'VJA', name: 'HKM Vijayawada', short: 'Vijayawada', city: 'Vijayawada', orgId: 'ORG-VJA', entitlements: ['platform', 'wf006', 'wf003'] }
+  ];
+  var ORGS = [
+    { id: 'ORG-HKHT', name: 'Hare Krishna Heritage Trust — Hyderabad', short: 'HKHT', plan: 'Enterprise', primary: true },
+    { id: 'ORG-VJA', name: 'HKM Vijayawada Society', short: 'HKM-VJA', plan: 'Growth' }
   ];
   var DEPTS = [
     { id: 'DON', name: 'Donor Relations', icon: '🪔' },
@@ -56,7 +61,9 @@ App.seed = (function () {
     content_reviewer: { label: 'Content / Creative Reviewer', scope: 'wf003', icon: '✍️' },
     donor_approver:   { label: 'Donor Relations Approver', scope: 'approve', icon: '🤝' },
     finance_reviewer: { label: 'Finance / DCC Reviewer', scope: 'wf003', icon: '🧾' },
-    org_admin:        { label: 'Org / Center Admin', scope: 'admin', icon: '⚙️' }
+    org_admin:        { label: 'Org / Center Admin', scope: 'admin', icon: '⚙️' },
+    center_admin:     { label: 'Center Admin', scope: 'admin', icon: '🏛️' },
+    platform_admin:   { label: 'Platform Admin', scope: 'platform_admin', icon: '🛠️' }
   };
 
   var USERS = [
@@ -72,7 +79,9 @@ App.seed = (function () {
     { id: 'U-MEERA',  name: 'Meera Desai', role: 'content_reviewer', dept: 'MKT', center: 'HYD', email: 'meera@hkmhyderabad.org' },
     { id: 'U-GOPAL',  name: 'Gopal Das', role: 'donor_approver', dept: 'DON', center: 'HYD', email: 'gopal@hkmhyderabad.org' },
     { id: 'U-NANDA',  name: 'Nanda Kishore', role: 'finance_reviewer', dept: 'FIN', center: 'HYD', email: 'nanda@hkmhyderabad.org' },
-    { id: 'U-GAURANGA', name: 'Gauranga Das', role: 'org_admin', dept: 'CRM', center: 'HYD', email: 'admin@hkmhyderabad.org' }
+    { id: 'U-GAURANGA', name: 'Gauranga Das', role: 'org_admin', dept: 'CRM', center: 'HYD', email: 'admin@hkmhyderabad.org' },
+    { id: 'U-PLATADMIN', name: 'Bhakta Platform Admin', role: 'platform_admin', dept: 'CRM', center: 'HYD', email: 'platform@hkmhyderabad.org' },
+    { id: 'U-VJAADMIN', name: 'Radhika Devi', role: 'center_admin', dept: 'CRM', center: 'VJA', email: 'admin@hkmvijayawada.org' }
   ];
   var TELECALLERS = ['U-ANAND', 'U-PRIYA', 'U-LAKSHMI'];
 
@@ -692,6 +701,101 @@ App.seed = (function () {
     });
   }
 
+  /* ---------------- rate card (MT-05) ---------------- */
+  function buildRateCard() {
+    // service unit rates; per-org override for the Growth-plan org
+    return [
+      { service: 'voice', name: 'Twilio Voice', unit: 'min', rate: 0.45, effectiveFrom: daysAgo(120), orgRates: { 'ORG-VJA': 0.52 } },
+      { service: 'whatsapp', name: 'WhatsApp BSP', unit: 'conv', rate: 0.88, effectiveFrom: daysAgo(120), orgRates: { 'ORG-VJA': 0.95 } },
+      { service: 'ai', name: 'Gemini / Vertex AI', unit: 'gen', rate: 1.20, effectiveFrom: daysAgo(120), orgRates: {} },
+      { service: 'ads', name: 'Ad Spend (Google+Meta)', unit: '₹', rate: 1, effectiveFrom: daysAgo(120), orgRates: {} },
+      { service: 'sms', name: 'SMS / RCS', unit: 'msg', rate: 0.18, effectiveFrom: daysAgo(120), orgRates: {} },
+      { service: 'cloud', name: 'Cloud Run / BigQuery', unit: 'unit', rate: 0.02, effectiveFrom: daysAgo(120), orgRates: {} }
+    ];
+  }
+
+  /* ---------------- budgets / caps per center+dept+service (MT-03) ---------------- */
+  function buildBudgets(usageRows) {
+    var out = [];
+    var caps = { voice: 9000, whatsapp: 6000, ai: 4000, ads: 320000, sms: 2500, cloud: 3000 };
+    // aggregate spent per center+dept+service from usage rows
+    var spentMap = {};
+    usageRows.forEach(function (r) { var k = r.centerId + '|' + r.deptId + '|' + r.service; spentMap[k] = (spentMap[k] || 0) + r.cost; });
+    CENTERS.forEach(function (ctr) {
+      DEPTS.forEach(function (dp) {
+        ['voice', 'whatsapp', 'ai', 'ads'].forEach(function (sv) {
+          var k = ctr.id + '|' + dp.id + '|' + sv;
+          var spent = spentMap[k];
+          if (spent == null) return; // only where there is usage
+          var cap = Math.round(caps[sv] * (0.6 + R() * 0.9) * (sv === 'ads' ? 1 : 1));
+          // ensure some are near/over cap to show enforcement
+          if (chance(0.18)) cap = Math.round(spent * (0.85 + R() * 0.1));
+          out.push({ id: 'BUD-' + k.replace(/\|/g, '-'), orgId: ctr.orgId, centerId: ctr.id, deptId: dp.id, service: sv,
+            period: '2026-06', cap: cap, spent: spent, alertAt: [80, 100], hardStop: sv === 'ads' || sv === 'voice', owner: ctr.id === 'VJA' ? 'U-VJAADMIN' : 'U-GAURANGA' });
+        });
+      });
+    });
+    return out;
+  }
+
+  /* ---------------- event-level usage ledger (MT-02) ---------------- */
+  function buildUsageLedger(contacts, calls, whatsapp, campaigns) {
+    var rate = { voice: 0.45, whatsapp: 0.88, ai: 1.20, ads: 1, sms: 0.18, cloud: 0.02 };
+    function centerOf(cid) { var c = contacts.find(function (x) { return x.id === cid; }); return c ? c.centerId : 'HYD'; }
+    function orgOf(centerId) { var c = CENTERS.find(function (x) { return x.id === centerId; }); return c ? c.orgId : 'ORG-HKHT'; }
+    var L = [];
+    function push(svc, qty, centerId, deptId, userId, refType, refId, when) {
+      var r = rate[svc]; var co = orgOf(centerId);
+      var unitRate = co === 'ORG-VJA' && (svc === 'voice' || svc === 'whatsapp') ? (svc === 'voice' ? 0.52 : 0.95) : r;
+      L.push({ id: 'LG-' + (L.length + 1), ts: when, service: svc, qty: qty, unitRate: unitRate, cost: Math.round(qty * unitRate), orgId: co, centerId: centerId, deptId: deptId, userId: userId, refType: refType, refId: refId });
+    }
+    calls.forEach(function (c) { if (c.duration) { var mins = Math.max(1, Math.round(c.duration / 60)); push('voice', mins, centerOf(c.contactId), 'VOX', c.ownerId, 'Call', c.id, c.createdAt); push('ai', 1, centerOf(c.contactId), 'VOX', c.ownerId, 'Call', c.id, c.createdAt); } });
+    whatsapp.forEach(function (m) { push('whatsapp', 1, centerOf(m.contactId), 'VOX', m.ownerId, 'Message', m.id, m.createdAt); });
+    campaigns.forEach(function (c) { if (c.spend > 0) { (c.daily || []).forEach(function (d) { if (d.spend) push('ads', d.spend, c.centerId, c.deptId, c.ownerId, 'Campaign', c.id, d.date); }); push('ai', ri(20, 80), c.centerId, c.deptId, c.ownerId, 'Campaign', c.id, c.startDate || daysAgo(10)); } });
+    return L;
+  }
+
+  /* ---------------- statements (MT-04) derived at runtime, seeded marker only ---------------- */
+  /* ---------------- alerts (LD-03 / MT-07) ---------------- */
+  function buildAlerts() {
+    return [
+      { id: 'ALT-01', sev: 'high', kind: 'budget', title: 'Ad-spend cap 92% used — HKM Hyderabad · Donor Relations', detail: 'June ad-spend budget at 92% with 7 days left. Projected to breach.', ts: hoursAgo(3), centerId: 'HYD', read: false, ref: 'BUD-HYD-DON-ads' },
+      { id: 'ALT-02', sev: 'high', kind: 'roas', title: 'ROAS below target on Gita Daan', detail: 'CMP-GIT ROAS dropped to 1.4× (target 2.5×).', ts: hoursAgo(7), centerId: 'SEC', read: false, ref: 'CMP-GIT' },
+      { id: 'ALT-03', sev: 'med', kind: 'dq', title: 'Data quality dipped below 85 in Gachibowli', detail: 'New walk-in import lowered DQ to 82.', ts: hoursAgo(20), centerId: 'GCB', read: false, ref: 'IMP-2204' },
+      { id: 'ALT-04', sev: 'med', kind: 'sla', title: '3 high-priority callbacks breached SLA', detail: 'Overdue hot leads in Voice Ops.', ts: hoursAgo(2), centerId: 'HYD', read: false, ref: 'tasks' },
+      { id: 'ALT-05', sev: 'low', kind: 'optout', title: 'WhatsApp opt-out rate ticked up', detail: 'Opt-out 1.8% this week vs 1.1% baseline.', ts: daysAgo(1), centerId: 'HYD', read: true, ref: 'whatsapp' }
+    ];
+  }
+
+  /* ---------------- notifications per user (XC-02) ---------------- */
+  function buildNotifications() {
+    return [
+      { id: 'NTF-01', userId: 'U-MUKUND', kind: 'approval', title: 'Gau Seva budget awaiting your approval', ref: 'APR-001', ts: hoursAgo(5), read: false },
+      { id: 'NTF-02', userId: 'U-GOPAL', kind: 'approval', title: 'Gau Seva script needs donor sign-off', ref: 'APR-002', ts: hoursAgo(8), read: false },
+      { id: 'NTF-03', userId: 'U-ANAND', kind: 'task', title: 'Callback due in 1h — Ravi Teja Gupta', ref: 'tasks', ts: hoursAgo(1), read: false },
+      { id: 'NTF-04', userId: 'U-GOPAL', kind: 'escalation', title: 'Donor receipt escalation assigned to you', ref: 'ESC', ts: hoursAgo(2), read: false },
+      { id: 'NTF-05', userId: 'U-SACHI', kind: 'approval', title: 'HNI merge needs your review', ref: 'APR-003', ts: hoursAgo(2), read: false }
+    ];
+  }
+
+  /* ---------------- targets per center/period (LD-01) ---------------- */
+  function buildTargets() {
+    return [
+      { centerId: 'HYD', period: '2026-06', revenue: 2800000, leads: 3000, conversions: 320 },
+      { centerId: 'SEC', period: '2026-06', revenue: 700000, leads: 800, conversions: 90 },
+      { centerId: 'GCB', period: '2026-06', revenue: 500000, leads: 600, conversions: 60 },
+      { centerId: 'VJA', period: '2026-06', revenue: 400000, leads: 500, conversions: 45 }
+    ];
+  }
+
+  /* ---------------- live caller floor (VO-02b) ---------------- */
+  function buildAgentStatus() {
+    return TELECALLERS.concat(['U-PRIYA']).filter(function (v, i, a) { return a.indexOf(v) === i; }).map(function (uid, i) {
+      var st = pickW([['on-call', 3], ['idle', 2], ['wrap', 1], ['dialing', 1]]);
+      return { userId: uid, status: st, contactName: st === 'on-call' || st === 'dialing' ? name() : null, sinceSec: ri(20, 400), callsToday: ri(8, 60), talkMin: ri(40, 220) };
+    });
+  }
+
   /* ---------------- assemble ---------------- */
   function build() {
     var camp = buildCampaigns();
@@ -702,20 +806,55 @@ App.seed = (function () {
     var whatsapp = buildWhatsApp(calls, cd.contacts);
     var escalations = buildEscalations(calls);
     var merges = buildMergeCandidates(cd.contacts);
+    var content = buildContent();
+    var segments = buildSegments(cd.contacts);
+    var apiRegistry = buildApiRegistry();
+
+    // ---- tenant scope stamping (MT-10): every record carries org/center/dept ----
+    function orgOf(centerId) { var c = CENTERS.find(function (x) { return x.id === centerId; }); return c ? c.orgId : 'ORG-HKHT'; }
+    function centerOf(cid) { var c = cd.contacts.find(function (x) { return x.id === cid; }); return c ? c.centerId : 'HYD'; }
+    function stamp(rec, centerId, deptId) { rec.centerId = rec.centerId || centerId; rec.deptId = rec.deptId || deptId; rec.orgId = orgOf(rec.centerId); rec.comments = rec.comments || []; return rec; }
+    calls.forEach(function (c) { stamp(c, centerOf(c.contactId), 'VOX'); });
+    tasks.forEach(function (t) { stamp(t, centerOf(t.contactId), 'VOX'); });
+    escalations.forEach(function (e) { stamp(e, centerOf(e.contactId), 'VOX'); });
+    whatsapp.forEach(function (m) { stamp(m, centerOf(m.contactId), 'VOX'); });
+    segments.forEach(function (s) { stamp(s, 'HYD', 'CRM'); });
+    camp.forEach(function (c) { c.orgId = orgOf(c.centerId); c.comments = c.comments || []; });
+    cd.contacts.forEach(function (c) { c.orgId = orgOf(c.centerId); c.comments = c.comments || []; c.history = c.history || []; });
+
+    // ---- per-variant creative metrics (CM-04) ----
+    content.forEach(function (ct) {
+      ct.variants.forEach(function (v, i) {
+        var impr = ri(8000, 90000), ctr = +(0.8 + R() * 2.4).toFixed(2), clicks = Math.round(impr * ctr / 100), cvr = +(2 + R() * 8).toFixed(1);
+        v.metrics = { impressions: impr, ctr: ctr, clicks: clicks, conversions: Math.round(clicks * cvr / 100), cvr: cvr, status: i === 0 ? 'winner' : 'active' };
+      });
+    });
+
+    // ---- API uptime history (ST-10) ----
+    apiRegistry.forEach(function (a) {
+      a.uptimeHistory = []; a.lastChecked = hoursAgo(ri(0, 6));
+      for (var d = 29; d >= 0; d--) a.uptimeHistory.push({ date: daysAgo(d), up: a.uptime == null ? (chance(0.6) ? 99 : 0) : Math.min(100, a.uptime + (chance(0.1) ? -ri(1, 8) : 0)) });
+    });
+
+    // ---- central billing ----
+    var usage = buildUsage();
+    var ledger = buildUsageLedger(cd.contacts, calls, whatsapp, camp);
+    var budgets = buildBudgets(usage.rows);
+
     return {
-      meta: { generatedAt: U.now().toISOString(), version: '2.0' },
-      centers: CENTERS, departments: DEPTS, roles: ROLES, users: USERS, sources: SOURCES,
+      meta: { generatedAt: U.now().toISOString(), version: '3.0' },
+      orgs: ORGS, centers: CENTERS, departments: DEPTS, roles: ROLES, users: USERS, sources: SOURCES,
       campaigns: camp,
       contacts: cd.contacts, donors: cd.donors, yatris: cd.yatris, leads: cd.leads,
       suppression: cd.suppression,
       scripts: scripts, calls: calls, tasks: tasks,
       waTemplates: WA_TEMPLATES, whatsapp: whatsapp,
       escalations: escalations, merges: merges,
-      imports: buildImports(), apiRegistry: buildApiRegistry(),
+      imports: buildImports(), apiRegistry: apiRegistry,
       approvals: buildApprovals(), audit: buildAudit(),
-      usage: buildUsage(),
-      landingPages: buildLandingPages(), content: buildContent(),
-      segments: buildSegments(cd.contacts),
+      usage: usage, ledger: ledger, budgets: budgets, rateCard: buildRateCard(),
+      landingPages: buildLandingPages(), content: content,
+      segments: segments,
       relationships: buildRelationships(cd.contacts),
       syncJobs: buildSyncJobs(),
       remarketing: buildRemarketing(),
@@ -724,7 +863,10 @@ App.seed = (function () {
       propensity: buildPropensity(cd.contacts, cd.donors),
       continuity: buildContinuity(),
       kcke: buildKCKE(),
-      aiAgents: buildAIAgents()
+      aiAgents: buildAIAgents(),
+      alerts: buildAlerts(), notifications: buildNotifications(),
+      targets: buildTargets(), agentStatus: buildAgentStatus(),
+      reworks: [], savedViews: [], campaignDrafts: []
     };
   }
 

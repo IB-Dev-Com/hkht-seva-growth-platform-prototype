@@ -30,7 +30,7 @@ App.screens['wf002-escalations'] = (function () {
         el('div.row.gap-10', {}, [
           ui.avatar(e.contactName, e.contactId, 40),
           el('div', {}, [
-            el('div.row.gap-8', {}, [el('b', { text: e.contactName }), ui.badge(e.priority, e.priority === 'High' ? 'red' : 'amber'), overdue ? ui.badge('SLA breached', 'red', true) : null]),
+            el('div.row.gap-8', {}, [el('b', { text: e.contactName }), ui.badge(e.priority, e.priority === 'High' ? 'red' : 'amber'), e.status !== 'Resolved' ? ui.slaBadge('escalation', e) : null]),
             el('div.t-sm.t-mut.mt-2', { text: e.reason })
           ])
         ]),
@@ -40,14 +40,28 @@ App.screens['wf002-escalations'] = (function () {
         el('div', {}, [el('div.t-up.mb-4', { text: 'Context pack (AI-prepared)' }), el('div.note.note-info', {}, [el('span.ni', { text: '📄' }), el('div.t-sm', { text: e.context })])]),
         el('div', {}, [el('div.t-up.mb-4', { text: 'Suggested talking points' }), el('ul', { style: { paddingLeft: '4px' } }, e.talkingPoints.map(function (p) { return el('li.row.gap-6.t-sm', { style: { padding: '3px 0' } }, [el('span', { text: '•', style: { color: 'var(--primary)' } }), p]); }))])
       ]),
-      el('div.row.gap-8.mt-16', { style: { alignItems: 'center' } }, [
-        el('span.t-xs.t-mut', { text: 'Assigned: ' + (store.user(e.assigneeId) || {}).name + ' · SLA ' + U.ago(e.slaDue) }),
+      el('details', { style: { marginTop: '10px' } }, [el('summary', { style: { cursor: 'pointer', fontSize: '12px', fontWeight: 600, color: 'var(--accent)' } }, '💬 Discussion (' + (e.comments || []).length + ')'), el('div.mt-8', {}, ui.commentThread('escalation', e.id))]),
+      el('div.row.gap-8.mt-16', { style: { alignItems: 'center', flexWrap: 'wrap' } }, [
+        el('span.t-xs.t-mut', { text: 'Assigned: ' + (store.user(e.assigneeId) || {}).name }),
         el('div.grow'),
+        e.status !== 'Resolved' ? el('button.btn.btn-sm.btn-ghost', { onclick: function () { changePriority(e); } }, '⚑ Priority') : null,
+        e.status !== 'Resolved' ? el('button.btn.btn-sm.btn-ghost', { onclick: function () { reassign(e); } }, '↪ Reassign') : null,
         e.callId ? el('a.btn.btn-sm.btn-ghost', { href: '#/wf002/call/' + e.callId }, 'View call') : null,
         el('a.btn.btn-sm.btn-ghost', { href: '#/wf006/contact/' + e.contactId }, 'Open contact'),
         e.status !== 'Resolved' ? el('button.btn.btn-sm.btn-success', { onclick: function () { resolve(e); } }, '✓ Resolve') : el('span.t-xs.t-mut', { text: 'Resolved ' + U.ago(e.resolvedAt) })
       ])
     ] });
+  }
+
+  function reassign(e) {
+    var sel = e.assigneeId;
+    ui.modal({ title: 'Reassign escalation', subtitle: e.contactName, body: el('div.field', {}, [el('label', { text: 'Assignee' }), el('select.select', { onchange: function (ev) { sel = ev.target.value; } }, store.get().users.map(function (u) { var o = el('option', { value: u.id, text: u.name + ' · ' + store.roleLabel(u.role) }); if (u.id === e.assigneeId) o.selected = true; return o; }))]),
+      actions: [{ label: 'Cancel' }, { label: 'Reassign', variant: 'primary', onClick: function () { store.actions.reassignEscalation(e.id, sel); ui.toast({ kind: 'success', msg: 'Reassigned & notified.' }); } }] });
+  }
+  function changePriority(e) {
+    var sel = e.priority;
+    ui.modal({ title: 'Change priority', subtitle: e.contactName, body: el('div.field', {}, [el('label', { text: 'Priority' }), el('select.select', { onchange: function (ev) { sel = ev.target.value; } }, ['High', 'Medium', 'Low'].map(function (p) { var o = el('option', { value: p, text: p }); if (p === e.priority) o.selected = true; return o; }))]),
+      actions: [{ label: 'Cancel' }, { label: 'Save', variant: 'primary', onClick: function () { store.actions.setEscalationPriority(e.id, sel); ui.toast({ kind: 'success', msg: 'Priority updated → ' + sel }); } }] });
   }
 
   function resolve(e) {

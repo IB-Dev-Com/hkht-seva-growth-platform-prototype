@@ -115,12 +115,31 @@ App.util = (function () {
   function sum(arr, f) { return arr.reduce(function (a, x) { return a + (f ? f(x) : x); }, 0); }
   function sortBy(arr, f, dir) { return arr.slice().sort(function (a, b) { var x = f(a), y = f(b); return (x < y ? -1 : x > y ? 1 : 0) * (dir === 'desc' ? -1 : 1); }); }
 
+  /* ---- export (XC-03) ---- */
+  function toCSV(rows, headers) {
+    if (!rows || !rows.length) return '';
+    var keys = headers || Object.keys(rows[0]);
+    function cell(v) { v = v == null ? '' : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
+    return keys.join(',') + '\n' + rows.map(function (r) { return keys.map(function (k) { return cell(r[k]); }).join(','); }).join('\n');
+  }
+  function download(filename, content, mime) {
+    try {
+      var blob = new Blob([content], { type: mime || 'text/csv;charset=utf-8' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a'); a.href = url; a.download = filename; document.body.appendChild(a); a.click();
+      setTimeout(function () { a.remove(); URL.revokeObjectURL(url); }, 100);
+      return true;
+    } catch (e) { return false; }
+  }
+  function relTime(d) { return ago(d); }
+
   return {
     el: el, frag: frag, clear: clear, append: append, $: $, $$: $$,
     inr: inr, num: num, pct: pct, initials: initials, colorFor: colorFor,
     now: now, daysAgo: daysAgo, hoursFromNow: hoursFromNow,
     fmtDate: fmtDate, fmtDateTime: fmtDateTime, fmtTime: fmtTime, ago: ago, mins: mins, TODAY: TODAY,
     uid: uid, clone: clone, debounce: debounce, sleep: sleep, escapeHtml: escapeHtml,
-    group: group, sum: sum, sortBy: sortBy
+    group: group, sum: sum, sortBy: sortBy,
+    toCSV: toCSV, download: download, relTime: relTime
   };
 })();

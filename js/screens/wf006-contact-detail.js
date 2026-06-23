@@ -33,36 +33,75 @@ App.screens['wf006-contact-detail'] = (function () {
           ])
         ]),
         el('div.row.gap-8.mt-16', { style: { flexWrap: 'wrap' } }, [
-          el('a.btn.btn-primary', { href: '#/journey?contact=' + c.id }, [el('span.ico', { text: '🧭' }), 'Golden Journey']),
+          el('button.btn.btn-primary', { onclick: function () { editContact(c); } }, [el('span.ico', { text: '✎' }), 'Edit record']),
+          el('a.btn', { href: '#/journey?contact=' + c.id }, [el('span.ico', { text: '🧭' }), 'Golden Journey']),
           el('button.btn', { onclick: function () { startCall(c); } }, [el('span.ico', { text: '📞' }), 'Queue call']),
           el('button.btn', { onclick: function () { sendWA(c); } }, [el('span.ico', { text: '💬' }), 'WhatsApp']),
           el('button.btn', { onclick: function () { consentModal(c); } }, [el('span.ico', { text: '🛡️' }), 'Consent']),
           el('div.grow'),
-          el('div.t-xs.t-mut3', { text: 'Owner: ' + ((store.user(c.ownerId) || {}).name || '—') })
+          el('div.t-xs.t-mut3', { text: (c.lastEditedBy ? 'Edited by ' + (store.user(c.lastEditedBy) || {}).name + ' ' + U.ago(c.lastEditedAt) + ' · ' : '') + 'Owner: ' + ((store.user(c.ownerId) || {}).name || '—') })
         ])
       ]
     });
+
+    // ST-12: duplicate banner
+    var dupCluster = store.get().merges.find(function (m) { return m.status === 'pending' && m.records.some(function (r) { return r.contactId === c.id; }); });
+    var dupBanner = (c.dupRisk > 50 || dupCluster) ? ui.note('amber', 'High duplicate-risk (' + c.dupRisk + '%). ' + (dupCluster ? 'A merge candidate exists for this record.' : 'Scan recommended.') + ' <a href="#/wf006/dedupe">Open dedupe →</a>', '🔗') : null;
 
     /* tabs */
     var tabsBar = ui.tabs([
       { id: 'timeline', label: 'Relationship timeline', icon: '🕐', count: calls.length + tasks.length + wa.length },
       { id: 'donor', label: 'Donor profile', icon: '🪔', count: donor ? donor.gifts.length : 0 },
       { id: 'yatra', label: 'Yatra', icon: '🛕' },
-      { id: 'data', label: 'Record & governance', icon: '🗂️' }
+      { id: 'data', label: 'Record & governance', icon: '🗂️' },
+      { id: 'history', label: 'History', icon: '🕓', count: (c.history || []).length }
     ], tab, function (t) { tab = t; store.emit(); });
 
     var body;
     if (tab === 'timeline') body = timelineTab(c, calls, tasks, wa, camp, src);
     else if (tab === 'donor') body = donorTab(donor);
     else if (tab === 'yatra') body = yatraTab(yatri);
+    else if (tab === 'history') body = historyTab(c);
     else body = dataTab(c, src, camp);
 
     return el('div', {}, [
       el('a.btn.btn-sm.btn-ghost.mb-12', { href: '#/wf006/contacts' }, '← Contacts'),
+      dupBanner ? el('div.mb-12', {}, dupBanner) : null,
       header,
       el('div.mt-16', {}, tabsBar),
       body
     ]);
+  }
+
+  /* ST-01: edit record */
+  function editContact(c) {
+    var d = { name: c.name, mobile: c.mobile, email: c.email, city: c.city, language: c.language, segment: c.segment, ownerId: c.ownerId };
+    function f(label, key, opts) {
+      var inp = opts ? el('select.select', { onchange: function (e) { d[key] = e.target.value; } }, opts.map(function (o) { var op = el('option', { value: o.v != null ? o.v : o, text: o.t != null ? o.t : o }); if ((o.v != null ? o.v : o) === d[key]) op.selected = true; return op; })) : el('input.input', { value: d[key] || '', oninput: function (e) { d[key] = e.target.value; } });
+      return el('div.field', {}, [el('label', { text: label }), inp]);
+    }
+    ui.modal({ title: 'Edit record', subtitle: c.id, size: 'lg',
+      body: el('div.grid.cols-2', { style: { gap: '0 16px' } }, [
+        f('Name', 'name'), f('Mobile', 'mobile'), f('Email', 'email'), f('City', 'city'),
+        f('Language', 'language', App.store.get().sources ? ['Telugu', 'Hindi', 'English', 'Tamil', 'Kannada'] : null),
+        f('Segment', 'segment', ['Yatra Prospect', 'Active Donor', 'HNI Donor', 'CSR / Corporate', 'Festival Attendee', 'Lapsed Donor', 'New Lead', 'Life Patron']),
+        f('Owner', 'ownerId', store.get().users.map(function (u) { return { v: u.id, t: u.name }; }))
+      ]),
+      actions: [{ label: 'Cancel' }, { label: 'Save changes', variant: 'primary', onClick: function () {
+        if (d.mobile && !/\d{5}/.test(d.mobile)) { ui.toast({ kind: 'error', msg: 'Mobile looks invalid.' }); return false; }
+        store.actions.updateContact(c.id, d); ui.toast({ kind: 'success', msg: 'Record updated — changes logged to history.' });
+      } }] });
+  }
+
+  /* ST-11: field-level history */
+  function historyTab(c) {
+    var h = c.history || [];
+    return ui.card({ title: 'Field-level change history', icon: '🕓', body: h.length ? h.map(function (x, i) {
+      return el('div.row-between', { style: { padding: '9px 0', borderBottom: '1px solid var(--border)' } }, [
+        el('div', {}, [el('div.t-sm', {}, [el('b', { text: x.field }), x.revert ? ui.badge('revert', 'amber') : null]), el('div.t-xs.t-mut', {}, [el('span', { text: String(x.from == null || x.from === '' ? '∅' : x.from) }), ' → ', el('b', { text: String(x.to == null || x.to === '' ? '∅' : x.to) })]), el('div.t-xs.t-mut3', { text: (store.user(x.by) || {}).name + ' · ' + U.ago(x.ts) })]),
+        x.revert ? null : el('button.btn.btn-sm.btn-ghost', { onclick: function () { store.actions.revertField(c.id, i); ui.toast({ kind: 'success', msg: 'Reverted ' + x.field }); } }, '↶ Revert')
+      ]);
+    }) : [ui.emptyState({ icon: '🕓', title: 'No edits yet', sub: 'Field changes will appear here with who/when and a revert option.' })] });
   }
 
   function timelineTab(c, calls, tasks, wa, camp, src) {
@@ -90,7 +129,8 @@ App.screens['wf006-contact-detail'] = (function () {
         el('div.mt-12', {}, ui.statline('Last touch', U.ago(c.lastTouch))),
         ui.statline('Lifetime touches', calls.length + wa.length + tasks.length),
         ui.statline('Engagement', ui.badge(calls.length > 1 ? 'Warm' : 'New', calls.length > 1 ? 'green' : 'blue'))
-      ] })
+      ] }),
+      el('div', { style: { gridColumn: '1 / -1' } }, ui.card({ title: 'Notes & discussion', icon: '💬', body: [ui.commentThread('contact', c.id)] }))
     ]);
   }
   function nbaFor(c) {

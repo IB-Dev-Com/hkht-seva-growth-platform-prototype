@@ -52,12 +52,25 @@ App.screens['wf003-campaign-detail'] = (function () {
     var optCard = ui.card({ title: 'Daily ROI optimization', icon: '🤖', right: [ui.badge('Agentic · human-approved', 'violet')], body: [
       ui.note('violet', 'The optimization agent monitors spend, leads & conversions daily and <b>recommends</b> pause/scale moves. Budget changes require human approval — no auto-spend changes.', '✨'),
       el('div.col.gap-8.mt-8', {}, recs.map(function (r) {
+        var applied = (c.optApplied || []).some(function (x) { return x.rec === r.title; });
         return el('div.row-between', { style: { padding: '10px', border: '1px solid var(--border)', borderRadius: '10px' } }, [
-          el('div', {}, [el('div.row.gap-6', {}, [el('span', { text: r.icon }), el('b.t-sm', { text: r.title })]), el('div.t-xs.t-mut.mt-2', { text: r.detail })]),
-          r.action ? el('button.btn.btn-sm.btn-primary', { onclick: function () { ui.toast({ kind: 'success', title: 'Sent for approval', msg: r.title + ' — routed to ' + (c.approverId ? 'leadership' : 'manager') }); } }, r.action) : ui.badge('Monitoring', 'neutral')
+          el('div', {}, [el('div.row.gap-6', {}, [el('span', { text: r.icon }), el('b.t-sm', { text: r.title }), applied ? ui.badge('Applied', 'green') : null]), el('div.t-xs.t-mut.mt-2', { text: r.detail })]),
+          applied ? ui.badge('✓ tracking', 'green') : r.action ? el('div.row.gap-4', {}, [el('button.btn.btn-sm.btn-primary', { onclick: function () { store.actions.applyOptimization(c.id, r.title); ui.toast({ kind: 'success', title: 'Sent for approval & tracked', msg: r.title }); } }, 'Accept'), el('button.btn.btn-sm.btn-ghost', { onclick: function () { ui.toast({ kind: 'info', msg: 'Dismissed.' }); } }, 'Dismiss')]) : ui.badge('Monitoring', 'neutral')
         ]);
       }))
     ] });
+
+    /* CM-04: creative-level performance */
+    var content = store.get().content.filter(function (x) { return x.campaignId === c.id; });
+    var creativeRows = []; content.forEach(function (ct) { ct.variants.forEach(function (v, i) { if (v.metrics) creativeRows.push({ name: ct.channel + ' · Variant ' + String.fromCharCode(65 + i), m: v.metrics, headline: v.headline }); }); });
+    var creativeCard = creativeRows.length ? ui.card({ title: 'Creative performance', icon: '🎨', body: [ui.table({ compact: true, sortable: true, columns: [
+      { label: 'Creative', render: function (r) { return el('div', {}, [el('b.t-sm', { text: r.name }), el('div.t-xs.t-mut.truncate', { text: r.headline, style: { maxWidth: '200px' } })]); } },
+      { label: 'Impr.', num: true, sortVal: function (r) { return r.m.impressions; }, render: function (r) { return U.num(r.m.impressions); } },
+      { label: 'CTR', num: true, sortVal: function (r) { return r.m.ctr; }, render: function (r) { return r.m.ctr + '%'; } },
+      { label: 'Conv.', num: true, render: function (r) { return r.m.conversions; } },
+      { label: 'CVR', num: true, sortVal: function (r) { return r.m.cvr; }, render: function (r) { return r.m.cvr + '%'; } },
+      { label: '', render: function (r) { return r.m.status === 'winner' ? ui.badge('Winner', 'green') : el('button.btn.btn-sm.btn-ghost', { onclick: function () { ui.toast({ kind: 'info', msg: 'Budget shifted to winner (simulated).' }); } }, 'Promote'); } }
+    ], rows: creativeRows })] }) : null;
 
     /* landing + content + leads */
     var side = el('div.col.gap-16', {}, [
@@ -82,7 +95,7 @@ App.screens['wf003-campaign-detail'] = (function () {
       header,
       el('div.mt-16', {}, kpis),
       el('div.grid.mt-16', { style: { gridTemplateColumns: '1.4fr 1fr', gap: '16px', alignItems: 'start' } }, [
-        el('div.col.gap-16', {}, [chart, optCard]),
+        el('div.col.gap-16', {}, [chart, optCard, creativeCard].filter(Boolean)),
         el('div.col.gap-16', {}, [pnl, side])
       ])
     ]);

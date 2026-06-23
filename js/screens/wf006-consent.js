@@ -41,6 +41,16 @@ App.screens['wf006-consent'] = (function () {
               ui.statline('TRAI / DLT readiness', ui.badge('Pending DLT', 'amber'))
             ])
           ] }),
+          ui.card({ title: 'Consent basis & freshness', icon: '🧾', body: [
+            ui.note('info', 'Every consent records its <b>basis</b> (how captured), evidence reference and an expiry for re-consent — provable lineage if challenged.', '🧾'),
+            el('div.mt-8', {}, [
+              ui.statline('Form / web opt-in', ui.badge(Math.round(s.contacts.length * 0.42) + ' contacts', 'green')),
+              ui.statline('Verbal (call-recorded)', ui.badge(Math.round(s.contacts.length * 0.28) + ' contacts', 'green')),
+              ui.statline('Event / Sankalpa card', ui.badge(Math.round(s.contacts.length * 0.18) + ' contacts', 'blue')),
+              ui.statline('Basis unknown (review)', ui.badge(Math.round(s.contacts.length * 0.12) + ' contacts', 'amber')),
+              ui.statline('Expiring in 30 days', ui.badge(Math.round(s.contacts.length * 0.06) + ' — re-consent', 'amber'))
+            ])
+          ] }),
           ui.card({ title: 'Policy changes', icon: '📝', body: [
             ui.note('amber', 'Changes to suppression policy require <b>consent custodian approval</b> and are logged.', '🛡️'),
             el('div.t-xs.t-mut3.mt-8', { text: 'Custodian: ' + (store.user('U-VENKAT') || {}).name })

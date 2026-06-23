@@ -4,6 +4,40 @@ All notable changes to this prototype are recorded here. This is a **demonstrati
 for developer handoff: all AI / voice / WhatsApp / ad / CRM / payment calls are **mocked** with
 realistic data and simulated latency. No live backend.
 
+## [0.4.0] — 2026-06-23 — Gap-analysis remediation (all 75 gaps implemented)
+
+Implemented every gap from `gap-analysis.html` across the five personas, multi-tenant central billing, and
+micro-level tracking. Foundation-first: shared store/UI primitives, then applied across screens. The prototype
+grew from 39 → **46 screens**; zero console errors; all screens verified.
+
+### New platform primitives (store / components / shell)
+- **SLA engine** — `slaPolicies` + `store.slaState()` + live countdown `ui.slaBadge`; auto-escalation on breach.
+- **Status lifecycles** — `LIFECYCLES` map + guarded `store.actions.transition()` (illegal jumps blocked).
+- **Comments / @mentions** — `ui.commentThread()` + `addComment` (mentions raise notifications).
+- **Notifications** + **Alerts** — per-user notification bell + threshold alert inbox in the topbar.
+- **Command palette** — ⌘/Ctrl-K global search across screens, contacts, campaigns, calls, IDs.
+- **Sortable + paginated tables**, **CSV export** (`util.toCSV`/`download`), field-level audit (before→after).
+- **Org tier** (Org → Center → Department) + **entitlements** gating + **platform-admin / center-admin** roles.
+
+### New screens (7)
+- **My Work** (`/mywork`) — personalised pending inbox (approvals for your role, tasks, escalations, rework, alerts).
+- **Rework Queue** (`/rework`) — done-vs-needs-improvement loop.
+- **SLA Board** (`/sla`) — on-track / at-risk / breached across tasks, escalations, approvals.
+- **Billing & Statements** (`/billing`) — per-center/dept chargeback statements, budgets & caps with enforcement, event-level usage **ledger**, editable **rate card**.
+
+### Per-persona remediation (highlights)
+- **Steward (WF-006):** inline record editing + field-level history/revert; field-level **merge resolver**; bulk select/actions; exception drill-through + assign-queue; segment **rule builder w/ live count**; CRM-sync field diff; API test-connection + uptime sparkline; consent basis/expiry; comments + dup banner on Contact 360.
+- **Voice ops (WF-002):** manual **disposition form**, manual dial / skip / bump / pause; QA scorecard + coaching; live SLA countdowns + my/team + snooze; escalation SLA + reassign + priority + comments; WhatsApp conversation thread + template editor; script editor + version diff; dashboard date-range; readiness per-item remediation + re-run.
+- **Campaign manager (WF-003):** pause/resume/clone; builder draft persistence + editable AI output + audience step + playbook prefill; apply-and-track optimization; creative-level metrics; content inline edit + versioning; remarketing detail drawer (member preview, message plan, schedule).
+- **Approver:** artifact preview by type; approve-with-changes / request-info; comments; role filter + bulk approve; delegation/OOO; my-decisions; SLA.
+- **Leadership:** clickable KPI drill-through; targets (target-vs-achieved); alerts feed; data-freshness stamp; universal-ID Golden-Journey search.
+
+### Multi-tenant & central billing
+Org→Center→Dept hierarchy & scope; event-level usage ledger keyed to user + Call/Campaign/Message ID; per-center/dept budget **caps with hard-stop enforcement** (blocks + raises a budget-increase approval); chargeback **statements** (GL, GST, export); editable **rate card** w/ per-org overrides; budget forecast/burn-down; alert thresholds; **module entitlements** per center; platform-admin vs center-admin; full tenant scoping.
+
+### Micro-level tracking
+Status lifecycles; rework loop; My Work inbox; SLA engine + board; field-level/filterable/exportable audit; comments/@mentions; content/script versioning + diff; workload view; approval evidence.
+
 ## [0.3.0] — 2026-06-23 — Google Partner Brief alignment (WF-002/003/006)
 
 Read the six Google Partner Briefs (Document-B 30-day production briefs + scope-alignment notes for WF-002,

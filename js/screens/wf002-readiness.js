@@ -55,18 +55,30 @@ App.screens['wf002-readiness'] = (function () {
         ]),
         ui.riskGate(r.risk)
       ]),
-      el('div.grid.mt-12', { style: { gridTemplateColumns: 'repeat(auto-fill,minmax(150px,1fr))', gap: '8px' } }, auditFields.map(function (f) {
-        return el('div', { style: { background: 'var(--surface-2)', borderRadius: '8px', padding: '8px 10px' } }, [el('div.t-xs.t-mut', { text: f[0] }), el('div.mt-4', {}, ui.badge(f[1], f[2], true))]);
+      el('div.grid.mt-12', { style: { gridTemplateColumns: 'repeat(auto-fill,minmax(160px,1fr))', gap: '8px' } }, auditFields.map(function (f) {
+        var bad = f[2] !== 'green';
+        var fix = remediation(f[0]);
+        return el('div', { style: { background: 'var(--surface-2)', borderRadius: '8px', padding: '8px 10px' } }, [el('div.t-xs.t-mut', { text: f[0] }), el('div.mt-4', {}, ui.badge(f[1], f[2], true)), bad && fix ? el('a.t-xs', { href: fix.href, style: { display: 'block', marginTop: '4px' } }, '→ ' + fix.label) : null]);
       })),
       el('div.row.gap-8.mt-16', {}, [
         r.risk === 'green' ? el('button.btn.btn-success', { onclick: function () { activate(r.c, false); } }, [el('span.ico', { text: '🎙️' }), 'Activate calling queue']) :
         r.risk === 'amber' ? el('button.btn', { onclick: function () { activate(r.c, true); } }, [el('span.ico', { text: '🧪' }), 'Approve small pilot (manual review)']) :
         el('button.btn', { disabled: true }, [el('span.ico', { text: '⛔' }), 'Blocked — resolve red items']),
-        r.script ? el('a.btn.btn-ghost.btn-sm', { href: '#/wf002/scripts' }, 'View script: ' + r.script.name) : el('a.btn.btn-ghost.btn-sm', { href: '#/wf002/scripts' }, 'No approved script →'),
+        el('button.btn.btn-ghost.btn-sm', { onclick: function () { ui.toast({ kind: 'info', title: 'Re-running audit…', msg: 'Re-checking source, DND, phone validity & script.' }); setTimeout(function () { ui.toast({ kind: 'success', msg: 'Audit refreshed.' }); store.emit(); }, 900); } }, '↻ Re-run audit'),
+        r.script ? el('a.btn.btn-ghost.btn-sm', { href: '#/wf002/scripts' }, 'View script') : el('a.btn.btn-ghost.btn-sm', { href: '#/wf002/scripts' }, 'No approved script →'),
         el('div.grow'),
         r.c.queueActivated ? ui.badge('Queue active', 'green', true) : null
       ])
     ] });
+  }
+
+  function remediation(field) {
+    if (/source/i.test(field)) return { label: 'Fix in Intake', href: '#/wf006/intake' };
+    if (/DND|suppression/i.test(field)) return { label: 'Run DND scrub', href: '#/wf006/consent' };
+    if (/script/i.test(field)) return { label: 'Approve script', href: '#/wf002/scripts' };
+    if (/duplicate/i.test(field)) return { label: 'Resolve dupes', href: '#/wf006/dedupe' };
+    if (/phone/i.test(field)) return { label: 'Clean phones', href: '#/wf006/quality' };
+    return null;
   }
 
   function activate(c, pilot) {

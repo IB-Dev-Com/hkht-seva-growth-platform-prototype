@@ -3,10 +3,12 @@
    ============================================================ */
 App.screens['wf002-dashboard'] = (function () {
   var U = App.util, el = U.el, ui = App.ui, store = App.store;
+  var range = 30;
 
   function render() {
     var s = store.get();
-    var calls = s.calls;
+    var cutoff = U.daysAgo(range);
+    var calls = store.scoped(s.calls).filter(function (c) { return new Date(c.createdAt) >= cutoff; });
     var connected = calls.filter(function (c) { return c.status === 'Connected'; });
     var byOutcome = U.group(connected, 'outcome');
     var donated = (byOutcome['Donated'] || []).length;
@@ -23,7 +25,10 @@ App.screens['wf002-dashboard'] = (function () {
     var leads = U.sum(store.scoped(s.campaigns), function (c) { return c.leads; });
 
     return el('div', {}, [
-      ui.pageHead('Voice Dashboard', 'Calls into management control: funnel, quality, and the <b>Voice of the Devotee</b> — aggregated objections & FAQs that drive script improvement.', null),
+      ui.pageHead('Voice Dashboard', 'Calls into management control: funnel, quality, and the <b>Voice of the Devotee</b> — aggregated objections & FAQs that drive script improvement.', [
+        el('div.seg', {}, [rangeBtn(7, '7d'), rangeBtn(30, '30d'), rangeBtn(90, '90d'), rangeBtn(3650, 'All')]),
+        el('a.btn.btn-sm', { href: '#/wf002/console' }, 'Open calls →')
+      ]),
       el('div.grid.cols-4.mb-16', {}, [
         ui.kpi({ icon: '📞', label: 'Total calls', value: calls.length, accent: 'indigo' }),
         ui.kpi({ icon: '📡', label: 'Connect rate', value: calls.length ? Math.round(connected.length / calls.length * 100) + '%' : '—', accent: 'green' }),
@@ -58,6 +63,8 @@ App.screens['wf002-dashboard'] = (function () {
       ])
     ]);
   }
+
+  function rangeBtn(d, label) { return el('button' + (range === d ? '.active' : ''), { onclick: function () { range = d; store.emit(); } }, label); }
 
   return { render: render, title: 'Voice Dashboard' };
 })();

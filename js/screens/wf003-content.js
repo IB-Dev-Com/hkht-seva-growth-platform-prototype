@@ -28,19 +28,45 @@ App.screens['wf003-content'] = (function () {
       ]),
       el('div.grid', { style: { gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: '10px' } }, ct.variants.map(function (v, i) {
         return el('div', { style: { border: '1px solid var(--border)', borderRadius: '10px', padding: '12px', background: 'var(--surface-2)' } }, [
-          ui.badge('Variant ' + String.fromCharCode(65 + i), 'neutral'),
+          el('div.row-between', {}, [ui.badge('Variant ' + String.fromCharCode(65 + i), 'neutral'), v.metrics ? el('span.t-xs.t-mut', { text: 'CTR ' + v.metrics.ctr + '%' }) : null]),
           el('b.mt-8', { text: v.headline, style: { display: 'block', fontSize: '13px' } }),
           el('div.t-xs.t-mut.mt-4', { text: v.body }),
           el('div.mt-8', {}, ui.badge(v.cta, 'saffron'))
         ]);
       })),
-      ct.status === 'pending_approval' || ct.status === 'draft' ? el('div.row.gap-8.mt-12', {}, [
-        el('button.btn.btn-sm.btn-success', { onclick: function () { decide(ct, 'approved'); } }, '✓ Approve for publish'),
-        el('button.btn.btn-sm', { onclick: function () { decide(ct, 'draft'); } }, '↩ Send back'),
+      el('div.row.gap-8.mt-12', { style: { flexWrap: 'wrap' } }, [
+        (ct.status === 'pending_approval' || ct.status === 'draft') ? el('button.btn.btn-sm.btn-success', { onclick: function () { decide(ct, 'approved'); } }, '✓ Approve for publish') : null,
+        (ct.status === 'pending_approval' || ct.status === 'draft') ? el('button.btn.btn-sm', { onclick: function () { decide(ct, 'draft'); } }, '↩ Send back') : null,
+        el('button.btn.btn-sm.btn-ghost', { onclick: function () { editContent(ct); } }, '✎ Edit'),
+        (ct.versions && ct.versions.length) ? el('button.btn.btn-sm.btn-ghost', { onclick: function () { showVersions(ct); } }, '🕓 Versions (' + ct.versions.length + ')') : null,
         el('div.grow'),
-        el('span.t-xs.t-mut3', { text: 'Devotional/deity claims reviewed for accuracy & sensitivity' })
-      ]) : el('div.t-xs.t-mut3.mt-8', { text: '✓ Approved & published' })
+        ct.status === 'approved' ? el('span.t-xs.t-mut3', { text: '✓ Approved & published' }) : el('span.t-xs.t-mut3', { text: 'Devotional/deity claims reviewed for accuracy & sensitivity' })
+      ].filter(Boolean))
     ] });
+  }
+
+  function snapshot(ct) { ct.versions = ct.versions || []; ct.versions.unshift({ ts: U.now().toISOString(), by: store.getSession().userId, variants: U.clone(ct.variants), status: ct.status }); }
+  function editContent(ct) {
+    var d = U.clone(ct.variants);
+    ui.modal({ title: 'Edit content', subtitle: ct.id, size: 'lg',
+      body: el('div.col.gap-10', {}, d.map(function (v, i) {
+        return el('div', { style: { border: '1px solid var(--border)', borderRadius: '10px', padding: '10px' } }, [
+          ui.badge('Variant ' + String.fromCharCode(65 + i), 'neutral'),
+          el('input.input.mt-6', { value: v.headline, oninput: function (e) { v.headline = e.target.value; } }),
+          el('textarea.textarea.mt-6', { style: { minHeight: '50px' }, oninput: function (e) { v.body = e.target.value; }, text: v.body }),
+          el('input.input.mt-6', { value: v.cta, style: { maxWidth: '180px' }, oninput: function (e) { v.cta = e.target.value; } })
+        ]);
+      })),
+      actions: [{ label: 'Cancel' }, { label: 'Save (new version)', variant: 'primary', onClick: function () { snapshot(ct); ct.variants = d; ct.status = 'pending_approval'; store.actions.audit('Edited content', 'data', ct.id, 'New version'); ui.toast({ kind: 'success', msg: 'Saved as new version → re-submitted for approval.' }); } }] });
+  }
+  function showVersions(ct) {
+    ui.modal({ title: 'Version history', subtitle: ct.id,
+      body: el('div.col.gap-8', {}, ct.versions.map(function (ver, i) {
+        return el('div.row-between', { style: { padding: '8px', border: '1px solid var(--border)', borderRadius: '8px' } }, [
+          el('div', {}, [el('b.t-sm', { text: 'v' + (ct.versions.length - i) + ' · ' + ver.variants[0].headline }), el('div.t-xs.t-mut', { text: (store.user(ver.by) || {}).name + ' · ' + U.ago(ver.ts) })]),
+          el('button.btn.btn-sm.btn-ghost', { onclick: function () { snapshot(ct); ct.variants = U.clone(ver.variants); store.actions.audit('Reverted content', 'data', ct.id, 'to older version'); ui.toast({ kind: 'success', msg: 'Reverted.' }); } }, '↶ Revert')
+        ]);
+      })) });
   }
 
   function decide(ct, status) {

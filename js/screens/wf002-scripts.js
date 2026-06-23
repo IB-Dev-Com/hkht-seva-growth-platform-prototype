@@ -38,14 +38,35 @@ App.screens['wf002-scripts'] = (function () {
       })),
       el('div', { style: { background: 'var(--surface-2)', borderRadius: '10px', padding: '12px', marginTop: '12px', fontSize: '12.5px', fontStyle: 'italic', color: 'var(--text-2)' } }, '“' + sc.opening + '”'),
       el('div.row.gap-6.mt-8', { style: { flexWrap: 'wrap' } }, sc.outcomeCodes.map(function (o) { return ui.badge(o, 'neutral'); })),
-      el('div.row.gap-8.mt-12', { style: { alignItems: 'center' } }, [
+      el('div.row.gap-8.mt-12', { style: { alignItems: 'center', flexWrap: 'wrap' } }, [
         el('span.t-xs.t-mut', { text: sc.approvalDate ? '✓ Approved by ' + (store.user(sc.approverId) || {}).name + ' · ' + U.fmtDate(sc.approvalDate) : 'Approver: ' + (store.user(sc.approverId) || {}).name + ' (pending)' }),
         el('div.grow'),
+        el('button.btn.btn-sm.btn-ghost', { onclick: function () { editScript(sc); } }, '✎ Edit / new version'),
+        (sc.versions && sc.versions.length) ? el('button.btn.btn-sm.btn-ghost', { onclick: function () { diffScript(sc); } }, '⇄ Diff (' + sc.versions.length + ')') : null,
         sc.status === 'review' ? el('button.btn.btn-sm.btn-success', { onclick: function () { approve(sc); } }, '✓ Approve for production') : null,
-        sc.status === 'draft' ? el('button.btn.btn-sm', { onclick: function () { ui.toast('Sent to reviewer'); sc.status = 'review'; store.commit(); } }, 'Send to review') : null,
+        sc.status === 'draft' ? el('button.btn.btn-sm', { onclick: function () { sc.status = 'review'; store.commit(); ui.toast('Sent to reviewer'); } }, 'Send to review') : null,
         sc.status === 'production' ? el('button.btn.btn-sm.btn-ghost', { onclick: function () { ui.toast('▶ QA test call (simulated)'); } }, '▶ Test call') : null
       ])
     ] });
+  }
+
+  function editScript(sc) {
+    var v = sc.opening, ver = sc.version;
+    ui.modal({ title: 'Edit script — ' + sc.name, subtitle: 'Saving creates a new version → review lifecycle', size: 'lg',
+      body: el('div', {}, [
+        el('div.field', {}, [el('label', { text: 'Version label' }), el('input.input', { value: bump(sc.version), oninput: function (e) { ver = e.target.value; }, style: { maxWidth: '120px' } })]),
+        el('div.field', {}, [el('label', { text: 'Opening / script body' }), el('textarea.textarea', { style: { minHeight: '140px' }, oninput: function (e) { v = e.target.value; }, text: sc.opening })])
+      ]),
+      actions: [{ label: 'Cancel' }, { label: 'Save new version', variant: 'primary', onClick: function () { store.actions.addScriptVersion(sc.id, ver || bump(sc.version), v); ui.toast({ kind: 'success', msg: 'New version saved → in review.' }); } }] });
+  }
+  function bump(ver) { var m = /v(\d+)\.(\d+)/.exec(ver || 'v1.0'); return m ? 'v' + m[1] + '.' + (+m[2] + 1) : 'v1.1'; }
+  function diffScript(sc) {
+    var prev = sc.versions[0];
+    ui.modal({ title: 'Version diff — ' + sc.name, subtitle: prev.version + ' → ' + sc.version, size: 'lg',
+      body: el('div.grid.cols-2', { style: { gap: '12px' } }, [
+        el('div', {}, [el('div.t-up.mb-4', { text: prev.version + ' (previous)' }), el('div', { style: { background: 'var(--red-50)', padding: '12px', borderRadius: '8px', fontSize: '12.5px', fontStyle: 'italic' } }, '“' + prev.opening + '”')]),
+        el('div', {}, [el('div.t-up.mb-4', { text: sc.version + ' (current)' }), el('div', { style: { background: 'var(--green-50)', padding: '12px', borderRadius: '8px', fontSize: '12.5px', fontStyle: 'italic' } }, '“' + sc.opening + '”')])
+      ]) });
   }
 
   function approve(sc) {

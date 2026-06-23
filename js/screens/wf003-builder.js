@@ -7,11 +7,16 @@ App.screens['wf003-builder'] = (function () {
   var draft = null;
 
   function reset() {
-    draft = { name: '', type: 'Festival', objective: '', channels: ['meta_ads'], budget: 250000, deptId: 'MKT', centerId: store.getSession().centerId === 'ALL' ? 'HYD' : store.getSession().centerId, brief: null, variants: null };
+    draft = { id: U.uid('DRAFT'), name: '', type: 'Festival', objective: '', channels: ['meta_ads'], budget: 250000, deptId: 'MKT', centerId: store.getSession().centerId === 'ALL' ? 'HYD' : store.getSession().centerId, brief: null, variants: null, audienceIds: [] };
   }
 
-  function render() {
+  function render(params, query) {
     if (!draft) reset();
+    // CM-09: prefill from a campaign-learning playbook
+    if (query && query.from && !draft._from) {
+      var L = store.get().learnings.find(function (x) { return x.id === query.from; });
+      if (L) { draft._from = query.from; draft.name = L.season + ' ' + (new Date().getFullYear() + 1); draft.objective = L.recommendation; ui.toast({ kind: 'info', title: 'Playbook applied', msg: 'Pre-filled from ' + L.campaign }); }
+    }
     var STEPS = ['Objective', 'AI strategy brief', 'Content variants', 'Approval gate'];
 
     var stepsBar = el('div.steps.mb-20', {}, STEPS.map(function (st, i) {
@@ -48,7 +53,10 @@ App.screens['wf003-builder'] = (function () {
       field('Channels', el('div.chips', {}, ['google_ads', 'meta_ads', 'youtube', 'whatsapp', 'website'].map(function (ch) {
         return el('div.fchip' + (draft.channels.indexOf(ch) > -1 ? '.active' : ''), { onclick: function () { var i = draft.channels.indexOf(ch); if (i > -1) draft.channels.splice(i, 1); else draft.channels.push(ch); store.emit(); } }, store.source(ch).icon + ' ' + store.source(ch).label);
       }))),
-      navRow(null, function () { if (!draft.name) { ui.toast({ kind: 'error', msg: 'Enter a campaign name.' }); return; } step = 1; generateBrief(); store.emit(); }, 'Generate strategy brief →')
+      field('Target audience (segments)', el('div.chips', {}, store.get().segments.map(function (sg) {
+        return el('div.fchip' + (draft.audienceIds.indexOf(sg.id) > -1 ? '.active' : ''), { onclick: function () { var i = draft.audienceIds.indexOf(sg.id); if (i > -1) draft.audienceIds.splice(i, 1); else draft.audienceIds.push(sg.id); store.emit(); } }, sg.name + ' (' + U.num(sg.eligible) + ')');
+      })), 'Eligible reach: ' + U.num(draft.audienceIds.reduce(function (a, id) { var sg = store.get().segments.find(function (x) { return x.id === id; }); return a + (sg ? sg.eligible : 0); }, 0)) + ' contacts'),
+      navRow(null, function () { if (!draft.name) { ui.toast({ kind: 'error', msg: 'Enter a campaign name.' }); return; } store.actions.saveDraft(draft); step = 1; generateBrief(); store.emit(); }, 'Generate strategy brief →')
     ]);
   }
 
@@ -91,13 +99,13 @@ App.screens['wf003-builder'] = (function () {
 
   function stepVariants() {
     return el('div', {}, [
-      ui.aiBlock('AI-drafted ad copy — needs content review', [
+      ui.aiBlock('AI-drafted ad copy — edit before review', [
         el('div.col.gap-10', {}, draft.variants.map(function (v, i) {
           return el('div', { style: { border: '1px solid var(--border)', borderRadius: '10px', padding: '12px', background: 'var(--surface)' } }, [
-            el('div.row-between', {}, [ui.badge('Variant ' + String.fromCharCode(65 + i), 'indigo'), el('span.t-xs.t-mut', { text: store.source(draft.channels[0]).label })]),
-            el('b.mt-8', { text: v.headline, style: { display: 'block' } }),
-            el('div.t-sm.t-mut.mt-4', { text: v.body }),
-            el('div.mt-8', {}, el('span.btn.btn-sm.btn-primary', {}, v.cta))
+            el('div.row-between.mb-8', {}, [ui.badge('Variant ' + String.fromCharCode(65 + i), 'indigo'), el('span.t-xs.t-mut', { text: store.source(draft.channels[0]).label })]),
+            el('input.input.mb-6', { value: v.headline, oninput: function (e) { v.headline = e.target.value; } }),
+            el('textarea.textarea', { style: { minHeight: '54px' }, oninput: function (e) { v.body = e.target.value; }, text: v.body }),
+            el('div.row.gap-6.mt-6', {}, [el('span.t-xs.t-mut', { text: 'CTA:' }), el('input.input', { value: v.cta, style: { maxWidth: '180px' }, oninput: function (e) { v.cta = e.target.value; } })])
           ]);
         }))
       ]),

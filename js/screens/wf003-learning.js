@@ -32,7 +32,7 @@ App.screens['wf003-learning'] = (function () {
         el('div', {}, [el('div.t-up.mb-4', { text: '✕ What failed', style: { color: 'var(--red-600)' } }), el('ul', {}, l.whatFailed.map(function (w) { return el('li.row.gap-6.t-sm', { style: { padding: '3px 0' } }, [el('span', { text: '•', style: { color: 'var(--red-500)' } }), w]); }))])
       ]),
       ui.aiBlock('Next-season recommendation', [el('div.t-sm', { text: l.recommendation })]),
-      el('div.row.gap-8.mt-8', {}, [el('button.btn.btn-sm.btn-primary', { onclick: function () { ui.toast({ kind: 'success', title: 'Applied to new campaign', msg: 'Playbook pre-fills the next campaign brief.' }); App.router.go('/wf003/builder'); } }, '♻️ Reuse in new campaign'), el('span.t-xs.t-mut3', { style: { alignSelf: 'center' } }, 'Final learning approved before archive')])
+      el('div.row.gap-8.mt-8', {}, [el('button.btn.btn-sm.btn-primary', { onclick: function () { App.router.go('/wf003/builder?from=' + l.id); } }, '♻️ Reuse in new campaign'), el('span.t-xs.t-mut3', { style: { alignSelf: 'center' } }, 'Final learning approved before archive')])
     ] });
   }
 

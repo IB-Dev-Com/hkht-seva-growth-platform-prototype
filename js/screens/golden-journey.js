@@ -9,9 +9,26 @@ App.screens['golden-journey'] = (function () {
     var cid = (query && query.contact) || 'CON-100245';
     var c = store.contact(cid) || store.contact('CON-100245') || s.contacts[0];
 
+    // LD-04: universal ID search — resolve any shared ID to its Contact_ID
+    var idInput = el('input.input', { placeholder: 'Paste any ID: Contact / Call / Lead / Donation / Campaign…' });
+    function resolveId(v) {
+      v = (v || '').trim().toUpperCase(); if (!v) return;
+      var found = null;
+      if (store.contact(v)) found = v;
+      else { var call = s.calls.find(function (x) { return x.id === v; }); if (call) found = call.contactId; }
+      if (!found) { var t = s.tasks.find(function (x) { return x.id === v; }); if (t) found = t.contactId; }
+      if (!found) { var d = s.donors.find(function (x) { return x.id === v || (x.gifts || []).some(function (g) { return g.id === v; }); }); if (d) found = d.contactId; }
+      if (!found) { var lead = s.leads.find(function (x) { return x.id === v; }); if (lead) found = lead.contactId; }
+      if (!found) { var camp2 = store.campaign(v); if (camp2) { var fc = s.contacts.find(function (x) { return x.campaignId === v; }); if (fc) found = fc.id; } }
+      if (found) router.go('/journey?contact=' + found); else ui.toast({ kind: 'error', msg: 'No record resolves to ' + v });
+    }
+    idInput.addEventListener('keydown', function (e) { if (e.key === 'Enter') resolveId(e.target.value); });
+    var idSearch = el('div.row.gap-6', {}, [el('div.search-box', { style: { minWidth: '280px' } }, [el('span.ico', { text: '🔍' }), idInput]), el('button.btn', { onclick: function () { resolveId(idInput.value); } }, 'Trace')]);
+
     // contact picker
-    var picker = el('select.select', { style: { maxWidth: '320px' }, onchange: function (e) { router.go('/journey?contact=' + e.target.value); } },
+    var picker = el('select.select', { style: { maxWidth: '240px' }, onchange: function (e) { router.go('/journey?contact=' + e.target.value); } },
       s.contacts.slice(0, 40).map(function (x) { var o = el('option', { value: x.id, text: x.name + ' · ' + x.id }); if (x.id === c.id) o.selected = true; return o; }));
+    picker = el('div.row.gap-8', { style: { flexWrap: 'wrap' } }, [idSearch, picker]);
 
     // assemble journey events
     var lead = s.leads.find(function (l) { return l.contactId === c.id; });

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HKHT AI for Seva — Prototype Gap Analysis</title>
+<style>
+  :root{
+    --saffron:#ea580c;--saffron-50:#fff7ed;--indigo:#4f46e5;--indigo-50:#eef2ff;--indigo-900:#1e1b4b;
+    --n0:#fff;--n50:#f8fafc;--n100:#f1f5f9;--n200:#e2e8f0;--n300:#cbd5e1;--n400:#94a3b8;--n500:#64748b;--n600:#475569;--n700:#334155;--n800:#1e293b;--n900:#0f172a;
+    --green:#059669;--green50:#ecfdf5;--amber:#d97706;--amber50:#fffbeb;--red:#dc2626;--red50:#fef2f2;--blue:#2563eb;--blue50:#eff6ff;--violet:#7c3aed;--violet50:#f5f3ff;
+    --r:12px;--sh:0 1px 3px rgba(15,23,42,.08),0 1px 2px rgba(15,23,42,.04);--shmd:0 8px 24px rgba(15,23,42,.1);
+    --font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--font);color:var(--n900);background:var(--n50);line-height:1.55;font-size:14px}
+  a{color:var(--indigo);text-decoration:none}
+  code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.86em;background:var(--n100);padding:1px 5px;border-radius:5px;color:var(--n700)}
+  .wrap{display:grid;grid-template-columns:280px 1fr;max-width:1500px;margin:0 auto;min-height:100vh}
+  /* sidebar */
+  aside{position:sticky;top:0;height:100vh;overflow-y:auto;background:linear-gradient(180deg,var(--indigo-900),#161335);color:#cdd2ee;padding:22px 16px}
+  aside .brand{display:flex;gap:10px;align-items:center;margin-bottom:18px}
+  aside .logo{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,#fb923c,var(--saffron));display:grid;place-content:center;font-size:22px;color:#fff}
+  aside .brand b{font-size:15px;color:#fff;display:block}
+  aside .brand span{font-size:11px;color:#9aa0cf}
+  aside h4{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:#7d83b4;margin:18px 0 6px}
+  aside a.toc{display:flex;justify-content:space-between;gap:8px;padding:7px 11px;border-radius:8px;color:#c2c7ec;font-size:13px;font-weight:500;margin-bottom:2px}
+  aside a.toc:hover{background:rgba(255,255,255,.07);color:#fff}
+  aside a.toc .c{font-size:11px;background:rgba(255,255,255,.12);border-radius:99px;padding:1px 8px;color:#cdd2ee}
+  /* main */
+  main{padding:30px 38px;min-width:0}
+  .hero{background:linear-gradient(135deg,var(--saffron-50),#fff);border:1px solid var(--n200);border-radius:16px;padding:26px 28px;margin-bottom:24px}
+  .hero h1{margin:0 0 6px;font-size:28px;letter-spacing:-.5px}
+  .hero p{margin:0;color:var(--n600);max-width:900px}
+  .meta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  .pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:4px 10px;border-radius:99px;background:var(--n100);color:var(--n700)}
+  .summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:26px}
+  .scard{background:var(--n0);border:1px solid var(--n200);border-radius:var(--r);padding:16px;box-shadow:var(--sh)}
+  .scard .v{font-size:26px;font-weight:800}
+  .scard .l{font-size:12px;color:var(--n500);font-weight:600}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:20px;position:sticky;top:0;background:var(--n50);padding:12px 0;z-index:5;border-bottom:1px solid var(--n200)}
+  .controls input{flex:1;min-width:200px;max-width:360px;padding:9px 12px;border:1px solid var(--n300);border-radius:9px;font-size:13px;font-family:inherit}
+  .fbtn{padding:6px 12px;border:1px solid var(--n300);border-radius:99px;background:#fff;font-weight:600;font-size:12px;color:var(--n600);cursor:pointer}
+  .fbtn.on{background:var(--n900);color:#fff;border-color:var(--n900)}
+  section.grp{margin-bottom:34px;scroll-margin-top:80px}
+  section.grp>h2{font-size:20px;margin:0 0 4px;display:flex;align-items:center;gap:10px}
+  section.grp>.intro{color:var(--n600);margin:0 0 16px;max-width:1000px}
+  .gap{background:var(--n0);border:1px solid var(--n200);border-radius:var(--r);padding:18px 20px;margin-bottom:14px;box-shadow:var(--sh)}
+  .gap .top{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .gap .gid{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;font-weight:700;color:var(--n400)}
+  .gap h3{margin:0;font-size:16px;flex:1;min-width:240px}
+  .badge{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:99px;white-space:nowrap}
+  .sev-P0{background:var(--red50);color:var(--red)} .sev-P1{background:var(--amber50);color:var(--amber)}
+  .sev-P2{background:var(--blue50);color:var(--blue)} .sev-P3{background:var(--n100);color:var(--n600)}
+  .eff{background:var(--violet50);color:var(--violet)}
+  .gap .body{display:grid;grid-template-columns:1fr 1fr;gap:8px 22px}
+  .gap .row{padding:6px 0;border-top:1px solid var(--n100)}
+  .gap .row .k{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;color:var(--n400);margin-bottom:2px}
+  .gap .row .t{font-size:13px;color:var(--n700)}
+  .gap .how{grid-column:1/-1;background:var(--indigo-50);border:1px solid #e0e7ff;border-radius:9px;padding:11px 13px;margin-top:6px}
+  .gap .how .k{color:var(--indigo)}
+  .gap .how .t{color:var(--n800)}
+  .gap .how ul{margin:6px 0 0;padding-left:18px}
+  .gap .how li{margin-bottom:3px}
+  @media(max-width:1000px){.wrap{grid-template-columns:1fr}aside{display:none}.summary{grid-template-columns:repeat(2,1fr)}.gap .body{grid-template-columns:1fr}}
+  .foot{color:var(--n400);font-size:12px;margin-top:30px;border-top:1px solid var(--n200);padding-top:16px}
+  .hidden{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside>
+    <div class="brand"><div class="logo">ॐ</div><div><b>AI for Seva</b><span>Prototype Gap Analysis</span></div></div>
+    <div id="toc"></div>
+  </aside>
+  <main>
+    <div class="hero">
+      <h1>Prototype Gap Analysis</h1>
+      <p>A screen-by-screen audit of the HKHT <b>AI for Seva</b> prototype from the perspective of the five operating personas, plus the two areas the prototype most under-builds: <b>multi-tenant central billing</b> (orgs → centers → departments billed centrally for voice / WhatsApp / AI / ad APIs) and <b>micro-level operational tracking</b> (done vs needs-improvement, pending approval, audit, ownership, SLAs). Each gap states the current state, the gap, the operational impact, and <b>exactly how to implement it</b> in this codebase (<code>js/seed.js</code> entities, <code>js/store.js</code> actions, <code>js/components.js</code> UI, screen files under <code>js/screens/</code>).</p>
+      <div class="meta-row" id="metarow"></div>
+    </div>
+
+    <div class="summary" id="summary"></div>
+
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search gaps (e.g. SLA, merge, budget, audit, cap)…" />
+      <button class="fbtn on" data-sev="all">All severities</button>
+      <button class="fbtn" data-sev="P0">P0 Critical</button>
+      <button class="fbtn" data-sev="P1">P1 High</button>
+      <button class="fbtn" data-sev="P2">P2 Medium</button>
+      <button class="fbtn" data-sev="P3">P3 Nice-to-have</button>
+    </div>
+
+    <div id="content"></div>
+
+    <div class="foot">
+      Generated for the HKHT AI for Seva Phase-1 prototype (mock-only). Severity: <b>P0</b> blocks real operuse · <b>P1</b> high friction / trust gap · <b>P2</b> meaningful polish · <b>P3</b> nice-to-have. Effort: <b>S</b> &lt;½ day · <b>M</b> 1–2 days · <b>L</b> 3+ days, in this prototype's vanilla-JS architecture.
+    </div>
+  </main>
+</div>
+
+<script>
+/* ===== Section metadata ===== */
+const SECTIONS = [
+  {id:'ST', title:'1 · CRM / Data Steward — WF-006', icon:'🗂️', intro:'Cleaning, deduplicating, merging, consent-governing and importing records. Screens: Master Contacts, Contact 360, Dedupe & Identity, Data Quality, Consent & DND, Intake & Import, Segment Studio, Relationship Graph, CRM Sync, API Registry.'},
+  {id:'VO', title:'2 · Telecaller / Voice-Ops Supervisor — WF-002', icon:'🎙️', intro:'Running calls, reviewing transcripts/outcomes, managing callbacks, escalations and scripts. Screens: Calling Readiness, Call Console, Call review, Follow-up Tasks, WhatsApp, Escalations, Voice Scripts, Voice Dashboard.'},
+  {id:'CM', title:'3 · Campaign Manager — WF-003', icon:'📣', intro:'Planning, launching, optimising and attributing campaigns. Screens: Campaigns, Campaign detail, New Campaign builder, Content & Copy, Creative & Media, Remarketing, Behavior Triggers, Donor Propensity, Campaign Learning, Marketing Dashboard.'},
+  {id:'AP', title:'4 · Approver — sensitive sign-off', icon:'✅', intro:'Reviewing and signing off sensitive scripts, copy, budgets, merges, imports and donor messages. Screens: Approvals, plus per-screen approve actions.'},
+  {id:'LD', title:'5 · Leadership — Command Center', icon:'🛰️', intro:'Monitoring revenue, conversion, data quality and exceptions on one view. Screens: Command Center, Golden Journey, Source → Revenue, AI Agent Performance, Production Readiness.'},
+  {id:'MT', title:'6 · Multi-tenant & Central Billing', icon:'💳', intro:'Multiple organizations → centers → departments, billed CENTRALLY for generation / voice / WhatsApp / ad APIs. How usage is metered, capped, allocated, charged-back and approved. Screens: Usage & Cost, Roles & Tenants.'},
+  {id:'MI', title:'7 · Micro-level Tracking & Governance', icon:'🔬', intro:'Done vs needs-improvement, pending approval, audit trails, ownership/RACI, SLAs, versioning, status lifecycle, evidence and comments — across every entity.'},
+  {id:'XC', title:'8 · Cross-cutting Platform', icon:'🧩', intro:'Concerns that span every screen: search, notifications, "my work", bulk actions, exports, accessibility, data freshness, undo, empty/error states.'},
+];
+
+/* ===== Gaps ===== */
+const G = [];
+function g(o){G.push(o);}
+
+/* ---------- 1. CRM / DATA STEWARD (WF-006) ---------- */
+g({id:'ST-01',s:'ST',sev:'P0',eff:'M',title:'No inline field editing on a contact record',
+  cur:'Contact 360 (<code>wf006-contact-detail.js</code>) is read-only except the consent modal. A steward cannot fix a misspelt name, wrong city, or bad email.',
+  gap:'Stewards spend most of their day correcting field values; there is nowhere to do it.',
+  impact:'The core "clean records" job cannot be performed in the tool at all.',
+  how:'Add an "Edit" mode to Contact 360: render fields as inputs, add <code>store.actions.updateContact(id, patch)</code> that writes fields, bumps an edit-history array, and logs to audit. Validate phone/email on save. Show a "last edited by / when" line.'});
+g({id:'ST-02',s:'ST',sev:'P0',eff:'L',title:'Dedupe has no field-level merge picker',
+  cur:'Dedupe (<code>wf006-dedupe.js</code>) shows two records side by side and an "Approve merge" button, but the steward cannot choose which value survives per field.',
+  gap:'Real merges need a winner per field (keep A\'s phone, B\'s email) and a preview of the merged record.',
+  impact:'Merges are all-or-nothing → stewards avoid merging or lose good data.',
+  how:'Build a merge resolver modal: for each conflicting field show both values with radio selection + a free-text override; assemble a preview record; on confirm write the survivor, archive the loser with a pointer, and store the field-choice map in the audit note. Extend <code>mergeDecision</code> to accept the resolution map.'});
+g({id:'ST-03',s:'ST',sev:'P1',eff:'M',title:'No bulk selection / bulk actions on Master Contacts',
+  cur:'The contacts table has no row checkboxes; every action is one-at-a-time.',
+  gap:'Stewards work in batches: assign owner, tag, suppress, export, queue-for-call for 200 rows at once.',
+  impact:'Batch hygiene work is impossible; defeats the "10X cleaning" promise.',
+  how:'Add a selection column (reuse <code>ui.checkbox</code>), a sticky bulk-action bar when ≥1 selected (Assign owner, Add tag, Suppress, Export, Add to segment), and <code>store.actions.bulkUpdateContacts(ids, patch)</code>. Show a confirm with count.'});
+g({id:'ST-04',s:'ST',sev:'P1',eff:'M',title:'Data Quality exceptions are not drill-through or assignable',
+  cur:'Data Quality (<code>wf006-quality.js</code>) shows exception counts but clicking does not open the offending records, and there is no way to assign a queue to a steward.',
+  gap:'A count of "37 missing source" is not actionable without the list and an owner.',
+  impact:'Exceptions are visible but never get worked; no accountability.',
+  how:'Make each exception card link to a filtered Master Contacts view (<code>#/wf006/contacts?f=nosource</code> — wire the existing <code>f</code> param to the filter state). Add an "Assign queue" action that creates owned tasks (reuse the task entity) and shows assignee + progress (worked/total).'});
+g({id:'ST-05',s:'ST',sev:'P1',eff:'M',title:'Intake has no field-mapping or per-row fix step',
+  cur:'Intake (<code>wf006-intake.js</code>) simulates validation and shows an error queue, but you cannot map CSV columns to fields, nor fix the flagged rows in place.',
+  gap:'Real imports need column→field mapping and inline correction before approval.',
+  impact:'"Fix exceptions before approval" is shown but not doable; rejected rows are dead.',
+  how:'Add a 3-step import drawer: (1) column mapping table (CSV header → CRM field dropdown), (2) validation preview with per-row inline edit for flagged cells, (3) approve. Store mapping on the import batch; on approve, push corrected rows into <code>contacts</code>.'});
+g({id:'ST-06',s:'ST',sev:'P1',eff:'M',title:'Consent has no source/evidence, channel history, or expiry',
+  cur:'Consent & DND (<code>wf006-consent.js</code>) tracks DND/opt-out flags and reasons, but not the consent basis (where/when/how captured), per-channel timeline, or expiry/refresh date.',
+  gap:'Compliance requires provable consent lineage and re-consent cadence.',
+  impact:'Cannot defend a call/send if challenged; TRAI/DLT readiness is asserted, not evidenced.',
+  how:'Extend the consent object with <code>basis</code> (form/call/event), <code>capturedAt</code>, <code>evidenceRef</code>, <code>expiresAt</code>, and a <code>consentLog[]</code>. Render a per-channel consent timeline on Contact 360 and a "consent expiring in 30d" exception queue on Data Quality.'});
+g({id:'ST-07',s:'ST',sev:'P2',eff:'M',title:'Segment Studio rule builder is cosmetic + no live count',
+  cur:'Segment Studio (<code>wf006-segments.js</code>) "Build segment" uses toggle chips only; there is no real predicate editor and no live audience-count preview.',
+  gap:'Stewards/marketers need to compose AND/OR rules and see the eligible count update live.',
+  impact:'Segments cannot actually be authored; only pre-seeded ones exist.',
+  how:'Add a rule-row builder (field, operator, value) with AND/OR; evaluate against <code>contacts</code> on each change to show live <code>eligible</code> count + suppression/over-contact deductions; persist as a new segment with <code>rule</code> + versioned snapshot.'});
+g({id:'ST-08',s:'ST',sev:'P2',eff:'L',title:'Relationship Graph cannot be explored or path-found',
+  cur:'Relationship Graph (<code>wf006-relationships.js</code>) renders a 9-node sample SVG; you cannot zoom, expand a node\'s neighbours, or find a referral path between two people.',
+  gap:'"Follow-the-Devotee" needs ego-network expansion and warm-intro path discovery.',
+  impact:'The graph is a picture, not a tool fundraisers can navigate.',
+  how:'Make nodes clickable to re-center the graph on that contact (ego-network), add zoom/pan, and a "find path A→B" that BFS-walks the <code>relationships</code> edges and highlights the chain. Add a list/table fallback for accessibility.'});
+g({id:'ST-09',s:'ST',sev:'P2',eff:'M',title:'CRM Sync has no field-level conflict diff or retry policy',
+  cur:'CRM Sync (<code>wf006-sync.js</code>) shows job status and a "Resolve" action, but identity conflicts have no field-by-field diff and there is no configurable retry/backoff or schedule.',
+  gap:'Resolving a conflict blind is dangerous; ops need to see exactly which fields differ.',
+  impact:'Custodian either rubber-stamps or ignores conflicts.',
+  how:'On conflict, render a two-column field diff (CRM vs incoming) with per-field keep choice; add a sync-policy panel (retry count, backoff, schedule, alert-on-fail) stored per system; record each resolution in audit.'});
+g({id:'ST-10',s:'ST',sev:'P2',eff:'S',title:'API Registry has no test-connection or uptime history',
+  cur:'API Registry (<code>wf006-api-registry.js</code>) lists status/blocker/fallback but you cannot test a connector or see uptime trend.',
+  gap:'Custodians need a "ping" and a history to trust a green status.',
+  impact:'Status is a static label, not a live signal.',
+  how:'Add a "Test connection" button per row that simulates a latency check and writes a timestamped result; render a 30-day uptime sparkline from a seeded history array; surface last-checked time.'});
+g({id:'ST-11',s:'ST',sev:'P1',eff:'M',title:'No record-level edit history / field-level audit',
+  cur:'There is a global action audit log, but no per-field "who changed name from X to Y, when".',
+  gap:'Data stewardship demands field-level provenance and rollback.',
+  impact:'Cannot answer "who broke this record" or undo a bad edit.',
+  how:'Add a <code>history[]</code> to contact/donor records ({field, from, to, by, ts}); render a "History" tab on Contact 360 with a per-field revert button (<code>store.actions.revertField</code>).'});
+g({id:'ST-12',s:'ST',sev:'P2',eff:'S',title:'No "merge from here" or duplicate hint on Contact 360',
+  cur:'Contact 360 shows a duplicate-risk %, but there is no link to its candidate cluster or a "find duplicates" action.',
+  gap:'Stewards discover dupes from the record, not only from the dedupe queue.',
+  impact:'Context-switching kills the cleaning flow.',
+  how:'If <code>dupRisk &gt; 50</code>, show a banner linking to the matching <code>merges</code> cluster (or a "scan for duplicates" that builds one on the fly).'});
+
+/* ---------- 2. TELECALLER / VOICE-OPS (WF-002) ---------- */
+g({id:'VO-01',s:'VO',sev:'P0',eff:'M',title:'No manual disposition form after a call',
+  cur:'Call Console (<code>wf002-call-console.js</code>) auto-classifies the simulated call, but a human caller has no structured form to record outcome, sub-reason, pledge amount, callback time and notes.',
+  gap:'Real calling is human-dispositioned; AI only assists.',
+  impact:'A live telecaller cannot actually log a call.',
+  how:'After the call, render a disposition form (outcome dropdown from script <code>outcomeCodes</code>, objection, pledge ₹, callback datetime, free notes) pre-filled with the AI guess but fully editable; submit via <code>logCallOutcome</code>. Make it the default path; "AI auto" is the assist.'});
+g({id:'VO-02',s:'VO',sev:'P0',eff:'M',title:'No manual dial / no queue reorder / no skip',
+  cur:'The console auto-dials the top queue item; you cannot dial a specific contact, reorder priority, skip, or pause the queue.',
+  gap:'Supervisors re-prioritise hot leads; callers skip no-answers.',
+  impact:'Queue is a fixed list, not a workable worklist.',
+  how:'Add per-row "Call", "Skip", "Bump to top" actions and a search-to-dial box; store a <code>queueOrder</code>/<code>skipped</code> state; add Pause/Resume for the auto-dialer.'});
+g({id:'VO-02b',s:'VO',sev:'P1',eff:'M',title:'No supervisor live-monitor / barge / whisper view',
+  cur:'There is no supervisor view of who is on a call now, live status, or ability to listen/whisper/barge.',
+  gap:'A voice-ops supervisor manages a floor of callers in real time.',
+  impact:'Supervisor role has no real-time control surface.',
+  how:'Add a "Live floor" panel (seed <code>agentStatus</code>: idle/dialing/on-call/wrap) with per-agent current contact, call timer, and mock Listen/Whisper/Barge buttons that log an action.'});
+g({id:'VO-03',s:'VO',sev:'P1',eff:'M',title:'Call review has no QA scorecard or coaching notes',
+  cur:'Call review (<code>wf002-call-detail.js</code>) lets you confirm/override the AI outcome but has no QA rubric, score, or coaching feedback to the caller.',
+  gap:'"Management Dashboard & QA Agent" promises call-quality sampling/scoring; the scoring UI is missing.',
+  impact:'Supervisors can\'t run QA — a core WF-002 function.',
+  how:'Add a QA scorecard (greeting, script adherence, objection handling, compliance, tone — each scored) producing a weighted score; store on the call; add a coaching note + "share with caller"; surface QA scores on the Voice Dashboard.'});
+g({id:'VO-04',s:'VO',sev:'P1',eff:'M',title:'Tasks: no live SLA countdown, my-vs-team, calendar, or snooze',
+  cur:'Follow-up Tasks (<code>wf002-tasks.js</code>) shows due time as text and a static SLA badge; no live countdown, no "my tasks" filter, no calendar/day view, no snooze.',
+  gap:'Callers work "my overdue today"; supervisors watch SLA burn live.',
+  impact:'Follow-up leakage (the headline KPI) can\'t be actively managed.',
+  how:'Add a live countdown (computed each render from <code>dueDate</code> vs now) with colour states; add "My tasks / Team" toggle keyed to session user; add a day/agenda view; add <code>snoozeTask(id, until)</code>.'});
+g({id:'VO-05',s:'VO',sev:'P1',eff:'M',title:'Escalations have no SLA timer, comments thread, or reassignment',
+  cur:'Escalations (<code>wf002-escalations.js</code>) shows a context pack + Resolve, but no live SLA countdown, no threaded comments, no reassign, no priority change.',
+  gap:'Escalations are collaborative and time-bound; they need a conversation and a clock.',
+  impact:'High-value cases stall with no visible accountability.',
+  how:'Add a countdown to <code>slaDue</code> with breach styling + auto-flag; add a <code>comments[]</code> thread with @mention; add reassign (to user) and priority change actions, each logged.'});
+g({id:'VO-06',s:'VO',sev:'P2',eff:'M',title:'WhatsApp has no conversation thread or template editor',
+  cur:'WhatsApp (<code>wf002-whatsapp.js</code>) shows a delivery log and template inventory, but not a per-contact message thread, nor an editor to draft/submit a new template for approval.',
+  gap:'Follow-up is a two-way conversation; new templates must be authored.',
+  impact:'Can\'t see/continue a conversation or grow the approved-template set.',
+  how:'Add a thread drawer (messages + replies chronological, quick-reply with approved template); add a template editor that creates a <code>pending</code> template and raises a content/donor approval.'});
+g({id:'VO-07',s:'VO',sev:'P2',eff:'M',title:'Scripts: no version diff, inline editing, or A/B variants',
+  cur:'Voice Scripts (<code>wf002-scripts.js</code>) shows lifecycle + an opening line but cannot edit content, diff v3.0 vs v3.1, or run A/B language variants.',
+  gap:'Script improvement (a stated KPI loop) needs editing + diff + experiment.',
+  impact:'"Voice of the Devotee → script improvement" loop is broken at the edit step.',
+  how:'Add a script editor (sections + outcome-code mapping), a side-by-side version diff, and A/B variant fields with per-variant connect/convert metrics; new versions enter the approval lifecycle.'});
+g({id:'VO-08',s:'VO',sev:'P2',eff:'S',title:'Voice Dashboard has no date range or drill-to-calls',
+  cur:'Voice Dashboard (<code>wf002-dashboard.js</code>) is all-time; you can\'t pick a range or click a metric to see the underlying calls.',
+  gap:'Supervisors review "yesterday", "this campaign", then drill in.',
+  impact:'Numbers can\'t be investigated or trended.',
+  how:'Add a date-range + campaign filter that scopes the metrics; make funnel stages / outcome bars click through to a filtered call list.'});
+g({id:'VO-09',s:'VO',sev:'P1',eff:'S',title:'Calling Readiness gate has no per-item remediation or re-check',
+  cur:'Calling Readiness (<code>wf002-readiness.js</code>) shows Green/Amber/Red audit fields but red items have no "fix this" action or re-run audit.',
+  gap:'A blocked list needs a path from Red → Green inside the tool.',
+  impact:'You see you\'re blocked but can\'t act on it here.',
+  how:'Make each Red/Amber audit chip link to its remediation (missing source → Intake; DND unknown → Consent scrub; no script → Scripts) and add a "Re-run readiness audit" that recomputes the gate.'});
+
+/* ---------- 3. CAMPAIGN MANAGER (WF-003) ---------- */
+g({id:'CM-01',s:'CM',sev:'P0',eff:'S',title:'Campaigns can\'t be paused / activated / cloned from the UI',
+  cur:'Campaigns (<code>wf003-campaigns.js</code>) and Campaign detail show status but offer no pause/resume/archive/clone control.',
+  gap:'Lifecycle control is the manager\'s most frequent action.',
+  impact:'Campaign state is fixed once seeded; can\'t run a campaign.',
+  how:'Add status actions (<code>setCampaignStatus</code>) with allowed-transition rules; "Clone" pre-fills the builder from an existing campaign; budget-affecting changes raise an approval.'});
+g({id:'CM-02',s:'CM',sev:'P1',eff:'M',title:'Builder draft is not saved; brief/variants not editable inline',
+  cur:'New Campaign builder (<code>wf003-builder.js</code>) holds state in a module variable lost on navigation; AI brief and variants are display-only.',
+  gap:'Managers leave and return to drafts and edit AI output before submitting.',
+  impact:'A half-built campaign is lost on any navigation; AI text can\'t be tweaked.',
+  how:'Persist the draft to the store (<code>campaignDrafts</code>) and resume; render brief fields + variant headline/body/CTA as editable inputs; add a per-channel budget-split editor.'});
+g({id:'CM-03',s:'CM',sev:'P1',eff:'M',title:'Optimization recommendations can\'t be applied or tracked',
+  cur:'Campaign detail (<code>wf003-campaign-detail.js</code>) lists daily ROI recommendations that only raise a toast; there is no apply→approve→track loop.',
+  gap:'Agentic recs need a human-approved action that then shows impact.',
+  impact:'The "agentic, human-approved" optimization story has no follow-through.',
+  how:'Each rec gets Accept / Dismiss; Accept (budget-affecting) creates an approval; once approved, record the change on the campaign and show a before/after delta + "recommendations adopted" metric (feeds AI Agent Performance).'});
+g({id:'CM-04',s:'CM',sev:'P1',eff:'M',title:'No creative-level or ad-level performance',
+  cur:'Marketing Dashboard and Campaign detail report at campaign/channel level only.',
+  gap:'Managers optimise at the ad/creative/variant level (CTR, CVR per variant).',
+  impact:'Can\'t tell which creative works → the Content/Creative loop is blind.',
+  how:'Seed per-variant metrics (impressions, clicks, CTR, conversions) on <code>content.variants</code>; add a creative-performance table on Campaign detail and a "promote winner / pause loser" action.'});
+g({id:'CM-05',s:'CM',sev:'P2',eff:'M',title:'No campaign calendar / pacing / budget burn-down',
+  cur:'There is no calendar of launches or budget-pacing view (spend vs day-of-flight).',
+  gap:'Managers manage a portfolio across festival dates and pace spend to avoid early exhaustion.',
+  impact:'No portfolio or pacing visibility.',
+  how:'Add a calendar view of campaigns by start/end; on Campaign detail add a pacing chart (ideal vs actual cumulative spend) with an over/under-pacing flag.'});
+g({id:'CM-06',s:'CM',sev:'P2',eff:'S',title:'Audience/segment not attached to a campaign',
+  cur:'Segment Studio builds audiences and the builder lists channels, but a campaign has no attached audience/exclusion set.',
+  gap:'Campaigns target segments; attribution and remarketing need that link.',
+  impact:'Audience intelligence is disconnected from execution.',
+  how:'Add an audience step in the builder that selects segment(s) + exclusions; store <code>audienceIds</code> on the campaign; show estimated reach; surface on Campaign detail.'});
+g({id:'CM-07',s:'CM',sev:'P2',eff:'M',title:'Remarketing / Triggers / Propensity actions are toasts only',
+  cur:'These screens (<code>wf003-remarketing/triggers/propensity.js</code>) change status or fire a toast but have no detail drill, audience preview, message-plan editor, or scheduled run.',
+  gap:'Managers preview who is in an audience, edit the message plan, and schedule.',
+  impact:'These read as dashboards, not operable tools.',
+  how:'Add a detail drawer per item: member preview (sampled contacts), editable message/channel plan, schedule + frequency cap, and an approval for sensitive/VIP sends; on run, write a campaign/send record.'});
+g({id:'CM-08',s:'CM',sev:'P2',eff:'M',title:'Landing Page QA is a static score, not a checklist run',
+  cur:'Campaign detail shows a landing QA score + issues + a "fix critical" toggle, but no actual checklist run (payment test, UTM fire, CRM webhook, mobile, load).',
+  gap:'Launch readiness depends on a real pre-flight checklist with pass/fail per item.',
+  impact:'"Launch defects" KPI can\'t be driven down.',
+  how:'Add a QA checklist entity per landing page with per-item status + "re-run QA"; block launch approval until criticals pass (tie into the Production Readiness gate).'});
+g({id:'CM-09',s:'CM',sev:'P2',eff:'S',title:'Campaign Learning playbooks don\'t pre-fill the builder',
+  cur:'Campaign Learning (<code>wf003-learning.js</code>) "Reuse in new campaign" navigates to the builder but doesn\'t carry the playbook.',
+  gap:'Institutional memory should seed the next brief automatically.',
+  impact:'Reuse is manual re-typing → the "reduced dependency" KPI is unmet.',
+  how:'Pass the learning id to the builder (<code>#/wf003/builder?from=LRN-01</code>) and pre-populate objective, channel plan and recommendation into the draft.'});
+
+/* ---------- 4. APPROVER ---------- */
+g({id:'AP-01',s:'AP',sev:'P0',eff:'M',title:'Approver cannot see the actual artifact being approved',
+  cur:'Approvals (<code>approvals.js</code>) shows a context paragraph but not the real thing — the script text, the ad creative, the budget breakdown, the merge diff, the donor message.',
+  gap:'You cannot responsibly sign off what you can\'t see.',
+  impact:'Approvals are rubber-stamps; the HITL gate is theatre.',
+  how:'In the review drawer, render an artifact preview by <code>entity</code> type: script → full text + outcome codes; content → variant cards; campaign → budget/channel table; merge → field diff; wa_template → message body. Pull from the linked entity by <code>entityId</code>.'});
+g({id:'AP-02',s:'AP',sev:'P1',eff:'M',title:'No approve-with-changes, comments, or request-info',
+  cur:'Approvals are binary approve/reject with an optional note.',
+  gap:'Approvers often "approve with edits" or send back with specific questions.',
+  impact:'Forces reject+rework cycles; slows the queue.',
+  how:'Add "Approve with changes" (captures an edit + applies it), "Request info" (sets status <code>info_requested</code>, notifies requester), and a comments thread on the approval.'});
+g({id:'AP-03',s:'AP',sev:'P1',eff:'M',title:'No delegation / backup approver / out-of-office',
+  cur:'Approval hierarchy is documented but there is no delegation UI; if Mukund Prabhu is away, the queue stalls.',
+  gap:'The briefs explicitly require backup approver + SLA to avoid a bottleneck.',
+  impact:'Single-person bottleneck — the exact risk the briefs call out.',
+  how:'Add per-role backup approver config (Roles & Tenants) and an "out-of-office / delegate to" toggle that re-routes pending + new items to the backup; log the delegation.'});
+g({id:'AP-04',s:'AP',sev:'P1',eff:'M',title:'No SLA auto-escalation on approval breach',
+  cur:'Approvals show an SLA due time and "breached" badge, but breaching does nothing automatically.',
+  gap:'Breached sensitive approvals must escalate to the backup/senior automatically.',
+  impact:'Breaches are visible but not enforced.',
+  how:'Add an SLA policy per approval type; on render, breached pending items auto-flag + create an escalation to the backup approver and a leadership alert; show "escalated" state.'});
+g({id:'AP-05',s:'AP',sev:'P2',eff:'S',title:'No bulk approve / filter by "needs my role"',
+  cur:'The queue lists everything; an approver can\'t filter to only items their role owns, nor bulk-approve low-risk batches.',
+  gap:'A content reviewer wants only content items; low-risk variants approve in bulk.',
+  impact:'Approvers wade through irrelevant items.',
+  how:'Default-filter the queue to <code>approverRole === session.role</code> (with an "all" toggle); add multi-select + bulk approve for non-High items.'});
+g({id:'AP-06',s:'AP',sev:'P2',eff:'S',title:'No approval audit from the approver\'s side / decision history',
+  cur:'Decisions are logged globally but the approver has no "my decisions" history or turnaround stats.',
+  gap:'Approvers and leadership track decision volume, turnaround and reversal rate.',
+  impact:'No accountability or load visibility for approvers.',
+  how:'Add a "My decisions" tab (filter audit by <code>decisionBy</code>) with avg turnaround and an approve/reject ratio; feed approver SLA into the command center.'});
+
+/* ---------- 5. LEADERSHIP / COMMAND CENTER ---------- */
+g({id:'LD-01',s:'LD',sev:'P1',eff:'M',title:'Command Center has no date range or period comparison',
+  cur:'Command Center (<code>command-center.js</code>) shows current totals with hard-coded trend deltas; no range picker, no MoM/YoY/YTD.',
+  gap:'Leadership reviews "this month vs last", "target vs achieved".',
+  impact:'No trend or target context → can\'t judge if things are improving.',
+  how:'Add a global date-range control (store on session) and a target model (per center/period) → render target vs achieved gauges and real MoM deltas from the daily series.'});
+g({id:'LD-02',s:'LD',sev:'P1',eff:'M',title:'No drill-through from any command-center KPI',
+  cur:'KPIs and funnel stages are not clickable.',
+  gap:'Leadership clicks a number to see what\'s behind it.',
+  impact:'Dead-end metrics; forces asking someone for the detail.',
+  how:'Make each KPI/funnel stage navigate to the relevant filtered screen (revenue→Source→Revenue; overdue→Tasks; escalations→Escalations; DQ→Data Quality).'});
+g({id:'LD-03',s:'LD',sev:'P1',eff:'M',title:'No alerts / exceptions feed or "since you last looked"',
+  cur:'"Needs attention" shows static counts; there is no live alert feed, no threshold-based alerts, no read/unread.',
+  gap:'Leadership wants to be pushed the 5 things that changed/broke, not pull dashboards.',
+  impact:'Important exceptions (ROAS drop, opt-out spike, SLA breach) go unseen.',
+  how:'Add an <code>alerts</code> entity generated by threshold rules (ROAS&lt;target, DQ&lt;80, overdue&gt;N, opt-out spike); render an alert inbox with severity + acknowledge; badge the topbar.'});
+g({id:'LD-04',s:'LD',sev:'P2',eff:'M',title:'Golden Journey can only be reached by picking a contact',
+  cur:'Golden Journey (<code>golden-journey.js</code>) has a contact dropdown; you can\'t paste any shared ID (Call/Lead/Donation/Campaign) and land on the journey.',
+  gap:'Leadership/ops trace by whatever ID they have in hand.',
+  impact:'Cross-ID traceability (the platform\'s core promise) isn\'t directly demonstrable.',
+  how:'Add a universal ID search box that resolves any shared ID → its Contact_ID → journey; show owner + SLA at each step.'});
+g({id:'LD-05',s:'LD',sev:'P2',eff:'S',title:'No per-role / saved command-center layout & no export',
+  cur:'One fixed layout for all; no "export board to PDF" for a leadership pack.',
+  gap:'Different HODs want different tiles; leadership wants a shareable snapshot.',
+  impact:'Not tailored; no offline reporting artifact.',
+  how:'Add a tile-visibility preference per role (stored on user) and a "Export snapshot" that renders a print stylesheet / generates a PDF-friendly view.'});
+g({id:'LD-06',s:'LD',sev:'P2',eff:'S',title:'No data-freshness / last-synced indicator on dashboards',
+  cur:'Dashboards don\'t show when data was last refreshed or if a feed is on fallback.',
+  gap:'Leadership must know if a number is live, delayed, or from a fallback export.',
+  impact:'Risk of deciding on stale/fallback data unknowingly.',
+  how:'Add a "as of <time> · <source: live/fallback>" stamp per dashboard, driven by the API Registry/continuity status.'});
+
+/* ---------- 6. MULTI-TENANT & CENTRAL BILLING ---------- */
+g({id:'MT-01',s:'MT',sev:'P0',eff:'L',title:'No Org tier above Center (Org → Center → Department)',
+  cur:'Tenancy is Center + Department only (<code>seed.js</code> CENTERS/DEPTS). The brief describes multiple organizations each with multiple centers and departments.',
+  gap:'No top-level organization entity, so cross-org isolation and roll-up don\'t exist.',
+  impact:'Cannot onboard a second org; billing/roll-up has no org boundary.',
+  how:'Add an <code>orgs</code> entity; give centers an <code>orgId</code>; add an org level to the tenant switcher and to every scoped query (<code>inScope</code>); roll usage/cost/revenue up Org→Center→Dept.'});
+g({id:'MT-02',s:'MT',sev:'P0',eff:'L',title:'No event-level usage metering ledger',
+  cur:'Usage & Cost (<code>usage-cost.js</code>) shows pre-aggregated rows; there is no per-event meter tying each voice minute / WhatsApp conv / AI generation / ad ₹ to who/what consumed it.',
+  gap:'Central billing requires an auditable usage ledger keyed to center/dept/user and the triggering Call/Campaign/Message ID.',
+  impact:'Cost can\'t be traced, disputed, or charged back accurately.',
+  how:'Add a <code>usageLedger</code> entity {id, ts, service, qty, unitRate, cost, orgId, centerId, deptId, userId, refType, refId}; write to it from every API-consuming action (<code>runCall</code>, <code>sendWhatsApp</code>, AI generations, ad spend sync); Usage screen aggregates from the ledger and supports drill to events.'});
+g({id:'MT-03',s:'MT',sev:'P0',eff:'L',title:'No budgets / caps per center & department with enforcement',
+  cur:'There is a single platform monthly budget; no per-center or per-department caps and nothing is enforced.',
+  gap:'Central billing needs per-tenant caps per service that actually throttle/block when hit.',
+  impact:'A department can burn unlimited central spend; no cost control.',
+  how:'Add a <code>budgets</code> entity {orgId, centerId, deptId, service, period, cap, spent, alertAt:[80,100], hardStop:bool}. In API-consuming actions, check remaining budget before proceeding; at ≥alert → toast+alert; at cap with hardStop → block and raise a "budget increase" approval. Show burn-down per cap on Usage & Cost.'});
+g({id:'MT-04',s:'MT',sev:'P1',eff:'M',title:'No chargeback statement / invoice per center & department',
+  cur:'Usage shows allocation bars but no period statement a center can be billed against.',
+  gap:'Finance needs a monthly statement per center/dept (qty × rate by service, total, GL code).',
+  impact:'Central billing can\'t actually invoice/recover cost.',
+  how:'Add a "Statements" view: pick period + center/dept → itemised statement from the ledger (per service: qty, rate, amount, subtotal, taxes, total) with a cost-center/GL field and "export / mark billed".'});
+g({id:'MT-05',s:'MT',sev:'P1',eff:'M',title:'No editable rate card / unit pricing',
+  cur:'Rates are hard-coded in <code>buildUsage()</code> (₹/min, ₹/conv, ₹/gen).',
+  gap:'Central admin must maintain rates (and per-org negotiated rates) over time.',
+  impact:'Pricing changes require code edits; no per-org pricing.',
+  how:'Add a <code>rateCard</code> entity (per service, effective-dated, optional per-org override); the ledger snapshots the rate at event time; add a rate-card admin screen.'});
+g({id:'MT-06',s:'MT',sev:'P1',eff:'M',title:'No budget-increase / overspend approval workflow',
+  cur:'Overspend is mentioned as "leadership approval" but there is no request→approve flow wired to caps.',
+  gap:'Hitting a cap should raise an approval that, once granted, lifts the cap for the period.',
+  impact:'Either work stops or caps are meaningless.',
+  how:'When a cap blocks an action, create an approval (type "Budget increase", entity budget); on approve, raise <code>cap</code> for the period and log it; show pending budget requests on Usage & Cost.'});
+g({id:'MT-07',s:'MT',sev:'P1',eff:'M',title:'No alert-threshold config or recipients per tenant',
+  cur:'Usage mentions "alerts at 85% & 100%" as static text; not configurable, no recipients.',
+  gap:'Each center/dept owner wants thresholds and to choose who is alerted.',
+  impact:'Alerts are decorative.',
+  how:'Make <code>alertAt</code> editable per budget; on threshold crossing generate an <code>alerts</code> record to the configured owners (ties into LD-03 alert inbox).'});
+g({id:'MT-08',s:'MT',sev:'P2',eff:'M',title:'No forecast / projected month-end spend',
+  cur:'Usage shows month-to-date only.',
+  gap:'Owners need projected end-of-period spend vs cap to act early.',
+  impact:'Overspend is discovered after the fact.',
+  how:'Compute run-rate from the ledger trend and project to period end; show projected vs cap with an at-risk flag; surface on Command Center central-spend tile.'});
+g({id:'MT-09',s:'MT',sev:'P2',eff:'M',title:'No module entitlements / feature licensing per tenant',
+  cur:'Every center sees every workflow; there is no per-tenant "which modules are licensed".',
+  gap:'Multi-org distribution means some centers buy only WF-006+WF-002, etc.',
+  impact:'Can\'t package/sell modules per center; nav shows un-licensed features.',
+  how:'Add <code>entitlements</code> per org/center (module list); gate nav + screen access on entitlement AND role; show "not licensed" state; surface entitlements in Roles & Tenants.'});
+g({id:'MT-10',s:'MT',sev:'P2',eff:'M',title:'Tenant data isolation is partial',
+  cur:'<code>inScope</code> filters by centerId/deptId, but several entities (calls, tasks, escalations, segments, suppression, ledger) lack a center/dept stamp, so scope filtering is incomplete.',
+  gap:'True multi-tenant requires every record to carry org/center/dept and every list to scope by it.',
+  impact:'A center could see another center\'s calls/tasks; roll-ups are wrong.',
+  how:'Stamp <code>orgId/centerId/deptId</code> on every entity in <code>seed.js</code>; route all list screens through <code>store.scoped()</code>; add a tenant-isolation test to the QA gate.'});
+g({id:'MT-11',s:'MT',sev:'P2',eff:'S',title:'No platform-admin vs tenant-admin separation',
+  cur:'<code>org_admin</code> has full access; there is no distinction between a platform owner (manages all orgs, rates, entitlements) and a tenant/center admin (manages only their org\'s users/budgets).',
+  gap:'Distribution to multiple orgs needs scoped admin.',
+  impact:'A center admin could edit another org or the global rate card.',
+  how:'Split into <code>platform_admin</code> and <code>center_admin</code> roles; scope Roles & Tenants, budgets and rate-card editing by the admin\'s org; platform-only screens for rate card + entitlements.'});
+g({id:'MT-12',s:'MT',sev:'P3',eff:'M',title:'No prepaid wallet / credit model option',
+  cur:'Only an implicit postpaid model.',
+  gap:'Some centers may prepay a credit balance that depletes with usage.',
+  impact:'No support for prepaid distribution model.',
+  how:'Add an optional <code>wallet</code> per center (balance, top-ups); decrement on metered events; block at zero with a top-up request approval.'});
+
+/* ---------- 7. MICRO-LEVEL TRACKING & GOVERNANCE ---------- */
+g({id:'MI-01',s:'MI',sev:'P1',eff:'M',title:'No explicit status lifecycle / state machine per entity',
+  cur:'Statuses are free strings set ad-hoc; there is no defined set of states, allowed transitions, or who may transition.',
+  gap:'Every governed entity (campaign, script, content, import, merge, task, escalation, approval) needs a lifecycle with guarded transitions.',
+  impact:'Illegal jumps are possible; no consistent "where is this in its lifecycle".',
+  how:'Define a <code>LIFECYCLES</code> map (states + allowed transitions + roles) in a shared module; route all status changes through <code>store.actions.transition(entity,id,toState)</code> which validates role+transition and logs it; render a stage chip + allowed-action buttons only.'});
+g({id:'MI-02',s:'MI',sev:'P1',eff:'M',title:'No "done vs needs-improvement" / rework loop on work items',
+  cur:'There is no per-item quality flag, no "flag for improvement", no rework queue. The brief explicitly wants "what was done vs what needs improvement".',
+  gap:'Reviewers must be able to mark an item good, or send it back with a reason that creates rework.',
+  impact:'No quality feedback loop; rework is invisible.',
+  how:'Add a generic <code>reviewStatus</code> {good | needs_improvement} + <code>improvementNotes</code> to calls, content, scripts, segments, records; "Needs improvement" creates an owned rework task; a "Rework queue" screen aggregates them with reason + owner + age.'});
+g({id:'MI-03',s:'MI',sev:'P1',eff:'M',title:'No unified "My Work" / pending inbox per user',
+  cur:'Pending items (approvals, tasks, escalations, rework, alerts) are scattered across screens; a user has no single "what needs me now".',
+  gap:'Every persona starts the day from one personalised queue.',
+  impact:'Work is missed; no single accountability surface.',
+  how:'Add a "My Work" home (default landing per role) aggregating items where <code>ownerId/assigneeId/approverRole/decisionBy</code> = me, grouped (Approvals, Tasks due, Escalations, Rework, Alerts) with counts + SLA; badge the sidebar.'});
+g({id:'MI-04',s:'MI',sev:'P1',eff:'M',title:'No full RACI per record (owner/performer/approver/backup/escalation)',
+  cur:'Records carry a single <code>ownerId</code>; the briefs require owner + performer + approver + backup + escalation + dashboard-reviewer + data-custodian per route.',
+  gap:'Accountability needs the full RACI, not one owner.',
+  impact:'"Who approves / who\'s the backup / who escalates" is undefined per record.',
+  how:'Add a <code>raci</code> object to governed entities (and a default RACI per workflow+center in config); render a RACI panel on detail screens; reassignment writes a reassignment-history entry.'});
+g({id:'MI-05',s:'MI',sev:'P0',eff:'M',title:'No SLA engine (policies, live timers, breach automation, SLA board)',
+  cur:'Due dates exist on tasks/escalations/approvals but there is no SLA policy config, no live countdown, no automatic breach handling, no SLA dashboard.',
+  gap:'SLAs are central to every brief (callback SLA, approval SLA, escalation SLA, first-follow-up SLA).',
+  impact:'SLAs can\'t be measured, enforced, or reported — a headline KPI is unmanaged.',
+  how:'Add an <code>slaPolicies</code> config (per item type+priority → target mins, escalate-to); a shared <code>slaState(item)</code> helper returns remaining/breached; render live countdowns; breached items auto-escalate + alert; add an "SLA board" (on-track/at-risk/breached by type) feeding the command center.'});
+g({id:'MI-06',s:'MI',sev:'P1',eff:'M',title:'Audit log is action-level only — not field-level, filterable, or exportable',
+  cur:'Roles & Tenants shows a global audit list; it is not filterable by entity/actor/type/date, not exportable, and doesn\'t capture field-level before/after.',
+  gap:'Governance needs queryable, exportable, tamper-evident, field-level audit.',
+  impact:'Can\'t produce an audit trail for a specific record or period on demand.',
+  how:'Extend audit entries with <code>before/after</code> for field changes; add filters (entity, actor, type, date range) + CSV export; show a per-entity "Activity" tab sourced from audit; display a hash/sequence to imply immutability.'});
+g({id:'MI-07',s:'MI',sev:'P1',eff:'M',title:'No comments / @mentions / notes thread on any entity',
+  cur:'No collaboration thread anywhere (approvals, escalations, campaigns, records).',
+  gap:'Operational work is collaborative — questions, context, decisions live in threads.',
+  impact:'Context lives in WhatsApp/email instead of the record → the leakage the platform aims to remove.',
+  how:'Add a reusable <code>comments[]</code> ({by, ts, text, mentions}) + a <code>ui.commentThread()</code> component; mount on approvals, escalations, campaigns, contacts; @mention generates an alert to that user.'});
+g({id:'MI-08',s:'MI',sev:'P2',eff:'M',title:'No versioning/history for content, campaigns, segments (only scripts have versions)',
+  cur:'Scripts show a version string; content/campaigns/segments have no version history or diff.',
+  gap:'Approved artifacts change over time and must be diff-able and revertible.',
+  impact:'Can\'t see what changed between approvals or roll back.',
+  how:'Add a <code>versions[]</code> snapshot array on these entities; capture a snapshot on each approved change; add a version list + diff view + revert.'});
+g({id:'MI-09',s:'MI',sev:'P2',eff:'S',title:'No evidence/attachments on approvals & escalations',
+  cur:'Approvals/escalations carry text only; no attachments, screenshots, or linked artifact files.',
+  gap:'Sensitive sign-off often needs supporting evidence (quote, screenshot, proof of consent).',
+  impact:'Decisions lack a defensible evidence pack.',
+  how:'Add an <code>attachments[]</code> (mock file chips with name/type) to approvals/escalations; render in the review drawer; include in audit.'});
+g({id:'MI-10',s:'MI',sev:'P2',eff:'S',title:'No workload / capacity view per owner',
+  cur:'No view of how many open tasks/escalations/approvals each owner holds.',
+  gap:'Supervisors balance load; reassignment needs a capacity signal.',
+  impact:'Work piles on individuals invisibly.',
+  how:'Add a workload table (open items by owner, by type, oldest age) on Tasks/Escalations and Roles & Tenants; power "reassign to least-loaded".'});
+g({id:'MI-11',s:'MI',sev:'P2',eff:'S',title:'No "what changed since last visit" per record/screen',
+  cur:'No read-state or change-since markers.',
+  gap:'Returning users want to see only what moved.',
+  impact:'Re-scanning whole screens wastes time.',
+  how:'Store per-user last-seen timestamps per entity; badge rows/records changed since; "mark all seen".'});
+
+/* ---------- 8. CROSS-CUTTING PLATFORM ---------- */
+g({id:'XC-01',s:'XC',sev:'P1',eff:'M',title:'No global search / command palette',
+  cur:'Each list has its own search; there is no global search across contacts, campaigns, calls, IDs, or a ⌘K palette to jump to screens/records.',
+  gap:'Power users navigate by search, not menus.',
+  impact:'Slow navigation; finding a record by ID means knowing which screen.',
+  how:'Add a topbar search + ⌘K palette that indexes contacts/campaigns/calls/tasks and screens; resolve shared IDs to their detail screen.'});
+g({id:'XC-02',s:'XC',sev:'P1',eff:'M',title:'No notifications / activity feed',
+  cur:'No notification system; actions only confirm via transient toasts.',
+  gap:'Assignments, approvals, breaches, @mentions and alerts must reach the right user persistently.',
+  impact:'Asynchronous coordination is impossible.',
+  how:'Add a <code>notifications</code> entity per user + a topbar bell with unread count + a panel; generate on assignment/approval-decision/SLA-breach/@mention; mark read.'});
+g({id:'XC-03',s:'XC',sev:'P2',eff:'M',title:'No real export framework (CSV/PDF) — exports are toasts',
+  cur:'"Export" buttons show a toast and an audit line but produce no file.',
+  gap:'Stewards/finance/leadership need actual CSV/PDF out.',
+  impact:'No data portability or offline reporting.',
+  how:'Add a <code>util.toCSV(rows)</code> + Blob download for tables; a print stylesheet for dashboard PDF export; keep the audit log entry.'});
+g({id:'XC-04',s:'XC',sev:'P2',eff:'S',title:'Large tables have no pagination / sort / column controls',
+  cur:'<code>ui.table</code> renders all rows; no sortable headers, pagination, or column show/hide.',
+  gap:'Real datasets (thousands of contacts/calls) need pagination + sort.',
+  impact:'Performance and usability degrade at scale.',
+  how:'Extend <code>ui.table</code> with optional client-side sort (clickable headers), pagination/virtual windowing, and a column toggle; persist sort per screen.'});
+g({id:'XC-05',s:'XC',sev:'P2',eff:'M',title:'Accessibility gaps on custom controls',
+  cur:'Custom switches/checkboxes/menus/drawers have limited ARIA roles, keyboard operation and focus trapping; tables lack scope/caption.',
+  gap:'WCAG AA keyboard + screen-reader operability.',
+  impact:'Excludes keyboard/AT users; fails accessibility review.',
+  how:'Add roles/aria-state to <code>switchToggle/checkbox</code>, focus-trap + ESC + return-focus in modal/drawer, arrow-key nav in menus, <code>aria-sort</code> on sortable headers, and visible focus rings (already present) audited per control.'});
+g({id:'XC-06',s:'XC',sev:'P2',eff:'S',title:'No saved views / filters',
+  cur:'Filters reset on navigation; can\'t save "my overdue HNI in Hyderabad".',
+  gap:'Operators reuse the same filtered slices daily.',
+  impact:'Repetitive re-filtering.',
+  how:'Persist named filter sets per user per screen; add a "Saved views" dropdown.'});
+g({id:'XC-07',s:'XC',sev:'P3',eff:'S',title:'No undo / confirm-undo for destructive actions',
+  cur:'Merge/suppress/resolve are immediate; only some have a confirm.',
+  gap:'Reversible safety net for high-impact actions.',
+  impact:'Mistakes are sticky (until data reset).',
+  how:'Add an undo toast (action + Undo) for reversible mutations; keep a short action-undo stack in the store.'});
+g({id:'XC-08',s:'XC',sev:'P3',eff:'S',title:'Inconsistent empty / loading / error states',
+  cur:'Some screens have empty states; there are no loading skeletons (data is synchronous) and no per-widget error boundaries beyond the top-level catch.',
+  gap:'Production UIs need consistent empty/loading/error affordances per widget.',
+  impact:'Rough edges; unclear when something is genuinely empty vs broken.',
+  how:'Standardise an <code>emptyState</code>/skeleton/error pattern and apply per card; wrap risky renders in a small error boundary helper.'});
+g({id:'XC-09',s:'XC',sev:'P3',eff:'S',title:'No persistence beyond the browser session',
+  cur:'State lives in <code>sessionStorage</code>; clearing the tab loses changes; no multi-device/shared state.',
+  gap:'Acceptable for a prototype; flagged for the real build (needs a backend).',
+  impact:'Demo-only; not multi-user concurrent.',
+  how:'For the production build, replace the store with API-backed persistence; keep the same <code>store</code> interface so screens are unchanged. (Out of scope for the mock; documented for the partner.)'});
+
+/* ===== Render ===== */
+const SEV_LABEL={P0:'P0 Critical',P1:'P1 High',P2:'P2 Medium',P3:'P3 Nice-to-have'};
+let filterSev='all', query='';
+const content=document.getElementById('content');
+const toc=document.getElementById('toc');
+
+function counts(){
+  const bySec={}, bySev={P0:0,P1:0,P2:0,P3:0};
+  G.forEach(x=>{bySec[x.s]=(bySec[x.s]||0)+1;bySev[x.sev]++;});
+  return {bySec,bySev};
+}
+function renderSummary(){
+  const {bySev}=counts();
+  document.getElementById('summary').innerHTML=
+    `<div class="scard"><div class="v">${G.length}</div><div class="l">Total gaps identified</div></div>`+
+    `<div class="scard"><div class="v" style="color:var(--red)">${bySev.P0}</div><div class="l">P0 · Critical (blocks real use)</div></div>`+
+    `<div class="scard"><div class="v" style="color:var(--amber)">${bySev.P1}</div><div class="l">P1 · High (friction / trust)</div></div>`+
+    `<div class="scard"><div class="v" style="color:var(--blue)">${bySev.P2+bySev.P3}</div><div class="l">P2–P3 · Polish & nice-to-have</div></div>`;
+  document.getElementById('metarow').innerHTML=
+    SECTIONS.map(s=>`<span class="pill">${s.icon} ${s.title.split('·')[0].trim()}</span>`).join('');
+}
+function renderTOC(){
+  const {bySec}=counts();
+  let html='<h4>Sections</h4>';
+  SECTIONS.forEach(s=>{ html+=`<a class="toc" href="#sec-${s.id}"><span>${s.icon} ${s.title.replace(/^\d+ · /,'')}</span><span class="c">${bySec[s.id]||0}</span></a>`; });
+  toc.innerHTML=html;
+}
+function gapCard(x){
+  return `<div class="gap" data-sev="${x.sev}" data-text="${(x.id+' '+x.title+' '+x.cur+' '+x.gap+' '+x.how).replace(/<[^>]+>/g,'').replace(/"/g,'&quot;').toLowerCase()}">
+    <div class="top">
+      <span class="gid">${x.id}</span>
+      <h3>${x.title}</h3>
+      <span class="badge sev-${x.sev}">${SEV_LABEL[x.sev]}</span>
+      <span class="badge eff">Effort ${x.eff}</span>
+    </div>
+    <div class="body">
+      <div class="row"><div class="k">Current state</div><div class="t">${x.cur}</div></div>
+      <div class="row"><div class="k">The gap</div><div class="t">${x.gap}</div></div>
+      <div class="row"><div class="k">Operational impact</div><div class="t">${x.impact}</div></div>
+      <div class="row how"><div class="k">How to implement</div><div class="t">${x.how}</div></div>
+    </div>
+  </div>`;
+}
+function render(){
+  let html='';
+  SECTIONS.forEach(s=>{
+    const items=G.filter(x=>x.s===s.id);
+    html+=`<section class="grp" id="sec-${s.id}"><h2>${s.icon} ${s.title}</h2><p class="intro">${s.intro}</p>`;
+    html+=items.map(gapCard).join('');
+    html+=`</section>`;
+  });
+  content.innerHTML=html;
+  applyFilters();
+}
+function applyFilters(){
+  document.querySelectorAll('.gap').forEach(c=>{
+    const okSev = filterSev==='all' || c.dataset.sev===filterSev;
+    const okQ = !query || c.dataset.text.includes(query);
+    c.classList.toggle('hidden', !(okSev&&okQ));
+  });
+  document.querySelectorAll('section.grp').forEach(sec=>{
+    const any=[...sec.querySelectorAll('.gap')].some(c=>!c.classList.contains('hidden'));
+    sec.classList.toggle('hidden',!any);
+  });
+}
+document.querySelectorAll('.fbtn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.fbtn').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); filterSev=b.dataset.sev; applyFilters();
+}));
+document.getElementById('q').addEventListener('input',e=>{query=e.target.value.toLowerCase();applyFilters();});
+
+renderSummary();renderTOC();render();
+</script>
+</body>
+</html>

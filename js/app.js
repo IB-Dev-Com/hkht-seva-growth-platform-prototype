@@ -7,13 +7,17 @@
   /* ---------- Navigation model ---------- */
   var NAV = [
     { group: 'Platform', tag: null, items: [
+      { path: '/mywork', screen: 'mywork', label: 'My Work', icon: '🎯', wf: 'platform', badge: 'mywork' },
       { path: '/', screen: 'command-center', label: 'Command Center', icon: '🛰️', wf: 'platform' },
       { path: '/journey', screen: 'golden-journey', label: 'Golden Journey', icon: '🧭', wf: 'platform' },
       { path: '/attribution', screen: 'attribution', label: 'Source → Revenue', icon: '🔗', wf: 'platform' },
       { path: '/ai-performance', screen: 'ai-performance', label: 'AI Agent Performance', icon: '🤖', wf: 'platform' },
       { path: '/approvals', screen: 'approvals', label: 'Approvals', icon: '✅', wf: 'platform', badge: 'approvals' },
       { path: '/golive', screen: 'golive', label: 'Production Readiness', icon: '🚦', wf: 'platform' },
+      { path: '/sla', screen: 'sla-board', label: 'SLA Board', icon: '⏱️', wf: 'platform' },
+      { path: '/rework', screen: 'rework', label: 'Rework Queue', icon: '🔁', wf: 'platform', badge: 'rework' },
       { path: '/usage', screen: 'usage-cost', label: 'Usage & Cost', icon: '💳', wf: 'platform' },
+      { path: '/billing', screen: 'billing', label: 'Billing & Statements', icon: '🧾', wf: 'platform' },
       { path: '/continuity', screen: 'continuity', label: 'Service Continuity', icon: '🛟', wf: 'platform' },
       { path: '/kcke', screen: 'kcke', label: 'KCKE & Media Boundary', icon: '📖', wf: 'platform' },
       { path: '/admin', screen: 'admin', label: 'Roles & Tenants', icon: '⚙️', wf: 'admin' }
@@ -63,6 +67,8 @@
     leadership: ['platform', 'admin', 'wf006', 'wf002', 'wf003'],
     workflow_manager: ['platform', 'admin', 'wf006', 'wf002', 'wf003'],
     org_admin: ['platform', 'admin', 'wf006', 'wf002', 'wf003'],
+    center_admin: ['platform', 'admin', 'wf006', 'wf002', 'wf003'],
+    platform_admin: ['platform', 'admin', 'wf006', 'wf002', 'wf003'],
     data_custodian: ['platform', 'wf006'],
     consent_custodian: ['platform', 'wf006'],
     voice_ops: ['platform', 'wf002'],
@@ -74,9 +80,16 @@
     donor_approver: ['platform', 'wf002', 'wf003']
   };
   function canSee(item) {
-    var allowed = ROLE_WF[store.getSession().role] || ['platform'];
-    if (item.wf === 'admin') return allowed.indexOf('admin') > -1;
-    return allowed.indexOf(item.wf) > -1;
+    var sess = store.getSession();
+    var allowed = ROLE_WF[sess.role] || ['platform'];
+    if (item.wf === 'admin') { if (allowed.indexOf('admin') === -1) return false; }
+    else if (allowed.indexOf(item.wf) === -1) return false;
+    // entitlement gating (MT-09): when scoped to a single center, hide modules it isn't licensed for
+    if (sess.centerId && sess.centerId !== 'ALL' && (item.wf === 'wf006' || item.wf === 'wf002' || item.wf === 'wf003')) {
+      var ent = store.entitlementsFor(sess.centerId) || [];
+      if (ent.indexOf(item.wf) === -1) return false;
+    }
+    return true;
   }
   function screenAllowed(screenName) {
     // find nav item
@@ -92,12 +105,22 @@
 
   /* ---------- badge counts ---------- */
   function badgeCount(key) {
-    var s = store.get();
+    var s = store.get(); var sess = store.getSession();
     if (key === 'approvals') return s.approvals.filter(function (a) { return a.status === 'pending'; }).length;
     if (key === 'overdue') return s.tasks.filter(function (t) { return t.status === 'Overdue'; }).length;
     if (key === 'escalations') return s.escalations.filter(function (e) { return e.status !== 'Resolved'; }).length;
     if (key === 'merges') return s.merges.filter(function (m) { return m.status === 'pending'; }).length;
+    if (key === 'rework') return (s.reworks || []).filter(function (r) { return r.status === 'open'; }).length;
+    if (key === 'mywork') return myWorkCount();
     return 0;
+  }
+  function myWorkCount() {
+    var s = store.get(); var me = store.getSession().userId; var role = store.getSession().role;
+    var ap = s.approvals.filter(function (a) { return a.status === 'pending' && a.approverRole === role; }).length;
+    var tk = s.tasks.filter(function (t) { return t.ownerId === me && t.status !== 'Completed'; }).length;
+    var es = s.escalations.filter(function (e) { return e.assigneeId === me && e.status !== 'Resolved'; }).length;
+    var rw = (s.reworks || []).filter(function (r) { return r.ownerId === me && r.status === 'open'; }).length;
+    return ap + tk + es + rw;
   }
 
   /* ---------- Sidebar ---------- */
@@ -137,12 +160,18 @@
     var sess = store.getSession();
     var s = store.get();
     var u = store.currentUser();
-    var canSwitchCenter = ['leadership', 'workflow_manager', 'org_admin'].indexOf(sess.role) > -1;
+    var canSwitchCenter = ['leadership', 'workflow_manager', 'org_admin', 'center_admin', 'platform_admin'].indexOf(sess.role) > -1;
+    var canSwitchOrg = sess.role === 'platform_admin';
 
-    // center switcher
+    // org switcher (platform admin only)
+    var orgSel = el('select', { onchange: function (e) { store.setSession({ orgId: e.target.value, centerId: 'ALL' }); } });
+    orgSel.appendChild(el('option', { value: 'ALL', text: 'All Orgs' }));
+    (s.orgs || []).forEach(function (o) { var op = el('option', { value: o.id, text: o.short }); if (o.id === sess.orgId) op.selected = true; orgSel.appendChild(op); });
+
+    // center switcher (scoped to current org)
     var centerSel = el('select', { onchange: function (e) { store.setSession({ centerId: e.target.value }); } });
     centerSel.appendChild(el('option', { value: 'ALL', text: 'All Centers' }));
-    s.centers.forEach(function (c) { var o = el('option', { value: c.id, text: c.short }); if (c.id === sess.centerId) o.selected = true; centerSel.appendChild(o); });
+    s.centers.filter(function (c) { return sess.orgId === 'ALL' || !sess.orgId || c.orgId === sess.orgId; }).forEach(function (c) { var o = el('option', { value: c.id, text: c.short }); if (c.id === sess.centerId) o.selected = true; centerSel.appendChild(o); });
     if (sess.centerId === 'ALL') centerSel.value = 'ALL';
 
     var deptSel = el('select', { onchange: function (e) { store.setSession({ deptId: e.target.value }); } });
@@ -155,14 +184,79 @@
       el('span.ico', { text: '▾', style: { color: 'var(--text-3)', fontSize: '11px' } })
     ]);
 
+    // alerts + notifications
+    var unreadAlerts = (s.alerts || []).filter(function (a) { return !a.read && store.inScope({ centerId: a.centerId }); }).length;
+    var unreadNotifs = store.unreadNotifCount();
+    var bellAlerts = topIcon('🔔', unreadAlerts, function (e) { openAlertsPanel(e); }, 'Alerts');
+    var bellNotif = topIcon('✉️', unreadNotifs, function (e) { openNotifPanel(e); }, 'Notifications');
+    var search = topIcon('🔍', 0, function () { openPalette(); }, 'Search (Ctrl/⌘ K)');
+
     return el('header.topbar', {}, [
       el('button.menu-btn', { onclick: function () { U.$('#sidebar').classList.toggle('open'); }, 'aria-label': 'Menu' }, '☰'),
       el('div.crumbs', {}, [el('span', { text: 'AI for Seva' }), el('span', { text: '/' }), el('b', { text: crumbTitle || '' })]),
       el('div.topbar-spacer'),
+      search, bellAlerts, bellNotif,
+      canSwitchOrg ? el('div.tenant-chip', {}, [el('span.ico', { text: '🏢' }), orgSel]) : null,
       canSwitchCenter ? el('div.tenant-chip', {}, [el('span.dot'), el('span.ico', { text: '🏛️' }), centerSel]) : el('div.tenant-chip', {}, [el('span.ico', { text: '🏛️' }), el('span', { text: store.center(sess.centerId) ? store.center(sess.centerId).short : 'Center' })]),
       el('div.tenant-chip', {}, [el('span.ico', { text: '🗂️' }), deptSel]),
       roleBadge
     ]);
+  }
+
+  function topIcon(icon, count, onclick, title) {
+    return el('button.btn.btn-icon.btn-ghost', { onclick: onclick, title: title, style: { position: 'relative' } }, [
+      el('span', { text: icon }),
+      count > 0 ? el('span', { text: count > 9 ? '9+' : count, style: { position: 'absolute', top: '0', right: '0', background: 'var(--red-500)', color: '#fff', fontSize: '9px', fontWeight: '700', minWidth: '15px', height: '15px', borderRadius: '99px', display: 'grid', placeContent: 'center', padding: '0 3px' } }) : null
+    ]);
+  }
+  function openAlertsPanel(e) {
+    e.stopPropagation(); closeMenus();
+    var s = store.get(); var rect = e.currentTarget.getBoundingClientRect();
+    var alerts = (s.alerts || []).filter(function (a) { return store.inScope({ centerId: a.centerId }); });
+    var pop = el('div.menu-pop', { style: { top: (rect.bottom + 6) + 'px', right: '120px', minWidth: '340px', maxHeight: '70vh', overflowY: 'auto' } }, [
+      el('div.row-between', { style: { padding: '6px 11px' } }, [el('div.mh', { text: 'Alerts', style: { padding: 0 } }), el('a.t-xs', { onclick: function () { store.actions.ackAllAlerts(); closeMenus(); }, style: { cursor: 'pointer' } }, 'Mark all read')])
+    ].concat(alerts.length ? alerts.slice(0, 10).map(function (a) {
+      return el('div.mi', { onclick: function () { store.actions.ackAlert(a.id); closeMenus(); } }, [
+        el('span.ico', { text: a.sev === 'high' ? '🔴' : a.sev === 'med' ? '🟡' : '⚪' }),
+        el('div', {}, [el('div', { text: a.title, style: { fontWeight: a.read ? 400 : 700, fontSize: '12.5px' } }), el('div.t-xs.t-mut3', { text: U.ago(a.ts) + (a.centerId ? ' · ' + (store.center(a.centerId) || {}).short : '') })])
+      ]);
+    }) : [el('div.mi', {}, 'No alerts')]));
+    document.body.appendChild(pop); setTimeout(function () { document.addEventListener('click', closeMenus); }, 0);
+  }
+  function openNotifPanel(e) {
+    e.stopPropagation(); closeMenus();
+    var rect = e.currentTarget.getBoundingClientRect();
+    var notifs = store.notifsFor();
+    var pop = el('div.menu-pop', { style: { top: (rect.bottom + 6) + 'px', right: '70px', minWidth: '340px', maxHeight: '70vh', overflowY: 'auto' } }, [
+      el('div.row-between', { style: { padding: '6px 11px' } }, [el('div.mh', { text: 'Notifications', style: { padding: 0 } }), el('a.t-xs', { onclick: function () { store.actions.markAllNotifsRead(); closeMenus(); }, style: { cursor: 'pointer' } }, 'Mark all read')])
+    ].concat(notifs.length ? notifs.slice(0, 12).map(function (n) {
+      return el('div.mi', { onclick: function () { store.actions.markNotifRead(n.id); closeMenus(); if (n.ref && n.ref.indexOf('#') === 0) router.go(n.ref.slice(1)); } }, [
+        el('span.ico', { text: n.kind === 'approval' ? '✅' : n.kind === 'task' ? '📋' : n.kind === 'escalation' ? '🚨' : n.kind === 'mention' ? '💬' : '🔁' }),
+        el('div', {}, [el('div', { text: n.title, style: { fontWeight: n.read ? 400 : 700, fontSize: '12.5px' } }), el('div.t-xs.t-mut3', { text: U.ago(n.ts) })])
+      ]);
+    }) : [el('div.mi', {}, 'No notifications')]));
+    document.body.appendChild(pop); setTimeout(function () { document.addEventListener('click', closeMenus); }, 0);
+  }
+
+  /* ---------- Command palette (XC-01) ---------- */
+  function openPalette() {
+    var s = store.get();
+    var idx = [];
+    NAV.forEach(function (g) { g.items.filter(canSee).forEach(function (it) { idx.push({ t: it.icon + ' ' + it.label, sub: 'Screen', go: it.path }); }); });
+    s.contacts.slice(0, 60).forEach(function (c) { idx.push({ t: c.name, sub: c.id + ' · contact', go: '/wf006/contact/' + c.id }); });
+    s.campaigns.forEach(function (c) { idx.push({ t: c.name, sub: c.id + ' · campaign', go: '/wf003/campaign/' + c.id }); });
+    s.calls.slice(0, 40).forEach(function (c) { idx.push({ t: c.contactName + ' — call', sub: c.id + ' · call', go: '/wf002/call/' + c.id }); });
+    var input = el('input.input', { placeholder: 'Search screens, contacts, campaigns, IDs…', style: { fontSize: '15px', padding: '12px' } });
+    var listBox = el('div', { style: { maxHeight: '50vh', overflowY: 'auto', marginTop: '10px' } });
+    function renderList() {
+      var q = input.value.trim().toLowerCase(); U.clear(listBox);
+      var res = (q ? idx.filter(function (x) { return (x.t + ' ' + x.sub).toLowerCase().indexOf(q) > -1; }) : idx.slice(0, 8)).slice(0, 30);
+      res.forEach(function (r) { listBox.appendChild(el('div.mi', { onclick: function () { m.close(); router.go(r.go); } }, [el('div', {}, [el('div', { text: r.t, style: { fontWeight: 600, fontSize: '13px' } }), el('div.t-xs.t-mut3', { text: r.sub })])])); });
+      if (!res.length) listBox.appendChild(el('div.empty', {}, 'No matches'));
+    }
+    input.addEventListener('input', renderList);
+    var m = ui.modal({ title: 'Quick search', body: el('div', {}, [input, listBox]) });
+    setTimeout(function () { input.focus(); renderList(); }, 30);
   }
 
   function openRoleMenu(e) {
@@ -242,5 +336,11 @@
   store.load();
   store.subscribe(function () { render(); });
   router.start(function () { render(); });
+  // ⌘K / Ctrl-K command palette
+  document.addEventListener('keydown', function (e) {
+    if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); if (store.getSession().authed) openPalette(); }
+  });
+  // expose for screens that want to trigger it
+  App.openPalette = openPalette;
   // initial render handled by router.start -> resolve
 })();

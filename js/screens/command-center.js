@@ -10,12 +10,18 @@ App.screens['command-center'] = (function () {
     var sess = store.getSession();
     var scopeLabel = (sess.centerId === 'ALL' ? 'All centers' : store.center(sess.centerId).short) + (sess.deptId === 'ALL' ? '' : ' · ' + store.dept(sess.deptId).name);
 
-    /* KPI row */
+    /* target vs achieved (LD-01) */
+    var tgts = (s.targets || []).filter(function (t) { return sess.centerId === 'ALL' || t.centerId === sess.centerId; });
+    var revTarget = U.sum(tgts, function (t) { return t.revenue; });
+    var revPct = revTarget ? Math.round(m.revenue / revTarget * 100) : 0;
+
+    /* KPI row — clickable drill-through (LD-02) */
+    function link(href, node) { return el('a', { href: href, style: { textDecoration: 'none', display: 'block' } }, node); }
     var kpis = el('div.grid.cols-4', {}, [
-      ui.kpi({ icon: '💰', label: 'Attributed Revenue', value: U.inr(m.revenue, { compact: true }), accent: 'green', trend: 12.4, sub: 'this period' }),
-      ui.kpi({ icon: '📣', label: 'Ad Spend', value: U.inr(m.spend, { compact: true }), accent: 'amber', sub: 'ROAS ' + m.roas + '×' }),
-      ui.kpi({ icon: '🎯', label: 'Leads → Conversions', value: U.num(m.leads) + ' → ' + U.num(m.conversions), accent: 'indigo', sub: 'CPL ' + U.inr(m.cpl) }),
-      ui.kpi({ icon: '🧹', label: 'Data Quality', value: m.dqScore + '/100', accent: m.dqScore >= 85 ? 'green' : 'amber', sub: m.consentRate + '% consented · ' + m.sourceCoverage + '% sourced' })
+      link('#/attribution', ui.kpi({ icon: '💰', label: 'Attributed Revenue', value: U.inr(m.revenue, { compact: true }), accent: 'green', trend: 12.4, sub: revTarget ? revPct + '% of ' + U.inr(revTarget, { compact: true }) + ' target' : 'this period' })),
+      link('#/wf003/dashboard', ui.kpi({ icon: '📣', label: 'Ad Spend', value: U.inr(m.spend, { compact: true }), accent: 'amber', sub: 'ROAS ' + m.roas + '×' })),
+      link('#/attribution', ui.kpi({ icon: '🎯', label: 'Leads → Conversions', value: U.num(m.leads) + ' → ' + U.num(m.conversions), accent: 'indigo', sub: 'CPL ' + U.inr(m.cpl) })),
+      link('#/wf006/quality', ui.kpi({ icon: '🧹', label: 'Data Quality', value: m.dqScore + '/100', accent: m.dqScore >= 85 ? 'green' : 'amber', sub: m.consentRate + '% consented · ' + m.sourceCoverage + '% sourced' }))
     ]);
 
     /* Golden journey funnel */
@@ -118,7 +124,8 @@ App.screens['command-center'] = (function () {
     });
 
     return el('div', {}, [
-      ui.pageHead('Leadership Command Center', 'One view across WF-006, WF-002 and WF-003 — revenue, the conversion loop, decisions and risk. <b>' + scopeLabel + '</b>.', [
+      ui.pageHead('Leadership Command Center', 'One view across WF-006, WF-002 and WF-003 — revenue, the conversion loop, decisions and risk. <b>' + scopeLabel + '</b>. <span class="t-xs t-mut3">· as of ' + U.fmtTime(U.now()) + ' · sources live except CRM/voice on fallback</span>', [
+        el('a.btn', { href: '#/sla' }, [el('span.ico', { text: '⏱️' }), 'SLA Board']),
         el('a.btn', { href: '#/journey' }, [el('span.ico', { text: '🧭' }), 'Golden Journey']),
         el('a.btn.btn-primary', { href: '#/approvals' }, [el('span.ico', { text: '✅' }), 'Approvals (' + pending.length + ')'])
       ]),

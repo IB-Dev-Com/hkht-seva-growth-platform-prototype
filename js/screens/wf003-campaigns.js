@@ -31,8 +31,13 @@ App.screens['wf003-campaigns'] = (function () {
         { label: 'Spend / Budget', num: true, render: function (c) { return el('div', {}, [el('b', { text: U.inr(c.spend, { compact: true }) }), el('div.t-xs.t-mut', { text: '/ ' + U.inr(c.budget, { compact: true }) })]); } },
         { label: 'Leads', num: true, render: function (c) { return U.num(c.leads); } },
         { label: 'ROAS', num: true, render: function (c) { return c.roas ? el('b', { text: c.roas + '×', style: { color: c.roas >= 2 ? 'var(--green-600)' : 'var(--amber-600)' } }) : '—'; } },
-        { label: 'Status', render: function (c) { return el('div.row.gap-4', {}, [ui.statusBadge(c.status), c.approvalStatus === 'pending' ? ui.badge('approval', 'amber', true) : null].filter(Boolean)); } }
-      ], rows: shown, empty: { icon: '📣', title: 'No campaigns', sub: 'Create one to get started.' } })] })
+        { label: 'Status', render: function (c) { return el('div.row.gap-4', {}, [ui.statusBadge(c.status), c.approvalStatus === 'pending' ? ui.badge('approval', 'amber', true) : null].filter(Boolean)); } },
+        { label: '', render: function (c) { return el('div.row.gap-4', {}, [
+          c.status === 'active' ? el('button.btn.btn-sm.btn-ghost', { title: 'Pause', onclick: function (e) { e.stopPropagation(); store.actions.setCampaignStatus(c.id, 'paused'); ui.toast({ kind: 'info', msg: 'Campaign paused.' }); } }, '⏸') : null,
+          c.status === 'paused' ? el('button.btn.btn-sm.btn-ghost', { title: 'Resume', onclick: function (e) { e.stopPropagation(); store.actions.setCampaignStatus(c.id, 'active'); ui.toast({ kind: 'success', msg: 'Campaign resumed.' }); } }, '▶') : null,
+          el('button.btn.btn-sm.btn-ghost', { title: 'Clone', onclick: function (e) { e.stopPropagation(); var id = store.actions.cloneCampaign(c.id); ui.toast({ kind: 'success', msg: 'Cloned as draft.' }); router.go('/wf003/campaign/' + id); } }, '⧉')
+        ].filter(Boolean)); } }
+      ], rows: shown, sortable: true, empty: { icon: '📣', title: 'No campaigns', sub: 'Create one to get started.' } })] })
     ]);
   }
   function chip(v, label) { return el('div.fchip' + (view === v ? '.active' : ''), { onclick: function () { view = v; store.emit(); } }, label); }

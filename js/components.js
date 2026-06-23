@@ -154,24 +154,76 @@ App.ui = (function () {
     return el('div.av', { style: { background: U.colorFor(id || name), width: (size || 30) + 'px', height: (size || 30) + 'px' }, text: U.initials(name) });
   }
 
-  /* ---------- Table ---------- */
+  /* ---------- Table (optional client-side sort + pagination, XC-04) ---------- */
   function table(opts) {
     var cols = opts.columns;
-    var rows = opts.rows || [];
+    var allRows = opts.rows || [];
+    var pageSize = opts.pageSize || 0; // 0 = no pagination
+    var sortState = { key: null, dir: 1 };
+    var page = 0;
+
+    function rowCell(c, r, i) {
+      var content = c.render ? c.render(r, i) : (c.key ? r[c.key] : '');
+      var td = el('td', { class: c.num ? 'col-num' : '' });
+      if (content == null) content = '—';
+      if (typeof content === 'string' || typeof content === 'number') td.textContent = content;
+      else td.appendChild(content);
+      return td;
+    }
+    var tbody = el('tbody');
+    function sortedRows() {
+      var rows = allRows.slice();
+      if (sortState.key) {
+        var col = cols.find(function (c) { return (c.label) === sortState.key; });
+        rows.sort(function (a, b) {
+          var x = col.sortVal ? col.sortVal(a) : (col.key ? a[col.key] : ''), y = col.sortVal ? col.sortVal(b) : (col.key ? b[col.key] : '');
+          if (typeof x === 'string') { x = x.toLowerCase(); y = (y || '').toLowerCase(); }
+          return (x < y ? -1 : x > y ? 1 : 0) * sortState.dir;
+        });
+      }
+      return rows;
+    }
+    function renderBody() {
+      U.clear(tbody);
+      var rows = sortedRows();
+      var slice = pageSize ? rows.slice(page * pageSize, page * pageSize + pageSize) : rows;
+      if (!slice.length) { tbody.appendChild(el('tr', {}, el('td', { colspan: cols.length }, emptyState(opts.empty || { title: 'No records', sub: 'Nothing to show yet.' })))); return; }
+      slice.forEach(function (r, i) {
+        tbody.appendChild(el('tr' + (opts.onRow ? '.clickable' : ''), { onclick: opts.onRow ? function () { opts.onRow(r, i); } : null }, cols.map(function (c) { return rowCell(c, r, i); })));
+      });
+      if (footEl) renderFoot();
+    }
     var thead = el('thead', {}, el('tr', {}, cols.map(function (c) {
-      return el('th', { class: c.num ? 'col-num' : '', style: c.width ? { width: c.width } : null, text: c.label });
+      var sortable = opts.sortable && (c.key || c.sortVal);
+      var th = el('th', { class: (c.num ? 'col-num ' : '') + (sortable ? 'sortable' : ''), style: (c.width ? { width: c.width } : {}), 'aria-sort': 'none' });
+      th.appendChild(document.createTextNode(c.label || ''));
+      if (sortable) {
+        th.style.cursor = 'pointer';
+        var caret = el('span', { text: ' ↕', style: { opacity: .4, fontSize: '10px' } }); th.appendChild(caret);
+        th.addEventListener('click', function () {
+          if (sortState.key === c.label) sortState.dir *= -1; else { sortState.key = c.label; sortState.dir = 1; }
+          U.$$('th', thead).forEach(function (h) { h.setAttribute('aria-sort', 'none'); var cc = h.querySelector('span'); if (cc) cc.textContent = ' ↕'; });
+          th.setAttribute('aria-sort', sortState.dir === 1 ? 'ascending' : 'descending'); caret.textContent = sortState.dir === 1 ? ' ↑' : ' ↓'; caret.style.opacity = 1;
+          page = 0; renderBody();
+        });
+      }
+      return th;
     })));
-    var tbody = el('tbody', {}, rows.length ? rows.map(function (r, i) {
-      return el('tr' + (opts.onRow ? '.clickable' : ''), { onclick: opts.onRow ? function () { opts.onRow(r, i); } : null }, cols.map(function (c) {
-        var content = c.render ? c.render(r, i) : (c.key ? r[c.key] : '');
-        var td = el('td', { class: c.num ? 'col-num' : '' });
-        if (content == null) content = '—';
-        if (typeof content === 'string' || typeof content === 'number') td.textContent = content;
-        else td.appendChild(content);
-        return td;
-      }));
-    }) : [el('tr', {}, el('td', { colspan: cols.length }, emptyState(opts.empty || { title: 'No records', sub: 'Nothing to show yet.' })))]);
-    return el('div.tbl-wrap', {}, el('table.tbl' + (opts.compact ? '.tbl-compact' : ''), {}, [thead, tbody]));
+    var footEl = pageSize ? el('div.row-between', { style: { padding: '8px 14px', borderTop: '1px solid var(--border)', fontSize: '12px', color: 'var(--text-2)' } }) : null;
+    function renderFoot() {
+      if (!footEl) return; U.clear(footEl);
+      var total = allRows.length, pages = Math.ceil(total / pageSize) || 1;
+      footEl.appendChild(el('span', { text: 'Showing ' + (page * pageSize + 1) + '–' + Math.min(total, (page + 1) * pageSize) + ' of ' + total }));
+      footEl.appendChild(el('div.row.gap-6', {}, [
+        el('button.btn.btn-sm', { disabled: page === 0 ? true : null, onclick: function () { if (page > 0) { page--; renderBody(); } } }, '‹ Prev'),
+        el('span', { text: (page + 1) + ' / ' + pages, style: { padding: '0 6px' } }),
+        el('button.btn.btn-sm', { disabled: page >= pages - 1 ? true : null, onclick: function () { if (page < pages - 1) { page++; renderBody(); } } }, 'Next ›')
+      ]));
+    }
+    renderBody();
+    var wrap = el('div', {}, [el('div.tbl-wrap', {}, el('table.tbl' + (opts.compact ? '.tbl-compact' : ''), {}, [thead, tbody]))]);
+    if (footEl) { renderFoot(); wrap.appendChild(footEl); }
+    return wrap;
   }
 
   function emptyState(o) {
@@ -256,6 +308,36 @@ App.ui = (function () {
     }));
   }
 
+  // SLA badge with live state (MI-05)
+  function slaBadge(kind, item) {
+    var st = App.store.slaState(kind, item);
+    if (st.state === 'none') return null;
+    var v = st.state === 'breached' ? 'red' : st.state === 'at_risk' ? 'amber' : 'green';
+    return badge(st.label, v, true);
+  }
+
+  // comment thread (MI-07)
+  function commentThread(entityType, id) {
+    var e = App.store.findEntity(entityType, id);
+    var comments = (e && e.comments) || [];
+    var wrap = el('div', {});
+    var list = el('div.col.gap-8', {}, comments.length ? comments.map(function (c) {
+      return el('div.row.gap-8', { style: { alignItems: 'flex-start' } }, [
+        avatar((App.store.user(c.by) || {}).name || c.by, c.by, 26),
+        el('div', { style: { flex: 1 } }, [
+          el('div.row.gap-6', {}, [el('b.t-sm', { text: (App.store.user(c.by) || {}).name || c.by }), el('span.t-xs.t-mut3', { text: U.ago(c.ts) })]),
+          el('div.t-sm', { html: U.escapeHtml(c.text).replace(/@(\w+)/g, '<b style="color:var(--accent)">@$1</b>') })
+        ])
+      ]);
+    }) : [el('div.t-xs.t-mut3', { text: 'No comments yet. @mention a teammate to notify them.' })]);
+    var inp = el('input.input', { placeholder: 'Add a comment… use @Name to mention', style: { flex: 1 } });
+    function send() { var t = inp.value.trim(); if (!t) return; App.store.actions.addComment(entityType, id, t); inp.value = ''; }
+    inp.addEventListener('keydown', function (ev) { if (ev.key === 'Enter') send(); });
+    wrap.appendChild(list);
+    wrap.appendChild(el('div.row.gap-8.mt-12', {}, [inp, el('button.btn.btn-sm.btn-primary', { onclick: send }, 'Post')]));
+    return wrap;
+  }
+
   // funnel
   function funnel(steps) {
     var max = Math.max.apply(null, steps.map(function (s) { return s.v; }).concat([1]));
@@ -273,6 +355,6 @@ App.ui = (function () {
     idChip: idChip, personCell: personCell, avatar: avatar, table: table, emptyState: emptyState,
     tabs: tabs, card: card, bar: bar, note: note, aiBlock: aiBlock, statline: statline,
     switchToggle: switchToggle, checkbox: checkbox, consentBadges: consentBadges,
-    barChart: barChart, funnel: funnel
+    barChart: barChart, funnel: funnel, slaBadge: slaBadge, commentThread: commentThread
   };
 })();

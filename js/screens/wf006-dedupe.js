@@ -38,7 +38,7 @@ App.screens['wf006-dedupe'] = (function () {
       m.note ? ui.note('amber', m.note, '🛡️') : null,
       el('div.grid.cols-2.mt-12', { style: { gap: '12px' } }, [recordBox(a, 'Record A — keep'), recordBox(b, 'Record B — merge in')]),
       m.status === 'pending' ? el('div.row.gap-8.mt-16', {}, [
-        el('button.btn.btn-success', { onclick: function () { decide(m, 'merged'); } }, [el('span.ico', { text: '🔗' }), 'Approve merge']),
+        el('button.btn.btn-success', { onclick: function () { resolver(m); } }, [el('span.ico', { text: '🔗' }), 'Review & merge fields…']),
         el('button.btn', { onclick: function () { decide(m, 'no-merge'); } }, [el('span.ico', { text: '⛔' }), 'Mark no-merge (keep separate)']),
         el('div.grow'),
         el('span.t-xs.t-mut3', { text: 'Reviewer: ' + (store.user(m.reviewerId) || {}).name })
@@ -57,6 +57,34 @@ App.screens['wf006-dedupe'] = (function () {
         ui.statline('DQ score', r.dq + '/100')
       ])
     ]);
+  }
+
+  /* ST-02: field-level merge resolver with preview */
+  function resolver(m) {
+    var a = m.records[0], b = m.records[1];
+    var fields = [['name', 'Name'], ['mobile', 'Mobile'], ['source', 'Source'], ['created', 'Created'], ['dq', 'DQ score']];
+    var pick = {}; fields.forEach(function (f) { pick[f[0]] = String(a[f[0]]).length >= String(b[f[0]]).length ? 'A' : 'B'; });
+    function preview() { var o = {}; fields.forEach(function (f) { o[f[0]] = pick[f[0]] === 'A' ? a[f[0]] : b[f[0]]; }); return o; }
+    var previewBox = el('div');
+    function renderPreview() { U.clear(previewBox); var p = preview(); previewBox.appendChild(el('div', { style: { background: 'var(--green-50)', border: '1px solid var(--green-100)', borderRadius: '9px', padding: '12px' } }, [el('div.t-up.mb-4', { text: '✓ Surviving record (preview)' })].concat(fields.map(function (f) { return ui.statline(f[1], String(p[f[0]])); })))); }
+    var rows = fields.map(function (f) {
+      function opt(side, val) {
+        return el('label.row.gap-6', { style: { padding: '6px 8px', border: '1px solid var(--border)', borderRadius: '7px', cursor: 'pointer', flex: 1, background: pick[f[0]] === side ? 'var(--accent-soft)' : '' } }, [
+          el('input', { type: 'radio', name: 'mf-' + f[0], checked: pick[f[0]] === side ? true : null, onchange: function () { pick[f[0]] = side; renderPreview(); renderRows(); } }),
+          el('div', {}, [el('div.t-xs.t-mut', { text: 'Record ' + side }), el('b.t-sm', { text: String(val == null || val === '' ? '∅' : (f[0] === 'created' ? U.fmtDate(val) : f[0] === 'source' ? store.source(val).label : val)) })])
+        ]);
+      }
+      return el('div', { style: { marginBottom: '8px' } }, [el('div.t-up.mb-4', { text: f[1] }), el('div.row.gap-8', {}, [opt('A', a[f[0]]), opt('B', b[f[0]])])]);
+    });
+    var rowsWrap = el('div'); function renderRows() {} // radios update via name grouping
+    ui.modal({ title: 'Resolve merge — pick the surviving value per field', subtitle: m.confidence + '% match' + (m.highValue ? ' · HIGH-VALUE DONOR' : ''), size: 'lg',
+      body: el('div', {}, [
+        m.highValue ? ui.note('red', '<b>High-value donor.</b> Conflicting donation history — confirm each field. Loser is archived with a pointer; full history preserved.', '🛡️') : ui.note('info', 'Choose which value survives per field. The loser record is archived (not deleted) with a pointer to the survivor.', '🔗'),
+        el('div.grid.cols-2.mt-12', { style: { gap: '16px', alignItems: 'start' } }, [el('div', {}, rows), previewBox])
+      ]),
+      actions: [{ label: 'Cancel' }, { label: 'Confirm merge', variant: 'success', onClick: function () { store.actions.mergeResolve(m.id, { pick: pick, survivor: preview() }); ui.toast({ kind: 'success', title: 'Merged', msg: 'Field-level resolution saved; history + audit note recorded.' }); } }]
+    });
+    renderPreview();
   }
 
   function decide(m, decision) {

@@ -47,11 +47,25 @@ App.screens['usage-cost'] = (function () {
               { label: 'Share', render: function (r) { return el('div.row.gap-8', {}, [ui.bar(r.cost / totalCost * 100, 'indigo'), el('span.t-xs.t-mut', { text: Math.round(r.cost / totalCost * 100) + '%' })]); } }
             ], rows: groupRows })
           ] }),
+          ui.card({ title: 'Budgets & caps', icon: '🎚️', right: [el('a.btn.btn-sm', { href: '#/billing' }, 'Manage →')], body: [
+            (function () {
+              var buds = store.scoped(s.budgets || []);
+              var nearCap = buds.filter(function (b) { return b.spent / b.cap >= 0.8; });
+              return el('div', {}, [
+                ui.statline('Active caps', buds.length),
+                ui.statline('Near / over cap', ui.badge(nearCap.length, nearCap.length ? 'amber' : 'green')),
+                el('div.mt-8', {}, U.sortBy(buds, function (b) { return b.spent / b.cap; }, 'desc').slice(0, 4).map(function (b) {
+                  var p = Math.round(b.spent / b.cap * 100);
+                  return el('div', { style: { marginBottom: '8px' } }, [el('div.row-between.t-xs.mb-2', {}, [el('span', { text: (store.center(b.centerId) || {}).short + ' · ' + b.service }), el('b', { text: p + '%' })]), ui.bar(p, p >= 100 ? 'red' : p >= 80 ? 'amber' : 'green')]);
+                }))
+              ]);
+            })()
+          ] }),
           ui.card({ title: 'Governance', icon: '🛡️', body: [
-            ui.note('info', 'Central billing means generation/voice/WhatsApp/ad APIs run on shared platform credentials — each center & department gets transparent chargeback, not separate vendor accounts.', '💳'),
+            ui.note('info', 'Central billing means generation/voice/WhatsApp/ad APIs run on shared platform credentials — each center & department gets transparent chargeback. Full statements, ledger and rate card in <a href="#/billing">Billing</a>.', '💳'),
             el('div.mt-8', {}, [
-              ui.statline('Budget alerts', ui.badge('At 85% & 100%', 'amber')),
-              ui.statline('Per-department caps', ui.badge('Configurable', 'neutral')),
+              ui.statline('Budget alerts', ui.badge('At 80% & 100%', 'amber')),
+              ui.statline('Per-department caps', ui.badge('Enforced', 'green')),
               ui.statline('Approval for overspend', ui.badge('Leadership', 'indigo'))
             ])
           ] })
