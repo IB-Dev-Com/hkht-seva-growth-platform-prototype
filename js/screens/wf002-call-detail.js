@@ -23,7 +23,16 @@ App.screens['wf002-call-detail'] = (function () {
             ui.avatar(call.contactName, call.contactId, 48),
             el('div', {}, [
               el('div.row.gap-8', {}, [el('h2', { text: call.contactName }), ui.statusBadge(call.outcome)]),
-              el('div.row.gap-6.mt-4', {}, [ui.idChip(call.id), contact ? ui.idChip(contact.id, function () { router.go('/wf006/contact/' + contact.id); }) : null, call.campaignId ? ui.idChip(call.campaignId) : null].filter(Boolean))
+              el('div.row.gap-6.mt-4', { style: { flexWrap: 'wrap' } }, [ui.idChip(call.id), contact ? ui.idChip(contact.id, function () { router.go('/wf006/contact/' + contact.id); }) : null, call.campaignId ? ui.idChip(call.campaignId, function () { router.go('/wf003/campaign/' + call.campaignId); }) : null].filter(Boolean)),
+              (function () {
+                var task = s.tasks.find(function (t) { return t.callId === call.id; });
+                var wa = s.whatsapp.find(function (m) { return m.contactId === call.contactId; });
+                var links = [];
+                if (task) links.push(el('a.t-xs', { href: '#/wf002/tasks', style: { cursor: 'pointer' } }, '📋 Callback task →'));
+                if (wa) links.push(el('a.t-xs', { href: '#/wf002/whatsapp', style: { cursor: 'pointer' } }, '💬 WhatsApp follow-up →'));
+                links.push(el('a.t-xs', { href: '#/journey?contact=' + call.contactId }, '🧭 Full journey →'));
+                return el('div.row.gap-10.mt-6', { style: { flexWrap: 'wrap' } }, links);
+              })()
             ])
           ]),
           el('div.row.gap-8', {}, [call.escalated ? ui.badge('Escalated', 'red', true) : null, call.lowConfidence ? ui.badge('Needs review', 'amber', true) : call.reviewed ? ui.badge('Reviewed', 'green', true) : null].filter(Boolean))

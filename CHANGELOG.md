@@ -4,6 +4,24 @@ All notable changes to this prototype are recorded here. This is a **demonstrati
 for developer handoff: all AI / voice / WhatsApp / ad / CRM / payment calls are **mocked** with
 realistic data and simulated latency. No live backend.
 
+## [0.4.1] — 2026-06-23 — Cross-screen wiring (one continuous loop)
+
+Closed every cross-screen dead-end so the three workflows behave as ONE clickable loop and the Phase-1 golden
+journey is fully traversable by clicking shared IDs. Added cache-busting `?v=` to all script tags.
+
+- **Golden-journey hops now clickable both ways:** Call detail → Campaign_ID, its callback Task, WhatsApp
+  follow-up and full Journey; Tasks → originating Call; Call Console queue name → Contact 360.
+- **WF-003 ↔ WF-002 loop closed:** Campaign detail now shows a **Voice activity** card linking to the
+  campaign-filtered Voice Dashboard (`?campaign=`) and Calling Readiness; Voice Dashboard honours the filter.
+- **WF-006 spine links:** Dedupe record Contact_IDs, Consent/suppression rows, and attribution per-source rows
+  all navigate to Contact 360 / filtered Master Contacts (`?source=`, `?campaign=`, `?f=`).
+- **ID chips made clickable** across Scripts, Content, Creative, KCKE media → Campaign detail; Billing ledger
+  `refId` → its Call/Campaign.
+- **Approvals drawer** gained an "Open in its screen →" deep-link per artifact type; Intake pending imports link
+  into the Approvals queue and imported batches link to contacts.
+- Added `source` filter param to Master Contacts; verified the chain campaign → contacts → 360 → call → detail →
+  campaign and the universal-ID Golden-Journey search resolve end to end.
+
 ## [0.4.0] — 2026-06-23 — Gap-analysis remediation (all 75 gaps implemented)
 
 Implemented every gap from `gap-analysis.html` across the five personas, multi-tenant central billing, and

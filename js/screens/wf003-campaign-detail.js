@@ -87,7 +87,18 @@ App.screens['wf003-campaign-detail'] = (function () {
         ui.statline('Source-tagged', ui.badge('Every lead', 'green')),
         ui.statline('First-follow-up SLA', ui.badge('2.1h avg', 'green')),
         el('a.btn.btn-block.mt-8', { href: '#/wf006/contacts?campaign=' + c.id }, 'View ' + leadsFromCamp.length + ' contacts →')
-      ] })
+      ] }),
+      (function () {
+        var calls = store.get().calls.filter(function (x) { return x.campaignId === c.id; });
+        var donated = calls.filter(function (x) { return x.outcome === 'Donated'; }).length;
+        return ui.card({ title: 'Voice activity (WF-002)', icon: '📞', body: [
+          ui.statline('Calls made', calls.length),
+          ui.statline('Connected', calls.filter(function (x) { return x.status === 'Connected'; }).length),
+          ui.statline('Converted on call', ui.badge(donated, donated ? 'green' : 'neutral')),
+          ui.statline('Script', (store.get().scripts.find(function (sc) { return sc.campaignId === c.id; }) || {}).name || 'none'),
+          el('div.row.gap-6.mt-8', {}, [el('a.btn.btn-sm.grow', { href: '#/wf002/dashboard?campaign=' + c.id }, 'Voice dashboard →'), el('a.btn.btn-sm.grow', { href: '#/wf002/readiness' }, 'Calling readiness →')])
+        ] });
+      })()
     ]);
 
     return el('div', {}, [

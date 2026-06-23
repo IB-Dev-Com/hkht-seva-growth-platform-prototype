@@ -23,7 +23,7 @@ App.screens['wf003-content'] = (function () {
     var camp = store.campaign(ct.campaignId);
     return ui.card({ body: [
       el('div.row-between.mb-12', { style: { flexWrap: 'wrap', gap: '8px' } }, [
-        el('div', {}, [el('div.row.gap-8', {}, [el('b', { text: (camp ? camp.name : ct.campaignId) }), ui.badge(ct.channel, 'indigo')]), el('div.t-xs.t-mut.mt-2', { text: ct.id + ' · reviewer ' + (store.user(ct.reviewerId) || {}).name })]),
+        el('div', {}, [el('div.row.gap-8', {}, [camp ? el('a', { href: '#/wf003/campaign/' + camp.id, style: { textDecoration: 'none' } }, el('b', { text: camp.name })) : el('b', { text: ct.campaignId }), ui.badge(ct.channel, 'indigo')]), el('div.t-xs.t-mut.mt-2', { text: ct.id + ' · reviewer ' + (store.user(ct.reviewerId) || {}).name })]),
         ui.statusBadge(ct.status)
       ]),
       el('div.grid', { style: { gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: '10px' } }, ct.variants.map(function (v, i) {

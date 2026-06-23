@@ -3,17 +3,19 @@
    ============================================================ */
 App.screens['wf006-contacts'] = (function () {
   var U = App.util, el = U.el, ui = App.ui, store = App.store, router = App.router;
-  var f = { q: '', segment: 'all', consent: 'all', campaign: null };
+  var f = { q: '', segment: 'all', consent: 'all', campaign: null, source: null };
   var sel = {};
 
   function render(params, query) {
     var s = store.get();
     if (query && query.f) f.consent = query.f;            // ST-04 drill-through
     if (query && query.campaign) f.campaign = query.campaign;
+    if (query && query.source) f.source = query.source;   // attribution drill
     var all = store.scoped(s.contacts);
 
     var rows = all.filter(function (c) {
       if (f.campaign && c.campaignId !== f.campaign) return false;
+      if (f.source && c.source !== f.source) return false;
       if (f.q) { var q = f.q.toLowerCase(); if (!((c.name + c.mobile + c.id + (c.email || '') + c.city).toLowerCase().indexOf(q) > -1)) return false; }
       if (f.segment !== 'all' && c.segment !== f.segment) return false;
       if (f.consent === 'consented' && (c.consent.dnd || c.consent.optOut)) return false;
@@ -32,6 +34,7 @@ App.screens['wf006-contacts'] = (function () {
       el('select.select', { style: { maxWidth: '180px' }, onchange: function (e) { f.segment = e.target.value; rerender(); } }, segments.map(function (sg) { var o = el('option', { value: sg, text: sg === 'all' ? 'All segments' : sg }); if (sg === f.segment) o.selected = true; return o; })),
       el('div.chips', {}, [chip('all', 'All'), chip('consented', 'Consented'), chip('suppressed', 'Suppressed'), chip('nosource', 'Missing source'), chip('stale', 'Stale'), chip('dup', 'Dup-risk')]),
       f.campaign ? el('div.fchip.active', { onclick: function () { f.campaign = null; router.go('/wf006/contacts'); } }, 'Campaign: ' + f.campaign + ' ✕') : null,
+      f.source ? el('div.fchip.active', { onclick: function () { f.source = null; router.go('/wf006/contacts'); } }, 'Source: ' + store.source(f.source).label + ' ✕') : null,
       el('div.grow'),
       el('button.btn', { onclick: function () { exportContacts(rows); } }, [el('span.ico', { text: '⬇' }), 'Export CSV']),
       el('a.btn.btn-primary', { href: '#/wf006/intake' }, [el('span.ico', { text: '📥' }), 'Import'])

@@ -5,10 +5,11 @@ App.screens['wf002-dashboard'] = (function () {
   var U = App.util, el = U.el, ui = App.ui, store = App.store;
   var range = 30;
 
-  function render() {
+  function render(params, query) {
     var s = store.get();
+    var campFilter = query && query.campaign;
     var cutoff = U.daysAgo(range);
-    var calls = store.scoped(s.calls).filter(function (c) { return new Date(c.createdAt) >= cutoff; });
+    var calls = store.scoped(s.calls).filter(function (c) { return new Date(c.createdAt) >= cutoff && (!campFilter || c.campaignId === campFilter); });
     var connected = calls.filter(function (c) { return c.status === 'Connected'; });
     var byOutcome = U.group(connected, 'outcome');
     var donated = (byOutcome['Donated'] || []).length;
@@ -26,6 +27,7 @@ App.screens['wf002-dashboard'] = (function () {
 
     return el('div', {}, [
       ui.pageHead('Voice Dashboard', 'Calls into management control: funnel, quality, and the <b>Voice of the Devotee</b> — aggregated objections & FAQs that drive script improvement.', [
+        campFilter ? el('a.fchip.active', { href: '#/wf002/dashboard' }, 'Campaign: ' + campFilter + ' ✕') : null,
         el('div.seg', {}, [rangeBtn(7, '7d'), rangeBtn(30, '30d'), rangeBtn(90, '90d'), rangeBtn(3650, 'All')]),
         el('a.btn.btn-sm', { href: '#/wf002/console' }, 'Open calls →')
       ]),

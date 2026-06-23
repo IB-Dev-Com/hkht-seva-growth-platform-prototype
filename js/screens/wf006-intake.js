@@ -43,9 +43,10 @@ App.screens['wf006-intake'] = (function () {
       pendingAppr ? el('div.row.gap-8.mt-16', {}, [
         el('button.btn.btn-success', { onclick: function () { approve(im, 'imported'); } }, [el('span.ico', { text: '✓' }), 'Approve import (' + im.valid + ' records)']),
         el('button.btn', { onclick: function () { approve(im, 'rejected'); } }, [el('span.ico', { text: '✕' }), 'Reject']),
+        el('a.btn.btn-ghost.btn-sm', { href: '#/approvals' }, 'In approvals queue →'),
         el('div.grow'),
         im.errors.length ? el('span.t-xs.t-mut3', { text: '⚠ ' + im.errors.length + ' rows need fixing before approval' }) : null
-      ]) : el('div.t-xs.t-mut3.mt-12', { text: im.status === 'imported' ? '✓ Imported & reconciled into CRM' : 'Rejected' })
+      ]) : el('div.row.gap-8.mt-12', {}, [el('span.t-xs.t-mut3', { text: im.status === 'imported' ? '✓ Imported & reconciled into CRM' : 'Rejected' }), im.status === 'imported' ? el('a.t-xs', { href: '#/wf006/contacts' }, '· View contacts →') : null])
     ] });
   }
   function miniStat(label, val, color) {

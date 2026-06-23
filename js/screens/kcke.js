@@ -41,7 +41,7 @@ App.screens['kcke'] = (function () {
       el('div.mt-12', {}, ui.card({ pad: false, body: [ui.table({ columns: [
         { label: 'Asset', render: function (m) { return el('b.t-sm', { text: m.title }); } },
         { label: 'Type', render: function (m) { return ui.badge(m.type, 'indigo'); } },
-        { label: 'Campaign', render: function (m) { return ui.idChip(m.campaignId); } },
+        { label: 'Campaign', render: function (m) { return store.campaign(m.campaignId) ? ui.idChip(m.campaignId, function () { App.router.go('/wf003/campaign/' + m.campaignId); }) : ui.idChip(m.campaignId); } },
         { label: 'Note', render: function (m) { return el('span.t-xs.t-mut', { text: m.note }); } },
         { label: 'Status', render: function (m) { return ui.statusBadge(m.status); } },
         { label: '', render: function (m) { return m.status === 'needs_approval' || m.status === 'draft' ? el('button.btn.btn-sm.btn-success', { onclick: function () { store.actions.decideMedia(m.id, 'approved'); ui.toast({ kind: 'success', msg: 'Asset approved.' }); } }, '✓ Approve') : el('span.t-xs.t-mut', { text: 'approved' }); } }

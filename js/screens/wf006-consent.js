@@ -29,7 +29,7 @@ App.screens['wf006-consent'] = (function () {
             { label: 'Channel', key: 'channel' },
             { label: 'Reason', render: function (r) { return el('span.t-sm.t-mut', { text: r.reason }); } },
             { label: 'Added', render: function (r) { return U.ago(r.date); } }
-          ], rows: U.sortBy(sup, function (r) { return r.date; }, 'desc'), empty: { icon: '🛡️', title: 'No suppressions' } })
+          ], rows: U.sortBy(sup, function (r) { return r.date; }, 'desc'), onRow: function (r) { if (store.contact(r.contactId)) App.router.go('/wf006/contact/' + r.contactId); }, empty: { icon: '🛡️', title: 'No suppressions' } })
         ] }),
         el('div.col.gap-16', {}, [
           ui.card({ title: 'Pre-send eligibility gate', icon: '🚦', body: [

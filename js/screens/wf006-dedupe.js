@@ -51,7 +51,7 @@ App.screens['wf006-dedupe'] = (function () {
       el('div.t-up.mb-8', { text: label }),
       el('div.row.gap-8', {}, [ui.avatar(r.name, r.contactId, 32), el('div', {}, [el('b.t-sm', { text: r.name }), el('div.t-xs.t-mut.t-mono', { text: r.mobile })])]),
       el('div.mt-8', {}, [
-        ui.statline('Contact_ID', ui.idChip(r.contactId)),
+        ui.statline('Contact_ID', store.contact(r.contactId) ? ui.idChip(r.contactId, function () { App.router.go('/wf006/contact/' + r.contactId); }) : ui.idChip(r.contactId)),
         ui.statline('Source', store.source(r.source).label),
         ui.statline('Created', U.fmtDate(r.created)),
         ui.statline('DQ score', r.dq + '/100')

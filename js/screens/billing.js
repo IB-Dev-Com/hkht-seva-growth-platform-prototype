@@ -93,7 +93,7 @@ App.screens['billing'] = (function () {
         { label: 'Qty', num: true, key: 'qty' },
         { label: 'Cost', num: true, key: 'cost', render: function (l) { return U.inr(l.cost); } },
         { label: 'By', render: function (l) { return (store.user(l.userId) || { name: l.userId }).name; } },
-        { label: 'Ref', render: function (l) { return l.refId ? ui.idChip(l.refId) : '—'; } }
+        { label: 'Ref', render: function (l) { if (!l.refId) return '—'; var go = l.refType === 'Call' ? '/wf002/call/' + l.refId : l.refType === 'Campaign' ? '/wf003/campaign/' + l.refId : null; return go ? ui.idChip(l.refId, function () { App.router.go(go); }) : ui.idChip(l.refId); } }
       ], rows: rows })] }),
       ui.note('info', 'Each metered event ties cost to who consumed it and the triggering Call / Campaign / Message ID — the audit basis for any chargeback dispute.', '📜')
     ]);

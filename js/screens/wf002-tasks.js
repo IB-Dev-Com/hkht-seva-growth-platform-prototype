@@ -33,7 +33,7 @@ App.screens['wf002-tasks'] = (function () {
       ui.card({ pad: false, body: [
         ui.table({ columns: [
           { label: 'Contact', render: function (t) { return ui.personCell(t.contactName, t.contactId, t.contactId); } },
-          { label: 'Type', render: function (t) { return ui.badge(t.kind, t.kind === 'Callback' ? 'amber' : 'blue'); } },
+          { label: 'Type', render: function (t) { return el('div.row.gap-6', {}, [ui.badge(t.kind, t.kind === 'Callback' ? 'amber' : 'blue'), t.callId ? el('a.t-xs', { href: '#/wf002/call/' + t.callId, onclick: function (e) { e.stopPropagation(); } }, 'from call →') : null].filter(Boolean)); } },
           { label: 'Priority', render: function (t) { return ui.badge(t.priority, t.priority === 'High' ? 'red' : t.priority === 'Medium' ? 'amber' : 'neutral'); } },
           { label: 'Owner', render: function (t) { return (store.user(t.ownerId) || {}).name; } },
           { label: 'SLA / due', render: function (t) { return t.status === 'Completed' ? el('span.t-xs.t-mut', { text: 'done ' + U.ago(t.completedAt) }) : ui.slaBadge('task', t); } },

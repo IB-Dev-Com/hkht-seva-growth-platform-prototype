@@ -25,7 +25,7 @@ App.screens['wf003-creative'] = (function () {
   function mediaCard(m) {
     var camp = store.campaign(m.campaignId);
     return ui.card({ body: [
-      el('div.row-between.mb-8', {}, [el('div.row.gap-8', {}, [el('span', { text: typeIcon(m.type), style: { fontSize: '20px' } }), el('div', {}, [el('b', { text: m.title }), el('div.t-xs.t-mut', { text: m.type + ' · ' + (camp ? camp.name : m.campaignId) })])]), ui.statusBadge(m.status)]),
+      el('div.row-between.mb-8', {}, [el('div.row.gap-8', {}, [el('span', { text: typeIcon(m.type), style: { fontSize: '20px' } }), el('div', {}, [el('b', { text: m.title }), el('div.t-xs.t-mut', {}, [el('span', { text: m.type + ' · ' }), camp ? el('a', { href: '#/wf003/campaign/' + camp.id }, camp.name) : el('span', { text: m.campaignId })])])]), ui.statusBadge(m.status)]),
       // mock storyboard frames
       el('div.row.gap-6', {}, [1, 2, 3].map(function (i) { return el('div', { style: { flex: 1, height: '54px', borderRadius: '8px', background: 'linear-gradient(135deg,var(--indigo-100),var(--saffron-100))', display: 'grid', placeContent: 'center', fontSize: '11px', color: 'var(--text-3)' } }, 'Frame ' + i); })),
       el('div.note.note-violet.mt-8', {}, [el('span.ni', { text: '🛡️' }), el('div.t-xs', { text: m.note })]),

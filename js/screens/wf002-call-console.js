@@ -42,7 +42,7 @@ App.screens['wf002-call-console'] = (function () {
               return el('div.row.gap-8', { style: { padding: '8px', borderRadius: '8px', background: i === 0 ? 'var(--accent-soft)' : 'transparent' } }, [
                 el('span.t-xs.t-mut3', { text: '#' + (i + 1) }),
                 ui.avatar(c.name, c.id, 28),
-                el('div', { style: { flex: 1, minWidth: 0 } }, [el('b.t-sm.truncate', { text: c.name }), el('div.t-xs.t-mut', { text: (store.campaign(c.campaignId) || {}).type + ' · ' + c.language })]),
+                el('a', { href: '#/wf006/contact/' + c.id, style: { flex: 1, minWidth: 0, textDecoration: 'none', color: 'inherit' } }, [el('b.t-sm.truncate', { text: c.name }), el('div.t-xs.t-mut', { text: (store.campaign(c.campaignId) || {}).type + ' · ' + c.language })]),
                 d ? ui.badge(d.tier, 'saffron') : ui.badge('Lead', 'blue'),
                 el('button.btn.btn-sm.btn-icon', { title: 'Call', onclick: function () { if (!paused) runCall(c); } }, '📞'),
                 el('button.btn.btn-sm.btn-icon.btn-ghost', { title: 'Bump to top', onclick: function () { bumped[c.id] = true; store.emit(); } }, '⬆'),

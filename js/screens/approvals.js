@@ -111,7 +111,7 @@ App.screens['approvals'] = (function () {
       title: a.title, subtitle: a.type + ' · needs ' + store.roleLabel(a.approverRole), wide: true,
       body: [
         el('div.row.gap-6.mb-12', {}, [ui.badge(a.priority, a.priority === 'High' ? 'red' : 'amber'), ui.idChip(a.entityId), ui.slaBadge('approval', a)]),
-        el('div.card.card-pad.mb-12', { style: { background: 'var(--surface-2)' } }, [el('div.t-up.mb-8', { text: '🔎 Artifact under review' }), artifact(a)]),
+        el('div.card.card-pad.mb-12', { style: { background: 'var(--surface-2)' } }, [el('div.row-between.mb-8', {}, [el('div.t-up', { text: '🔎 Artifact under review' }), (function () { var r = openRoute(a); return r ? el('a.t-xs', { href: r, onclick: function () { closeDrawer(); } }, 'Open in its screen →') : null; })()]), artifact(a)]),
         ui.note('info', '<b>Context (AI-prepared):</b> ' + a.context, '📄'),
         el('div.mt-12', {}, [ui.statline('Requested by', (store.user(a.requestedBy) || {}).name), ui.statline('Created', U.fmtDateTime(a.createdAt)), ui.statline('SLA due', U.fmtDateTime(a.slaDue))]),
         el('div.field.mt-12', {}, [el('label', { text: 'Decision / change note' }), (function () { var t = el('textarea.textarea', { placeholder: 'Reason, conditions, or the change to apply on "approve with changes"…' }); t.addEventListener('input', function () { noteRef.v = t.value; }); return t; })()]),
@@ -124,6 +124,15 @@ App.screens['approvals'] = (function () {
         el('button.btn.btn-danger', { onclick: function () { decide(a, 'rejected', noteRef.v); closeDrawer(); } }, '✕ Reject')
       ]
     });
+  }
+  function openRoute(a) {
+    if (a.entity === 'campaign' || a.entity === 'budget') return store.campaign(a.entityId) ? '#/wf003/campaign/' + a.entityId : '#/billing';
+    if (a.entity === 'script') return '#/wf002/scripts';
+    if (a.entity === 'content') return '#/wf003/content';
+    if (a.entity === 'merge') return '#/wf006/dedupe';
+    if (a.entity === 'import') return '#/wf006/intake';
+    if (a.entity === 'wa_template') return '#/wf002/whatsapp';
+    return null;
   }
   function closeDrawer() { var r = U.$('#drawer-region'); r.classList.remove('show'); U.clear(r); }
   function decide(a, decision, note) { store.actions.decideApproval(a.id, decision, note); ui.toast({ kind: decision === 'approved' ? 'success' : 'warn', title: decision === 'approved' ? 'Approved' : 'Rejected', msg: a.title + ' — logged with your name & role.' }); }

@@ -58,7 +58,7 @@ App.screens['attribution'] = (function () {
           ui.note('info', 'Join keys: <b>Source/UTM → Lead_ID → Contact_ID → Call_ID → Donation_ID → Payment_Status</b>. Attribution gaps escalate to finance (WF-009 path).', '🔗')
         ] })
       ]),
-      ui.card({ cls: 'mt-16', title: 'Per-source attribution', icon: '📡', pad: false, body: [ui.table({ columns: [
+      ui.card({ cls: 'mt-16', title: 'Per-source attribution', icon: '📡', pad: false, body: [ui.table({ onRow: function (r) { App.router.go('/wf006/contacts?source=' + r.source.id); }, columns: [
         { label: 'Source', render: function (r) { return el('span', { text: r.source.icon + ' ' + r.source.label }); } },
         { label: 'Spend', num: true, render: function (r) { return U.inr(r.spend, { compact: true }); } },
         { label: 'Leads', num: true, render: function (r) { return U.num(r.leads); } },

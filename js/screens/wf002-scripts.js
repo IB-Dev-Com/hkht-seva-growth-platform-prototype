@@ -28,7 +28,7 @@ App.screens['wf002-scripts'] = (function () {
     return ui.card({ body: [
       el('div.row-between', { style: { flexWrap: 'wrap', gap: '8px' } }, [
         el('div', {}, [
-          el('div.row.gap-8', {}, [el('b', { text: sc.name }), ui.idChip(sc.id), ui.badge(sc.version, 'neutral')]),
+          el('div.row.gap-8', {}, [el('b', { text: sc.name }), ui.idChip(sc.id), ui.badge(sc.version, 'neutral'), sc.campaignId && store.campaign(sc.campaignId) ? ui.idChip(sc.campaignId, function () { App.router.go('/wf003/campaign/' + sc.campaignId); }) : null].filter(Boolean)),
           el('div.t-xs.t-mut.mt-4', { text: sc.category + ' · ' + sc.language + (sc.campaignId ? ' · ' + sc.campaignId : '') })
         ]),
         el('div.row.gap-8', {}, [sc.qa != null ? ui.badge('QA ' + sc.qa, sc.qa >= 90 ? 'green' : 'amber') : null, ui.statusBadge(sc.status)].filter(Boolean))
